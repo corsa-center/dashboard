@@ -1,5 +1,6 @@
 import requests
 import re
+import json
 
 # GitHub repository details
 owner = "cass-community"
@@ -10,6 +11,8 @@ path = "_software"
 url = f"https://api.github.com/repos/{owner}/{repo}/contents/{path}"
 #url = f"https://github.com/cass-community/cass-community.github.io/tree/main/_software"
 
+file_to_update = f"./_explore/input_lists.json"
+
 # Function to get the content of a file from GitHub
 def get_file_content(file_url):
     response = requests.get(file_url)
@@ -17,6 +20,38 @@ def get_file_content(file_url):
         return response.text
     else:
         return None
+
+def update_nested_list_in_json(file_path, key_path, new_list):
+    try:
+        # Read the JSON file
+        with open(file_path, 'r') as file:
+            data = json.load(file)
+
+        # Traverse the nested keys to find the list
+        nested_data = data
+        for key in key_path[:-1]:  # Navigate through the keys, excluding the last one
+            if key in nested_data:
+                nested_data = nested_data[key]
+            else:
+                print(f"Key '{key}' not found in the JSON file.")
+                return
+
+        # Update the list if the final key is valid and points to a list
+        final_key = key_path[-1]
+        if final_key in nested_data and isinstance(nested_data[final_key], list):
+            nested_data[final_key] = new_list
+        else:
+            print(f"Key '{final_key}' is not a list or does not exist.")
+            return
+
+        # Write the updated JSON back to the file
+        with open(file_path, 'w') as file:
+            json.dump(data, file, indent=4)
+
+        print("JSON file updated successfully.")
+
+    except Exception as e:
+        print(f"An error occurred: {e}")
 
 # Send a GET request to the GitHub API
 response = requests.get(url)
@@ -51,6 +86,7 @@ if response.status_code == 200:
                             if part_after_url.endswith('/'):
                                 part_after_url = part_after_url[:-1]
                             github_list.append((part_after_url))
+                            print(f"Appended \"{part_after_url}\" to github_list.")
                             break
                         elif gitlab_match:
                             part_after_url = gitlab_match.group(2).strip().lstrip('/').lower()
@@ -64,17 +100,13 @@ if response.status_code == 200:
                     github_list.sort(key=lambda x: x[0])
                     gitlab_list.sort(key=lambda x: x[0])
 
-                    #github_set = set(sorted(github_list, key=lambda x: x[0]))
-                    #gitlab_set = set(sorted(gitlab_list, key=lambda x: x[0]))
+    # Update the projects with github repo urls
+    key_path = ['https://github.com', 'repos']
+    update_nested_list_in_json(file_to_update, key_path, github_list)
 
-    # Print the results
-    print("Lines matching 'https://github.com':")
-    for part_after_url in github_list:
-        print(f"\"{part_after_url}\"")
-
-    print("\nLines matching 'https://gitlab.com':")
-    for part_after_url in gitlab_list:
-        print(f"\"{part_after_url}\"")
+    # Update the projects with gitlab repo urls
+    key_path = ['https://gitlab.com', 'repos']
+    update_nested_list_in_json(file_to_update, key_path, gitlab_list)
 
 else:
     print(f"Failed to retrieve contents: {response.status_code}")

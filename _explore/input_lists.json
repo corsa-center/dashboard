@@ -6,40 +6,47 @@
         "repoType": "github",
         "repos": [
             "amrex-codes/amrex",
-            "anlsys/aml",
+            "alpine-dav/ascent",
+            "berkeleylab/caffeine",
+            "chip-spv/chipstar",
             "ceed/libceed",
             "darshan-hpc/darshan",
-            "deephyper/deephyper",
             "diatomic/diy",
             "dyninst/dyninst",
-            "e4s-project/e4s",
-            "ebugger/empirical-roofline-toolkit",
-            "flang-compiler/flang",
+            "ginkgo-project/ginkgo",
             "hdfgroup/hdf5",
             "hypre-space/hypre",
             "icl-utk-edu/magma",
+            "icl-utk-edu/magma",
             "icl-utk-edu/papi",
-            "kitware/paraview",
-            "kitware/vtk-m",
             "kokkos/kokkos",
             "kokkos/kokkos-kernels",
+            "kitware/vtk-m",
+            "libensemble/libensemble",
+            "llvm/llvm-project",
             "llnl/sundials",
             "llnl/zfp",
-            "llvm/llvm-project",
             "mfem/mfem",
-            "open-mpi/ompi",
             "ornladios/adios2",
-            "parallel-netcdf/pnetcdf",
-            "petsc/petsc",
-            "pghysels/strumpack",
+            "open-mpi/ompi",
+            "openaccusergroup/openaccv-v",
+            "openmp-validation-and-verification/openmp_vv",
             "pmodels/mpich",
-            "sandialabs/albany",
-            "spack/spack",
+            "parallel-netcdf/pnetcdf",
+            "pghysels/strumpack",
             "stanfordlegion/legion",
+            "spack/spack",
             "trilinos/trilinos",
             "uo-oaciss/tau2",
-            "visit-dav/visit",
-            "xiaoyeli/superlu_dist"
+            "visit-dav/visit"
+        ],
+        "non-CASS repos": [
+            "anlsys/aml",
+            "deephyper/deephyper",
+            "e4s-project/e4s",
+            "ebugger/empirical-roofline-toolkit",
+            "flang-compiler/flang",
+            "sandialabs/albany"
         ]
     },
     "https://gitlab.com": {
@@ -48,7 +55,7 @@
         "orgs": [],
         "repoType": "gitlab",
         "repos": [
-            "hpctoolkit"
+            "hpctoolkit/hpctoolkit"
         ]
     }
 }

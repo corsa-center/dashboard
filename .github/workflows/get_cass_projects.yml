@@ -8,6 +8,8 @@ on:
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    outputs:
+          has-changes: ${{ steps.check-for-changes.outputs.has-changes }}
 
     steps:
     - name: Checkout repository
@@ -20,45 +22,33 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        python -m pip install requests
 
     - name: Run script
-      run: python ../../_explore/scripts/get_cass_projects.py
+      run: python ./_explore/scripts/get_cass_projects.py
   
-    - name: Check for changes
+    - name: Check for changes to input_lists.json
+      id: check-for-changes
       run: |
-        git diff --exit-code
-        if [ $? -eq 0 ]; then
+        if git diff --exit-code _explore/input_lists.json; then
           echo "No changes to commit."
-          echo "::set-output name=changes::false"
+          echo "has-changes=false" >> $GITHUB_OUTPUT
         else
-          echo "::set-output name=changes::true"
+          echo "There are changes."
+          echo "has-changes=true" >> $GITHUB_OUTPUT
         fi
 
-    # if changes
-  commit-and-do-pr:
-    name: Commit Changes and Create PR
-    needs: run-script
-    runs-on: ubuntu-latest 
-    if: ${{ needs.run-script.outputs.changes == 'true' }}
-    steps:
     - name: Commit changes
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        git commit -a -m "Add changes"
-        git config push.default simple
-
-    - name: Push changes
-      uses: ad-m/github-push-action@master
+      if: ${{ steps.check-for-changes.outputs.has-changes == true }}
+      
+    - uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+          author_name: github-actions
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'Committing new products found in CASS _software'
 
-    - name: create pull request
-      run: gh pr create -B base_branch -H branch_to_merge --title 'Merge branch_to_merge into base_branch' --body 'Created by Github action'
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Create Pull Request
+      if: ${{ steps.check-for-changes.outputs.has-changes == true }}
 
-    
+      uses: peter-evans/create-pull-request@v7
+

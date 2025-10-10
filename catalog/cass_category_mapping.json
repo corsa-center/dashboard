@@ -1,0 +1,48 @@
+{
+  "data": {
+    "DATA AND VISUALIZATION": [
+      "Alpine-DAV/ascent",
+      "visit-dav/visit",
+      "diatomic/diy",
+      "Kitware/VTK-m"
+    ],
+    "DEVELOPMENT TOOLS": [
+      "UO-OACISS/tau2",
+      "HPCToolkit/hpctoolkit",
+      "icl-utk-edu/papi",
+      "darshan-hpc/darshan",
+      "ebugger/Empirical-Roofline-Toolkit"
+    ],
+    "MATHEMATICAL LIBRARIES": [
+      "petsc/petsc",
+      "hypre-space/hypre",
+      "xiaoyeli/superlu",
+      "xiaoyeli/superlu_dist",
+      "trilinos/Trilinos",
+      "mfem/mfem",
+      "LLNL/sundials",
+      "kokkos/kokkos-kernels",
+      "pghysels/STRUMPACK",
+      "ginkgo-project/ginkgo",
+      "CEED/libCEED",
+      "icl-utk-edu/magma"
+    ],
+    "PROGRAMMING MODELS AND RUNTIMES": [
+      "kokkos/kokkos",
+      "open-mpi/ompi",
+      "pmodels/mpich",
+      "OpenMP-Validation-and-Verification/OpenMP_VV",
+      "OpenACCUserGroup/OpenACCV-V",
+      "StanfordLegion/legion"
+    ],
+    "SOFTWARE ECOSYSTEM AND DELIVERY": [
+      "spack/spack",
+      "E4S-Project/e4s",
+      "Libensemble/libensemble",
+      "HDFGroup/hdf5",
+      "ornladios/ADIOS2",
+      "LLNL/zfp",
+      "Parallel-NetCDF/PnetCDF"
+    ]
+  }
+}

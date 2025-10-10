@@ -479,24 +479,41 @@ function setVisibleRepo(newValue, shouldPushState) {
             });
           }
 
-          // map topics to categories
-          fetch(`${window.config.baseUrl}/explore/github-data/intRepos_Topics.json`)
+          // map topics to categories - first try CASS explicit mapping, then fall back to topics
+          fetch(`${window.config.baseUrl}/catalog/cass_category_mapping.json`)
+            .then((res) => res.json())
+            .then((cassMapping) => {
+              // Initialize category arrays
+              catData.forEach((category) => {
+                const catRepos = [];
+                const cassRepos = cassMapping.data[category.title] || [];
+                // Add repos from CASS explicit mapping
+                cassRepos.forEach((repoName) => {
+                  catRepos.push({ nameWithOwner: repoName });
+                });
+                topicRepos.push(catRepos);
+              });
+            })
+            .then(() => fetch(`${window.config.baseUrl}/explore/github-data/intRepos_Topics.json`))
             .then((res) => res.json())
             .then((topicJson) => {
               const reposObj = topicJson.data;
-              catData.forEach((category) => {
-                const catRepos = [];
+              // Add additional repos based on topics (that aren't already in CASS mapping)
+              catData.forEach((category, idx) => {
                 for (let r in reposObj) {
-                  const repo = reposObj[r];
-                  const topics = [];
-                  repo.repositoryTopics.nodes.forEach((node) => {
-                    topics.push(node.topic.name);
-                  });
-                  if (containsTopics(category.topics, topics)) {
-                    catRepos.push({ nameWithOwner: r });
+                  // Check if repo is already in this category from CASS mapping
+                  const alreadyAdded = topicRepos[idx].some(existing => existing.nameWithOwner === r);
+                  if (!alreadyAdded) {
+                    const repo = reposObj[r];
+                    const topics = [];
+                    repo.repositoryTopics.nodes.forEach((node) => {
+                      topics.push(node.topic.name);
+                    });
+                    if (containsTopics(category.topics, topics)) {
+                      topicRepos[idx].push({ nameWithOwner: r });
+                    }
                   }
                 }
-                topicRepos.push(catRepos);
               });
               fetch(`${window.config.baseUrl}/explore/github-data/intReposInfo.json`)
                 .then((res) => res.json())

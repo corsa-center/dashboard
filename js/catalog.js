@@ -483,7 +483,7 @@ function setVisibleRepo(newValue, shouldPushState) {
           fetch(`${window.config.baseUrl}/catalog/cass_category_mapping.json`)
             .then((res) => res.json())
             .then((cassMapping) => {
-              // Initialize category arrays
+              // Initialize category arrays with CASS mapping
               catData.forEach((category) => {
                 const catRepos = [];
                 const cassRepos = cassMapping.data[category.title] || [];
@@ -493,8 +493,10 @@ function setVisibleRepo(newValue, shouldPushState) {
                 });
                 topicRepos.push(catRepos);
               });
+
+              // Return promise to continue chain
+              return fetch(`${window.config.baseUrl}/explore/github-data/intRepos_Topics.json`);
             })
-            .then(() => fetch(`${window.config.baseUrl}/explore/github-data/intRepos_Topics.json`))
             .then((res) => res.json())
             .then((topicJson) => {
               const reposObj = topicJson.data;
@@ -515,11 +517,14 @@ function setVisibleRepo(newValue, shouldPushState) {
                   }
                 }
               });
-              fetch(`${window.config.baseUrl}/explore/github-data/intReposInfo.json`)
-                .then((res) => res.json())
-                .then((infoJson) => {
-                  const reposInfoObj = infoJson.data;
-                  for (let repo in reposInfoObj) {
+
+              // Return promise to continue chain
+              return fetch(`${window.config.baseUrl}/explore/github-data/intReposInfo.json`);
+            })
+            .then((res) => res.json())
+            .then((infoJson) => {
+              const reposInfoObj = infoJson.data;
+              for (let repo in reposInfoObj) {
                     //reposInfoObj[repo] is the actual repo object
                     for (let j in topicRepos) {
                       //var category is array of objects
@@ -551,7 +556,6 @@ function setVisibleRepo(newValue, shouldPushState) {
                   }
                   renderRepoListHtml();
                 });
-            });
         });
     }
     showCategoryList();

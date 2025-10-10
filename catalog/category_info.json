@@ -1,58 +1,13 @@
 {
   "data": {
-    "ARTIFICIAL INTELLIGENCE": {
-      "title": "ARTIFICIAL INTELLIGENCE",
-      "icon": {
-        "path": "/assets/images/categories/data-science-and-machine-learning.svg",
-        "alt": "Artificial Intelligence"
-      },
-      "description": {
-        "short": "Domain-aware methods to ingest scientific knowledge and robust Machine Learning techniques that aid in simulation and automating scientific and engineering processes",
-        "long": ""
-      },
-      "topics": [
-        "artificial-intelligence",
-        "evolutionary-algorithms",
-        "intelligent-agents",
-        "machine-learning",
-        "clustering",
-        "neuromorphic-computing",
-        "reduced-order-models",
-        "text-analysis"
-      ]
-    },
-    "SCIENTIFIC DATA MANAGEMENT": {
-      "title": "SCIENTIFIC DATA MANAGEMENT",
-      "icon": {
-        "path": "/assets/images/categories/data-management.svg",
-        "alt": "Scientific Data Management"
-      },
-      "description": {
-        "short": "Robust systems which capture both the data and metadata needed for secure storage, searchability and harmonization throughout the data’s lifecycle",
-        "long": ""
-      },
-      "topics": [
-        "data-enclave",
-        "data-integration",
-        "data-lifecycle-management",
-        "data-storage-systems",
-        "in-situ-and-in-transit-workflows",
-        "intelligent-data-management",
-        "intelligent-automated-archives",
-        "knowlege-management",
-        "portals",
-        "storage-and-io",
-        "workflow-automation"
-      ]
-    },
-    "DATA ANALYSIS & VISUALIZATION": {
-      "title": "DATA ANALYSIS & VISUALIZATION",
+    "DATA AND VISUALIZATION": {
+      "title": "DATA AND VISUALIZATION",
       "icon": {
         "path": "/assets/images/categories/data-analysis-and-visualization.svg",
-        "alt": "Data Analysis & Visualization"
+        "alt": "Data and Visualization"
       },
       "description": {
-        "short": "Manage visualizations with robust features and configurable analysis",
+        "short": "Tools for data management, analysis, and visualization supporting computational science research",
         "long": ""
       },
       "topics": [
@@ -68,57 +23,119 @@
         "portals",
         "scientific-visualization",
         "statistical-analysis",
-        "visual-analytics"
+        "visual-analytics",
+        "data-enclave",
+        "data-integration",
+        "data-lifecycle-management",
+        "data-storage-systems",
+        "in-situ-and-in-transit-workflows",
+        "intelligent-data-management",
+        "intelligent-automated-archives",
+        "knowlege-management",
+        "storage-and-io",
+        "workflow-automation"
       ]
     },
-    "PERFORMANCE & CORRECTNESS TOOLS": {
-      "title": "PERFORMANCE & CORRECTNESS TOOLS",
+    "DEVELOPMENT TOOLS": {
+      "title": "DEVELOPMENT TOOLS",
       "icon": {
         "path": "/assets/images/categories/performance.svg",
-        "alt": "Performance & Correctness Tools"
+        "alt": "Development Tools"
       },
       "description": {
-        "short": "Tools that can be applied to monitor, analyze, and diagnose performance and behavior of computational science applications and systems.",
+        "short": "Tools for monitoring, analyzing, and improving performance and correctness of computational science applications",
         "long": ""
       },
       "topics": [
         "performance",
         "correctness",
         "autotuning",
-        "behavior"
+        "behavior",
+        "debugging",
+        "profiling",
+        "testing"
       ]
     },
-    "PROGRAMMING SYSTEMS": {
-      "title": "PROGRAMMING SYSTEMS",
-      "icon": {
-        "path": "/assets/images/categories/programming-systems.svg",
-        "alt": "Programming Systems"
-      },
-      "description": {
-        "short": "Programming Systems are the first point of contact in human-computer interactions, and never ceased to evolve along with hardware and software technology",
-        "long": ""
-      },
-      "topics": [
-        "compilers",
-        "programming-languages",
-        "programming-models"
-      ]
-    },
-    "MATH & PHYSICS LIBRARIES": {
-      "title": "MATH & PHYSICS LIBRARIES",
+    "MATHEMATICAL LIBRARIES": {
+      "title": "MATHEMATICAL LIBRARIES",
       "icon": {
         "path": "/assets/images/categories/math.svg",
-        "alt": "Math & Physics Libraries"
+        "alt": "Mathematical Libraries"
       },
       "description": {
-        "short": "Robust mathematical techniques and numerical algorithms to reliably address the challenges of large-scale simulation of complex physical phenomena",
+        "short": "Numerical algorithms and mathematical libraries for large-scale simulation of complex physical phenomena",
         "long": ""
       },
       "topics": [
         "uncertanty-quatification",
         "numerical-optimization",
         "problam-discretization",
-        "algrebraic-systems"
+        "algrebraic-systems",
+        "linear-solvers",
+        "nonlinear-solvers",
+        "optimization",
+        "differential-equations"
+      ]
+    },
+    "PROGRAMMING MODELS AND RUNTIMES": {
+      "title": "PROGRAMMING MODELS AND RUNTIMES",
+      "icon": {
+        "path": "/assets/images/categories/programming-systems.svg",
+        "alt": "Programming Models and Runtimes"
+      },
+      "description": {
+        "short": "Programming languages, models, and runtime systems for high-performance computing",
+        "long": ""
+      },
+      "topics": [
+        "compilers",
+        "programming-languages",
+        "programming-models",
+        "runtime-systems",
+        "parallel-programming",
+        "gpu-programming"
+      ]
+    },
+    "SOFTWARE ECOSYSTEM AND DELIVERY": {
+      "title": "SOFTWARE ECOSYSTEM AND DELIVERY",
+      "icon": {
+        "path": "/assets/images/categories/catalog.svg",
+        "alt": "Software Ecosystem and Delivery"
+      },
+      "description": {
+        "short": "Tools and systems for building, packaging, and deploying scientific software",
+        "long": ""
+      },
+      "topics": [
+        "package-management",
+        "build-systems",
+        "continuous-integration",
+        "deployment",
+        "containerization",
+        "software-distribution"
+      ]
+    },
+    "ARTIFICIAL INTELLIGENCE": {
+      "title": "ARTIFICIAL INTELLIGENCE",
+      "icon": {
+        "path": "/assets/images/categories/data-science-and-machine-learning.svg",
+        "alt": "Artificial Intelligence"
+      },
+      "description": {
+        "short": "Machine learning and AI techniques for scientific computing and automation",
+        "long": ""
+      },
+      "topics": [
+        "artificial-intelligence",
+        "evolutionary-algorithms",
+        "intelligent-agents",
+        "machine-learning",
+        "clustering",
+        "neuromorphic-computing",
+        "reduced-order-models",
+        "text-analysis",
+        "deep-learning",
+        "neural-networks"
       ]
     }
   }

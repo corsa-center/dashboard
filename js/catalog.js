@@ -40,7 +40,7 @@ let filterText = '';
  *
  * if this starts with a '-', reverse the sort order
  */
-let orderProp = '-stars';
+let orderProp = 'name';
 /**
  * Index of the active category from the catData array, relevant for showing visible repositories on the category list view.
  *
@@ -167,14 +167,14 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     <p class="stats text-center">
       <a href="${repo.url}"> <span class="fa fa-github"></span>GitHub Page </a>
 
-      <a href="${repo.url}/stargazers"> <span class="fa fa-star"></span>Stargazers : ${repo.stargazers.totalCount} </a>
+      <a href="${repo.url}/stargazers"> <span class="fa fa-star"></span>Community Interest: ${repo.stargazers.totalCount} stars</a>
 
-      <a href="${repo.url}/network"> <span class="fa fa-code-fork"></span>Forks : ${repo.forks.totalCount} </a>
+      <a href="${repo.url}/network"> <span class="fa fa-code-fork"></span>Forks: ${repo.forks.totalCount} </a>
 
       ${
         repo.cdash
           ? `
-          <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>   CDash Dashboard </a>
+          <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>CDash Dashboard </a>
       `
           : ''
       }
@@ -196,19 +196,22 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     }
 
     <div class="text-center">
+      <h3>Project Activity</h3>
       <svg class="repoActivityChart"></svg>
       <br />
+      <h3>Contributors</h3>
       <svg class="pieUsers"></svg>
       <br />
-      ${pulls ? '<svg class="piePulls"></svg>' : ''}
-      ${issues ? '<svg class="pieIssues"></svg>' : ''}
-      <br />
+      ${pulls ? '<h3>Pull Requests</h3><svg class="piePulls"></svg><br />' : ''}
+      ${issues ? '<h3>Issues</h3><svg class="pieIssues"></svg><br />' : ''}
+      <h3>Repository Timeline</h3>
       <svg class="repoCreationHistory"></svg>
       <br />
-      ${repo.stargazers.totalCount ? '<svg class="repoStarHistory"></svg>' : ''}
-      <br />
-      ${repo.languages.totalCount ? '<svg class="languagePie"></svg>' : ''}
-      ${repo.repositoryTopics.totalCount ? '<svg class="topicCloud"></svg>' : ''}
+      ${repo.stargazers.totalCount ? '<h3>Star History</h3><svg class="repoStarHistory"></svg><br />' : ''}
+      ${repo.languages.totalCount ? '<h3>Languages Used</h3><svg class="languagePie"></svg><br />' : ''}
+      ${repo.repositoryTopics.totalCount ? '<h3>Topics</h3><svg class="topicCloud"></svg>' : ''}
+
+      <div id="metrics-section"></div>
     </div>
   `;
 }
@@ -311,18 +314,18 @@ function renderRepoListHtml() {
     ${repo.description ? `<p>${sanitizeHTML(repo.description)}</p>` : ''}
 
     <p class="stats text-center">
-      <a href="${repo.gitUrl}" title="GitHub Page">
+      <a href="${repo.gitUrl}" title="GitHub Repository">
         <span class="fa fa-github"></span>
       </a>
 
-      <a href="${repo.gitUrl}/stargazers" title="Stargazers">
+      <a href="${repo.gitUrl}/stargazers" title="Community Interest">
         <span class="fa fa-star"></span> ${repo.stars}
       </a>
 
-      <a href="${repo.gitUrl}/network" title="Forks">
+      <a href="${repo.gitUrl}/network" title="Repository Forks">
         <span class="fa fa-code-fork"></span> ${repo.forks}
       </a>
-      <a href="/explore/spack-dependencies/?package=${repo.name}" title="Dependency Network">
+      <a href="/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
         <span class="fa fa-pie-chart"></span>
       </a>
       ${
@@ -337,7 +340,7 @@ function renderRepoListHtml() {
       ${
         repo.cdash
           ? `
-          <a href="${repo.cdash}"><img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20"></img></a>
+          <a href="${repo.cdash}" title="CDash Testing Dashboard"><img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" alt="CDash"></img></a>
       `
           : ''
       }

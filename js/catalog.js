@@ -252,10 +252,146 @@ function renderSingleRepo(queryParam) {
         if (issues) {
           draw_pie_repoIssues('pieIssues', queryParam);
         }
+        // Load and display sustainability metrics
+        loadSustainabilityMetrics(queryParam);
       } else {
         renderSingleRepoError(queryParam);
       }
     });
+}
+
+/**
+ * Load and display sustainability metrics for a repository
+ * @param {string} repoName repository name (owner/repo format)
+ */
+function loadSustainabilityMetrics(repoName) {
+  fetch(`${window.config.baseUrl}/explore/github-data/sustainabilityMetrics.json`)
+    .then((res) => res.json())
+    .then((metricsData) => {
+      if (metricsData.hasOwnProperty(repoName)) {
+        renderSustainabilityMetrics(metricsData[repoName]);
+      } else {
+        // No metrics available for this repo
+        document.getElementById('metrics-section').innerHTML = '';
+      }
+    })
+    .catch((error) => {
+      console.log('Sustainability metrics not available:', error);
+      document.getElementById('metrics-section').innerHTML = '';
+    });
+}
+
+/**
+ * Render sustainability metrics HTML
+ * @param {Object} metrics metrics data for the repository
+ */
+function renderSustainabilityMetrics(metrics) {
+  const metricsSection = document.getElementById('metrics-section');
+
+  metricsSection.innerHTML = `
+    <h3>Sustainability Metrics</h3>
+    <div class="sustainability-overview">
+      <div class="metric-score-card">
+        <h4>Overall Sustainability Score</h4>
+        <div class="score-circle">
+          <span class="score-value">${metrics.overall_score}/100</span>
+        </div>
+        <p class="score-label">${getScoreLabel(metrics.overall_score)}</p>
+      </div>
+    </div>
+
+    <div class="metrics-grid">
+      <!-- Impact Metrics -->
+      <div class="metric-category">
+        <h4><span class="fa fa-graduation-cap"></span> Research Impact</h4>
+        <div class="metric-item">
+          <span class="metric-label">Citation Score:</span>
+          <span class="metric-value">${metrics.impact_metrics.citation_score.toFixed(1)}/100</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Formal Citations:</span>
+          <span class="metric-value">${metrics.impact_metrics.formal_citations.toLocaleString()}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Paper Mentions:</span>
+          <span class="metric-value">${metrics.impact_metrics.informal_mentions.toLocaleString()}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Dependent Packages:</span>
+          <span class="metric-value">${metrics.impact_metrics.dependent_packages.toLocaleString()}</span>
+        </div>
+        ${metrics.impact_metrics.doi_resolutions > 0 ? `
+        <div class="metric-item">
+          <span class="metric-label">DOI Resolutions:</span>
+          <span class="metric-value">${metrics.impact_metrics.doi_resolutions.toLocaleString()}</span>
+        </div>
+        ` : ''}
+      </div>
+
+      <!-- Community Metrics -->
+      <div class="metric-category">
+        <h4><span class="fa fa-users"></span> Community Health</h4>
+        <div class="metric-item">
+          <span class="metric-label">Total Contributors:</span>
+          <span class="metric-value">${metrics.community_metrics.total_contributors}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Active (30 days):</span>
+          <span class="metric-value">${metrics.community_metrics.active_contributors_30d}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Commits/Month:</span>
+          <span class="metric-value">${metrics.community_metrics.commit_frequency_per_month.toFixed(1)}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Avg Issue Response:</span>
+          <span class="metric-value">${metrics.community_metrics.avg_issue_response_days.toFixed(1)} days</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Avg PR Merge Time:</span>
+          <span class="metric-value">${metrics.community_metrics.avg_pr_merge_days.toFixed(1)} days</span>
+        </div>
+      </div>
+
+      <!-- Licensing Metrics -->
+      <div class="metric-category">
+        <h4><span class="fa fa-balance-scale"></span> Licensing</h4>
+        <div class="metric-item">
+          <span class="metric-label">License:</span>
+          <span class="metric-value">${metrics.licensing_metrics.license}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Compatibility:</span>
+          <span class="metric-value compatibility-${metrics.licensing_metrics.license_compatibility}">${metrics.licensing_metrics.license_compatibility}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Clarity Score:</span>
+          <span class="metric-value">${metrics.licensing_metrics.license_clarity_score}/100</span>
+        </div>
+        ${metrics.licensing_metrics.outbound_licenses.length > 0 ? `
+        <div class="metric-item">
+          <span class="metric-label">Dependencies:</span>
+          <span class="metric-value">${metrics.licensing_metrics.outbound_licenses.join(', ')}</span>
+        </div>
+        ` : ''}
+      </div>
+    </div>
+
+    <p class="metrics-updated">Last updated: ${new Date(metrics.last_updated).toLocaleDateString()}</p>
+  `;
+}
+
+/**
+ * Get descriptive label for sustainability score
+ * @param {number} score score value (0-100)
+ * @returns {string} descriptive label
+ */
+function getScoreLabel(score) {
+  if (score >= 80) return 'Excellent';
+  if (score >= 60) return 'Good';
+  if (score >= 40) return 'Fair';
+  if (score >= 20) return 'Needs Improvement';
+  return 'Limited Data';
 }
 
 /////////////////////////////////////////////////////////

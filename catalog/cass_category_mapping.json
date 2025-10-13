@@ -4,14 +4,21 @@
       "Alpine-DAV/ascent",
       "visit-dav/visit",
       "diatomic/diy",
-      "Kitware/VTK-m"
+      "Kitware/VTK-m",
+      "HDFGroup/hdf5",
+      "ornladios/ADIOS2",
+      "LLNL/zfp",
+      "Parallel-NetCDF/PnetCDF",
+      "Libensemble/libensemble",
+      "vtk/VTK"
     ],
     "DEVELOPMENT TOOLS": [
       "UO-OACISS/tau2",
       "HPCToolkit/hpctoolkit",
       "icl-utk-edu/papi",
       "darshan-hpc/darshan",
-      "ebugger/Empirical-Roofline-Toolkit"
+      "ebugger/Empirical-Roofline-Toolkit",
+      "LLNL/Caliper"
     ],
     "MATHEMATICAL LIBRARIES": [
       "petsc/petsc",
@@ -25,7 +32,9 @@
       "pghysels/STRUMPACK",
       "ginkgo-project/ginkgo",
       "CEED/libCEED",
-      "icl-utk-edu/magma"
+      "icl-utk-edu/magma",
+      "xsdk-project/xsdk",
+      "AMReX-Codes/amrex"
     ],
     "PROGRAMMING MODELS AND RUNTIMES": [
       "kokkos/kokkos",
@@ -33,16 +42,16 @@
       "pmodels/mpich",
       "OpenMP-Validation-and-Verification/OpenMP_VV",
       "OpenACCUserGroup/OpenACCV-V",
-      "StanfordLegion/legion"
+      "StanfordLegion/legion",
+      "HPCToolkit/hpctoolkit",
+      "RAJA-llnl/RAJA",
+      "llvm/llvm-project",
+      "Umpire-project/Umpire",
+      "LLNL/CHAI"
     ],
     "SOFTWARE ECOSYSTEM AND DELIVERY": [
       "spack/spack",
-      "E4S-Project/e4s",
-      "Libensemble/libensemble",
-      "HDFGroup/hdf5",
-      "ornladios/ADIOS2",
-      "LLNL/zfp",
-      "Parallel-NetCDF/PnetCDF"
+      "E4S-Project/e4s"
     ]
   }
 }

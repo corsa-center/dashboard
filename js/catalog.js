@@ -429,8 +429,11 @@ function renderRepoListHtml() {
         repo.description?.toLowerCase().includes(filterText),
     )
     .sort((a, b) => {
-      const x = a[resolvedOrderProp];
-      const y = b[resolvedOrderProp];
+      // Use case-insensitive sorting for string properties
+      let x = a[resolvedOrderProp];
+      let y = b[resolvedOrderProp];
+      if (typeof x === 'string') x = x.toLowerCase();
+      if (typeof y === 'string') y = y.toLowerCase();
       return x < y ? -1 : x > y ? 1 : 0;
     });
   if (isOrderReversed) {

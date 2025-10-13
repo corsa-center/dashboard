@@ -420,6 +420,12 @@ function renderRepoListHeaderHtml() {
 function renderRepoListHtml() {
   const isOrderReversed = orderProp.startsWith('-');
   const resolvedOrderProp = isOrderReversed ? orderProp.slice(1) : orderProp;
+  // Safety check: ensure topicRepos array exists for this category
+  if (!topicRepos[selectedCategoryIndex] || !Array.isArray(topicRepos[selectedCategoryIndex])) {
+    console.error(`topicRepos[${selectedCategoryIndex}] is not valid`, topicRepos[selectedCategoryIndex]);
+    REPO_SECTION_ELEMENT.innerHTML = '<p>Error loading repositories for this category.</p>';
+    return;
+  }
   const items = topicRepos[selectedCategoryIndex]
     .filter(
       (repo) =>
@@ -505,6 +511,7 @@ function renderRepoListHtml() {
  */
 function onCategoryUpdate(categoryIdx) {
   selectedCategoryIndex = categoryIdx;
+  console.log(`Category updated to index ${categoryIdx}, category: ${catData[categoryIdx]?.title}, repos count: ${topicRepos[categoryIdx]?.length}`);
   const categoryButtons = document.getElementsByClassName('tab');
   for (let i = 0; i < categoryButtons.length; i++) {
     const button = categoryButtons[i];

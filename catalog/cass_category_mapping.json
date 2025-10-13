@@ -2,56 +2,56 @@
   "data": {
     "DATA AND VISUALIZATION": [
       "Alpine-DAV/ascent",
-      "visit-dav/visit",
       "diatomic/diy",
-      "Kitware/VTK-m",
       "HDFGroup/hdf5",
-      "ornladios/ADIOS2",
-      "LLNL/zfp",
-      "Parallel-NetCDF/PnetCDF",
+      "Kitware/VTK-m",
       "Libensemble/libensemble",
+      "LLNL/zfp",
+      "ornladios/ADIOS2",
+      "Parallel-NetCDF/PnetCDF",
+      "visit-dav/visit",
       "vtk/VTK"
     ],
     "DEVELOPMENT TOOLS": [
-      "UO-OACISS/tau2",
-      "HPCToolkit/hpctoolkit",
-      "icl-utk-edu/papi",
       "darshan-hpc/darshan",
       "ebugger/Empirical-Roofline-Toolkit",
-      "LLNL/Caliper"
+      "HPCToolkit/hpctoolkit",
+      "icl-utk-edu/papi",
+      "LLNL/Caliper",
+      "UO-OACISS/tau2"
     ],
     "MATHEMATICAL LIBRARIES": [
-      "petsc/petsc",
+      "AMReX-Codes/amrex",
+      "CEED/libCEED",
+      "ginkgo-project/ginkgo",
       "hypre-space/hypre",
+      "icl-utk-edu/magma",
+      "kokkos/kokkos-kernels",
+      "LLNL/sundials",
+      "mfem/mfem",
+      "petsc/petsc",
+      "pghysels/STRUMPACK",
+      "trilinos/Trilinos",
       "xiaoyeli/superlu",
       "xiaoyeli/superlu_dist",
-      "trilinos/Trilinos",
-      "mfem/mfem",
-      "LLNL/sundials",
-      "kokkos/kokkos-kernels",
-      "pghysels/STRUMPACK",
-      "ginkgo-project/ginkgo",
-      "CEED/libCEED",
-      "icl-utk-edu/magma",
-      "xsdk-project/xsdk",
-      "AMReX-Codes/amrex"
+      "xsdk-project/xsdk"
     ],
     "PROGRAMMING MODELS AND RUNTIMES": [
-      "kokkos/kokkos",
-      "open-mpi/ompi",
-      "pmodels/mpich",
-      "OpenMP-Validation-and-Verification/OpenMP_VV",
-      "OpenACCUserGroup/OpenACCV-V",
-      "StanfordLegion/legion",
       "HPCToolkit/hpctoolkit",
-      "RAJA-llnl/RAJA",
+      "kokkos/kokkos",
+      "LLNL/CHAI",
       "llvm/llvm-project",
-      "Umpire-project/Umpire",
-      "LLNL/CHAI"
+      "open-mpi/ompi",
+      "OpenACCUserGroup/OpenACCV-V",
+      "OpenMP-Validation-and-Verification/OpenMP_VV",
+      "pmodels/mpich",
+      "RAJA-llnl/RAJA",
+      "StanfordLegion/legion",
+      "Umpire-project/Umpire"
     ],
     "SOFTWARE ECOSYSTEM AND DELIVERY": [
-      "spack/spack",
-      "E4S-Project/e4s"
+      "E4S-Project/e4s",
+      "spack/spack"
     ]
   }
 }

@@ -114,29 +114,6 @@
         "containerization",
         "software-distribution"
       ]
-    },
-    "ARTIFICIAL INTELLIGENCE": {
-      "title": "ARTIFICIAL INTELLIGENCE",
-      "icon": {
-        "path": "/assets/images/categories/data-science-and-machine-learning.svg",
-        "alt": "Artificial Intelligence"
-      },
-      "description": {
-        "short": "Machine learning and AI techniques for scientific computing and automation",
-        "long": ""
-      },
-      "topics": [
-        "artificial-intelligence",
-        "evolutionary-algorithms",
-        "intelligent-agents",
-        "machine-learning",
-        "clustering",
-        "neuromorphic-computing",
-        "reduced-order-models",
-        "text-analysis",
-        "deep-learning",
-        "neural-networks"
-      ]
     }
   }
 }

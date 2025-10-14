@@ -1,0 +1,50 @@
+{
+  "HDFGroup/hdf5": {
+    "overall_score": 75,
+    "impact_metrics": {
+      "citation_score": 65.0,
+      "formal_citations": 2500,
+      "informal_mentions": 120,
+      "dependent_packages": 350,
+      "doi_resolutions": 1250
+    },
+    "community_metrics": {
+      "total_contributors": 85,
+      "active_contributors_30d": 12,
+      "commit_frequency_per_month": 45.2,
+      "avg_issue_response_days": 2.3,
+      "avg_pr_merge_days": 5.1
+    },
+    "licensing_metrics": {
+      "license": "BSD-3-Clause",
+      "license_compatibility": "high",
+      "outbound_licenses": ["MIT", "Apache-2.0"],
+      "license_clarity_score": 95
+    },
+    "last_updated": "2025-10-10T21:00:00Z"
+  },
+  "AMReX-Codes/amrex": {
+    "overall_score": 55,
+    "impact_metrics": {
+      "citation_score": 40.0,
+      "formal_citations": 109,
+      "informal_mentions": 0,
+      "dependent_packages": 0,
+      "doi_resolutions": 0
+    },
+    "community_metrics": {
+      "total_contributors": 45,
+      "active_contributors_30d": 8,
+      "commit_frequency_per_month": 32.1,
+      "avg_issue_response_days": 3.2,
+      "avg_pr_merge_days": 6.5
+    },
+    "licensing_metrics": {
+      "license": "BSD-3-Clause",
+      "license_compatibility": "high",
+      "outbound_licenses": [],
+      "license_clarity_score": 90
+    },
+    "last_updated": "2025-10-10T21:00:00Z"
+  }
+}

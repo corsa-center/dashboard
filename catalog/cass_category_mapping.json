@@ -1,0 +1,57 @@
+{
+  "data": {
+    "DATA AND VISUALIZATION": [
+      "Alpine-DAV/ascent",
+      "diatomic/diy",
+      "HDFGroup/hdf5",
+      "Kitware/VTK-m",
+      "Libensemble/libensemble",
+      "LLNL/zfp",
+      "ornladios/ADIOS2",
+      "Parallel-NetCDF/PnetCDF",
+      "visit-dav/visit",
+      "vtk/VTK"
+    ],
+    "DEVELOPMENT TOOLS": [
+      "darshan-hpc/darshan",
+      "ebugger/Empirical-Roofline-Toolkit",
+      "HPCToolkit/hpctoolkit",
+      "icl-utk-edu/papi",
+      "LLNL/Caliper",
+      "UO-OACISS/tau2"
+    ],
+    "MATHEMATICAL LIBRARIES": [
+      "AMReX-Codes/amrex",
+      "CEED/libCEED",
+      "ginkgo-project/ginkgo",
+      "hypre-space/hypre",
+      "icl-utk-edu/magma",
+      "kokkos/kokkos-kernels",
+      "LLNL/sundials",
+      "mfem/mfem",
+      "petsc/petsc",
+      "pghysels/STRUMPACK",
+      "trilinos/Trilinos",
+      "xiaoyeli/superlu",
+      "xiaoyeli/superlu_dist",
+      "xsdk-project/xsdk"
+    ],
+    "PROGRAMMING MODELS AND RUNTIMES": [
+      "HPCToolkit/hpctoolkit",
+      "kokkos/kokkos",
+      "LLNL/CHAI",
+      "llvm/llvm-project",
+      "open-mpi/ompi",
+      "OpenACCUserGroup/OpenACCV-V",
+      "OpenMP-Validation-and-Verification/OpenMP_VV",
+      "pmodels/mpich",
+      "RAJA-llnl/RAJA",
+      "StanfordLegion/legion",
+      "Umpire-project/Umpire"
+    ],
+    "SOFTWARE ECOSYSTEM AND DELIVERY": [
+      "E4S-Project/e4s",
+      "spack/spack"
+    ]
+  }
+}

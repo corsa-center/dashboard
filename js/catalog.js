@@ -20,6 +20,7 @@ const REPO_SECTION_ELEMENT = document.getElementById('repositories');
 const ELEMENT_NAV_DESKTOP = document.getElementById('category-nav');
 const ELEMENT_NAV_MOBILE = document.getElementById('category-hamburger-nav');
 const REPO_HEADER_ELEMENT = document.getElementById('category-header');
+const ELEMENT_WELCOME_TEXT = document.getElementById('welcome-text');
 
 const ELEMENT_SEARCH = document.getElementById('searchText');
 
@@ -40,7 +41,7 @@ let filterText = '';
  *
  * if this starts with a '-', reverse the sort order
  */
-let orderProp = '-stars';
+let orderProp = 'name';
 /**
  * Index of the active category from the catData array, relevant for showing visible repositories on the category list view.
  *
@@ -167,14 +168,14 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     <p class="stats text-center">
       <a href="${repo.url}"> <span class="fa fa-github"></span>GitHub Page </a>
 
-      <a href="${repo.url}/stargazers"> <span class="fa fa-star"></span>Stargazers : ${repo.stargazers.totalCount} </a>
+      <a href="${repo.url}/stargazers"> <span class="fa fa-star"></span>Community Interest: ${repo.stargazers.totalCount} stars</a>
 
-      <a href="${repo.url}/network"> <span class="fa fa-code-fork"></span>Forks : ${repo.forks.totalCount} </a>
+      <a href="${repo.url}/network"> <span class="fa fa-code-fork"></span>Forks: ${repo.forks.totalCount} </a>
 
       ${
         repo.cdash
           ? `
-          <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>   CDash Dashboard </a>
+          <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>CDash Dashboard </a>
       `
           : ''
       }
@@ -196,19 +197,22 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     }
 
     <div class="text-center">
+      <h3>Project Activity</h3>
       <svg class="repoActivityChart"></svg>
       <br />
+      <h3>Contributors</h3>
       <svg class="pieUsers"></svg>
       <br />
-      ${pulls ? '<svg class="piePulls"></svg>' : ''}
-      ${issues ? '<svg class="pieIssues"></svg>' : ''}
-      <br />
+      ${pulls ? '<h3>Pull Requests</h3><svg class="piePulls"></svg><br />' : ''}
+      ${issues ? '<h3>Issues</h3><svg class="pieIssues"></svg><br />' : ''}
+      <h3>Repository Timeline</h3>
       <svg class="repoCreationHistory"></svg>
       <br />
-      ${repo.stargazers.totalCount ? '<svg class="repoStarHistory"></svg>' : ''}
-      <br />
-      ${repo.languages.totalCount ? '<svg class="languagePie"></svg>' : ''}
-      ${repo.repositoryTopics.totalCount ? '<svg class="topicCloud"></svg>' : ''}
+      ${repo.stargazers.totalCount ? '<h3>Star History</h3><svg class="repoStarHistory"></svg><br />' : ''}
+      ${repo.languages.totalCount ? '<h3>Languages Used</h3><svg class="languagePie"></svg><br />' : ''}
+      ${repo.repositoryTopics.totalCount ? '<h3>Topics</h3><svg class="topicCloud"></svg>' : ''}
+
+      <div id="metrics-section"></div>
     </div>
   `;
 }
@@ -249,10 +253,146 @@ function renderSingleRepo(queryParam) {
         if (issues) {
           draw_pie_repoIssues('pieIssues', queryParam);
         }
+        // Load and display sustainability metrics
+        loadSustainabilityMetrics(queryParam);
       } else {
         renderSingleRepoError(queryParam);
       }
     });
+}
+
+/**
+ * Load and display sustainability metrics for a repository
+ * @param {string} repoName repository name (owner/repo format)
+ */
+function loadSustainabilityMetrics(repoName) {
+  fetch(`${window.config.baseUrl}/explore/github-data/sustainabilityMetrics.json`)
+    .then((res) => res.json())
+    .then((metricsData) => {
+      if (metricsData.hasOwnProperty(repoName)) {
+        renderSustainabilityMetrics(metricsData[repoName]);
+      } else {
+        // No metrics available for this repo
+        document.getElementById('metrics-section').innerHTML = '';
+      }
+    })
+    .catch((error) => {
+      console.log('Sustainability metrics not available:', error);
+      document.getElementById('metrics-section').innerHTML = '';
+    });
+}
+
+/**
+ * Render sustainability metrics HTML
+ * @param {Object} metrics metrics data for the repository
+ */
+function renderSustainabilityMetrics(metrics) {
+  const metricsSection = document.getElementById('metrics-section');
+
+  metricsSection.innerHTML = `
+    <h3>Sustainability Metrics</h3>
+    <div class="sustainability-overview">
+      <div class="metric-score-card">
+        <h4>Overall Sustainability Score</h4>
+        <div class="score-circle">
+          <span class="score-value">${metrics.overall_score}/100</span>
+        </div>
+        <p class="score-label">${getScoreLabel(metrics.overall_score)}</p>
+      </div>
+    </div>
+
+    <div class="metrics-grid">
+      <!-- Impact Metrics -->
+      <div class="metric-category">
+        <h4><span class="fa fa-graduation-cap"></span> Research Impact</h4>
+        <div class="metric-item">
+          <span class="metric-label">Citation Score:</span>
+          <span class="metric-value">${metrics.impact_metrics.citation_score.toFixed(1)}/100</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Formal Citations:</span>
+          <span class="metric-value">${metrics.impact_metrics.formal_citations.toLocaleString()}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Paper Mentions:</span>
+          <span class="metric-value">${metrics.impact_metrics.informal_mentions.toLocaleString()}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Dependent Packages:</span>
+          <span class="metric-value">${metrics.impact_metrics.dependent_packages.toLocaleString()}</span>
+        </div>
+        ${metrics.impact_metrics.doi_resolutions > 0 ? `
+        <div class="metric-item">
+          <span class="metric-label">DOI Resolutions:</span>
+          <span class="metric-value">${metrics.impact_metrics.doi_resolutions.toLocaleString()}</span>
+        </div>
+        ` : ''}
+      </div>
+
+      <!-- Community Metrics -->
+      <div class="metric-category">
+        <h4><span class="fa fa-users"></span> Community Health</h4>
+        <div class="metric-item">
+          <span class="metric-label">Total Contributors:</span>
+          <span class="metric-value">${metrics.community_metrics.total_contributors}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Active (30 days):</span>
+          <span class="metric-value">${metrics.community_metrics.active_contributors_30d}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Commits/Month:</span>
+          <span class="metric-value">${metrics.community_metrics.commit_frequency_per_month.toFixed(1)}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Avg Issue Response:</span>
+          <span class="metric-value">${metrics.community_metrics.avg_issue_response_days.toFixed(1)} days</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Avg PR Merge Time:</span>
+          <span class="metric-value">${metrics.community_metrics.avg_pr_merge_days.toFixed(1)} days</span>
+        </div>
+      </div>
+
+      <!-- Licensing Metrics -->
+      <div class="metric-category">
+        <h4><span class="fa fa-balance-scale"></span> Licensing</h4>
+        <div class="metric-item">
+          <span class="metric-label">License:</span>
+          <span class="metric-value">${metrics.licensing_metrics.license}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Compatibility:</span>
+          <span class="metric-value compatibility-${metrics.licensing_metrics.license_compatibility}">${metrics.licensing_metrics.license_compatibility}</span>
+        </div>
+        <div class="metric-item">
+          <span class="metric-label">Clarity Score:</span>
+          <span class="metric-value">${metrics.licensing_metrics.license_clarity_score}/100</span>
+        </div>
+        ${metrics.licensing_metrics.outbound_licenses.length > 0 ? `
+        <div class="metric-item">
+          <span class="metric-label">Dependencies:</span>
+          <span class="metric-value">${metrics.licensing_metrics.outbound_licenses.join(', ')}</span>
+        </div>
+        ` : ''}
+      </div>
+    </div>
+
+    <p class="metrics-updated">Last updated: ${new Date(metrics.last_updated).toLocaleDateString()}</p>
+  `;
+}
+
+/**
+ * Get descriptive label for sustainability score
+ * @param {number} score score value (0-100)
+ * @returns {string} descriptive label
+ */
+function getScoreLabel(score) {
+  if (score >= 80) return 'Excellent';
+  if (score >= 60) return 'Good';
+  if (score >= 40) return 'Fair';
+  if (score >= 20) return 'Needs Improvement';
+  return 'Limited Data';
 }
 
 /////////////////////////////////////////////////////////
@@ -281,17 +421,37 @@ function renderRepoListHeaderHtml() {
 function renderRepoListHtml() {
   const isOrderReversed = orderProp.startsWith('-');
   const resolvedOrderProp = isOrderReversed ? orderProp.slice(1) : orderProp;
+  // Safety check: ensure topicRepos array exists for this category
+  if (!topicRepos[selectedCategoryIndex] || !Array.isArray(topicRepos[selectedCategoryIndex])) {
+    console.error(`topicRepos[${selectedCategoryIndex}] is not valid`, topicRepos[selectedCategoryIndex]);
+    REPO_SECTION_ELEMENT.innerHTML = '<p>Error loading repositories for this category.</p>';
+    return;
+  }
   const items = topicRepos[selectedCategoryIndex]
-    .filter(
-      (repo) =>
+    .filter((repo) => {
+      // Filter out repos that haven't been fully populated yet
+      if (!repo.name || !repo.owner) {
+        return false;
+      }
+      // If there's no filter text, include all repos
+      if (!filterText) {
+        return true;
+      }
+      // Otherwise, check if any field matches the filter text
+      return (
         repo.name.toLowerCase().includes(filterText) ||
         repo.owner.toLowerCase().includes(filterText) ||
-        repo.language?.toLowerCase().includes(filterText) ||
-        repo.description?.toLowerCase().includes(filterText),
-    )
+        (repo.language && repo.language.toLowerCase().includes(filterText)) ||
+        (repo.description && repo.description.toLowerCase().includes(filterText)) ||
+        repo.nameWithOwner.toLowerCase().includes(filterText)
+      );
+    })
     .sort((a, b) => {
-      const x = a[resolvedOrderProp];
-      const y = b[resolvedOrderProp];
+      // Use case-insensitive sorting for string properties
+      let x = a[resolvedOrderProp];
+      let y = b[resolvedOrderProp];
+      if (typeof x === 'string') x = x.toLowerCase();
+      if (typeof y === 'string') y = y.toLowerCase();
       return x < y ? -1 : x > y ? 1 : 0;
     });
   if (isOrderReversed) {
@@ -311,18 +471,18 @@ function renderRepoListHtml() {
     ${repo.description ? `<p>${sanitizeHTML(repo.description)}</p>` : ''}
 
     <p class="stats text-center">
-      <a href="${repo.gitUrl}" title="GitHub Page">
+      <a href="${repo.gitUrl}" title="GitHub Repository">
         <span class="fa fa-github"></span>
       </a>
 
-      <a href="${repo.gitUrl}/stargazers" title="Stargazers">
+      <a href="${repo.gitUrl}/stargazers" title="Community Interest">
         <span class="fa fa-star"></span> ${repo.stars}
       </a>
 
-      <a href="${repo.gitUrl}/network" title="Forks">
+      <a href="${repo.gitUrl}/network" title="Repository Forks">
         <span class="fa fa-code-fork"></span> ${repo.forks}
       </a>
-      <a href="/explore/spack-dependencies/?package=${repo.name}" title="Dependency Network">
+      <a href="/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
         <span class="fa fa-pie-chart"></span>
       </a>
       ${
@@ -337,7 +497,7 @@ function renderRepoListHtml() {
       ${
         repo.cdash
           ? `
-          <a href="${repo.cdash}"><img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20"></img></a>
+          <a href="${repo.cdash}" title="CDash Testing Dashboard"><img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" alt="CDash"></img></a>
       `
           : ''
       }
@@ -363,6 +523,7 @@ function renderRepoListHtml() {
  */
 function onCategoryUpdate(categoryIdx) {
   selectedCategoryIndex = categoryIdx;
+  console.log(`Category updated to index ${categoryIdx}, category: ${catData[categoryIdx]?.title}, repos count: ${topicRepos[categoryIdx]?.length}`);
   const categoryButtons = document.getElementsByClassName('tab');
   for (let i = 0; i < categoryButtons.length; i++) {
     const button = categoryButtons[i];
@@ -370,6 +531,14 @@ function onCategoryUpdate(categoryIdx) {
       button.classList.add('selected-tab');
     } else {
       button.classList.remove('selected-tab');
+    }
+  }
+  // Show welcome text only for "All Software" category (index 0)
+  if (ELEMENT_WELCOME_TEXT) {
+    if (categoryIdx === 0) {
+      ELEMENT_WELCOME_TEXT.classList.remove(HIDDEN_CLASS);
+    } else {
+      ELEMENT_WELCOME_TEXT.classList.add(HIDDEN_CLASS);
     }
   }
   renderRepoListHeaderHtml();
@@ -476,30 +645,52 @@ function setVisibleRepo(newValue, shouldPushState) {
             });
           }
 
-          // map topics to categories
-          fetch(`${window.config.baseUrl}/explore/github-data/intRepos_Topics.json`)
+          // map topics to categories - first try CASS explicit mapping, then fall back to topics
+          fetch(`${window.config.baseUrl}/catalog/cass_category_mapping.json`)
+            .then((res) => res.json())
+            .then((cassMapping) => {
+              // Initialize category arrays with CASS mapping
+              catData.forEach((category) => {
+                const catRepos = [];
+                const cassRepos = cassMapping.data[category.title] || [];
+                // Add repos from CASS explicit mapping
+                cassRepos.forEach((repoName) => {
+                  catRepos.push({ nameWithOwner: repoName });
+                });
+                topicRepos.push(catRepos);
+              });
+
+              // Return promise to continue chain
+              return fetch(`${window.config.baseUrl}/explore/github-data/intRepos_Topics.json`);
+            })
             .then((res) => res.json())
             .then((topicJson) => {
               const reposObj = topicJson.data;
-              catData.forEach((category) => {
-                const catRepos = [];
+              // Add additional repos based on topics (that aren't already in CASS mapping)
+              catData.forEach((category, idx) => {
                 for (let r in reposObj) {
-                  const repo = reposObj[r];
-                  const topics = [];
-                  repo.repositoryTopics.nodes.forEach((node) => {
-                    topics.push(node.topic.name);
-                  });
-                  if (containsTopics(category.topics, topics)) {
-                    catRepos.push({ nameWithOwner: r });
+                  // Check if repo is already in this category from CASS mapping
+                  const alreadyAdded = topicRepos[idx].some(existing => existing.nameWithOwner === r);
+                  if (!alreadyAdded) {
+                    const repo = reposObj[r];
+                    const topics = [];
+                    repo.repositoryTopics.nodes.forEach((node) => {
+                      topics.push(node.topic.name);
+                    });
+                    if (containsTopics(category.topics, topics)) {
+                      topicRepos[idx].push({ nameWithOwner: r });
+                    }
                   }
                 }
-                topicRepos.push(catRepos);
               });
-              fetch(`${window.config.baseUrl}/explore/github-data/intReposInfo.json`)
-                .then((res) => res.json())
-                .then((infoJson) => {
-                  const reposInfoObj = infoJson.data;
-                  for (let repo in reposInfoObj) {
+
+              // Return promise to continue chain
+              return fetch(`${window.config.baseUrl}/explore/github-data/intReposInfo.json`);
+            })
+            .then((res) => res.json())
+            .then((infoJson) => {
+              const reposInfoObj = infoJson.data;
+              for (let repo in reposInfoObj) {
                     //reposInfoObj[repo] is the actual repo object
                     for (let j in topicRepos) {
                       //var category is array of objects
@@ -531,7 +722,6 @@ function setVisibleRepo(newValue, shouldPushState) {
                   }
                   renderRepoListHtml();
                 });
-            });
         });
     }
     showCategoryList();

@@ -9,5 +9,8 @@ gem 'jekyll-coffeescript'
 #[github-pages]
 gem 'jekyll-remote-theme'
 gem 'webrick'
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
 #[github-pages]
 gem 'github-pages', group: :jekyll_plugins

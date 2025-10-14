@@ -1,11 +1,13 @@
 ---
 title: Sustainability Dashboard
 layout: default
+redirect_to: catalog/?category=all
 ---
 
+<meta http-equiv="refresh" content="0; url={{ 'catalog/?category=all' | relative_url }}">
 <script>
   // Redirect homepage to catalog with all software view
-  window.location.href = "{{ 'catalog/?category=all' | relative_url }}";
+  window.location.replace("{{ 'catalog/?category=all' | relative_url }}");
 </script>
 
 <noscript>

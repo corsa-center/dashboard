@@ -1,17 +1,18 @@
 ---
 title: Sustainability Dashboard
 layout: default
-js:
-  - js/utils.js
-  - js/homepage.js
+redirect_to: catalog/?category=all
 ---
 
-<p class="page-title">
-  Welcome to the CORSA sustainability dashboard—a hub for showcasing the sustainability of scientific open source projects.<br />
-  Our <a href="{{ 'catalog/?category=all' | relative_url }}">full catalog</a>
-  is updated regularly as repositories are added or modified.
-</p>
+<meta http-equiv="refresh" content="0; url={{ 'catalog/?category=all' | relative_url }}">
+<script>
+  // Redirect homepage to catalog with all software view
+  window.location.replace("{{ 'catalog/?category=all' | relative_url }}");
+</script>
 
-<section class="flex-container" id="categories">
-  <noscript class="text-center">To see every category, you will need to enable Javascript.</noscript>
-</section>
+<noscript>
+  <p class="page-title">
+    Welcome to the CORSA sustainability dashboard—a hub for showcasing the sustainability of scientific open source projects.<br />
+    Please <a href="{{ 'catalog/?category=all' | relative_url }}">visit our catalog</a> to browse all software.
+  </p>
+</noscript>

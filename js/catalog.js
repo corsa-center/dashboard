@@ -427,13 +427,24 @@ function renderRepoListHtml() {
     return;
   }
   const items = topicRepos[selectedCategoryIndex]
-    .filter(
-      (repo) =>
+    .filter((repo) => {
+      // Filter out repos that haven't been fully populated yet
+      if (!repo.name || !repo.owner) {
+        return false;
+      }
+      // If there's no filter text, include all repos
+      if (!filterText) {
+        return true;
+      }
+      // Otherwise, check if any field matches the filter text
+      return (
         repo.name.toLowerCase().includes(filterText) ||
         repo.owner.toLowerCase().includes(filterText) ||
-        repo.language?.toLowerCase().includes(filterText) ||
-        repo.description?.toLowerCase().includes(filterText),
-    )
+        (repo.language && repo.language.toLowerCase().includes(filterText)) ||
+        (repo.description && repo.description.toLowerCase().includes(filterText)) ||
+        repo.nameWithOwner.toLowerCase().includes(filterText)
+      );
+    })
     .sort((a, b) => {
       // Use case-insensitive sorting for string properties
       let x = a[resolvedOrderProp];

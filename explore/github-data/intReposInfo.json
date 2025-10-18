@@ -14,7 +14,7 @@
                 "totalCount": 745
             },
             "issues_Open": {
-                "totalCount": 29
+                "totalCount": 30
             },
             "languages": {
                 "totalCount": 16
@@ -39,10 +39,10 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 257
+                "totalCount": 256
             },
             "pullRequests_Merged": {
-                "totalCount": 3375
+                "totalCount": 3378
             },
             "pullRequests_Open": {
                 "totalCount": 18
@@ -51,7 +51,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 663
+                "totalCount": 666
             },
             "url": "https://github.com/AMReX-Codes/amrex"
         },
@@ -162,7 +162,7 @@
                 "totalCount": 10
             },
             "stargazers": {
-                "totalCount": 48
+                "totalCount": 49
             },
             "url": "https://github.com/BerkeleyLab/caffeine"
         },
@@ -208,7 +208,7 @@
                 "totalCount": 85
             },
             "pullRequests_Merged": {
-                "totalCount": 1436
+                "totalCount": 1437
             },
             "pullRequests_Open": {
                 "totalCount": 15
@@ -235,7 +235,7 @@
                 "totalCount": 389
             },
             "issues_Open": {
-                "totalCount": 74
+                "totalCount": 76
             },
             "languages": {
                 "totalCount": 8
@@ -266,7 +266,7 @@
                 "totalCount": 499
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 9
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -339,14 +339,14 @@
             },
             "description": "Official HDF5\u00ae Library Repository",
             "forks": {
-                "totalCount": 299
+                "totalCount": 300
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 788
+                "totalCount": 792
             },
             "issues_Open": {
-                "totalCount": 278
+                "totalCount": 279
             },
             "languages": {
                 "totalCount": 18
@@ -358,7 +358,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 101
+                "totalCount": 102
             },
             "name": "hdf5",
             "nameWithOwner": "HDFGroup/hdf5",
@@ -374,16 +374,16 @@
                 "totalCount": 437
             },
             "pullRequests_Merged": {
-                "totalCount": 4348
+                "totalCount": 4355
             },
             "pullRequests_Open": {
-                "totalCount": 13
+                "totalCount": 9
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 813
+                "totalCount": 815
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -487,7 +487,7 @@
                 "totalCount": 443
             },
             "pullRequests_Open": {
-                "totalCount": 3
+                "totalCount": 5
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -595,10 +595,10 @@
                 "totalCount": 149
             },
             "pullRequests_Merged": {
-                "totalCount": 1120
+                "totalCount": 1121
             },
             "pullRequests_Open": {
-                "totalCount": 14
+                "totalCount": 13
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -705,7 +705,7 @@
                 "totalCount": 44
             },
             "pullRequests_Merged": {
-                "totalCount": 677
+                "totalCount": 678
             },
             "pullRequests_Open": {
                 "totalCount": 5
@@ -769,7 +769,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 101
+                "totalCount": 102
             },
             "url": "https://github.com/Parallel-NetCDF/PnetCDF"
         },
@@ -787,7 +787,7 @@
                 "totalCount": 1186
             },
             "issues_Open": {
-                "totalCount": 304
+                "totalCount": 305
             },
             "languages": {
                 "totalCount": 18
@@ -824,7 +824,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 745
+                "totalCount": 747
             },
             "url": "https://github.com/StanfordLegion/legion"
         },
@@ -922,13 +922,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 17
+                "totalCount": 18
             },
             "pullRequests_Merged": {
-                "totalCount": 100
+                "totalCount": 103
             },
             "pullRequests_Open": {
-                "totalCount": 11
+                "totalCount": 9
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -993,56 +993,6 @@
             },
             "url": "https://github.com/anlsys/aml"
         },
-        "cass-community/cass-community.github.io": {
-            "createdAt": "2024-11-24T15:45:53Z",
-            "defaultBranchRef": {
-                "name": "main"
-            },
-            "description": "Developing a new version of the CASS website",
-            "forks": {
-                "totalCount": 16
-            },
-            "homepageUrl": "https://cass.community/",
-            "issues_Closed": {
-                "totalCount": 32
-            },
-            "issues_Open": {
-                "totalCount": 31
-            },
-            "languages": {
-                "totalCount": 3
-            },
-            "licenseInfo": null,
-            "mentionableUsers": {
-                "totalCount": 16
-            },
-            "name": "cass-community.github.io",
-            "nameWithOwner": "cass-community/cass-community.github.io",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/167464256?v=4",
-                "login": "cass-community"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "HTML"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 4
-            },
-            "pullRequests_Merged": {
-                "totalCount": 69
-            },
-            "pullRequests_Open": {
-                "totalCount": 3
-            },
-            "repositoryTopics": {
-                "totalCount": 0
-            },
-            "stargazers": {
-                "totalCount": 0
-            },
-            "url": "https://github.com/cass-community/cass-community.github.io"
-        },
         "darshan-hpc/darshan": {
             "createdAt": "2021-05-12T21:21:37Z",
             "defaultBranchRef": {
@@ -1054,10 +1004,10 @@
             },
             "homepageUrl": null,
             "issues_Closed": {
-                "totalCount": 513
+                "totalCount": 515
             },
             "issues_Open": {
-                "totalCount": 178
+                "totalCount": 177
             },
             "languages": {
                 "totalCount": 14
@@ -1085,10 +1035,10 @@
                 "totalCount": 38
             },
             "pullRequests_Merged": {
-                "totalCount": 324
+                "totalCount": 325
             },
             "pullRequests_Open": {
-                "totalCount": 30
+                "totalCount": 29
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -1149,7 +1099,7 @@
                 "totalCount": 13
             },
             "stargazers": {
-                "totalCount": 298
+                "totalCount": 299
             },
             "url": "https://github.com/deephyper/deephyper"
         },
@@ -1251,7 +1201,7 @@
                 "totalCount": 158
             },
             "pullRequests_Merged": {
-                "totalCount": 1087
+                "totalCount": 1088
             },
             "pullRequests_Open": {
                 "totalCount": 23
@@ -1260,7 +1210,7 @@
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 801
+                "totalCount": 802
             },
             "url": "https://github.com/dyninst/dyninst"
         },
@@ -1389,7 +1339,7 @@
                 "totalCount": 344
             },
             "issues_Open": {
-                "totalCount": 117
+                "totalCount": 118
             },
             "languages": {
                 "totalCount": 7
@@ -1414,7 +1364,7 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 127
+                "totalCount": 128
             },
             "pullRequests_Merged": {
                 "totalCount": 1198
@@ -1437,14 +1387,14 @@
             },
             "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
             "forks": {
-                "totalCount": 222
+                "totalCount": 223
             },
             "homepageUrl": "https://www.llnl.gov/casc/hypre/",
             "issues_Closed": {
                 "totalCount": 479
             },
             "issues_Open": {
-                "totalCount": 126
+                "totalCount": 127
             },
             "languages": {
                 "totalCount": 15
@@ -1475,13 +1425,13 @@
                 "totalCount": 714
             },
             "pullRequests_Open": {
-                "totalCount": 30
+                "totalCount": 32
             },
             "repositoryTopics": {
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 786
+                "totalCount": 788
             },
             "url": "https://github.com/hypre-space/hypre"
         },
@@ -1492,7 +1442,7 @@
             },
             "description": null,
             "forks": {
-                "totalCount": 31
+                "totalCount": 33
             },
             "homepageUrl": null,
             "issues_Closed": {
@@ -1511,7 +1461,7 @@
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             },
             "mentionableUsers": {
-                "totalCount": 37
+                "totalCount": 38
             },
             "name": "magma",
             "nameWithOwner": "icl-utk-edu/magma",
@@ -1527,7 +1477,7 @@
                 "totalCount": 4
             },
             "pullRequests_Merged": {
-                "totalCount": 33
+                "totalCount": 35
             },
             "pullRequests_Open": {
                 "totalCount": 1
@@ -1582,10 +1532,10 @@
                 "totalCount": 37
             },
             "pullRequests_Merged": {
-                "totalCount": 318
+                "totalCount": 319
             },
             "pullRequests_Open": {
-                "totalCount": 9
+                "totalCount": 8
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -1607,10 +1557,10 @@
             },
             "homepageUrl": "https://kokkos.org",
             "issues_Closed": {
-                "totalCount": 2703
+                "totalCount": 2705
             },
             "issues_Open": {
-                "totalCount": 490
+                "totalCount": 489
             },
             "languages": {
                 "totalCount": 10
@@ -1635,19 +1585,19 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 691
+                "totalCount": 694
             },
             "pullRequests_Merged": {
-                "totalCount": 4577
+                "totalCount": 4596
             },
             "pullRequests_Open": {
-                "totalCount": 92
+                "totalCount": 77
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2341
+                "totalCount": 2345
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -1694,7 +1644,7 @@
                 "totalCount": 186
             },
             "pullRequests_Merged": {
-                "totalCount": 1703
+                "totalCount": 1709
             },
             "pullRequests_Open": {
                 "totalCount": 42
@@ -1703,7 +1653,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 360
+                "totalCount": 361
             },
             "url": "https://github.com/kokkos/kokkos-kernels"
         },
@@ -1714,14 +1664,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 12889
+                "totalCount": 12926
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 61283
+                "totalCount": 61363
             },
             "issues_Open": {
-                "totalCount": 26886
+                "totalCount": 26908
             },
             "languages": {
                 "totalCount": 56
@@ -1733,7 +1683,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 5278
+                "totalCount": 5293
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -1746,19 +1696,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 7177
+                "totalCount": 7220
             },
             "pullRequests_Merged": {
-                "totalCount": 61127
+                "totalCount": 61590
             },
             "pullRequests_Open": {
-                "totalCount": 5627
+                "totalCount": 5671
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 34889
+                "totalCount": 34942
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -1769,14 +1719,14 @@
             },
             "description": "Lightweight, general, scalable C++ library for finite element methods",
             "forks": {
-                "totalCount": 544
+                "totalCount": 545
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
-                "totalCount": 2322
+                "totalCount": 2326
             },
             "issues_Open": {
-                "totalCount": 93
+                "totalCount": 91
             },
             "languages": {
                 "totalCount": 10
@@ -1801,19 +1751,19 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 321
+                "totalCount": 328
             },
             "pullRequests_Merged": {
-                "totalCount": 1856
+                "totalCount": 1858
             },
             "pullRequests_Open": {
-                "totalCount": 201
+                "totalCount": 196
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1989
+                "totalCount": 1995
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -1828,10 +1778,10 @@
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
-                "totalCount": 3108
+                "totalCount": 3110
             },
             "issues_Open": {
-                "totalCount": 723
+                "totalCount": 721
             },
             "languages": {
                 "totalCount": 13
@@ -1843,7 +1793,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 311
+                "totalCount": 312
             },
             "name": "ompi",
             "nameWithOwner": "open-mpi/ompi",
@@ -1856,19 +1806,19 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 1029
+                "totalCount": 1031
             },
             "pullRequests_Merged": {
-                "totalCount": 8467
+                "totalCount": 8478
             },
             "pullRequests_Open": {
-                "totalCount": 102
+                "totalCount": 101
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2428
+                "totalCount": 2431
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -1884,10 +1834,10 @@
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
-                "totalCount": 1152
+                "totalCount": 1153
             },
             "issues_Open": {
-                "totalCount": 55
+                "totalCount": 54
             },
             "languages": {
                 "totalCount": 14
@@ -1912,10 +1862,10 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 612
+                "totalCount": 613
             },
             "pullRequests_Merged": {
-                "totalCount": 2782
+                "totalCount": 2785
             },
             "pullRequests_Open": {
                 "totalCount": 14
@@ -2049,10 +1999,10 @@
             },
             "homepageUrl": "http://www.mpich.org",
             "issues_Closed": {
-                "totalCount": 3366
+                "totalCount": 3367
             },
             "issues_Open": {
-                "totalCount": 222
+                "totalCount": 221
             },
             "languages": {
                 "totalCount": 14
@@ -2077,13 +2027,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 717
+                "totalCount": 719
             },
             "pullRequests_Merged": {
-                "totalCount": 3198
+                "totalCount": 3209
             },
             "pullRequests_Open": {
-                "totalCount": 82
+                "totalCount": 73
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2136,10 +2086,10 @@
                 "totalCount": 24
             },
             "pullRequests_Merged": {
-                "totalCount": 339
+                "totalCount": 341
             },
             "pullRequests_Open": {
-                "totalCount": 4
+                "totalCount": 3
             },
             "repositoryTopics": {
                 "totalCount": 3
@@ -2157,14 +2107,14 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2291
+                "totalCount": 2290
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7566
+                "totalCount": 7576
             },
             "issues_Open": {
-                "totalCount": 1476
+                "totalCount": 1469
             },
             "languages": {
                 "totalCount": 13
@@ -2189,19 +2139,19 @@
                 "name": "Python"
             },
             "pullRequests_Closed": {
-                "totalCount": 4855
+                "totalCount": 4860
             },
             "pullRequests_Merged": {
-                "totalCount": 36557
+                "totalCount": 36560
             },
             "pullRequests_Open": {
-                "totalCount": 532
+                "totalCount": 528
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 4818
+                "totalCount": 4825
             },
             "url": "https://github.com/spack/spack"
         },
@@ -2217,10 +2167,10 @@
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
-                "totalCount": 5257
+                "totalCount": 5260
             },
             "issues_Open": {
-                "totalCount": 273
+                "totalCount": 271
             },
             "languages": {
                 "totalCount": 36
@@ -2245,19 +2195,19 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 1132
+                "totalCount": 1133
             },
             "pullRequests_Merged": {
-                "totalCount": 7759
+                "totalCount": 7788
             },
             "pullRequests_Open": {
-                "totalCount": 75
+                "totalCount": 61
             },
             "repositoryTopics": {
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 1320
+                "totalCount": 1323
             },
             "url": "https://github.com/trilinos/Trilinos"
         },
@@ -2276,7 +2226,7 @@
                 "totalCount": 3688
             },
             "issues_Open": {
-                "totalCount": 1914
+                "totalCount": 1916
             },
             "languages": {
                 "totalCount": 23
@@ -2304,10 +2254,10 @@
                 "totalCount": 139
             },
             "pullRequests_Merged": {
-                "totalCount": 3311
+                "totalCount": 3316
             },
             "pullRequests_Open": {
-                "totalCount": 15
+                "totalCount": 18
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -2482,54 +2432,6 @@
                 "totalCount": 32
             },
             "url": "https://github.com/xiaoyeli/superlu_mt"
-        },
-        "xsdk-project/xsdk-issues": {
-            "createdAt": "2017-03-21T19:02:58Z",
-            "defaultBranchRef": {
-                "name": "master"
-            },
-            "description": "A repository under which GitHub issues not related to a specific xSDK repo can be filed.",
-            "forks": {
-                "totalCount": 0
-            },
-            "homepageUrl": null,
-            "issues_Closed": {
-                "totalCount": 262
-            },
-            "issues_Open": {
-                "totalCount": 15
-            },
-            "languages": {
-                "totalCount": 0
-            },
-            "licenseInfo": null,
-            "mentionableUsers": {
-                "totalCount": 22
-            },
-            "name": "xsdk-issues",
-            "nameWithOwner": "xsdk-project/xsdk-issues",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/14932214?v=4",
-                "login": "xsdk-project"
-            },
-            "parent": null,
-            "primaryLanguage": null,
-            "pullRequests_Closed": {
-                "totalCount": 0
-            },
-            "pullRequests_Merged": {
-                "totalCount": 0
-            },
-            "pullRequests_Open": {
-                "totalCount": 0
-            },
-            "repositoryTopics": {
-                "totalCount": 0
-            },
-            "stargazers": {
-                "totalCount": 7
-            },
-            "url": "https://github.com/xsdk-project/xsdk-issues"
         }
     }
 }

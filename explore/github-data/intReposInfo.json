@@ -343,10 +343,10 @@
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 792
+                "totalCount": 794
             },
             "issues_Open": {
-                "totalCount": 280
+                "totalCount": 278
             },
             "languages": {
                 "totalCount": 18
@@ -374,10 +374,10 @@
                 "totalCount": 437
             },
             "pullRequests_Merged": {
-                "totalCount": 4355
+                "totalCount": 4356
             },
             "pullRequests_Open": {
-                "totalCount": 9
+                "totalCount": 12
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -487,13 +487,13 @@
                 "totalCount": 444
             },
             "pullRequests_Open": {
-                "totalCount": 4
+                "totalCount": 5
             },
             "repositoryTopics": {
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 603
+                "totalCount": 605
             },
             "url": "https://github.com/LLNL/sundials"
         },
@@ -1391,10 +1391,10 @@
             },
             "homepageUrl": "https://www.llnl.gov/casc/hypre/",
             "issues_Closed": {
-                "totalCount": 479
+                "totalCount": 481
             },
             "issues_Open": {
-                "totalCount": 127
+                "totalCount": 125
             },
             "languages": {
                 "totalCount": 15
@@ -1406,7 +1406,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 55
+                "totalCount": 56
             },
             "name": "hypre",
             "nameWithOwner": "hypre-space/hypre",
@@ -1422,16 +1422,16 @@
                 "totalCount": 54
             },
             "pullRequests_Merged": {
-                "totalCount": 714
+                "totalCount": 716
             },
             "pullRequests_Open": {
-                "totalCount": 33
+                "totalCount": 31
             },
             "repositoryTopics": {
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 788
+                "totalCount": 789
             },
             "url": "https://github.com/hypre-space/hypre"
         },
@@ -1541,7 +1541,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 181
+                "totalCount": 183
             },
             "url": "https://github.com/icl-utk-edu/papi"
         },
@@ -1553,7 +1553,7 @@
             },
             "description": "Kokkos C++ Performance Portability Programming Ecosystem: The Programming Model - Parallel Execution and Memory Abstraction",
             "forks": {
-                "totalCount": 455
+                "totalCount": 454
             },
             "homepageUrl": "https://kokkos.org",
             "issues_Closed": {
@@ -1591,13 +1591,13 @@
                 "totalCount": 4598
             },
             "pullRequests_Open": {
-                "totalCount": 76
+                "totalCount": 80
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2346
+                "totalCount": 2347
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -1664,14 +1664,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 12931
+                "totalCount": 12938
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 61383
+                "totalCount": 61395
             },
             "issues_Open": {
-                "totalCount": 26907
+                "totalCount": 26913
             },
             "languages": {
                 "totalCount": 56
@@ -1696,19 +1696,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 7228
+                "totalCount": 7231
             },
             "pullRequests_Merged": {
-                "totalCount": 61627
+                "totalCount": 61660
             },
             "pullRequests_Open": {
-                "totalCount": 5709
+                "totalCount": 5706
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 34954
+                "totalCount": 34968
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -1726,7 +1726,7 @@
                 "totalCount": 2327
             },
             "issues_Open": {
-                "totalCount": 90
+                "totalCount": 91
             },
             "languages": {
                 "totalCount": 10
@@ -1763,7 +1763,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1997
+                "totalCount": 1999
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -1818,7 +1818,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2434
+                "totalCount": 2435
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -1834,10 +1834,10 @@
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
-                "totalCount": 1153
+                "totalCount": 1154
             },
             "issues_Open": {
-                "totalCount": 54
+                "totalCount": 53
             },
             "languages": {
                 "totalCount": 14
@@ -1929,7 +1929,7 @@
                 "totalCount": 1
             },
             "stargazers": {
-                "totalCount": 482
+                "totalCount": 484
             },
             "url": "https://github.com/petsc/petsc"
         },
@@ -1984,7 +1984,7 @@
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 179
+                "totalCount": 180
             },
             "url": "https://github.com/pghysels/STRUMPACK"
         },
@@ -2033,7 +2033,7 @@
                 "totalCount": 3209
             },
             "pullRequests_Open": {
-                "totalCount": 73
+                "totalCount": 74
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2095,7 +2095,7 @@
                 "totalCount": 3
             },
             "stargazers": {
-                "totalCount": 310
+                "totalCount": 311
             },
             "url": "https://github.com/sandialabs/Albany"
         },
@@ -2111,10 +2111,10 @@
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7576
+                "totalCount": 7582
             },
             "issues_Open": {
-                "totalCount": 1469
+                "totalCount": 1463
             },
             "languages": {
                 "totalCount": 13
@@ -2139,19 +2139,19 @@
                 "name": "Python"
             },
             "pullRequests_Closed": {
-                "totalCount": 4860
+                "totalCount": 4861
             },
             "pullRequests_Merged": {
-                "totalCount": 36561
+                "totalCount": 36563
             },
             "pullRequests_Open": {
-                "totalCount": 529
+                "totalCount": 526
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 4826
+                "totalCount": 4829
             },
             "url": "https://github.com/spack/spack"
         },
@@ -2385,7 +2385,7 @@
             },
             "description": null,
             "forks": {
-                "totalCount": 15
+                "totalCount": 16
             },
             "homepageUrl": null,
             "issues_Closed": {
@@ -2429,7 +2429,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 32
+                "totalCount": 33
             },
             "url": "https://github.com/xiaoyeli/superlu_mt"
         }

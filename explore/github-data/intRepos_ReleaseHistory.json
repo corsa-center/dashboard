@@ -1527,7 +1527,13 @@
         },
         "darshan-hpc/darshan": {
             "releases": {
-                "nodes": []
+                "nodes": [
+                    {
+                        "name": "3.5.0",
+                        "publishedAt": "2025-10-20T19:56:35Z",
+                        "tagName": "3.5.0"
+                    }
+                ]
             }
         },
         "deephyper/deephyper": {

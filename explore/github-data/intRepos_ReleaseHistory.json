@@ -2315,6 +2315,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "LLVM 21.1.4",
+                        "publishedAt": "2025-10-21T08:27:15Z",
+                        "tagName": "llvmorg-21.1.4"
+                    },
+                    {
                         "name": "LLVM 21.1.3",
                         "publishedAt": "2025-10-07T19:03:53Z",
                         "tagName": "llvmorg-21.1.3"

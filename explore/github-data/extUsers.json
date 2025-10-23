@@ -11018,6 +11018,16 @@
             "login": "NexMing",
             "name": "Ming Yan"
         },
+        "NexusXe": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/21059358?u=bfcd8c4361b9ad25cc0f139660a10211d816e252&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "NexusXe",
+            "name": null
+        },
         "Nicholas-Baron": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/35079404?u=dc434f346d1f842879b5caf579f0eb04deb873da&v=4",
             "contributedLabRepositories": {
@@ -18683,14 +18693,14 @@
             "login": "ahmedcharles",
             "name": "Ahmed Charles"
         },
-        "ahmednour25689": {
+        "ahmednoursphinx": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/16539932?v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
                 ]
             },
-            "login": "ahmednour25689",
+            "login": "ahmednoursphinx",
             "name": "Ahmed Nour"
         },
         "ahmedsabie": {
@@ -34356,14 +34366,14 @@
             "name": null
         },
         "dmorone": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/6492953?v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/6492953?u=803a779b6ac8a386f447af0e1f6ef37c9704f514&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "spack/spack"
                 ]
             },
             "login": "dmorone",
-            "name": null
+            "name": "Diego Morone"
         },
         "dmpolukhin": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/34227995?u=ee9d623a7b0fd5b90c14c46aeca217d373ee32fb&v=4",
@@ -78633,7 +78643,8 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/109235650?u=bf211c555e09a4d8630db9078da4faae1edb83d4&v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "AMReX-Codes/amrex"
+                    "AMReX-Codes/amrex",
+                    "mfem/mfem"
                 ]
             },
             "login": "skang67",
@@ -82804,16 +82815,6 @@
             },
             "login": "tentzen",
             "name": null
-        },
-        "teojgo": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/20381005?v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "spack/spack"
-                ]
-            },
-            "login": "teojgo",
-            "name": "Theofilos Manitaras"
         },
         "teonnik": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/8088032?u=56e18f565e727e5134c0c4e7a953e96b97a9b46f&v=4",

@@ -1540,6 +1540,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "0.11.4",
+                        "publishedAt": "2025-10-24T06:43:09Z",
+                        "tagName": "0.11.4"
+                    },
+                    {
                         "name": "0.11.3",
                         "publishedAt": "2025-09-24T16:16:06Z",
                         "tagName": "0.11.3"

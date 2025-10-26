@@ -303,7 +303,12 @@
         },
         "Mattraks/delete-workflow-runs": {
             "languages": {
-                "nodes": []
+                "nodes": [
+                    {
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
+                    }
+                ]
             },
             "name": "delete-workflow-runs",
             "nameWithOwner": "Mattraks/delete-workflow-runs",

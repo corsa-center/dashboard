@@ -4,7 +4,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11440987
+                        "size": 11442885
                     },
                     {
                         "size": 715943
@@ -119,7 +119,7 @@
                     }
                 ],
                 "totalCount": 16,
-                "totalSize": 12750718
+                "totalSize": 12752616
             }
         },
         "Alpine-DAV/ascent": {
@@ -848,7 +848,7 @@
                         "size": 1105017
                     },
                     {
-                        "size": 1017098
+                        "size": 1017191
                     },
                     {
                         "size": 117380
@@ -894,7 +894,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 3420048
+                "totalSize": 3420141
             }
         },
         "OpenMP-Validation-and-Verification/OpenMP_VV": {
@@ -1691,13 +1691,13 @@
                         "size": 12089249
                     },
                     {
-                        "size": 5364633
+                        "size": 5372280
                     },
                     {
                         "size": 513068
                     },
                     {
-                        "size": 138471
+                        "size": 138828
                     },
                     {
                         "size": 64176
@@ -1768,7 +1768,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18235410
+                "totalSize": 18243414
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2450,16 +2450,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 671913649
+                        "size": 672030211
                     },
                     {
-                        "size": 507343805
+                        "size": 507350887
                     },
                     {
-                        "size": 213426275
+                        "size": 213425804
                     },
                     {
-                        "size": 157585893
+                        "size": 157586172
                     },
                     {
                         "size": 22969180
@@ -2474,10 +2474,10 @@
                         "size": 4806342
                     },
                     {
-                        "size": 4326394
+                        "size": 4325740
                     },
                     {
-                        "size": 4287979
+                        "size": 4289691
                     },
                     {
                         "size": 1978997
@@ -2752,17 +2752,17 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1623014140
+                "totalSize": 1623138650
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 18396230
+                        "size": 18405314
                     },
                     {
-                        "size": 286088
+                        "size": 287525
                     },
                     {
                         "size": 158374
@@ -2832,14 +2832,14 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19016998
+                "totalSize": 19027519
             }
         },
         "open-mpi/ompi": {
             "languages": {
                 "edges": [
                     {
-                        "size": 21941259
+                        "size": 21940742
                     },
                     {
                         "size": 936172
@@ -2933,7 +2933,7 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 25210100
+                "totalSize": 25209583
             }
         },
         "ornladios/ADIOS2": {

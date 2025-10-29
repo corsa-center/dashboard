@@ -5687,13 +5687,6 @@
                                 },
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "dm-tree",
-                                    "repository": {
-                                        "nameWithOwner": "google-deepmind/tree"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "jinja2",
                                     "repository": {
                                         "nameWithOwner": "pallets/jinja"

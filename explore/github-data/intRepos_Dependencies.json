@@ -2039,6 +2039,26 @@
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
                                     }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "vmactions/freebsd-vm",
+                                    "repository": {
+                                        "nameWithOwner": "vmactions/freebsd-vm"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
                                 }
                             ]
                         }
@@ -2325,6 +2345,26 @@
                                     "packageName": "jlumbroso/free-disk-space",
                                     "repository": {
                                         "nameWithOwner": "jlumbroso/free-disk-space"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "vmactions/openbsd-vm",
+                                    "repository": {
+                                        "nameWithOwner": "vmactions/openbsd-vm"
                                     }
                                 }
                             ]
@@ -6092,6 +6132,19 @@
         "dyninst/dyninst": {
             "dependencyGraphManifests": {
                 "nodes": [
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                }
+                            ]
+                        }
+                    },
                     {
                         "dependencies": {
                             "nodes": [

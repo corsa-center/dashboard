@@ -4817,6 +4817,38 @@
                 "login": "vega"
             }
         },
+        "vmactions/freebsd-vm": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "freebsd-vm",
+            "nameWithOwner": "vmactions/freebsd-vm",
+            "owner": {
+                "isVerified": true,
+                "login": "vmactions"
+            }
+        },
+        "vmactions/openbsd-vm": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "openbsd-vm",
+            "nameWithOwner": "vmactions/openbsd-vm",
+            "owner": {
+                "isVerified": true,
+                "login": "vmactions"
+            }
+        },
         "wbolster/qualname": {
             "languages": {
                 "nodes": [

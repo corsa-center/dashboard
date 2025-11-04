@@ -4,6 +4,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "AMReX 25.11",
+                        "publishedAt": "2025-11-03T17:13:36Z",
+                        "tagName": "25.11"
+                    },
+                    {
                         "name": "AMReX 25.10",
                         "publishedAt": "2025-09-30T17:03:34Z",
                         "tagName": "25.10"

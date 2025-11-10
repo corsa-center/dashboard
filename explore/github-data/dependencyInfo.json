@@ -1139,6 +1139,22 @@
                 "login": "conda-incubator"
             }
         },
+        "coveragepy/coveragepy": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "coveragepy",
+            "nameWithOwner": "coveragepy/coveragepy",
+            "owner": {
+                "isVerified": false,
+                "login": "coveragepy"
+            }
+        },
         "crate-ci/typos": {
             "languages": {
                 "nodes": [
@@ -2665,21 +2681,6 @@
             "owner": {
                 "isVerified": true,
                 "login": "near"
-            }
-        },
-        "nedbat/coveragepy": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "coveragepy",
-            "nameWithOwner": "nedbat/coveragepy",
-            "owner": {
-                "login": "nedbat"
             }
         },
         "netromdk/vermin": {

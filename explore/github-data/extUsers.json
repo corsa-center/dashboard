@@ -13207,7 +13207,7 @@
             "name": "\u00c1lvaro S\u00e1nchez Villar"
         },
         "SAtacker": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/61797109?v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/61797109?u=98c776b77ce45097b603d1b69317425de589a64c&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -14183,7 +14183,7 @@
             "name": "Evie \u200bSnuggle"
         },
         "Sockke": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/44406380?u=d713b38d430c133f3a04d2914572ed04f2a717ef&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/44406380?u=657cc24145864b9e01b768eaba45156e2fe30205&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -15029,6 +15029,16 @@
             },
             "login": "Teemperor",
             "name": "Raphael Isemann"
+        },
+        "TelGome": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/93700071?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "TelGome",
+            "name": null
         },
         "Temperature-block": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/102174059?v=4",
@@ -73808,6 +73818,26 @@
             "login": "rivis",
             "name": "KAWASHIMA Takahiro"
         },
+        "riyaz86a": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/69200125?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "riyaz86a",
+            "name": "Riyaz Ahmad"
+        },
+        "riyazahmad86": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/226453165?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "riyazahmad86",
+            "name": null
+        },
         "rj-jesus": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/11319180?u=6c906930749437145df1f638dfe4c8c573a02d80&v=4",
             "contributedLabRepositories": {
@@ -91397,6 +91427,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/16946732?u=ae146fa0586315b4bc7f5e8b717abbf1ee7e6b33&v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "pmodels/mpich",
                     "spack/spack"
                 ]
             },

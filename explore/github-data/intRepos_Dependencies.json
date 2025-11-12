@@ -7693,6 +7693,13 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "accessible-pygments",
+                                    "repository": {
+                                        "nameWithOwner": "Quansight-Labs/accessible-pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "alabaster",
                                     "repository": {
                                         "nameWithOwner": "sphinx-doc/alabaster"
@@ -7837,6 +7844,11 @@
                                     "repository": {
                                         "nameWithOwner": "psf/requests"
                                     }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "roman-numerals-py",
+                                    "repository": null
                                 },
                                 {
                                     "packageManager": "PIP",

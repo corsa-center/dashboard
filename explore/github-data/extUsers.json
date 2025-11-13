@@ -2237,6 +2237,16 @@
             "login": "BRUCE11111",
             "name": "xiaohui1.xu"
         },
+        "BStott6": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/242007977?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "BStott6",
+            "name": "Benjamin Stott"
+        },
         "BaLiKfromUA": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/30576627?u=df48d757a5f356c469591a1a7f044fd9a38e2875&v=4",
             "contributedLabRepositories": {
@@ -12933,7 +12943,7 @@
             "name": null
         },
         "Ris-Bali": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/81592570?u=2cea0d198615271023d0f13e7c2cff53f17fa68c&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/81592570?u=a50c89976244888ab2c278a9f21871286fbfd4df&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -13513,7 +13523,8 @@
                 "nodes": [
                     "hypre-space/hypre",
                     "icl-utk-edu/magma",
-                    "mfem/mfem"
+                    "mfem/mfem",
+                    "spack/spack"
                 ]
             },
             "login": "Sbozzolo",
@@ -34645,7 +34656,7 @@
             "name": null
         },
         "dnbln": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/39565527?u=87851904048eacd02a0c49069b2892061afbab3b&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/39565527?u=0215b6fc9725e042be7ffdb13daf1238f65e5f76&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -34702,7 +34713,7 @@
                 ]
             },
             "login": "dobbelaj-snps",
-            "name": null
+            "name": "Jeroen Dobbelaere"
         },
         "dobios": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/22934557?u=0536543c9dcee3fc98d99e8681921b3bba815489&v=4",
@@ -84691,7 +84702,7 @@
                 ]
             },
             "login": "tltao",
-            "name": null
+            "name": "Tony Tao"
         },
         "tmadlener": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/16774861?v=4",

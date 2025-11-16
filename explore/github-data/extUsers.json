@@ -26611,7 +26611,7 @@
             "name": "Brad Smith"
         },
         "bradenhelmer": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/77756408?u=ff31dea756789ec9052f794a93a40a849c9ec19f&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/77756408?u=2bb281c176cf6e4bdf5d857a5ea485e3c260f4cd&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -30226,6 +30226,16 @@
             },
             "login": "clin111",
             "name": "Chang Lin"
+        },
+        "clingfei": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/53817093?u=71a0a3b417c1b051cef10953d93304aa454870c1&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "clingfei",
+            "name": "clf"
         },
         "clintonstimpson": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1463430?v=4",
@@ -65799,6 +65809,7 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "LLNL/zfp",
+                    "llvm/llvm-project",
                     "spack/spack"
                 ]
             },

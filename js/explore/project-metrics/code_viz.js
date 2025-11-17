@@ -511,18 +511,10 @@ function displayFileInfo(containerId) {
   var legendName = document.createElement('p');
   legendName.textContent = 'Name';
 
-  var legendType = document.createElement('p');
-  legendType.textContent = 'Type';
-
-  var legendLocation = document.createElement('p');
-  legendLocation.textContent = 'Location';
-
   var legendCC = document.createElement('p');
   legendCC.textContent = 'Average Congitive-Complexity';
 
   metricLegend.appendChild(legendName);
-  metricLegend.appendChild(legendType);
-  metricLegend.appendChild(legendLocation);
   metricLegend.appendChild(legendCC);
 
   metricBox.appendChild(metricLegend);
@@ -573,10 +565,7 @@ function displayFileInfo(containerId) {
     const name = document.createElement('p');
     name.textContent = location;
     codeCollapsible.appendChild(name);
-    // specify type
-    const type = document.createElement('p');
-    type.textContent = 'file';
-    codeCollapsible.appendChild(type);
+
     // specify location
     // const loc = document.createElement('p');
     // loc.textContent = item['location'];
@@ -966,9 +955,6 @@ function displayFunctionInfo(containerId) {
   var legendName = document.createElement('p');
   legendName.textContent = 'Name';
 
-  var legendType = document.createElement('p');
-  legendType.textContent = 'Type';
-
   var legendLocation = document.createElement('p');
   legendLocation.textContent = 'Location';
 
@@ -976,7 +962,6 @@ function displayFunctionInfo(containerId) {
   legendCC.textContent = 'Congitive-Complexity';
 
   metricLegend.appendChild(legendName);
-  metricLegend.appendChild(legendType);
   metricLegend.appendChild(legendLocation);
   metricLegend.appendChild(legendCC);
 
@@ -1016,10 +1001,7 @@ function displayFunctionInfo(containerId) {
     const name = document.createElement('p');
     name.textContent = item.name;
     codeCollapsible.appendChild(name);
-    // specify type
-    const type = document.createElement('p');
-    type.textContent = "function";
-    codeCollapsible.appendChild(type);
+
     // specify location
     const loc = document.createElement('p');
     loc.textContent = item.location;

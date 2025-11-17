@@ -818,17 +818,65 @@ blockquote {
  * Styled as a clean, interactive bar or button.
  */
 .code-info-toggle {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    /* Defines 4 columns:
+     1. [Text 1] (1-part share, shrinks to 0 if empty)
+     2. [Path]    (2-part share, shrinks to 0 if empty)
+     3. [Number]  (Fixed 6em width)
+     4. [Icon]    (Fixed 2em width)
+    */
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) 6em 2em;
+    gap: 12px;
     
+    /* Other styles */
+    align-items: center;
     border: 1px solid #ccc;
-    border-radius: 6px; /* Standard rounded rectangle */
+    border-radius: 6px;
     padding: 12px 16px;
     cursor: pointer;
+    width: 100%;
     
-    /* Use transitions for smooth hover effects */
-    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    /* This is critical to prevent the button from breaking */
+    overflow: hidden; 
+}
+
+/* --- Child Element Styling --- */
+
+/* Default for all <p>s: truncate, etc. */
+.code-info-toggle p {
+    margin: 0;
+    text-align: left;
+    
+    /* Truncation Rules */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+/* 1st <p> (Text 1 OR 2-element Path) goes in col 1. */
+.code-info-toggle p:first-of-type {
+    grid-column: 1;
+}
+
+/* 2nd <p> (Path in 3-element case) goes in col 2. */
+.code-info-toggle p:nth-of-type(2) {
+    grid-column: 2;
+}
+
+/* LAST <p> (The Number):
+   Always goes in column 3. */
+.code-info-toggle p:last-of-type {
+    grid-column: 3;
+    text-align: right;
+    overflow: visible; /* Don't truncate number */
+    white-space: normal;
+}
+
+/* <i> (The Icon):
+   Always goes in column 4. */
+.code-info-toggle i {
+    grid-column: 4;
+    justify-self: center;
 }
 
 .code-info-toggle:hover {

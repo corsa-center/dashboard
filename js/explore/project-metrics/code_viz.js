@@ -1,4 +1,3 @@
-import { MetricParser } from './tidy-metrics-viz.js';
 
 // File upload interfaces
 function createFileUploadUI(UIRootElement) {
@@ -10,28 +9,30 @@ const dropZone = document.createElement('label');
   const fi = document.createElement('input');
   fi.type = 'file';
   fi.id = 'fileInput';
-  fi.accept = '.json'; // Only allow json files
+  fi.accept = '.json,.out,.txt'; // Only allow json files
   fi.classList.add('drop-zone__input');
 
   // The text prompt inside the drop zone
   const promptText = document.createElement('span');
   promptText.classList.add('drop-zone__prompt');
-  promptText.textContent = 'Drag & drop a JSON file here, or click to select';
+  promptText.textContent = 'Drag & drop a clang-tidy output file here, or click to select';
 
   // Function to process the selected/dropped file (avoids code duplication)
   const processFile = (file) => {
-    if (file && file.type === "application/json") {
+    console.log(file.type);
+    if (file) {
       const reader = new FileReader();
       reader.onload = (e) => {
         try {
           const content = e.target.result;
-          let metricContent = new MetricParser().parse(content);
-          parseMetricJson(metricContent);
+          let metricContent = new MetricParser()
+          metricContent.parse(content);
+          parseMetricJson(metricContent.metrics);
           displayMetrics('metric-container');
           promptText.textContent = `✅ Loaded: ${file.name}`; // Success feedback
         } catch (error) {
-          console.error("Error parsing JSON:", error);
-          promptText.textContent = `❌ Error: Invalid JSON file. Try again.`;
+          console.error("Error parsing file:", error);
+          promptText.textContent = `❌ Error: Invalid file. Try again.`;
         }
       };
       reader.onerror = (e) => {
@@ -40,7 +41,7 @@ const dropZone = document.createElement('label');
       };
       reader.readAsText(file);
     } else if (file) {
-      promptText.textContent = `❌ Error: Please upload a JSON file.`;
+      promptText.textContent = `❌ Error: Please upload a valid file.`;
     }
   };
 
@@ -166,12 +167,12 @@ query {
 }
 
 
-async function getMetricsJson(rsp, cdash, bid) {
+async function getMetricsData(rsp, cdash, bid) {
   const response = await fetch(cdash.protocol + "//" + cdash.hostname + "/build" + `/${bid}` + '/file/' + getBuildNodeId(rsp));
   if (!response.ok) {
     throw new Error(`HTTP Error! status ${response.status}`);
   }
-  const data = await response.json();
+  const data = await response.text();
   return data;
 }
 
@@ -187,9 +188,11 @@ async function getCDashBuildContext(cdashUrl) {
   const rsp = await getFileId(url, bid);
   // Function to fetch a file from an API endpoint
   try {
-    let codeData = await getMetricsJson(rsp, cdashUrl, bid);
+    let unparsedCodeData = await getMetricsData(rsp, cdashUrl, bid);
+    let metricContent = new MetricParser()
+    metricContent.parse(unparsedCodeData);
     // maintain mirror of data to manipulate
-    parseMetricJson(codeData);
+    parseMetricJson(metricContent.metrics);
     displayMetrics('metric-container');
   } catch (error) {
     console.error('Error fetching file:', error);
@@ -983,7 +986,7 @@ function displayFunctionInfo(containerId) {
 ////////////# INDIVIDUAL METRICS #///////////////////
   function functionIsFiltered(func) {
     const re = new RegExp(RegExp.escape(currentFilterParam));
-    if(func["name"].search(re) || func["code-line"].search(re)) {
+    if(func.name.search(re) || func.signature.search(re)) {
       return filterExclude;
     }
     return !filterExclude;
@@ -994,7 +997,7 @@ function displayFunctionInfo(containerId) {
     if (functionIsFiltered(item)) {
       return;
     }
-    var scoreColor = getColor("#00FF00", "#FF0000", 0, 100, item["cognitive-complexity"]);
+    var scoreColor = getColor("#00FF00", "#FF0000", 0, 100, item.cognitive_complexity);
 
     // Create collapsible toggle for each entry
     const codeCollapsible = document.createElement('button');
@@ -1011,19 +1014,19 @@ function displayFunctionInfo(containerId) {
     })
     // specify name
     const name = document.createElement('p');
-    name.textContent = item['name'];
+    name.textContent = item.name;
     codeCollapsible.appendChild(name);
     // specify type
     const type = document.createElement('p');
-    type.textContent = item['type'];
+    type.textContent = "function";
     codeCollapsible.appendChild(type);
     // specify location
     const loc = document.createElement('p');
-    loc.textContent = item['location'];
+    loc.textContent = item.location;
     codeCollapsible.appendChild(loc);
     // specify cc
     const cc = document.createElement('p');
-    cc.textContent = item['cognitive-complexity'];
+    cc.textContent = item.cognitive_complexity
     codeCollapsible.appendChild(cc);
 
     codeCollapsible.classList.add('code-info-toggle');
@@ -1045,23 +1048,20 @@ function displayFunctionInfo(containerId) {
     codeElement.style.display = "none";
 
     const codeLineElement = document.createElement('pre');
-    codeLineElement.textContent = item["code-line"];
+    codeLineElement.textContent = item.signature;
 
     codeLineElement.style.color = scoreColor;
     const codeLineElementRef = document.createElement('a');
-    var href = item["location"].split(":").slice(0,1).join("#");
+    var href = item.location.split(":").slice(0,1).join("#");
     codeLineElementRef.href = urlBase + href;
     codeLineElementRef.appendChild(codeLineElement);
     codeElement.appendChild(codeLineElementRef);
     const statsElement = document.createElement('div');
     statsElement.classList.add('code-stats');
-    const skipped_stats = new Set(['name', 'type', 'location', 'cognitive-complexity']);
+    const skipped_stats = new Set(['name', 'location', 'cognitive-complexity']);
     for (const key in item) {
       if (!skipped_stats.has(key)) {
         let name = key;
-        if (key == 'code-line') {
-          name = 'signature'
-        }
         const listItem = document.createElement('div');
         listItem.classList.add('info-box');
         const header = document.createElement('h3');
@@ -1083,111 +1083,108 @@ function displayFunctionInfo(containerId) {
 }
 
 // Parse file upload
+function extractPerFileMetrics(data, file) {
+  // File metrics
+  per_file_metrics[file].totalLoc += data.lines;
+  per_file_metrics[file].totalScore += data.cognitive_complexity
+
+  var cogComplexity = data.cognitive_complexity;
+  if (cogComplexity > CC_THRESHOLD) {
+    per_file_metrics[file]["numberOver"] += 1;
+    methodsAboveMargin += 1;
+  }
+  if (cogComplexity > per_file_metrics[file].worstScore.score) {
+    per_file_metrics[file].worstScore.score = cogComplexity;
+    per_file_metrics[file].worstScore.method = data.name;
+  }
+  if (cogComplexity < per_file_metrics[file].bestScore.score) {
+    per_file_metrics[file].bestScore.score = cogComplexity;
+    per_file_metrics[file].bestScore.method = data.name;
+  }
+}
+
 function parseMetricJson(data) {
-  var parsedCodeData = [];
-  for(var item of data) {
-    if ("cognitive-complexity" in item) {
-      totalScore += item["cognitive-complexity"];
-      var location = item["location"].split(":")[0];
-      seenFiles.add(location);
-  
-      // Add or update file info for file view
-      if (!(location in per_file_metrics)) {
-        per_file_metrics[location] = {
-          "items" : [],
-          "methodCount": 0,
-          "numberOver": 0,
-          "worstScore": {
-            'score': 0,
-            'method': ''
-          },
-          "bestScore" : {
-            'score': 9999,
-            'method': ''
-          },
-          "totalScore" : 0,
-          "totalLoc": 0,
-          "averageScore": 0,
-          "averageLoc": 0,
-        }
-      }
-      // File metrics
-      per_file_metrics[location]["items"].push(item)
-      per_file_metrics[location].totalLoc += item['num-lines'];
-      per_file_metrics[location].totalScore += item['cognitive-complexity']
-
-      var cogComplexity = item["cognitive-complexity"];
-      if (cogComplexity > CC_THRESHOLD) {
-        per_file_metrics[location]["numberOver"] += 1;
-        methodsAboveMargin += 1;
-      }
-      if (cogComplexity > per_file_metrics[location].worstScore.score) {
-        per_file_metrics[location].worstScore.score = cogComplexity;
-        per_file_metrics[location].worstScore.method = item['name'];
-      }
-      if (cogComplexity < per_file_metrics[location].bestScore.score) {
-        per_file_metrics[location].bestScore.score = cogComplexity;
-        per_file_metrics[location].bestScore.method = item['name'];
-      }
-
+  currCodeData = [];
+  var funcCount = 0;
+  var totalScore = 0;
+  for(var file in data) {
+    per_file_metrics[file] = {
+      "methodCount": 0,
+      "numberOver": 0,
+      "worstScore": {
+        'score': 0,
+        'method': ''
+      },
+      "bestScore" : {
+        'score': 9999,
+        'method': ''
+      },
+      "totalScore" : 0,
+      "totalLoc": 0,
+      "averageScore": 0,
+      "averageLoc": 0,
+    }
+    for (var func in data[file]) {
+      extractPerFileMetrics(data[file][func], file);
+      funcCount += 1;
+      totalScore += data[file][func].cognitive_complexity;
       // Function contexts
       aggregateFunctionMetrics.functionCount += 1;
-      aggregateFunctionMetrics.loc += item["num-lines"];
-      var numBranches = item["num-branches"];
-      var funLen = item["num-statements"];
+      aggregateFunctionMetrics.loc += data[file][func].lines;
+      var cogComplexity = data[file][func].cognitive_complexity;
+      var numBranches = data[file][func].branches;
+      var funLen = data[file][func].statements;
       // highest score
       if ( cogComplexity > aggregateFunctionMetrics.highestScore.value) {
         aggregateFunctionMetrics.highestScore.value = cogComplexity;
-        aggregateFunctionMetrics.highestScore.function = item["name"];
+        aggregateFunctionMetrics.highestScore.function = func;
       }
       // lowest score
       if (cogComplexity < aggregateFunctionMetrics.lowestScore.value ) {
         aggregateFunctionMetrics.lowestScore.value = cogComplexity;
-        aggregateFunctionMetrics.lowestScore.function = item["name"];
+        aggregateFunctionMetrics.lowestScore.function = func;
       }
       // longest function
       if (funLen > aggregateFunctionMetrics.longestFunction.value) {
         aggregateFunctionMetrics.longestFunction.value = funLen;
-        aggregateFunctionMetrics.longestFunction.function = item["name"];
+        aggregateFunctionMetrics.longestFunction.function = func;
       }
       // most branches
       if (numBranches > aggregateFunctionMetrics.branchCount.value) {
         aggregateFunctionMetrics.branchCount.value = numBranches;
-        aggregateFunctionMetrics.branchCount.function = item["name"];
+        aggregateFunctionMetrics.branchCount.function = func;
       }
-      parsedCodeData.push(item);
+      currCodeData.push(data[file][func]);
     }
-  }
-  aggregateFunctionMetrics.averageScore = totalScore / data.length;
-  aggregateFunctionMetrics.fileCount = seenFiles.size;
 
-  // compute aggregate file metrics
-  aggregateFileMetrics.fileCount = seenFiles.size;
-  aggregateFileMetrics.averageScore = totalScore / data.length;
-  for(const [key, value] of Object.entries(per_file_metrics)) {
-    if(value.worstScore.score > aggregateFileMetrics.worstScore) {
-      aggregateFileMetrics.worstScore = value.worstScore.score;
-      aggregateFileMetrics.worstFile = key;
+    if(per_file_metrics[file].worstScore.score > aggregateFileMetrics.worstScore) {
+      aggregateFileMetrics.worstScore = per_file_metrics[file].worstScore.score;
+      aggregateFileMetrics.worstFile = file;
     }
-    if(value.bestScore.score < aggregateFileMetrics.bestScore) {
-      aggregateFileMetrics.bestScore = value.bestScore.score;
-      aggregateFileMetrics.bestFile = key;
+    if(per_file_metrics[file].bestScore.score < aggregateFileMetrics.bestScore) {
+      aggregateFileMetrics.bestScore = per_file_metrics[file].bestScore.score;
+      aggregateFileMetrics.bestFile = file;
     }
-    if(value.totalLoc > aggregateFileMetrics.mostLoc) {
-      aggregateFileMetrics.mostLoc = value.totalLoc;
-      aggregateFileMetrics.highestLocFile = key;
+    if(per_file_metrics[file].totalLoc > aggregateFileMetrics.mostLoc) {
+      aggregateFileMetrics.mostLoc = per_file_metrics[file].totalLoc;
+      aggregateFileMetrics.highestLocFile = file;
     }
-    let methodCount = value.items.length;
-    let avgScore = value.totalScore / methodCount;
-    let avgLoc = value.totalLoc / methodCount;
-    per_file_metrics[key].averageScore = avgScore;
-    per_file_metrics[key].averageLoc = avgLoc;
-    per_file_metrics[key].methodCount = per_file_metrics[key].items.length;
+    let methodCount = Object.keys(data[file]).length;
+    let avgScore = per_file_metrics[file].totalScore / methodCount;
+    let avgLoc = per_file_metrics[file].totalLoc / methodCount;
+    per_file_metrics[file].averageScore = avgScore;
+    per_file_metrics[file].averageLoc = avgLoc;
+    per_file_metrics[file].methodCount = methodCount;
     if (avgScore > CC_THRESHOLD) {
       aggregateFileMetrics.numberOfFilesOver += 1;
     }
   }
-  currCodeData = parsedCodeData;
+  aggregateFunctionMetrics.averageScore = totalScore / funcCount;
+  aggregateFunctionMetrics.fileCount = Object.keys(data).length;
+
+  // compute aggregate file metrics
+  aggregateFileMetrics.fileCount = Object.keys(data).length
+  aggregateFileMetrics.averageScore = totalScore / aggregateFileMetrics.fileCount;
 }
 
 function hexToRgb(hex) {
@@ -2080,9 +2077,11 @@ query {
     const rsp = await getFileId(url, bid);
     // Function to fetch a file from an API endpoint
     try {
-      let codeData = await getMetricsJson(rsp, new URL(url), bid);
+      let unparsedCodeData = await getMetricsData(rsp, new URL(url), bid);
+      let metricContent = new MetricParser()
+      metricContent.parse(unparsedCodeData);
       let buildDate = await getBuildDate(url, bid);
-      data_entries.push([bid, buildDate.data.build.submissionTime, codeData]);
+      data_entries.push([bid, buildDate.data.build.submissionTime, metricContent.metrics]);
     } catch (error) {
       console.error('Error fetching file:', error);
       // Handle the error appropriately, e.g., display an error message to the user
@@ -2279,12 +2278,9 @@ function renderCalendarWidget() {
 let urlBase = ''
 let projectId = ''
 const CC_THRESHOLD = 25;
-var totalScore = 0;
 let gCDashURL = '';
 
-var seenFiles = new Set();
 var currCodeData;
-var currentCDashProjectId;
 var currentView = 'file';
 let currentSortMethod = 'averageScore';
 let filterExclude = true;
@@ -2334,10 +2330,10 @@ let methodsAboveMargin = 0;
 let firstRender = true;
 
 const cm = document.getElementById('codeMetrics');
-const interface = document.createElement('g');
-interface.id = "user-interface";
-createUploadUI_Tabbed(interface);
-cm.appendChild(interface);
+const ui = document.createElement('g');
+ui.id = "user-interface";
+createUploadUI_Tabbed(ui);
+cm.appendChild(ui);
 
 
 const mc = document.createElement('div');

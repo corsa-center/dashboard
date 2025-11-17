@@ -723,71 +723,118 @@ blockquote {
   }
 }
 
+
+// BEGIN METRICS
+
+
+/*
+ * .overall-metrics-container
+ * Changed to a standard card style, consistent with other primary containers.
+ */
 .overall-metrics-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+    /* Card Shape & Appearance */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Standard card corner radius */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Standard subtle shadow */
+    padding: 24px;
+
+    /* Flexbox Layout (from original) */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* space-around often works well for stat boxes */
+    gap: 20px; /* Provides consistent spacing between child elements */
 }
 
+/*
+ * .code-metric-overview
+ * Restyled from a pill shape to a smaller, inset "stat card".
+ * This makes it a distinct but visually related element.
+ */
 .code-metric-overview {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 25px; /* More rounded for modern look */
-    font-size: 1em;
-    margin-top: 5px;
-    min-width: 250px; /* Default width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    /* Box Model & Sizing */
+    flex-grow: 1; /* Allows boxes to grow and fill space */
+    min-width: 220px;
+    padding: 16px 20px;
+    box-sizing: border-box;
+    
+    /* Appearance */
+    background-color: #f8f9fa; /* A very light grey to stand out from the white card */
+    border: 1px solid #e9ecef;
+    border-radius: 6px; /* Standard rounded rectangle shape */
+    
+    /* Interaction */
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
+
 .code-metric-overview:hover {
-    outline: none;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06); /* A more subtle hover shadow */
 }
+
 .code-metric-overview h3 {
-  margin-top: 0;
-  font-size: 1.5rem;
-  color: #0056b3; /* A professional blue color */
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    color: #007bff; /* Changed to the primary theme color for consistency */
 }
+
 .code-metric-overview p {
-  font-size: 1rem;
-  line-height: 1.5;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 0;
 }
 
+/*
+ * .code-metric-box
+ * A simpler variant for displaying a single piece of data.
+ */
 .code-metric-box {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px 16px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-size: 1em;
-    margin-top: 5px;
-    min-width: 250px; /* Default width */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    text-align: center;
 }
 
+/*
+ * .code-metric-legend
+ * Styled as a clean header or footer bar.
+ */
 .code-metric-legend {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
-
+    width: 100%; /* Ensures it spans the full width of the container */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa; /* Consistent with card headers */
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 16px;
 }
 
+/*
+ * .code-info-toggle
+ * Styled as a clean, interactive bar or button.
+ */
 .code-info-toggle {
-  display: flex;
-  justify-content: space-between;
-  opacity: 0.55;
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Standard rounded rectangle */
+    padding: 12px 16px;
+    cursor: pointer;
+    
+    /* Use transitions for smooth hover effects */
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 .code-info-toggle:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    opacity: 1.1;
+    background-color: #f8f9fa; /* Subtle background color change on hover */
+    border-color: #aaa;
 }
-
 .code-info-upload {
   display: flex;
   opacity: 0.55;
@@ -967,4 +1014,144 @@ h2 {
     padding: 10px 15px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.file-function-toggle-container {
+    display: flex;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.file-function-toggle-option {
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #555;
+    background-color: #e0e0e0; /* Default light grey state */
+    box-shadow: 3px 3px 6px #bebebe, -3px -3px 6px #ffffff; /* Neumorphic raised effect */
+    transition: all 0.2s ease-in-out;
+}
+
+.file-function-toggle-option.active {
+    color: #fff;
+    background-color: #555; /* Dark grey active state */
+    /* "Pushed in" inset shadow effect */
+    box-shadow: inset 2px 2px 4px #3d3d3d, inset -2px -2px 4px #6d6d6d;
+}
+
+.metrics-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    overflow: hidden; /* Ensures child elements respect the border radius */
+    margin: 40px auto;
+}
+
+.metrics-card h2 {
+    margin: 0;
+    padding: 20px 24px;
+    font-size: 1.25em;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Container for the tab buttons */
+.tab-container {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+/* Individual tab buttons */
+.tab-button {
+    flex-grow: 1;
+    padding: 14px 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1em;
+    color: #555;
+    border-bottom: 3px solid transparent; /* Placeholder for active state */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.tab-button:hover {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Style for the active tab button */
+.tab-button.active {
+    color: #007bff;
+    border-bottom-color: #007bff;
+}
+
+/* Styling for the content panels */
+.content-container {
+    padding: 24px;
+}
+
+.tab-content {
+    display: none; /* Hide all content panels by default */
+}
+
+/* Show only the active content panel */
+.tab-content.active {
+    display: block;
+}
+
+/* General styling for inputs and labels inside the card for consistency */
+.metrics-card input[type="file"],
+.metrics-card input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.metrics-card label {
+    font-weight: 600;
+    color: #444;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.metrics-card div > div { /* A bit of spacing for nested components */
+    margin-bottom: 20px;
+}
+
+.drop-zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Center text vertically */
+    padding: 40px;
+    font-weight: 500;
+    color: #888;
+    text-align: center;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.drop-zone__input {
+    display: none; /* Hide the actual file input */
+}
+
+.drop-zone:hover {
+    border-color: #aaa;
+}
+
+/* Visual feedback for when a file is being dragged over the zone */
+.drop-zone--over {
+    border-style: solid;
+    border-color: #007bff;
+    background-color: #f0f8ff; /* A light blue tint */
 }

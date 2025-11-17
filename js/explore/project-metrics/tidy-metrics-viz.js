@@ -1,17 +1,31 @@
 class DefaultDict {
-    constructor(defaultType) {
+    constructor(factory) {
         return new Proxy({}, {
             get: (target, name) => {
                 if (name in target) {
                     return target[name];
                 }
                 else {
-                    target[name] = typeof defaultType === 'function' ? new defaultType : defaultType;
+                    target[name] = factory();
                     return target[name];
                 }
             }
         });
     }
+}
+
+function createDefaultDictFactory(factory) {
+    let defaultDictFactory = () => {
+        return new DefaultDict(factory);
+    }
+    return defaultDictFactory;
+}
+
+function createMetricFactory() {
+    let metricFactory = () => {
+        return new Metric();
+    }
+    return metricFactory;
 }
 
 class Metric {
@@ -46,13 +60,13 @@ class Metric {
     }
 }
 
-export class MetricParser {
+class MetricParser {
     constructor() {
         this.metricTypes = [
             [/\[readability-function-cognitive-complexity\]$/, 'parseCC'],
             [/\[readability-function-size\]$/, 'parseFS']
         ];
-        this.metrics = new DefaultDict(new DefaultDict(Metric));
+        this.metrics = createDefaultDictFactory(createDefaultDictFactory(createMetricFactory()))();
     }
     extractFunc(line) {
         const funcPattern = /warning: function '(.*)' .*/;
@@ -86,8 +100,8 @@ export class MetricParser {
         return this.fileStart(line) || metric_reg_check.test(line)
     }
     parseCC(idx, filename) {
-        const [func, cc] = this.extractFuncAndCC(this.metric_lines[idx]);
-        this.metrics[filename][func].cognitive_complexity = cc;
+        let [func, cc] = this.extractFuncAndCC(this.metric_lines[idx]);
+        this.metrics[filename][func].cognitive_complexity = Number(cc);
         let sig = this.extractMethodSig(this.metric_lines[idx+1]);
         let loc = this.extractLocation(this.metric_lines[idx]);
         if(!this.metrics[filename][func].signature) {
@@ -143,7 +157,7 @@ export class MetricParser {
             for(let fsType of fsMetrics) {
                 let res = fsType[1].exec(line);
                 if (res) {
-                    let value = res[1];
+                    let value = Number(res[1]);
                     let name = fsType[0];
                     this.metrics[filename][func][name] = value;
                     break;
@@ -156,16 +170,17 @@ export class MetricParser {
         let filename = this.extractFilename(this.metric_lines[idx]);
         this.metrics[filename];
         let offset = 1;
+        var metric_off = 0;
         while(idx+offset < this.data_size && !this.fileStart(this.metric_lines[idx+offset])) {
             for(let metricType of this.metricTypes) {
                 let lineLoc = idx + offset;
                 if(metricType[0].test(this.metric_lines[lineLoc])) {
-                    let metric_off = this[metricType[1]](lineLoc, filename);
-                    offset += metric_off;
+                    metric_off = this[metricType[1]](lineLoc, filename);
                     break;
                 };
             };
-            offset += 1;
+            offset += (metric_off || 1);
+            metric_off = 0;
         };
         return offset;
     }
@@ -181,7 +196,7 @@ export class MetricParser {
                 // We're reading the beginning of clang output for
                 // a given file, process this file
                 let offset = this.processFile(i);
-                i += offset;
+                i += offset-1;
             };
         };
         // Initial parsing is done, now normalize abs paths to

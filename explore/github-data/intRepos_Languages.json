@@ -4,7 +4,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11460061
+                        "size": 11460514
                     },
                     {
                         "size": 715943
@@ -119,7 +119,7 @@
                     }
                 ],
                 "totalCount": 16,
-                "totalSize": 12770639
+                "totalSize": 12771092
             }
         },
         "Alpine-DAV/ascent": {
@@ -339,7 +339,7 @@
                         "size": 106004
                     },
                     {
-                        "size": 44045
+                        "size": 44131
                     },
                     {
                         "size": 38886
@@ -383,7 +383,7 @@
                     }
                 ],
                 "totalCount": 8,
-                "totalSize": 74630410
+                "totalSize": 74630496
             }
         },
         "E4S-Project/e4s": {
@@ -974,7 +974,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 5471175
+                        "size": 5471153
                     },
                     {
                         "size": 1680542
@@ -1047,7 +1047,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 9765516
+                "totalSize": 9765494
             }
         },
         "StanfordLegion/legion": {
@@ -1688,16 +1688,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12108067
+                        "size": 12102160
                     },
                     {
-                        "size": 5415941
+                        "size": 5412241
                     },
                     {
                         "size": 511631
                     },
                     {
-                        "size": 145144
+                        "size": 144965
                     },
                     {
                         "size": 64176
@@ -1715,7 +1715,7 @@
                         "size": 7830
                     },
                     {
-                        "size": 2579
+                        "size": 2575
                     },
                     {
                         "size": 278
@@ -1768,7 +1768,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18311440
+                "totalSize": 18301650
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -1980,7 +1980,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 26340231
+                        "size": 26340283
                     },
                     {
                         "size": 3554684
@@ -1998,7 +1998,7 @@
                         "size": 196492
                     },
                     {
-                        "size": 174979
+                        "size": 176616
                     },
                     {
                         "size": 112597
@@ -2088,7 +2088,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 34958751
+                "totalSize": 34960440
             }
         },
         "icl-utk-edu/magma": {
@@ -2311,7 +2311,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11229194
+                        "size": 11230541
                     },
                     {
                         "size": 303249
@@ -2384,14 +2384,14 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 11670422
+                "totalSize": 11671769
             }
         },
         "kokkos/kokkos-kernels": {
             "languages": {
                 "edges": [
                     {
-                        "size": 12602721
+                        "size": 12605014
                     },
                     {
                         "size": 379473
@@ -2443,50 +2443,50 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 13385182
+                "totalSize": 13387475
             }
         },
         "llvm/llvm-project": {
             "languages": {
                 "edges": [
                     {
-                        "size": 675845958
+                        "size": 675967222
                     },
                     {
-                        "size": 509299711
+                        "size": 509376015
                     },
                     {
-                        "size": 213960153
+                        "size": 213971593
                     },
                     {
-                        "size": 162165198
+                        "size": 162166344
                     },
                     {
-                        "size": 23230445
+                        "size": 23253589
                     },
                     {
-                        "size": 13592777
+                        "size": 13601393
                     },
                     {
-                        "size": 12213387
+                        "size": 12217181
                     },
                     {
-                        "size": 4847411
+                        "size": 4847419
                     },
                     {
                         "size": 4332809
                     },
                     {
-                        "size": 4307082
+                        "size": 4312079
                     },
                     {
-                        "size": 2211675
+                        "size": 2211680
                     },
                     {
-                        "size": 1805657
+                        "size": 1805879
                     },
                     {
-                        "size": 1282300
+                        "size": 1302108
                     },
                     {
                         "size": 1250823
@@ -2498,13 +2498,13 @@
                         "size": 1016649
                     },
                     {
-                        "size": 406859
+                        "size": 407195
                     },
                     {
                         "size": 335815
                     },
                     {
-                        "size": 265811
+                        "size": 265867
                     },
                     {
                         "size": 183797
@@ -2519,7 +2519,7 @@
                         "size": 127345
                     },
                     {
-                        "size": 117867
+                        "size": 117995
                     },
                     {
                         "size": 93780
@@ -2752,17 +2752,17 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1634989277
+                "totalSize": 1635260791
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 18529361
+                        "size": 18552367
                     },
                     {
-                        "size": 290256
+                        "size": 290327
                     },
                     {
                         "size": 158447
@@ -2832,7 +2832,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19154370
+                "totalSize": 19177447
             }
         },
         "open-mpi/ompi": {
@@ -2946,7 +2946,7 @@
                         "size": 943125
                     },
                     {
-                        "size": 788688
+                        "size": 788720
                     },
                     {
                         "size": 668836
@@ -3041,23 +3041,23 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 10771404
+                "totalSize": 10771436
             }
         },
         "petsc/petsc": {
             "languages": {
                 "edges": [
                     {
-                        "size": 44562755
+                        "size": 44580714
                     },
                     {
                         "size": 3601415
                     },
                     {
-                        "size": 3216351
+                        "size": 3216431
                     },
                     {
-                        "size": 1824736
+                        "size": 1824746
                     },
                     {
                         "size": 1063597
@@ -3230,7 +3230,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 56762982
+                "totalSize": 56781031
             }
         },
         "pghysels/STRUMPACK": {
@@ -3425,7 +3425,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 5116461
+                        "size": 5104605
                     },
                     {
                         "size": 1067181
@@ -3484,20 +3484,20 @@
                     }
                 ],
                 "totalCount": 8,
-                "totalSize": 6755033
+                "totalSize": 6743177
             }
         },
         "spack/spack": {
             "languages": {
                 "edges": [
                     {
-                        "size": 7473761
+                        "size": 7510749
                     },
                     {
                         "size": 517221
                     },
                     {
-                        "size": 133218
+                        "size": 131303
                     },
                     {
                         "size": 38431
@@ -3585,14 +3585,14 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 8239467
+                "totalSize": 8274540
             }
         },
         "trilinos/Trilinos": {
             "languages": {
                 "edges": [
                     {
-                        "size": 205228471
+                        "size": 205226284
                     },
                     {
                         "size": 80740531
@@ -3610,10 +3610,10 @@
                         "size": 6229668
                     },
                     {
-                        "size": 5528204
+                        "size": 5528089
                     },
                     {
-                        "size": 5034837
+                        "size": 5033307
                     },
                     {
                         "size": 3127812
@@ -3622,10 +3622,10 @@
                         "size": 3108282
                     },
                     {
-                        "size": 2492606
+                        "size": 2492727
                     },
                     {
-                        "size": 2145129
+                        "size": 2144986
                     },
                     {
                         "size": 1924656
@@ -3814,7 +3814,7 @@
                     }
                 ],
                 "totalCount": 36,
-                "totalSize": 394069076
+                "totalSize": 394065222
             }
         },
         "visit-dav/visit": {

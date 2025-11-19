@@ -732,9 +732,11 @@ function displayMetrics(containerId) {
   function renderPerView() {
     clearMetric(containerId);
     if (currentView === 'file') {
+      currentSortMethod = currentSortMethod ? currentSortMethod : "averageScore";
       displayFileInfo(containerId);
     }
     else {
+      currentSortMethod = currentSortMethod ? currentSortMethod : "cognitive_complexity";
       displayFunctionInfo(containerId);
     }
   }
@@ -742,6 +744,8 @@ function displayMetrics(containerId) {
     defaultView: 'file',
     onChangeCallback: (selectedView) => {
       currentView = selectedView;
+      currentSortMethod = '';
+      changeSortOptions();
       renderPerView()
     }
   };
@@ -751,6 +755,24 @@ function displayMetrics(containerId) {
     firstRender = false;
   }
   renderPerView();
+}
+
+
+function changeSortOptions() {
+  const sortContainer = document.getElementById('sort-controls-container-select');
+  let options = currentView === 'file'? fileSortOptions : functionSortOptions;
+  sortContainer.options.length = 0;
+  Object.keys(options).forEach((key, index) => {
+    const option = document.createElement('option');
+    option.value = options[key][0]; // e.g., 'fileName'
+    option.textContent = options[key][1]; // e.g., 'File Name'
+    sortContainer.appendChild(option);
+
+    // Set the first option as the default selected one
+    if (index === 0) {
+      option.selected = true;
+    }
+  });
 }
 
 function displayFunctionInfo(containerId) {
@@ -1154,19 +1176,19 @@ function parseMetricJson(data) {
     let methodCount = Object.keys(data[file]).length;
     let avgScore = per_file_metrics[file].totalScore / methodCount;
     let avgLoc = per_file_metrics[file].totalLoc / methodCount;
-    per_file_metrics[file].averageScore = avgScore;
+    per_file_metrics[file].averageScore = avgScore.toFixed(2);
     per_file_metrics[file].averageLoc = avgLoc;
     per_file_metrics[file].methodCount = methodCount;
     if (avgScore > CC_THRESHOLD) {
       aggregateFileMetrics.numberOfFilesOver += 1;
     }
   }
-  aggregateFunctionMetrics.averageScore = totalScore / funcCount;
+  aggregateFunctionMetrics.averageScore = (totalScore / funcCount).toFixed(2);
   aggregateFunctionMetrics.fileCount = Object.keys(data).length;
 
   // compute aggregate file metrics
   aggregateFileMetrics.fileCount = Object.keys(data).length
-  aggregateFileMetrics.averageScore = totalScore / aggregateFileMetrics.fileCount;
+  aggregateFileMetrics.averageScore = (totalScore / aggregateFileMetrics.fileCount).toFixed(2);
 }
 
 function hexToRgb(hex) {
@@ -1297,13 +1319,13 @@ function createSortSelector(container, sortOptions, onSortChange) {
 
 // Example Usage:
 const functionSortOptions = {
-  cogComplexity: ['cognitive-complexity','Cognitive Complexity'],
-  numlines: ['num-lines', 'Number of Lines'],
-  numstatements: ['num-statements', 'Number of Statements'],
-  numbranches: ['num-branches', 'Number of Branches'],
-  numparameters: ['num-parameters', 'Number of Parameters'],
-  nestinglvl: ['nesting-level', 'Nesting Level'],
-  numvariables: ['num-variables', 'Number of Variables']
+  cogComplexity: ['cognitive_complexity','Cognitive Complexity'],
+  numlines: ['lines', 'Number of Lines'],
+  numstatements: ['statements', 'Number of Statements'],
+  numbranches: ['branches', 'Number of Branches'],
+  numparameters: ['parameters', 'Number of Parameters'],
+  nestinglvl: ['level', 'Nesting Level'],
+  numvariables: ['variables', 'Number of Variables']
 };
 
 const fileSortOptions = {
@@ -1314,7 +1336,7 @@ const fileSortOptions = {
 
 function handleSort(sortByCriteria) {
   currentSortMethod = sortByCriteria;
-  displayMetrics('metric-container', currCodeData);
+  displayMetrics('metric-container');
 }
 
 function createViewToggleCard(parentElementId, options) {
@@ -2080,6 +2102,23 @@ query {
   });
 }
 
+function toISOStringWithTimezone(date) {
+  const year = date.getFullYear();
+  const month = (date.getMonth() + 1).toString().padStart(2, '0');
+  const day = date.getDate().toString().padStart(2, '0');
+  const hours = date.getHours().toString().padStart(2, '0');
+  const minutes = date.getMinutes().toString().padStart(2, '0');
+  const seconds = date.getSeconds().toString().padStart(2, '0');
+  const milliseconds = date.getMilliseconds().toString().padStart(3, '0');
+
+  const offset = date.getTimezoneOffset();
+  const offsetSign = offset > 0 ? '-' : '+';
+  const offsetHours = Math.floor(Math.abs(offset) / 60).toString().padStart(2, '0');
+  const offsetMinutes = (Math.abs(offset) % 60).toString().padStart(2, '0');
+
+  return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}${offsetSign}${offsetHours}:${offsetMinutes}`;
+}
+
 // CALENDAR //
 
 function renderCalendarWidget() {
@@ -2152,43 +2191,43 @@ function renderCalendarWidget() {
       // 1. Add days from the previous month
       const daysInPrevMonth = new Date(year, month, 0).getDate();
       for (let i = firstDayOfMonth; i > 0; i--) {
-          const dayElement = document.createElement('div');
-          dayElement.classList.add('day', 'prev-month');
-          dayElement.textContent = daysInPrevMonth - i + 1;
-          calendarDays.appendChild(dayElement);
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('day', 'prev-month');
+        dayElement.textContent = daysInPrevMonth - i + 1;
+        calendarDays.appendChild(dayElement);
       }
 
       // 2. Add days for the current month
       for (let i = 1; i <= daysInMonth; i++) {
-          const dayElement = document.createElement('div');
-          dayElement.classList.add('day');
-          dayElement.textContent = i;
-          dayElement.dataset.date = new Date(year, month, i).toISOString();
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('day');
+        dayElement.textContent = i;
+        dayElement.dataset.date = new Date(year, month, i).toISOString();
 
-          const thisDate = new Date(year, month, i);
+        const thisDate = new Date(year, month, i);
 
-          // Apply styles for selected dates and range
-          if (startDate && thisDate.getTime() === startDate.getTime()) {
-              dayElement.classList.add('selected', 'start-range');
-          }
-          if (endDate && thisDate.getTime() === endDate.getTime()) {
-              dayElement.classList.add('selected', 'end-range');
-          }
-          if (startDate && endDate && thisDate > startDate && thisDate < endDate) {
-              dayElement.classList.add('in-range');
-          }
+        // Apply styles for selected dates and range
+        if (startDate && thisDate.getTime() === startDate.getTime()) {
+            dayElement.classList.add('selected', 'start-range');
+        }
+        if (endDate && thisDate.getTime() === endDate.getTime()) {
+            dayElement.classList.add('selected', 'end-range');
+        }
+        if (startDate && endDate && thisDate > startDate && thisDate < endDate) {
+            dayElement.classList.add('in-range');
+        }
 
-          calendarDays.appendChild(dayElement);
+        calendarDays.appendChild(dayElement);
       }
 
       // 3. Add days from the next month (to fill the grid)
       const totalDaysRendered = calendarDays.children.length;
       const nextMonthDays = (7 - (totalDaysRendered % 7)) % 7;
       for (let i = 1; i <= nextMonthDays; i++) {
-          const dayElement = document.createElement('div');
-          dayElement.classList.add('day', 'next-month');
-          dayElement.textContent = i;
-          calendarDays.appendChild(dayElement);
+        const dayElement = document.createElement('div');
+        dayElement.classList.add('day', 'next-month');
+        dayElement.textContent = i;
+        calendarDays.appendChild(dayElement);
       }
   };
 
@@ -2208,16 +2247,16 @@ function renderCalendarWidget() {
           const selectedDate = new Date(e.target.dataset.date);
 
           if (!startDate || (startDate && endDate)) {
-              // First click or resetting the selection
-              startDate = selectedDate;
-              endDate = null;
+            // First click or resetting the selection
+            startDate = selectedDate;
+            endDate = null;
           } else if (startDate && !endDate) {
               // Second click
               if (selectedDate < startDate) {
-                  endDate = startDate;
-                  startDate = selectedDate;
+                endDate = startDate;
+                startDate = selectedDate;
               } else {
-                  endDate = selectedDate;
+                endDate = selectedDate;
               }
 
               // ---- EVENT TRIGGER ----
@@ -2240,8 +2279,8 @@ function renderCalendarWidget() {
   };
 
   function handleDateRangeSelected() {
-      const start = startDate.toISOString();
-      const end = endDate.toISOString();
+      const start = toISOStringWithTimezone(startDate);
+      const end = toISOStringWithTimezone(endDate);
 
       cdashRenderRangeData(gCDashURL, projectId, start, end);
       // // You can replace this alert with any other action.
@@ -2264,7 +2303,7 @@ let gCDashURL = '';
 
 var currCodeData;
 var currentView = 'file';
-let currentSortMethod = 'averageScore';
+let currentSortMethod = '';
 let filterExclude = true;
 let currentFilterParam = '';
 let buildCount = 0;
@@ -2311,13 +2350,18 @@ let per_file_metrics = {};
 let methodsAboveMargin = 0;
 let firstRender = true;
 
-const cm = document.getElementById('codeMetrics');
-const ui = document.createElement('g');
-ui.id = "user-interface";
-createUploadUI_Tabbed(ui);
-cm.appendChild(ui);
+
+function renderMetricsPage() {
+  const cm = document.getElementById('codeMetrics');
+  const ui = document.createElement('g');
+  ui.id = "user-interface";
+  createUploadUI_Tabbed(ui);
+  cm.appendChild(ui);
+
+  const mc = document.createElement('div');
+  mc.id = "metric-container";
+  cm.appendChild(mc);
+}
 
 
-const mc = document.createElement('div');
-mc.id = "metric-container";
-cm.appendChild(mc);
+renderMetricsPage();

@@ -1,0 +1,109 @@
+---
+title: Project Metric Visualizations Getting Started
+layout: default
+js:
+  - js/explore/helpers.js
+---
+<h2 class="page-header text-center" id="projectTitle">Project Sustainability Metric Visualizations: Getting Started</h2>
+
+<!-- Preset vis display areas -->
+<main id="content" class="text-center">
+    <div class="metric-guide-container">
+        <div class="metric-guide-nav-bar">
+            <a href="/explore/project-metrics/index.html" class="metric-guide-back-button">← Back to Metric Landing Page</a>
+            
+            <a href="/explore/project-metrics/metrics/index.html" class="metric-start-ui-button">Go to Metric Visualizer →</a>
+        </div>
+        
+        <h1>Setup your project for metric visualization</h1>
+        <p>Welcome! This guide will quickly walk you through getting your project setup to produce output used for metric visualizations</p>
+
+        ---
+
+        <h2>Prerequisites</h2>
+        
+        <div class="metric-guide-step">
+            <ul>
+                <li>A C/C++ project</li>
+                <li>CMake</li>
+                <li>run-clang-tidy</li>
+            </ul>
+            <p>Note: run-clang-tidy is typically distributed as part of <a href=https://clang.llvm.org/extra/clang-tidy>clang-tidy</a> for use on compliation databases</p>
+            <p>Note: A CMake build system is assumed for use with CTest, CDash, and to obtain the compile_commands.json file run-clang-tidy consumes. However clang-tidy can be invoked on projects
+                using any build system if care is taken to produce a compatible clang tidy analysis output file.
+            </p>
+        </div>
+
+        <h2>Setting up your project</h2>
+        <div class="metric-guide-step">
+            <h3>Producing Metrics</h3>
+            <p>The files required for this software metric visualization are produced by running clang-tidy on a codebase (or single file). This can be done numerous ways, of which we will cover two here
+                but so long as a compatible clang-tidy output file is produced, the mechanism by which that file is generated is immaterial with regard to using this dashboard.
+            </p>
+            <h4>CTest && CDash</h4>
+            <p>CTest is one of the easiest ways to drive the production of a clang-tidy analysis output file.<br>
+                If you're not currently using CTest with your CMake system, no problem, you can configure a CTest dashboard client setup without needing to define any tests.
+            This <a href="">gist</a> contains CML code that can be copy and pasted into an existing CTest dashboard client script to produce clang-tidy output. If you're not already using
+            CDash for your CMake projects, follow the instructions below to set that up. <br>
+            Download that gist, replace the boilerplate entries that need replacing (should be denoted by @@ on either side of the token that needs replacing) append it to your dashboard script, and run `ctest -S &lt;script name&gt;.
+            This should upload a compatible clang-tidy output file to your CDash instance, and you're ready to use the dashboard.
+
+            <h4>CMake Script Mode/Manual</h4>
+            <p>If you do not have an existing CTest/CDash configuration, you can easily produce the required clang-tidy output file by simply downloading the gist linked above,
+                running the CMake Language Code as a standalone script via `cmake -p` (after following the environmental setup instructions) and produce a compatible clang-tidy output file, which can be uploaded to the dashboard manually.
+            </p>
+             <p>Similarly, if you do not use CMake at all, you can run clang-tidy as you see fit, compose the output into a single file, and that should be compatible with this dashboard.</p>
+        </div>
+    
+        <h2>Setting Up A CDash project</h2>
+        <div class="metric-guide-step">
+            <p>CDash instances can be self hosted a number of ways, but we will only cover using my.cdash.org here, as it is a publically available CDash instance</p>
+            <p>To create an account and initial project on CDash, follow the getting started instructions <a href="https://www.cdash.org/hosting/">here</a>.
+            <br>
+            Once complete, you now have an established CDash project! Lets get some builds on there. To configure your CMake project to work with CDash, we create what is called a CTest Dashboard client script, this is
+            just a CMake Language script that CTest will execute and submit the results of to your CDash instance. <br>
+            For a very detailed description of what that entails, you can visit the <a href="https://cmake.org/cmake/help/latest/manual/ctest.1.html#dashboard-client-configuration">CMake Docs</a>, but for the purposes of this 
+            guide, we'll just be creating a very basic driver script.
+            <br>
+            From the landing page for your CDash project, click the setting tab in the upper right hand corner, and select the "project" dropdown option. From the project settings page, click the "Miscellaneous" tab. The first "setting"
+            should be one that says "Download CTest Config", and to the right should be a file url. Download that CML file, it will form the base of your dashboard submission script. 
+            You'll then want to download the gist linked above, and incorporate the rest of the CML code from that gist into your dasboard client script. 
+            Once that is done, you can simply run `ctest -S &lt;script name&gt;` and you should see CTest drive the configure, build, and upload to CDash from your project.
+        </div>
+
+        <h2>Using the Metric Visualizer</h2>
+        <div class="metric-guide-step">
+            <h3>Providing Data</h3>
+            <p>The landing page of the visualizer contains a UI to provide the visualizer with the software analysis output it will use to create the visualization.
+                There are two options for uploading this information to the visualizer:
+                <ul>
+                    <li>Local File Upload</li>
+                    <li>CDash Build URL</li>
+                </ul>
+                To use the file upload, simply click the upload button or drag and drop the clang-tidy output file you produced to the UI element. Your software metrics should be rendered once the upload is complete.
+                <br>
+                Alternatively, if you are using CDash, and uploading your metric information as a file, you can simply provide the URL to the specific CDash build, and the dashboard will fetch and render
+                that software metric data, if any, included in the build.
+                <br>
+            </p>
+            <p>You can also provide the dashboard a CDash project url (the url for the CDash landing page for a project). The visualizer will then provide a calendar to select a range, or single date.
+                The dashboard will then fetch all available clang-tidy build metrics from those dates and render the data for each build within the given date range that has a valid clang-tidy output file.
+            </p>
+            <h3>Using the Dashboard</h3>
+            <p>Once the data has been loaded, you can begin to view it. To begin, the metrics are displayed per file, starting with the worst metric score, and descending to the best. Each data entry in the UI is a
+                clickable dropdown. Clicking the item will display a breakdown of sub-metrics that compose the larger score.
+                The top of the UI will contain the averages of each of these sub-metrics for the entirety of the project data that was uploaded.
+            </p>
+            <p>
+                There are two views, by file, and by function. By file is the default and will display the metrics for each file. The function view can be toggled via the "view" UI, and displays the metrics for each function, and associates the function with its file.
+            </p>
+            <p>The displayed functions/files can be filtered via the include and exclude filters. Including a string in one of these filters will display either only file names or function signatures containing that string or only those
+                not containing said string dependent on the selected filter.
+            </p>
+            <p>
+                The data can also be sorted, by default this is done on the cognitive-complexity metric, but can be switched to any of the available sub-metrics. The displayed sort order can also be toggled between ascending and descending.
+            </p>
+        </div>
+    
+    </div>
+</main>

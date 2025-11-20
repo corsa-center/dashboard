@@ -43,7 +43,7 @@ js:
             <h4>CTest && CDash</h4>
             <p>CTest is one of the easiest ways to drive the production of a clang-tidy analysis output file.<br>
                 If you're not currently using CTest with your CMake system, no problem, you can configure a CTest dashboard client setup without needing to define any tests.
-            This <a href="">gist</a> contains CML code that can be copy and pasted into an existing CTest dashboard client script to produce clang-tidy output. If you're not already using
+            This <a href="http://github.com/johnwparent/corsa-metric-dashboard-submission-template/archive/refs/heads/main.tar.gz">template</a> contains CML code that can be copy and pasted into an existing CTest dashboard client script to produce clang-tidy output. If you're not already using
             CDash for your CMake projects, follow the instructions below to set that up. <br>
             Download that gist, replace the boilerplate entries that need replacing (should be denoted by @@ on either side of the token that needs replacing) append it to your dashboard script, and run `ctest -S &lt;script name&gt;.
             This should upload a compatible clang-tidy output file to your CDash instance, and you're ready to use the dashboard.

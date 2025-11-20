@@ -944,21 +944,37 @@ blockquote {
 
 /* Container for the charts */
 .chart-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr; /* Default to one column for mobile */
   gap: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 40px; /* Add space between charts and info boxes */
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+  }
 }
 
 /* Individual chart box */
 .chart-box {
-  width: 45%;
-  max-width: 400px; /* Max width to keep charts from getting too big */
+  position: relative;
+  height: 400px; /* Explicit height is necessary for Chart.js */
+  width: 100%;
+  box-sizing: border-box; 
+  
+  /* Card Aesthetics */
   background-color: #ffffff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure the canvas itself fills the container exactly */
+.chart-box canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Calendar */
@@ -1296,4 +1312,12 @@ h2 {
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-flash {
+    /* Makes the background flash a bright color */
+    background-color: #fffae8 !important;
+    /* Adds a glowing shadow */
+    box-shadow: 0 0 40px rgba(255, 193, 7, 0.5); 
+    border: 4px solid #ffc107 !important;
 }

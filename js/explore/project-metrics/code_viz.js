@@ -396,103 +396,116 @@ function displayFileInfo(containerId) {
   addMetricCard('Highest Average Cognitive Complexity Score', aggregateFileMetrics.worstScore, aggregateFileMetrics.worstFile);
   addMetricCard('Lowest Average Cognitive Complexity Score', aggregateFileMetrics.bestScore, aggregateFileMetrics.bestFile);
 
-  // // Add charts
-  // const chartBox = document.createElement("div");
-  // chartBox.classList.add("chart-contianer");
+  // Add charts
 
-  // const methodChartBox = document.createElement('div');
-  // methodChartBox.classList.add('chart-box');
+  const chartBox = document.createElement("div");
+  chartBox.classList.add("chart-contianer");
 
-  // const methodChart = document.createElement('canvas');
-  // methodChart.id = "methodChart";
-  // methodChartBox.appendChild(methodChart);
-  // chartBox.appendChild(methodChartBox);
+  const methodChartBox = document.createElement('div');
+  methodChartBox.classList.add('chart-box');
 
-  // const methodCtx = methodChart.getContext('2d');
-  // const data1 = {
-  //   labels: [
-  //       'Over',
-  //       'Under',
-  //   ],
-  //   datasets: [{
-  //       label: 'Methods under Threshold',
-  //       data: [methodsAboveMargin, aggregateFunctionMetrics.fileCount - methodsAboveMargin],
-  //       backgroundColor: [
-  //           'rgb(255, 99, 132)',
-  //           'rgb(6, 108, 18)',
-  //       ],
-  //       hoverOffset: 4
-  //   }]
-  // };
-  // const methodConfig = {
-  //   type: 'pie',
-  //   data: data1,
-  //   options: {
-  //       responsive: true,
-  //       plugins: {
-  //           legend: {
-  //               position: 'top',
-  //           },
-  //           title: {
-  //               display: true,
-  //               text: 'Methods over threshold'
-  //           }
-  //       }
-  //   },
-  // };
+  const methodChart = document.createElement('canvas');
+  methodChart.id = "methodChart";
+  methodChartBox.appendChild(methodChart);
+  chartBox.appendChild(methodChartBox);
 
-
-  // const fileChartBox = document.createElement('div');
-  // fileChartBox.classList.add('chart-box');
-
-  // const fileChart = document.createElement('canvas');
-  // fileChart.id = "fileChart";
-  // const fileCtx = fileChart.getContext('2d');
-  // fileChartBox.appendChild(fileChart);
-  // chartBox.appendChild(fileChartBox);
-
-  // let files_over = 0;
-  // for (file in per_file_metrics) {
-  //   if (per_file_metrics[file]["number_over"] > 0) {
-  //     files_over += 1;
-  //   }
-  // }
-  // const data2 = {
-  //   labels: [
-  //       'Over',
-  //       'Under',
-  //   ],
-  //   datasets: [{
-  //       label: 'Files with methods over Threshold',
-  //       data: [files_over, aggregateFunctionMetrics.fileCount - files_over],
-  //       backgroundColor: [
-  //           'rgb(255, 99, 132)',
-  //           'rgb(6, 108, 18)',
-  //       ],
-  //       hoverOffset: 4
-  //   }]
-  // };
-  // const fileConfig = {
-  //   type: 'pie',
-  //   data: data2,
-  //   options: {
-  //       responsive: true,
-  //       plugins: {
-  //           legend: {
-  //               position: 'top',
-  //           },
-  //           title: {
-  //               display: true,
-  //               text: 'Files with methods over threshold'
-  //           }
-  //       }
-  //   },
-  // };
+  const data1 = {
+    labels: [
+        'Over',
+        'Under',
+    ],
+    datasets: [{
+        label: 'Methods under Threshold',
+        data: [methodsAboveMargin, aggregateFunctionMetrics.fileCount - methodsAboveMargin],
+        backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(6, 108, 18)',
+        ],
+        hoverOffset: 4
+    }]
+  };
+  const methodConfig = {
+    type: 'pie',
+    data: data1,
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Methods over threshold'
+            }
+        }
+    },
+  };
 
 
-  // overallMetrics.appendChild(chartBox);
-  // new Chart(methodCtx, methodConfig);
-  // new Chart(fileCtx, fileConfig);
+  const fileChartBox = document.createElement('div');
+  fileChartBox.classList.add('chart-box');
+
+  const fileChart = document.createElement('canvas');
+  fileChart.id = "fileChart";
+  fileChartBox.appendChild(fileChart);
+  chartBox.appendChild(fileChartBox);
+
+  let files_over = 0;
+  for (file in per_file_metrics) {
+    if (per_file_metrics[file]["number_over"] > 0) {
+      files_over += 1;
+    }
+  }
+  const data2 = {
+    labels: [
+        'Over',
+        'Under',
+    ],
+    datasets: [{
+        label: 'Files with methods over Threshold',
+        data: [files_over, aggregateFunctionMetrics.fileCount - files_over],
+        backgroundColor: [
+            'rgb(255, 99, 132)',
+            'rgb(6, 108, 18)',
+        ],
+        hoverOffset: 4
+    }]
+  };
+  const fileConfig = {
+    type: 'pie',
+    data: data2,
+    options: {
+        responsive: true,
+        plugins: {
+            legend: {
+                position: 'top',
+            },
+            title: {
+                display: true,
+                text: 'Files with methods over threshold'
+            }
+        }
+    },
+  };
+
+
+  overallMetrics.appendChild(chartBox);
+  window.requestAnimationFrame(() => {
+    const methodCtx = methodChart.getContext('2d');
+    const fileCtx = fileChart.getContext('2d');
+    
+    if (methodCtx) {
+      new Chart(methodCtx, methodConfig);
+    } else {
+      console.error("Failed to get 2D context for Method Chart.");
+    }
+    
+    if (fileCtx) {
+      new Chart(fileCtx, fileConfig);
+    } else {
+      console.error("Failed to get 2D context for File Chart.");
+    }
+  });
 
 
   //// INDIVIDUAL METRICS ///////////////
@@ -566,16 +579,12 @@ function displayFileInfo(containerId) {
     name.textContent = location;
     codeCollapsible.appendChild(name);
 
-    // specify location
-    // const loc = document.createElement('p');
-    // loc.textContent = item['location'];
-    // codeCollapsible.appendChild(loc);
-    // specify cc
     const cc = document.createElement('p');
     cc.textContent = metrics.averageScore;
     codeCollapsible.appendChild(cc);
 
     codeCollapsible.classList.add('code-info-toggle');
+    codeCollapsible.id = location + "-metrics"
     // Add arrow
     const toggle = document.createElement('i');
     toggle.classList.add('fa', 'fa-chevron-down');
@@ -590,18 +599,7 @@ function displayFileInfo(containerId) {
     // Create a new div element for each entry
     const codeElement = document.createElement('div');
     codeElement.classList.add('code-info-item');
-    codeElement.id = location + "-metrics";
     codeElement.style.display = "none";
-
-    // const codeLineElement = document.createElement('pre');
-    // codeLineElement.textContent = item["code-line"];
-
-    // codeLineElement.style.color = scoreColor;
-    // const codeLineElementRef = document.createElement('a');
-    // var href = item.split(":").slice(0,1).join("#");
-    // codeLineElementRef.href = urlBase + href;
-    // codeLineElementRef.appendChild(codeLineElement);
-    // codeElement.appendChild(codeLineElementRef);
 
     const statsElement = document.createElement('div');
     statsElement.classList.add('code-stats');
@@ -635,74 +633,6 @@ function displayFileInfo(containerId) {
     metricBox.appendChild(metricElement);
   });
   container.appendChild(metricBox);
-}
-
-function createFileCogDonutChart() {
-  // --- Data for the Chart ---
-    // Example: 85% correct, 15% incorrect
-    const dataValues = [85, 15];
-    const dataLabels = ['Correct', 'Incorrect'];
-    const backgroundColors = [
-        'rgba(75, 192, 192, 0.7)',  // Green for 'Correct'
-        'rgba(255, 99, 132, 0.7)'   // Red for 'Incorrect'
-    ];
-    
-    // --- Dynamically Create Elements ---
-
-    // 1. Create a container div for sizing
-    const chartContainer = document.createElement('div');
-    chartContainer.className = 'chart-container';
-
-    // 2. Create the canvas element where the chart will be drawn
-    const canvas = document.createElement('canvas');
-    canvas.id = 'myDonutChart';
-
-    // 3. Append the canvas to the container, and the container to the body
-    chartContainer.appendChild(canvas);
-    document.body.appendChild(chartContainer);
-
-    // --- Create the Chart ---
-
-    // 4. Get the 2D context of the canvas
-    const ctx = canvas.getContext('2d');
-
-    // 5. Define the chart's configuration
-    const chartConfig = {
-        type: 'doughnut', // Specify the chart type
-        data: {
-            labels: dataLabels,
-            datasets: [{
-                label: 'Result Percentage',
-                data: dataValues,
-                backgroundColor: backgroundColors,
-                borderColor: [
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(255, 99, 132, 1)'
-                ],
-                borderWidth: 1,
-                cutout: '70%' // Controls the size of the hole in the middle
-            }]
-        },
-        options: {
-            responsive: true, // Makes the chart resize with its container
-            maintainAspectRatio: false,
-            plugins: {
-                legend: {
-                    position: 'top', // Position of the legend
-                },
-                title: {
-                    display: true,
-                    text: 'Assessment Results',
-                    font: {
-                        size: 18
-                    }
-                }
-            }
-        }
-    };
-
-    // 6. Create the new chart instance
-    const myDonutChart = new Chart(ctx, chartConfig);
 }
 
 function splitAtFirstCapital(str) {
@@ -739,6 +669,7 @@ function displayMetrics(containerId) {
       currentSortMethod = currentSortMethod ? currentSortMethod : "cognitive_complexity";
       displayFunctionInfo(containerId);
     }
+    highlightInfoLinks();
   }
   const viewToggleOptions = {
     defaultView: 'file',
@@ -862,9 +793,15 @@ function displayFunctionInfo(containerId) {
     overallMetrics.appendChild(metric);
   }
 
+
+
+    
   // Add charts
+
+  let methodCtx;
+  let fileCtx;
   const chartBox = document.createElement("div");
-  chartBox.classList.add("chart-contianer");
+  chartBox.classList.add("chart-container");
 
   const methodChartBox = document.createElement('div');
   methodChartBox.classList.add('chart-box');
@@ -874,20 +811,19 @@ function displayFunctionInfo(containerId) {
   methodChartBox.appendChild(methodChart);
   chartBox.appendChild(methodChartBox);
 
-  const methodCtx = methodChart.getContext('2d');
   const data1 = {
     labels: [
-        'Over',
-        'Under',
+        'Over Threshold',
+        'Under Threshold',
     ],
     datasets: [{
-        label: 'Methods under Threshold',
+        label: 'Method Metrics',
         data: [methodsAboveMargin, aggregateFunctionMetrics.fileCount - methodsAboveMargin],
         backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(6, 108, 18)',
         ],
-        hoverOffset: 4
+        hoverOffset: 8
     }]
   };
   const methodConfig = {
@@ -895,6 +831,7 @@ function displayFunctionInfo(containerId) {
     data: data1,
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'top',
@@ -913,52 +850,70 @@ function displayFunctionInfo(containerId) {
 
   const fileChart = document.createElement('canvas');
   fileChart.id = "fileChart";
-  const fileCtx = fileChart.getContext('2d');
+
   fileChartBox.appendChild(fileChart);
   chartBox.appendChild(fileChartBox);
 
   let files_over = 0;
   for (file in per_file_metrics) {
-    if (per_file_metrics[file]["number_over"] > 0) {
+    if (Object.hasOwn(per_file_metrics, file) && per_file_metrics[file]["number_over"] > 0) {
       files_over += 1;
     }
   }
   const data2 = {
     labels: [
-        'Over',
-        'Under',
+      'Files with Methods Over Threshold',
+      'Files with All Methods Under Threshold',
     ],
     datasets: [{
-        label: 'Files with methods over Threshold',
-        data: [files_over, aggregateFunctionMetrics.fileCount - files_over],
-        backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(6, 108, 18)',
-        ],
-        hoverOffset: 4
+      label: 'File Metrics',
+      data: [
+        files_over, 
+        aggregateFunctionMetrics.fileCount - files_over
+      ],
+      backgroundColor: [
+        'rgb(54, 162, 235)', // Blue for Over
+        'rgb(255, 205, 86)', // Yellow for Under
+      ],
+      hoverOffset: 8
     }]
   };
   const fileConfig = {
-    type: 'pie',
+    type: 'doughnut',
     data: data2,
     options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'top',
-            },
-            title: {
-                display: true,
-                text: 'Files with methods over threshold'
-            }
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Files with methods over threshold'
         }
+      }
     },
   };
 
-
   overallMetrics.appendChild(chartBox);
-  new Chart(methodCtx, methodConfig);
-  new Chart(fileCtx, fileConfig);
+  window.requestAnimationFrame(() => {
+    const methodCtx = methodChart.getContext('2d');
+    const fileCtx = fileChart.getContext('2d');
+    
+    if (methodCtx) {
+      new Chart(methodCtx, methodConfig);
+    } else {
+      console.error("Failed to get 2D context for Method Chart.");
+    }
+    
+    if (fileCtx) {
+      new Chart(fileCtx, fileConfig);
+    } else {
+      console.error("Failed to get 2D context for File Chart.");
+    }
+  });
+
 
 
   //// INDIVIDUAL METRICS ///////////////
@@ -1809,6 +1764,31 @@ function addSearchBarWithEnterEvent(parentElement, exclusion=false) {
   }
 
   return searchInput;
+}
+
+
+function highlightInfoLinks() {
+  const HIGHLIGHT_DURATION_MS = 2000; // 2 seconds
+  const highlightClass = 'highlight-flash';
+
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', (event) => {
+      
+      const targetId = anchor.getAttribute('href');
+      
+      // Get the actual DOM element
+      const targetElement = document.querySelector(CSS.escape(targetId));
+
+      if (targetElement) {
+        targetElement.classList.add(highlightClass);
+        
+        setTimeout(() => {
+          targetElement.classList.remove(highlightClass);
+        }, HIGHLIGHT_DURATION_MS);
+        
+      }
+    });
+  });
 }
 
 function addRangeMetricBox(parentContainerId) {

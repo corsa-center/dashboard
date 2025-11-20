@@ -103,6 +103,13 @@ js:
             <p>
                 The data can also be sorted, by default this is done on the cognitive-complexity metric, but can be switched to any of the available sub-metrics. The displayed sort order can also be toggled between ascending and descending.
             </p>
+            <h3>Data Alternatives</h3>
+            <p>If you would like a dashboard that permanently points to your clang-tidy results, as they are available in CDash, you can simply use query parameters 
+                to construct the url to the dashboard like so <br>
+                <pre>https://corsa.center/dashboard/explore/project-metrics/metrics/index.html?bid=3127130&cdash=my.cdash.org</pre>
+                using the <pre>bid</pre> parameter to specify a CDash build ID and <pre>cdash</pre> to specify the url to your CDash instance.
+                This can be a convenient way to display CI pipeline results or to include the metrics for a given release or main branch as part of a release or readme.
+            </p>
         </div>
     
     </div>

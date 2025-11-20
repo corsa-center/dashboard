@@ -411,17 +411,17 @@ function displayFileInfo(containerId) {
 
   const data1 = {
     labels: [
-        'Over',
-        'Under',
+        'Over Threshold',
+        'Under Threshold',
     ],
     datasets: [{
-        label: 'Methods under Threshold',
+        label: 'Method Metrics',
         data: [methodsAboveMargin, aggregateFunctionMetrics.fileCount - methodsAboveMargin],
         backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(6, 108, 18)',
         ],
-        hoverOffset: 4
+        hoverOffset: 8
     }]
   };
   const methodConfig = {
@@ -429,6 +429,7 @@ function displayFileInfo(containerId) {
     data: data1,
     options: {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
             legend: {
                 position: 'top',
@@ -452,39 +453,43 @@ function displayFileInfo(containerId) {
 
   let files_over = 0;
   for (file in per_file_metrics) {
-    if (per_file_metrics[file]["number_over"] > 0) {
+    if (Object.hasOwn(per_file_metrics, file) && per_file_metrics[file]["number_over"] > 0) {
       files_over += 1;
     }
   }
   const data2 = {
     labels: [
-        'Over',
-        'Under',
+      'Files with Methods Over Threshold',
+      'Files with All Methods Under Threshold',
     ],
     datasets: [{
-        label: 'Files with methods over Threshold',
-        data: [files_over, aggregateFunctionMetrics.fileCount - files_over],
-        backgroundColor: [
-            'rgb(255, 99, 132)',
-            'rgb(6, 108, 18)',
-        ],
-        hoverOffset: 4
+      label: 'File Metrics',
+      data: [
+        files_over, 
+        aggregateFunctionMetrics.fileCount - files_over
+      ],
+      backgroundColor: [
+        'rgb(54, 162, 235)', // Blue for Over
+        'rgb(255, 205, 86)', // Yellow for Under
+      ],
+      hoverOffset: 8
     }]
   };
   const fileConfig = {
-    type: 'pie',
+    type: 'doughnut',
     data: data2,
     options: {
-        responsive: true,
-        plugins: {
-            legend: {
-                position: 'top',
-            },
-            title: {
-                display: true,
-                text: 'Files with methods over threshold'
-            }
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'top',
+        },
+        title: {
+          display: true,
+          text: 'Files with methods over threshold'
         }
+      }
     },
   };
 
@@ -989,6 +994,7 @@ function displayFunctionInfo(containerId) {
     codeCollapsible.appendChild(cc);
 
     codeCollapsible.classList.add('code-info-toggle');
+    codeCollapsible.id = item["name"] + "-metrics";
     // Add arrow
     const toggle = document.createElement('i');
     toggle.classList.add('fa', 'fa-chevron-down');
@@ -1003,7 +1009,6 @@ function displayFunctionInfo(containerId) {
     // Create a new div element for each entry
     const codeElement = document.createElement('div');
     codeElement.classList.add('code-info-item');
-    codeElement.id = item["name"] + "-metrics";
     codeElement.style.display = "none";
 
     const codeLineElement = document.createElement('pre');
@@ -2027,12 +2032,12 @@ query {
       all: [
             {
               lt:{
-                submissionTime: "2025-08-25T21:30:12+00:00"
+                submissionTime: "${current}"
               }
             },
             {
               gt: {
-                  submissionTime: "2025-08-25T16:00:12+00:00"
+                  submissionTime: "${old}"
               },
             },
           ]
@@ -2082,21 +2087,23 @@ query {
   });
 }
 
-function toISOStringWithTimezone(date) {
+function toISOStringWithTimezone(date, old) {
   const year = date.getFullYear();
   const month = (date.getMonth() + 1).toString().padStart(2, '0');
   const day = date.getDate().toString().padStart(2, '0');
-  const hours = date.getHours().toString().padStart(2, '0');
-  const minutes = date.getMinutes().toString().padStart(2, '0');
-  const seconds = date.getSeconds().toString().padStart(2, '0');
-  const milliseconds = date.getMilliseconds().toString().padStart(3, '0');
+  const hours = old ? '00' : '24'
+  const minutes = '00';
+  const seconds = '00';
+  // const hours = date.getHours().toString().padStart(2, '0');
+  // const minutes = date.getMinutes().toString().padStart(2, '0');
+  // const seconds = date.getSeconds().toString().padStart(2, '0');
 
   const offset = date.getTimezoneOffset();
   const offsetSign = offset > 0 ? '-' : '+';
   const offsetHours = Math.floor(Math.abs(offset) / 60).toString().padStart(2, '0');
   const offsetMinutes = (Math.abs(offset) % 60).toString().padStart(2, '0');
 
-  return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}.${milliseconds}${offsetSign}${offsetHours}:${offsetMinutes}`;
+  return `${year}-${month}-${day}T${hours}:${minutes}:${seconds}${offsetSign}${offsetHours}:${offsetMinutes}`;
 }
 
 // CALENDAR //
@@ -2259,8 +2266,8 @@ function renderCalendarWidget() {
   };
 
   function handleDateRangeSelected() {
-      const start = toISOStringWithTimezone(startDate);
-      const end = toISOStringWithTimezone(endDate);
+      const start = toISOStringWithTimezone(startDate, true);
+      const end = toISOStringWithTimezone(endDate, false);
 
       cdashRenderRangeData(gCDashURL, projectId, start, end);
       // // You can replace this alert with any other action.
@@ -2343,5 +2350,14 @@ function renderMetricsPage() {
   cm.appendChild(mc);
 }
 
-
 renderMetricsPage();
+if (window.location.search) {
+  // You can also access and parse the query string here
+  const urlParams = new URLSearchParams(window.location.search);
+
+  if (urlParams.has('bid') && urlParams.has('cdash')) {
+    let cdashUrl = new URL('https://' + urlParams.get('cdash') + '/builds/' + urlParams.get('bid'));
+    getCDashBuildContext(cdashUrl);
+  }
+}
+

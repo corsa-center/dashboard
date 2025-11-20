@@ -168,7 +168,6 @@ class MetricParser {
     }
     processFile(idx) {
         let filename = this.extractFilename(this.metric_lines[idx]);
-        this.metrics[filename];
         let offset = 1;
         var metric_off = 0;
         while(idx+offset < this.data_size && !this.fileStart(this.metric_lines[idx+offset])) {

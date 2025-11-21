@@ -453,7 +453,7 @@ function displayFileInfo(containerId) {
 
   let files_over = 0;
   for (file in per_file_metrics) {
-    if (Object.hasOwn(per_file_metrics, file) && per_file_metrics[file]["number_over"] > 0) {
+    if (Object.hasOwn(per_file_metrics, file) && per_file_metrics[file]["numberOver"] > 0) {
       files_over += 1;
     }
   }
@@ -861,7 +861,7 @@ function displayFunctionInfo(containerId) {
 
   let files_over = 0;
   for (file in per_file_metrics) {
-    if (Object.hasOwn(per_file_metrics, file) && per_file_metrics[file]["number_over"] > 0) {
+    if (Object.hasOwn(per_file_metrics, file) && per_file_metrics[file]["numberOver"] > 0) {
       files_over += 1;
     }
   }

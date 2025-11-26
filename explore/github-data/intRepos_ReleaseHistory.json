@@ -760,11 +760,6 @@
                         "tagName": "2.0.0"
                     },
                     {
-                        "name": "HDF5 Release hdf5_2.0.0",
-                        "publishedAt": "2025-11-11T00:31:25Z",
-                        "tagName": "hdf5_2.0.0"
-                    },
-                    {
                         "name": "HDF5 Release 1.14.6",
                         "publishedAt": "2025-02-05T14:55:57Z",
                         "tagName": "hdf5_1.14.6"
@@ -785,8 +780,8 @@
                         "tagName": "hdf5_1.14.4.2"
                     },
                     {
-                        "name": "snapshot",
-                        "publishedAt": "2025-11-22T01:06:53Z",
+                        "name": "HDF5 Release snapshot",
+                        "publishedAt": "2025-11-25T20:26:58Z",
                         "tagName": "snapshot"
                     },
                     {
@@ -3891,6 +3886,16 @@
         "trilinos/Trilinos": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "Trilinos 17.0.0rc0",
+                        "publishedAt": "2025-11-25T23:14:17Z",
+                        "tagName": "17.0.0rc0"
+                    },
+                    {
+                        "name": "Trilinos 16.2.0",
+                        "publishedAt": "2025-11-25T23:12:18Z",
+                        "tagName": "16.2.0"
+                    },
                     {
                         "name": "Trilinos 16.1.0",
                         "publishedAt": "2025-03-20T19:27:35Z",

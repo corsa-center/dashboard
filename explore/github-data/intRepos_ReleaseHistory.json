@@ -563,6 +563,323 @@
                 ]
             }
         },
+        "BerkeleyLab/fiats": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "Improved documentation, statistics, and reporting",
+                        "publishedAt": "2025-11-06T23:13:30Z",
+                        "tagName": "1.2.0"
+                    },
+                    {
+                        "name": "Expanded compiler support and richer test diagnostics",
+                        "publishedAt": "2025-08-08T17:04:47Z",
+                        "tagName": "1.1.0"
+                    },
+                    {
+                        "name": "Demo app fix & documentation updates",
+                        "publishedAt": "2025-07-02T01:57:21Z",
+                        "tagName": "1.0.0"
+                    },
+                    {
+                        "name": "Make assertions removable and minor improvements",
+                        "publishedAt": "2025-03-12T23:59:20Z",
+                        "tagName": "0.16.0"
+                    },
+                    {
+                        "name": "Flexible tensor reads and optional double-precision inference",
+                        "publishedAt": "2024-10-29T23:35:45Z",
+                        "tagName": "0.15.0"
+                    },
+                    {
+                        "name": "Parallel training",
+                        "publishedAt": "2024-10-15T04:49:56Z",
+                        "tagName": "0.14.0"
+                    },
+                    {
+                        "name": " New JSON file format",
+                        "publishedAt": "2024-08-14T04:15:06Z",
+                        "tagName": "0.13.0"
+                    },
+                    {
+                        "name": "Support LLVM Flang + add entropy-maximizing filter to speed convergence",
+                        "publishedAt": "2024-07-21T06:00:24Z",
+                        "tagName": "0.12.0"
+                    },
+                    {
+                        "name": "Selective test execution and compiler workarounds",
+                        "publishedAt": "2024-04-26T00:39:32Z",
+                        "tagName": "0.11.1"
+                    },
+                    {
+                        "name": "Batch normalization, more concurrency, & NAG compiler support",
+                        "publishedAt": "2024-04-04T21:36:07Z",
+                        "tagName": "0.11.0"
+                    },
+                    {
+                        "name": "Train cloud microphysics",
+                        "publishedAt": "2023-11-26T04:54:10Z",
+                        "tagName": "0.10.0"
+                    },
+                    {
+                        "name": "Training configuration JSON file I/O and new examples",
+                        "publishedAt": "2023-11-06T09:33:42Z",
+                        "tagName": "0.9.0"
+                    },
+                    {
+                        "name": "New training algorithms, examples, documentation, and bug fixes",
+                        "publishedAt": "2023-10-04T16:59:40Z",
+                        "tagName": "0.8.0"
+                    },
+                    {
+                        "name": "0.7.0 Train deep networks",
+                        "publishedAt": "2023-07-30T21:29:54Z",
+                        "tagName": "0.7.0"
+                    },
+                    {
+                        "name": "Shorter test-suite execution time",
+                        "publishedAt": "2023-05-25T19:28:40Z",
+                        "tagName": "0.6.2"
+                    },
+                    {
+                        "name": "Experimental training capability",
+                        "publishedAt": "2023-05-24T23:23:15Z",
+                        "tagName": "0.6.0"
+                    },
+                    {
+                        "name": "0.5.0",
+                        "publishedAt": "2023-02-20T01:04:27Z",
+                        "tagName": "0.5.0"
+                    },
+                    {
+                        "name": "Bug fixes and more stringent unit testing",
+                        "publishedAt": "2023-02-15T01:00:10Z",
+                        "tagName": "0.4.1"
+                    },
+                    {
+                        "name": "0.4.0 Support networks with skip connections (bypass)",
+                        "publishedAt": "2023-02-14T07:32:07Z",
+                        "tagName": "0.4.0"
+                    },
+                    {
+                        "name": "Elemental inference, real kind parameter, & layer/neuron count fix",
+                        "publishedAt": "2023-02-03T07:09:24Z",
+                        "tagName": "0.3.0"
+                    },
+                    {
+                        "name": "Fix layer_t/neuron_t count_layers and count_neurons type-bound ",
+                        "publishedAt": "2023-02-03T05:36:43Z",
+                        "tagName": "0.2.1"
+                    },
+                    {
+                        "name": "0.2.0 JSON file read/write capability, more accurate default inference strategy",
+                        "publishedAt": "2023-01-23T00:24:59Z",
+                        "tagName": "0.2.0"
+                    },
+                    {
+                        "name": "0.1.2 Bug fix and documentation edits",
+                        "publishedAt": "2022-12-02T08:41:45Z",
+                        "tagName": "0.1.2"
+                    },
+                    {
+                        "name": "0.1.1 ",
+                        "publishedAt": "2022-11-29T03:53:45Z",
+                        "tagName": "0.1.1"
+                    },
+                    {
+                        "name": "Initial Release: Concurrent Inference Capability",
+                        "publishedAt": "2022-11-22T02:08:51Z",
+                        "tagName": "0.1.0"
+                    }
+                ]
+            }
+        },
+        "BerkeleyLab/julienne": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "Improve portability across compilers",
+                        "publishedAt": "2025-11-12T19:31:56Z",
+                        "tagName": "3.3.0"
+                    },
+                    {
+                        "name": "Expand compilers supported for scaffolding",
+                        "publishedAt": "2025-09-29T18:50:32Z",
+                        "tagName": "3.2.1"
+                    },
+                    {
+                        "name": "Parallel testing",
+                        "publishedAt": "2025-09-28T05:45:58Z",
+                        "tagName": "3.2.0"
+                    },
+                    {
+                        "name": "Fix ifx support",
+                        "publishedAt": "2025-09-11T17:57:07Z",
+                        "tagName": "3.1.5"
+                    },
+                    {
+                        "name": "Fix NAG support",
+                        "publishedAt": "2025-09-10T22:36:37Z",
+                        "tagName": "3.1.4"
+                    },
+                    {
+                        "name": "Fix test output indentation ",
+                        "publishedAt": "2025-09-10T07:54:17Z",
+                        "tagName": "3.1.3"
+                    },
+                    {
+                        "name": "Minor improvements and fixes in testing documentation.",
+                        "publishedAt": "2025-09-09T21:59:03Z",
+                        "tagName": "3.1.2"
+                    },
+                    {
+                        "name": "Tidy parallel output",
+                        "publishedAt": "2025-09-04T21:57:48Z",
+                        "tagName": "3.1.1"
+                    },
+                    {
+                        "name": "New operands for `test_diagnosis_t` defined operations",
+                        "publishedAt": "2025-08-25T04:57:37Z",
+                        "tagName": "3.1.0"
+                    },
+                    {
+                        "name": "Automated test-suite scaffolding, simpler tests, logical assertions",
+                        "publishedAt": "2025-08-23T20:52:14Z",
+                        "tagName": "3.0.0"
+                    },
+                    {
+                        "name": "New test-diagnosis operators and JSON value getter",
+                        "publishedAt": "2025-08-04T04:26:52Z",
+                        "tagName": "2.4.3"
+                    },
+                    {
+                        "name": "Use Assert 3.0.0",
+                        "publishedAt": "2025-07-24T15:00:04Z",
+                        "tagName": "2.4.2"
+                    },
+                    {
+                        "name": "Fix test filtering",
+                        "publishedAt": "2025-07-13T03:31:52Z",
+                        "tagName": "2.4.1"
+                    },
+                    {
+                        "name": "New operators, operand types and ranks",
+                        "publishedAt": "2025-06-26T00:15:10Z",
+                        "tagName": "2.4.0"
+                    },
+                    {
+                        "name": "Assertions, Compiler Support, Operators, & Documentation",
+                        "publishedAt": "2025-06-03T22:26:08Z",
+                        "tagName": "2.3.0"
+                    },
+                    {
+                        "name": "Feature: Relative tolerances",
+                        "publishedAt": "2025-05-23T18:31:08Z",
+                        "tagName": "2.2.0"
+                    },
+                    {
+                        "name": "Automatic test diagnosis via expressions inspired by natural language",
+                        "publishedAt": "2025-05-14T05:31:45Z",
+                        "tagName": "2.1.0"
+                    },
+                    {
+                        "name": "Features: Tally skipped tests and enhance documentation",
+                        "publishedAt": "2025-04-03T05:33:52Z",
+                        "tagName": "2.0.0"
+                    },
+                    {
+                        "name": "Dependency update and minor fix",
+                        "publishedAt": "2025-03-05T02:56:19Z",
+                        "tagName": "1.8.4"
+                    },
+                    {
+                        "name": "Fix and improve assertions",
+                        "publishedAt": "2025-02-21T20:09:18Z",
+                        "tagName": "1.8.3"
+                    },
+                    {
+                        "name": "1.8.1 Update Assert dependency URL in fpm.toml",
+                        "publishedAt": "2025-02-14T21:04:19Z",
+                        "tagName": "1.8.1"
+                    },
+                    {
+                        "name": "1.8.0 Support Intel ifx compiler",
+                        "publishedAt": "2025-02-06T03:49:00Z",
+                        "tagName": "1.8.0"
+                    },
+                    {
+                        "name": "String_t construction from logical and complex types",
+                        "publishedAt": "2025-01-06T07:44:47Z",
+                        "tagName": "1.7.0"
+                    },
+                    {
+                        "name": "Diagnostic output, test-suite example, and UML diagrams",
+                        "publishedAt": "2025-01-02T16:06:27Z",
+                        "tagName": "1.6.0"
+                    },
+                    {
+                        "name": "Improve test coverage and robustness ",
+                        "publishedAt": "2024-12-19T06:55:50Z",
+                        "tagName": "1.5.4"
+                    },
+                    {
+                        "name": "Fix: eliminate line wrapping in file_t write_lines procedure",
+                        "publishedAt": "2024-10-27T17:49:13Z",
+                        "tagName": "1.5.3"
+                    },
+                    {
+                        "name": "Fix: eliminate line wrapping in test-subject report output",
+                        "publishedAt": "2024-10-27T16:09:28Z",
+                        "tagName": "1.5.2"
+                    },
+                    {
+                        "name": "1.5.0",
+                        "publishedAt": "2024-10-27T04:02:46Z",
+                        "tagName": "1.5.0"
+                    },
+                    {
+                        "name": "Feature: get_json_value reads string-array value from key/value pair",
+                        "publishedAt": "2024-10-25T05:17:33Z",
+                        "tagName": "1.4.0"
+                    },
+                    {
+                        "name": "Improved testing",
+                        "publishedAt": "2024-09-24T03:28:07Z",
+                        "tagName": "1.3.1"
+                    },
+                    {
+                        "name": "Public GitHub_CI detector and generic test-description search function",
+                        "publishedAt": "2024-09-07T21:24:08Z",
+                        "tagName": "1.3.0"
+                    },
+                    {
+                        "name": "Double-precision separated value format",
+                        "publishedAt": "2024-09-03T04:21:19Z",
+                        "tagName": "1.2.2"
+                    },
+                    {
+                        "name": "JSON double-precision array value getter to string_t",
+                        "publishedAt": "2024-09-02T02:07:31Z",
+                        "tagName": "1.2.1"
+                    },
+                    {
+                        "name": "Double-precision JSON value getters",
+                        "publishedAt": "2024-09-01T06:47:36Z",
+                        "tagName": "1.2.0"
+                    },
+                    {
+                        "name": "Test JSON-value character getters and add copyrights",
+                        "publishedAt": "2024-08-13T17:26:50Z",
+                        "tagName": "1.1.1"
+                    },
+                    {
+                        "name": "JSON value getters with intrinsic-character key ",
+                        "publishedAt": "2024-08-12T22:30:57Z",
+                        "tagName": "1.1.0"
+                    }
+                ]
+            }
+        },
         "CEED/libCEED": {
             "releases": {
                 "nodes": [

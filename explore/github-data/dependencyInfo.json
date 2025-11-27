@@ -4672,6 +4672,21 @@
                 "login": "tartley"
             }
         },
+        "technote-space/broken-link-checker-action": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "broken-link-checker-action",
+            "nameWithOwner": "technote-space/broken-link-checker-action",
+            "owner": {
+                "login": "technote-space"
+            }
+        },
         "termoshtt/katexit": {
             "languages": {
                 "nodes": [

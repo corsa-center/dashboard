@@ -3665,22 +3665,6 @@
                 "login": "readthedocs"
             }
         },
-        "readthedocs/sphinx_rtd_theme": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#a53b70",
-                        "name": "Sass"
-                    }
-                ]
-            },
-            "name": "sphinx_rtd_theme",
-            "nameWithOwner": "readthedocs/sphinx_rtd_theme",
-            "owner": {
-                "isVerified": false,
-                "login": "readthedocs"
-            }
-        },
         "rickstaa/action-create-tag": {
             "languages": {
                 "nodes": [
@@ -3756,22 +3740,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "rust-bakery"
-            }
-        },
-        "rust-cli/anstyle": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#e34c26",
-                        "name": "HTML"
-                    }
-                ]
-            },
-            "name": "anstyle",
-            "nameWithOwner": "rust-cli/anstyle",
-            "owner": {
-                "isVerified": false,
-                "login": "rust-cli"
             }
         },
         "rust-cli/env_logger": {

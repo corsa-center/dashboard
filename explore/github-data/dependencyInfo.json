@@ -73,22 +73,6 @@
                 "login": "BurntSushi"
             }
         },
-        "CEED/libCEED": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#555555",
-                        "name": "C"
-                    }
-                ]
-            },
-            "name": "libCEED",
-            "nameWithOwner": "CEED/libCEED",
-            "owner": {
-                "isVerified": false,
-                "login": "CEED"
-            }
-        },
         "CrossNox/m2r2": {
             "languages": {
                 "nodes": [
@@ -1468,21 +1452,6 @@
                 "login": "dtolnay"
             }
         },
-        "dtolnay/rust-toolchain": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#89e051",
-                        "name": "Shell"
-                    }
-                ]
-            },
-            "name": "rust-toolchain",
-            "nameWithOwner": "dtolnay/rust-toolchain",
-            "owner": {
-                "login": "dtolnay"
-            }
-        },
         "easimon/maximize-build-space": {
             "languages": {
                 "nodes": []
@@ -1891,21 +1860,6 @@
             "nameWithOwner": "hendrikmuhs/ccache-action",
             "owner": {
                 "login": "hendrikmuhs"
-            }
-        },
-        "hhatto/autopep8": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "autopep8",
-            "nameWithOwner": "hhatto/autopep8",
-            "owner": {
-                "login": "hhatto"
             }
         },
         "hukkin/tomli": {
@@ -2498,21 +2452,6 @@
                 "login": "mfem"
             }
         },
-        "mgaitan/sphinxcontrib-mermaid": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "sphinxcontrib-mermaid",
-            "nameWithOwner": "mgaitan/sphinxcontrib-mermaid",
-            "owner": {
-                "login": "mgaitan"
-            }
-        },
         "mgeier/sphinx-last-updated-by-git": {
             "languages": {
                 "nodes": [
@@ -2526,21 +2465,6 @@
             "nameWithOwner": "mgeier/sphinx-last-updated-by-git",
             "owner": {
                 "login": "mgeier"
-            }
-        },
-        "mgeisler/version-sync": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "version-sync",
-            "nameWithOwner": "mgeisler/version-sync",
-            "owner": {
-                "login": "mgeisler"
             }
         },
         "miklelappo/android-properties": {
@@ -2742,22 +2666,6 @@
             "nameWithOwner": "nical/android_system_properties",
             "owner": {
                 "login": "nical"
-            }
-        },
-        "numba/numba": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "numba",
-            "nameWithOwner": "numba/numba",
-            "owner": {
-                "isVerified": false,
-                "login": "numba"
             }
         },
         "numpy/numpy": {
@@ -3633,22 +3541,6 @@
                 "login": "readthedocs"
             }
         },
-        "readthedocs/sphinx-hoverxref": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "sphinx-hoverxref",
-            "nameWithOwner": "readthedocs/sphinx-hoverxref",
-            "owner": {
-                "isVerified": false,
-                "login": "readthedocs"
-            }
-        },
         "readthedocs/sphinx-notfound-page": {
             "languages": {
                 "nodes": [
@@ -3725,21 +3617,6 @@
             "nameWithOwner": "robinraju/release-downloader",
             "owner": {
                 "login": "robinraju"
-            }
-        },
-        "rscohn2/setup-oneapi": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#f1e05a",
-                        "name": "JavaScript"
-                    }
-                ]
-            },
-            "name": "setup-oneapi",
-            "nameWithOwner": "rscohn2/setup-oneapi",
-            "owner": {
-                "login": "rscohn2"
             }
         },
         "rust-bakery/nom": {
@@ -3870,22 +3747,6 @@
                 "login": "rust-lang"
             }
         },
-        "rust-lang/pkg-config-rs": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "pkg-config-rs",
-            "nameWithOwner": "rust-lang/pkg-config-rs",
-            "owner": {
-                "isVerified": true,
-                "login": "rust-lang"
-            }
-        },
         "rust-lang/rust-bindgen": {
             "languages": {
                 "nodes": [
@@ -3916,22 +3777,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "rust-mobile"
-            }
-        },
-        "rust-ndarray/ndarray": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "ndarray",
-            "nameWithOwner": "rust-ndarray/ndarray",
-            "owner": {
-                "isVerified": false,
-                "login": "rust-ndarray"
             }
         },
         "scikit-build/moderncmakedomain": {
@@ -4642,21 +4487,6 @@
                 "login": "supercharge"
             }
         },
-        "taiki-e/install-action": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "install-action",
-            "nameWithOwner": "taiki-e/install-action",
-            "owner": {
-                "login": "taiki-e"
-            }
-        },
         "tartley/colorama": {
             "languages": {
                 "nodes": [
@@ -4685,21 +4515,6 @@
             "nameWithOwner": "technote-space/broken-link-checker-action",
             "owner": {
                 "login": "technote-space"
-            }
-        },
-        "termoshtt/katexit": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "katexit",
-            "nameWithOwner": "termoshtt/katexit",
-            "owner": {
-                "login": "termoshtt"
             }
         },
         "testing-cabal/mock": {
@@ -4781,21 +4596,6 @@
                 "login": "tqdm"
             }
         },
-        "uraimo/run-on-arch-action": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#89e051",
-                        "name": "Shell"
-                    }
-                ]
-            },
-            "name": "run-on-arch-action",
-            "nameWithOwner": "uraimo/run-on-arch-action",
-            "owner": {
-                "login": "uraimo"
-            }
-        },
         "urllib3/urllib3": {
             "languages": {
                 "nodes": [
@@ -4839,22 +4639,6 @@
             },
             "name": "altair",
             "nameWithOwner": "vega/altair",
-            "owner": {
-                "isVerified": false,
-                "login": "vega"
-            }
-        },
-        "vega/sphinxext-altair": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "sphinxext-altair",
-            "nameWithOwner": "vega/sphinxext-altair",
             "owner": {
                 "isVerified": false,
                 "login": "vega"

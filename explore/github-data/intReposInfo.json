@@ -456,7 +456,7 @@
                 "totalCount": 823
             },
             "issues_Open": {
-                "totalCount": 300
+                "totalCount": 301
             },
             "languages": {
                 "totalCount": 18
@@ -1497,7 +1497,7 @@
             },
             "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
             "forks": {
-                "totalCount": 227
+                "totalCount": 228
             },
             "homepageUrl": "https://www.llnl.gov/casc/hypre/",
             "issues_Closed": {
@@ -1701,13 +1701,13 @@
                 "totalCount": 4699
             },
             "pullRequests_Open": {
-                "totalCount": 84
+                "totalCount": 86
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2383
+                "totalCount": 2384
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -1774,14 +1774,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 13310
+                "totalCount": 13314
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 62140
+                "totalCount": 62147
             },
             "issues_Open": {
-                "totalCount": 27290
+                "totalCount": 27301
             },
             "languages": {
                 "totalCount": 56
@@ -1793,7 +1793,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 5401
+                "totalCount": 5403
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -1806,19 +1806,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 7632
+                "totalCount": 7634
             },
             "pullRequests_Merged": {
-                "totalCount": 65667
+                "totalCount": 65678
             },
             "pullRequests_Open": {
-                "totalCount": 5981
+                "totalCount": 5998
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 35643
+                "totalCount": 35657
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -1829,14 +1829,14 @@
             },
             "description": "Lightweight, general, scalable C++ library for finite element methods",
             "forks": {
-                "totalCount": 558
+                "totalCount": 559
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
                 "totalCount": 2348
             },
             "issues_Open": {
-                "totalCount": 82
+                "totalCount": 83
             },
             "languages": {
                 "totalCount": 10
@@ -1928,7 +1928,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2460
+                "totalCount": 2461
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -1944,10 +1944,10 @@
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
-                "totalCount": 1172
+                "totalCount": 1173
             },
             "issues_Open": {
-                "totalCount": 56
+                "totalCount": 55
             },
             "languages": {
                 "totalCount": 14
@@ -1995,7 +1995,7 @@
             },
             "description": "Mirror of https://gitlab.com/petsc/petsc",
             "forks": {
-                "totalCount": 179
+                "totalCount": 180
             },
             "homepageUrl": "https://petsc.org",
             "issues_Closed": {
@@ -2149,7 +2149,7 @@
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 645
+                "totalCount": 646
             },
             "url": "https://github.com/pmodels/mpich"
         },
@@ -2221,7 +2221,7 @@
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7702
+                "totalCount": 7703
             },
             "issues_Open": {
                 "totalCount": 1394
@@ -2261,7 +2261,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 4879
+                "totalCount": 4881
             },
             "url": "https://github.com/spack/spack"
         },
@@ -2273,14 +2273,14 @@
             },
             "description": "Primary repository for the Trilinos Project",
             "forks": {
-                "totalCount": 590
+                "totalCount": 591
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
                 "totalCount": 5282
             },
             "issues_Open": {
-                "totalCount": 278
+                "totalCount": 279
             },
             "languages": {
                 "totalCount": 32

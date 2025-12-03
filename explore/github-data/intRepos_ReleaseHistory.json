@@ -780,8 +780,8 @@
                         "tagName": "hdf5_1.14.4.2"
                     },
                     {
-                        "name": "HDF5 Release snapshot",
-                        "publishedAt": "2025-11-25T20:26:58Z",
+                        "name": "snapshot",
+                        "publishedAt": "2025-12-03T01:21:37Z",
                         "tagName": "snapshot"
                     },
                     {
@@ -1564,6 +1564,11 @@
         "deephyper/deephyper": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "0.13.0",
+                        "publishedAt": "2025-12-02T18:56:09Z",
+                        "tagName": "0.13.0"
+                    },
                     {
                         "name": "0.12.0",
                         "publishedAt": "2025-10-28T07:20:55Z",
@@ -2359,6 +2364,11 @@
         "llvm/llvm-project": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "LLVM 21.1.7",
+                        "publishedAt": "2025-12-02T07:59:44Z",
+                        "tagName": "llvmorg-21.1.7"
+                    },
                     {
                         "name": "LLVM 21.1.6",
                         "publishedAt": "2025-11-18T10:41:27Z",

@@ -5223,13 +5223,6 @@
                                 },
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "importlib-metadata",
-                                    "repository": {
-                                        "nameWithOwner": "python/importlib_metadata"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "jinja2",
                                     "repository": {
                                         "nameWithOwner": "pallets/jinja"
@@ -5359,13 +5352,6 @@
                                     "packageName": "urllib3",
                                     "repository": {
                                         "nameWithOwner": "urllib3/urllib3"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "zipp",
-                                    "repository": {
-                                        "nameWithOwner": "jaraco/zipp"
                                     }
                                 }
                             ]
@@ -7386,46 +7372,6 @@
         "kokkos/kokkos": {
             "dependencyGraphManifests": {
                 "nodes": [
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "DoozyX/clang-format-lint-action",
-                                    "repository": {
-                                        "nameWithOwner": "DoozyX/clang-format-lint-action"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "PuneetMatharu/cmake-format-lint-action",
-                                    "repository": {
-                                        "nameWithOwner": "puneetmatharu/cmake-format-lint-action"
-                                    }
-                                }
-                            ]
-                        }
-                    },
                     {
                         "dependencies": {
                             "nodes": [

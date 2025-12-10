@@ -9552,13 +9552,6 @@
                                     "repository": {
                                         "nameWithOwner": "potassco/clingo"
                                     }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "setuptools",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/setuptools"
-                                    }
                                 }
                             ]
                         }

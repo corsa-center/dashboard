@@ -220,10 +220,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 304729
+                        "size": 305623
                     },
                     {
-                        "size": 269819
+                        "size": 270559
                     },
                     {
                         "size": 17218
@@ -244,7 +244,7 @@
                     }
                 ],
                 "totalCount": 3,
-                "totalSize": 591766
+                "totalSize": 593400
             }
         },
         "CEED/libCEED": {
@@ -2311,10 +2311,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11236061
+                        "size": 11051401
                     },
                     {
-                        "size": 306032
+                        "size": 303704
                     },
                     {
                         "size": 61992
@@ -2326,7 +2326,7 @@
                         "size": 15049
                     },
                     {
-                        "size": 6286
+                        "size": 6231
                     },
                     {
                         "size": 4834
@@ -2384,7 +2384,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 11679968
+                "totalSize": 11492925
             }
         },
         "kokkos/kokkos-kernels": {
@@ -2397,7 +2397,7 @@
                         "size": 379473
                     },
                     {
-                        "size": 206800
+                        "size": 194055
                     },
                     {
                         "size": 142933
@@ -2443,41 +2443,41 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 13391910
+                "totalSize": 13379165
             }
         },
         "llvm/llvm-project": {
             "languages": {
                 "edges": [
                     {
-                        "size": 674180694
+                        "size": 674161263
                     },
                     {
-                        "size": 511953234
+                        "size": 512000494
                     },
                     {
-                        "size": 214594988
+                        "size": 214635545
                     },
                     {
-                        "size": 164342863
+                        "size": 164345005
                     },
                     {
-                        "size": 24190290
+                        "size": 24211907
                     },
                     {
-                        "size": 13773368
+                        "size": 13778571
                     },
                     {
-                        "size": 12351891
+                        "size": 12354426
                     },
                     {
-                        "size": 4898306
+                        "size": 4901511
                     },
                     {
-                        "size": 4336405
+                        "size": 4337720
                     },
                     {
-                        "size": 4333185
+                        "size": 4336502
                     },
                     {
                         "size": 2212244
@@ -2486,13 +2486,13 @@
                         "size": 1932268
                     },
                     {
-                        "size": 1305855
+                        "size": 1306131
                     },
                     {
                         "size": 1261384
                     },
                     {
-                        "size": 1207451
+                        "size": 1207567
                     },
                     {
                         "size": 1027536
@@ -2519,7 +2519,7 @@
                         "size": 127345
                     },
                     {
-                        "size": 118722
+                        "size": 118911
                     },
                     {
                         "size": 93780
@@ -2559,12 +2559,12 @@
                         "name": "FIRRTL"
                     },
                     {
-                        "color": "#438eff",
-                        "name": "Objective-C"
-                    },
-                    {
                         "color": "#DA3434",
                         "name": "CMake"
+                    },
+                    {
+                        "color": "#438eff",
+                        "name": "Objective-C"
                     },
                     {
                         "color": "#e34c26",
@@ -2752,7 +2752,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1640331293
+                "totalSize": 1640439594
             }
         },
         "mfem/mfem": {
@@ -3048,13 +3048,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 44430784
+                        "size": 44430250
                     },
                     {
-                        "size": 3608007
+                        "size": 3608342
                     },
                     {
-                        "size": 3222894
+                        "size": 3222820
                     },
                     {
                         "size": 1832086
@@ -3066,7 +3066,7 @@
                         "size": 940505
                     },
                     {
-                        "size": 590457
+                        "size": 591050
                     },
                     {
                         "size": 241988
@@ -3230,7 +3230,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 56651257
+                "totalSize": 56651577
             }
         },
         "pghysels/STRUMPACK": {
@@ -3491,10 +3491,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 7586364
+                        "size": 7593951
                     },
                     {
-                        "size": 518336
+                        "size": 517090
                     },
                     {
                         "size": 131401
@@ -3585,7 +3585,7 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 8351133
+                "totalSize": 8357474
             }
         },
         "trilinos/Trilinos": {

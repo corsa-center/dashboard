@@ -2038,6 +2038,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Kokkos v. 4.7.2",
+                        "publishedAt": "2025-12-11T23:44:20Z",
+                        "tagName": "4.7.02"
+                    },
+                    {
                         "name": "Kokkos v5.0.0",
                         "publishedAt": "2025-11-17T20:56:09Z",
                         "tagName": "5.0.0"
@@ -2203,6 +2208,11 @@
         "kokkos/kokkos-kernels": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "4.7.02",
+                        "publishedAt": "2025-12-11T22:44:51Z",
+                        "tagName": "4.7.02"
+                    },
                     {
                         "name": "5.0.0",
                         "publishedAt": "2025-11-17T21:36:14Z",
@@ -3095,6 +3105,11 @@
         "mfem/mfem": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "",
+                        "publishedAt": "2025-12-11T19:02:57Z",
+                        "tagName": "v4.9"
+                    },
                     {
                         "name": "",
                         "publishedAt": "2025-04-09T23:21:38Z",

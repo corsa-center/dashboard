@@ -42,16 +42,16 @@
                 "totalCount": 261
             },
             "pullRequests_Merged": {
-                "totalCount": 3455
+                "totalCount": 3456
             },
             "pullRequests_Open": {
-                "totalCount": 26
+                "totalCount": 25
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 685
+                "totalCount": 684
             },
             "url": "https://github.com/AMReX-Codes/amrex"
         },
@@ -153,10 +153,10 @@
                 "totalCount": 14
             },
             "pullRequests_Merged": {
-                "totalCount": 161
+                "totalCount": 162
             },
             "pullRequests_Open": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -217,7 +217,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 238
+                "totalCount": 239
             },
             "url": "https://github.com/CEED/libCEED"
         },
@@ -263,10 +263,10 @@
                 "totalCount": 80
             },
             "pullRequests_Merged": {
-                "totalCount": 526
+                "totalCount": 527
             },
             "pullRequests_Open": {
-                "totalCount": 11
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -377,7 +377,7 @@
                 "totalCount": 4451
             },
             "pullRequests_Open": {
-                "totalCount": 17
+                "totalCount": 18
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -1210,7 +1210,7 @@
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 811
+                "totalCount": 812
             },
             "url": "https://github.com/dyninst/dyninst"
         },
@@ -1376,7 +1376,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 532
+                "totalCount": 533
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -1591,7 +1591,7 @@
                 "totalCount": 4723
             },
             "pullRequests_Open": {
-                "totalCount": 89
+                "totalCount": 93
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -1653,7 +1653,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 368
+                "totalCount": 367
             },
             "url": "https://github.com/kokkos/kokkos-kernels"
         },
@@ -1664,14 +1664,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 13449
+                "totalCount": 13451
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 62403
+                "totalCount": 62408
             },
             "issues_Open": {
-                "totalCount": 27534
+                "totalCount": 27541
             },
             "languages": {
                 "totalCount": 56
@@ -1696,19 +1696,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 7780
+                "totalCount": 7784
             },
             "pullRequests_Merged": {
-                "totalCount": 67099
+                "totalCount": 67130
             },
             "pullRequests_Open": {
-                "totalCount": 6063
+                "totalCount": 6068
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 35879
+                "totalCount": 35893
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -1726,7 +1726,7 @@
                 "totalCount": 2347
             },
             "issues_Open": {
-                "totalCount": 86
+                "totalCount": 87
             },
             "languages": {
                 "totalCount": 10
@@ -1751,7 +1751,7 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 392
+                "totalCount": 393
             },
             "pullRequests_Merged": {
                 "totalCount": 1906
@@ -1763,7 +1763,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 2061
+                "totalCount": 2062
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -1778,7 +1778,7 @@
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
-                "totalCount": 3138
+                "totalCount": 3139
             },
             "issues_Open": {
                 "totalCount": 726
@@ -1812,7 +1812,7 @@
                 "totalCount": 8545
             },
             "pullRequests_Open": {
-                "totalCount": 94
+                "totalCount": 96
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -1929,7 +1929,7 @@
                 "totalCount": 1
             },
             "stargazers": {
-                "totalCount": 491
+                "totalCount": 492
             },
             "url": "https://github.com/petsc/petsc"
         },
@@ -1940,7 +1940,7 @@
             },
             "description": "Structured Matrix Package (LBNL)",
             "forks": {
-                "totalCount": 44
+                "totalCount": 45
             },
             "homepageUrl": "http://portal.nersc.gov/project/sparse/strumpack/",
             "issues_Closed": {
@@ -1984,7 +1984,7 @@
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 182
+                "totalCount": 183
             },
             "url": "https://github.com/pghysels/STRUMPACK"
         },

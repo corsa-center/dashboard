@@ -418,139 +418,6 @@
                 "totalCount": 0
             }
         },
-        "LLNL/sundials": {
-            "repositoryTopics": {
-                "nodes": [
-                    {
-                        "resourcePath": "/topics/ode-solver",
-                        "topic": {
-                            "name": "ode-solver"
-                        },
-                        "url": "https://github.com/topics/ode-solver"
-                    },
-                    {
-                        "resourcePath": "/topics/dae-solver",
-                        "topic": {
-                            "name": "dae-solver"
-                        },
-                        "url": "https://github.com/topics/dae-solver"
-                    },
-                    {
-                        "resourcePath": "/topics/nonlinear-equation-solver",
-                        "topic": {
-                            "name": "nonlinear-equation-solver"
-                        },
-                        "url": "https://github.com/topics/nonlinear-equation-solver"
-                    },
-                    {
-                        "resourcePath": "/topics/sensitivity-analysis",
-                        "topic": {
-                            "name": "sensitivity-analysis"
-                        },
-                        "url": "https://github.com/topics/sensitivity-analysis"
-                    },
-                    {
-                        "resourcePath": "/topics/time-integration",
-                        "topic": {
-                            "name": "time-integration"
-                        },
-                        "url": "https://github.com/topics/time-integration"
-                    },
-                    {
-                        "resourcePath": "/topics/scientific-computing",
-                        "topic": {
-                            "name": "scientific-computing"
-                        },
-                        "url": "https://github.com/topics/scientific-computing"
-                    },
-                    {
-                        "resourcePath": "/topics/parallel-computing",
-                        "topic": {
-                            "name": "parallel-computing"
-                        },
-                        "url": "https://github.com/topics/parallel-computing"
-                    },
-                    {
-                        "resourcePath": "/topics/hpc",
-                        "topic": {
-                            "name": "hpc"
-                        },
-                        "url": "https://github.com/topics/hpc"
-                    },
-                    {
-                        "resourcePath": "/topics/math-physics",
-                        "topic": {
-                            "name": "math-physics"
-                        },
-                        "url": "https://github.com/topics/math-physics"
-                    },
-                    {
-                        "resourcePath": "/topics/radiuss",
-                        "topic": {
-                            "name": "radiuss"
-                        },
-                        "url": "https://github.com/topics/radiuss"
-                    },
-                    {
-                        "resourcePath": "/topics/solver",
-                        "topic": {
-                            "name": "solver"
-                        },
-                        "url": "https://github.com/topics/solver"
-                    },
-                    {
-                        "resourcePath": "/topics/high-performance-computing",
-                        "topic": {
-                            "name": "high-performance-computing"
-                        },
-                        "url": "https://github.com/topics/high-performance-computing"
-                    }
-                ],
-                "totalCount": 12
-            }
-        },
-        "LLNL/zfp": {
-            "repositoryTopics": {
-                "nodes": [
-                    {
-                        "resourcePath": "/topics/radiuss",
-                        "topic": {
-                            "name": "radiuss"
-                        },
-                        "url": "https://github.com/topics/radiuss"
-                    },
-                    {
-                        "resourcePath": "/topics/data-viz",
-                        "topic": {
-                            "name": "data-viz"
-                        },
-                        "url": "https://github.com/topics/data-viz"
-                    },
-                    {
-                        "resourcePath": "/topics/compression",
-                        "topic": {
-                            "name": "compression"
-                        },
-                        "url": "https://github.com/topics/compression"
-                    },
-                    {
-                        "resourcePath": "/topics/floating-point",
-                        "topic": {
-                            "name": "floating-point"
-                        },
-                        "url": "https://github.com/topics/floating-point"
-                    },
-                    {
-                        "resourcePath": "/topics/arrays",
-                        "topic": {
-                            "name": "arrays"
-                        },
-                        "url": "https://github.com/topics/arrays"
-                    }
-                ],
-                "totalCount": 5
-            }
-        },
         "Libensemble/libensemble": {
             "repositoryTopics": {
                 "nodes": [],
@@ -1183,6 +1050,139 @@
                     }
                 ],
                 "totalCount": 6
+            }
+        },
+        "llnl/sundials": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/ode-solver",
+                        "topic": {
+                            "name": "ode-solver"
+                        },
+                        "url": "https://github.com/topics/ode-solver"
+                    },
+                    {
+                        "resourcePath": "/topics/dae-solver",
+                        "topic": {
+                            "name": "dae-solver"
+                        },
+                        "url": "https://github.com/topics/dae-solver"
+                    },
+                    {
+                        "resourcePath": "/topics/nonlinear-equation-solver",
+                        "topic": {
+                            "name": "nonlinear-equation-solver"
+                        },
+                        "url": "https://github.com/topics/nonlinear-equation-solver"
+                    },
+                    {
+                        "resourcePath": "/topics/sensitivity-analysis",
+                        "topic": {
+                            "name": "sensitivity-analysis"
+                        },
+                        "url": "https://github.com/topics/sensitivity-analysis"
+                    },
+                    {
+                        "resourcePath": "/topics/time-integration",
+                        "topic": {
+                            "name": "time-integration"
+                        },
+                        "url": "https://github.com/topics/time-integration"
+                    },
+                    {
+                        "resourcePath": "/topics/scientific-computing",
+                        "topic": {
+                            "name": "scientific-computing"
+                        },
+                        "url": "https://github.com/topics/scientific-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/parallel-computing",
+                        "topic": {
+                            "name": "parallel-computing"
+                        },
+                        "url": "https://github.com/topics/parallel-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/hpc",
+                        "topic": {
+                            "name": "hpc"
+                        },
+                        "url": "https://github.com/topics/hpc"
+                    },
+                    {
+                        "resourcePath": "/topics/math-physics",
+                        "topic": {
+                            "name": "math-physics"
+                        },
+                        "url": "https://github.com/topics/math-physics"
+                    },
+                    {
+                        "resourcePath": "/topics/radiuss",
+                        "topic": {
+                            "name": "radiuss"
+                        },
+                        "url": "https://github.com/topics/radiuss"
+                    },
+                    {
+                        "resourcePath": "/topics/solver",
+                        "topic": {
+                            "name": "solver"
+                        },
+                        "url": "https://github.com/topics/solver"
+                    },
+                    {
+                        "resourcePath": "/topics/high-performance-computing",
+                        "topic": {
+                            "name": "high-performance-computing"
+                        },
+                        "url": "https://github.com/topics/high-performance-computing"
+                    }
+                ],
+                "totalCount": 12
+            }
+        },
+        "llnl/zfp": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/radiuss",
+                        "topic": {
+                            "name": "radiuss"
+                        },
+                        "url": "https://github.com/topics/radiuss"
+                    },
+                    {
+                        "resourcePath": "/topics/data-viz",
+                        "topic": {
+                            "name": "data-viz"
+                        },
+                        "url": "https://github.com/topics/data-viz"
+                    },
+                    {
+                        "resourcePath": "/topics/compression",
+                        "topic": {
+                            "name": "compression"
+                        },
+                        "url": "https://github.com/topics/compression"
+                    },
+                    {
+                        "resourcePath": "/topics/floating-point",
+                        "topic": {
+                            "name": "floating-point"
+                        },
+                        "url": "https://github.com/topics/floating-point"
+                    },
+                    {
+                        "resourcePath": "/topics/arrays",
+                        "topic": {
+                            "name": "arrays"
+                        },
+                        "url": "https://github.com/topics/arrays"
+                    }
+                ],
+                "totalCount": 5
             }
         },
         "llvm/llvm-project": {

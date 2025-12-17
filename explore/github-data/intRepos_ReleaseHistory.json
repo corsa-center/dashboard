@@ -873,278 +873,6 @@
                 ]
             }
         },
-        "LLNL/sundials": {
-            "releases": {
-                "nodes": [
-                    {
-                        "name": "SUNDIALS v7.5.0",
-                        "publishedAt": "2025-09-29T21:40:22Z",
-                        "tagName": "v7.5.0"
-                    },
-                    {
-                        "name": "SUNDIALS v7.4.0",
-                        "publishedAt": "2025-06-23T17:14:51Z",
-                        "tagName": "v7.4.0"
-                    },
-                    {
-                        "name": "SUNDIALS v7.3.0",
-                        "publishedAt": "2025-04-07T17:32:15Z",
-                        "tagName": "v7.3.0"
-                    },
-                    {
-                        "name": "SUNDIALS v7.2.1",
-                        "publishedAt": "2024-12-20T19:08:27Z",
-                        "tagName": "v7.2.1"
-                    },
-                    {
-                        "name": "SUNDIALS v7.2.0",
-                        "publishedAt": "2024-12-11T19:33:17Z",
-                        "tagName": "v7.2.0"
-                    },
-                    {
-                        "name": "SUNDIALS v7.1.1",
-                        "publishedAt": "2024-06-26T19:28:15Z",
-                        "tagName": "v7.1.1"
-                    },
-                    {
-                        "name": "SUNDIALS v7.1.0",
-                        "publishedAt": "2024-06-20T19:32:10Z",
-                        "tagName": "v7.1.0"
-                    },
-                    {
-                        "name": "SUNDIALS v7.0.0",
-                        "publishedAt": "2024-02-29T23:01:26Z",
-                        "tagName": "v7.0.0"
-                    },
-                    {
-                        "name": "SUNDIALS v7.0.0-rc.1",
-                        "publishedAt": "2024-01-03T19:07:19Z",
-                        "tagName": "v7.0.0-rc.1"
-                    },
-                    {
-                        "name": "SUNDIALS v6.7.0",
-                        "publishedAt": "2023-12-18T18:52:42Z",
-                        "tagName": "v6.7.0"
-                    },
-                    {
-                        "name": "SUNDIALS patch release v6.6.2",
-                        "publishedAt": "2023-11-06T22:44:57Z",
-                        "tagName": "v6.6.2"
-                    },
-                    {
-                        "name": "SUNDIALS v6.6.1",
-                        "publishedAt": "2023-09-07T01:01:51Z",
-                        "tagName": "v6.6.1"
-                    },
-                    {
-                        "name": " SUNDIALS v6.6.0",
-                        "publishedAt": "2023-07-20T19:09:49Z",
-                        "tagName": "v6.6.0"
-                    },
-                    {
-                        "name": " SUNDIALS patch release v6.5.1",
-                        "publishedAt": "2023-03-30T18:02:12Z",
-                        "tagName": "v6.5.1"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v6.5.0",
-                        "publishedAt": "2022-12-21T20:11:34Z",
-                        "tagName": "v6.5.0"
-                    },
-                    {
-                        "name": "SUNDIALS patch release v6.4.1",
-                        "publishedAt": "2022-10-31T23:03:26Z",
-                        "tagName": "v6.4.1"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v6.4.0",
-                        "publishedAt": "2022-10-21T19:39:50Z",
-                        "tagName": "v6.4.0"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v6.3.0",
-                        "publishedAt": "2022-08-10T19:04:37Z",
-                        "tagName": "v6.3.0"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v6.2.0",
-                        "publishedAt": "2022-04-22T17:20:28Z",
-                        "tagName": "v6.2.0"
-                    },
-                    {
-                        "name": "SUNDIALS patch release v6.1.1",
-                        "publishedAt": "2022-02-11T18:23:50Z",
-                        "tagName": "v6.1.1"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v6.1.0",
-                        "publishedAt": "2022-01-12T19:02:19Z",
-                        "tagName": "v6.1.0"
-                    },
-                    {
-                        "name": "SUNDIALS major release v6.0.0",
-                        "publishedAt": "2021-12-16T00:49:53Z",
-                        "tagName": "v6.0.0"
-                    },
-                    {
-                        "name": "SUNDIALS v5.8.0",
-                        "publishedAt": "2021-09-30T20:01:30Z",
-                        "tagName": "v5.8.0"
-                    },
-                    {
-                        "name": "SUNDIALS v5.7.0",
-                        "publishedAt": "2021-01-29T21:54:30Z",
-                        "tagName": "v5.7.0"
-                    },
-                    {
-                        "name": "SUNDIALS v5.6.1",
-                        "publishedAt": "2020-12-16T01:38:13Z",
-                        "tagName": "v5.6.1"
-                    },
-                    {
-                        "name": "SUNDIALS v5.6.0",
-                        "publishedAt": "2020-12-12T01:18:53Z",
-                        "tagName": "v5.6.0"
-                    },
-                    {
-                        "name": "SUNDIALS v5.5.0",
-                        "publishedAt": "2020-11-02T16:31:41Z",
-                        "tagName": "v5.5.0"
-                    },
-                    {
-                        "name": "SUNDIALS v5.4.0",
-                        "publishedAt": "2020-09-24T18:04:32Z",
-                        "tagName": "v5.4.0"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v5.3.0",
-                        "publishedAt": "2020-05-21T17:30:53Z",
-                        "tagName": "v5.3.0"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v5.2.0",
-                        "publishedAt": "2020-03-31T14:52:21Z",
-                        "tagName": "v5.2.0"
-                    },
-                    {
-                        "name": "SUNDIALS minor release v5.1.0",
-                        "publishedAt": "2020-01-08T19:56:39Z",
-                        "tagName": "v5.1.0"
-                    },
-                    {
-                        "name": "SUNDIALS major release v5.0.0",
-                        "publishedAt": "2019-10-21T23:12:11Z",
-                        "tagName": "v5.0.0"
-                    },
-                    {
-                        "name": "SUNDIALS development release v5.0.0-dev.2",
-                        "publishedAt": "2019-09-16T20:26:14Z",
-                        "tagName": "v5.0.0-dev.2"
-                    },
-                    {
-                        "name": "SUNDIALS v5.0.0-dev.1",
-                        "publishedAt": "2019-06-24T22:42:21Z",
-                        "tagName": "v5.0.0-dev.1"
-                    },
-                    {
-                        "name": "v5.0.0-dev.0",
-                        "publishedAt": "2019-03-28T17:13:30Z",
-                        "tagName": "v5.0.0-dev.0"
-                    },
-                    {
-                        "name": "v4.1.0",
-                        "publishedAt": "2019-02-13T22:38:04Z",
-                        "tagName": "v4.1.0"
-                    },
-                    {
-                        "name": "v4.0.2",
-                        "publishedAt": "2019-02-13T22:47:13Z",
-                        "tagName": "v4.0.2"
-                    },
-                    {
-                        "name": "v4.0.1",
-                        "publishedAt": "2018-12-21T00:15:16Z",
-                        "tagName": "v4.0.1"
-                    },
-                    {
-                        "name": "v4.0.0",
-                        "publishedAt": "2018-12-08T00:14:30Z",
-                        "tagName": "v4.0.0"
-                    },
-                    {
-                        "name": "v3.2.1",
-                        "publishedAt": "2018-10-17T23:30:40Z",
-                        "tagName": "v3.2.1"
-                    },
-                    {
-                        "name": "v3.2.0",
-                        "publishedAt": "2018-09-28T22:16:48Z",
-                        "tagName": "v3.2.0"
-                    },
-                    {
-                        "name": "v3.1.2",
-                        "publishedAt": "2018-07-31T21:03:13Z",
-                        "tagName": "v3.1.2"
-                    },
-                    {
-                        "name": "v3.1.1",
-                        "publishedAt": "2018-05-07T22:03:17Z",
-                        "tagName": "v3.1.1"
-                    },
-                    {
-                        "name": "v3.1.0",
-                        "publishedAt": "2017-11-08T01:05:15Z",
-                        "tagName": "v3.1.0"
-                    },
-                    {
-                        "name": "v3.0.0",
-                        "publishedAt": "2017-10-26T23:45:56Z",
-                        "tagName": "v3.0.0"
-                    },
-                    {
-                        "name": "v2.7.0",
-                        "publishedAt": "2017-10-06T02:39:34Z",
-                        "tagName": "v2.7.0"
-                    }
-                ]
-            }
-        },
-        "LLNL/zfp": {
-            "releases": {
-                "nodes": [
-                    {
-                        "name": "1.0.1",
-                        "publishedAt": "2023-12-16T07:47:04Z",
-                        "tagName": "1.0.1"
-                    },
-                    {
-                        "name": "1.0.0",
-                        "publishedAt": "2022-08-01T21:25:19Z",
-                        "tagName": "1.0.0"
-                    },
-                    {
-                        "name": "0.5.5",
-                        "publishedAt": "2019-05-06T02:20:05Z",
-                        "tagName": "0.5.5"
-                    },
-                    {
-                        "name": "0.5.4",
-                        "publishedAt": "2018-10-02T04:56:05Z",
-                        "tagName": "0.5.4"
-                    },
-                    {
-                        "name": "0.5.3",
-                        "publishedAt": "2018-03-28T19:53:49Z",
-                        "tagName": "0.5.3"
-                    },
-                    {
-                        "name": "",
-                        "publishedAt": "2017-09-29T22:03:35Z",
-                        "tagName": "0.5.2"
-                    }
-                ]
-            }
-        },
         "Libensemble/libensemble": {
             "releases": {
                 "nodes": [
@@ -2381,9 +2109,286 @@
                 ]
             }
         },
+        "llnl/sundials": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "SUNDIALS v7.5.0",
+                        "publishedAt": "2025-09-29T21:40:22Z",
+                        "tagName": "v7.5.0"
+                    },
+                    {
+                        "name": "SUNDIALS v7.4.0",
+                        "publishedAt": "2025-06-23T17:14:51Z",
+                        "tagName": "v7.4.0"
+                    },
+                    {
+                        "name": "SUNDIALS v7.3.0",
+                        "publishedAt": "2025-04-07T17:32:15Z",
+                        "tagName": "v7.3.0"
+                    },
+                    {
+                        "name": "SUNDIALS v7.2.1",
+                        "publishedAt": "2024-12-20T19:08:27Z",
+                        "tagName": "v7.2.1"
+                    },
+                    {
+                        "name": "SUNDIALS v7.2.0",
+                        "publishedAt": "2024-12-11T19:33:17Z",
+                        "tagName": "v7.2.0"
+                    },
+                    {
+                        "name": "SUNDIALS v7.1.1",
+                        "publishedAt": "2024-06-26T19:28:15Z",
+                        "tagName": "v7.1.1"
+                    },
+                    {
+                        "name": "SUNDIALS v7.1.0",
+                        "publishedAt": "2024-06-20T19:32:10Z",
+                        "tagName": "v7.1.0"
+                    },
+                    {
+                        "name": "SUNDIALS v7.0.0",
+                        "publishedAt": "2024-02-29T23:01:26Z",
+                        "tagName": "v7.0.0"
+                    },
+                    {
+                        "name": "SUNDIALS v7.0.0-rc.1",
+                        "publishedAt": "2024-01-03T19:07:19Z",
+                        "tagName": "v7.0.0-rc.1"
+                    },
+                    {
+                        "name": "SUNDIALS v6.7.0",
+                        "publishedAt": "2023-12-18T18:52:42Z",
+                        "tagName": "v6.7.0"
+                    },
+                    {
+                        "name": "SUNDIALS patch release v6.6.2",
+                        "publishedAt": "2023-11-06T22:44:57Z",
+                        "tagName": "v6.6.2"
+                    },
+                    {
+                        "name": "SUNDIALS v6.6.1",
+                        "publishedAt": "2023-09-07T01:01:51Z",
+                        "tagName": "v6.6.1"
+                    },
+                    {
+                        "name": " SUNDIALS v6.6.0",
+                        "publishedAt": "2023-07-20T19:09:49Z",
+                        "tagName": "v6.6.0"
+                    },
+                    {
+                        "name": " SUNDIALS patch release v6.5.1",
+                        "publishedAt": "2023-03-30T18:02:12Z",
+                        "tagName": "v6.5.1"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v6.5.0",
+                        "publishedAt": "2022-12-21T20:11:34Z",
+                        "tagName": "v6.5.0"
+                    },
+                    {
+                        "name": "SUNDIALS patch release v6.4.1",
+                        "publishedAt": "2022-10-31T23:03:26Z",
+                        "tagName": "v6.4.1"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v6.4.0",
+                        "publishedAt": "2022-10-21T19:39:50Z",
+                        "tagName": "v6.4.0"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v6.3.0",
+                        "publishedAt": "2022-08-10T19:04:37Z",
+                        "tagName": "v6.3.0"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v6.2.0",
+                        "publishedAt": "2022-04-22T17:20:28Z",
+                        "tagName": "v6.2.0"
+                    },
+                    {
+                        "name": "SUNDIALS patch release v6.1.1",
+                        "publishedAt": "2022-02-11T18:23:50Z",
+                        "tagName": "v6.1.1"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v6.1.0",
+                        "publishedAt": "2022-01-12T19:02:19Z",
+                        "tagName": "v6.1.0"
+                    },
+                    {
+                        "name": "SUNDIALS major release v6.0.0",
+                        "publishedAt": "2021-12-16T00:49:53Z",
+                        "tagName": "v6.0.0"
+                    },
+                    {
+                        "name": "SUNDIALS v5.8.0",
+                        "publishedAt": "2021-09-30T20:01:30Z",
+                        "tagName": "v5.8.0"
+                    },
+                    {
+                        "name": "SUNDIALS v5.7.0",
+                        "publishedAt": "2021-01-29T21:54:30Z",
+                        "tagName": "v5.7.0"
+                    },
+                    {
+                        "name": "SUNDIALS v5.6.1",
+                        "publishedAt": "2020-12-16T01:38:13Z",
+                        "tagName": "v5.6.1"
+                    },
+                    {
+                        "name": "SUNDIALS v5.6.0",
+                        "publishedAt": "2020-12-12T01:18:53Z",
+                        "tagName": "v5.6.0"
+                    },
+                    {
+                        "name": "SUNDIALS v5.5.0",
+                        "publishedAt": "2020-11-02T16:31:41Z",
+                        "tagName": "v5.5.0"
+                    },
+                    {
+                        "name": "SUNDIALS v5.4.0",
+                        "publishedAt": "2020-09-24T18:04:32Z",
+                        "tagName": "v5.4.0"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v5.3.0",
+                        "publishedAt": "2020-05-21T17:30:53Z",
+                        "tagName": "v5.3.0"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v5.2.0",
+                        "publishedAt": "2020-03-31T14:52:21Z",
+                        "tagName": "v5.2.0"
+                    },
+                    {
+                        "name": "SUNDIALS minor release v5.1.0",
+                        "publishedAt": "2020-01-08T19:56:39Z",
+                        "tagName": "v5.1.0"
+                    },
+                    {
+                        "name": "SUNDIALS major release v5.0.0",
+                        "publishedAt": "2019-10-21T23:12:11Z",
+                        "tagName": "v5.0.0"
+                    },
+                    {
+                        "name": "SUNDIALS development release v5.0.0-dev.2",
+                        "publishedAt": "2019-09-16T20:26:14Z",
+                        "tagName": "v5.0.0-dev.2"
+                    },
+                    {
+                        "name": "SUNDIALS v5.0.0-dev.1",
+                        "publishedAt": "2019-06-24T22:42:21Z",
+                        "tagName": "v5.0.0-dev.1"
+                    },
+                    {
+                        "name": "v5.0.0-dev.0",
+                        "publishedAt": "2019-03-28T17:13:30Z",
+                        "tagName": "v5.0.0-dev.0"
+                    },
+                    {
+                        "name": "v4.1.0",
+                        "publishedAt": "2019-02-13T22:38:04Z",
+                        "tagName": "v4.1.0"
+                    },
+                    {
+                        "name": "v4.0.2",
+                        "publishedAt": "2019-02-13T22:47:13Z",
+                        "tagName": "v4.0.2"
+                    },
+                    {
+                        "name": "v4.0.1",
+                        "publishedAt": "2018-12-21T00:15:16Z",
+                        "tagName": "v4.0.1"
+                    },
+                    {
+                        "name": "v4.0.0",
+                        "publishedAt": "2018-12-08T00:14:30Z",
+                        "tagName": "v4.0.0"
+                    },
+                    {
+                        "name": "v3.2.1",
+                        "publishedAt": "2018-10-17T23:30:40Z",
+                        "tagName": "v3.2.1"
+                    },
+                    {
+                        "name": "v3.2.0",
+                        "publishedAt": "2018-09-28T22:16:48Z",
+                        "tagName": "v3.2.0"
+                    },
+                    {
+                        "name": "v3.1.2",
+                        "publishedAt": "2018-07-31T21:03:13Z",
+                        "tagName": "v3.1.2"
+                    },
+                    {
+                        "name": "v3.1.1",
+                        "publishedAt": "2018-05-07T22:03:17Z",
+                        "tagName": "v3.1.1"
+                    },
+                    {
+                        "name": "v3.1.0",
+                        "publishedAt": "2017-11-08T01:05:15Z",
+                        "tagName": "v3.1.0"
+                    },
+                    {
+                        "name": "v3.0.0",
+                        "publishedAt": "2017-10-26T23:45:56Z",
+                        "tagName": "v3.0.0"
+                    },
+                    {
+                        "name": "v2.7.0",
+                        "publishedAt": "2017-10-06T02:39:34Z",
+                        "tagName": "v2.7.0"
+                    }
+                ]
+            }
+        },
+        "llnl/zfp": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "1.0.1",
+                        "publishedAt": "2023-12-16T07:47:04Z",
+                        "tagName": "1.0.1"
+                    },
+                    {
+                        "name": "1.0.0",
+                        "publishedAt": "2022-08-01T21:25:19Z",
+                        "tagName": "1.0.0"
+                    },
+                    {
+                        "name": "0.5.5",
+                        "publishedAt": "2019-05-06T02:20:05Z",
+                        "tagName": "0.5.5"
+                    },
+                    {
+                        "name": "0.5.4",
+                        "publishedAt": "2018-10-02T04:56:05Z",
+                        "tagName": "0.5.4"
+                    },
+                    {
+                        "name": "0.5.3",
+                        "publishedAt": "2018-03-28T19:53:49Z",
+                        "tagName": "0.5.3"
+                    },
+                    {
+                        "name": "",
+                        "publishedAt": "2017-09-29T22:03:35Z",
+                        "tagName": "0.5.2"
+                    }
+                ]
+            }
+        },
         "llvm/llvm-project": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "LLVM 21.1.8",
+                        "publishedAt": "2025-12-16T10:23:31Z",
+                        "tagName": "llvmorg-21.1.8"
+                    },
                     {
                         "name": "LLVM 21.1.7",
                         "publishedAt": "2025-12-02T07:59:44Z",

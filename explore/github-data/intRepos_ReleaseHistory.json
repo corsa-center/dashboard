@@ -1064,6 +1064,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Version 25.12.0 (December 16, 2025)",
+                        "publishedAt": "2025-12-17T22:38:30Z",
+                        "tagName": "legion-25.12.0"
+                    },
+                    {
                         "name": "Version 25.09.0 (September 30, 2025) \u2013 Grand Refactor, Realm Split",
                         "publishedAt": "2025-10-01T15:50:54Z",
                         "tagName": "legion-25.09.0"
@@ -1297,6 +1302,11 @@
         "deephyper/deephyper": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "0.13.1",
+                        "publishedAt": "2025-12-17T09:43:30Z",
+                        "tagName": "0.13.1"
+                    },
                     {
                         "name": "0.13.0",
                         "publishedAt": "2025-12-02T18:56:09Z",

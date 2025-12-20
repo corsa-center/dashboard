@@ -2327,6 +2327,16 @@
             "login": "BaLiKfromUA",
             "name": "Valentyn Yukhymenko"
         },
+        "BabakkGraphcore": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/77353024?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "BabakkGraphcore",
+            "name": "Babak"
+        },
         "Backl1ght": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/44666321?u=eedde72929ae6934b99879a977409712ab8e794f&v=4",
             "contributedLabRepositories": {
@@ -4075,7 +4085,8 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "HDFGroup/hdf5",
-                    "Viskores/viskores"
+                    "Viskores/viskores",
+                    "llvm/llvm-project"
                 ]
             },
             "login": "Dave-Allured",
@@ -21569,6 +21580,16 @@
             },
             "login": "amyw-msft",
             "name": "Amy Wishnousky"
+        },
+        "an1k3sh": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/106880513?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "an1k3sh",
+            "name": "Anikesh Parashar"
         },
         "ana": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/42498?u=337710cf91bb16aa9d3ddba0ec487432577b1d54&v=4",
@@ -44544,6 +44565,16 @@
             "login": "helloworldooo",
             "name": null
         },
+        "hellozmz": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/14268623?u=c730c501b2f50359b318ab423af7848c876f178e&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "hellozmz",
+            "name": null
+        },
         "helsmy": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/47475699?u=d1cbcdf541cf09f1746d67cdad9ae5dd2c9b114f&v=4",
             "contributedLabRepositories": {
@@ -49427,6 +49458,16 @@
             },
             "login": "jfsheph",
             "name": null
+        },
+        "jfuentes": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/1077626?u=b62e28ce9b36a4d8b51260c83023c4488882efaa&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "jfuentes",
+            "name": "Joel Fuentes"
         },
         "jfurtek": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/25750904?v=4",
@@ -63338,7 +63379,7 @@
             "name": "Matthew Kelsey"
         },
         "mjklemm": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/5994372?u=0b95a56eb94a5d223b14706a2136139602fb93e3&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/5994372?u=e2a93f9cf15411a3106c956ad1cb8b37e53e94fd&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "OpenMP-Validation-and-Verification/OpenMP_VV",
@@ -65748,6 +65789,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/19653385?v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "pmodels/mpich",
                     "spack/spack"
                 ]
             },

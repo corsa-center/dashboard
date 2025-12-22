@@ -807,10 +807,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 5538396
+                        "size": 5540495
                     },
                     {
-                        "size": 1689590
+                        "size": 1689701
                     },
                     {
                         "size": 799810
@@ -880,7 +880,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 9842400
+                "totalSize": 9844610
             }
         },
         "StanfordLegion/legion": {
@@ -1316,13 +1316,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 1875714
+                        "size": 1887348
                     },
                     {
                         "size": 550142
                     },
                     {
-                        "size": 533058
+                        "size": 533974
                     },
                     {
                         "size": 224021
@@ -1417,7 +1417,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 3427661
+                "totalSize": 3440211
             }
         },
         "deephyper/deephyper": {
@@ -2450,22 +2450,22 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 676352605
+                        "size": 676394418
                     },
                     {
-                        "size": 513666310
+                        "size": 513802697
                     },
                     {
-                        "size": 215243506
+                        "size": 215243528
                     },
                     {
                         "size": 164354539
                     },
                     {
-                        "size": 24503814
+                        "size": 24504155
                     },
                     {
-                        "size": 13811694
+                        "size": 13814202
                     },
                     {
                         "size": 12381254
@@ -2477,13 +2477,13 @@
                         "size": 4337139
                     },
                     {
-                        "size": 4336659
+                        "size": 4336696
                     },
                     {
                         "size": 2212244
                     },
                     {
-                        "size": 2036778
+                        "size": 2044096
                     },
                     {
                         "size": 1310110
@@ -2752,7 +2752,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1645411706
+                "totalSize": 1645600030
             }
         },
         "mfem/mfem": {
@@ -2839,7 +2839,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 22052463
+                        "size": 22052488
                     },
                     {
                         "size": 937354
@@ -2933,7 +2933,7 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 25330433
+                "totalSize": 25330458
             }
         },
         "ornladios/ADIOS2": {
@@ -3051,10 +3051,10 @@
                         "size": 44435843
                     },
                     {
-                        "size": 3610634
+                        "size": 3610775
                     },
                     {
-                        "size": 3224425
+                        "size": 3225466
                     },
                     {
                         "size": 1832095
@@ -3230,7 +3230,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 56661941
+                "totalSize": 56663123
             }
         },
         "pghysels/STRUMPACK": {

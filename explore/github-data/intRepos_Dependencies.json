@@ -9962,6 +9962,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/labeler",
+                                    "repository": {
+                                        "nameWithOwner": "actions/labeler"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
@@ -10047,6 +10060,13 @@
                                     "packageManager": "PIP",
                                     "packageName": "ruamel-yaml",
                                     "repository": null
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "slotscheck",
+                                    "repository": {
+                                        "nameWithOwner": "ariebovenberg/slotscheck"
+                                    }
                                 },
                                 {
                                     "packageManager": "PIP",

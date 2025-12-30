@@ -872,6 +872,21 @@
                 "login": "apache"
             }
         },
+        "ariebovenberg/slotscheck": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "slotscheck",
+            "nameWithOwner": "ariebovenberg/slotscheck",
+            "owner": {
+                "login": "ariebovenberg"
+            }
+        },
         "astral-sh/ruff": {
             "languages": {
                 "nodes": [

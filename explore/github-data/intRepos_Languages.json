@@ -407,7 +407,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 49432128
+                        "size": 49432130
                     },
                     {
                         "size": 5745146
@@ -416,7 +416,7 @@
                         "size": 3414130
                     },
                     {
-                        "size": 1999752
+                        "size": 1999774
                     },
                     {
                         "size": 1451289
@@ -536,7 +536,7 @@
                     }
                 ],
                 "totalCount": 18,
-                "totalSize": 64485593
+                "totalSize": 64485617
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -807,13 +807,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 5551576
+                        "size": 5555228
                     },
                     {
                         "size": 1696920
                     },
                     {
-                        "size": 800851
+                        "size": 802214
                     },
                     {
                         "size": 743745
@@ -880,7 +880,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 9868444
+                "totalSize": 9873459
             }
         },
         "StanfordLegion/legion": {
@@ -2144,7 +2144,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11022255
+                        "size": 11022201
                     },
                     {
                         "size": 293395
@@ -2217,7 +2217,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 11452894
+                "totalSize": 11452840
             }
         },
         "kokkos/kokkos-kernels": {
@@ -2450,19 +2450,19 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 676763754
+                        "size": 676812977
                     },
                     {
-                        "size": 514119956
+                        "size": 514149354
                     },
                     {
-                        "size": 215345076
+                        "size": 215345054
                     },
                     {
-                        "size": 171912579
+                        "size": 171912591
                     },
                     {
-                        "size": 24555711
+                        "size": 24554059
                     },
                     {
                         "size": 13817885
@@ -2471,19 +2471,19 @@
                         "size": 12382973
                     },
                     {
-                        "size": 4912478
-                    },
-                    {
-                        "size": 4337916
+                        "size": 4914361
                     },
                     {
                         "size": 4337125
                     },
                     {
+                        "size": 4337075
+                    },
+                    {
                         "size": 2212244
                     },
                     {
-                        "size": 2044096
+                        "size": 2044847
                     },
                     {
                         "size": 1311387
@@ -2495,7 +2495,7 @@
                         "size": 1207640
                     },
                     {
-                        "size": 1046995
+                        "size": 1048581
                     },
                     {
                         "size": 407967
@@ -2559,12 +2559,12 @@
                         "name": "FIRRTL"
                     },
                     {
-                        "color": "#DA3434",
-                        "name": "CMake"
-                    },
-                    {
                         "color": "#438eff",
                         "name": "Objective-C"
+                    },
+                    {
+                        "color": "#DA3434",
+                        "name": "CMake"
                     },
                     {
                         "color": "#e34c26",
@@ -2752,7 +2752,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1654028205
+                "totalSize": 1654108543
             }
         },
         "mfem/mfem": {
@@ -2839,7 +2839,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 22052888
+                        "size": 22052881
                     },
                     {
                         "size": 937354
@@ -2933,7 +2933,7 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 25331309
+                "totalSize": 25331302
             }
         },
         "ornladios/ADIOS2": {
@@ -3498,10 +3498,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 7655358
+                        "size": 7661331
                     },
                     {
-                        "size": 517005
+                        "size": 517979
                     },
                     {
                         "size": 132149
@@ -3592,7 +3592,7 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 8419544
+                "totalSize": 8426491
             }
         },
         "trilinos/Trilinos": {
@@ -3830,7 +3830,7 @@
                         "size": 1316297
                     },
                     {
-                        "size": 1045731
+                        "size": 1045974
                     },
                     {
                         "size": 417170
@@ -3976,7 +3976,7 @@
                     }
                 ],
                 "totalCount": 23,
-                "totalSize": 99085518
+                "totalSize": 99085761
             }
         },
         "xiaoyeli/superlu": {

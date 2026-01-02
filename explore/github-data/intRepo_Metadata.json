@@ -128,37 +128,6 @@
         "topics": null,
         "website": ""
     },
-    "LLNL/sundials": {
-        "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
-        "name": "LLNL/sundials",
-        "topics": [
-            "ode-solver",
-            "dae-solver",
-            "nonlinear-equation-solver",
-            "sensitivity-analysis",
-            "time-integration",
-            "scientific-computing",
-            "parallel-computing",
-            "hpc",
-            "math-physics",
-            "radiuss",
-            "solver",
-            "high-performance-computing"
-        ],
-        "website": "https://computing.llnl.gov/projects/sundials"
-    },
-    "LLNL/zfp": {
-        "description": "Compressed numerical arrays that support high-speed random access",
-        "name": "LLNL/zfp",
-        "topics": [
-            "radiuss",
-            "data-viz",
-            "compression",
-            "floating-point",
-            "arrays"
-        ],
-        "website": "http://zfp.llnl.gov"
-    },
     "Libensemble/libensemble": {
         "description": "A Python toolkit for coordinating asynchronous and dynamic ensembles of calculations.",
         "name": "Libensemble/libensemble",
@@ -360,6 +329,37 @@
             "hpsf"
         ],
         "website": "https://kokkos.org"
+    },
+    "llnl/sundials": {
+        "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
+        "name": "llnl/sundials",
+        "topics": [
+            "ode-solver",
+            "dae-solver",
+            "nonlinear-equation-solver",
+            "sensitivity-analysis",
+            "time-integration",
+            "scientific-computing",
+            "parallel-computing",
+            "hpc",
+            "math-physics",
+            "radiuss",
+            "solver",
+            "high-performance-computing"
+        ],
+        "website": "https://computing.llnl.gov/projects/sundials"
+    },
+    "llnl/zfp": {
+        "description": "Compressed numerical arrays that support high-speed random access",
+        "name": "llnl/zfp",
+        "topics": [
+            "radiuss",
+            "data-viz",
+            "compression",
+            "floating-point",
+            "arrays"
+        ],
+        "website": "http://zfp.llnl.gov"
     },
     "llvm/llvm-project": {
         "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",

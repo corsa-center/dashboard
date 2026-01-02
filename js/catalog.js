@@ -197,21 +197,6 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     }
 
     <div class="text-center">
-      <h3>Project Activity</h3>
-      <svg class="repoActivityChart"></svg>
-      <br />
-      <h3>Contributors</h3>
-      <svg class="pieUsers"></svg>
-      <br />
-      ${pulls ? '<h3>Pull Requests</h3><svg class="piePulls"></svg><br />' : ''}
-      ${issues ? '<h3>Issues</h3><svg class="pieIssues"></svg><br />' : ''}
-      <h3>Repository Timeline</h3>
-      <svg class="repoCreationHistory"></svg>
-      <br />
-      ${repo.stargazers.totalCount ? '<h3>Star History</h3><svg class="repoStarHistory"></svg><br />' : ''}
-      ${repo.languages.totalCount ? '<h3>Languages Used</h3><svg class="languagePie"></svg><br />' : ''}
-      ${repo.repositoryTopics.totalCount ? '<h3>Topics</h3><svg class="topicCloud"></svg>' : ''}
-
       <div id="metrics-section"></div>
     </div>
   `;
@@ -266,119 +251,184 @@ function renderSingleRepo(queryParam) {
  * @param {string} repoName repository name (owner/repo format)
  */
 function loadSustainabilityMetrics(repoName) {
-  fetch(`${window.config.baseUrl}/explore/github-data/sustainabilityMetrics.json`)
-    .then((res) => res.json())
-    .then((metricsData) => {
-      if (metricsData.hasOwnProperty(repoName)) {
-        renderSustainabilityMetrics(metricsData[repoName]);
-      } else {
-        // No metrics available for this repo
-        document.getElementById('metrics-section').innerHTML = '';
+  // Extract repository name from owner/repo format (e.g., HDFGroup/hdf5 -> hdf5)
+  const repoNameOnly = repoName.split('/')[1];
+  const metricsPath = `${window.config.baseUrl}/explore/github-data/${repoNameOnly}-metrics/metrics.json`;
+
+  fetch(metricsPath)
+    .then((res) => {
+      if (!res.ok) {
+        throw new Error(`Metrics file not found: ${repoNameOnly}-metrics/metrics.json`);
       }
+      return res.json();
+    })
+    .then((metricsData) => {
+      renderSustainabilityMetrics(metricsData);
     })
     .catch((error) => {
       console.log('Sustainability metrics not available:', error);
-      document.getElementById('metrics-section').innerHTML = '';
+      // Still render the metrics structure with all placeholders
+      renderSustainabilityMetrics(null);
     });
 }
 
 /**
  * Render sustainability metrics HTML
- * @param {Object} metrics metrics data for the repository
+ * @param {Object} metrics metrics data for the repository (can be null)
  */
 function renderSustainabilityMetrics(metrics) {
   const metricsSection = document.getElementById('metrics-section');
 
+  // Helper function to render metric subsections
+  function renderMetricSubsections(dimensionData) {
+    if (!dimensionData) return '';
+
+    return Object.entries(dimensionData)
+      .sort((a, b) => a[0].localeCompare(b[0])) // Sort by metric number (4.1.1, 4.1.2, etc.)
+      .map(([metricNum, metricInfo]) => {
+        const content = metricInfo.data
+          ? `<div class="metric-data">${metricInfo.data}</div>`
+          : `<div class="metric-placeholder">Metrics data will be displayed here</div>`;
+
+        return `
+          <div class="metric-subsection">
+            <h4>${metricNum} ${metricInfo.title}</h4>
+            ${content}
+          </div>
+        `;
+      })
+      .join('');
+  }
+
+  // Build HTML structure
+  const impactSubsections = metrics?.impact
+    ? renderMetricSubsections(metrics.impact)
+    : `
+      <div class="metric-subsection">
+        <h4>4.1.1 Software Citation and Adoption</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.1.2 Field Research Impact</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+    `;
+
+  const sustainabilitySubsections = metrics?.sustainability
+    ? renderMetricSubsections(metrics.sustainability)
+    : `
+      <div class="metric-subsection">
+        <h4>4.2.1 Codes of Conduct (CoC), Governance, and Contributor Guidelines</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.2 Open-Source Licensing and FAIR Compliance</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.3 Active Maintenance</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.4 Engagement</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.5 Outreach</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.6 Welcomeness</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.7 Collaboration</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.8 Financial Sustainability</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.9 Institutional & Organizational Support</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.2.10 Project Longevity and Community Health</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+    `;
+
+  const qualitySubsections = metrics?.quality
+    ? renderMetricSubsections(metrics.quality)
+    : `
+      <div class="metric-subsection">
+        <h4>4.3.1 Reliability and Robustness</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.3.2 Development Practices</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.3.3 Reproducibility</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.3.4 Usability</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.3.5 Accessibility</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.3.6 Maintainability and Understandability</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+      <div class="metric-subsection">
+        <h4>4.3.7 Performance and Efficiency</h4>
+        <div class="metric-placeholder">Metrics data will be displayed here</div>
+      </div>
+    `;
+
   metricsSection.innerHTML = `
-    <h3>Sustainability Metrics</h3>
-    <div class="sustainability-overview">
-      <div class="metric-score-card">
-        <h4>Overall Sustainability Score</h4>
-        <div class="score-circle">
-          <span class="score-value">${metrics.overall_score}/100</span>
+    <div class="sustainability-metrics-container">
+      <h2 class="metrics-main-title">Metrics</h2>
+
+      <!-- Impact Dimension -->
+      <div class="metric-dimension">
+        <div class="dimension-header impact-header">
+          <span class="dimension-icon">📊</span>
+          <h3>4.1 Impact</h3>
         </div>
-        <p class="score-label">${getScoreLabel(metrics.overall_score)}</p>
+        <div class="dimension-content">
+          ${impactSubsections}
+        </div>
+      </div>
+
+      <!-- Sustainability Dimension -->
+      <div class="metric-dimension">
+        <div class="dimension-header sustainability-header">
+          <span class="dimension-icon">♻️</span>
+          <h3>4.2 Sustainability</h3>
+        </div>
+        <div class="dimension-content">
+          ${sustainabilitySubsections}
+        </div>
+      </div>
+
+      <!-- Quality Dimension -->
+      <div class="metric-dimension">
+        <div class="dimension-header quality-header">
+          <span class="dimension-icon">🏆</span>
+          <h3>4.3 Quality</h3>
+        </div>
+        <div class="dimension-content">
+          ${qualitySubsections}
+        </div>
       </div>
     </div>
-
-    <div class="metrics-grid">
-      <!-- Impact Metrics -->
-      <div class="metric-category">
-        <h4><span class="fa fa-graduation-cap"></span> Research Impact</h4>
-        <div class="metric-item">
-          <span class="metric-label">Citation Score:</span>
-          <span class="metric-value">${metrics.impact_metrics.citation_score.toFixed(1)}/100</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Formal Citations:</span>
-          <span class="metric-value">${metrics.impact_metrics.formal_citations.toLocaleString()}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Paper Mentions:</span>
-          <span class="metric-value">${metrics.impact_metrics.informal_mentions.toLocaleString()}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Dependent Packages:</span>
-          <span class="metric-value">${metrics.impact_metrics.dependent_packages.toLocaleString()}</span>
-        </div>
-        ${metrics.impact_metrics.doi_resolutions > 0 ? `
-        <div class="metric-item">
-          <span class="metric-label">DOI Resolutions:</span>
-          <span class="metric-value">${metrics.impact_metrics.doi_resolutions.toLocaleString()}</span>
-        </div>
-        ` : ''}
-      </div>
-
-      <!-- Community Metrics -->
-      <div class="metric-category">
-        <h4><span class="fa fa-users"></span> Community Health</h4>
-        <div class="metric-item">
-          <span class="metric-label">Total Contributors:</span>
-          <span class="metric-value">${metrics.community_metrics.total_contributors}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Active (30 days):</span>
-          <span class="metric-value">${metrics.community_metrics.active_contributors_30d}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Commits/Month:</span>
-          <span class="metric-value">${metrics.community_metrics.commit_frequency_per_month.toFixed(1)}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Avg Issue Response:</span>
-          <span class="metric-value">${metrics.community_metrics.avg_issue_response_days.toFixed(1)} days</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Avg PR Merge Time:</span>
-          <span class="metric-value">${metrics.community_metrics.avg_pr_merge_days.toFixed(1)} days</span>
-        </div>
-      </div>
-
-      <!-- Licensing Metrics -->
-      <div class="metric-category">
-        <h4><span class="fa fa-balance-scale"></span> Licensing</h4>
-        <div class="metric-item">
-          <span class="metric-label">License:</span>
-          <span class="metric-value">${metrics.licensing_metrics.license}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Compatibility:</span>
-          <span class="metric-value compatibility-${metrics.licensing_metrics.license_compatibility}">${metrics.licensing_metrics.license_compatibility}</span>
-        </div>
-        <div class="metric-item">
-          <span class="metric-label">Clarity Score:</span>
-          <span class="metric-value">${metrics.licensing_metrics.license_clarity_score}/100</span>
-        </div>
-        ${metrics.licensing_metrics.outbound_licenses.length > 0 ? `
-        <div class="metric-item">
-          <span class="metric-label">Dependencies:</span>
-          <span class="metric-value">${metrics.licensing_metrics.outbound_licenses.join(', ')}</span>
-        </div>
-        ` : ''}
-      </div>
-    </div>
-
-    <p class="metrics-updated">Last updated: ${new Date(metrics.last_updated).toLocaleDateString()}</p>
   `;
 }
 

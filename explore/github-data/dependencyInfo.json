@@ -872,6 +872,21 @@
                 "login": "apache"
             }
         },
+        "ariebovenberg/slotscheck": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "slotscheck",
+            "nameWithOwner": "ariebovenberg/slotscheck",
+            "owner": {
+                "login": "ariebovenberg"
+            }
+        },
         "astral-sh/ruff": {
             "languages": {
                 "nodes": [
@@ -1206,8 +1221,8 @@
             "languages": {
                 "nodes": [
                     {
-                        "color": "#89e051",
-                        "name": "Shell"
+                        "color": "#012456",
+                        "name": "PowerShell"
                     }
                 ]
             },
@@ -3144,21 +3159,6 @@
                 "login": "psychon"
             }
         },
-        "puneetmatharu/cmake-format-lint-action": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "cmake-format-lint-action",
-            "nameWithOwner": "puneetmatharu/cmake-format-lint-action",
-            "owner": {
-                "login": "puneetmatharu"
-            }
-        },
         "pybind/pybind11": {
             "languages": {
                 "nodes": [
@@ -4864,8 +4864,8 @@
             "languages": {
                 "nodes": [
                     {
-                        "color": "#89e051",
-                        "name": "Shell"
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
                     }
                 ]
             },
@@ -4880,8 +4880,8 @@
             "languages": {
                 "nodes": [
                     {
-                        "color": "#89e051",
-                        "name": "Shell"
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
                     }
                 ]
             },

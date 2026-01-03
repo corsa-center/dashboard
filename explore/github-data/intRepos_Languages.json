@@ -416,7 +416,7 @@
                         "size": 3414282
                     },
                     {
-                        "size": 2000589
+                        "size": 2000639
                     },
                     {
                         "size": 1451289
@@ -536,7 +536,7 @@
                     }
                 ],
                 "totalCount": 18,
-                "totalSize": 64514007
+                "totalSize": 64514057
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -2450,31 +2450,31 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 677072383
+                        "size": 677165996
                     },
                     {
-                        "size": 514206762
+                        "size": 514291720
                     },
                     {
-                        "size": 215353668
+                        "size": 215360034
                     },
                     {
                         "size": 171912591
                     },
                     {
-                        "size": 24573591
+                        "size": 24576060
                     },
                     {
-                        "size": 13819625
+                        "size": 13823656
                     },
                     {
-                        "size": 12387841
+                        "size": 12390594
                     },
                     {
                         "size": 4916342
                     },
                     {
-                        "size": 4337733
+                        "size": 4338292
                     },
                     {
                         "size": 4337125
@@ -2486,7 +2486,7 @@
                         "size": 2044847
                     },
                     {
-                        "size": 1311838
+                        "size": 1311896
                     },
                     {
                         "size": 1261576
@@ -2495,7 +2495,7 @@
                         "size": 1207640
                     },
                     {
-                        "size": 1050779
+                        "size": 1050811
                     },
                     {
                         "size": 407967
@@ -2663,12 +2663,12 @@
                         "name": "Vim Script"
                     },
                     {
-                        "color": "#384d54",
-                        "name": "Dockerfile"
-                    },
-                    {
                         "color": "#724b3b",
                         "name": "Mustache"
+                    },
+                    {
+                        "color": "#384d54",
+                        "name": "Dockerfile"
                     },
                     {
                         "color": "#000080",
@@ -2752,14 +2752,14 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1654465399
+                "totalSize": 1654665976
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 18931382
+                        "size": 18938079
                     },
                     {
                         "size": 296399
@@ -2832,7 +2832,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19568169
+                "totalSize": 19574866
             }
         },
         "open-mpi/ompi": {
@@ -3048,7 +3048,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 44436609
+                        "size": 44436398
                     },
                     {
                         "size": 3610719
@@ -3230,7 +3230,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 56666126
+                "totalSize": 56665915
             }
         },
         "pghysels/STRUMPACK": {

@@ -9707,13 +9707,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "black",
-                                    "repository": {
-                                        "nameWithOwner": "psf/black"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "docutils",
                                     "repository": {
                                         "nameWithOwner": "jwilk-mirrors/docutils"
@@ -9721,23 +9714,9 @@
                                 },
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "flake8",
+                                    "packageName": "furo",
                                     "repository": {
-                                        "nameWithOwner": "PyCQA/flake8"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "isort",
-                                    "repository": {
-                                        "nameWithOwner": "PyCQA/isort"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "mypy",
-                                    "repository": {
-                                        "nameWithOwner": "python/mypy"
+                                        "nameWithOwner": "pradyunsg/furo"
                                     }
                                 },
                                 {
@@ -9745,20 +9724,6 @@
                                     "packageName": "pygments",
                                     "repository": {
                                         "nameWithOwner": "pygments/pygments"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pytest",
-                                    "repository": {
-                                        "nameWithOwner": "pytest-dev/pytest"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "python-levenshtein",
-                                    "repository": {
-                                        "nameWithOwner": "rapidfuzz/python-Levenshtein"
                                     }
                                 },
                                 {
@@ -9801,13 +9766,6 @@
                                     "packageName": "sphinxcontrib-svg2pdfconverter",
                                     "repository": {
                                         "nameWithOwner": "missinglinkelectronics/sphinxcontrib-svg2pdfconverter"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "urllib3",
-                                    "repository": {
-                                        "nameWithOwner": "urllib3/urllib3"
                                     }
                                 }
                             ]

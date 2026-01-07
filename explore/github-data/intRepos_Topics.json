@@ -196,6 +196,89 @@
                 "totalCount": 10
             }
         },
+        "BerkeleyLab/fiats": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/deep-learning",
+                        "topic": {
+                            "name": "deep-learning"
+                        },
+                        "url": "https://github.com/topics/deep-learning"
+                    },
+                    {
+                        "resourcePath": "/topics/inference",
+                        "topic": {
+                            "name": "inference"
+                        },
+                        "url": "https://github.com/topics/inference"
+                    },
+                    {
+                        "resourcePath": "/topics/artificial-intelligence",
+                        "topic": {
+                            "name": "artificial-intelligence"
+                        },
+                        "url": "https://github.com/topics/artificial-intelligence"
+                    },
+                    {
+                        "resourcePath": "/topics/machine-learning",
+                        "topic": {
+                            "name": "machine-learning"
+                        },
+                        "url": "https://github.com/topics/machine-learning"
+                    },
+                    {
+                        "resourcePath": "/topics/neural-networks",
+                        "topic": {
+                            "name": "neural-networks"
+                        },
+                        "url": "https://github.com/topics/neural-networks"
+                    },
+                    {
+                        "resourcePath": "/topics/ann",
+                        "topic": {
+                            "name": "ann"
+                        },
+                        "url": "https://github.com/topics/ann"
+                    },
+                    {
+                        "resourcePath": "/topics/artificial-neural-networks",
+                        "topic": {
+                            "name": "artificial-neural-networks"
+                        },
+                        "url": "https://github.com/topics/artificial-neural-networks"
+                    },
+                    {
+                        "resourcePath": "/topics/feedforward-neural-network",
+                        "topic": {
+                            "name": "feedforward-neural-network"
+                        },
+                        "url": "https://github.com/topics/feedforward-neural-network"
+                    },
+                    {
+                        "resourcePath": "/topics/neural-network",
+                        "topic": {
+                            "name": "neural-network"
+                        },
+                        "url": "https://github.com/topics/neural-network"
+                    },
+                    {
+                        "resourcePath": "/topics/fortran-2023",
+                        "topic": {
+                            "name": "fortran-2023"
+                        },
+                        "url": "https://github.com/topics/fortran-2023"
+                    }
+                ],
+                "totalCount": 10
+            }
+        },
+        "BerkeleyLab/julienne": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "CEED/libCEED": {
             "repositoryTopics": {
                 "nodes": [

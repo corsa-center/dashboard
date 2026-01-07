@@ -45,6 +45,29 @@
         ],
         "website": "https://go.lbl.gov/caffeine"
     },
+    "BerkeleyLab/fiats": {
+        "description": "A deep learning library for use in high-performance computing applications in modern Fortran",
+        "name": "BerkeleyLab/fiats",
+        "topics": [
+            "deep-learning",
+            "inference",
+            "artificial-intelligence",
+            "machine-learning",
+            "neural-networks",
+            "ann",
+            "artificial-neural-networks",
+            "feedforward-neural-network",
+            "neural-network",
+            "fortran-2023"
+        ],
+        "website": ""
+    },
+    "BerkeleyLab/julienne": {
+        "description": "A Fortran 2023 correctness-checking framework supporting expressive idioms for writing assertions and tests",
+        "name": "BerkeleyLab/julienne",
+        "topics": null,
+        "website": ""
+    },
     "CEED/libCEED": {
         "description": "CEED Library: Code for Efficient Extensible Discretizations",
         "name": "CEED/libCEED",

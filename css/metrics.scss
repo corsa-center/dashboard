@@ -1,136 +1,210 @@
 ---
 ---
 
-/* Sustainability Metrics Styles */
+/* Modern Sustainability Metrics Styles */
 
-.sustainability-overview {
+.sustainability-metrics-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.metrics-main-title {
   text-align: center;
-  margin: 30px 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+/* Dimension Cards */
+.metric-dimension {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-dimension:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Dimension Headers */
+.dimension-header {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.dimension-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.dimension-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.impact-header {
+  background: linear-gradient(135deg, #1F6024 0%, #3F7844 33%, #5F9063 66%, #7FA883 100%);
+}
+
+.impact-header h3 {
+  color: #ffffff;
+}
+
+.sustainability-header {
+  background: linear-gradient(135deg, #1F5B60 0%, #3F7370 33%, #5F8B8F 66%, #7FA3AF 100%);
+}
+
+.sustainability-header h3 {
+  color: #ffffff;
+}
+
+.quality-header {
+  background: linear-gradient(135deg, #1F3A60 0%, #3F5270 33%, #5F6A8F 66%, #7F82AF 100%);
+}
+
+.quality-header h3 {
+  color: #ffffff;
+}
+
+/* Dimension Content */
+.dimension-content {
+  padding: 25px 30px;
+}
+
+/* Metric Subsections */
+.metric-subsection {
+  background: #f7fafc;
+  border-left: 4px solid #cbd5e0;
+  border-radius: 6px;
   padding: 20px;
-  background: #f8f9fa;
-  border-radius: 8px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
 }
 
-.metric-score-card {
-  display: inline-block;
+.metric-subsection:hover {
+  background: #edf2f7;
+  border-left-color: #4a5568;
 }
 
-.score-circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+.metric-subsection:last-child {
+  margin-bottom: 0;
+}
+
+.metric-subsection h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.metric-placeholder {
+  background: #ffffff;
+  border: 2px dashed #cbd5e0;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  color: #718096;
+  font-size: 14px;
+  font-style: italic;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.score-value {
-  font-size: 32px;
-  font-weight: bold;
-  color: white;
-}
-
-.score-label {
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-  margin-top: 10px;
-}
-
-.metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  margin: 30px 0;
-}
-
-.metric-category {
-  background: white;
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
+.metric-data {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.metric-category h4 {
-  color: #24292e;
-  font-size: 18px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #f6f8fa;
-}
-
-.metric-category h4 .fa {
-  margin-right: 8px;
-  color: #6a737d;
-}
-
-.metric-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  border-bottom: 1px solid #f6f8fa;
-}
-
-.metric-item:last-child {
-  border-bottom: none;
-}
-
-.metric-label {
-  color: #586069;
+  color: #2d3748;
   font-size: 14px;
+  line-height: 1.6;
 }
 
-.metric-value {
-  font-weight: 600;
-  color: #24292e;
-  font-size: 15px;
+/* Impact dimension specific colors */
+.metric-dimension:has(.impact-header) .metric-subsection {
+  border-left-color: #5F9063;
 }
 
-.compatibility-high {
-  color: #28a745;
+.metric-dimension:has(.impact-header) .metric-subsection:hover {
+  border-left-color: #1F6024;
+  background: #e8f5e9;
 }
 
-.compatibility-medium {
-  color: #ffa500;
+/* Sustainability dimension specific colors */
+.metric-dimension:has(.sustainability-header) .metric-subsection {
+  border-left-color: #5F8B8F;
 }
 
-.compatibility-low {
-  color: #d73a49;
+.metric-dimension:has(.sustainability-header) .metric-subsection:hover {
+  border-left-color: #1F5B60;
+  background: #e0f2f1;
 }
 
-.metrics-updated {
-  text-align: center;
-  color: #6a737d;
-  font-size: 13px;
-  margin-top: 20px;
-  font-style: italic;
+/* Quality dimension specific colors */
+.metric-dimension:has(.quality-header) .metric-subsection {
+  border-left-color: #5F6A8F;
 }
 
-#metrics-section h3 {
-  color: #24292e;
-  font-size: 24px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  text-align: center;
+.metric-dimension:has(.quality-header) .metric-subsection:hover {
+  border-left-color: #1F3A60;
+  background: #e3f2fd;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .metrics-grid {
-    grid-template-columns: 1fr;
+  .sustainability-metrics-container {
+    padding: 0 15px;
   }
 
-  .score-circle {
-    width: 120px;
-    height: 120px;
+  .metrics-main-title {
+    font-size: 26px;
+    margin-bottom: 30px;
   }
 
-  .score-value {
+  .dimension-header {
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .dimension-icon {
     font-size: 24px;
+  }
+
+  .dimension-header h3 {
+    font-size: 20px;
+  }
+
+  .dimension-content {
+    padding: 20px 15px;
+  }
+
+  .metric-subsection {
+    padding: 15px;
+  }
+
+  .metric-subsection h4 {
+    font-size: 14px;
+  }
+
+  .metric-placeholder {
+    padding: 20px;
+    font-size: 13px;
+    min-height: 60px;
   }
 }

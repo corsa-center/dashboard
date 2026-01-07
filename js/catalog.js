@@ -532,7 +532,7 @@ function renderRepoListHtml() {
       <a href="${repo.gitUrl}/network" title="Repository Forks">
         <span class="fa fa-code-fork"></span> ${repo.forks}
       </a>
-      <a href="/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
+      <a href="/dashboard/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
         <span class="fa fa-pie-chart"></span>
       </a>
       ${

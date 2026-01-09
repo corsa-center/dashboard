@@ -3007,6 +3007,21 @@
                 "login": "peter-evans"
             }
         },
+        "peter-evans/create-pull-request": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "create-pull-request",
+            "nameWithOwner": "peter-evans/create-pull-request",
+            "owner": {
+                "login": "peter-evans"
+            }
+        },
         "petgraph/petgraph": {
             "languages": {
                 "nodes": [
@@ -4864,6 +4879,21 @@
             "owner": {
                 "isVerified": true,
                 "login": "vmactions"
+            }
+        },
+        "vsoch/zenodo-validator": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "zenodo-validator",
+            "nameWithOwner": "vsoch/zenodo-validator",
+            "owner": {
+                "login": "vsoch"
             }
         },
         "wbolster/qualname": {

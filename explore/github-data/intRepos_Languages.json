@@ -1525,7 +1525,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12186991
+                        "size": 12179074
                     },
                     {
                         "size": 5542007
@@ -1605,7 +1605,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18520940
+                "totalSize": 18513023
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2454,22 +2454,22 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 679837315
+                        "size": 679955159
                     },
                     {
-                        "size": 515316340
+                        "size": 515352694
                     },
                     {
-                        "size": 216521210
+                        "size": 216521883
                     },
                     {
-                        "size": 178898117
+                        "size": 178899250
                     },
                     {
-                        "size": 24779197
+                        "size": 24780100
                     },
                     {
-                        "size": 13900101
+                        "size": 13900340
                     },
                     {
                         "size": 12344085
@@ -2478,7 +2478,7 @@
                         "size": 5056996
                     },
                     {
-                        "size": 4361906
+                        "size": 4361786
                     },
                     {
                         "size": 4337556
@@ -2490,7 +2490,7 @@
                         "size": 2059609
                     },
                     {
-                        "size": 1316415
+                        "size": 1317215
                     },
                     {
                         "size": 1261379
@@ -2756,14 +2756,14 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1667044734
+                "totalSize": 1667202560
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 18938079
+                        "size": 18938456
                     },
                     {
                         "size": 296792
@@ -2836,7 +2836,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19575259
+                "totalSize": 19575636
             }
         },
         "open-mpi/ompi": {
@@ -3502,7 +3502,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 7708773
+                        "size": 7709806
                     },
                     {
                         "size": 522722
@@ -3596,14 +3596,14 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 8476172
+                "totalSize": 8477205
             }
         },
         "trilinos/Trilinos": {
             "languages": {
                 "edges": [
                     {
-                        "size": 181532604
+                        "size": 179171629
                     },
                     {
                         "size": 80740426
@@ -3612,7 +3612,7 @@
                         "size": 30953270
                     },
                     {
-                        "size": 27912974
+                        "size": 27912711
                     },
                     {
                         "size": 8377571
@@ -3621,7 +3621,7 @@
                         "size": 6229668
                     },
                     {
-                        "size": 5143270
+                        "size": 5095172
                     },
                     {
                         "size": 3744341
@@ -3809,7 +3809,7 @@
                     }
                 ],
                 "totalCount": 32,
-                "totalSize": 356821696
+                "totalSize": 354412360
             }
         },
         "visit-dav/visit": {

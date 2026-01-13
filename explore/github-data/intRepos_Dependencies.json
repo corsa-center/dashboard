@@ -7464,6 +7464,13 @@
                                 },
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-googleanalytics",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-contrib/googleanalytics"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "sphinxcontrib-htmlhelp",
                                     "repository": {
                                         "nameWithOwner": "sphinx-doc/sphinxcontrib-htmlhelp"
@@ -7690,13 +7697,6 @@
                     {
                         "dependencies": {
                             "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
                                 {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",

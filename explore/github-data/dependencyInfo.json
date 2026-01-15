@@ -32,12 +32,12 @@
                 "login": "AccessKit"
             }
         },
-        "Azure/trusted-signing-action": {
+        "Azure/artifact-signing-action": {
             "languages": {
                 "nodes": []
             },
-            "name": "trusted-signing-action",
-            "nameWithOwner": "Azure/trusted-signing-action",
+            "name": "artifact-signing-action",
+            "nameWithOwner": "Azure/artifact-signing-action",
             "owner": {
                 "isVerified": true,
                 "login": "Azure"

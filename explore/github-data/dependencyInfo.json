@@ -286,6 +286,21 @@
                 "login": "Lokathor"
             }
         },
+        "MarcoGorelli/cython-lint": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "cython-lint",
+            "nameWithOwner": "MarcoGorelli/cython-lint",
+            "owner": {
+                "login": "MarcoGorelli"
+            }
+        },
         "Mattraks/delete-workflow-runs": {
             "languages": {
                 "nodes": [
@@ -870,6 +885,22 @@
             "nameWithOwner": "ariebovenberg/slotscheck",
             "owner": {
                 "login": "ariebovenberg"
+            }
+        },
+        "astral-sh/ruff": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "ruff",
+            "nameWithOwner": "astral-sh/ruff",
+            "owner": {
+                "isVerified": true,
+                "login": "astral-sh"
             }
         },
         "automl/ConfigSpace": {
@@ -1486,6 +1517,21 @@
             "nameWithOwner": "emk/cesu8-rs",
             "owner": {
                 "login": "emk"
+            }
+        },
+        "emmatyping/clang": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "clang",
+            "nameWithOwner": "emmatyping/clang",
+            "owner": {
+                "login": "emmatyping"
             }
         },
         "ericvsmith/dataclasses": {
@@ -4629,6 +4675,21 @@
             "nameWithOwner": "taiki-e/install-action",
             "owner": {
                 "login": "taiki-e"
+            }
+        },
+        "tartley/colorama": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "colorama",
+            "nameWithOwner": "tartley/colorama",
+            "owner": {
+                "login": "tartley"
             }
         },
         "termoshtt/katexit": {

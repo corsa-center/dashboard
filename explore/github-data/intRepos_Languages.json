@@ -1525,16 +1525,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12293001
+                        "size": 12275567
                     },
                     {
-                        "size": 5585325
+                        "size": 5584325
                     },
                     {
                         "size": 511446
                     },
                     {
-                        "size": 152035
+                        "size": 151934
                     },
                     {
                         "size": 63952
@@ -1605,7 +1605,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18672235
+                "totalSize": 18653700
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2454,22 +2454,22 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 682105915
+                        "size": 682130083
                     },
                     {
-                        "size": 516269229
+                        "size": 516279427
                     },
                     {
-                        "size": 216898876
+                        "size": 216902402
                     },
                     {
                         "size": 180330570
                     },
                     {
-                        "size": 24993128
+                        "size": 24995198
                     },
                     {
-                        "size": 13960257
+                        "size": 13960264
                     },
                     {
                         "size": 12269249
@@ -2490,10 +2490,10 @@
                         "size": 2073387
                     },
                     {
-                        "size": 1320385
+                        "size": 1320432
                     },
                     {
-                        "size": 1264495
+                        "size": 1264983
                     },
                     {
                         "size": 1207635
@@ -2760,7 +2760,7 @@
                     }
                 ],
                 "totalCount": 57,
-                "totalSize": 1672336990
+                "totalSize": 1672377494
             }
         },
         "mfem/mfem": {
@@ -3056,7 +3056,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 44476861
+                        "size": 44477115
                     },
                     {
                         "size": 3622222
@@ -3113,10 +3113,10 @@
                         "size": 6901
                     },
                     {
-                        "size": 4986
+                        "size": 4981
                     },
                     {
-                        "size": 4981
+                        "size": 3887
                     },
                     {
                         "size": 3186
@@ -3209,12 +3209,12 @@
                         "name": "Emacs Lisp"
                     },
                     {
-                        "color": "#ecdebe",
-                        "name": "Roff"
-                    },
-                    {
                         "color": "#3D6117",
                         "name": "TeX"
+                    },
+                    {
+                        "color": "#ecdebe",
+                        "name": "Roff"
                     },
                     {
                         "color": "#F05138",
@@ -3238,7 +3238,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 56719316
+                "totalSize": 56718471
             }
         },
         "pghysels/STRUMPACK": {

@@ -3574,6 +3574,22 @@
                 "login": "python"
             }
         },
+        "pyvista/pyvista": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pyvista",
+            "nameWithOwner": "pyvista/pyvista",
+            "owner": {
+                "isVerified": true,
+                "login": "pyvista"
+            }
+        },
         "r1chardj0n3s/parse": {
             "languages": {
                 "nodes": [

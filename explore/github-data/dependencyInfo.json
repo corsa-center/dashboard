@@ -364,6 +364,22 @@
                 "login": "PyCQA"
             }
         },
+        "Quansight-Labs/accessible-pygments": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "accessible-pygments",
+            "nameWithOwner": "Quansight-Labs/accessible-pygments",
+            "owner": {
+                "isVerified": true,
+                "login": "Quansight-Labs"
+            }
+        },
         "RumovZ/android-tzdata": {
             "languages": {
                 "nodes": [
@@ -571,6 +587,22 @@
                 "login": "actions"
             }
         },
+        "actions/deploy-pages": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
+                    }
+                ]
+            },
+            "name": "deploy-pages",
+            "nameWithOwner": "actions/deploy-pages",
+            "owner": {
+                "isVerified": true,
+                "login": "actions"
+            }
+        },
         "actions/download-artifact": {
             "languages": {
                 "nodes": [
@@ -678,6 +710,22 @@
             },
             "name": "upload-artifact",
             "nameWithOwner": "actions/upload-artifact",
+            "owner": {
+                "isVerified": true,
+                "login": "actions"
+            }
+        },
+        "actions/upload-pages-artifact": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "upload-pages-artifact",
+            "nameWithOwner": "actions/upload-pages-artifact",
             "owner": {
                 "isVerified": true,
                 "login": "actions"
@@ -4295,6 +4343,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "softwareforgood"
+            }
+        },
+        "sphinx-contrib/googleanalytics": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "googleanalytics",
+            "nameWithOwner": "sphinx-contrib/googleanalytics",
+            "owner": {
+                "isVerified": false,
+                "login": "sphinx-contrib"
             }
         },
         "sphinx-contrib/jquery": {

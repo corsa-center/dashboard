@@ -4958,6 +4958,21 @@
                 "login": "wention"
             }
         },
+        "wjakob/nanobind": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#f34b7d",
+                        "name": "C++"
+                    }
+                ]
+            },
+            "name": "nanobind",
+            "nameWithOwner": "wjakob/nanobind",
+            "owner": {
+                "login": "wjakob"
+            }
+        },
         "yaml/pyyaml": {
             "languages": {
                 "nodes": [

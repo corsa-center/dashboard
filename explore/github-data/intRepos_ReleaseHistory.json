@@ -2435,6 +2435,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "LLVM 22.1.0-rc2",
+                        "publishedAt": "2026-01-27T09:00:15Z",
+                        "tagName": "llvmorg-22.1.0-rc2"
+                    },
+                    {
                         "name": "LLVM 22.1.0-rc1",
                         "publishedAt": "2026-01-16T09:47:11Z",
                         "tagName": "llvmorg-22.1.0-rc1"
@@ -3686,7 +3691,7 @@
             "releases": {
                 "nodes": [
                     {
-                        "name": "v1.1.1",
+                        "name": "v1.1.1 (2026-01-14)",
                         "publishedAt": "2026-01-27T00:44:49Z",
                         "tagName": "v1.1.1"
                     },

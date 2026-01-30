@@ -1568,6 +1568,13 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/download-artifact",
                                     "repository": {
                                         "nameWithOwner": "actions/download-artifact"
@@ -2944,6 +2951,13 @@
                     {
                         "dependencies": {
                             "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
                                 {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/download-artifact",

@@ -407,7 +407,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 49484597
+                        "size": 49484224
                     },
                     {
                         "size": 5745753
@@ -529,7 +529,7 @@
                     }
                 ],
                 "totalCount": 17,
-                "totalSize": 64470675
+                "totalSize": 64470302
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -730,7 +730,7 @@
                         "size": 953710
                     },
                     {
-                        "size": 768401
+                        "size": 768524
                     },
                     {
                         "size": 95542
@@ -793,7 +793,7 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 1907765
+                "totalSize": 1907888
             }
         },
         "Parallel-NetCDF/PnetCDF": {
@@ -2443,31 +2443,31 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 681913087
+                        "size": 684266826
                     },
                     {
-                        "size": 517445504
+                        "size": 517582767
                     },
                     {
-                        "size": 217046765
+                        "size": 217068659
                     },
                     {
-                        "size": 181997290
+                        "size": 182001691
                     },
                     {
-                        "size": 25262092
+                        "size": 25358198
                     },
                     {
-                        "size": 14037378
+                        "size": 14044080
                     },
                     {
-                        "size": 12339444
+                        "size": 12350301
                     },
                     {
-                        "size": 5121794
+                        "size": 5130733
                     },
                     {
-                        "size": 4398367
+                        "size": 4401316
                     },
                     {
                         "size": 4340117
@@ -2476,10 +2476,10 @@
                         "size": 2212207
                     },
                     {
-                        "size": 2094273
+                        "size": 2212123
                     },
                     {
-                        "size": 1333633
+                        "size": 1335363
                     },
                     {
                         "size": 1264983
@@ -2491,7 +2491,7 @@
                         "size": 1169713
                     },
                     {
-                        "size": 407967
+                        "size": 409596
                     },
                     {
                         "size": 339389
@@ -2749,7 +2749,7 @@
                     }
                 ],
                 "totalCount": 57,
-                "totalSize": 1675659200
+                "totalSize": 1678423259
             }
         },
         "mfem/mfem": {
@@ -3314,7 +3314,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 19630235
+                        "size": 19630133
                     },
                     {
                         "size": 945361
@@ -3415,7 +3415,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 23447471
+                "totalSize": 23447369
             }
         },
         "sandialabs/Albany": {
@@ -3495,7 +3495,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 7722897
+                        "size": 7723479
                     },
                     {
                         "size": 522722
@@ -3596,7 +3596,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 8491355
+                "totalSize": 8491937
             }
         },
         "trilinos/Trilinos": {

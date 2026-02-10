@@ -18,12 +18,12 @@ jobs:
           python-version: '3.10'
       - run: pip install -r _explore/scripts/requirements.txt
       - name: Setup Spack # Spack is not yet pip installable, so we must install via the actions
-        uses: spack/setup-spack@v2
+        uses: spack/setup-spack@16b756799ede8b28951287f89bcd3fdb32ec1ca3
         with:
-          ref: develop-2025-04-13
+          spack_ref: releases/v1.1.1
           buildcache: false
           color: false
-          path: spack
+          spack_path: spack
       - name: Run update script
         run:
           ./_explore/scripts/UPDATE.sh

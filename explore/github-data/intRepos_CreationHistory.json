@@ -15,6 +15,16 @@
             "firstCommitAt": "2021-10-02T19:41:47Z",
             "initBeforeGitHubRepo": true
         },
+        "BerkeleyLab/fiats": {
+            "createdAt": "2022-09-29T17:46:47Z",
+            "firstCommitAt": "2022-09-29T17:46:47Z",
+            "initBeforeGitHubRepo": true
+        },
+        "BerkeleyLab/julienne": {
+            "createdAt": "2024-06-18T00:14:54Z",
+            "firstCommitAt": "2024-06-13T22:49:55Z",
+            "initBeforeGitHubRepo": true
+        },
         "CEED/libCEED": {
             "createdAt": "2017-12-06T17:57:40Z",
             "firstCommitAt": "2017-09-07T21:40:19Z",
@@ -59,6 +69,26 @@
             "createdAt": "2017-04-18T03:27:23Z",
             "firstCommitAt": "2003-02-05T16:46:07Z",
             "initBeforeGitHubRepo": true
+        },
+        "SCOREC/core": {
+            "createdAt": "2014-06-09T14:43:58Z",
+            "firstCommitAt": "2014-05-15T19:25:43Z",
+            "initBeforeGitHubRepo": true
+        },
+        "SCOREC/omega_h": {
+            "createdAt": "2018-09-13T19:54:04Z",
+            "firstCommitAt": "2016-05-12T23:58:41Z",
+            "initBeforeGitHubRepo": true
+        },
+        "SCOREC/pcms": {
+            "createdAt": "2019-02-26T17:17:48Z",
+            "firstCommitAt": "2019-03-25T14:16:30Z",
+            "initBeforeGitHubRepo": false
+        },
+        "SCOREC/pumi-pic": {
+            "createdAt": "2018-05-17T15:26:56Z",
+            "firstCommitAt": "2018-05-17T15:26:57Z",
+            "initBeforeGitHubRepo": false
         },
         "StanfordLegion/legion": {
             "createdAt": "2012-11-17T00:43:58Z",
@@ -189,6 +219,11 @@
             "createdAt": "2014-03-20T02:32:15Z",
             "firstCommitAt": "2010-09-30T22:02:17Z",
             "initBeforeGitHubRepo": true
+        },
+        "sandialabs/pytuq": {
+            "createdAt": "2025-02-28T21:43:47Z",
+            "firstCommitAt": "2025-02-28T21:43:48Z",
+            "initBeforeGitHubRepo": false
         },
         "spack/spack": {
             "createdAt": "2014-01-08T09:22:12Z",

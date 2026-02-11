@@ -196,6 +196,89 @@
                 "totalCount": 10
             }
         },
+        "BerkeleyLab/fiats": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/deep-learning",
+                        "topic": {
+                            "name": "deep-learning"
+                        },
+                        "url": "https://github.com/topics/deep-learning"
+                    },
+                    {
+                        "resourcePath": "/topics/inference",
+                        "topic": {
+                            "name": "inference"
+                        },
+                        "url": "https://github.com/topics/inference"
+                    },
+                    {
+                        "resourcePath": "/topics/artificial-intelligence",
+                        "topic": {
+                            "name": "artificial-intelligence"
+                        },
+                        "url": "https://github.com/topics/artificial-intelligence"
+                    },
+                    {
+                        "resourcePath": "/topics/machine-learning",
+                        "topic": {
+                            "name": "machine-learning"
+                        },
+                        "url": "https://github.com/topics/machine-learning"
+                    },
+                    {
+                        "resourcePath": "/topics/neural-networks",
+                        "topic": {
+                            "name": "neural-networks"
+                        },
+                        "url": "https://github.com/topics/neural-networks"
+                    },
+                    {
+                        "resourcePath": "/topics/ann",
+                        "topic": {
+                            "name": "ann"
+                        },
+                        "url": "https://github.com/topics/ann"
+                    },
+                    {
+                        "resourcePath": "/topics/artificial-neural-networks",
+                        "topic": {
+                            "name": "artificial-neural-networks"
+                        },
+                        "url": "https://github.com/topics/artificial-neural-networks"
+                    },
+                    {
+                        "resourcePath": "/topics/feedforward-neural-network",
+                        "topic": {
+                            "name": "feedforward-neural-network"
+                        },
+                        "url": "https://github.com/topics/feedforward-neural-network"
+                    },
+                    {
+                        "resourcePath": "/topics/neural-network",
+                        "topic": {
+                            "name": "neural-network"
+                        },
+                        "url": "https://github.com/topics/neural-network"
+                    },
+                    {
+                        "resourcePath": "/topics/fortran-2023",
+                        "topic": {
+                            "name": "fortran-2023"
+                        },
+                        "url": "https://github.com/topics/fortran-2023"
+                    }
+                ],
+                "totalCount": 10
+            }
+        },
+        "BerkeleyLab/julienne": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "CEED/libCEED": {
             "repositoryTopics": {
                 "nodes": [
@@ -540,6 +623,181 @@
                     }
                 ],
                 "totalCount": 6
+            }
+        },
+        "SCOREC/core": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/c",
+                        "topic": {
+                            "name": "c"
+                        },
+                        "url": "https://github.com/topics/c"
+                    },
+                    {
+                        "resourcePath": "/topics/c-plus-plus",
+                        "topic": {
+                            "name": "c-plus-plus"
+                        },
+                        "url": "https://github.com/topics/c-plus-plus"
+                    },
+                    {
+                        "resourcePath": "/topics/mpi",
+                        "topic": {
+                            "name": "mpi"
+                        },
+                        "url": "https://github.com/topics/mpi"
+                    },
+                    {
+                        "resourcePath": "/topics/parallel",
+                        "topic": {
+                            "name": "parallel"
+                        },
+                        "url": "https://github.com/topics/parallel"
+                    },
+                    {
+                        "resourcePath": "/topics/parallel-computing",
+                        "topic": {
+                            "name": "parallel-computing"
+                        },
+                        "url": "https://github.com/topics/parallel-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/hpc",
+                        "topic": {
+                            "name": "hpc"
+                        },
+                        "url": "https://github.com/topics/hpc"
+                    },
+                    {
+                        "resourcePath": "/topics/adaptive",
+                        "topic": {
+                            "name": "adaptive"
+                        },
+                        "url": "https://github.com/topics/adaptive"
+                    },
+                    {
+                        "resourcePath": "/topics/meshes",
+                        "topic": {
+                            "name": "meshes"
+                        },
+                        "url": "https://github.com/topics/meshes"
+                    },
+                    {
+                        "resourcePath": "/topics/finite-elements",
+                        "topic": {
+                            "name": "finite-elements"
+                        },
+                        "url": "https://github.com/topics/finite-elements"
+                    },
+                    {
+                        "resourcePath": "/topics/bigger-meshes",
+                        "topic": {
+                            "name": "bigger-meshes"
+                        },
+                        "url": "https://github.com/topics/bigger-meshes"
+                    },
+                    {
+                        "resourcePath": "/topics/cmake",
+                        "topic": {
+                            "name": "cmake"
+                        },
+                        "url": "https://github.com/topics/cmake"
+                    },
+                    {
+                        "resourcePath": "/topics/unstructured-meshes",
+                        "topic": {
+                            "name": "unstructured-meshes"
+                        },
+                        "url": "https://github.com/topics/unstructured-meshes"
+                    }
+                ],
+                "totalCount": 12
+            }
+        },
+        "SCOREC/omega_h": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/kokkos",
+                        "topic": {
+                            "name": "kokkos"
+                        },
+                        "url": "https://github.com/topics/kokkos"
+                    }
+                ],
+                "totalCount": 1
+            }
+        },
+        "SCOREC/pcms": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/kokkos",
+                        "topic": {
+                            "name": "kokkos"
+                        },
+                        "url": "https://github.com/topics/kokkos"
+                    },
+                    {
+                        "resourcePath": "/topics/coupling",
+                        "topic": {
+                            "name": "coupling"
+                        },
+                        "url": "https://github.com/topics/coupling"
+                    },
+                    {
+                        "resourcePath": "/topics/hpc",
+                        "topic": {
+                            "name": "hpc"
+                        },
+                        "url": "https://github.com/topics/hpc"
+                    },
+                    {
+                        "resourcePath": "/topics/supercomputing",
+                        "topic": {
+                            "name": "supercomputing"
+                        },
+                        "url": "https://github.com/topics/supercomputing"
+                    },
+                    {
+                        "resourcePath": "/topics/adios2",
+                        "topic": {
+                            "name": "adios2"
+                        },
+                        "url": "https://github.com/topics/adios2"
+                    },
+                    {
+                        "resourcePath": "/topics/spack",
+                        "topic": {
+                            "name": "spack"
+                        },
+                        "url": "https://github.com/topics/spack"
+                    },
+                    {
+                        "resourcePath": "/topics/unstructured-meshes",
+                        "topic": {
+                            "name": "unstructured-meshes"
+                        },
+                        "url": "https://github.com/topics/unstructured-meshes"
+                    }
+                ],
+                "totalCount": 7
+            }
+        },
+        "SCOREC/pumi-pic": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/kokkos",
+                        "topic": {
+                            "name": "kokkos"
+                        },
+                        "url": "https://github.com/topics/kokkos"
+                    }
+                ],
+                "totalCount": 1
             }
         },
         "StanfordLegion/legion": {
@@ -1539,6 +1797,111 @@
                     }
                 ],
                 "totalCount": 3
+            }
+        },
+        "sandialabs/pytuq": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/scr-3177",
+                        "topic": {
+                            "name": "scr-3177"
+                        },
+                        "url": "https://github.com/topics/scr-3177"
+                    },
+                    {
+                        "resourcePath": "/topics/uncertainty-quantification",
+                        "topic": {
+                            "name": "uncertainty-quantification"
+                        },
+                        "url": "https://github.com/topics/uncertainty-quantification"
+                    },
+                    {
+                        "resourcePath": "/topics/bayesian-inference",
+                        "topic": {
+                            "name": "bayesian-inference"
+                        },
+                        "url": "https://github.com/topics/bayesian-inference"
+                    },
+                    {
+                        "resourcePath": "/topics/forward-propagation",
+                        "topic": {
+                            "name": "forward-propagation"
+                        },
+                        "url": "https://github.com/topics/forward-propagation"
+                    },
+                    {
+                        "resourcePath": "/topics/inverse-problems",
+                        "topic": {
+                            "name": "inverse-problems"
+                        },
+                        "url": "https://github.com/topics/inverse-problems"
+                    },
+                    {
+                        "resourcePath": "/topics/model-error",
+                        "topic": {
+                            "name": "model-error"
+                        },
+                        "url": "https://github.com/topics/model-error"
+                    },
+                    {
+                        "resourcePath": "/topics/regression",
+                        "topic": {
+                            "name": "regression"
+                        },
+                        "url": "https://github.com/topics/regression"
+                    },
+                    {
+                        "resourcePath": "/topics/sparse-regression",
+                        "topic": {
+                            "name": "sparse-regression"
+                        },
+                        "url": "https://github.com/topics/sparse-regression"
+                    },
+                    {
+                        "resourcePath": "/topics/surrogate-models",
+                        "topic": {
+                            "name": "surrogate-models"
+                        },
+                        "url": "https://github.com/topics/surrogate-models"
+                    },
+                    {
+                        "resourcePath": "/topics/surrogates",
+                        "topic": {
+                            "name": "surrogates"
+                        },
+                        "url": "https://github.com/topics/surrogates"
+                    },
+                    {
+                        "resourcePath": "/topics/uq",
+                        "topic": {
+                            "name": "uq"
+                        },
+                        "url": "https://github.com/topics/uq"
+                    },
+                    {
+                        "resourcePath": "/topics/snl-data-analysis",
+                        "topic": {
+                            "name": "snl-data-analysis"
+                        },
+                        "url": "https://github.com/topics/snl-data-analysis"
+                    },
+                    {
+                        "resourcePath": "/topics/snl-other",
+                        "topic": {
+                            "name": "snl-other"
+                        },
+                        "url": "https://github.com/topics/snl-other"
+                    },
+                    {
+                        "resourcePath": "/topics/snl-science-libs",
+                        "topic": {
+                            "name": "snl-science-libs"
+                        },
+                        "url": "https://github.com/topics/snl-science-libs"
+                    }
+                ],
+                "totalCount": 14
             }
         },
         "spack/spack": {

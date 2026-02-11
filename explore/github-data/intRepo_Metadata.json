@@ -45,6 +45,29 @@
         ],
         "website": "https://go.lbl.gov/caffeine"
     },
+    "BerkeleyLab/fiats": {
+        "description": "A deep learning library for use in high-performance computing applications in modern Fortran",
+        "name": "BerkeleyLab/fiats",
+        "topics": [
+            "deep-learning",
+            "inference",
+            "artificial-intelligence",
+            "machine-learning",
+            "neural-networks",
+            "ann",
+            "artificial-neural-networks",
+            "feedforward-neural-network",
+            "neural-network",
+            "fortran-2023"
+        ],
+        "website": ""
+    },
+    "BerkeleyLab/julienne": {
+        "description": "A Fortran 2023 correctness-checking framework supporting expressive idioms for writing assertions and tests",
+        "name": "BerkeleyLab/julienne",
+        "topics": null,
+        "website": ""
+    },
     "CEED/libCEED": {
         "description": "CEED Library: Code for Efficient Extensible Discretizations",
         "name": "CEED/libCEED",
@@ -144,6 +167,55 @@
             "fortran"
         ],
         "website": "https://parallel-netcdf.github.io"
+    },
+    "SCOREC/core": {
+        "description": "parallel finite element unstructured meshes",
+        "name": "SCOREC/core",
+        "topics": [
+            "c",
+            "c-plus-plus",
+            "mpi",
+            "parallel",
+            "parallel-computing",
+            "hpc",
+            "adaptive",
+            "meshes",
+            "finite-elements",
+            "bigger-meshes",
+            "cmake",
+            "unstructured-meshes"
+        ],
+        "website": "http://scorec.github.io/core/"
+    },
+    "SCOREC/omega_h": {
+        "description": "Simplex mesh adaptivity for HPC",
+        "name": "SCOREC/omega_h",
+        "topics": [
+            "kokkos"
+        ],
+        "website": "https://scorec.github.io/omega_h/"
+    },
+    "SCOREC/pcms": {
+        "description": "PCMS: Parallel Coupler For Multimodel Simulations",
+        "name": "SCOREC/pcms",
+        "topics": [
+            "kokkos",
+            "coupling",
+            "hpc",
+            "supercomputing",
+            "adios2",
+            "spack",
+            "unstructured-meshes"
+        ],
+        "website": "https://scorec.github.io/pcms/"
+    },
+    "SCOREC/pumi-pic": {
+        "description": "support libraries for unstructured mesh particle in cell simulations on GPUs and CPUs",
+        "name": "SCOREC/pumi-pic",
+        "topics": [
+            "kokkos"
+        ],
+        "website": "https://scorec.github.io/pumi-pic/"
     },
     "StanfordLegion/legion": {
         "description": "The Legion Parallel Programming System",
@@ -435,6 +507,27 @@
             "snl-science-libs"
         ],
         "website": ""
+    },
+    "sandialabs/pytuq": {
+        "description": "Python Toolkit for Uncertainty Quantification",
+        "name": "sandialabs/pytuq",
+        "topics": [
+            "scr-3177",
+            "uncertainty-quantification",
+            "bayesian-inference",
+            "forward-propagation",
+            "inverse-problems",
+            "model-error",
+            "regression",
+            "sparse-regression",
+            "surrogate-models",
+            "surrogates",
+            "uq",
+            "snl-data-analysis",
+            "snl-other",
+            "snl-science-libs"
+        ],
+        "website": "https://sandialabs.github.io/pytuq/"
     },
     "spack/spack": {
         "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",

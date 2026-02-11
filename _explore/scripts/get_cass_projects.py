@@ -104,6 +104,7 @@ if response.status_code == 200:
                         if github_match:
                             part_after_url = github_match.group(2).strip().lstrip('/').lower()
                             part_after_url = re.sub(r'\.git$', '', part_after_url)
+                            part_after_url = re.sub(r'\releases', '', part_after_url)
                             if part_after_url.endswith('/'):
                                 part_after_url = part_after_url[:-1]
                             github_list.append((part_after_url))

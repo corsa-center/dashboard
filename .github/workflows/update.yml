@@ -20,7 +20,7 @@ jobs:
       - name: Setup Spack # Spack is not yet pip installable, so we must install via the actions
         uses: spack/setup-spack@16b756799ede8b28951287f89bcd3fdb32ec1ca3
         with:
-          spack_ref: releases/v1.1.1
+          spack_ref: v1.1.1
           buildcache: false
           color: false
           spack_path: spack

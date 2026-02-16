@@ -1465,13 +1465,6 @@
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
                                     }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "styfle/cancel-workflow-action",
-                                    "repository": {
-                                        "nameWithOwner": "styfle/cancel-workflow-action"
-                                    }
                                 }
                             ]
                         }
@@ -1484,26 +1477,6 @@
                                     "packageName": "actions/checkout",
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "styfle/cancel-workflow-action",
-                                    "repository": {
-                                        "nameWithOwner": "styfle/cancel-workflow-action"
                                     }
                                 }
                             ]
@@ -1598,6 +1571,26 @@
                                     "packageName": "docker/setup-buildx-action",
                                     "repository": {
                                         "nameWithOwner": "docker/setup-buildx-action"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/upload-artifact",
+                                    "repository": {
+                                        "nameWithOwner": "actions/upload-artifact"
                                     }
                                 }
                             ]
@@ -1802,13 +1795,6 @@
                                     "packageName": "lukka/get-cmake",
                                     "repository": {
                                         "nameWithOwner": "lukka/get-cmake"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -2060,13 +2046,6 @@
                                     "repository": {
                                         "nameWithOwner": "actions/upload-artifact"
                                     }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
-                                    }
                                 }
                             ]
                         }
@@ -2074,6 +2053,13 @@
                     {
                         "dependencies": {
                             "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
                                 {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/download-artifact",
@@ -2128,13 +2114,6 @@
                                     "packageName": "lukka/get-cmake",
                                     "repository": {
                                         "nameWithOwner": "lukka/get-cmake"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -2246,6 +2225,13 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/download-artifact",
                                     "repository": {
                                         "nameWithOwner": "actions/download-artifact"
@@ -2256,13 +2242,6 @@
                                     "packageName": "ilammy/msvc-dev-cmd",
                                     "repository": {
                                         "nameWithOwner": "ilammy/msvc-dev-cmd"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -2552,13 +2531,6 @@
                                     "repository": {
                                         "nameWithOwner": "fortran-lang/setup-fortran"
                                     }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
-                                    }
                                 }
                             ]
                         }
@@ -2578,13 +2550,6 @@
                                     "packageName": "lukka/get-cmake",
                                     "repository": {
                                         "nameWithOwner": "lukka/get-cmake"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -2619,13 +2584,6 @@
                                     "packageName": "lukka/get-cmake",
                                     "repository": {
                                         "nameWithOwner": "lukka/get-cmake"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -2891,13 +2849,6 @@
                                     "repository": {
                                         "nameWithOwner": "mpi4py/setup-mpi"
                                     }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
-                                    }
                                 }
                             ]
                         }
@@ -2938,13 +2889,6 @@
                                     "packageName": "lukka/get-cmake",
                                     "repository": {
                                         "nameWithOwner": "lukka/get-cmake"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -3147,13 +3091,6 @@
                                     "packageName": "lukka/get-cmake",
                                     "repository": {
                                         "nameWithOwner": "lukka/get-cmake"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "ssciwr/doxygen-install",
-                                    "repository": {
-                                        "nameWithOwner": "ssciwr/doxygen-install"
                                     }
                                 }
                             ]
@@ -9971,6 +9908,13 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "github/codeql-action/upload-sarif",
+                                    "repository": {
+                                        "nameWithOwner": "github/codeql-action"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "ossf/scorecard-action",
                                     "repository": {
                                         "nameWithOwner": "ossf/scorecard-action"
@@ -11672,255 +11616,6 @@
                     {
                         "color": "#f34b7d",
                         "name": "C++"
-                    }
-                ]
-            }
-        },
-        "visit-dav/visit": {
-            "dependencyGraphManifests": {
-                "nodes": [
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "alabaster",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/alabaster"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "babel",
-                                    "repository": {
-                                        "nameWithOwner": "python-babel/babel"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "certifi",
-                                    "repository": {
-                                        "nameWithOwner": "certifi/python-certifi"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "charset-normalizer",
-                                    "repository": {
-                                        "nameWithOwner": "jawah/charset_normalizer"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "docutils",
-                                    "repository": {
-                                        "nameWithOwner": "jwilk-mirrors/docutils"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "idna",
-                                    "repository": {
-                                        "nameWithOwner": "kjd/idna"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "imagesize",
-                                    "repository": {
-                                        "nameWithOwner": "shibukawa/imagesize_py"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "importlib-metadata",
-                                    "repository": {
-                                        "nameWithOwner": "python/importlib_metadata"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "jinja2",
-                                    "repository": {
-                                        "nameWithOwner": "pallets/jinja"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "markupsafe",
-                                    "repository": {
-                                        "nameWithOwner": "pallets/markupsafe"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "packaging",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/packaging"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pygments",
-                                    "repository": {
-                                        "nameWithOwner": "pygments/pygments"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "requests",
-                                    "repository": {
-                                        "nameWithOwner": "psf/requests"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "snowballstemmer",
-                                    "repository": {
-                                        "nameWithOwner": "snowballstem/snowball"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinx"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-notfound-page",
-                                    "repository": {
-                                        "nameWithOwner": "readthedocs/sphinx-notfound-page"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-rtd-theme",
-                                    "repository": {
-                                        "nameWithOwner": "readthedocs/sphinx_rtd_theme"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-tabs",
-                                    "repository": {
-                                        "nameWithOwner": "executablebooks/sphinx-tabs"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-applehelp",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-applehelp"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-devhelp",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-devhelp"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-htmlhelp",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-htmlhelp"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-jquery",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-contrib/jquery"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-jsmath",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-jsmath"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-qthelp",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-qthelp"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-serializinghtml",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-serializinghtml"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "urllib3",
-                                    "repository": {
-                                        "nameWithOwner": "urllib3/urllib3"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "zipp",
-                                    "repository": {
-                                        "nameWithOwner": "jaraco/zipp"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/setup-python",
-                                    "repository": {
-                                        "nameWithOwner": "actions/setup-python"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "tj-actions/changed-files",
-                                    "repository": {
-                                        "nameWithOwner": "tj-actions/changed-files"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#555555",
-                        "name": "C"
                     }
                 ]
             }

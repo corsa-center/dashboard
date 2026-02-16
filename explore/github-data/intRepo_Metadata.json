@@ -562,21 +562,6 @@
         ],
         "website": "https://trilinos.org/"
     },
-    "visit-dav/visit": {
-        "description": "VisIt - Visualization and Data Analysis for Mesh-based Scientific Data",
-        "name": "visit-dav/visit",
-        "topics": [
-            "hpc",
-            "scientific-visualization",
-            "scientific-computing",
-            "visualization",
-            "data-analysis",
-            "radiuss",
-            "data-viz",
-            "python"
-        ],
-        "website": "https://visit.llnl.gov"
-    },
     "xiaoyeli/superlu": {
         "description": "Supernodal sparse direct solver.  https://portal.nersc.gov/project/sparse/superlu/",
         "name": "xiaoyeli/superlu",

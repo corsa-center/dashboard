@@ -2051,69 +2051,6 @@
                 "totalCount": 8
             }
         },
-        "visit-dav/visit": {
-            "repositoryTopics": {
-                "nodes": [
-                    {
-                        "resourcePath": "/topics/hpc",
-                        "topic": {
-                            "name": "hpc"
-                        },
-                        "url": "https://github.com/topics/hpc"
-                    },
-                    {
-                        "resourcePath": "/topics/scientific-visualization",
-                        "topic": {
-                            "name": "scientific-visualization"
-                        },
-                        "url": "https://github.com/topics/scientific-visualization"
-                    },
-                    {
-                        "resourcePath": "/topics/scientific-computing",
-                        "topic": {
-                            "name": "scientific-computing"
-                        },
-                        "url": "https://github.com/topics/scientific-computing"
-                    },
-                    {
-                        "resourcePath": "/topics/visualization",
-                        "topic": {
-                            "name": "visualization"
-                        },
-                        "url": "https://github.com/topics/visualization"
-                    },
-                    {
-                        "resourcePath": "/topics/data-analysis",
-                        "topic": {
-                            "name": "data-analysis"
-                        },
-                        "url": "https://github.com/topics/data-analysis"
-                    },
-                    {
-                        "resourcePath": "/topics/radiuss",
-                        "topic": {
-                            "name": "radiuss"
-                        },
-                        "url": "https://github.com/topics/radiuss"
-                    },
-                    {
-                        "resourcePath": "/topics/data-viz",
-                        "topic": {
-                            "name": "data-viz"
-                        },
-                        "url": "https://github.com/topics/data-viz"
-                    },
-                    {
-                        "resourcePath": "/topics/python",
-                        "topic": {
-                            "name": "python"
-                        },
-                        "url": "https://github.com/topics/python"
-                    }
-                ],
-                "totalCount": 8
-            }
-        },
         "xiaoyeli/superlu": {
             "repositoryTopics": {
                 "nodes": [],

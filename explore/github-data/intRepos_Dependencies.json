@@ -11229,6 +11229,13 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/create-github-app-token",
+                                    "repository": {
+                                        "nameWithOwner": "actions/create-github-app-token"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "peter-evans/create-pull-request",
                                     "repository": {
                                         "nameWithOwner": "peter-evans/create-pull-request"

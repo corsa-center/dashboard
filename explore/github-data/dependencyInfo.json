@@ -556,6 +556,22 @@
                 "login": "actions"
             }
         },
+        "actions/create-github-app-token": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
+                    }
+                ]
+            },
+            "name": "create-github-app-token",
+            "nameWithOwner": "actions/create-github-app-token",
+            "owner": {
+                "isVerified": true,
+                "login": "actions"
+            }
+        },
         "actions/delete-package-versions": {
             "languages": {
                 "nodes": [

@@ -2090,6 +2090,13 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "azure/trusted-signing-action",
+                                    "repository": {
+                                        "nameWithOwner": "Azure/artifact-signing-action"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "fortran-lang/setup-fortran",
                                     "repository": {
                                         "nameWithOwner": "fortran-lang/setup-fortran"
@@ -2107,6 +2114,13 @@
                                     "packageName": "jsdaniell/create-json",
                                     "repository": {
                                         "nameWithOwner": "jsdaniell/create-json"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "lukka/get-cmake",
+                                    "repository": {
+                                        "nameWithOwner": "lukka/get-cmake"
                                     }
                                 },
                                 {

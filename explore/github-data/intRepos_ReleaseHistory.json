@@ -713,6 +713,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Expand compiler support: Lfortran and Flang 22",
+                        "publishedAt": "2026-02-26T02:53:44Z",
+                        "tagName": "3.6.2"
+                    },
+                    {
                         "name": "Documentation and fixes",
                         "publishedAt": "2026-02-03T04:57:12Z",
                         "tagName": "3.6.1"
@@ -1435,37 +1440,6 @@
         "SCOREC/pcms": {
             "releases": {
                 "nodes": []
-            }
-        },
-        "SCOREC/pumi-pic": {
-            "releases": {
-                "nodes": [
-                    {
-                        "name": "v0.31",
-                        "publishedAt": "2021-05-03T20:51:02Z",
-                        "tagName": "v0.31"
-                    },
-                    {
-                        "name": "urpRs21",
-                        "publishedAt": "2021-04-12T13:52:44Z",
-                        "tagName": "urp_rs_21"
-                    },
-                    {
-                        "name": "Before Merging CSR",
-                        "publishedAt": "2021-01-29T20:03:58Z",
-                        "tagName": "v0.2"
-                    },
-                    {
-                        "name": "archive of code used for siampp20 presentation",
-                        "publishedAt": "2021-03-30T19:45:54Z",
-                        "tagName": "siampp20"
-                    },
-                    {
-                        "name": "archive of code used for scala19 presentation",
-                        "publishedAt": "2021-03-30T19:22:05Z",
-                        "tagName": "scala19"
-                    }
-                ]
             }
         },
         "StanfordLegion/legion": {

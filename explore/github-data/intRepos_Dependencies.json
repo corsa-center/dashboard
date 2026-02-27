@@ -2710,13 +2710,6 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "actions/github-script",
-                                    "repository": {
-                                        "nameWithOwner": "actions/github-script"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/setup-java",
                                     "repository": {
                                         "nameWithOwner": "actions/setup-java"
@@ -5459,6 +5452,40 @@
                                     "packageName": "Kitware/cdash-status",
                                     "repository": {
                                         "nameWithOwner": "Kitware/cdash-status"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/upload-artifact",
+                                    "repository": {
+                                        "nameWithOwner": "actions/upload-artifact"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "github/codeql-action/upload-sarif",
+                                    "repository": {
+                                        "nameWithOwner": "github/codeql-action"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "ossf/scorecard-action",
+                                    "repository": {
+                                        "nameWithOwner": "ossf/scorecard-action"
                                     }
                                 }
                             ]

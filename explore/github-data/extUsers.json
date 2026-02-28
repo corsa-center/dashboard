@@ -31964,7 +31964,8 @@
                     "HDFGroup/hdf5",
                     "llvm/llvm-project",
                     "mfem/mfem",
-                    "ornladios/ADIOS2"
+                    "ornladios/ADIOS2",
+                    "petsc/petsc"
                 ]
             },
             "login": "claude",
@@ -37338,7 +37339,7 @@
                 ]
             },
             "login": "dr7ana",
-            "name": "dan rouhana"
+            "name": "dan"
         },
         "draeger1": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/20210038?u=d171dff02dc71d2bd7630fc1ee7daafd651d25a2&v=4",
@@ -68672,7 +68673,7 @@
                 ]
             },
             "login": "netromdk",
-            "name": "Morten"
+            "name": "netrom"
         },
         "neutrinoceros": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/14075922?v=4",
@@ -69159,16 +69160,6 @@
             },
             "login": "nikitalita",
             "name": "Nikita"
-        },
-        "nikitaxgusev": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/25354551?v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "pmodels/mpich"
-                ]
-            },
-            "login": "nikitaxgusev",
-            "name": "Nikita Gusev"
         },
         "nikkicoon": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/89641475?u=887cd6a1e0d1c0f98952b9719e886c6252e2e883&v=4",
@@ -76232,6 +76223,16 @@
                 ]
             },
             "login": "rawarren",
+            "name": null
+        },
+        "raycppwizard": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/232825042?u=1a049de1a8c3c758b1094babc3b3ddc3d5aa04f0&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "raycppwizard",
             "name": null
         },
         "raylu-hdf": {
@@ -85277,16 +85278,6 @@
             "login": "sthibaul",
             "name": "Samuel Thibault"
         },
-        "stigh": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/594278?u=be137b3cec5edc5d0ac47818650bf0fc3746fefb&v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "BerkeleyLab/julienne"
-                ]
-            },
-            "login": "stigh",
-            "name": "Stig Helgeland"
-        },
         "stil-t": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/8467030?u=95ee7caf39d67a7c932c84761a974f14b866fafe&v=4",
             "contributedLabRepositories": {
@@ -88270,16 +88261,6 @@
             },
             "login": "timnoack",
             "name": "Tim Noack"
-        },
-        "timoh-ba": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/161033027?v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
-            },
-            "login": "timoh-ba",
-            "name": null
         },
         "timon-ul": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/174803951?u=5c2210b82f5456a6700a9607c848ab614c06a516&v=4",
@@ -97721,7 +97702,7 @@
                 ]
             },
             "login": "zjin-lcf",
-            "name": null
+            "name": "Zheming Jin"
         },
         "zjlcd": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/49445170?u=5489b2fc4e1b04b26e4084ef2e5e996db1f16330&v=4",

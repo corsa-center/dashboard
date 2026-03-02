@@ -459,16 +459,16 @@
             style = [
                 { selector: 'node', style: { 'label': 'data(label)', 'color': '#fff', 'background-color': '#444', 'width': 'label', 'height': 24, 'padding': 8, 'shape': 'round-rectangle', 'font-size': '12px', 'text-valign': 'center', 'border-width': 1, 'border-color': '#222' } },
                 { selector: 'node[type="library"]', style: { 'background-color': '#d32f2f', 'color': '#fff', 'font-size': '14px', 'padding': 10 } },
-                { selector: 'edge', style: { 'width': 1.5, 'line-color': '#444', 'target-arrow-color': '#444', 'target-arrow-shape': 'triangle', 'curve-style': 'taxi', 'taxi-direction': 'downward', 'taxi-turn': 15 } },
+                { selector: 'edge', style: { 'width': 2.5, 'line-color': '#999', 'line-opacity': 0.7, 'target-arrow-color': '#999', 'target-arrow-shape': 'triangle', 'curve-style': 'taxi', 'taxi-direction': 'downward', 'taxi-turn': 15 } },
                 { selector: '.selected', style: { 'border-width': 2, 'border-color': '#007bff', 'background-color': '#0056b3' } }
             ];
             layout = { name: 'dagre', rankDir: 'TB', ranker: 'tight-tree', nodeSep: 30, edgeSep: 20, rankSep: 70, padding: 30 };
         } else {
             style = [
                 { selector: 'node', style: { 'label': '', 'background-color': '#555', 'shape': 'ellipse', 'width': `mapData(degree, 0, ${maxDeg}, 15, 70)`, 'height': `mapData(degree, 0, ${maxDeg}, 15, 70)`, 'transition-property': 'border-width, border-color', 'transition-duration': '0.2s' } },
-                { selector: 'node[type="library"]', style: { 'background-color': '#d32f2f', 'border-width': 3, 'border-color': '#fff' } },
-                { selector: 'node[type="consumer"]', style: { 'background-color': '#0277bd' } },
-                { selector: 'edge', style: { 'width': 1, 'line-color': '#333', 'curve-style': 'haystack', 'haystack-radius': 0.5 } },
+                { selector: 'node[type="library"]', style: { 'background-color': '#d32f2f', 'border-width': 3, 'border-color': '#fff', 'z-index': 10 } },
+                { selector: 'node[type="consumer"]', style: { 'background-color': '#0277bd', 'z-index': 5 } },
+                { selector: 'edge', style: { 'width': 2.5, 'line-color': '#fff', 'line-opacity': 0.5, 'curve-style': 'haystack', 'haystack-radius': 0.5 } },
                 { selector: '.selected', style: { 'border-width': 4, 'border-color': '#007bff' } }
             ];
             layout = { 

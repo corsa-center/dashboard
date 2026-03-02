@@ -462,7 +462,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 49509639
+                        "size": 49509699
                     },
                     {
                         "size": 5745743
@@ -584,7 +584,7 @@
                     }
                 ],
                 "totalCount": 17,
-                "totalSize": 64506466
+                "totalSize": 64506526
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -2748,22 +2748,22 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 695024817
+                        "size": 695185104
                     },
                     {
-                        "size": 521687253
+                        "size": 521706306
                     },
                     {
-                        "size": 218291190
+                        "size": 218291887
                     },
                     {
-                        "size": 184417723
+                        "size": 184417845
                     },
                     {
-                        "size": 26034122
+                        "size": 26041437
                     },
                     {
-                        "size": 14304176
+                        "size": 14311144
                     },
                     {
                         "size": 12307615
@@ -2772,10 +2772,10 @@
                         "size": 5160980
                     },
                     {
-                        "size": 4462784
+                        "size": 4464574
                     },
                     {
-                        "size": 4349866
+                        "size": 4349894
                     },
                     {
                         "size": 2470255
@@ -2784,13 +2784,13 @@
                         "size": 2228577
                     },
                     {
-                        "size": 1418923
+                        "size": 1419021
                     },
                     {
-                        "size": 1285603
+                        "size": 1285596
                     },
                     {
-                        "size": 1279350
+                        "size": 1279336
                     },
                     {
                         "size": 1212610
@@ -3058,14 +3058,14 @@
                     }
                 ],
                 "totalCount": 58,
-                "totalSize": 1698583157
+                "totalSize": 1698779494
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 19175359
+                        "size": 19175827
                     },
                     {
                         "size": 297123
@@ -3138,7 +3138,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19813230
+                "totalSize": 19813698
             }
         },
         "open-mpi/ompi": {
@@ -4153,7 +4153,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 3309424
+                        "size": 3310371
                     },
                     {
                         "size": 36897
@@ -4219,7 +4219,7 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 3455581
+                "totalSize": 3456528
             }
         },
         "xiaoyeli/superlu_dist": {

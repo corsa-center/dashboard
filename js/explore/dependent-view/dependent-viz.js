@@ -457,12 +457,12 @@
 
         if (currentGraphLayout === 'detailed') {
             style = [
-                { selector: 'node', style: { 'label': 'data(label)', 'color': '#fff', 'background-color': '#444', 'width': 'label', 'height': 20, 'padding': 6, 'shape': 'round-rectangle', 'font-size': '10px', 'text-valign': 'center', 'border-width': 1, 'border-color': '#222' } },
-                { selector: 'node[type="library"]', style: { 'background-color': '#d32f2f', 'color': '#fff', 'font-size': '12px', 'padding': 8 } },
+                { selector: 'node', style: { 'label': 'data(label)', 'color': '#fff', 'background-color': '#444', 'width': 'label', 'height': 24, 'padding': 8, 'shape': 'round-rectangle', 'font-size': '12px', 'text-valign': 'center', 'border-width': 1, 'border-color': '#222' } },
+                { selector: 'node[type="library"]', style: { 'background-color': '#d32f2f', 'color': '#fff', 'font-size': '14px', 'padding': 10 } },
                 { selector: 'edge', style: { 'width': 1.5, 'line-color': '#444', 'target-arrow-color': '#444', 'target-arrow-shape': 'triangle', 'curve-style': 'taxi', 'taxi-direction': 'downward', 'taxi-turn': 15 } },
                 { selector: '.selected', style: { 'border-width': 2, 'border-color': '#007bff', 'background-color': '#0056b3' } }
             ];
-            layout = { name: 'dagre', rankDir: 'TB', ranker: 'tight-tree', nodeSep: 20, edgeSep: 20, rankSep: 60, padding: 30 };
+            layout = { name: 'dagre', rankDir: 'TB', ranker: 'tight-tree', nodeSep: 30, edgeSep: 20, rankSep: 70, padding: 30 };
         } else {
             style = [
                 { selector: 'node', style: { 'label': '', 'background-color': '#555', 'shape': 'ellipse', 'width': `mapData(degree, 0, ${maxDeg}, 15, 70)`, 'height': `mapData(degree, 0, ${maxDeg}, 15, 70)`, 'transition-property': 'border-width, border-color', 'transition-duration': '0.2s' } },

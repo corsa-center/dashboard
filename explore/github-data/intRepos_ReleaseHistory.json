@@ -4,6 +4,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "AMReX 26.03",
+                        "publishedAt": "2026-03-02T18:27:25Z",
+                        "tagName": "26.03"
+                    },
+                    {
                         "name": "AMReX 26.02",
                         "publishedAt": "2026-02-02T17:07:36Z",
                         "tagName": "26.02"
@@ -2171,6 +2176,11 @@
         "icl-utk-edu/magma": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v2.10.0",
+                        "publishedAt": "2026-03-02T12:15:37Z",
+                        "tagName": "v2.10.0"
+                    },
                     {
                         "name": "MAGMA-2.9.0",
                         "publishedAt": "2025-01-28T14:01:21Z",

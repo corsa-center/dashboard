@@ -11115,6 +11115,26 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/create-github-app-token",
+                                    "repository": {
+                                        "nameWithOwner": "actions/create-github-app-token"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "srggrs/assign-one-project-github-action",
                                     "repository": {
                                         "nameWithOwner": "srggrs/assign-one-project-github-action"

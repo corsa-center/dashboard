@@ -3617,6 +3617,22 @@
                 "login": "r1chardj0n3s"
             }
         },
+        "rayon-rs/rayon": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "rayon",
+            "nameWithOwner": "rayon-rs/rayon",
+            "owner": {
+                "isVerified": false,
+                "login": "rayon-rs"
+            }
+        },
         "readthedocs/readthedocs-sphinx-search": {
             "languages": {
                 "nodes": [

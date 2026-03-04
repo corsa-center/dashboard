@@ -1132,6 +1132,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "HDF5 Release 2.1.0",
+                        "publishedAt": "2026-03-03T23:01:03Z",
+                        "tagName": "2.1.0"
+                    },
+                    {
                         "name": "HDF5 Release 2.0.0",
                         "publishedAt": "2025-11-11T00:35:48Z",
                         "tagName": "2.0.0"

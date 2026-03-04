@@ -4,18 +4,15 @@
     let loadedZip = null; 
     let rawZipBlob = null; 
     
-    // Core State
     let currentFilteredNodes = [];
     let currentFilteredEdges = [];
     let explicitlyExpandedNodes = new Set();
     
-    // UI State
     let currentDisplayMode = 'list'; 
     let currentGraphLayout = 'detailed'; 
     let listLimit = 10;
     const LIST_INCREMENT = 10;
     
-    // Inspector State
     let currentSelectedNodeId = null;
     let currentSnippet = null;
     let currentLabel = "";
@@ -294,7 +291,6 @@
         }
     };
 
-    // --- LIST VIEW LOGIC ---
     function renderListView() {
         if (!els.tableBody) return;
         
@@ -388,7 +384,6 @@
     };
     window.renderList = renderListView;
 
-    // --- GRAPH VIEW LOGIC ---
     window.updateGraphState = function() {
         if (!rawGraphData) return;
         const maxNodes = parseInt(els.graphLimit ? els.graphLimit.value : 50);
@@ -573,7 +568,6 @@
         document.body.removeChild(a);
     };
 
-    // --- INSPECTOR LOGIC ---
     window.inspectNode = async function(nodeId) {
         currentSelectedNodeId = nodeId;
         const node = rawGraphData.nodes.find(n => n.id === nodeId);
@@ -633,47 +627,88 @@
         if(currentDisplayMode === 'list') renderListView(); 
     };
 
-    window.exploreNode = function() {
-        if (!currentSelectedNodeId) return;
-        explicitlyExpandedNodes.add(currentSelectedNodeId);
+    window.focusNodeInGraph = function(nodeId) {
+        currentSelectedNodeId = nodeId;
+        explicitlyExpandedNodes.add(nodeId);
         
         if (currentDisplayMode !== 'graph') {
             document.querySelectorAll('.dv-tab-btn')[1].click(); 
         }
         
         updateGraphState();
+        inspectNode(nodeId); 
         
         setTimeout(() => {
             if(cy) {
-                const target = cy.getElementById(currentSelectedNodeId);
+                const target = cy.getElementById(nodeId);
                 if(target.length) {
                     cy.animate({ zoom: 1.5, center: { eles: target }, duration: 500 });
                 }
             }
-        }, 100);
+        }, 150);
     };
 
     function renderCitations() {
         if (!els.citationsContainer) return;
         const papersMap = {};
+        
         rawGraphData.nodes.forEach(n => {
-            if(n.data.paper) {
-                const p = n.data.paper;
-                if(!papersMap[p.doi]) papersMap[p.doi] = { paper: p, usages: [] };
-                papersMap[p.doi].usages.push(n.label);
+            if(n.data.papers && n.data.papers.length > 0) {
+                n.data.papers.forEach(p => {
+                    if(!papersMap[p.doi]) papersMap[p.doi] = { paper: p, usages: [] };
+                    
+                    if(!papersMap[p.doi].usages.find(u => u.id === n.id)) {
+                        papersMap[p.doi].usages.push(n);
+                    }
+                });
             }
         });
         
         let html = '';
         for (let doi in papersMap) {
             const data = papersMap[doi];
+            
+            let usagesHtml = data.usages.map(node => {
+                let pathArr = [];
+                let currId = node.id;
+                let loops = 20; 
+                
+                while(currId && loops > 0) {
+                    let n = rawGraphData.nodes.find(x => x.id === currId);
+                    if(n) pathArr.unshift(n.label);
+                    
+                    let edge = rawGraphData.edges.find(e => e.source === currId);
+                    currId = edge ? edge.target : null;
+                    loops--;
+                }
+                
+                let pathStr = pathArr.join(' <span style="color: #666; margin: 0 4px;">→</span> ');
+
+                return `
+                <li style="background: #252526; padding: 15px; border-radius: 6px; border: 1px solid #333; margin-bottom: 10px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="color: #007bff; font-weight: bold; font-size: 1.1rem;">${node.label}</span>
+                        <button class="dv-btn-small" onclick="focusNodeInGraph('${node.id}')">View in Graph</button>
+                    </div>
+                    <div style="font-size: 0.95rem; color: #ccc;">
+                        <span style="color: #888; text-transform: uppercase; font-size: 0.8rem; display: block; margin-bottom: 4px;">Dependency Chain:</span>
+                        <div style="font-family: monospace; font-size: 1rem;">${pathStr}</div>
+                    </div>
+                </li>`;
+            }).join('');
+
             html += `
             <div class="dv-citation-card">
                 <h4 class="dv-citation-title">${data.paper.title}</h4>
                 <div class="dv-citation-meta"><strong>Journal:</strong> ${data.paper.journal} | <strong>DOI:</strong> ${doi}</div>
-                <div style="font-size: 0.8rem; color: #888;">Used by: ${data.usages.join(', ')}</div>
-                <div style="margin-top: 10px;">
-                    <a href="${data.paper.url || data.paper.joss_pdf || ('https://doi.org/' + doi)}" target="_blank" class="dv-btn-small" style="text-decoration: none; display: inline-block;">View Paper</a>
+                <div style="margin-top: 10px; margin-bottom: 20px;">
+                    <a href="${data.paper.url || data.paper.joss_pdf || ('https://doi.org/' + doi)}" target="_blank" class="dv-btn-small" style="text-decoration: none; display: inline-block;">Read Original Paper</a>
+                </div>
+                <div>
+                    <strong style="font-size: 1rem; color: #fff; display: block; margin-bottom: 10px;">Cited by Downstream Consumers:</strong>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        ${usagesHtml}
+                    </ul>
                 </div>
             </div>`;
         }

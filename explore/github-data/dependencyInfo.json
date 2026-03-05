@@ -1171,22 +1171,6 @@
                 "login": "codespell-project"
             }
         },
-        "conda-incubator/setup-miniconda": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3178c6",
-                        "name": "TypeScript"
-                    }
-                ]
-            },
-            "name": "setup-miniconda",
-            "nameWithOwner": "conda-incubator/setup-miniconda",
-            "owner": {
-                "isVerified": false,
-                "login": "conda-incubator"
-            }
-        },
         "coveragepy/coveragepy": {
             "languages": {
                 "nodes": [
@@ -2423,21 +2407,6 @@
                 "login": "madsmtm"
             }
         },
-        "mansenfranzen/autodoc_pydantic": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "autodoc_pydantic",
-            "nameWithOwner": "mansenfranzen/autodoc_pydantic",
-            "owner": {
-                "login": "mansenfranzen"
-            }
-        },
         "marshallpierce/rust-base64": {
             "languages": {
                 "nodes": [
@@ -3139,6 +3108,22 @@
                 "login": "pre-commit"
             }
         },
+        "prefix-dev/setup-pixi": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "setup-pixi",
+            "nameWithOwner": "prefix-dev/setup-pixi",
+            "owner": {
+                "isVerified": true,
+                "login": "prefix-dev"
+            }
+        },
         "psf/black": {
             "languages": {
                 "nodes": [
@@ -3582,7 +3567,7 @@
             "name": "pytorch",
             "nameWithOwner": "pytorch/pytorch",
             "owner": {
-                "isVerified": false,
+                "isVerified": true,
                 "login": "pytorch"
             }
         },
@@ -4384,22 +4369,6 @@
             },
             "name": "packages",
             "nameWithOwner": "sphinx-contrib/packages",
-            "owner": {
-                "isVerified": false,
-                "login": "sphinx-contrib"
-            }
-        },
-        "sphinx-contrib/spelling": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "spelling",
-            "nameWithOwner": "sphinx-contrib/spelling",
             "owner": {
                 "isVerified": false,
                 "login": "sphinx-contrib"

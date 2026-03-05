@@ -3422,6 +3422,11 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "gest-api",
+                                    "repository": null
+                                },
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "numpy",
                                     "repository": {
                                         "nameWithOwner": "numpy/numpy"
@@ -3461,68 +3466,6 @@
                     {
                         "dependencies": {
                             "nodes": []
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "autodoc-pydantic",
-                                    "repository": {
-                                        "nameWithOwner": "mansenfranzen/autodoc_pydantic"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "numpy",
-                                    "repository": {
-                                        "nameWithOwner": "numpy/numpy"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinx"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-copybutton",
-                                    "repository": {
-                                        "nameWithOwner": "executablebooks/sphinx-copybutton"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-design",
-                                    "repository": {
-                                        "nameWithOwner": "executablebooks/sphinx-design"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-rtd-theme",
-                                    "repository": {
-                                        "nameWithOwner": "readthedocs/sphinx_rtd_theme"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-bibtex",
-                                    "repository": {
-                                        "nameWithOwner": "mcmtroffaes/sphinxcontrib-bibtex"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-spelling",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-contrib/spelling"
-                                    }
-                                }
-                            ]
                         }
                     },
                     {
@@ -3640,16 +3583,16 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "conda-incubator/setup-miniconda",
+                                    "packageName": "crate-ci/typos",
                                     "repository": {
-                                        "nameWithOwner": "conda-incubator/setup-miniconda"
+                                        "nameWithOwner": "crate-ci/typos"
                                     }
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "crate-ci/typos",
+                                    "packageName": "prefix-dev/setup-pixi",
                                     "repository": {
-                                        "nameWithOwner": "crate-ci/typos"
+                                        "nameWithOwner": "prefix-dev/setup-pixi"
                                     }
                                 }
                             ]
@@ -3674,16 +3617,16 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "conda-incubator/setup-miniconda",
+                                    "packageName": "crate-ci/typos",
                                     "repository": {
-                                        "nameWithOwner": "conda-incubator/setup-miniconda"
+                                        "nameWithOwner": "crate-ci/typos"
                                     }
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "crate-ci/typos",
+                                    "packageName": "prefix-dev/setup-pixi",
                                     "repository": {
-                                        "nameWithOwner": "crate-ci/typos"
+                                        "nameWithOwner": "prefix-dev/setup-pixi"
                                     }
                                 },
                                 {
@@ -9904,6 +9847,13 @@
                                     "packageName": "actions/download-artifact",
                                     "repository": {
                                         "nameWithOwner": "actions/download-artifact"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/setup-python",
+                                    "repository": {
+                                        "nameWithOwner": "actions/setup-python"
                                     }
                                 },
                                 {

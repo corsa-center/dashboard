@@ -536,6 +536,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "0.7.2",
+                        "publishedAt": "2026-03-06T04:40:44Z",
+                        "tagName": "0.7.2"
+                    },
+                    {
                         "name": "0.7.0",
                         "publishedAt": "2025-12-18T22:10:52Z",
                         "tagName": "0.7.0"

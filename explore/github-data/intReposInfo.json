@@ -42,10 +42,10 @@
                 "totalCount": 271
             },
             "pullRequests_Merged": {
-                "totalCount": 3608
+                "totalCount": 3609
             },
             "pullRequests_Open": {
-                "totalCount": 30
+                "totalCount": 29
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -118,7 +118,7 @@
             },
             "description": "A parallel runtime library for Fortran compilers",
             "forks": {
-                "totalCount": 16
+                "totalCount": 17
             },
             "homepageUrl": "https://go.lbl.gov/caffeine",
             "issues_Closed": {
@@ -156,7 +156,7 @@
                 "totalCount": 183
             },
             "pullRequests_Open": {
-                "totalCount": 2
+                "totalCount": 3
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -342,10 +342,10 @@
             },
             "homepageUrl": "",
             "issues_Closed": {
-                "totalCount": 434
+                "totalCount": 435
             },
             "issues_Open": {
-                "totalCount": 70
+                "totalCount": 69
             },
             "languages": {
                 "totalCount": 8
@@ -373,7 +373,7 @@
                 "totalCount": 84
             },
             "pullRequests_Merged": {
-                "totalCount": 564
+                "totalCount": 565
             },
             "pullRequests_Open": {
                 "totalCount": 13
@@ -382,7 +382,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 320
+                "totalCount": 321
             },
             "url": "https://github.com/CHIP-SPV/chipStar"
         },
@@ -453,10 +453,10 @@
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 893
+                "totalCount": 894
             },
             "issues_Open": {
-                "totalCount": 296
+                "totalCount": 295
             },
             "languages": {
                 "totalCount": 17
@@ -484,7 +484,7 @@
                 "totalCount": 469
             },
             "pullRequests_Merged": {
-                "totalCount": 4551
+                "totalCount": 4552
             },
             "pullRequests_Open": {
                 "totalCount": 14
@@ -900,7 +900,7 @@
             },
             "homepageUrl": "https://scorec.github.io/pcms/",
             "issues_Closed": {
-                "totalCount": 112
+                "totalCount": 113
             },
             "issues_Open": {
                 "totalCount": 36
@@ -931,10 +931,10 @@
                 "totalCount": 19
             },
             "pullRequests_Merged": {
-                "totalCount": 99
+                "totalCount": 102
             },
             "pullRequests_Open": {
-                "totalCount": 12
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -1154,7 +1154,7 @@
                 "totalCount": 143
             },
             "pullRequests_Open": {
-                "totalCount": 10
+                "totalCount": 11
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -1712,7 +1712,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 105
+                "totalCount": 104
             },
             "url": "https://github.com/icl-utk-edu/magma"
         },
@@ -1786,7 +1786,7 @@
                 "totalCount": 2770
             },
             "issues_Open": {
-                "totalCount": 492
+                "totalCount": 493
             },
             "languages": {
                 "totalCount": 11
@@ -1817,13 +1817,13 @@
                 "totalCount": 4876
             },
             "pullRequests_Open": {
-                "totalCount": 82
+                "totalCount": 83
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2469
+                "totalCount": 2471
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -1879,7 +1879,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 373
+                "totalCount": 374
             },
             "url": "https://github.com/kokkos/kokkos-kernels"
         },
@@ -1928,7 +1928,7 @@
                 "totalCount": 493
             },
             "pullRequests_Open": {
-                "totalCount": 22
+                "totalCount": 23
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2000,11 +2000,11 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 14271
+                "totalCount": 14284
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 64554
+                "totalCount": 64573
             },
             "issues_Open": {
                 "totalCount": 28084
@@ -2019,7 +2019,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 5736
+                "totalCount": 5737
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2032,19 +2032,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 8887
+                "totalCount": 8894
             },
             "pullRequests_Merged": {
-                "totalCount": 75613
+                "totalCount": 75667
             },
             "pullRequests_Open": {
-                "totalCount": 6730
+                "totalCount": 6748
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 37258
+                "totalCount": 37267
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2099,7 +2099,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 2119
+                "totalCount": 2120
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -2198,13 +2198,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 665
+                "totalCount": 666
             },
             "pullRequests_Merged": {
-                "totalCount": 2953
+                "totalCount": 2959
             },
             "pullRequests_Open": {
-                "totalCount": 6
+                "totalCount": 5
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2517,7 +2517,7 @@
                 "url": "http://choosealicense.com/licenses/apache-2.0/"
             },
             "mentionableUsers": {
-                "totalCount": 1680
+                "totalCount": 1679
             },
             "name": "spack",
             "nameWithOwner": "spack/spack",
@@ -2536,7 +2536,7 @@
                 "totalCount": 36910
             },
             "pullRequests_Open": {
-                "totalCount": 371
+                "totalCount": 373
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2586,13 +2586,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 1189
+                "totalCount": 1190
             },
             "pullRequests_Merged": {
                 "totalCount": 8099
             },
             "pullRequests_Open": {
-                "totalCount": 69
+                "totalCount": 68
             },
             "repositoryTopics": {
                 "totalCount": 8

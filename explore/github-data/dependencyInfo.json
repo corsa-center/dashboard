@@ -4502,6 +4502,22 @@
                 "login": "sphinx-doc"
             }
         },
+        "sphinx-toolbox/sphinx-toolbox": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "sphinx-toolbox",
+            "nameWithOwner": "sphinx-toolbox/sphinx-toolbox",
+            "owner": {
+                "isVerified": false,
+                "login": "sphinx-toolbox"
+            }
+        },
         "sqlalchemy/mako": {
             "languages": {
                 "nodes": [
@@ -4904,6 +4920,21 @@
             "nameWithOwner": "wention/BeautifulSoup4",
             "owner": {
                 "login": "wention"
+            }
+        },
+        "wjakob/nanobind": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#f34b7d",
+                        "name": "C++"
+                    }
+                ]
+            },
+            "name": "nanobind",
+            "nameWithOwner": "wjakob/nanobind",
+            "owner": {
+                "login": "wjakob"
             }
         },
         "yaml/pyyaml": {

@@ -857,6 +857,22 @@
                 "login": "alexheretic"
             }
         },
+        "anthropics/anthropic-sdk-python": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "anthropic-sdk-python",
+            "nameWithOwner": "anthropics/anthropic-sdk-python",
+            "owner": {
+                "isVerified": true,
+                "login": "anthropics"
+            }
+        },
         "anyoptimization/pymoo": {
             "languages": {
                 "nodes": [
@@ -1844,6 +1860,22 @@
                 "login": "globus"
             }
         },
+        "googleapis/python-genai": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "python-genai",
+            "nameWithOwner": "googleapis/python-genai",
+            "owner": {
+                "isVerified": false,
+                "login": "googleapis"
+            }
+        },
         "gorakhargosh/watchdog": {
             "languages": {
                 "nodes": [
@@ -2282,6 +2314,21 @@
             "owner": {
                 "isVerified": true,
                 "login": "katharostech"
+            }
+        },
+        "keegancsmith/MCP": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "MCP",
+            "nameWithOwner": "keegancsmith/MCP",
+            "owner": {
+                "login": "keegancsmith"
             }
         },
         "kjd/idna": {
@@ -2835,6 +2882,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "open-mpi"
+            }
+        },
+        "openai/openai-python": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "openai-python",
+            "nameWithOwner": "openai/openai-python",
+            "owner": {
+                "isVerified": true,
+                "login": "openai"
             }
         },
         "openjournals/openjournals-draft-action": {
@@ -4701,6 +4764,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "testing-cabal"
+            }
+        },
+        "theskumar/python-dotenv": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "python-dotenv",
+            "nameWithOwner": "theskumar/python-dotenv",
+            "owner": {
+                "login": "theskumar"
             }
         },
         "tkaitchuck/aHash": {

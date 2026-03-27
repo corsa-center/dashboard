@@ -2234,6 +2234,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Kokkos v5.1.0",
+                        "publishedAt": "2026-03-26T17:18:49Z",
+                        "tagName": "5.1.0"
+                    },
+                    {
                         "name": "Kokkos v5.0.2",
                         "publishedAt": "2026-02-04T07:45:04Z",
                         "tagName": "5.0.2"
@@ -2414,6 +2419,11 @@
         "kokkos/kokkos-kernels": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "5.1.0",
+                        "publishedAt": "2026-03-26T17:12:47Z",
+                        "tagName": "5.1.0"
+                    },
                     {
                         "name": "5.0.2",
                         "publishedAt": "2026-02-05T01:23:13Z",

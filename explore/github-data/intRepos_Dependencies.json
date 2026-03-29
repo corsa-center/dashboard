@@ -4464,6 +4464,13 @@
                                 },
                                 {
                                     "packageManager": "RUST",
+                                    "packageName": "arbitrary",
+                                    "repository": {
+                                        "nameWithOwner": "rust-fuzz/arbitrary"
+                                    }
+                                },
+                                {
+                                    "packageManager": "RUST",
                                     "packageName": "arboard",
                                     "repository": {
                                         "nameWithOwner": "1Password/arboard"
@@ -4555,9 +4562,9 @@
                                 },
                                 {
                                     "packageManager": "RUST",
-                                    "packageName": "as-raw-xcb-connection",
+                                    "packageName": "ash",
                                     "repository": {
-                                        "nameWithOwner": "psychon/as-raw-xcb-connection"
+                                        "nameWithOwner": "ash-rs/ash"
                                     }
                                 },
                                 {
@@ -4716,6 +4723,20 @@
                                 },
                                 {
                                     "packageManager": "RUST",
+                                    "packageName": "bit-set",
+                                    "repository": {
+                                        "nameWithOwner": "contain-rs/bit-set"
+                                    }
+                                },
+                                {
+                                    "packageManager": "RUST",
+                                    "packageName": "bit-vec",
+                                    "repository": {
+                                        "nameWithOwner": "contain-rs/bit-vec"
+                                    }
+                                },
+                                {
+                                    "packageManager": "RUST",
                                     "packageName": "bitflags",
                                     "repository": {
                                         "nameWithOwner": "bitflags/bitflags"
@@ -4733,6 +4754,13 @@
                                     "packageName": "bitvec",
                                     "repository": {
                                         "nameWithOwner": "ferrilab/bitvec"
+                                    }
+                                },
+                                {
+                                    "packageManager": "RUST",
+                                    "packageName": "block",
+                                    "repository": {
+                                        "nameWithOwner": "KryptXBSA/SocialBlock"
                                     }
                                 },
                                 {
@@ -4874,34 +4902,6 @@
                                     "repository": {
                                         "nameWithOwner": "emk/cesu8-rs"
                                     }
-                                },
-                                {
-                                    "packageManager": "RUST",
-                                    "packageName": "cexpr",
-                                    "repository": {
-                                        "nameWithOwner": "jethrogb/rust-cexpr"
-                                    }
-                                },
-                                {
-                                    "packageManager": "RUST",
-                                    "packageName": "cfg-if",
-                                    "repository": {
-                                        "nameWithOwner": "rust-lang/cfg-if"
-                                    }
-                                },
-                                {
-                                    "packageManager": "RUST",
-                                    "packageName": "cfg_aliases",
-                                    "repository": {
-                                        "nameWithOwner": "katharostech/cfg_aliases"
-                                    }
-                                },
-                                {
-                                    "packageManager": "RUST",
-                                    "packageName": "cgl",
-                                    "repository": {
-                                        "nameWithOwner": "servo/cgl-rs"
-                                    }
                                 }
                             ]
                         }
@@ -4956,6 +4956,13 @@
                                     "packageName": "log",
                                     "repository": {
                                         "nameWithOwner": "rust-lang/log"
+                                    }
+                                },
+                                {
+                                    "packageManager": "RUST",
+                                    "packageName": "log-once",
+                                    "repository": {
+                                        "nameWithOwner": "Luthaf/log-once"
                                     }
                                 },
                                 {

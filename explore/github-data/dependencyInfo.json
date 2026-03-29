@@ -241,6 +241,21 @@
                 "login": "Kitware"
             }
         },
+        "KryptXBSA/SocialBlock": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "SocialBlock",
+            "nameWithOwner": "KryptXBSA/SocialBlock",
+            "owner": {
+                "login": "KryptXBSA"
+            }
+        },
         "LPGhatguy/nonmax": {
             "languages": {
                 "nodes": [
@@ -269,6 +284,21 @@
             "nameWithOwner": "Lokathor/bytemuck",
             "owner": {
                 "login": "Lokathor"
+            }
+        },
+        "Luthaf/log-once": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "log-once",
+            "nameWithOwner": "Luthaf/log-once",
+            "owner": {
+                "login": "Luthaf"
             }
         },
         "MarcoGorelli/cython-lint": {
@@ -920,6 +950,22 @@
                 "login": "ariebovenberg"
             }
         },
+        "ash-rs/ash": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "ash",
+            "nameWithOwner": "ash-rs/ash",
+            "owner": {
+                "isVerified": false,
+                "login": "ash-rs"
+            }
+        },
         "astral-sh/ruff": {
             "languages": {
                 "nodes": [
@@ -1185,6 +1231,38 @@
             "owner": {
                 "isVerified": false,
                 "login": "codespell-project"
+            }
+        },
+        "contain-rs/bit-set": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "bit-set",
+            "nameWithOwner": "contain-rs/bit-set",
+            "owner": {
+                "isVerified": false,
+                "login": "contain-rs"
+            }
+        },
+        "contain-rs/bit-vec": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "bit-vec",
+            "nameWithOwner": "contain-rs/bit-vec",
+            "owner": {
+                "isVerified": false,
+                "login": "contain-rs"
             }
         },
         "coveragepy/coveragepy": {
@@ -2075,21 +2153,6 @@
                 "login": "jdillard"
             }
         },
-        "jethrogb/rust-cexpr": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "rust-cexpr",
-            "nameWithOwner": "jethrogb/rust-cexpr",
-            "owner": {
-                "login": "jethrogb"
-            }
-        },
         "jirutka/setup-alpine": {
             "languages": {
                 "nodes": [
@@ -2298,22 +2361,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "jwilk-mirrors"
-            }
-        },
-        "katharostech/cfg_aliases": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "cfg_aliases",
-            "nameWithOwner": "katharostech/cfg_aliases",
-            "owner": {
-                "isVerified": true,
-                "login": "katharostech"
             }
         },
         "keegancsmith/MCP": {
@@ -3219,21 +3266,6 @@
                 "login": "psf"
             }
         },
-        "psychon/as-raw-xcb-connection": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "as-raw-xcb-connection",
-            "nameWithOwner": "psychon/as-raw-xcb-connection",
-            "owner": {
-                "login": "psychon"
-            }
-        },
         "pybind/pybind11": {
             "languages": {
                 "nodes": [
@@ -3854,6 +3886,22 @@
                 "login": "rust-cli"
             }
         },
+        "rust-fuzz/arbitrary": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#dea584",
+                        "name": "Rust"
+                    }
+                ]
+            },
+            "name": "arbitrary",
+            "nameWithOwner": "rust-fuzz/arbitrary",
+            "owner": {
+                "isVerified": false,
+                "login": "rust-fuzz"
+            }
+        },
         "rust-lang/backtrace-rs": {
             "languages": {
                 "nodes": [
@@ -3881,22 +3929,6 @@
             },
             "name": "cc-rs",
             "nameWithOwner": "rust-lang/cc-rs",
-            "owner": {
-                "isVerified": true,
-                "login": "rust-lang"
-            }
-        },
-        "rust-lang/cfg-if": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "cfg-if",
-            "nameWithOwner": "rust-lang/cfg-if",
             "owner": {
                 "isVerified": true,
                 "login": "rust-lang"
@@ -4091,22 +4123,6 @@
             "owner": {
                 "isVerified": true,
                 "login": "serde-rs"
-            }
-        },
-        "servo/cgl-rs": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#dea584",
-                        "name": "Rust"
-                    }
-                ]
-            },
-            "name": "cgl-rs",
-            "nameWithOwner": "servo/cgl-rs",
-            "owner": {
-                "isVerified": true,
-                "login": "servo"
             }
         },
         "servo/rust-url": {

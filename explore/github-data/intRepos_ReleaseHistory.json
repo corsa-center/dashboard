@@ -1502,6 +1502,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Version 26.03.0 (March 27, 2026)",
+                        "publishedAt": "2026-03-28T15:53:04Z",
+                        "tagName": "legion-26.03.0"
+                    },
+                    {
                         "name": "Version 25.12.0 (December 16, 2025)",
                         "publishedAt": "2025-12-17T22:38:30Z",
                         "tagName": "legion-25.12.0"

@@ -1819,13 +1819,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12348433
+                        "size": 12347787
                     },
                     {
-                        "size": 5591962
+                        "size": 5591832
                     },
                     {
-                        "size": 512273
+                        "size": 512161
                     },
                     {
                         "size": 155144
@@ -1899,7 +1899,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18737881
+                "totalSize": 18736993
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2755,31 +2755,31 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 704509622
+                        "size": 704606873
                     },
                     {
-                        "size": 527405609
+                        "size": 527468535
                     },
                     {
-                        "size": 218385938
+                        "size": 218385904
                     },
                     {
                         "size": 185747133
                     },
                     {
-                        "size": 27042192
+                        "size": 27043998
                     },
                     {
                         "size": 14478017
                     },
                     {
-                        "size": 12500391
+                        "size": 12500599
                     },
                     {
                         "size": 5268928
                     },
                     {
-                        "size": 4513634
+                        "size": 4514766
                     },
                     {
                         "size": 4421474
@@ -2791,7 +2791,7 @@
                         "size": 2235795
                     },
                     {
-                        "size": 1447248
+                        "size": 1447956
                     },
                     {
                         "size": 1308340
@@ -3057,14 +3057,14 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1716998482
+                "totalSize": 1717162479
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 19184283
+                        "size": 19193909
                     },
                     {
                         "size": 301264
@@ -3137,7 +3137,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19828740
+                "totalSize": 19838366
             }
         },
         "open-mpi/ompi": {
@@ -3353,13 +3353,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 45454341
+                        "size": 45454831
                     },
                     {
-                        "size": 3710430
+                        "size": 3710721
                     },
                     {
-                        "size": 3213834
+                        "size": 3213833
                     },
                     {
                         "size": 1842513
@@ -3368,7 +3368,7 @@
                         "size": 1063597
                     },
                     {
-                        "size": 919681
+                        "size": 933738
                     },
                     {
                         "size": 590565
@@ -3535,7 +3535,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 57765436
+                "totalSize": 57780273
             }
         },
         "pghysels/STRUMPACK": {
@@ -4326,7 +4326,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 3626233
+                        "size": 3626113
                     },
                     {
                         "size": 21877
@@ -4371,7 +4371,7 @@
                     }
                 ],
                 "totalCount": 6,
-                "totalSize": 3672222
+                "totalSize": 3672102
             }
         }
     }

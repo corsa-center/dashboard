@@ -74,8 +74,6 @@
             "ytopt-team/ytopt",
             "llnl/zfp",
             "hpctoolkit/hpctoolkit",
-            "paraview/paraview",
-            "paraview/paraview",
             "petsc/petsc",
             "anlsys/aml",
             "berkeleylab/gasnet",
@@ -94,9 +92,18 @@
         "repoType": "gitlab",
         "repos": [
             "hpctoolkit/hpctoolkit",
-            "paraview/paraview",
-            "paraview/paraview",
             "petsc/petsc"
+        ]
+    },
+    "https://gitlab.kitware.com": {
+        "apiEnvKey": "GITLAB_KITWARE_API_TOKEN",
+        "extraRepos": [],
+        "memberOrgs": [],
+        "orgs": [],
+        "repoType": "gitlab",
+        "repos": [
+            "paraview/paraview",
+            "vtk/vtk"
         ]
     }
 }

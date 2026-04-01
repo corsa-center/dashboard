@@ -1,7 +1,10 @@
 from scraper.github import queryManager as qm
 import os
 from os import environ as env
+import json
+import requests
 import sys
+from urllib.parse import quote as urlquote
 
 ghDataDir = env.get("GITHUB_DATA", "../github-data")
 datfilepath = "%s/intReposInfo.json" % ghDataDir
@@ -9,7 +12,7 @@ cdash_data_path = os.path.normpath(os.path.join(ghDataDir, "..", "cass_project_d
 queryPath = "../queries/org-Repos-Info.gql"
 queryPathInd = "../queries/repo-Info.gql"
 
-# Initialize data collector
+# Initialize data collector (single file for all repo types)
 dataCollector = qm.DataManager(datfilepath, False)
 dataCollector.data = {"data": {}}
 
@@ -24,9 +27,69 @@ with open(os.path.join(cdash_data_path, "cass_member_cdashes.csv")) as f:
 inputLists = qm.DataManager("../input_lists.json", True)
 for hostUrl, hostInfo in inputLists.data.items():
     repoType = hostInfo["repoType"]
-    # TODO REMOVE CONTINUE once gitlab scraper is ready
-    if repoType == "gitlab" or repoType == "bitbucket":
+    if repoType == "bitbucket":
         print("%s: %s support not yet enabled, skipping for now" % (hostUrl, repoType))
+        continue
+    if repoType == "gitlab":
+        # Handle GitLab repos via REST API
+        print("%s: Gathering GitLab repo info..." % hostUrl)
+        apiToken = env.get(hostInfo.get("apiEnvKey", ""), "")
+        headers = {}
+        if apiToken:
+            headers["PRIVATE-TOKEN"] = apiToken
+        repolist = hostInfo.get("repos", []) + hostInfo.get("extraRepos", [])
+        for repo in repolist:
+            print("\n'%s'" % repo)
+            try:
+                apiUrl = "%s/api/v4/projects/%s" % (hostUrl, urlquote(repo, safe=""))
+                resp = requests.get(apiUrl, headers=headers, timeout=30)
+                resp.raise_for_status()
+                proj = resp.json()
+
+                # Map GitLab API fields to the same format as GitHub data
+                info = {}
+                info["createdAt"] = proj.get("created_at")
+                info["defaultBranchRef"] = {"name": proj.get("default_branch")}
+                info["description"] = proj.get("description", "")
+                info["forks"] = {"totalCount": proj.get("forks_count", 0)}
+                info["homepageUrl"] = proj.get("web_url")
+                info["languages"] = {"totalCount": 0}
+                info["licenseInfo"] = None
+                if proj.get("license"):
+                    info["licenseInfo"] = {
+                        "name": proj["license"].get("name"),
+                        "spdxId": proj["license"].get("key"),
+                    }
+                info["name"] = proj.get("name", "")
+                info["nameWithOwner"] = proj.get("path_with_namespace", repo)
+                info["owner"] = proj.get("namespace", {}).get("full_path", "")
+                info["parent"] = None
+                info["primaryLanguage"] = None
+                info["stargazers"] = {"totalCount": proj.get("star_count", 0)}
+                info["url"] = proj.get("web_url", "%s/%s" % (hostUrl, repo))
+
+                # Fetch languages
+                try:
+                    langResp = requests.get(
+                        "%s/api/v4/projects/%s/languages" % (hostUrl, urlquote(repo, safe="")),
+                        headers=headers, timeout=30
+                    )
+                    if langResp.status_code == 200:
+                        languages = langResp.json()
+                        info["languages"]["totalCount"] = len(languages)
+                        if languages:
+                            info["primaryLanguage"] = {"name": max(languages, key=languages.get)}
+                except Exception:
+                    pass
+
+                repoKey = info["nameWithOwner"]
+                dataCollector.data["data"][repoKey] = info
+                print("'%s' Done!" % repo)
+            except Exception as error:
+                print("Warning: Could not complete '%s'" % repo)
+                print(error)
+                continue
+        print("\n%s: GitLab data gathering complete!" % hostUrl)
         continue
     if repoType != "github":
         print("%s: Invalid repo type %s" % (hostUrl, repoType))

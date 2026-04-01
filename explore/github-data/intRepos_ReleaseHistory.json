@@ -4,6 +4,16 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "AMReX 26.03",
+                        "publishedAt": "2026-03-02T18:27:25Z",
+                        "tagName": "26.03"
+                    },
+                    {
+                        "name": "AMReX 26.02",
+                        "publishedAt": "2026-02-02T17:07:36Z",
+                        "tagName": "26.02"
+                    },
+                    {
                         "name": "AMReX 26.01",
                         "publishedAt": "2026-01-02T18:18:25Z",
                         "tagName": "26.01"
@@ -526,6 +536,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "0.7.2",
+                        "publishedAt": "2026-03-06T04:40:44Z",
+                        "tagName": "0.7.2"
+                    },
+                    {
                         "name": "0.7.0",
                         "publishedAt": "2025-12-18T22:10:52Z",
                         "tagName": "0.7.0"
@@ -564,6 +579,353 @@
                         "name": "Support Fortran 2018 non-coarray parallel features",
                         "publishedAt": "2022-03-04T01:07:22Z",
                         "tagName": "0.1.0"
+                    }
+                ]
+            }
+        },
+        "BerkeleyLab/fiats": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "Better demonstration apps",
+                        "publishedAt": "2026-02-03T06:13:13Z",
+                        "tagName": "1.2.1"
+                    },
+                    {
+                        "name": "Improved documentation, statistics, and reporting",
+                        "publishedAt": "2025-11-06T23:13:30Z",
+                        "tagName": "1.2.0"
+                    },
+                    {
+                        "name": "Expanded compiler support and richer test diagnostics",
+                        "publishedAt": "2025-08-08T17:04:47Z",
+                        "tagName": "1.1.0"
+                    },
+                    {
+                        "name": "Demo app fix & documentation updates",
+                        "publishedAt": "2025-07-02T01:57:21Z",
+                        "tagName": "1.0.0"
+                    },
+                    {
+                        "name": "Make assertions removable and minor improvements",
+                        "publishedAt": "2025-03-12T23:59:20Z",
+                        "tagName": "0.16.0"
+                    },
+                    {
+                        "name": "Flexible tensor reads and optional double-precision inference",
+                        "publishedAt": "2024-10-29T23:35:45Z",
+                        "tagName": "0.15.0"
+                    },
+                    {
+                        "name": "Parallel training",
+                        "publishedAt": "2024-10-15T04:49:56Z",
+                        "tagName": "0.14.0"
+                    },
+                    {
+                        "name": " New JSON file format",
+                        "publishedAt": "2024-08-14T04:15:06Z",
+                        "tagName": "0.13.0"
+                    },
+                    {
+                        "name": "Support LLVM Flang + add entropy-maximizing filter to speed convergence",
+                        "publishedAt": "2024-07-21T06:00:24Z",
+                        "tagName": "0.12.0"
+                    },
+                    {
+                        "name": "Selective test execution and compiler workarounds",
+                        "publishedAt": "2024-04-26T00:39:32Z",
+                        "tagName": "0.11.1"
+                    },
+                    {
+                        "name": "Batch normalization, more concurrency, & NAG compiler support",
+                        "publishedAt": "2024-04-04T21:36:07Z",
+                        "tagName": "0.11.0"
+                    },
+                    {
+                        "name": "Train cloud microphysics",
+                        "publishedAt": "2023-11-26T04:54:10Z",
+                        "tagName": "0.10.0"
+                    },
+                    {
+                        "name": "Training configuration JSON file I/O and new examples",
+                        "publishedAt": "2023-11-06T09:33:42Z",
+                        "tagName": "0.9.0"
+                    },
+                    {
+                        "name": "New training algorithms, examples, documentation, and bug fixes",
+                        "publishedAt": "2023-10-04T16:59:40Z",
+                        "tagName": "0.8.0"
+                    },
+                    {
+                        "name": "0.7.0 Train deep networks",
+                        "publishedAt": "2023-07-30T21:29:54Z",
+                        "tagName": "0.7.0"
+                    },
+                    {
+                        "name": "Shorter test-suite execution time",
+                        "publishedAt": "2023-05-25T19:28:40Z",
+                        "tagName": "0.6.2"
+                    },
+                    {
+                        "name": "Experimental training capability",
+                        "publishedAt": "2023-05-24T23:23:15Z",
+                        "tagName": "0.6.0"
+                    },
+                    {
+                        "name": "0.5.0",
+                        "publishedAt": "2023-02-20T01:04:27Z",
+                        "tagName": "0.5.0"
+                    },
+                    {
+                        "name": "Bug fixes and more stringent unit testing",
+                        "publishedAt": "2023-02-15T01:00:10Z",
+                        "tagName": "0.4.1"
+                    },
+                    {
+                        "name": "0.4.0 Support networks with skip connections (bypass)",
+                        "publishedAt": "2023-02-14T07:32:07Z",
+                        "tagName": "0.4.0"
+                    },
+                    {
+                        "name": "Elemental inference, real kind parameter, & layer/neuron count fix",
+                        "publishedAt": "2023-02-03T07:09:24Z",
+                        "tagName": "0.3.0"
+                    },
+                    {
+                        "name": "Fix layer_t/neuron_t count_layers and count_neurons type-bound ",
+                        "publishedAt": "2023-02-03T05:36:43Z",
+                        "tagName": "0.2.1"
+                    },
+                    {
+                        "name": "0.2.0 JSON file read/write capability, more accurate default inference strategy",
+                        "publishedAt": "2023-01-23T00:24:59Z",
+                        "tagName": "0.2.0"
+                    },
+                    {
+                        "name": "0.1.2 Bug fix and documentation edits",
+                        "publishedAt": "2022-12-02T08:41:45Z",
+                        "tagName": "0.1.2"
+                    },
+                    {
+                        "name": "0.1.1 ",
+                        "publishedAt": "2022-11-29T03:53:45Z",
+                        "tagName": "0.1.1"
+                    },
+                    {
+                        "name": "Initial Release: Concurrent Inference Capability",
+                        "publishedAt": "2022-11-22T02:08:51Z",
+                        "tagName": "0.1.0"
+                    }
+                ]
+            }
+        },
+        "BerkeleyLab/julienne": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "Expand compiler support: Lfortran and Flang 22",
+                        "publishedAt": "2026-02-26T02:53:44Z",
+                        "tagName": "3.6.2"
+                    },
+                    {
+                        "name": "Documentation and fixes",
+                        "publishedAt": "2026-02-03T04:57:12Z",
+                        "tagName": "3.6.1"
+                    },
+                    {
+                        "name": "3.6.0 Parallel callbacks",
+                        "publishedAt": "2025-12-15T22:55:45Z",
+                        "tagName": "3.6.0"
+                    },
+                    {
+                        "name": "3.5.0",
+                        "publishedAt": "2025-12-12T20:56:46Z",
+                        "tagName": "3.5.0"
+                    },
+                    {
+                        "name": "3.4.0 Improve CI and add integer(int64) relational operators ",
+                        "publishedAt": "2025-12-03T19:03:14Z",
+                        "tagName": "3.4.0"
+                    },
+                    {
+                        "name": "Improve portability across compilers",
+                        "publishedAt": "2025-11-12T19:31:56Z",
+                        "tagName": "3.3.0"
+                    },
+                    {
+                        "name": "Expand compilers supported for scaffolding",
+                        "publishedAt": "2025-09-29T18:50:32Z",
+                        "tagName": "3.2.1"
+                    },
+                    {
+                        "name": "Parallel testing",
+                        "publishedAt": "2025-09-28T05:45:58Z",
+                        "tagName": "3.2.0"
+                    },
+                    {
+                        "name": "Fix ifx support",
+                        "publishedAt": "2025-09-11T17:57:07Z",
+                        "tagName": "3.1.5"
+                    },
+                    {
+                        "name": "Fix NAG support",
+                        "publishedAt": "2025-09-10T22:36:37Z",
+                        "tagName": "3.1.4"
+                    },
+                    {
+                        "name": "Fix test output indentation ",
+                        "publishedAt": "2025-09-10T07:54:17Z",
+                        "tagName": "3.1.3"
+                    },
+                    {
+                        "name": "Minor improvements and fixes in testing documentation.",
+                        "publishedAt": "2025-09-09T21:59:03Z",
+                        "tagName": "3.1.2"
+                    },
+                    {
+                        "name": "Tidy parallel output",
+                        "publishedAt": "2025-09-04T21:57:48Z",
+                        "tagName": "3.1.1"
+                    },
+                    {
+                        "name": "New operands for `test_diagnosis_t` defined operations",
+                        "publishedAt": "2025-08-25T04:57:37Z",
+                        "tagName": "3.1.0"
+                    },
+                    {
+                        "name": "Automated test-suite scaffolding, simpler tests, logical assertions",
+                        "publishedAt": "2025-08-23T20:52:14Z",
+                        "tagName": "3.0.0"
+                    },
+                    {
+                        "name": "New test-diagnosis operators and JSON value getter",
+                        "publishedAt": "2025-08-04T04:26:52Z",
+                        "tagName": "2.4.3"
+                    },
+                    {
+                        "name": "Use Assert 3.0.0",
+                        "publishedAt": "2025-07-24T15:00:04Z",
+                        "tagName": "2.4.2"
+                    },
+                    {
+                        "name": "Fix test filtering",
+                        "publishedAt": "2025-07-13T03:31:52Z",
+                        "tagName": "2.4.1"
+                    },
+                    {
+                        "name": "New operators, operand types and ranks",
+                        "publishedAt": "2025-06-26T00:15:10Z",
+                        "tagName": "2.4.0"
+                    },
+                    {
+                        "name": "Assertions, Compiler Support, Operators, & Documentation",
+                        "publishedAt": "2025-06-03T22:26:08Z",
+                        "tagName": "2.3.0"
+                    },
+                    {
+                        "name": "Feature: Relative tolerances",
+                        "publishedAt": "2025-05-23T18:31:08Z",
+                        "tagName": "2.2.0"
+                    },
+                    {
+                        "name": "Automatic test diagnosis via expressions inspired by natural language",
+                        "publishedAt": "2025-05-14T05:31:45Z",
+                        "tagName": "2.1.0"
+                    },
+                    {
+                        "name": "Features: Tally skipped tests and enhance documentation",
+                        "publishedAt": "2025-04-03T05:33:52Z",
+                        "tagName": "2.0.0"
+                    },
+                    {
+                        "name": "Dependency update and minor fix",
+                        "publishedAt": "2025-03-05T02:56:19Z",
+                        "tagName": "1.8.4"
+                    },
+                    {
+                        "name": "Fix and improve assertions",
+                        "publishedAt": "2025-02-21T20:09:18Z",
+                        "tagName": "1.8.3"
+                    },
+                    {
+                        "name": "1.8.1 Update Assert dependency URL in fpm.toml",
+                        "publishedAt": "2025-02-14T21:04:19Z",
+                        "tagName": "1.8.1"
+                    },
+                    {
+                        "name": "1.8.0 Support Intel ifx compiler",
+                        "publishedAt": "2025-02-06T03:49:00Z",
+                        "tagName": "1.8.0"
+                    },
+                    {
+                        "name": "String_t construction from logical and complex types",
+                        "publishedAt": "2025-01-06T07:44:47Z",
+                        "tagName": "1.7.0"
+                    },
+                    {
+                        "name": "Diagnostic output, test-suite example, and UML diagrams",
+                        "publishedAt": "2025-01-02T16:06:27Z",
+                        "tagName": "1.6.0"
+                    },
+                    {
+                        "name": "Improve test coverage and robustness ",
+                        "publishedAt": "2024-12-19T06:55:50Z",
+                        "tagName": "1.5.4"
+                    },
+                    {
+                        "name": "Fix: eliminate line wrapping in file_t write_lines procedure",
+                        "publishedAt": "2024-10-27T17:49:13Z",
+                        "tagName": "1.5.3"
+                    },
+                    {
+                        "name": "Fix: eliminate line wrapping in test-subject report output",
+                        "publishedAt": "2024-10-27T16:09:28Z",
+                        "tagName": "1.5.2"
+                    },
+                    {
+                        "name": "1.5.0",
+                        "publishedAt": "2024-10-27T04:02:46Z",
+                        "tagName": "1.5.0"
+                    },
+                    {
+                        "name": "Feature: get_json_value reads string-array value from key/value pair",
+                        "publishedAt": "2024-10-25T05:17:33Z",
+                        "tagName": "1.4.0"
+                    },
+                    {
+                        "name": "Improved testing",
+                        "publishedAt": "2024-09-24T03:28:07Z",
+                        "tagName": "1.3.1"
+                    },
+                    {
+                        "name": "Public GitHub_CI detector and generic test-description search function",
+                        "publishedAt": "2024-09-07T21:24:08Z",
+                        "tagName": "1.3.0"
+                    },
+                    {
+                        "name": "Double-precision separated value format",
+                        "publishedAt": "2024-09-03T04:21:19Z",
+                        "tagName": "1.2.2"
+                    },
+                    {
+                        "name": "JSON double-precision array value getter to string_t",
+                        "publishedAt": "2024-09-02T02:07:31Z",
+                        "tagName": "1.2.1"
+                    },
+                    {
+                        "name": "Double-precision JSON value getters",
+                        "publishedAt": "2024-09-01T06:47:36Z",
+                        "tagName": "1.2.0"
+                    },
+                    {
+                        "name": "Test JSON-value character getters and add copyrights",
+                        "publishedAt": "2024-08-13T17:26:50Z",
+                        "tagName": "1.1.1"
+                    },
+                    {
+                        "name": "JSON value getters with intrinsic-character key ",
+                        "publishedAt": "2024-08-12T22:30:57Z",
+                        "tagName": "1.1.0"
                     }
                 ]
             }
@@ -775,6 +1137,16 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "HDF5 Release 2.1.1",
+                        "publishedAt": "2026-03-23T21:18:10Z",
+                        "tagName": "2.1.1"
+                    },
+                    {
+                        "name": "HDF5 Release 2.1.0",
+                        "publishedAt": "2026-03-03T23:01:03Z",
+                        "tagName": "2.1.0"
+                    },
+                    {
                         "name": "HDF5 Release 2.0.0",
                         "publishedAt": "2025-11-11T00:35:48Z",
                         "tagName": "2.0.0"
@@ -891,6 +1263,11 @@
         "Libensemble/libensemble": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v1.6.0",
+                        "publishedAt": "2026-03-04T21:27:53Z",
+                        "tagName": "v1.6.0"
+                    },
                     {
                         "name": "v1.5.0",
                         "publishedAt": "2025-04-10T20:23:10Z",
@@ -1075,9 +1452,60 @@
                 "nodes": []
             }
         },
+        "SCOREC/core": {
+            "releases": {
+                "nodes": []
+            }
+        },
+        "SCOREC/omega_h": {
+            "releases": {
+                "nodes": []
+            }
+        },
+        "SCOREC/pcms": {
+            "releases": {
+                "nodes": []
+            }
+        },
+        "SCOREC/pumi-pic": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "v0.31",
+                        "publishedAt": "2021-05-03T20:51:02Z",
+                        "tagName": "v0.31"
+                    },
+                    {
+                        "name": "urpRs21",
+                        "publishedAt": "2021-04-12T13:52:44Z",
+                        "tagName": "urp_rs_21"
+                    },
+                    {
+                        "name": "Before Merging CSR",
+                        "publishedAt": "2021-01-29T20:03:58Z",
+                        "tagName": "v0.2"
+                    },
+                    {
+                        "name": "archive of code used for siampp20 presentation",
+                        "publishedAt": "2021-03-30T19:45:54Z",
+                        "tagName": "siampp20"
+                    },
+                    {
+                        "name": "archive of code used for scala19 presentation",
+                        "publishedAt": "2021-03-30T19:22:05Z",
+                        "tagName": "scala19"
+                    }
+                ]
+            }
+        },
         "StanfordLegion/legion": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "Version 26.03.0 (March 27, 2026)",
+                        "publishedAt": "2026-03-28T15:53:04Z",
+                        "tagName": "legion-26.03.0"
+                    },
                     {
                         "name": "Version 25.12.0 (December 16, 2025)",
                         "publishedAt": "2025-12-17T22:38:30Z",
@@ -1774,6 +2202,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "v2.10.0",
+                        "publishedAt": "2026-03-02T12:15:37Z",
+                        "tagName": "v2.10.0"
+                    },
+                    {
                         "name": "MAGMA-2.9.0",
                         "publishedAt": "2025-01-28T14:01:21Z",
                         "tagName": "v2.9.0"
@@ -1805,6 +2238,16 @@
         "kokkos/kokkos": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "Kokkos v5.1.0",
+                        "publishedAt": "2026-03-26T17:18:49Z",
+                        "tagName": "5.1.0"
+                    },
+                    {
+                        "name": "Kokkos v5.0.2",
+                        "publishedAt": "2026-02-04T07:45:04Z",
+                        "tagName": "5.0.2"
+                    },
                     {
                         "name": "Kokkos v5.0.1",
                         "publishedAt": "2026-01-05T21:00:15Z",
@@ -1981,6 +2424,16 @@
         "kokkos/kokkos-kernels": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "5.1.0",
+                        "publishedAt": "2026-03-26T17:12:47Z",
+                        "tagName": "5.1.0"
+                    },
+                    {
+                        "name": "5.0.2",
+                        "publishedAt": "2026-02-05T01:23:13Z",
+                        "tagName": "5.0.2"
+                    },
                     {
                         "name": "5.0.1",
                         "publishedAt": "2026-01-05T22:19:17Z",
@@ -2434,6 +2887,26 @@
         "llvm/llvm-project": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "LLVM 22.1.2",
+                        "publishedAt": "2026-03-24T20:06:19Z",
+                        "tagName": "llvmorg-22.1.2"
+                    },
+                    {
+                        "name": "LLVM 22.1.1",
+                        "publishedAt": "2026-03-11T00:36:06Z",
+                        "tagName": "llvmorg-22.1.1"
+                    },
+                    {
+                        "name": "LLVM 22.1.0",
+                        "publishedAt": "2026-02-24T08:06:08Z",
+                        "tagName": "llvmorg-22.1.0"
+                    },
+                    {
+                        "name": "LLVM 22.1.0-rc3",
+                        "publishedAt": "2026-02-10T08:01:25Z",
+                        "tagName": "llvmorg-22.1.0-rc3"
+                    },
                     {
                         "name": "LLVM 22.1.0-rc2",
                         "publishedAt": "2026-01-27T09:00:15Z",
@@ -3262,6 +3735,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "v2.12.0-rc1",
+                        "publishedAt": "2026-03-23T02:30:13Z",
+                        "tagName": "v2.12.0-rc1"
+                    },
+                    {
                         "name": "v2.11.0",
                         "publishedAt": "2025-11-16T23:43:01Z",
                         "tagName": "v2.11.0"
@@ -3495,6 +3973,16 @@
                 "nodes": [
                     {
                         "name": "",
+                        "publishedAt": "2026-03-31T15:21:05Z",
+                        "tagName": "v5.0.1rc1"
+                    },
+                    {
+                        "name": "v5.0.0",
+                        "publishedAt": "2026-02-06T15:34:34Z",
+                        "tagName": "v5.0.0"
+                    },
+                    {
+                        "name": "",
                         "publishedAt": "2025-10-06T17:47:56Z",
                         "tagName": "v4.3.2"
                     },
@@ -3687,9 +4175,30 @@
                 ]
             }
         },
+        "sandialabs/pytuq": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "v1.0.0z",
+                        "publishedAt": "2025-09-13T03:12:57Z",
+                        "tagName": "v1.0.0z"
+                    },
+                    {
+                        "name": "v1.0.0",
+                        "publishedAt": "2025-04-11T19:18:01Z",
+                        "tagName": "v1.0.0"
+                    }
+                ]
+            }
+        },
         "spack/spack": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v1.0.4",
+                        "publishedAt": "2026-02-23T21:47:09Z",
+                        "tagName": "v1.0.4"
+                    },
                     {
                         "name": "v1.1.1 (2026-01-14)",
                         "publishedAt": "2026-01-27T00:44:49Z",
@@ -3992,6 +4501,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Trilinos 17.0.0",
+                        "publishedAt": "2026-02-10T13:28:01Z",
+                        "tagName": "trilinos-release-17-0-0"
+                    },
+                    {
                         "name": "Trilinos 17.0.0rc1",
                         "publishedAt": "2026-01-12T14:11:51Z",
                         "tagName": "trilinos-release-17-0-0-rc1"
@@ -4075,127 +4589,6 @@
                         "name": "trilinos-cnars-20191023",
                         "publishedAt": "2019-10-23T22:31:03Z",
                         "tagName": "trilinos-cnars-20191023"
-                    }
-                ]
-            }
-        },
-        "visit-dav/visit": {
-            "releases": {
-                "nodes": [
-                    {
-                        "name": "Minor doc update for v3.3.0",
-                        "publishedAt": "2025-02-05T20:21:28Z",
-                        "tagName": "v3.3.0d"
-                    },
-                    {
-                        "name": "v3.4.2",
-                        "publishedAt": "2024-12-20T23:30:33Z",
-                        "tagName": "v3.4.2"
-                    },
-                    {
-                        "name": "v3.4.1",
-                        "publishedAt": "2024-04-11T16:19:45Z",
-                        "tagName": "v3.4.1"
-                    },
-                    {
-                        "name": "v3.4.0",
-                        "publishedAt": "2023-11-10T20:36:48Z",
-                        "tagName": "v3.4.0"
-                    },
-                    {
-                        "name": "v3.3.3",
-                        "publishedAt": "2023-04-03T17:22:30Z",
-                        "tagName": "v3.3.3"
-                    },
-                    {
-                        "name": "v3.3.2",
-                        "publishedAt": "2023-02-08T00:25:16Z",
-                        "tagName": "v3.3.2"
-                    },
-                    {
-                        "name": "v3.3.1",
-                        "publishedAt": "2022-09-29T20:37:05Z",
-                        "tagName": "v3.3.1"
-                    },
-                    {
-                        "name": "v3.3.0",
-                        "publishedAt": "2022-07-07T00:33:08Z",
-                        "tagName": "v3.3.0"
-                    },
-                    {
-                        "name": "v3.2.2",
-                        "publishedAt": "2022-01-31T17:13:41Z",
-                        "tagName": "v3.2.2"
-                    },
-                    {
-                        "name": "v3.2.1",
-                        "publishedAt": "2021-07-19T23:21:18Z",
-                        "tagName": "v3.2.1"
-                    },
-                    {
-                        "name": "v3.2.0",
-                        "publishedAt": "2021-04-21T20:49:26Z",
-                        "tagName": "v3.2.0"
-                    },
-                    {
-                        "name": "v3.1.4",
-                        "publishedAt": "2020-11-20T00:06:42Z",
-                        "tagName": "v3.1.4"
-                    },
-                    {
-                        "name": "v3.1.3",
-                        "publishedAt": "2020-09-22T14:49:12Z",
-                        "tagName": "v3.1.3"
-                    },
-                    {
-                        "name": "v3.1.2",
-                        "publishedAt": "2020-05-20T21:06:57Z",
-                        "tagName": "v3.1.2"
-                    },
-                    {
-                        "name": "v3.1.1",
-                        "publishedAt": "2020-02-21T19:08:04Z",
-                        "tagName": "v3.1.1"
-                    },
-                    {
-                        "name": "v3.1.0",
-                        "publishedAt": "2019-12-20T18:43:57Z",
-                        "tagName": "v3.1.0"
-                    },
-                    {
-                        "name": "v3.0.2",
-                        "publishedAt": "2019-09-27T18:39:57Z",
-                        "tagName": "v3.0.2"
-                    },
-                    {
-                        "name": "v3.0.1",
-                        "publishedAt": "2019-09-17T14:52:52Z",
-                        "tagName": "v3.0.1"
-                    },
-                    {
-                        "name": "v3.0.0",
-                        "publishedAt": "2019-08-27T23:02:27Z",
-                        "tagName": "v3.0.0"
-                    },
-                    {
-                        "name": "v2.13.3",
-                        "publishedAt": "2019-08-27T23:06:29Z",
-                        "tagName": "v2.13.3"
-                    },
-                    {
-                        "name": "v2.13.2",
-                        "publishedAt": "2019-08-30T16:19:35Z",
-                        "tagName": "v2.13.2"
-                    },
-                    {
-                        "name": "v2.13.1",
-                        "publishedAt": "2019-08-30T16:20:57Z",
-                        "tagName": "v2.13.1"
-                    },
-                    {
-                        "name": "v2.13.0",
-                        "publishedAt": "2019-08-30T16:22:29Z",
-                        "tagName": "v2.13.0"
                     }
                 ]
             }
@@ -4345,6 +4738,11 @@
         "xiaoyeli/superlu_mt": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v4.0.2",
+                        "publishedAt": "2026-03-08T23:57:34Z",
+                        "tagName": "v4.0.2"
+                    },
                     {
                         "name": "v4.0.1",
                         "publishedAt": "2024-05-16T10:08:02Z",

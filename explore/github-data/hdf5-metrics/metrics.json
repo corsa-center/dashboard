@@ -1,0 +1,85 @@
+{
+  "package": "HDFGroup/hdf5",
+  "impact": {
+    "4.1.1": {
+      "title": "Software Citation and Adoption",
+      "data": "<p><strong>Citations:</strong> 1,234 academic papers</p><p><strong>Downloads:</strong> 50,000+ per month</p><p><strong>Used by:</strong> NASA, CERN, National Labs</p>"
+    },
+    "4.1.2": {
+      "title": "Field Research Impact",
+      "data": null
+    }
+  },
+  "sustainability": {
+    "4.2.1": {
+      "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
+      "data": null
+    },
+    "4.2.2": {
+      "title": "Open-Source Licensing and FAIR Compliance",
+      "data": null
+    },
+    "4.2.3": {
+      "title": "Active Maintenance",
+      "data": "<p><strong>Last commit:</strong> 2 days ago</p><p><strong>Commit frequency:</strong> Daily</p><p><strong>Active maintainers:</strong> 15</p>"
+    },
+    "4.2.4": {
+      "title": "Engagement",
+      "data": null
+    },
+    "4.2.5": {
+      "title": "Outreach",
+      "data": null
+    },
+    "4.2.6": {
+      "title": "Welcomeness",
+      "data": null
+    },
+    "4.2.7": {
+      "title": "Collaboration",
+      "data": null
+    },
+    "4.2.8": {
+      "title": "Financial Sustainability",
+      "data": null
+    },
+    "4.2.9": {
+      "title": "Institutional & Organizational Support",
+      "data": null
+    },
+    "4.2.10": {
+      "title": "Project Longevity and Community Health",
+      "data": null
+    }
+  },
+  "quality": {
+    "4.3.1": {
+      "title": "Reliability and Robustness",
+      "data": null
+    },
+    "4.3.2": {
+      "title": "Development Practices",
+      "data": null
+    },
+    "4.3.3": {
+      "title": "Reproducibility",
+      "data": null
+    },
+    "4.3.4": {
+      "title": "Usability",
+      "data": null
+    },
+    "4.3.5": {
+      "title": "Accessibility",
+      "data": null
+    },
+    "4.3.6": {
+      "title": "Maintainability and Understandability",
+      "data": null
+    },
+    "4.3.7": {
+      "title": "Performance and Efficiency",
+      "data": null
+    }
+  }
+}

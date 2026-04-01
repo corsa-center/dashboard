@@ -35,7 +35,7 @@ function runScript() {
 # Basic script run procedure but make it Spack
 function runSpackScript() {
     echo "Run - $1"
-    spack python "$@"
+    spack -d python "$@"
     ret=$?
     errorCheck "$1"
 }

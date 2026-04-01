@@ -119,6 +119,179 @@
   text-align: center;
 }
 
+/* Modern Sustainability Metrics Styles */
+.sustainability-metrics-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Override narrow container for metrics section */
+#metrics-section {
+  max-width: none !important;
+  width: 100% !important;
+}
+
+/* Ensure parent containers don't constrain width */
+#catalog-repo-single {
+  max-width: 100% !important;
+}
+
+#catalog-repo-single > .text-center {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.metrics-main-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 40px;
+  padding-bottom: 15px;
+  border-bottom: 3px solid #e2e8f0;
+}
+
+/* Dimension Cards */
+.metric-dimension {
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-dimension:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Dimension Headers */
+.dimension-header {
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.dimension-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.dimension-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.impact-header {
+  background: linear-gradient(135deg, #1F6024 0%, #3F7844 33%, #5F9063 66%, #7FA883 100%);
+}
+
+.impact-header h3,
+.impact-header .dimension-icon {
+  color: #ffffff !important;
+}
+
+.sustainability-header {
+  background: linear-gradient(135deg, #1F5B60 0%, #3F7370 33%, #5F8B8F 66%, #7FA3AF 100%);
+}
+
+.sustainability-header h3,
+.sustainability-header .dimension-icon {
+  color: #ffffff !important;
+}
+
+.quality-header {
+  background: linear-gradient(135deg, #1F3A60 0%, #3F5270 33%, #5F6A8F 66%, #7F82AF 100%);
+}
+
+.quality-header h3,
+.quality-header .dimension-icon {
+  color: #ffffff !important;
+}
+
+/* Dimension Content */
+.dimension-content {
+  padding: 25px 30px;
+}
+
+/* Metric Subsections */
+.metric-subsection {
+  background: #f7fafc;
+  border-left: 4px solid #cbd5e0;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.metric-subsection:hover {
+  background: #edf2f7;
+  border-left-color: #4a5568;
+}
+
+.metric-subsection:last-child {
+  margin-bottom: 0;
+}
+
+.metric-subsection h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.metric-placeholder {
+  background: #ffffff;
+  border: 2px dashed #cbd5e0;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  color: #718096;
+  font-style: italic;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.metric-data {
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+.metric-data p {
+  margin: 8px 0;
+}
+
+.metric-data strong {
+  color: #1a202c;
+  font-weight: 600;
+}
+
+/* Hover effects for dimension-specific colors */
+.metric-dimension:has(.impact-header) .metric-subsection:hover {
+  border-left-color: #1F6024;
+  background: #f0fdf4;
+}
+
+.metric-dimension:has(.sustainability-header) .metric-subsection:hover {
+  border-left-color: #1F5B60;
+  background: #ecfeff;
+}
+
+.metric-dimension:has(.quality-header) .metric-subsection:hover {
+  border-left-color: #1F3A60;
+  background: #e3f2fd;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .metrics-grid {
@@ -132,5 +305,45 @@
 
   .score-value {
     font-size: 24px;
+  }
+
+  .sustainability-metrics-container {
+    padding: 0 15px;
+  }
+
+  .metrics-main-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .dimension-header {
+    padding: 15px 20px;
+    gap: 10px;
+  }
+
+  .dimension-icon {
+    font-size: 24px;
+  }
+
+  .dimension-header h3 {
+    font-size: 20px;
+  }
+
+  .dimension-content {
+    padding: 20px 15px;
+  }
+
+  .metric-subsection {
+    padding: 15px;
+  }
+
+  .metric-subsection h4 {
+    font-size: 14px;
+  }
+
+  .metric-placeholder {
+    padding: 20px;
+    font-size: 13px;
+    min-height: 60px;
   }
 }

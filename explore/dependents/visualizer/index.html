@@ -1,0 +1,193 @@
+---
+title: Project Dependent Visualizations
+layout: default
+---
+<h2 class="page-header text-center" id="projectTitle">Project Dependent Visualizations</h2>
+
+<div id="dependency-visualizer" class="dv-app-container">
+    <div class="dv-top-nav">
+        <div class="dv-nav-brand">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="12" r="3"></circle><circle cx="19" cy="6" r="2"></circle><circle cx="19" cy="18" r="2"></circle><circle cx="15" cy="12" r="1.5"></circle><path d="M10 12h3.5"></path><path d="M9.6 10.5l7.5-3.7"></path><path d="M9.6 13.5l7.5 3.7"></path></svg>
+            <span style="font-weight: bold; font-size: 1.1rem; margin-left: 8px;">Dependency Dashboard</span>
+        </div>
+        <div>
+            <label for="dv-file-upload" class="dv-btn dv-btn-primary" style="margin: 0;">Upload Data (.zip / .json)</label>
+            <input type="file" id="dv-file-upload" accept=".zip,.json" style="display: none;">
+        </div>
+    </div>
+
+    <div class="dv-project-header">
+        <div style="flex: 1;">
+            <h1 id="ph-title" style="margin: 0 0 5px 0; font-size: 1.8rem; color: #fff;">No Project Loaded</h1>
+            <p id="ph-desc" style="margin: 0; color: #aaa; font-size: 0.9rem;">Upload an artifact to begin analysis.</p>
+        </div>
+        <div class="dv-ph-stats">
+            <div class="dv-ph-stat">
+                <span class="dv-ph-val" id="ph-stat-deps">0</span>
+                <span class="dv-ph-label">Dependents</span>
+            </div>
+            <div class="dv-ph-stat">
+                <span class="dv-ph-val" id="ph-stat-orgs">0</span>
+                <span class="dv-ph-label">Organizations</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dv-main-layout">
+        <div class="dv-content-area">
+            <div class="dv-tabs">
+                <button class="dv-tab-btn active" onclick="switchTab('list')">Dependents List</button>
+                <button class="dv-tab-btn" onclick="switchTab('graph')">Network Graph</button>
+                <button class="dv-tab-btn" onclick="switchTab('citations')">Citations</button>
+            </div>
+
+            <div id="tab-list" class="dv-tab-content active">
+                <div class="dv-toolbar">
+                    <div class="dv-toolbar-group">
+                        <label>Sort By:</label>
+                        <select id="list-sort-select" class="dv-input" onchange="renderMainView()">
+                            <option value="stars">GitHub Stars (High to Low)</option>
+                            <option value="name">Lexicographical (A-Z)</option>
+                            <option value="contributors">Contributors</option>
+                            <option value="lastUpdate">Recently Updated</option>
+                        </select>
+                    </div>
+                    <div class="dv-toolbar-group">
+                        <label>Max Depth:</label>
+                        <select id="list-depth-select" class="dv-input" onchange="renderMainView()">
+                            <option value="10">All Levels</option>
+                            <option value="1">Direct (L1) Only</option>
+                            <option value="2">Up to L2</option>
+                            <option value="3">Up to L3</option>
+                        </select>
+                    </div>
+                    <div class="dv-toolbar-group" style="flex-direction: row; align-items: center; gap: 15px;">
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                            <input type="checkbox" id="toggle-group-org" onchange="renderMainView()"> Group by Organization
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                            <input type="checkbox" id="toggle-leaf-nodes" onchange="renderMainView()"> Leaf Nodes Only
+                        </label>
+                    </div>
+                </div>
+
+                <div class="dv-table-container">
+                    <table class="dv-table" id="dv-main-table">
+                        <thead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Owner</th>
+                                <th>Type</th>
+                                <th>Stars</th>
+                                <th>Last Update</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dv-table-body">
+                            <tr><td colspan="5" style="text-align: center; padding: 20px;">Upload data to view dependents.</td></tr>
+                        </tbody>
+                    </table>
+                    <div id="list-load-more" style="text-align: center; padding: 15px; display: none;">
+                        <button class="dv-btn dv-btn-secondary" onclick="loadMorePackages()">See More (Showing <span id="list-showing-count">0</span> of <span id="list-total-count">0</span>)</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-graph" class="dv-tab-content">
+                <div class="dv-toolbar">
+                    <div class="dv-toolbar-group">
+                        <label>Max Packages:</label>
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <input type="range" id="graph-limit" min="10" max="500" value="50" step="10" oninput="updateGraphState()">
+                            <span id="graph-limit-val" style="color: #fff; width: 30px;">50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="dv-toolbar-group">
+                        <label>Search:</label>
+                        <div class="dv-row">
+                            <input type="text" id="node-search" list="node-list" placeholder="Package name..." class="dv-input" style="width: 140px;">
+                            <datalist id="node-list"></datalist>
+                            <button class="dv-btn-small" onclick="searchNode()">Go</button>
+                        </div>
+                    </div>
+
+                    <div class="dv-toolbar-group" style="flex-direction: row; gap: 5px; align-items: flex-end;">
+                        <div class="dv-row" style="align-items: center; margin-right: 15px;">
+                            <label style="margin-right: 5px; color: #ccc; font-size: 0.8rem;">Zoom:</label>
+                            <button class="dv-btn-small" style="flex: 0 0 25px;" onclick="zoomBy(0.8)">-</button>
+                            <input type="range" id="zoom-slider" min="0.05" max="4" step="0.05" value="1" oninput="setZoom(this.value)" style="width: 80px; margin: 0 5px;">
+                            <button class="dv-btn-small" style="flex: 0 0 25px;" onclick="zoomBy(1.25)">+</button>
+                        </div>
+                        <button class="dv-btn-small" onclick="centerRoot()">Center Root</button>
+                        <button class="dv-btn-small" onclick="if(cy) cy.fit(50)">Fit All</button>
+                        <button class="dv-btn-small" onclick="exportImage()" id="export-png-btn-container">Export PNG</button>
+                    </div>
+                </div>
+                <div style="position: absolute; right: 10px; top: 70px; z-index: 10; display: flex; gap: 10px; background: rgba(30,30,30,0.8); padding: 10px; border-radius: 6px; border: 1px solid #444;">
+                     <div class="dv-group">
+                        <label style="margin-bottom: 5px;">Graph Layout</label>
+                        <div class="dv-row">
+                            <button id="btn-view-detailed" class="dv-btn-small dv-btn-active" onclick="setGraphLayout('detailed')">Tree</button>
+                            <button id="btn-view-radial" class="dv-btn-small" onclick="setGraphLayout('radial')">Radial</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="cy" class="dv-canvas"></div>
+            </div>
+
+            <div id="tab-citations" class="dv-tab-content">
+                <div class="dv-toolbar">
+                    <p style="margin: 0; color: #ccc;">Academic papers and DOIs extracted from downstream repositories.</p>
+                </div>
+                <div id="citations-container" style="padding: 20px; overflow-y: auto;">
+                    </div>
+            </div>
+        </div>
+
+        <div class="dv-inspector">
+            <h3 style="margin: 0 0 15px 0; font-size: 1.1rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 10px;">Inspector</h3>
+            
+            <div id="inspector-empty" style="color: #888; text-align: center; margin-top: 50px;">
+                Select a package from the list or graph to view details and SPDX manifests.
+            </div>
+
+            <div id="inspector-content" style="display: none; flex-direction: column; gap: 15px;">
+                <div>
+                    <h2 id="insp-title" style="margin: 0; color: #fff; font-size: 1.3rem;">Package Name</h2>
+                    <p id="insp-owner" style="margin: 0; color: #aaa; font-size: 0.85rem;">Owner</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #1e1e1e; padding: 10px; border-radius: 6px; border: 1px solid #333;">
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">Stars</span><strong id="insp-stars" style="color: #fff;">0</strong></div>
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">Contributors</span><strong id="insp-contribs" style="color: #fff;">0</strong></div>
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">License</span><strong id="insp-license" style="color: #fff;">None</strong></div>
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">Chain Depth</span><strong id="insp-depth" style="color: #fff;">L1</strong></div>
+                </div>
+
+                <button class="dv-btn dv-btn-secondary" id="insp-btn-explore" onclick="exploreNode()">Explore Dependents in Graph</button>
+
+                <div id="insp-paper" style="display: none; background: rgba(0, 123, 255, 0.1); border: 1px solid #007bff; padding: 10px; border-radius: 4px;">
+                    </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1;">
+                    <label style="font-size: 0.85rem; color: #ccc; display: flex; justify-content: space-between;">
+                        SPDX Manifest
+                        <a href="#" onclick="copySPDX()" style="color: #007bff; text-decoration: none;">Copy</a>
+                    </label>
+                    <pre style="margin: 0; background: #111; padding: 10px; border: 1px solid #333; border-radius: 4px; overflow-x: auto; color: #aaa; font-size: 0.75rem; max-height: 250px;"><code id="insp-spdx">Loading...</code></pre>
+                    <button class="dv-btn dv-btn-primary" onclick="downloadSingleSPDX()" style="margin-top: 5px;">Download Snippet</button>
+                    <button class="dv-btn dv-btn-secondary" onclick="downloadAllSPDX()" style="margin-top: 5px;">Download ALL Manifests (.zip)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
+<script src="{{ 'js/explore/dependent-view/dependent-viz.js' | relative_url }}"></script>
+
+</main>
+

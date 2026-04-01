@@ -3972,6 +3972,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "",
+                        "publishedAt": "2026-03-31T15:21:05Z",
+                        "tagName": "v5.0.1rc1"
+                    },
+                    {
                         "name": "v5.0.0",
                         "publishedAt": "2026-02-06T15:34:34Z",
                         "tagName": "v5.0.0"

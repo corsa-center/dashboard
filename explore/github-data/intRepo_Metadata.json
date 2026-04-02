@@ -28,6 +28,12 @@
         ],
         "website": "https://alpine-dav.github.io/ascent/"
     },
+    "BerkeleyLab/StFT": {
+        "description": "Spatio-temporal Fourier Transformer for Long Term Dynamics Prediction",
+        "name": "BerkeleyLab/StFT",
+        "topics": null,
+        "website": "https://openreview.net/pdf?id=o9Cb0ri2oW"
+    },
     "BerkeleyLab/caffeine": {
         "description": "A parallel runtime library for Fortran compilers",
         "name": "BerkeleyLab/caffeine",
@@ -100,6 +106,12 @@
         ],
         "website": ""
     },
+    "CODARcode/Chimbuko": {
+        "description": "Performance Analysis Framework for Scientific Workflows for online Data Analysis and Performance Visualization",
+        "name": "CODARcode/Chimbuko",
+        "topics": null,
+        "website": ""
+    },
     "E4S-Project/e4s": {
         "description": "E4S for Spack",
         "name": "E4S-Project/e4s",
@@ -127,6 +139,12 @@
         "name": "HPCToolkit/hpctoolkit",
         "topics": null,
         "website": ""
+    },
+    "Lab-Notebooks/Codescribe": {
+        "description": "AI Agent and CLI for Code Translation and Software Development in Scientific Computing",
+        "name": "Lab-Notebooks/Codescribe",
+        "topics": null,
+        "website": "https://arxiv.org/abs/2410.24119"
     },
     "Libensemble/libensemble": {
         "description": "A Python toolkit for coordinating asynchronous and dynamic ensembles of calculations.",
@@ -217,6 +235,12 @@
         ],
         "website": "https://scorec.github.io/pumi-pic/"
     },
+    "Shaw-git/CAESAR": {
+        "description": "A Unified Framework of Foundation and Generative Models for Efficient Compression of Scientific Data",
+        "name": "Shaw-git/CAESAR",
+        "topics": null,
+        "website": null
+    },
     "StanfordLegion/legion": {
         "description": "The Legion Parallel Programming System",
         "name": "StanfordLegion/legion",
@@ -243,6 +267,12 @@
             "vtk"
         ],
         "website": ""
+    },
+    "anigmetov/oineus": {
+        "description": null,
+        "name": "anigmetov/oineus",
+        "topics": null,
+        "website": null
     },
     "anlsys/aml": {
         "description": "Building Blocks for Explicit Memory Management on Complex Architectures",
@@ -299,6 +329,12 @@
         "topics": null,
         "website": null
     },
+    "exalearn/EXARL": {
+        "description": "Scalable Framework for Reinforcement Learning",
+        "name": "exalearn/EXARL",
+        "topics": null,
+        "website": ""
+    },
     "flang-compiler/flang": {
         "description": "Flang is a Fortran language front-end designed for integration with LLVM.",
         "name": "flang-compiler/flang",
@@ -328,6 +364,12 @@
             "openmp"
         ],
         "website": "https://ginkgo-project.github.io/"
+    },
+    "hpctoolkit/hpctoolkit": {
+        "description": "HPCToolkit performance tools: measurement and analysis components",
+        "name": "hpctoolkit/hpctoolkit",
+        "topics": null,
+        "website": "https://gitlab.com/hpctoolkit/hpctoolkit"
     },
     "hypre-space/hypre": {
         "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
@@ -378,6 +420,28 @@
             "hpsf"
         ],
         "website": "https://kokkos.org"
+    },
+    "llnl/libROM": {
+        "description": "Data-driven model reduction library with an emphasis on large scale parallelism and linear subspace methods",
+        "name": "llnl/libROM",
+        "topics": [
+            "scientific",
+            "simulation",
+            "modeling",
+            "model-reduction",
+            "large-scale",
+            "parallel-computing",
+            "reduced-order-models",
+            "subspace-learning",
+            "math-physics"
+        ],
+        "website": "https://www.librom.net"
+    },
+    "llnl/pylibROM": {
+        "description": "Python interface for libROM, library for reduced order models",
+        "name": "llnl/pylibROM",
+        "topics": null,
+        "website": "https://www.librom.net"
     },
     "llnl/sundials": {
         "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
@@ -463,13 +527,17 @@
         ],
         "website": "https://adios2.readthedocs.io/en/latest/index.html"
     },
+    "paraview/paraview": {
+        "description": "Parallel Data Analysis and Visualization Application based on VTK.",
+        "name": "paraview/paraview",
+        "topics": null,
+        "website": "https://gitlab.kitware.com/paraview/paraview"
+    },
     "petsc/petsc": {
-        "description": "Mirror of https://gitlab.com/petsc/petsc",
+        "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
         "name": "petsc/petsc",
-        "topics": [
-            "petsc"
-        ],
-        "website": "https://petsc.org"
+        "topics": null,
+        "website": "https://gitlab.com/petsc/petsc"
     },
     "pghysels/STRUMPACK": {
         "description": "Structured Matrix Package (LBNL)",
@@ -547,6 +615,12 @@
         ],
         "website": "https://spack.io"
     },
+    "tpeterka/ChatVis": {
+        "description": "Scientific visualization agent and benchmark",
+        "name": "tpeterka/ChatVis",
+        "topics": null,
+        "website": null
+    },
     "trilinos/Trilinos": {
         "description": "Primary repository for the Trilinos Project",
         "name": "trilinos/Trilinos",
@@ -561,6 +635,27 @@
             "trilinos"
         ],
         "website": "https://trilinos.org/"
+    },
+    "visit-dav/visit": {
+        "description": "VisIt - Visualization and Data Analysis for Mesh-based Scientific Data",
+        "name": "visit-dav/visit",
+        "topics": [
+            "hpc",
+            "scientific-visualization",
+            "scientific-computing",
+            "visualization",
+            "data-analysis",
+            "radiuss",
+            "data-viz",
+            "python"
+        ],
+        "website": "https://visit.llnl.gov"
+    },
+    "vtk/vtk": {
+        "description": "Visualization Toolkit",
+        "name": "vtk/vtk",
+        "topics": null,
+        "website": "https://gitlab.kitware.com/vtk/vtk"
     },
     "xiaoyeli/superlu": {
         "description": "Supernodal sparse direct solver.  https://portal.nersc.gov/project/sparse/superlu/",
@@ -579,5 +674,22 @@
         "name": "xiaoyeli/superlu_mt",
         "topics": null,
         "website": null
+    },
+    "ytopt-team/ytopt": {
+        "description": "ytopt: machine-learning-based autotuning and hyperparameter optimization framework using Bayesian Optimization",
+        "name": "ytopt-team/ytopt",
+        "topics": [
+            "autotuning",
+            "bayesian-optimization",
+            "asynchronous-search",
+            "hyperparameter-optimization",
+            "asynchronous-and-dynamic-task-management",
+            "python",
+            "pytorch",
+            "autotune",
+            "tensorflow",
+            "hyperparameter-tuning"
+        ],
+        "website": "https://github.com/ytopt-team/ytopt"
     }
 }

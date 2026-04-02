@@ -24,11 +24,11 @@ for repo in genDataCollector.data["data"]:
     repoObj = genDataCollector.data["data"][repo]
 
     repoData["name"] = repo
-    repoData["description"] = repoObj["description"]
-    repoData["website"] = repoObj["homepageUrl"]
+    repoData["description"] = repoObj.get("description")
+    repoData["website"] = repoObj.get("homepageUrl")
 
     # gather any repo topics
-    if repoObj["repositoryTopics"]["totalCount"] > 0:
+    if repoObj.get("repositoryTopics") and repoObj["repositoryTopics"]["totalCount"] > 0:
         topicRepo = topicsCollector.data["data"][repo]
         topics = []
         for topicObj in topicRepo["repositoryTopics"]["nodes"]:

@@ -74,6 +74,8 @@
             "ytopt-team/ytopt",
             "llnl/zfp",
             "hpctoolkit/hpctoolkit",
+            "paraview/paraview",
+            "paraview/paraview",
             "petsc/petsc",
             "anlsys/aml",
             "berkeleylab/gasnet",
@@ -92,6 +94,8 @@
         "repoType": "gitlab",
         "repos": [
             "hpctoolkit/hpctoolkit",
+            "paraview/paraview",
+            "paraview/paraview",
             "petsc/petsc"
         ]
     },

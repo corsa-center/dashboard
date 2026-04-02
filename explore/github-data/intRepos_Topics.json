@@ -119,6 +119,12 @@
                 "totalCount": 9
             }
         },
+        "BerkeleyLab/StFT": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "BerkeleyLab/caffeine": {
             "repositoryTopics": {
                 "nodes": [
@@ -419,6 +425,12 @@
                 "totalCount": 7
             }
         },
+        "CODARcode/Chimbuko": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "E4S-Project/e4s": {
             "repositoryTopics": {
                 "nodes": [],
@@ -496,6 +508,12 @@
             }
         },
         "HPCToolkit/hpctoolkit": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
+        "Lab-Notebooks/Codescribe": {
             "repositoryTopics": {
                 "nodes": [],
                 "totalCount": 0
@@ -800,6 +818,12 @@
                 "totalCount": 1
             }
         },
+        "Shaw-git/CAESAR": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "StanfordLegion/legion": {
             "repositoryTopics": {
                 "nodes": [],
@@ -873,6 +897,12 @@
                     }
                 ],
                 "totalCount": 8
+            }
+        },
+        "anigmetov/oineus": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
             }
         },
         "anlsys/aml": {
@@ -1032,6 +1062,12 @@
                 "totalCount": 0
             }
         },
+        "exalearn/EXARL": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "flang-compiler/flang": {
             "repositoryTopics": {
                 "nodes": [
@@ -1156,6 +1192,12 @@
                     }
                 ],
                 "totalCount": 12
+            }
+        },
+        "hpctoolkit/hpctoolkit": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
             }
         },
         "hypre-space/hypre": {
@@ -1308,6 +1350,82 @@
                     }
                 ],
                 "totalCount": 6
+            }
+        },
+        "llnl/libROM": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/scientific",
+                        "topic": {
+                            "name": "scientific"
+                        },
+                        "url": "https://github.com/topics/scientific"
+                    },
+                    {
+                        "resourcePath": "/topics/simulation",
+                        "topic": {
+                            "name": "simulation"
+                        },
+                        "url": "https://github.com/topics/simulation"
+                    },
+                    {
+                        "resourcePath": "/topics/modeling",
+                        "topic": {
+                            "name": "modeling"
+                        },
+                        "url": "https://github.com/topics/modeling"
+                    },
+                    {
+                        "resourcePath": "/topics/model-reduction",
+                        "topic": {
+                            "name": "model-reduction"
+                        },
+                        "url": "https://github.com/topics/model-reduction"
+                    },
+                    {
+                        "resourcePath": "/topics/large-scale",
+                        "topic": {
+                            "name": "large-scale"
+                        },
+                        "url": "https://github.com/topics/large-scale"
+                    },
+                    {
+                        "resourcePath": "/topics/parallel-computing",
+                        "topic": {
+                            "name": "parallel-computing"
+                        },
+                        "url": "https://github.com/topics/parallel-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/reduced-order-models",
+                        "topic": {
+                            "name": "reduced-order-models"
+                        },
+                        "url": "https://github.com/topics/reduced-order-models"
+                    },
+                    {
+                        "resourcePath": "/topics/subspace-learning",
+                        "topic": {
+                            "name": "subspace-learning"
+                        },
+                        "url": "https://github.com/topics/subspace-learning"
+                    },
+                    {
+                        "resourcePath": "/topics/math-physics",
+                        "topic": {
+                            "name": "math-physics"
+                        },
+                        "url": "https://github.com/topics/math-physics"
+                    }
+                ],
+                "totalCount": 9
+            }
+        },
+        "llnl/pylibROM": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
             }
         },
         "llnl/sundials": {
@@ -1988,6 +2106,12 @@
                 "totalCount": 11
             }
         },
+        "tpeterka/ChatVis": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "trilinos/Trilinos": {
             "repositoryTopics": {
                 "nodes": [
@@ -2051,6 +2175,69 @@
                 "totalCount": 8
             }
         },
+        "visit-dav/visit": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/hpc",
+                        "topic": {
+                            "name": "hpc"
+                        },
+                        "url": "https://github.com/topics/hpc"
+                    },
+                    {
+                        "resourcePath": "/topics/scientific-visualization",
+                        "topic": {
+                            "name": "scientific-visualization"
+                        },
+                        "url": "https://github.com/topics/scientific-visualization"
+                    },
+                    {
+                        "resourcePath": "/topics/scientific-computing",
+                        "topic": {
+                            "name": "scientific-computing"
+                        },
+                        "url": "https://github.com/topics/scientific-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/visualization",
+                        "topic": {
+                            "name": "visualization"
+                        },
+                        "url": "https://github.com/topics/visualization"
+                    },
+                    {
+                        "resourcePath": "/topics/data-analysis",
+                        "topic": {
+                            "name": "data-analysis"
+                        },
+                        "url": "https://github.com/topics/data-analysis"
+                    },
+                    {
+                        "resourcePath": "/topics/radiuss",
+                        "topic": {
+                            "name": "radiuss"
+                        },
+                        "url": "https://github.com/topics/radiuss"
+                    },
+                    {
+                        "resourcePath": "/topics/data-viz",
+                        "topic": {
+                            "name": "data-viz"
+                        },
+                        "url": "https://github.com/topics/data-viz"
+                    },
+                    {
+                        "resourcePath": "/topics/python",
+                        "topic": {
+                            "name": "python"
+                        },
+                        "url": "https://github.com/topics/python"
+                    }
+                ],
+                "totalCount": 8
+            }
+        },
         "xiaoyeli/superlu": {
             "repositoryTopics": {
                 "nodes": [],
@@ -2067,6 +2254,83 @@
             "repositoryTopics": {
                 "nodes": [],
                 "totalCount": 0
+            }
+        },
+        "ytopt-team/ytopt": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/autotuning",
+                        "topic": {
+                            "name": "autotuning"
+                        },
+                        "url": "https://github.com/topics/autotuning"
+                    },
+                    {
+                        "resourcePath": "/topics/bayesian-optimization",
+                        "topic": {
+                            "name": "bayesian-optimization"
+                        },
+                        "url": "https://github.com/topics/bayesian-optimization"
+                    },
+                    {
+                        "resourcePath": "/topics/asynchronous-search",
+                        "topic": {
+                            "name": "asynchronous-search"
+                        },
+                        "url": "https://github.com/topics/asynchronous-search"
+                    },
+                    {
+                        "resourcePath": "/topics/hyperparameter-optimization",
+                        "topic": {
+                            "name": "hyperparameter-optimization"
+                        },
+                        "url": "https://github.com/topics/hyperparameter-optimization"
+                    },
+                    {
+                        "resourcePath": "/topics/asynchronous-and-dynamic-task-management",
+                        "topic": {
+                            "name": "asynchronous-and-dynamic-task-management"
+                        },
+                        "url": "https://github.com/topics/asynchronous-and-dynamic-task-management"
+                    },
+                    {
+                        "resourcePath": "/topics/python",
+                        "topic": {
+                            "name": "python"
+                        },
+                        "url": "https://github.com/topics/python"
+                    },
+                    {
+                        "resourcePath": "/topics/pytorch",
+                        "topic": {
+                            "name": "pytorch"
+                        },
+                        "url": "https://github.com/topics/pytorch"
+                    },
+                    {
+                        "resourcePath": "/topics/autotune",
+                        "topic": {
+                            "name": "autotune"
+                        },
+                        "url": "https://github.com/topics/autotune"
+                    },
+                    {
+                        "resourcePath": "/topics/tensorflow",
+                        "topic": {
+                            "name": "tensorflow"
+                        },
+                        "url": "https://github.com/topics/tensorflow"
+                    },
+                    {
+                        "resourcePath": "/topics/hyperparameter-tuning",
+                        "topic": {
+                            "name": "hyperparameter-tuning"
+                        },
+                        "url": "https://github.com/topics/hyperparameter-tuning"
+                    }
+                ],
+                "totalCount": 10
             }
         }
     }

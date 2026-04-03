@@ -150,6 +150,22 @@
                 "login": "DamianReeves"
             }
         },
+        "DefinitelyTyped/DefinitelyTyped": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "DefinitelyTyped",
+            "nameWithOwner": "DefinitelyTyped/DefinitelyTyped",
+            "owner": {
+                "isVerified": true,
+                "login": "DefinitelyTyped"
+            }
+        },
         "DoozyX/clang-format-lint-action": {
             "languages": {
                 "nodes": [
@@ -224,6 +240,21 @@
             "nameWithOwner": "JelteF/derive_more",
             "owner": {
                 "login": "JelteF"
+            }
+        },
+        "JessicaTegner/pypandoc": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pypandoc",
+            "nameWithOwner": "JessicaTegner/pypandoc",
+            "owner": {
+                "login": "JessicaTegner"
             }
         },
         "Jimver/cuda-toolkit": {
@@ -1371,6 +1402,22 @@
                 "login": "crate-ci"
             }
         },
+        "crewAIInc/crewAI": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "crewAI",
+            "nameWithOwner": "crewAIInc/crewAI",
+            "owner": {
+                "isVerified": true,
+                "login": "crewAIInc"
+            }
+        },
         "cuviper/autocfg": {
             "languages": {
                 "nodes": [
@@ -2093,6 +2140,38 @@
                 "login": "hhatto"
             }
         },
+        "huggingface/smolagents": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "smolagents",
+            "nameWithOwner": "huggingface/smolagents",
+            "owner": {
+                "isVerified": true,
+                "login": "huggingface"
+            }
+        },
+        "huggingface/transformers": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "transformers",
+            "nameWithOwner": "huggingface/transformers",
+            "owner": {
+                "isVerified": true,
+                "login": "huggingface"
+            }
+        },
         "hukkin/tomli": {
             "languages": {
                 "nodes": [
@@ -2743,6 +2822,22 @@
                 "login": "mgeisler"
             }
         },
+        "microsoft/TypeScript": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "TypeScript",
+            "nameWithOwner": "microsoft/TypeScript",
+            "owner": {
+                "isVerified": true,
+                "login": "microsoft"
+            }
+        },
         "miklelappo/android-properties": {
             "languages": {
                 "nodes": [
@@ -3145,6 +3240,22 @@
                 "login": "pacman82"
             }
         },
+        "pallets/click": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "click",
+            "nameWithOwner": "pallets/click",
+            "owner": {
+                "isVerified": true,
+                "login": "pallets"
+            }
+        },
         "pallets/flask": {
             "languages": {
                 "nodes": [
@@ -3383,6 +3494,22 @@
             "owner": {
                 "isVerified": true,
                 "login": "prefix-dev"
+            }
+        },
+        "prettier/prettier": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
+                    }
+                ]
+            },
+            "name": "prettier",
+            "nameWithOwner": "prettier/prettier",
+            "owner": {
+                "isVerified": true,
+                "login": "prettier"
             }
         },
         "psf/black": {
@@ -4068,6 +4195,21 @@
             "nameWithOwner": "robinraju/release-downloader",
             "owner": {
                 "login": "robinraju"
+            }
+        },
+        "rsalmei/alive-progress": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "alive-progress",
+            "nameWithOwner": "rsalmei/alive-progress",
+            "owner": {
+                "login": "rsalmei"
             }
         },
         "rscohn2/setup-oneapi": {
@@ -5136,6 +5278,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "tqdm"
+            }
+        },
+        "uiri/toml": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "toml",
+            "nameWithOwner": "uiri/toml",
+            "owner": {
+                "login": "uiri"
             }
         },
         "uqfoundation/dill": {

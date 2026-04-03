@@ -2420,6 +2420,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Kokkos v. 4.7.3",
+                        "publishedAt": "2026-04-03T00:07:35Z",
+                        "tagName": "4.7.03"
+                    },
+                    {
                         "name": "Kokkos v5.1.0",
                         "publishedAt": "2026-03-26T17:18:49Z",
                         "tagName": "5.1.0"

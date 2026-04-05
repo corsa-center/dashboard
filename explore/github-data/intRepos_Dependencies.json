@@ -2021,6 +2021,13 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "dorny/paths-filter",
+                                    "repository": {
+                                        "nameWithOwner": "dorny/paths-filter"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "github/codeql-action/analyze",
                                     "repository": {
                                         "nameWithOwner": "github/codeql-action"

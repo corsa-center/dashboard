@@ -946,6 +946,22 @@
                 ]
             }
         },
+        "BerkeleyLab/upcxx": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "2025.10.0",
+                        "publishedAt": "2026-04-06T23:08:54Z",
+                        "tagName": "upcxx-2025.10.0"
+                    },
+                    {
+                        "name": "2023.9.0",
+                        "publishedAt": "2026-04-06T23:06:28Z",
+                        "tagName": "upcxx-2023.9.0"
+                    }
+                ]
+            }
+        },
         "CEED/libCEED": {
             "releases": {
                 "nodes": [
@@ -2823,6 +2839,11 @@
         "llnl/sundials": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "SUNDIALS v7.7.0",
+                        "publishedAt": "2026-04-06T16:54:24Z",
+                        "tagName": "v7.7.0"
+                    },
                     {
                         "name": "SUNDIALS v7.6.0",
                         "publishedAt": "2026-01-26T19:16:35Z",

@@ -74,6 +74,28 @@
         "topics": null,
         "website": ""
     },
+    "BerkeleyLab/upcxx": {
+        "description": "This is the main repository for the UPC++ v1.0 Library implementation.",
+        "name": "BerkeleyLab/upcxx",
+        "topics": [
+            "asynchronous-programming",
+            "distributed-computing",
+            "exascale-computing",
+            "hpc",
+            "parallel-computing",
+            "pgas",
+            "rpc",
+            "rpc-framework",
+            "gasnet",
+            "cxx",
+            "cxx11",
+            "cxx14",
+            "cxx17",
+            "cxx20",
+            "library"
+        ],
+        "website": "https://upcxx.lbl.gov"
+    },
     "CEED/libCEED": {
         "description": "CEED Library: Code for Efficient Extensible Discretizations",
         "name": "CEED/libCEED",

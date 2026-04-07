@@ -285,6 +285,118 @@
                 "totalCount": 0
             }
         },
+        "BerkeleyLab/upcxx": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/asynchronous-programming",
+                        "topic": {
+                            "name": "asynchronous-programming"
+                        },
+                        "url": "https://github.com/topics/asynchronous-programming"
+                    },
+                    {
+                        "resourcePath": "/topics/distributed-computing",
+                        "topic": {
+                            "name": "distributed-computing"
+                        },
+                        "url": "https://github.com/topics/distributed-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/exascale-computing",
+                        "topic": {
+                            "name": "exascale-computing"
+                        },
+                        "url": "https://github.com/topics/exascale-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/hpc",
+                        "topic": {
+                            "name": "hpc"
+                        },
+                        "url": "https://github.com/topics/hpc"
+                    },
+                    {
+                        "resourcePath": "/topics/parallel-computing",
+                        "topic": {
+                            "name": "parallel-computing"
+                        },
+                        "url": "https://github.com/topics/parallel-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/pgas",
+                        "topic": {
+                            "name": "pgas"
+                        },
+                        "url": "https://github.com/topics/pgas"
+                    },
+                    {
+                        "resourcePath": "/topics/rpc",
+                        "topic": {
+                            "name": "rpc"
+                        },
+                        "url": "https://github.com/topics/rpc"
+                    },
+                    {
+                        "resourcePath": "/topics/rpc-framework",
+                        "topic": {
+                            "name": "rpc-framework"
+                        },
+                        "url": "https://github.com/topics/rpc-framework"
+                    },
+                    {
+                        "resourcePath": "/topics/gasnet",
+                        "topic": {
+                            "name": "gasnet"
+                        },
+                        "url": "https://github.com/topics/gasnet"
+                    },
+                    {
+                        "resourcePath": "/topics/cxx",
+                        "topic": {
+                            "name": "cxx"
+                        },
+                        "url": "https://github.com/topics/cxx"
+                    },
+                    {
+                        "resourcePath": "/topics/cxx11",
+                        "topic": {
+                            "name": "cxx11"
+                        },
+                        "url": "https://github.com/topics/cxx11"
+                    },
+                    {
+                        "resourcePath": "/topics/cxx14",
+                        "topic": {
+                            "name": "cxx14"
+                        },
+                        "url": "https://github.com/topics/cxx14"
+                    },
+                    {
+                        "resourcePath": "/topics/cxx17",
+                        "topic": {
+                            "name": "cxx17"
+                        },
+                        "url": "https://github.com/topics/cxx17"
+                    },
+                    {
+                        "resourcePath": "/topics/cxx20",
+                        "topic": {
+                            "name": "cxx20"
+                        },
+                        "url": "https://github.com/topics/cxx20"
+                    },
+                    {
+                        "resourcePath": "/topics/library",
+                        "topic": {
+                            "name": "library"
+                        },
+                        "url": "https://github.com/topics/library"
+                    }
+                ],
+                "totalCount": 15
+            }
+        },
         "CEED/libCEED": {
             "repositoryTopics": {
                 "nodes": [

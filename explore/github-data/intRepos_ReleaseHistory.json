@@ -950,14 +950,94 @@
             "releases": {
                 "nodes": [
                     {
-                        "name": "2025.10.0",
+                        "name": "Release 2025.10.0",
                         "publishedAt": "2026-04-06T23:08:54Z",
                         "tagName": "upcxx-2025.10.0"
                     },
                     {
-                        "name": "2023.9.0",
+                        "name": "Release 2023.9.0",
                         "publishedAt": "2026-04-06T23:06:28Z",
                         "tagName": "upcxx-2023.9.0"
+                    },
+                    {
+                        "name": "Release 2023.3.0",
+                        "publishedAt": "2026-04-07T22:51:41Z",
+                        "tagName": "upcxx-2023.3.0"
+                    },
+                    {
+                        "name": "Release 2022.9.0",
+                        "publishedAt": "2026-04-07T22:49:15Z",
+                        "tagName": "upcxx-2022.9.0"
+                    },
+                    {
+                        "name": "Release 2022.3.0",
+                        "publishedAt": "2026-04-07T22:47:17Z",
+                        "tagName": "upcxx-2022.3.0"
+                    },
+                    {
+                        "name": "Release 2021.9.0",
+                        "publishedAt": "2026-04-07T22:44:29Z",
+                        "tagName": "upcxx-2021.9.0"
+                    },
+                    {
+                        "name": "Release 2021.3.0",
+                        "publishedAt": "2026-04-07T22:36:57Z",
+                        "tagName": "upcxx-2021.3.0"
+                    },
+                    {
+                        "name": "Memory Kinds Prototype 2020.11.0",
+                        "publishedAt": "2026-04-07T22:32:48Z",
+                        "tagName": "upcxx-2020.11.0-memory_kinds"
+                    },
+                    {
+                        "name": "Release 2020.10.0",
+                        "publishedAt": "2026-04-07T19:18:52Z",
+                        "tagName": "upcxx-2020.10.0"
+                    },
+                    {
+                        "name": "Bug-fix release 2020.3.2",
+                        "publishedAt": "2026-04-07T19:16:29Z",
+                        "tagName": "upcxx-2020.3.2"
+                    },
+                    {
+                        "name": "Release 2020.3.0",
+                        "publishedAt": "2026-04-07T19:14:28Z",
+                        "tagName": "upcxx-2020.3.0"
+                    },
+                    {
+                        "name": "Release 2019.9.0",
+                        "publishedAt": "2026-04-07T19:08:30Z",
+                        "tagName": "upcxx-2019.9.0"
+                    },
+                    {
+                        "name": "Bug-fix release 2019.3.2",
+                        "publishedAt": "2026-04-07T19:05:29Z",
+                        "tagName": "upcxx-2019.3.2"
+                    },
+                    {
+                        "name": "Release 2019.3.0",
+                        "publishedAt": "2026-04-07T19:00:23Z",
+                        "tagName": "upcxx-2019.3.0"
+                    },
+                    {
+                        "name": "Release 2018.9.0",
+                        "publishedAt": "2026-04-07T18:46:11Z",
+                        "tagName": "upcxx-2018.9.0"
+                    },
+                    {
+                        "name": "Release 2018.3.2",
+                        "publishedAt": "2026-04-07T18:40:38Z",
+                        "tagName": "upcxx-2018.3.2"
+                    },
+                    {
+                        "name": "Release 2018.1.0 BETA",
+                        "publishedAt": "2026-04-07T18:38:34Z",
+                        "tagName": "upcxx-2018.1.0"
+                    },
+                    {
+                        "name": "Release 2017.9.0",
+                        "publishedAt": "2026-04-07T18:36:39Z",
+                        "tagName": "upcxx-2017.9.0"
                     }
                 ]
             }
@@ -3122,6 +3202,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "LLVM 22.1.3",
+                        "publishedAt": "2026-04-07T08:43:46Z",
+                        "tagName": "llvmorg-22.1.3"
+                    },
+                    {
                         "name": "LLVM 22.1.2",
                         "publishedAt": "2026-03-24T20:06:19Z",
                         "tagName": "llvmorg-22.1.2"
@@ -4205,6 +4290,11 @@
         "pmodels/mpich": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "",
+                        "publishedAt": "2026-04-07T15:10:19Z",
+                        "tagName": "v5.0.1rc3"
+                    },
                     {
                         "name": "",
                         "publishedAt": "2026-04-01T15:01:11Z",

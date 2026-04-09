@@ -10627,6 +10627,24 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "llvm-testing-tools",
+                                    "repository": null
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "psutil",
+                                    "repository": {
+                                        "nameWithOwner": "giampaolo/psutil"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "ml-dtypes",
                                     "repository": null
                                 },

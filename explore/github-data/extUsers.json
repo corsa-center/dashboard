@@ -4063,7 +4063,7 @@
                 ]
             },
             "login": "CongzheUalberta",
-            "name": "Congzhe"
+            "name": "Congzhe Cao"
         },
         "CoxyMielle": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/92094983?v=4",
@@ -7094,7 +7094,8 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "mfem/mfem",
-                    "spack/spack"
+                    "spack/spack",
+                    "xiaoyeli/superlu_dist"
                 ]
             },
             "login": "Heinrich-BR",
@@ -37779,7 +37780,7 @@
             "name": "Dmitry Antipov"
         },
         "dmasloff": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/74042473?u=ee3d0220dc9e059d257068b95e2f66df6e70dbe4&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/74042473?u=a1bc355eb17cfc22a1455046bf1ee250a47ec531&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -44866,6 +44867,16 @@
             },
             "login": "gflegar",
             "name": "Goran Flegar"
+        },
+        "ggambon": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/267406918?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "ggambon",
+            "name": "German Gambon"
         },
         "gganis": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1735130?v=4",
@@ -71142,7 +71153,7 @@
             "name": "Nhat Nguyen"
         },
         "nhuhuan": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/99632091?v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/99632091?u=b4157fe3bcda24cedc4bbee4a2124036891c63b2&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -71700,6 +71711,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/69214149?v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "AMReX-Codes/amrex",
                     "kokkos/kokkos"
                 ]
             },
@@ -99072,6 +99084,16 @@
             },
             "login": "yingwang-bj",
             "name": "Ying Wang"
+        },
+        "yinliaws": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/248810305?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "open-mpi/ompi"
+                ]
+            },
+            "login": "yinliaws",
+            "name": "Yin Li"
         },
         "yinying-lisa-li": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/107574043?u=bdf2d225d5529cc543719c216756081188055a00&v=4",

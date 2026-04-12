@@ -14,7 +14,7 @@
                 "totalCount": 867
             },
             "issues_Open": {
-                "totalCount": 58
+                "totalCount": 60
             },
             "languages": {
                 "totalCount": 16
@@ -42,10 +42,10 @@
                 "totalCount": 275
             },
             "pullRequests_Merged": {
-                "totalCount": 3707
+                "totalCount": 3738
             },
             "pullRequests_Open": {
-                "totalCount": 45
+                "totalCount": 35
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -208,10 +208,10 @@
                 "totalCount": 14
             },
             "pullRequests_Merged": {
-                "totalCount": 190
+                "totalCount": 191
             },
             "pullRequests_Open": {
-                "totalCount": 3
+                "totalCount": 2
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -342,7 +342,7 @@
             },
             "homepageUrl": "https://upcxx.lbl.gov",
             "issues_Closed": {
-                "totalCount": 0
+                "totalCount": 1
             },
             "issues_Open": {
                 "totalCount": 0
@@ -616,7 +616,7 @@
                 "totalCount": 925
             },
             "issues_Open": {
-                "totalCount": 289
+                "totalCount": 290
             },
             "languages": {
                 "totalCount": 15
@@ -647,13 +647,13 @@
                 "totalCount": 4610
             },
             "pullRequests_Open": {
-                "totalCount": 12
+                "totalCount": 14
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 926
+                "totalCount": 927
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -1590,7 +1590,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 72
+                "totalCount": 73
             },
             "url": "https://github.com/darshan-hpc/darshan"
         },
@@ -1750,7 +1750,7 @@
                 "totalCount": 1226
             },
             "pullRequests_Open": {
-                "totalCount": 29
+                "totalCount": 31
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -1937,10 +1937,10 @@
             },
             "homepageUrl": "https://ginkgo-project.github.io/",
             "issues_Closed": {
-                "totalCount": 357
+                "totalCount": 358
             },
             "issues_Open": {
-                "totalCount": 122
+                "totalCount": 121
             },
             "languages": {
                 "totalCount": 7
@@ -1968,10 +1968,10 @@
                 "totalCount": 131
             },
             "pullRequests_Merged": {
-                "totalCount": 1230
+                "totalCount": 1231
             },
             "pullRequests_Open": {
-                "totalCount": 71
+                "totalCount": 70
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2224,7 +2224,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2498
+                "totalCount": 2500
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2401,7 +2401,7 @@
             },
             "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
             "forks": {
-                "totalCount": 161
+                "totalCount": 162
             },
             "homepageUrl": "https://computing.llnl.gov/projects/sundials",
             "issues_Closed": {
@@ -2439,7 +2439,7 @@
                 "totalCount": 531
             },
             "pullRequests_Open": {
-                "totalCount": 13
+                "totalCount": 14
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2511,14 +2511,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 14596
+                "totalCount": 14601
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 65444
+                "totalCount": 65454
             },
             "issues_Open": {
-                "totalCount": 28329
+                "totalCount": 28330
             },
             "languages": {
                 "totalCount": 56
@@ -2530,7 +2530,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 5890
+                "totalCount": 5892
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2543,19 +2543,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 9438
+                "totalCount": 9445
             },
             "pullRequests_Merged": {
-                "totalCount": 79849
+                "totalCount": 79888
             },
             "pullRequests_Open": {
-                "totalCount": 7142
+                "totalCount": 7177
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 37800
+                "totalCount": 37815
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -3006,14 +3006,14 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2314
+                "totalCount": 2315
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7838
+                "totalCount": 7849
             },
             "issues_Open": {
-                "totalCount": 1355
+                "totalCount": 1344
             },
             "languages": {
                 "totalCount": 14
@@ -3044,13 +3044,13 @@
                 "totalCount": 37026
             },
             "pullRequests_Open": {
-                "totalCount": 399
+                "totalCount": 403
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 4993
+                "totalCount": 4995
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3112,7 +3112,7 @@
             },
             "description": "Primary repository for the Trilinos Project",
             "forks": {
-                "totalCount": 597
+                "totalCount": 598
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
@@ -3150,13 +3150,13 @@
                 "totalCount": 8158
             },
             "pullRequests_Open": {
-                "totalCount": 59
+                "totalCount": 61
             },
             "repositoryTopics": {
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 1374
+                "totalCount": 1375
             },
             "url": "https://github.com/trilinos/Trilinos"
         },

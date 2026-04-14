@@ -9903,7 +9903,7 @@
                                     "packageManager": "PIP",
                                     "packageName": "google-crc32c",
                                     "repository": {
-                                        "nameWithOwner": "renovate-bot/python-crc32c"
+                                        "nameWithOwner": "googleapis/python-crc32c"
                                     }
                                 },
                                 {
@@ -16588,6 +16588,26 @@
                                     "packageName": "mshick/add-pr-comment",
                                     "repository": {
                                         "nameWithOwner": "mshick/add-pr-comment"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/upload-artifact",
+                                    "repository": {
+                                        "nameWithOwner": "actions/upload-artifact"
                                     }
                                 }
                             ]

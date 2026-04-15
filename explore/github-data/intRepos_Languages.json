@@ -4,7 +4,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12370268
+                        "size": 12371247
                     },
                     {
                         "size": 716202
@@ -16,7 +16,7 @@
                         "size": 118166
                     },
                     {
-                        "size": 116018
+                        "size": 116012
                     },
                     {
                         "size": 42467
@@ -119,14 +119,14 @@
                     }
                 ],
                 "totalCount": 16,
-                "totalSize": 13698692
+                "totalSize": 13699665
             }
         },
         "Alpine-DAV/ascent": {
             "languages": {
                 "edges": [
                     {
-                        "size": 35427492
+                        "size": 35428151
                     },
                     {
                         "size": 574065
@@ -147,7 +147,7 @@
                         "size": 128450
                     },
                     {
-                        "size": 110477
+                        "size": 110389
                     },
                     {
                         "size": 27373
@@ -213,7 +213,7 @@
                     }
                 ],
                 "totalCount": 12,
-                "totalSize": 37940931
+                "totalSize": 37941502
             }
         },
         "BerkeleyLab/StFT": {
@@ -458,22 +458,22 @@
                         "size": 70832369
                     },
                     {
-                        "size": 3036456
+                        "size": 3046416
                     },
                     {
-                        "size": 579985
+                        "size": 579962
                     },
                     {
-                        "size": 155032
+                        "size": 160164
                     },
                     {
-                        "size": 127276
+                        "size": 128128
                     },
                     {
                         "size": 99930
                     },
                     {
-                        "size": 55481
+                        "size": 55731
                     },
                     {
                         "size": 2354
@@ -514,7 +514,7 @@
                     }
                 ],
                 "totalCount": 8,
-                "totalSize": 74888883
+                "totalSize": 74905054
             }
         },
         "CODARcode/Chimbuko": {
@@ -2075,10 +2075,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12354551
+                        "size": 12351134
                     },
                     {
-                        "size": 5638362
+                        "size": 5638546
                     },
                     {
                         "size": 512161
@@ -2155,7 +2155,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18794496
+                "totalSize": 18791263
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2353,10 +2353,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12133683
+                        "size": 12112409
                     },
                     {
-                        "size": 257446
+                        "size": 257406
                     },
                     {
                         "size": 153112
@@ -2405,7 +2405,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 12701363
+                "totalSize": 12680049
             }
         },
         "hpctoolkit/hpctoolkit": {
@@ -2499,7 +2499,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 26462483
+                        "size": 26462691
                     },
                     {
                         "size": 3556591
@@ -2529,13 +2529,13 @@
                         "size": 33273
                     },
                     {
+                        "size": 20095
+                    },
+                    {
                         "size": 16339
                     },
                     {
                         "size": 14781
-                    },
-                    {
-                        "size": 13323
                     },
                     {
                         "size": 3723
@@ -2586,16 +2586,16 @@
                         "name": "HTML"
                     },
                     {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    },
+                    {
                         "color": "#3D6117",
                         "name": "TeX"
                     },
                     {
                         "color": "#c30e9b",
                         "name": "Awk"
-                    },
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
                     },
                     {
                         "color": "#C1F12E",
@@ -2607,7 +2607,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 31764488
+                "totalSize": 31771468
             }
         },
         "icl-utk-edu/magma": {
@@ -2839,7 +2839,7 @@
                         "size": 61439
                     },
                     {
-                        "size": 49423
+                        "size": 49444
                     },
                     {
                         "size": 15049
@@ -2910,7 +2910,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 11472783
+                "totalSize": 11472804
             }
         },
         "kokkos/kokkos-kernels": {
@@ -3261,37 +3261,37 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 713786110
+                        "size": 714087960
                     },
                     {
-                        "size": 529317425
+                        "size": 529602515
                     },
                     {
-                        "size": 218769979
+                        "size": 221288037
                     },
                     {
-                        "size": 184246503
+                        "size": 186636056
                     },
                     {
-                        "size": 27471627
+                        "size": 27499774
                     },
                     {
-                        "size": 14557267
+                        "size": 14580457
                     },
                     {
-                        "size": 12566408
+                        "size": 12581314
                     },
                     {
-                        "size": 5404303
+                        "size": 5405776
                     },
                     {
-                        "size": 4546056
+                        "size": 4552781
                     },
                     {
                         "size": 4448852
                     },
                     {
-                        "size": 2791930
+                        "size": 2792029
                     },
                     {
                         "size": 2235777
@@ -3300,7 +3300,7 @@
                         "size": 1454421
                     },
                     {
-                        "size": 1350324
+                        "size": 1352389
                     },
                     {
                         "size": 1341411
@@ -3318,7 +3318,7 @@
                         "size": 292779
                     },
                     {
-                        "size": 266045
+                        "size": 265999
                     },
                     {
                         "size": 183797
@@ -3327,7 +3327,7 @@
                         "size": 127345
                     },
                     {
-                        "size": 109978
+                        "size": 110048
                     },
                     {
                         "size": 95408
@@ -3563,20 +3563,20 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1727971169
+                "totalSize": 1733542447
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 19237732
+                        "size": 19272396
                     },
                     {
-                        "size": 301298
+                        "size": 302501
                     },
                     {
-                        "size": 166550
+                        "size": 169288
                     },
                     {
                         "size": 75673
@@ -3643,7 +3643,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19882223
+                "totalSize": 19920828
             }
         },
         "open-mpi/ompi": {
@@ -4242,7 +4242,7 @@
                         "size": 2024773
                     },
                     {
-                        "size": 262424
+                        "size": 262352
                     },
                     {
                         "size": 234474
@@ -4302,7 +4302,7 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 7878635
+                "totalSize": 7878563
             }
         },
         "sandialabs/pytuq": {
@@ -4340,13 +4340,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 7969131
+                        "size": 7974893
                     },
                     {
                         "size": 521781
                     },
                     {
-                        "size": 120493
+                        "size": 120496
                     },
                     {
                         "size": 38431
@@ -4441,7 +4441,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 8740251
+                "totalSize": 8746016
             }
         },
         "tpeterka/ChatVis": {
@@ -4700,7 +4700,7 @@
                         "size": 1319263
                     },
                     {
-                        "size": 1127723
+                        "size": 1127943
                     },
                     {
                         "size": 417170
@@ -4839,7 +4839,7 @@
                     }
                 ],
                 "totalCount": 22,
-                "totalSize": 99149371
+                "totalSize": 99149591
             }
         },
         "xiaoyeli/superlu": {

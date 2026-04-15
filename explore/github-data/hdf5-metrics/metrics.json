@@ -3,7 +3,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Citations:</strong> 1,234 academic papers</p><p><strong>Downloads:</strong> 50,000+ per month</p><p><strong>Used by:</strong> NASA, CERN, National Labs</p>"
+      "data": null
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -13,15 +13,15 @@
   "sustainability": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": null
+      "data": "<p><strong>Code of Conduct:</strong> <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p><strong>Governance:</strong> Not found</p>\n<p><strong>Contributing Guidelines:</strong> <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Score:</strong> 2/3</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
-      "data": null
+      "data": "<p><strong>License:</strong> Other</p>\n<p><strong>Category:</strong> Unknown</p>\n<p><strong>OSI Approved:</strong> Unknown</p>\n<p><strong>Compliance Score:</strong> 2/3 (67%)</p>\n<p>License file exists: \u2713</p>\n<p>License identified: \u2713 (Other)</p>\n<p>OSI approved: ? (unknown)</p>"
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Last commit:</strong> 2 days ago</p><p><strong>Commit frequency:</strong> Daily</p><p><strong>Active maintainers:</strong> 15</p>"
+      "data": "<p><strong>Status:</strong> Active</p>\n<p><strong>Last Commit:</strong> 0 days ago</p>\n<p><strong>Commits (52 weeks):</strong> 462 (51 active weeks)</p>\n<p><strong>Trend:</strong> Stable</p>\n<p><strong>Latest Release:</strong> 2.1.1 (20 days ago)</p>\n<p><strong>Releases (last year):</strong> 4</p>\n<p><strong>Contributors:</strong> 30 (bus factor: 2)</p>\n<p><strong>Score:</strong> 4/5 (80%)</p>"
     },
     "4.2.4": {
       "title": "Engagement",

@@ -403,6 +403,16 @@
             "login": "7FM",
             "name": null
         },
+        "8051Enthusiast": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/54916925?u=aff03b630e9e8133e13e97f88326228094f75d56&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "8051Enthusiast",
+            "name": null
+        },
         "811098481": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/143879467?v=4",
             "contributedLabRepositories": {
@@ -10863,6 +10873,16 @@
             "login": "MainakSil",
             "name": "Mainak Sil"
         },
+        "Maiowaa": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/191083518?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "Maiowaa",
+            "name": null
+        },
         "MakisH": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/4943683?u=e7b75ffbf02338fcce44ca25f7b2153ae415b923&v=4",
             "contributedLabRepositories": {
@@ -10887,6 +10907,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/20120719?u=2fb2a913d6ea3f5c2175a4a03688f11b50797443&v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "kokkos/kokkos",
                     "kokkos/kokkos-kernels",
                     "petsc/petsc",
                     "trilinos/Trilinos"
@@ -15364,7 +15385,7 @@
             "name": "Jo\u00e3o Ser\u00f3dio"
         },
         "Serosh-commits": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/187326981?u=fd2e3da86460b993d0d69aff07a8885ae7835388&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/187326981?u=bb7360909e46a723ae163aff6c442d87ba27162d&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -19203,8 +19224,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/1275002?v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "SCOREC/core",
-                    "mfem/mfem"
+                    "SCOREC/core"
                 ]
             },
             "login": "a-jp",
@@ -20444,6 +20464,7 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "mfem/mfem",
+                    "pghysels/STRUMPACK",
                     "spack/spack"
                 ]
             },
@@ -32488,7 +32509,7 @@
                 ]
             },
             "login": "chouzz",
-            "name": "Chouzz"
+            "name": "Harlan Zhou"
         },
         "chpi7": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/11175879?v=4",
@@ -51642,6 +51663,7 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "kokkos/kokkos",
+                    "kokkos/kokkos-kernels",
                     "open-mpi/ompi",
                     "pmodels/mpich",
                     "spack/spack"
@@ -60491,7 +60513,7 @@
                 ]
             },
             "login": "lakreite",
-            "name": "Max Kuznetsov"
+            "name": "Maxim Kuznetsov"
         },
         "lakshayk-nv": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/199557887?v=4",
@@ -64045,6 +64067,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/51459544?v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "kokkos/kokkos",
                     "kokkos/kokkos-kernels",
                     "trilinos/Trilinos"
                 ]
@@ -68425,6 +68448,16 @@
             },
             "login": "moar55",
             "name": "Omar Hossam"
+        },
+        "moazin": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/23481137?u=23135f1279d13729f22f11ede1684feabe2ffb5c&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "moazin",
+            "name": "Moazin K."
         },
         "moberza": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/62324958?v=4",
@@ -100040,6 +100073,16 @@
             },
             "login": "zachmullen",
             "name": "Zach Mullen"
+        },
+        "zackc6": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/112835067?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "zackc6",
+            "name": null
         },
         "zackgalbreath": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/224720?v=4",

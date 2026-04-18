@@ -5542,6 +5542,22 @@
                 "login": "pytest-dev"
             }
         },
+        "pytest-dev/pytest-xdist": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pytest-xdist",
+            "nameWithOwner": "pytest-dev/pytest-xdist",
+            "owner": {
+                "isVerified": false,
+                "login": "pytest-dev"
+            }
+        },
         "python-babel/babel": {
             "languages": {
                 "nodes": [

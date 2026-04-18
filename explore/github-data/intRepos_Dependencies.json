@@ -4113,6 +4113,13 @@
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
                                     }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/setup-python",
+                                    "repository": {
+                                        "nameWithOwner": "actions/setup-python"
+                                    }
                                 }
                             ]
                         }
@@ -16139,6 +16146,13 @@
                                 },
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "pytest",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "sphinx",
                                     "repository": {
                                         "nameWithOwner": "sphinx-doc/sphinx"
@@ -16185,6 +16199,13 @@
                     {
                         "dependencies": {
                             "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
                                 {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",
@@ -16484,6 +16505,13 @@
                                 },
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "ruff",
+                                    "repository": {
+                                        "nameWithOwner": "astral-sh/ruff"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "slotscheck",
                                     "repository": {
                                         "nameWithOwner": "ariebovenberg/slotscheck"
@@ -16507,6 +16535,54 @@
                                     "packageName": "coverage",
                                     "repository": {
                                         "nameWithOwner": "coveragepy/coveragepy"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "click",
+                                    "repository": {
+                                        "nameWithOwner": "pallets/click"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "clingo",
+                                    "repository": {
+                                        "nameWithOwner": "potassco/clingo"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "coverage",
+                                    "repository": {
+                                        "nameWithOwner": "coveragepy/coveragepy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest-cov",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest-cov"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest-xdist",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest-xdist"
                                     }
                                 }
                             ]

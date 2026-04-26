@@ -2536,7 +2536,12 @@
                 "value": 1
             }
         ],
-        "BerkeleyLab/upcxx": [],
+        "BerkeleyLab/upcxx": [
+            {
+                "date": "2026-04-13",
+                "value": 1
+            }
+        ],
         "CEED/libCEED": [
             {
                 "date": "2017-12-11",
@@ -17700,6 +17705,10 @@
             },
             {
                 "date": "2026-04-13",
+                "value": 2
+            },
+            {
+                "date": "2026-04-20",
                 "value": 2
             }
         ],
@@ -34900,7 +34909,7 @@
             },
             {
                 "date": "2026-04-20",
-                "value": 4
+                "value": 3
             }
         ],
         "sandialabs/Albany": [

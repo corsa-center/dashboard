@@ -734,74 +734,6 @@
                 ]
             }
         },
-        "BerkeleyLab/fiats": {
-            "dependencyGraphManifests": {
-                "nodes": [
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "fortran-lang/setup-fpm",
-                                    "repository": {
-                                        "nameWithOwner": "fortran-lang/setup-fpm"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/upload-artifact",
-                                    "repository": {
-                                        "nameWithOwner": "actions/upload-artifact"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "JamesIves/github-pages-deploy-action",
-                                    "repository": {
-                                        "nameWithOwner": "JamesIves/github-pages-deploy-action"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "technote-space/broken-link-checker-action",
-                                    "repository": {
-                                        "nameWithOwner": "technote-space/broken-link-checker-action"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#4d41b1",
-                        "name": "Fortran"
-                    }
-                ]
-            }
-        },
         "BerkeleyLab/julienne": {
             "dependencyGraphManifests": {
                 "nodes": [
@@ -5323,47 +5255,6 @@
                                     "packageManager": "PIP",
                                     "packageName": "endif",
                                     "repository": null
-                                }
-                            ]
-                        }
-                    }
-                ]
-            },
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#f34b7d",
-                        "name": "C++"
-                    }
-                ]
-            }
-        },
-        "UO-OACISS/tau2": {
-            "dependencyGraphManifests": {
-                "nodes": [
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "jupyterlab",
-                                    "repository": {
-                                        "nameWithOwner": "jupyterlab/jupyterlab"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pandas",
-                                    "repository": {
-                                        "nameWithOwner": "pandas-dev/pandas"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "plotly",
-                                    "repository": {
-                                        "nameWithOwner": "plotly/plotly.py"
-                                    }
                                 }
                             ]
                         }
@@ -11826,13 +11717,6 @@
                                     "packageName": "maxim-lobanov/setup-xcode",
                                     "repository": {
                                         "nameWithOwner": "maxim-lobanov/setup-xcode"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "seanmiddleditch/gha-setup-ninja",
-                                    "repository": {
-                                        "nameWithOwner": "seanmiddleditch/gha-setup-ninja"
                                     }
                                 }
                             ]

@@ -1877,22 +1877,6 @@
                 "login": "executablebooks"
             }
         },
-        "executablebooks/sphinx-tabs": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#e34c26",
-                        "name": "HTML"
-                    }
-                ]
-            },
-            "name": "sphinx-tabs",
-            "nameWithOwner": "executablebooks/sphinx-tabs",
-            "owner": {
-                "isVerified": false,
-                "login": "executablebooks"
-            }
-        },
         "facelessuser/soupsieve": {
             "languages": {
                 "nodes": [
@@ -2278,21 +2262,6 @@
             "nameWithOwner": "jakevdp/ipywidgets-static",
             "owner": {
                 "login": "jakevdp"
-            }
-        },
-        "jaraco/zipp": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "zipp",
-            "nameWithOwner": "jaraco/zipp",
-            "owner": {
-                "login": "jaraco"
             }
         },
         "jawah/charset_normalizer": {
@@ -3880,22 +3849,6 @@
                 "login": "python-humanize"
             }
         },
-        "python/importlib_metadata": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "importlib_metadata",
-            "nameWithOwner": "python/importlib_metadata",
-            "owner": {
-                "isVerified": true,
-                "login": "python"
-            }
-        },
         "python/importlib_resources": {
             "languages": {
                 "nodes": [
@@ -4114,22 +4067,6 @@
             },
             "name": "sphinx-hoverxref",
             "nameWithOwner": "readthedocs/sphinx-hoverxref",
-            "owner": {
-                "isVerified": false,
-                "login": "readthedocs"
-            }
-        },
-        "readthedocs/sphinx-notfound-page": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "sphinx-notfound-page",
-            "nameWithOwner": "readthedocs/sphinx-notfound-page",
             "owner": {
                 "isVerified": false,
                 "login": "readthedocs"
@@ -5215,22 +5152,6 @@
             "nameWithOwner": "theskumar/python-dotenv",
             "owner": {
                 "login": "theskumar"
-            }
-        },
-        "tj-actions/changed-files": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3178c6",
-                        "name": "TypeScript"
-                    }
-                ]
-            },
-            "name": "changed-files",
-            "nameWithOwner": "tj-actions/changed-files",
-            "owner": {
-                "isVerified": true,
-                "login": "tj-actions"
             }
         },
         "tkaitchuck/aHash": {

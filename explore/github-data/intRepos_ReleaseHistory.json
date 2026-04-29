@@ -1137,6 +1137,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "v1.3-RC1",
+                        "publishedAt": "2026-04-28T21:59:33Z",
+                        "tagName": "v1.3-RC1"
+                    },
+                    {
                         "name": "v1.2.1",
                         "publishedAt": "2024-11-11T13:15:49Z",
                         "tagName": "v1.2.1"
@@ -1882,6 +1887,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "v1.1.1",
+                        "publishedAt": "2026-04-29T00:49:27Z",
+                        "tagName": "v1.1.1"
+                    },
+                    {
                         "name": "v1.1.0",
                         "publishedAt": "2025-11-18T18:39:37Z",
                         "tagName": "v1.1.0"
@@ -2516,6 +2526,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Kokkos v5.1.1",
+                        "publishedAt": "2026-04-28T16:14:31Z",
+                        "tagName": "5.1.1"
+                    },
+                    {
                         "name": "Kokkos v. 4.7.4",
                         "publishedAt": "2026-04-16T13:42:20Z",
                         "tagName": "4.7.04"
@@ -2711,6 +2726,11 @@
         "kokkos/kokkos-kernels": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "5.1.1",
+                        "publishedAt": "2026-04-28T22:15:27Z",
+                        "tagName": "5.1.1"
+                    },
                     {
                         "name": "4.7.04",
                         "publishedAt": "2026-04-16T17:15:00Z",
@@ -4068,6 +4088,11 @@
         "ornladios/ADIOS2": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v2.12.1",
+                        "publishedAt": "2026-04-29T01:05:16Z",
+                        "tagName": "v2.12.1"
+                    },
                     {
                         "name": "v2.12.0",
                         "publishedAt": "2026-04-16T19:00:37Z",

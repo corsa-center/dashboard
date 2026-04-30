@@ -1137,6 +1137,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "v1.3-RC2",
+                        "publishedAt": "2026-04-29T16:49:22Z",
+                        "tagName": "v1.3-RC2"
+                    },
+                    {
                         "name": "v1.3-RC1",
                         "publishedAt": "2026-04-28T21:59:33Z",
                         "tagName": "v1.3-RC1"
@@ -4980,6 +4985,11 @@
         "visit-dav/visit": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v3.5.0",
+                        "publishedAt": "2026-04-29T18:45:02Z",
+                        "tagName": "v3.5.0"
+                    },
                     {
                         "name": "Minor doc update for v3.3.0",
                         "publishedAt": "2025-02-05T20:21:28Z",

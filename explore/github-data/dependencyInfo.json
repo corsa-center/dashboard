@@ -2846,22 +2846,6 @@
                 "login": "googleapis"
             }
         },
-        "googleapis/python-crc32c": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#89e051",
-                        "name": "Shell"
-                    }
-                ]
-            },
-            "name": "python-crc32c",
-            "nameWithOwner": "googleapis/python-crc32c",
-            "owner": {
-                "isVerified": false,
-                "login": "googleapis"
-            }
-        },
         "googleapis/python-genai": {
             "languages": {
                 "nodes": [
@@ -5923,6 +5907,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "readthedocs"
+            }
+        },
+        "renovate-bot/python-crc32c": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "python-crc32c",
+            "nameWithOwner": "renovate-bot/python-crc32c",
+            "owner": {
+                "login": "renovate-bot"
             }
         },
         "rickstaa/action-create-tag": {

@@ -2081,7 +2081,7 @@
                         "size": 5652913
                     },
                     {
-                        "size": 512161
+                        "size": 682572
                     },
                     {
                         "size": 159884
@@ -2155,7 +2155,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 18798701
+                "totalSize": 18969112
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2499,7 +2499,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 26672014
+                        "size": 26672156
                     },
                     {
                         "size": 3674787
@@ -2607,7 +2607,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 32118738
+                "totalSize": 32118880
             }
         },
         "icl-utk-edu/magma": {
@@ -3261,49 +3261,49 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 719766233
+                        "size": 720287232
                     },
                     {
-                        "size": 532650218
+                        "size": 532944526
                     },
                     {
-                        "size": 221903077
+                        "size": 221921629
                     },
                     {
-                        "size": 186627841
+                        "size": 186628719
                     },
                     {
-                        "size": 27983568
+                        "size": 28024707
                     },
                     {
-                        "size": 14673398
+                        "size": 14675069
                     },
                     {
-                        "size": 12662292
+                        "size": 12625800
                     },
                     {
-                        "size": 5450876
+                        "size": 5470007
                     },
                     {
-                        "size": 4644045
+                        "size": 4660249
                     },
                     {
                         "size": 4455735
                     },
                     {
-                        "size": 2877783
+                        "size": 2877834
                     },
                     {
-                        "size": 2242432
+                        "size": 2242430
                     },
                     {
-                        "size": 1523777
+                        "size": 1540833
                     },
                     {
-                        "size": 1396789
+                        "size": 1396821
                     },
                     {
-                        "size": 1358791
+                        "size": 1362804
                     },
                     {
                         "size": 1215923
@@ -3563,26 +3563,26 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1743904034
+                "totalSize": 1744801574
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 19274833
+                        "size": 19275984
                     },
                     {
-                        "size": 304667
+                        "size": 304910
                     },
                     {
-                        "size": 169264
+                        "size": 170595
                     },
                     {
                         "size": 75673
                     },
                     {
-                        "size": 64694
+                        "size": 64690
                     },
                     {
                         "size": 18800
@@ -3643,17 +3643,17 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 19925407
+                "totalSize": 19928128
             }
         },
         "open-mpi/ompi": {
             "languages": {
                 "edges": [
                     {
-                        "size": 22195540
+                        "size": 22196383
                     },
                     {
-                        "size": 943382
+                        "size": 943555
                     },
                     {
                         "size": 589554
@@ -3744,7 +3744,7 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 25506543
+                "totalSize": 25507559
             }
         },
         "ornladios/ADIOS2": {
@@ -3859,13 +3859,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 45595418
+                        "size": 45610733
                     },
                     {
                         "size": 3722498
                     },
                     {
-                        "size": 3224734
+                        "size": 3224762
                     },
                     {
                         "size": 1861505
@@ -4041,7 +4041,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 57966255
+                "totalSize": 57981598
             }
         },
         "pghysels/STRUMPACK": {

@@ -281,8 +281,44 @@
         },
         "BerkeleyLab/julienne": {
             "repositoryTopics": {
-                "nodes": [],
-                "totalCount": 0
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/fortran2023",
+                        "topic": {
+                            "name": "fortran2023"
+                        },
+                        "url": "https://github.com/topics/fortran2023"
+                    },
+                    {
+                        "resourcePath": "/topics/fortran",
+                        "topic": {
+                            "name": "fortran"
+                        },
+                        "url": "https://github.com/topics/fortran"
+                    },
+                    {
+                        "resourcePath": "/topics/unit-testing",
+                        "topic": {
+                            "name": "unit-testing"
+                        },
+                        "url": "https://github.com/topics/unit-testing"
+                    },
+                    {
+                        "resourcePath": "/topics/correctness-verification",
+                        "topic": {
+                            "name": "correctness-verification"
+                        },
+                        "url": "https://github.com/topics/correctness-verification"
+                    },
+                    {
+                        "resourcePath": "/topics/assertion-framework",
+                        "topic": {
+                            "name": "assertion-framework"
+                        },
+                        "url": "https://github.com/topics/assertion-framework"
+                    }
+                ],
+                "totalCount": 5
             }
         },
         "BerkeleyLab/upcxx": {

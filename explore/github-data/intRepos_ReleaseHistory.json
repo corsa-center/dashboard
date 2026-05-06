@@ -3247,6 +3247,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "LLVM 22.1.5",
+                        "publishedAt": "2026-05-05T18:49:52Z",
+                        "tagName": "llvmorg-22.1.5"
+                    },
+                    {
                         "name": "LLVM 22.1.4",
                         "publishedAt": "2026-04-21T08:48:59Z",
                         "tagName": "llvmorg-22.1.4"

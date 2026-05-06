@@ -71,7 +71,13 @@
     "BerkeleyLab/julienne": {
         "description": "A Fortran 2023 correctness-checking framework supporting expressive idioms for writing assertions and tests",
         "name": "BerkeleyLab/julienne",
-        "topics": null,
+        "topics": [
+            "fortran2023",
+            "fortran",
+            "unit-testing",
+            "correctness-verification",
+            "assertion-framework"
+        ],
         "website": ""
     },
     "BerkeleyLab/upcxx": {

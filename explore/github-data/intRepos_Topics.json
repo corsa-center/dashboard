@@ -279,6 +279,90 @@
                 "totalCount": 10
             }
         },
+        "BerkeleyLab/gasnet": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/asynchronous-programming",
+                        "topic": {
+                            "name": "asynchronous-programming"
+                        },
+                        "url": "https://github.com/topics/asynchronous-programming"
+                    },
+                    {
+                        "resourcePath": "/topics/communication-library",
+                        "topic": {
+                            "name": "communication-library"
+                        },
+                        "url": "https://github.com/topics/communication-library"
+                    },
+                    {
+                        "resourcePath": "/topics/distributed-computing",
+                        "topic": {
+                            "name": "distributed-computing"
+                        },
+                        "url": "https://github.com/topics/distributed-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/exascale-computing",
+                        "topic": {
+                            "name": "exascale-computing"
+                        },
+                        "url": "https://github.com/topics/exascale-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/hpc",
+                        "topic": {
+                            "name": "hpc"
+                        },
+                        "url": "https://github.com/topics/hpc"
+                    },
+                    {
+                        "resourcePath": "/topics/library",
+                        "topic": {
+                            "name": "library"
+                        },
+                        "url": "https://github.com/topics/library"
+                    },
+                    {
+                        "resourcePath": "/topics/networking-stack",
+                        "topic": {
+                            "name": "networking-stack"
+                        },
+                        "url": "https://github.com/topics/networking-stack"
+                    },
+                    {
+                        "resourcePath": "/topics/parallel-computing",
+                        "topic": {
+                            "name": "parallel-computing"
+                        },
+                        "url": "https://github.com/topics/parallel-computing"
+                    },
+                    {
+                        "resourcePath": "/topics/pgas",
+                        "topic": {
+                            "name": "pgas"
+                        },
+                        "url": "https://github.com/topics/pgas"
+                    },
+                    {
+                        "resourcePath": "/topics/rma",
+                        "topic": {
+                            "name": "rma"
+                        },
+                        "url": "https://github.com/topics/rma"
+                    },
+                    {
+                        "resourcePath": "/topics/active-messages",
+                        "topic": {
+                            "name": "active-messages"
+                        },
+                        "url": "https://github.com/topics/active-messages"
+                    }
+                ],
+                "totalCount": 11
+            }
+        },
         "BerkeleyLab/julienne": {
             "repositoryTopics": {
                 "nodes": [

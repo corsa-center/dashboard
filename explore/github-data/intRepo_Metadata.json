@@ -68,6 +68,24 @@
         ],
         "website": ""
     },
+    "BerkeleyLab/gasnet": {
+        "description": "The main repository for the GASNet/GASNet-EX communication library",
+        "name": "BerkeleyLab/gasnet",
+        "topics": [
+            "asynchronous-programming",
+            "communication-library",
+            "distributed-computing",
+            "exascale-computing",
+            "hpc",
+            "library",
+            "networking-stack",
+            "parallel-computing",
+            "pgas",
+            "rma",
+            "active-messages"
+        ],
+        "website": "https://gasnet.lbl.gov/"
+    },
     "BerkeleyLab/julienne": {
         "description": "A Fortran 2023 correctness-checking framework supporting expressive idioms for writing assertions and tests",
         "name": "BerkeleyLab/julienne",

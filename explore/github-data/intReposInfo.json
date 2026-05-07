@@ -39,10 +39,10 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 276
+                "totalCount": 277
             },
             "pullRequests_Merged": {
-                "totalCount": 3828
+                "totalCount": 3829
             },
             "pullRequests_Open": {
                 "totalCount": 37
@@ -276,6 +276,61 @@
             },
             "url": "https://github.com/BerkeleyLab/fiats"
         },
+        "BerkeleyLab/gasnet": {
+            "createdAt": "2026-05-05T18:16:23Z",
+            "defaultBranchRef": {
+                "name": "develop"
+            },
+            "description": "The main repository for the GASNet/GASNet-EX communication library",
+            "forks": {
+                "totalCount": 2
+            },
+            "homepageUrl": "https://gasnet.lbl.gov/",
+            "issues_Closed": {
+                "totalCount": 0
+            },
+            "issues_Open": {
+                "totalCount": 0
+            },
+            "languages": {
+                "totalCount": 7
+            },
+            "licenseInfo": {
+                "name": "Other",
+                "nickname": null,
+                "spdxId": "NOASSERTION",
+                "url": "http://choosealicense.com/licenses/other/"
+            },
+            "mentionableUsers": {
+                "totalCount": 2
+            },
+            "name": "gasnet",
+            "nameWithOwner": "BerkeleyLab/gasnet",
+            "owner": {
+                "avatarUrl": "https://avatars.githubusercontent.com/u/18706005?v=4",
+                "login": "BerkeleyLab"
+            },
+            "parent": null,
+            "primaryLanguage": {
+                "name": "C"
+            },
+            "pullRequests_Closed": {
+                "totalCount": 0
+            },
+            "pullRequests_Merged": {
+                "totalCount": 0
+            },
+            "pullRequests_Open": {
+                "totalCount": 1
+            },
+            "repositoryTopics": {
+                "totalCount": 11
+            },
+            "stargazers": {
+                "totalCount": 1
+            },
+            "url": "https://github.com/BerkeleyLab/gasnet"
+        },
         "BerkeleyLab/julienne": {
             "createdAt": "2024-06-18T00:14:54Z",
             "defaultBranchRef": {
@@ -397,10 +452,10 @@
             },
             "homepageUrl": "https://libceed.org",
             "issues_Closed": {
-                "totalCount": 321
+                "totalCount": 323
             },
             "issues_Open": {
-                "totalCount": 40
+                "totalCount": 38
             },
             "languages": {
                 "totalCount": 9
@@ -492,7 +547,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 328
+                "totalCount": 329
             },
             "url": "https://github.com/CHIP-SPV/chipStar"
         },
@@ -613,7 +668,7 @@
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 928
+                "totalCount": 929
             },
             "issues_Open": {
                 "totalCount": 299
@@ -644,10 +699,10 @@
                 "totalCount": 474
             },
             "pullRequests_Merged": {
-                "totalCount": 4620
+                "totalCount": 4622
             },
             "pullRequests_Open": {
-                "totalCount": 21
+                "totalCount": 22
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -809,10 +864,10 @@
                 "totalCount": 173
             },
             "pullRequests_Merged": {
-                "totalCount": 1200
+                "totalCount": 1202
             },
             "pullRequests_Open": {
-                "totalCount": 12
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -1001,7 +1056,7 @@
                 "totalCount": 241
             },
             "issues_Open": {
-                "totalCount": 104
+                "totalCount": 105
             },
             "languages": {
                 "totalCount": 9
@@ -1130,7 +1185,7 @@
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             },
             "mentionableUsers": {
-                "totalCount": 38
+                "totalCount": 39
             },
             "name": "pcms",
             "nameWithOwner": "SCOREC/pcms",
@@ -1201,7 +1256,7 @@
                 "totalCount": 4
             },
             "pullRequests_Merged": {
-                "totalCount": 59
+                "totalCount": 60
             },
             "pullRequests_Open": {
                 "totalCount": 7
@@ -1336,7 +1391,7 @@
                 "totalCount": 9
             },
             "languages": {
-                "totalCount": 26
+                "totalCount": 27
             },
             "licenseInfo": {
                 "name": "Other",
@@ -1416,10 +1471,10 @@
                 "totalCount": 32
             },
             "pullRequests_Merged": {
-                "totalCount": 174
+                "totalCount": 176
             },
             "pullRequests_Open": {
-                "totalCount": 17
+                "totalCount": 16
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -1747,7 +1802,7 @@
                 "totalCount": 171
             },
             "pullRequests_Merged": {
-                "totalCount": 1253
+                "totalCount": 1255
             },
             "pullRequests_Open": {
                 "totalCount": 37
@@ -1977,7 +2032,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 589
+                "totalCount": 594
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -2021,7 +2076,7 @@
                 "totalCount": 512
             },
             "issues_Open": {
-                "totalCount": 133
+                "totalCount": 134
             },
             "languages": {
                 "totalCount": 15
@@ -2113,7 +2168,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 111
+                "totalCount": 112
             },
             "url": "https://github.com/icl-utk-edu/magma"
         },
@@ -2187,7 +2242,7 @@
                 "totalCount": 2798
             },
             "issues_Open": {
-                "totalCount": 497
+                "totalCount": 498
             },
             "languages": {
                 "totalCount": 11
@@ -2212,19 +2267,19 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 746
+                "totalCount": 747
             },
             "pullRequests_Merged": {
-                "totalCount": 5010
+                "totalCount": 5013
             },
             "pullRequests_Open": {
-                "totalCount": 105
+                "totalCount": 104
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2524
+                "totalCount": 2527
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2271,7 +2326,7 @@
                 "totalCount": 202
             },
             "pullRequests_Merged": {
-                "totalCount": 1913
+                "totalCount": 1914
             },
             "pullRequests_Open": {
                 "totalCount": 40
@@ -2445,7 +2500,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 651
+                "totalCount": 653
             },
             "url": "https://github.com/llnl/sundials"
         },
@@ -2511,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 14785
+                "totalCount": 14805
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 65968
+                "totalCount": 65985
             },
             "issues_Open": {
-                "totalCount": 28451
+                "totalCount": 28468
             },
             "languages": {
                 "totalCount": 56
@@ -2530,7 +2585,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 5972
+                "totalCount": 5973
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2543,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 9819
+                "totalCount": 9836
             },
             "pullRequests_Merged": {
-                "totalCount": 83001
+                "totalCount": 83172
             },
             "pullRequests_Open": {
-                "totalCount": 7356
+                "totalCount": 7373
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 38183
+                "totalCount": 38199
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2566,7 +2621,7 @@
             },
             "description": "Lightweight, general, scalable C++ library for finite element methods",
             "forks": {
-                "totalCount": 600
+                "totalCount": 599
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
@@ -2598,13 +2653,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 408
+                "totalCount": 410
             },
             "pullRequests_Merged": {
                 "totalCount": 1996
             },
             "pullRequests_Open": {
-                "totalCount": 147
+                "totalCount": 145
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2625,10 +2680,10 @@
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
-                "totalCount": 3205
+                "totalCount": 3207
             },
             "issues_Open": {
-                "totalCount": 720
+                "totalCount": 719
             },
             "languages": {
                 "totalCount": 13
@@ -2656,16 +2711,16 @@
                 "totalCount": 1102
             },
             "pullRequests_Merged": {
-                "totalCount": 8755
+                "totalCount": 8756
             },
             "pullRequests_Open": {
-                "totalCount": 83
+                "totalCount": 86
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2579
+                "totalCount": 2581
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2677,7 +2732,7 @@
             },
             "description": "Next generation of ADIOS developed in the Exascale Computing Program",
             "forks": {
-                "totalCount": 141
+                "totalCount": 140
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
@@ -2712,10 +2767,10 @@
                 "totalCount": 682
             },
             "pullRequests_Merged": {
-                "totalCount": 3030
+                "totalCount": 3031
             },
             "pullRequests_Open": {
-                "totalCount": 7
+                "totalCount": 6
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2758,7 +2813,7 @@
             },
             "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
             "forks": {
-                "totalCount": 279
+                "totalCount": 280
             },
             "homepageUrl": "https://gitlab.com/petsc/petsc",
             "languages": {
@@ -2773,7 +2828,7 @@
                 "name": "C"
             },
             "stargazers": {
-                "totalCount": 177
+                "totalCount": 178
             },
             "url": "https://gitlab.com/petsc/petsc"
         },
@@ -2877,7 +2932,7 @@
                 "totalCount": 3315
             },
             "pullRequests_Open": {
-                "totalCount": 62
+                "totalCount": 63
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2894,7 +2949,7 @@
             },
             "description": "Pytorch-based framework for solving parametric constrained optimization problems, physics-informed system identification, and parametric model predictive control. ",
             "forks": {
-                "totalCount": 173
+                "totalCount": 172
             },
             "homepageUrl": "https://pnnl.github.io/neuromancer/",
             "issues_Closed": {
@@ -3061,11 +3116,11 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2310
+                "totalCount": 2311
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7880
+                "totalCount": 7881
             },
             "issues_Open": {
                 "totalCount": 1334
@@ -3093,10 +3148,10 @@
                 "name": "Python"
             },
             "pullRequests_Closed": {
-                "totalCount": 5171
+                "totalCount": 5172
             },
             "pullRequests_Merged": {
-                "totalCount": 37108
+                "totalCount": 37111
             },
             "pullRequests_Open": {
                 "totalCount": 397
@@ -3105,7 +3160,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 5030
+                "totalCount": 5033
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3174,7 +3229,7 @@
                 "totalCount": 5365
             },
             "issues_Open": {
-                "totalCount": 267
+                "totalCount": 268
             },
             "languages": {
                 "totalCount": 33
@@ -3202,10 +3257,10 @@
                 "totalCount": 1209
             },
             "pullRequests_Merged": {
-                "totalCount": 8240
+                "totalCount": 8241
             },
             "pullRequests_Open": {
-                "totalCount": 70
+                "totalCount": 73
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3261,13 +3316,13 @@
                 "totalCount": 3460
             },
             "pullRequests_Open": {
-                "totalCount": 17
+                "totalCount": 18
             },
             "repositoryTopics": {
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 513
+                "totalCount": 514
             },
             "url": "https://github.com/visit-dav/visit"
         },
@@ -3278,7 +3333,7 @@
             },
             "description": "Visualization Toolkit",
             "forks": {
-                "totalCount": 956
+                "totalCount": 957
             },
             "homepageUrl": "https://gitlab.kitware.com/vtk/vtk",
             "languages": {

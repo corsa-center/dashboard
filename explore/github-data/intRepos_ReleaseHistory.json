@@ -740,6 +740,127 @@
                 ]
             }
         },
+        "BerkeleyLab/gasnet": {
+            "releases": {
+                "nodes": [
+                    {
+                        "name": "GASNet-EX 2025.8.0",
+                        "publishedAt": "2026-05-06T23:02:12Z",
+                        "tagName": "gex-2025.8.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2024.5.0",
+                        "publishedAt": "2026-05-06T23:00:41Z",
+                        "tagName": "gex-2024.5.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2023.9.0",
+                        "publishedAt": "2026-05-06T22:58:56Z",
+                        "tagName": "gex-2023.9.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2023.3.0",
+                        "publishedAt": "2026-05-06T22:57:37Z",
+                        "tagName": "gex-2023.3.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2022.9.2 Release (bug fix release)",
+                        "publishedAt": "2026-05-06T22:56:34Z",
+                        "tagName": "gex-2022.9.2"
+                    },
+                    {
+                        "name": "GASNet-EX 2022.9.0, 20th Anniversary Release",
+                        "publishedAt": "2026-05-06T22:55:15Z",
+                        "tagName": "gex-2022.9.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2022.3.0 Release",
+                        "publishedAt": "2026-05-06T22:53:31Z",
+                        "tagName": "gex-2022.3.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2021.9.0 Release",
+                        "publishedAt": "2026-05-06T22:52:31Z",
+                        "tagName": "gex-2021.9.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2021.3.0 Release",
+                        "publishedAt": "2026-05-06T22:50:36Z",
+                        "tagName": "gex-2021.3.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2020.11.0 \"Memory Kinds\" Prototype Release",
+                        "publishedAt": "2026-05-06T22:49:08Z",
+                        "tagName": "gex-2020.11.0-memory_kinds"
+                    },
+                    {
+                        "name": "GASNet-EX 2020.10.0 Release",
+                        "publishedAt": "2026-05-06T22:47:38Z",
+                        "tagName": "gex-2020.10.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2020.3.0 Release",
+                        "publishedAt": "2026-05-06T22:46:06Z",
+                        "tagName": "gex-2020.3.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2019.9.0 Release",
+                        "publishedAt": "2026-05-06T22:44:14Z",
+                        "tagName": "gex-2019.9.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2019.6.0 Release",
+                        "publishedAt": "2026-05-06T22:40:26Z",
+                        "tagName": "gex-2019.6.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2019.3.2 Release (bug fix release)",
+                        "publishedAt": "2026-05-06T22:37:32Z",
+                        "tagName": "gex-2019.3.2"
+                    },
+                    {
+                        "name": "GASNet-EX 2019.3.0 Release",
+                        "publishedAt": "2026-05-06T22:36:31Z",
+                        "tagName": "gex-2019.3.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2018.12.0 Beta Release",
+                        "publishedAt": "2026-05-06T22:35:22Z",
+                        "tagName": "gex-2018.12.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2018.9.0 Release",
+                        "publishedAt": "2026-05-06T22:33:49Z",
+                        "tagName": "gex-2018.9.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2018.6.0 Beta Release",
+                        "publishedAt": "2026-05-06T22:32:48Z",
+                        "tagName": "gex-2018.6.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2018.3.0 Release",
+                        "publishedAt": "2026-05-06T22:30:43Z",
+                        "tagName": "gex-2018.3.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2017.12.0 Beta release",
+                        "publishedAt": "2026-05-06T22:29:23Z",
+                        "tagName": "gex-2017.12.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2017.9.0 Release",
+                        "publishedAt": "2026-05-06T22:26:33Z",
+                        "tagName": "gex-2017.9.0"
+                    },
+                    {
+                        "name": "GASNet-EX 2017.6.0 Beta release",
+                        "publishedAt": "2026-05-06T22:20:53Z",
+                        "tagName": "gex-2017.6.0"
+                    }
+                ]
+            }
+        },
         "BerkeleyLab/julienne": {
             "releases": {
                 "nodes": [

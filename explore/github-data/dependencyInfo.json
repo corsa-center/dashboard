@@ -3392,22 +3392,6 @@
                 "login": "pierotofy"
             }
         },
-        "plotly/plotly.py": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "plotly.py",
-            "nameWithOwner": "plotly/plotly.py",
-            "owner": {
-                "isVerified": true,
-                "login": "plotly"
-            }
-        },
         "potassco/clingo": {
             "languages": {
                 "nodes": [
@@ -4500,6 +4484,21 @@
                 "login": "scipy"
             }
         },
+        "seanmiddleditch/gha-setup-ninja": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#f1e05a",
+                        "name": "JavaScript"
+                    }
+                ]
+            },
+            "name": "gha-setup-ninja",
+            "nameWithOwner": "seanmiddleditch/gha-setup-ninja",
+            "owner": {
+                "login": "seanmiddleditch"
+            }
+        },
         "serde-rs/json": {
             "languages": {
                 "nodes": [
@@ -5453,6 +5452,21 @@
             "owner": {
                 "isVerified": true,
                 "login": "vmactions"
+            }
+        },
+        "vsoch/zenodo-validator": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "zenodo-validator",
+            "nameWithOwner": "vsoch/zenodo-validator",
+            "owner": {
+                "login": "vsoch"
             }
         },
         "wbolster/qualname": {

@@ -7227,6 +7227,16 @@
             "login": "Helblindi",
             "name": "Madison Sheridan"
         },
+        "HelenW42": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/212754434?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "SCOREC/pcms"
+                ]
+            },
+            "login": "HelenW42",
+            "name": null
+        },
         "Hello71": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/351006?v=4",
             "contributedLabRepositories": {
@@ -13212,6 +13222,7 @@
                 "nodes": [
                     "BerkeleyLab/caffeine",
                     "BerkeleyLab/fiats",
+                    "BerkeleyLab/gasnet",
                     "BerkeleyLab/upcxx",
                     "StanfordLegion/legion",
                     "spack/spack"
@@ -15124,6 +15135,16 @@
             },
             "login": "SLTozer",
             "name": "Stephen Tozer"
+        },
+        "SabYic": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/117455038?u=fd78694f416f3b3c8e075aa65943ebdd953584bf&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "SabYic",
+            "name": "Phoenixtree"
         },
         "SadiinsoSnowfall": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/32017313?u=65eccc64762e588fa7e25e153921b9da2bbf9321&v=4",
@@ -24625,14 +24646,14 @@
             "name": "Annu"
         },
         "annuasd": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/97934297?u=24556237e2e9c94e8f5a48314d20e172fe8b0456&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/97934297?u=9ad64aa7565210561ea9a9332098d73fca363c61&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
                 ]
             },
             "login": "annuasd",
-            "name": "yibo"
+            "name": "\u725b\u5955\u535a"
         },
         "anoopjs": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1087188?u=b88fbcca5833c454d6502e2d7e0f9cbd2ef5b15c&v=4",
@@ -29512,6 +29533,7 @@
                     "BerkeleyLab/StFT",
                     "BerkeleyLab/caffeine",
                     "BerkeleyLab/fiats",
+                    "BerkeleyLab/gasnet",
                     "BerkeleyLab/julienne",
                     "BerkeleyLab/upcxx",
                     "llvm/llvm-project",
@@ -40988,7 +41010,7 @@
             "name": "Eun Kyung Lee"
         },
         "el-ev": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/68013339?u=8cd2297c15ecf4b64f70352f0badbbc640859839&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/68013339?u=b22902e9d36e4620400ac733cadd3f9f51086bac&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"

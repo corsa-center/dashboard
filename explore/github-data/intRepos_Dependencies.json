@@ -11358,9 +11358,9 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "clingo",
+                                    "packageName": "pip",
                                     "repository": {
-                                        "nameWithOwner": "potassco/clingo"
+                                        "nameWithOwner": "pypa/pip"
                                     }
                                 }
                             ]

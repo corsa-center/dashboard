@@ -744,6 +744,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Current Stable Tarball",
+                        "publishedAt": "2026-05-13T22:14:26Z",
+                        "tagName": "gex-stable"
+                    },
+                    {
                         "name": "GASNet-EX 2025.8.0",
                         "publishedAt": "2026-05-06T23:02:12Z",
                         "tagName": "gex-2025.8.0"

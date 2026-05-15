@@ -126,7 +126,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 35444324
+                        "size": 35444013
                     },
                     {
                         "size": 573947
@@ -213,7 +213,7 @@
                     }
                 ],
                 "totalCount": 12,
-                "totalSize": 37958037
+                "totalSize": 37957726
             }
         },
         "BerkeleyLab/StFT": {
@@ -243,7 +243,7 @@
                         "size": 276764
                     },
                     {
-                        "size": 22824
+                        "size": 22849
                     }
                 ],
                 "nodes": [
@@ -261,7 +261,7 @@
                     }
                 ],
                 "totalCount": 3,
-                "totalSize": 643619
+                "totalSize": 643644
             }
         },
         "BerkeleyLab/fiats": {
@@ -299,7 +299,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 5939580
+                        "size": 5940773
                     },
                     {
                         "size": 734414
@@ -351,7 +351,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 7403400
+                "totalSize": 7404593
             }
         },
         "BerkeleyLab/julienne": {
@@ -2896,10 +2896,10 @@
                         "size": 11081679
                     },
                     {
-                        "size": 295629
+                        "size": 295853
                     },
                     {
-                        "size": 61439
+                        "size": 63788
                     },
                     {
                         "size": 49444
@@ -2973,20 +2973,20 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 11519472
+                "totalSize": 11522045
             }
         },
         "kokkos/kokkos-kernels": {
             "languages": {
                 "edges": [
                     {
-                        "size": 13255347
+                        "size": 13258160
                     },
                     {
                         "size": 379473
                     },
                     {
-                        "size": 195502
+                        "size": 196027
                     },
                     {
                         "size": 158788
@@ -3032,7 +3032,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 14088612
+                "totalSize": 14091950
             }
         },
         "llnl/libROM": {
@@ -3324,49 +3324,49 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 722836038
+                        "size": 723394500
                     },
                     {
-                        "size": 534445587
+                        "size": 534634618
                     },
                     {
-                        "size": 222033213
+                        "size": 222235281
                     },
                     {
-                        "size": 193292848
+                        "size": 193366615
                     },
                     {
-                        "size": 28184179
+                        "size": 28212479
                     },
                     {
-                        "size": 14766160
+                        "size": 14773842
                     },
                     {
-                        "size": 12701797
+                        "size": 12733169
                     },
                     {
-                        "size": 5492670
+                        "size": 5499300
                     },
                     {
-                        "size": 4688538
+                        "size": 4692511
                     },
                     {
-                        "size": 4456297
+                        "size": 4457296
                     },
                     {
                         "size": 2925930
                     },
                     {
-                        "size": 2245926
+                        "size": 2245925
                     },
                     {
-                        "size": 1568231
+                        "size": 1550169
                     },
                     {
                         "size": 1397129
                     },
                     {
-                        "size": 1382134
+                        "size": 1381154
                     },
                     {
                         "size": 1216720
@@ -3390,7 +3390,7 @@
                         "size": 127345
                     },
                     {
-                        "size": 110256
+                        "size": 110303
                     },
                     {
                         "size": 96393
@@ -3626,7 +3626,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1756114009
+                "totalSize": 1757197297
             }
         },
         "mfem/mfem": {
@@ -4763,7 +4763,7 @@
                         "size": 1319340
                     },
                     {
-                        "size": 1126270
+                        "size": 1126654
                     },
                     {
                         "size": 417170
@@ -4902,7 +4902,7 @@
                     }
                 ],
                 "totalCount": 22,
-                "totalSize": 99146744
+                "totalSize": 99147128
             }
         },
         "xiaoyeli/superlu": {

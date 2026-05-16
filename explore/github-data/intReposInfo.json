@@ -7,7 +7,7 @@
             },
             "description": "AMReX: Software Framework for Block Structured AMR",
             "forks": {
-                "totalCount": 427
+                "totalCount": 426
             },
             "homepageUrl": "https://amrex-codes.github.io/amrex",
             "issues_Closed": {
@@ -42,16 +42,16 @@
                 "totalCount": 277
             },
             "pullRequests_Merged": {
-                "totalCount": 3831
+                "totalCount": 3832
             },
             "pullRequests_Open": {
-                "totalCount": 44
+                "totalCount": 43
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 743
+                "totalCount": 744
             },
             "url": "https://github.com/AMReX-Codes/amrex"
         },
@@ -437,7 +437,7 @@
                 "totalCount": 15
             },
             "stargazers": {
-                "totalCount": 2
+                "totalCount": 3
             },
             "url": "https://github.com/BerkeleyLab/upcxx"
         },
@@ -452,7 +452,7 @@
             },
             "homepageUrl": "https://libceed.org",
             "issues_Closed": {
-                "totalCount": 323
+                "totalCount": 324
             },
             "issues_Open": {
                 "totalCount": 38
@@ -467,7 +467,7 @@
                 "url": "http://choosealicense.com/licenses/bsd-2-clause/"
             },
             "mentionableUsers": {
-                "totalCount": 90
+                "totalCount": 91
             },
             "name": "libCEED",
             "nameWithOwner": "CEED/libCEED",
@@ -483,10 +483,10 @@
                 "totalCount": 91
             },
             "pullRequests_Merged": {
-                "totalCount": 1483
+                "totalCount": 1485
             },
             "pullRequests_Open": {
-                "totalCount": 15
+                "totalCount": 14
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -702,13 +702,13 @@
                 "totalCount": 4626
             },
             "pullRequests_Open": {
-                "totalCount": 21
+                "totalCount": 22
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 936
+                "totalCount": 937
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -998,10 +998,10 @@
             },
             "homepageUrl": "https://parallel-netcdf.github.io",
             "issues_Closed": {
-                "totalCount": 34
+                "totalCount": 35
             },
             "issues_Open": {
-                "totalCount": 20
+                "totalCount": 19
             },
             "languages": {
                 "totalCount": 10
@@ -1029,10 +1029,10 @@
                 "totalCount": 17
             },
             "pullRequests_Merged": {
-                "totalCount": 148
+                "totalCount": 149
             },
             "pullRequests_Open": {
-                "totalCount": 6
+                "totalCount": 5
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -1204,7 +1204,7 @@
                 "totalCount": 119
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -1333,7 +1333,7 @@
                 "totalCount": 1209
             },
             "issues_Open": {
-                "totalCount": 303
+                "totalCount": 304
             },
             "languages": {
                 "totalCount": 18
@@ -1468,13 +1468,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 32
+                "totalCount": 34
             },
             "pullRequests_Merged": {
-                "totalCount": 177
+                "totalCount": 178
             },
             "pullRequests_Open": {
-                "totalCount": 19
+                "totalCount": 17
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -2026,7 +2026,7 @@
                 "totalCount": 1240
             },
             "pullRequests_Open": {
-                "totalCount": 70
+                "totalCount": 71
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2107,7 +2107,7 @@
                 "totalCount": 797
             },
             "pullRequests_Open": {
-                "totalCount": 36
+                "totalCount": 37
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2235,7 +2235,7 @@
             },
             "description": "Kokkos C++ Performance Portability Programming Ecosystem: The Programming Model - Parallel Execution and Memory Abstraction",
             "forks": {
-                "totalCount": 480
+                "totalCount": 481
             },
             "homepageUrl": "https://kokkos.org",
             "issues_Closed": {
@@ -2273,13 +2273,13 @@
                 "totalCount": 5033
             },
             "pullRequests_Open": {
-                "totalCount": 93
+                "totalCount": 95
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2532
+                "totalCount": 2535
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2326,7 +2326,7 @@
                 "totalCount": 206
             },
             "pullRequests_Merged": {
-                "totalCount": 1938
+                "totalCount": 1939
             },
             "pullRequests_Open": {
                 "totalCount": 33
@@ -2463,7 +2463,7 @@
                 "totalCount": 218
             },
             "issues_Open": {
-                "totalCount": 36
+                "totalCount": 37
             },
             "languages": {
                 "totalCount": 12
@@ -2494,7 +2494,7 @@
                 "totalCount": 544
             },
             "pullRequests_Open": {
-                "totalCount": 20
+                "totalCount": 21
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 14869
+                "totalCount": 14879
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 66147
+                "totalCount": 66167
             },
             "issues_Open": {
-                "totalCount": 28539
+                "totalCount": 28544
             },
             "languages": {
                 "totalCount": 56
@@ -2585,7 +2585,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6012
+                "totalCount": 6019
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 9978
+                "totalCount": 9994
             },
             "pullRequests_Merged": {
-                "totalCount": 84225
+                "totalCount": 84383
             },
             "pullRequests_Open": {
-                "totalCount": 7569
+                "totalCount": 7574
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 38335
+                "totalCount": 38346
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2653,13 +2653,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 411
+                "totalCount": 412
             },
             "pullRequests_Merged": {
                 "totalCount": 1999
             },
             "pullRequests_Open": {
-                "totalCount": 145
+                "totalCount": 147
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2714,13 +2714,13 @@
                 "totalCount": 8778
             },
             "pullRequests_Open": {
-                "totalCount": 79
+                "totalCount": 80
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2584
+                "totalCount": 2582
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2736,10 +2736,10 @@
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
-                "totalCount": 1213
+                "totalCount": 1214
             },
             "issues_Open": {
-                "totalCount": 47
+                "totalCount": 46
             },
             "languages": {
                 "totalCount": 14
@@ -2764,13 +2764,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 683
+                "totalCount": 684
             },
             "pullRequests_Merged": {
-                "totalCount": 3034
+                "totalCount": 3036
             },
             "pullRequests_Open": {
-                "totalCount": 9
+                "totalCount": 7
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2984,10 +2984,10 @@
                 "totalCount": 736
             },
             "pullRequests_Merged": {
-                "totalCount": 3316
+                "totalCount": 3318
             },
             "pullRequests_Open": {
-                "totalCount": 66
+                "totalCount": 65
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -3178,7 +3178,7 @@
                 "totalCount": 7883
             },
             "issues_Open": {
-                "totalCount": 1338
+                "totalCount": 1339
             },
             "languages": {
                 "totalCount": 14
@@ -3206,16 +3206,16 @@
                 "totalCount": 5176
             },
             "pullRequests_Merged": {
-                "totalCount": 37121
+                "totalCount": 37123
             },
             "pullRequests_Open": {
-                "totalCount": 400
+                "totalCount": 404
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 5038
+                "totalCount": 5041
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3315,13 +3315,13 @@
                 "totalCount": 8262
             },
             "pullRequests_Open": {
-                "totalCount": 82
+                "totalCount": 84
             },
             "repositoryTopics": {
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 1384
+                "totalCount": 1386
             },
             "url": "https://github.com/trilinos/Trilinos"
         },
@@ -3368,10 +3368,10 @@
                 "totalCount": 148
             },
             "pullRequests_Merged": {
-                "totalCount": 3462
+                "totalCount": 3466
             },
             "pullRequests_Open": {
-                "totalCount": 17
+                "totalCount": 14
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3388,7 +3388,7 @@
             },
             "description": "Visualization Toolkit",
             "forks": {
-                "totalCount": 958
+                "totalCount": 959
             },
             "homepageUrl": "https://gitlab.kitware.com/vtk/vtk",
             "languages": {

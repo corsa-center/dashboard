@@ -9897,6 +9897,32 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "psutil",
+                                    "repository": {
+                                        "nameWithOwner": "giampaolo/psutil"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pyyaml",
+                                    "repository": {
+                                        "nameWithOwner": "yaml/pyyaml"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "astroid",
                                     "repository": {
                                         "nameWithOwner": "pylint-dev/astroid"
@@ -10162,19 +10188,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "psutil",
-                                    "repository": {
-                                        "nameWithOwner": "giampaolo/psutil"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "cryptography",
                                     "repository": {
                                         "nameWithOwner": "pyca/cryptography"
@@ -10216,9 +10229,9 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "pyyaml",
+                                    "packageName": "nanobind",
                                     "repository": {
-                                        "nameWithOwner": "yaml/pyyaml"
+                                        "nameWithOwner": "wjakob/nanobind"
                                     }
                                 }
                             ]

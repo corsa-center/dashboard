@@ -33667,6 +33667,7 @@
                 "nodes": [
                     "CHIP-SPV/chipStar",
                     "HDFGroup/hdf5",
+                    "dyninst/dyninst",
                     "llvm/llvm-project",
                     "mfem/mfem",
                     "open-mpi/ompi",
@@ -48018,7 +48019,7 @@
             "name": "Harkirat Gill"
         },
         "harlanhaskins": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/853032?v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/853032?u=7dd26b4f9e74805756bd5b6a7aa3132f247f04e2&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"

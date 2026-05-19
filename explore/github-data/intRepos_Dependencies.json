@@ -8305,13 +8305,6 @@
                                 },
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "m2r2",
-                                    "repository": {
-                                        "nameWithOwner": "CrossNox/m2r2"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "markdown-it-py",
                                     "repository": {
                                         "nameWithOwner": "executablebooks/markdown-it-py"
@@ -8336,13 +8329,6 @@
                                     "packageName": "mdurl",
                                     "repository": {
                                         "nameWithOwner": "executablebooks/mdurl"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "mistune",
-                                    "repository": {
-                                        "nameWithOwner": "lepture/mistune"
                                     }
                                 },
                                 {
@@ -11439,9 +11425,9 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "pip",
+                                    "packageName": "coverage",
                                     "repository": {
-                                        "nameWithOwner": "pypa/pip"
+                                        "nameWithOwner": "coveragepy/coveragepy"
                                     }
                                 }
                             ]
@@ -11452,9 +11438,9 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "coverage",
+                                    "packageName": "pip",
                                     "repository": {
-                                        "nameWithOwner": "coveragepy/coveragepy"
+                                        "nameWithOwner": "pypa/pip"
                                     }
                                 }
                             ]

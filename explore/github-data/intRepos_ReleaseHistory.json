@@ -1278,6 +1278,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "v1.3.0",
+                        "publishedAt": "2026-05-20T17:07:03Z",
+                        "tagName": "v1.3.0"
+                    },
+                    {
                         "name": "v1.3-RC2",
                         "publishedAt": "2026-04-29T16:49:22Z",
                         "tagName": "v1.3-RC2"

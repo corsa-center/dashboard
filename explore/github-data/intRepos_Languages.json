@@ -2893,16 +2893,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11113308
+                        "size": 11167703
                     },
                     {
-                        "size": 302321
+                        "size": 302583
                     },
                     {
                         "size": 63988
                     },
                     {
-                        "size": 49448
+                        "size": 49451
                     },
                     {
                         "size": 15049
@@ -2973,7 +2973,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 11560383
+                "totalSize": 11615043
             }
         },
         "kokkos/kokkos-kernels": {
@@ -3324,10 +3324,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 724385607
+                        "size": 724411462
                     },
                     {
-                        "size": 535733951
+                        "size": 535744414
                     },
                     {
                         "size": 222378205
@@ -3336,7 +3336,7 @@
                         "size": 192439244
                     },
                     {
-                        "size": 28454180
+                        "size": 28458245
                     },
                     {
                         "size": 14791181
@@ -3351,7 +3351,7 @@
                         "size": 4719000
                     },
                     {
-                        "size": 4458396
+                        "size": 4458435
                     },
                     {
                         "size": 2925930
@@ -3626,14 +3626,14 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1758914518
+                "totalSize": 1758954940
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 19530149
+                        "size": 19530147
                     },
                     {
                         "size": 305110
@@ -3706,7 +3706,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 20182510
+                "totalSize": 20182508
             }
         },
         "open-mpi/ompi": {
@@ -4451,7 +4451,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 8078369
+                        "size": 8078315
                     },
                     {
                         "size": 523728
@@ -4552,7 +4552,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 8855790
+                "totalSize": 8855736
             }
         },
         "tpeterka/ChatVis": {

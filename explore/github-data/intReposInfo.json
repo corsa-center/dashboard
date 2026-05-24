@@ -547,7 +547,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 344
+                "totalCount": 346
             },
             "url": "https://github.com/CHIP-SPV/chipStar"
         },
@@ -1480,7 +1480,7 @@
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 71
+                "totalCount": 72
             },
             "url": "https://github.com/Viskores/viskores"
         },
@@ -1805,13 +1805,13 @@
                 "totalCount": 1272
             },
             "pullRequests_Open": {
-                "totalCount": 32
+                "totalCount": 33
             },
             "repositoryTopics": {
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 828
+                "totalCount": 829
             },
             "url": "https://github.com/dyninst/dyninst"
         },
@@ -1988,7 +1988,7 @@
             },
             "description": "Numerical linear algebra software package",
             "forks": {
-                "totalCount": 112
+                "totalCount": 113
             },
             "homepageUrl": "https://ginkgo-project.github.io/",
             "issues_Closed": {
@@ -2032,7 +2032,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 597
+                "totalCount": 596
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -2179,7 +2179,7 @@
             },
             "description": null,
             "forks": {
-                "totalCount": 86
+                "totalCount": 87
             },
             "homepageUrl": null,
             "issues_Closed": {
@@ -2254,7 +2254,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 192
+                "totalCount": 195
             },
             "name": "kokkos",
             "nameWithOwner": "kokkos/kokkos",
@@ -2270,10 +2270,10 @@
                 "totalCount": 751
             },
             "pullRequests_Merged": {
-                "totalCount": 5048
+                "totalCount": 5059
             },
             "pullRequests_Open": {
-                "totalCount": 100
+                "totalCount": 89
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -2456,7 +2456,7 @@
             },
             "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
             "forks": {
-                "totalCount": 161
+                "totalCount": 160
             },
             "homepageUrl": "https://computing.llnl.gov/projects/sundials",
             "issues_Closed": {
@@ -2511,7 +2511,7 @@
             },
             "description": "Compressed numerical arrays that support high-speed random access",
             "forks": {
-                "totalCount": 167
+                "totalCount": 166
             },
             "homepageUrl": "http://zfp.llnl.gov",
             "issues_Closed": {
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 14949
+                "totalCount": 14960
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 66297
+                "totalCount": 66306
             },
             "issues_Open": {
-                "totalCount": 28652
+                "totalCount": 28658
             },
             "languages": {
                 "totalCount": 56
@@ -2585,7 +2585,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6032
+                "totalCount": 6034
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 10086
+                "totalCount": 10093
             },
             "pullRequests_Merged": {
-                "totalCount": 85220
+                "totalCount": 85246
             },
             "pullRequests_Open": {
-                "totalCount": 7674
+                "totalCount": 7700
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 38460
+                "totalCount": 38481
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2621,14 +2621,14 @@
             },
             "description": "Lightweight, general, scalable C++ library for finite element methods",
             "forks": {
-                "totalCount": 602
+                "totalCount": 603
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
                 "totalCount": 2385
             },
             "issues_Open": {
-                "totalCount": 84
+                "totalCount": 85
             },
             "languages": {
                 "totalCount": 10
@@ -2653,7 +2653,7 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 414
+                "totalCount": 415
             },
             "pullRequests_Merged": {
                 "totalCount": 2005
@@ -2676,7 +2676,7 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 895
+                "totalCount": 893
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
@@ -2720,7 +2720,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2585
+                "totalCount": 2584
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2813,7 +2813,7 @@
             },
             "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
             "forks": {
-                "totalCount": 281
+                "totalCount": 280
             },
             "homepageUrl": "https://gitlab.com/petsc/petsc",
             "languages": {
@@ -2828,7 +2828,7 @@
                 "name": "C"
             },
             "stargazers": {
-                "totalCount": 179
+                "totalCount": 180
             },
             "url": "https://gitlab.com/petsc/petsc"
         },
@@ -3065,10 +3065,10 @@
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7885
+                "totalCount": 7886
             },
             "issues_Open": {
-                "totalCount": 1340
+                "totalCount": 1339
             },
             "languages": {
                 "totalCount": 14
@@ -3093,19 +3093,19 @@
                 "name": "Python"
             },
             "pullRequests_Closed": {
-                "totalCount": 5179
+                "totalCount": 5185
             },
             "pullRequests_Merged": {
-                "totalCount": 37140
+                "totalCount": 37144
             },
             "pullRequests_Open": {
-                "totalCount": 407
+                "totalCount": 397
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 5050
+                "totalCount": 5051
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3205,7 +3205,7 @@
                 "totalCount": 8282
             },
             "pullRequests_Open": {
-                "totalCount": 76
+                "totalCount": 79
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3278,7 +3278,7 @@
             },
             "description": "Visualization Toolkit",
             "forks": {
-                "totalCount": 962
+                "totalCount": 963
             },
             "homepageUrl": "https://gitlab.kitware.com/vtk/vtk",
             "languages": {

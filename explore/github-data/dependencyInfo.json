@@ -1011,21 +1011,6 @@
                 "login": "afdaniele"
             }
         },
-        "agronholm/anyio": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "anyio",
-            "nameWithOwner": "agronholm/anyio",
-            "owner": {
-                "login": "agronholm"
-            }
-        },
         "alexcapstick/alexs-visualisation-tools": {
             "languages": {
                 "nodes": [
@@ -1458,7 +1443,7 @@
             "name": "codecov-action",
             "nameWithOwner": "codecov/codecov-action",
             "owner": {
-                "isVerified": true,
+                "isVerified": false,
                 "login": "codecov"
             }
         },
@@ -1630,22 +1615,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "cython"
-            }
-        },
-        "dateutil/dateutil": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "dateutil",
-            "nameWithOwner": "dateutil/dateutil",
-            "owner": {
-                "isVerified": false,
-                "login": "dateutil"
             }
         },
         "dcchut/async-recursion": {
@@ -2244,22 +2213,6 @@
             "owner": {
                 "isVerified": true,
                 "login": "github"
-            }
-        },
-        "globus/globus-compute": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "globus-compute",
-            "nameWithOwner": "globus/globus-compute",
-            "owner": {
-                "isVerified": false,
-                "login": "globus"
             }
         },
         "googleapis/python-genai": {
@@ -3206,22 +3159,6 @@
                 "login": "mpi4py"
             }
         },
-        "mpmath/mpmath": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "mpmath",
-            "nameWithOwner": "mpmath/mpmath",
-            "owner": {
-                "isVerified": false,
-                "login": "mpmath"
-            }
-        },
         "mshick/add-pr-comment": {
             "languages": {
                 "nodes": [
@@ -3783,22 +3720,6 @@
             "owner": {
                 "isVerified": true,
                 "login": "pre-commit"
-            }
-        },
-        "prefix-dev/setup-pixi": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3178c6",
-                        "name": "TypeScript"
-                    }
-                ]
-            },
-            "name": "setup-pixi",
-            "nameWithOwner": "prefix-dev/setup-pixi",
-            "owner": {
-                "isVerified": true,
-                "login": "prefix-dev"
             }
         },
         "prettier/prettier": {
@@ -5521,22 +5442,6 @@
             "nameWithOwner": "termoshtt/katexit",
             "owner": {
                 "login": "termoshtt"
-            }
-        },
-        "testing-cabal/mock": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "mock",
-            "nameWithOwner": "testing-cabal/mock",
-            "owner": {
-                "isVerified": false,
-                "login": "testing-cabal"
             }
         },
         "theskumar/python-dotenv": {

@@ -51,7 +51,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 750
+                "totalCount": 751
             },
             "url": "https://github.com/AMReX-Codes/amrex"
         },
@@ -98,10 +98,10 @@
                 "totalCount": 79
             },
             "pullRequests_Merged": {
-                "totalCount": 933
+                "totalCount": 934
             },
             "pullRequests_Open": {
-                "totalCount": 11
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -664,7 +664,7 @@
             },
             "description": "Official HDF5\u00ae Library Repository",
             "forks": {
-                "totalCount": 335
+                "totalCount": 336
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
@@ -702,13 +702,13 @@
                 "totalCount": 4633
             },
             "pullRequests_Open": {
-                "totalCount": 22
+                "totalCount": 24
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 940
+                "totalCount": 941
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -767,7 +767,7 @@
             },
             "url": "https://github.com/HPCToolkit/hpctoolkit"
         },
-        "Lab-Notebooks/Codescribe": {
+        "Lab-Notebooks/CodeScribe": {
             "createdAt": "2024-09-26T06:06:23Z",
             "defaultBranchRef": {
                 "name": "development"
@@ -795,8 +795,8 @@
             "mentionableUsers": {
                 "totalCount": 4
             },
-            "name": "Codescribe",
-            "nameWithOwner": "Lab-Notebooks/Codescribe",
+            "name": "CodeScribe",
+            "nameWithOwner": "Lab-Notebooks/CodeScribe",
             "owner": {
                 "avatarUrl": "https://avatars.githubusercontent.com/u/141457799?v=4",
                 "login": "Lab-Notebooks"
@@ -820,7 +820,7 @@
             "stargazers": {
                 "totalCount": 18
             },
-            "url": "https://github.com/Lab-Notebooks/Codescribe"
+            "url": "https://github.com/Lab-Notebooks/CodeScribe"
         },
         "Libensemble/libensemble": {
             "createdAt": "2016-12-12T23:43:44Z",
@@ -1480,7 +1480,7 @@
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 73
+                "totalCount": 74
             },
             "url": "https://github.com/Viskores/viskores"
         },
@@ -1805,7 +1805,7 @@
                 "totalCount": 1277
             },
             "pullRequests_Open": {
-                "totalCount": 30
+                "totalCount": 31
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -1988,7 +1988,7 @@
             },
             "description": "Numerical linear algebra software package",
             "forks": {
-                "totalCount": 114
+                "totalCount": 115
             },
             "homepageUrl": "https://ginkgo-project.github.io/",
             "issues_Closed": {
@@ -2223,7 +2223,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 225
+                "totalCount": 226
             },
             "url": "https://github.com/icl-utk-edu/papi"
         },
@@ -2279,7 +2279,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2551
+                "totalCount": 2552
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2460,7 +2460,7 @@
             },
             "homepageUrl": "https://computing.llnl.gov/projects/sundials",
             "issues_Closed": {
-                "totalCount": 219
+                "totalCount": 220
             },
             "issues_Open": {
                 "totalCount": 37
@@ -2488,7 +2488,7 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 116
+                "totalCount": 117
             },
             "pullRequests_Merged": {
                 "totalCount": 557
@@ -2566,11 +2566,11 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 15025
+                "totalCount": 15034
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 66419
+                "totalCount": 66434
             },
             "issues_Open": {
                 "totalCount": 28702
@@ -2585,7 +2585,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6053
+                "totalCount": 6054
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 10185
+                "totalCount": 10190
             },
             "pullRequests_Merged": {
-                "totalCount": 85985
+                "totalCount": 86037
             },
             "pullRequests_Open": {
-                "totalCount": 7785
+                "totalCount": 7808
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 38556
+                "totalCount": 38573
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2625,10 +2625,10 @@
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
-                "totalCount": 2385
+                "totalCount": 2386
             },
             "issues_Open": {
-                "totalCount": 86
+                "totalCount": 85
             },
             "languages": {
                 "totalCount": 10
@@ -2676,7 +2676,7 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 893
+                "totalCount": 894
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
@@ -2720,7 +2720,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2586
+                "totalCount": 2589
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2813,7 +2813,7 @@
             },
             "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
             "forks": {
-                "totalCount": 280
+                "totalCount": 279
             },
             "homepageUrl": "https://gitlab.com/petsc/petsc",
             "languages": {
@@ -2839,7 +2839,7 @@
             },
             "description": "Structured Matrix Package (LBNL)",
             "forks": {
-                "totalCount": 50
+                "totalCount": 51
             },
             "homepageUrl": "http://portal.nersc.gov/project/sparse/strumpack/",
             "issues_Closed": {
@@ -3061,7 +3061,7 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2314
+                "totalCount": 2315
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
@@ -3093,19 +3093,19 @@
                 "name": "Python"
             },
             "pullRequests_Closed": {
-                "totalCount": 5189
+                "totalCount": 5192
             },
             "pullRequests_Merged": {
                 "totalCount": 37160
             },
             "pullRequests_Open": {
-                "totalCount": 400
+                "totalCount": 399
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 5062
+                "totalCount": 5063
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3167,7 +3167,7 @@
             },
             "description": "Primary repository for the Trilinos Project",
             "forks": {
-                "totalCount": 603
+                "totalCount": 605
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
@@ -3199,13 +3199,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 1211
+                "totalCount": 1212
             },
             "pullRequests_Merged": {
-                "totalCount": 8301
+                "totalCount": 8302
             },
             "pullRequests_Open": {
-                "totalCount": 76
+                "totalCount": 77
             },
             "repositoryTopics": {
                 "totalCount": 8

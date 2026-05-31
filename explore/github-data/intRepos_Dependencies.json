@@ -3525,7 +3525,7 @@
                 ]
             }
         },
-        "Lab-Notebooks/Codescribe": {
+        "Lab-Notebooks/CodeScribe": {
             "dependencyGraphManifests": {
                 "nodes": [
                     {
@@ -11418,19 +11418,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "coverage",
-                                    "repository": {
-                                        "nameWithOwner": "coveragepy/coveragepy"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "black",
                                     "repository": {
                                         "nameWithOwner": "psf/black"
@@ -11515,6 +11502,19 @@
                                     "packageName": "pip",
                                     "repository": {
                                         "nameWithOwner": "pypa/pip"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "coverage",
+                                    "repository": {
+                                        "nameWithOwner": "coveragepy/coveragepy"
                                     }
                                 }
                             ]

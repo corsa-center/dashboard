@@ -5097,6 +5097,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Trilinos 17.1.1",
+                        "publishedAt": "2026-05-31T19:18:34Z",
+                        "tagName": "trilinos-release-17-1-1"
+                    },
+                    {
                         "name": "Trilinos 17.1.0",
                         "publishedAt": "2026-05-18T20:00:37Z",
                         "tagName": "trilinos-release-17-1-0"

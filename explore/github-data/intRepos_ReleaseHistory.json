@@ -4,6 +4,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "AMReX 26.06",
+                        "publishedAt": "2026-06-01T16:14:58Z",
+                        "tagName": "26.06"
+                    },
+                    {
                         "name": "AMReX 26.05",
                         "publishedAt": "2026-05-01T16:45:20Z",
                         "tagName": "26.05"
@@ -3382,6 +3387,11 @@
         "llvm/llvm-project": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "LLVM 22.1.7",
+                        "publishedAt": "2026-06-02T06:31:02Z",
+                        "tagName": "llvmorg-22.1.7"
+                    },
                     {
                         "name": "LLVM 22.1.6",
                         "publishedAt": "2026-05-19T09:19:21Z",

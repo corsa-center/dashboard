@@ -7490,6 +7490,26 @@
                                 }
                             ]
                         }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "mxschmitt/action-tmate",
+                                    "repository": {
+                                        "nameWithOwner": "mxschmitt/action-tmate"
+                                    }
+                                }
+                            ]
+                        }
                     }
                 ]
             },
@@ -11479,19 +11499,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "pip",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/pip"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "coverage",
                                     "repository": {
                                         "nameWithOwner": "coveragepy/coveragepy"
@@ -11576,6 +11583,19 @@
                                     "packageName": "vermin",
                                     "repository": {
                                         "nameWithOwner": "netromdk/vermin"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
                                     }
                                 }
                             ]

@@ -3,7 +3,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Citations:</strong> 1,234 academic papers</p><p><strong>Downloads:</strong> 50,000+ per month</p><p><strong>Used by:</strong> NASA, CERN, National Labs</p>"
+      "data": null
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -13,19 +13,19 @@
   "sustainability": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": null
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 ✓</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> Not yet collected</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/HDFGroup/hdf5\">7.2/10</a> (12/18 checks passed) ✓</p>\n<p><strong>CHAOSS Governance Metrics:</strong> Not yet collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
-      "data": null
+      "data": "<p><strong>License:</strong> Other</p>\n<p><strong>Category:</strong> Unknown</p>\n<p><strong>OSI Approved:</strong> Unknown</p>\n<p><strong>Compliance Score:</strong> 2/3 (67%)</p>\n<p>License file exists: \u2713</p>\n<p>License identified: \u2713 (Other)</p>\n<p>OSI approved: ? (unknown)</p>"
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Last commit:</strong> 2 days ago</p><p><strong>Commit frequency:</strong> Daily</p><p><strong>Active maintainers:</strong> 15</p>"
+      "data": "<p><strong>Status:</strong> Active</p>\n<p><strong>Last Commit:</strong> 0 days ago</p>\n<p><strong>Commits (52 weeks):</strong> 432 (52 active weeks)</p>\n<p><strong>Trend:</strong> Stable</p>\n<p><strong>Contributors:</strong> 30 (bus factor: 2)</p>\n<p><strong>Score:</strong> 3/5 (60%)</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": null
+      "data": "<p><strong>Response Time Tracking:</strong> 9 hours ✓</p>\n<p><strong>Issue Resolution Analysis:</strong> 1078 hours ✗</p>\n<p><strong>Pull Request Flow Assessment:</strong> 80% ✓</p>\n<p><strong>Support Request Closure Analysis:</strong> 5.00 ✗</p>\n<p><strong>Engagement Quality Metrics:</strong> Not yet collected</p>\n<p><strong>Communication Pattern Analysis:</strong> Not yet collected</p>\n<p><strong>Community Participation Assessment:</strong> Not yet collected</p>\n<p><strong>Median PR Cycle Time:</strong> 89 hours</p>\n<p><strong>Score:</strong> 2/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -59,11 +59,11 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": null
+      "data": "<p><strong>CI/CD</strong></p>\n<p><strong>Score:</strong> 2/6 (33%)</p>\n<p><strong>OpenSSF Best Practices Badge</strong></p>\n<p><strong>Badge:</strong> <a href=\"https://www.bestpractices.dev/projects/7802\">In_progress</a> (100%)</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": null
+      "data": "<p><strong>Container:</strong> No</p>\n<p><strong>Dependency Pinning:</strong> No</p>\n<p><strong>FAIR4RS Metadata:</strong> No</p>\n<p><strong>Semantic Versioning:</strong> No</p>\n<p><strong>Score:</strong> 0/100</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -71,7 +71,7 @@
     },
     "4.3.5": {
       "title": "Accessibility",
-      "data": null
+      "data": "<p><strong>Portable Build System Detection:</strong> CMakeLists.txt ✓</p>\n<p><strong>Container Availability Assessment:</strong> No ✗</p>\n<p><strong>Architecture Compatibility Analysis:</strong> Not yet collected</p>\n<p><strong>Platform Documentation Evaluation:</strong> Not yet collected</p>\n<p><strong>Deployment Environment Testing:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",

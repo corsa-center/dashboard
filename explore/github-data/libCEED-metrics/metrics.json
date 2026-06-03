@@ -1,0 +1,85 @@
+{
+  "package": "CEED/libCEED",
+  "impact": {
+    "4.1.1": {
+      "title": "Software Citation and Adoption",
+      "data": null
+    },
+    "4.1.2": {
+      "title": "Field Research Impact",
+      "data": null
+    }
+  },
+  "sustainability": {
+    "4.2.1": {
+      "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
+      "data": "<p><strong>Code of Conduct:</strong> Not found</p>\n<p><strong>Governance:</strong> Not found</p>\n<p><strong>Contributing Guidelines:</strong> Not found</p>\n<p><strong>Score:</strong> 0/3</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/CEED/libCEED\">5/10</a> (5/14 checks passed)</p>"
+    },
+    "4.2.2": {
+      "title": "Open-Source Licensing and FAIR Compliance",
+      "data": "<p><strong>License:</strong> BSD-2-Clause</p>\n<p><strong>Category:</strong> Permissive</p>\n<p><strong>OSI Approved:</strong> Yes</p>\n<p><strong>Compliance Score:</strong> 3/3 (100%)</p>\n<p>License file exists: \u2713</p>\n<p>License identified: \u2713 (BSD 2-Clause \"Simplified\" License)</p>\n<p>OSI approved: \u2713</p>"
+    },
+    "4.2.3": {
+      "title": "Active Maintenance",
+      "data": "<p><strong>Status:</strong> Active</p>\n<p><strong>Last Commit:</strong> 1 days ago</p>\n<p><strong>Commits (52 weeks):</strong> 346 (44 active weeks)</p>\n<p><strong>Trend:</strong> Increasing</p>\n<p><strong>Contributors:</strong> 30 (bus factor: 2)</p>\n<p><strong>Score:</strong> 3/5 (60%)</p>"
+    },
+    "4.2.4": {
+      "title": "Engagement",
+      "data": "<p><strong>Median First Response:</strong> 5204 hours</p>\n<p><strong>Median Issue Close Time:</strong> 7604 hours</p>\n<p><strong>Open/Closed Issue Ratio:</strong> 0.60</p>\n<p><strong>Score:</strong> 15/100</p>"
+    },
+    "4.2.5": {
+      "title": "Outreach",
+      "data": null
+    },
+    "4.2.6": {
+      "title": "Welcomeness",
+      "data": null
+    },
+    "4.2.7": {
+      "title": "Collaboration",
+      "data": null
+    },
+    "4.2.8": {
+      "title": "Financial Sustainability",
+      "data": null
+    },
+    "4.2.9": {
+      "title": "Institutional & Organizational Support",
+      "data": null
+    },
+    "4.2.10": {
+      "title": "Project Longevity and Community Health",
+      "data": null
+    }
+  },
+  "quality": {
+    "4.3.1": {
+      "title": "Reliability and Robustness",
+      "data": null
+    },
+    "4.3.2": {
+      "title": "Development Practices",
+      "data": "<p><strong>CI/CD</strong></p>\n<p><strong>Score:</strong> 2/5 (40%)</p>\n<p><strong>OpenSSF Best Practices Badge</strong></p>\n<p><strong>Badge:</strong> Not registered</p>\n<p>Start OpenSSF Badge at: https://www.bestpractices.dev/projects/new</p>"
+    },
+    "4.3.3": {
+      "title": "Reproducibility",
+      "data": "<p><strong>Container:</strong> No</p>\n<p><strong>Dependency Pinning:</strong> No</p>\n<p><strong>FAIR4RS Metadata:</strong> No</p>\n<p><strong>Semantic Versioning:</strong> No</p>\n<p><strong>Score:</strong> 0/100</p>"
+    },
+    "4.3.4": {
+      "title": "Usability",
+      "data": null
+    },
+    "4.3.5": {
+      "title": "Accessibility",
+      "data": "<p><strong>Container:</strong> No</p>\n<p><strong>Portable Build System:</strong> No</p>\n<p><strong>Score:</strong> 0/11 (0%)</p>"
+    },
+    "4.3.6": {
+      "title": "Maintainability and Understandability",
+      "data": null
+    },
+    "4.3.7": {
+      "title": "Performance and Efficiency",
+      "data": null
+    }
+  }
+}

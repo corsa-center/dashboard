@@ -41,6 +41,9 @@ jobs:
             exit 0
           fi
 
+          echo "Clearing existing metrics files before download"
+          rm -rf explore/github-data/*-metrics/
+
           echo "Downloading sustainability-metrics artifact from run $RUN_ID"
           gh run download "$RUN_ID" \
             --repo corsa-center/metrics \

@@ -3235,7 +3235,7 @@
                                     "packageManager": "ACTIONS",
                                     "packageName": "adriangl/check-new-commits-action",
                                     "repository": {
-                                        "nameWithOwner": "adriangl/check-new-commits-action"
+                                        "nameWithOwner": "hyperdevs-team/check-new-commits-action"
                                     }
                                 }
                             ]
@@ -3561,6 +3561,13 @@
                                     "packageName": "alive-progress",
                                     "repository": {
                                         "nameWithOwner": "rsalmei/alive-progress"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "anthropic",
+                                    "repository": {
+                                        "nameWithOwner": "anthropics/anthropic-sdk-python"
                                     }
                                 },
                                 {
@@ -16279,6 +16286,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "coverage",
                                     "repository": {
                                         "nameWithOwner": "coveragepy/coveragepy"
@@ -16363,19 +16383,6 @@
                                     "packageName": "vermin",
                                     "repository": {
                                         "nameWithOwner": "netromdk/vermin"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pip",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/pip"
                                     }
                                 }
                             ]

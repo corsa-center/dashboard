@@ -2386,6 +2386,22 @@
                 "login": "hyperdevs-team"
             }
         },
+        "hyperopt/hyperopt": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "hyperopt",
+            "nameWithOwner": "hyperopt/hyperopt",
+            "owner": {
+                "isVerified": false,
+                "login": "hyperopt"
+            }
+        },
         "igrek51/diffs": {
             "languages": {
                 "nodes": [

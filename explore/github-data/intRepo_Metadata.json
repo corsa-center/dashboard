@@ -579,6 +579,12 @@
         "topics": null,
         "website": "https://gitlab.kitware.com/paraview/paraview"
     },
+    "patrickfan/GenAI4UQ": {
+        "description": null,
+        "name": "patrickfan/GenAI4UQ",
+        "topics": null,
+        "website": null
+    },
     "petsc/petsc": {
         "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
         "name": "petsc/petsc",
@@ -611,6 +617,24 @@
             "hpc"
         ],
         "website": "http://www.mpich.org"
+    },
+    "pnnl/neuromancer": {
+        "description": "Pytorch-based framework for solving parametric constrained optimization problems, physics-informed system identification, and parametric model predictive control. ",
+        "name": "pnnl/neuromancer",
+        "topics": [
+            "constrained-optimization",
+            "control-systems",
+            "deep-learning",
+            "differentiable-programming",
+            "dynamical-systems",
+            "pytorch",
+            "differentiable-optimization",
+            "nonlinear-dynamics",
+            "nonlinear-optimization",
+            "differentiable-control",
+            "physics-informed-ml"
+        ],
+        "website": "https://pnnl.github.io/neuromancer/"
     },
     "sandialabs/Albany": {
         "description": "Sandia National Laboratories' Albany multiphysics code",

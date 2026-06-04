@@ -3235,7 +3235,7 @@
                                     "packageManager": "ACTIONS",
                                     "packageName": "adriangl/check-new-commits-action",
                                     "repository": {
-                                        "nameWithOwner": "adriangl/check-new-commits-action"
+                                        "nameWithOwner": "hyperdevs-team/check-new-commits-action"
                                     }
                                 }
                             ]
@@ -3561,6 +3561,13 @@
                                     "packageName": "alive-progress",
                                     "repository": {
                                         "nameWithOwner": "rsalmei/alive-progress"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "anthropic",
+                                    "repository": {
+                                        "nameWithOwner": "anthropics/anthropic-sdk-python"
                                     }
                                 },
                                 {
@@ -7479,6 +7486,26 @@
                                     "packageName": "mpi4py/setup-mpi",
                                     "repository": {
                                         "nameWithOwner": "mpi4py/setup-mpi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "mxschmitt/action-tmate",
+                                    "repository": {
+                                        "nameWithOwner": "mxschmitt/action-tmate"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
                                     }
                                 },
                                 {
@@ -11418,6 +11445,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "coverage",
                                     "repository": {
                                         "nameWithOwner": "coveragepy/coveragepy"
@@ -11502,19 +11542,6 @@
                                     "packageName": "vermin",
                                     "repository": {
                                         "nameWithOwner": "netromdk/vermin"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pip",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/pip"
                                     }
                                 }
                             ]

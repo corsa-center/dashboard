@@ -2002,6 +2002,12 @@
                 "totalCount": 9
             }
         },
+        "patrickfan/GenAI4UQ": {
+            "repositoryTopics": {
+                "nodes": [],
+                "totalCount": 0
+            }
+        },
         "petsc/petsc": {
             "repositoryTopics": {
                 "nodes": [
@@ -2119,6 +2125,90 @@
                     }
                 ],
                 "totalCount": 4
+            }
+        },
+        "pnnl/neuromancer": {
+            "repositoryTopics": {
+                "nodes": [
+                    {
+                        "resourcePath": "/topics/constrained-optimization",
+                        "topic": {
+                            "name": "constrained-optimization"
+                        },
+                        "url": "https://github.com/topics/constrained-optimization"
+                    },
+                    {
+                        "resourcePath": "/topics/control-systems",
+                        "topic": {
+                            "name": "control-systems"
+                        },
+                        "url": "https://github.com/topics/control-systems"
+                    },
+                    {
+                        "resourcePath": "/topics/deep-learning",
+                        "topic": {
+                            "name": "deep-learning"
+                        },
+                        "url": "https://github.com/topics/deep-learning"
+                    },
+                    {
+                        "resourcePath": "/topics/differentiable-programming",
+                        "topic": {
+                            "name": "differentiable-programming"
+                        },
+                        "url": "https://github.com/topics/differentiable-programming"
+                    },
+                    {
+                        "resourcePath": "/topics/dynamical-systems",
+                        "topic": {
+                            "name": "dynamical-systems"
+                        },
+                        "url": "https://github.com/topics/dynamical-systems"
+                    },
+                    {
+                        "resourcePath": "/topics/pytorch",
+                        "topic": {
+                            "name": "pytorch"
+                        },
+                        "url": "https://github.com/topics/pytorch"
+                    },
+                    {
+                        "resourcePath": "/topics/differentiable-optimization",
+                        "topic": {
+                            "name": "differentiable-optimization"
+                        },
+                        "url": "https://github.com/topics/differentiable-optimization"
+                    },
+                    {
+                        "resourcePath": "/topics/nonlinear-dynamics",
+                        "topic": {
+                            "name": "nonlinear-dynamics"
+                        },
+                        "url": "https://github.com/topics/nonlinear-dynamics"
+                    },
+                    {
+                        "resourcePath": "/topics/nonlinear-optimization",
+                        "topic": {
+                            "name": "nonlinear-optimization"
+                        },
+                        "url": "https://github.com/topics/nonlinear-optimization"
+                    },
+                    {
+                        "resourcePath": "/topics/differentiable-control",
+                        "topic": {
+                            "name": "differentiable-control"
+                        },
+                        "url": "https://github.com/topics/differentiable-control"
+                    },
+                    {
+                        "resourcePath": "/topics/physics-informed-ml",
+                        "topic": {
+                            "name": "physics-informed-ml"
+                        },
+                        "url": "https://github.com/topics/physics-informed-ml"
+                    }
+                ],
+                "totalCount": 11
             }
         },
         "sandialabs/Albany": {

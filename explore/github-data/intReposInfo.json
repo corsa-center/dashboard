@@ -7,7 +7,7 @@
             },
             "description": "AMReX: Software Framework for Block Structured AMR",
             "forks": {
-                "totalCount": 431
+                "totalCount": 432
             },
             "homepageUrl": "https://amrex-codes.github.io/amrex",
             "issues_Closed": {
@@ -42,10 +42,10 @@
                 "totalCount": 285
             },
             "pullRequests_Merged": {
-                "totalCount": 3859
+                "totalCount": 3861
             },
             "pullRequests_Open": {
-                "totalCount": 34
+                "totalCount": 32
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -510,7 +510,7 @@
                 "totalCount": 464
             },
             "issues_Open": {
-                "totalCount": 65
+                "totalCount": 66
             },
             "languages": {
                 "totalCount": 8
@@ -541,7 +541,7 @@
                 "totalCount": 631
             },
             "pullRequests_Open": {
-                "totalCount": 5
+                "totalCount": 6
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -668,10 +668,10 @@
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 935
+                "totalCount": 936
             },
             "issues_Open": {
-                "totalCount": 305
+                "totalCount": 304
             },
             "languages": {
                 "totalCount": 15
@@ -696,13 +696,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 477
+                "totalCount": 478
             },
             "pullRequests_Merged": {
                 "totalCount": 4639
             },
             "pullRequests_Open": {
-                "totalCount": 20
+                "totalCount": 21
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -1330,7 +1330,7 @@
             },
             "homepageUrl": "https://legion.stanford.edu",
             "issues_Closed": {
-                "totalCount": 1214
+                "totalCount": 1215
             },
             "issues_Open": {
                 "totalCount": 305
@@ -1474,7 +1474,7 @@
                 "totalCount": 198
             },
             "pullRequests_Open": {
-                "totalCount": 20
+                "totalCount": 21
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -1995,7 +1995,7 @@
                 "totalCount": 360
             },
             "issues_Open": {
-                "totalCount": 125
+                "totalCount": 126
             },
             "languages": {
                 "totalCount": 7
@@ -2020,19 +2020,19 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 134
+                "totalCount": 135
             },
             "pullRequests_Merged": {
                 "totalCount": 1245
             },
             "pullRequests_Open": {
-                "totalCount": 74
+                "totalCount": 73
             },
             "repositoryTopics": {
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 598
+                "totalCount": 599
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -2235,7 +2235,7 @@
             },
             "description": "Kokkos C++ Performance Portability Programming Ecosystem: The Programming Model - Parallel Execution and Memory Abstraction",
             "forks": {
-                "totalCount": 484
+                "totalCount": 485
             },
             "homepageUrl": "https://kokkos.org",
             "issues_Closed": {
@@ -2254,7 +2254,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 196
+                "totalCount": 197
             },
             "name": "kokkos",
             "nameWithOwner": "kokkos/kokkos",
@@ -2267,13 +2267,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 755
+                "totalCount": 756
             },
             "pullRequests_Merged": {
-                "totalCount": 5088
+                "totalCount": 5093
             },
             "pullRequests_Open": {
-                "totalCount": 90
+                "totalCount": 89
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -2326,7 +2326,7 @@
                 "totalCount": 208
             },
             "pullRequests_Merged": {
-                "totalCount": 1975
+                "totalCount": 1976
             },
             "pullRequests_Open": {
                 "totalCount": 38
@@ -2460,10 +2460,10 @@
             },
             "homepageUrl": "https://computing.llnl.gov/projects/sundials",
             "issues_Closed": {
-                "totalCount": 220
+                "totalCount": 221
             },
             "issues_Open": {
-                "totalCount": 37
+                "totalCount": 36
             },
             "languages": {
                 "totalCount": 12
@@ -2555,7 +2555,7 @@
                 "totalCount": 5
             },
             "stargazers": {
-                "totalCount": 864
+                "totalCount": 866
             },
             "url": "https://github.com/llnl/zfp"
         },
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 15075
+                "totalCount": 15081
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 66546
+                "totalCount": 66561
             },
             "issues_Open": {
-                "totalCount": 28720
+                "totalCount": 28725
             },
             "languages": {
                 "totalCount": 56
@@ -2585,7 +2585,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6068
+                "totalCount": 6070
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 10271
+                "totalCount": 10291
             },
             "pullRequests_Merged": {
-                "totalCount": 86630
+                "totalCount": 86730
             },
             "pullRequests_Open": {
-                "totalCount": 7871
+                "totalCount": 7875
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 38634
+                "totalCount": 38642
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2659,7 +2659,7 @@
                 "totalCount": 2008
             },
             "pullRequests_Open": {
-                "totalCount": 150
+                "totalCount": 152
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2708,19 +2708,19 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 1108
+                "totalCount": 1109
             },
             "pullRequests_Merged": {
-                "totalCount": 8799
+                "totalCount": 8804
             },
             "pullRequests_Open": {
-                "totalCount": 85
+                "totalCount": 82
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2592
+                "totalCount": 2593
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2767,7 +2767,7 @@
                 "totalCount": 687
             },
             "pullRequests_Merged": {
-                "totalCount": 3052
+                "totalCount": 3053
             },
             "pullRequests_Open": {
                 "totalCount": 5
@@ -2805,6 +2805,61 @@
                 "totalCount": 163
             },
             "url": "https://gitlab.kitware.com/paraview/paraview"
+        },
+        "patrickfan/GenAI4UQ": {
+            "createdAt": "2024-11-26T01:27:02Z",
+            "defaultBranchRef": {
+                "name": "main"
+            },
+            "description": null,
+            "forks": {
+                "totalCount": 2
+            },
+            "homepageUrl": null,
+            "issues_Closed": {
+                "totalCount": 0
+            },
+            "issues_Open": {
+                "totalCount": 0
+            },
+            "languages": {
+                "totalCount": 1
+            },
+            "licenseInfo": {
+                "name": "MIT License",
+                "nickname": null,
+                "spdxId": "MIT",
+                "url": "http://choosealicense.com/licenses/mit/"
+            },
+            "mentionableUsers": {
+                "totalCount": 1
+            },
+            "name": "GenAI4UQ",
+            "nameWithOwner": "patrickfan/GenAI4UQ",
+            "owner": {
+                "avatarUrl": "https://avatars.githubusercontent.com/u/31777976?v=4",
+                "login": "patrickfan"
+            },
+            "parent": null,
+            "primaryLanguage": {
+                "name": "Python"
+            },
+            "pullRequests_Closed": {
+                "totalCount": 0
+            },
+            "pullRequests_Merged": {
+                "totalCount": 0
+            },
+            "pullRequests_Open": {
+                "totalCount": 0
+            },
+            "repositoryTopics": {
+                "totalCount": 0
+            },
+            "stargazers": {
+                "totalCount": 11
+            },
+            "url": "https://github.com/patrickfan/GenAI4UQ"
         },
         "petsc/petsc": {
             "createdAt": "2019-08-19T14:51:46.786Z",
@@ -2942,6 +2997,61 @@
             },
             "url": "https://github.com/pmodels/mpich"
         },
+        "pnnl/neuromancer": {
+            "createdAt": "2020-10-14T19:35:17Z",
+            "defaultBranchRef": {
+                "name": "master"
+            },
+            "description": "Pytorch-based framework for solving parametric constrained optimization problems, physics-informed system identification, and parametric model predictive control. ",
+            "forks": {
+                "totalCount": 175
+            },
+            "homepageUrl": "https://pnnl.github.io/neuromancer/",
+            "issues_Closed": {
+                "totalCount": 84
+            },
+            "issues_Open": {
+                "totalCount": 9
+            },
+            "languages": {
+                "totalCount": 3
+            },
+            "licenseInfo": {
+                "name": "Other",
+                "nickname": null,
+                "spdxId": "NOASSERTION",
+                "url": "http://choosealicense.com/licenses/other/"
+            },
+            "mentionableUsers": {
+                "totalCount": 38
+            },
+            "name": "neuromancer",
+            "nameWithOwner": "pnnl/neuromancer",
+            "owner": {
+                "avatarUrl": "https://avatars.githubusercontent.com/u/10872965?v=4",
+                "login": "pnnl"
+            },
+            "parent": null,
+            "primaryLanguage": {
+                "name": "Python"
+            },
+            "pullRequests_Closed": {
+                "totalCount": 35
+            },
+            "pullRequests_Merged": {
+                "totalCount": 116
+            },
+            "pullRequests_Open": {
+                "totalCount": 6
+            },
+            "repositoryTopics": {
+                "totalCount": 11
+            },
+            "stargazers": {
+                "totalCount": 1337
+            },
+            "url": "https://github.com/pnnl/neuromancer"
+        },
         "sandialabs/Albany": {
             "cdash": "https://my.cdash.org/index.php?project=Albany",
             "createdAt": "2014-03-20T02:32:15Z",
@@ -3061,14 +3171,14 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2316
+                "totalCount": 2315
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7895
+                "totalCount": 7896
             },
             "issues_Open": {
-                "totalCount": 1335
+                "totalCount": 1334
             },
             "languages": {
                 "totalCount": 14
@@ -3167,14 +3277,14 @@
             },
             "description": "Primary repository for the Trilinos Project",
             "forks": {
-                "totalCount": 605
+                "totalCount": 606
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
                 "totalCount": 5382
             },
             "issues_Open": {
-                "totalCount": 262
+                "totalCount": 263
             },
             "languages": {
                 "totalCount": 33
@@ -3205,7 +3315,7 @@
                 "totalCount": 8313
             },
             "pullRequests_Open": {
-                "totalCount": 79
+                "totalCount": 83
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3261,7 +3371,7 @@
                 "totalCount": 3482
             },
             "pullRequests_Open": {
-                "totalCount": 19
+                "totalCount": 20
             },
             "repositoryTopics": {
                 "totalCount": 8

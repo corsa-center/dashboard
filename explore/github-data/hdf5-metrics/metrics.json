@@ -13,15 +13,15 @@
   "sustainability": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Code of Conduct:</strong> <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p><strong>Governance:</strong> Not found</p>\n<p><strong>Contributing Guidelines:</strong> <a href=\"https://github.com/HDFGroup/hdf5/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Score:</strong> 2/3</p>"
+      "data": "<p><strong>Code of Conduct:</strong> Not found</p>\n<p><strong>Governance:</strong> Not found</p>\n<p><strong>Contributing Guidelines:</strong> Not found</p>\n<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p><strong>Governance Keyword Analysis:</strong> Not yet collected</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/HDFGroup/hdf5\">7.2/10</a> (12/18 checks passed) \u2713</p>\n<p><strong>CHAOSS Governance Metrics:</strong> Not yet collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
-      "data": "<p><strong>License:</strong> Other</p>\n<p><strong>Category:</strong> Unknown</p>\n<p><strong>OSI Approved:</strong> Unknown</p>\n<p><strong>Compliance Score:</strong> 2/3 (67%)</p>\n<p>License file exists: \u2713</p>\n<p>License identified: \u2713 (Other)</p>\n<p>OSI approved: ? (unknown)</p>"
+      "data": "<p><strong>License:</strong> Other</p>\n<p><strong>Category:</strong> Unknown</p>\n<p><strong>Enhanced License Detection:</strong> \u2713</p>\n<p><strong>Automated FAIR4RS Assessment:</strong> Not yet collected</p>\n<p><strong>OSI License Validation:</strong> Unknown \u2717</p>\n<p><strong>License Exception Handling:</strong> Not yet collected</p>\n<p><strong>FAIR Metadata Assessment:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Status:</strong> Active</p>\n<p><strong>Last Commit:</strong> 0 days ago</p>\n<p><strong>Commits (52 weeks):</strong> 462 (51 active weeks)</p>\n<p><strong>Trend:</strong> Stable</p>\n<p><strong>Latest Release:</strong> 2.1.1 (20 days ago)</p>\n<p><strong>Releases (last year):</strong> 4</p>\n<p><strong>Contributors:</strong> 30 (bus factor: 2)</p>\n<p><strong>Score:</strong> 4/5 (80%)</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 432 commits (52 weeks) \u2713</p>\n<p><strong>Last Commit:</strong> 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p><strong>Contributors:</strong> 30 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> Not yet collected</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 3/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",

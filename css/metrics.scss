@@ -358,7 +358,14 @@
 
 .pw-dimension { margin-bottom: 14px; }
 
-.pw-dim-header { cursor: pointer; user-select: none; }
+.pw-dim-header {
+  cursor: pointer; user-select: none;
+  padding: 7px 16px !important;
+  gap: 8px !important;
+  border-bottom: none !important;
+  h3 { font-size: 14px !important; }
+  .dimension-icon { font-size: 16px !important; }
+}
 .pw-dim-header:hover { filter: brightness(1.06); }
 
 .pw-accordion-arrow { transition: transform 0.2s; }

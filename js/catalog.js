@@ -284,7 +284,7 @@ function renderSustainabilityMetrics(metrics) {
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
   const DIMENSIONS = [
     {
-      id: 'impact', label: '4.1 Impact', icon: '📊',
+      id: 'impact', label: '4.1 Impact', icon: 'fa-line-chart',
       headerClass: 'impact-header', color: '#1F6024', muted: '#bbf7d0',
       items: [
         { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
@@ -294,7 +294,7 @@ function renderSustainabilityMetrics(metrics) {
       ]
     },
     {
-      id: 'sustainability', label: '4.2 Sustainability', icon: '♻️',
+      id: 'sustainability', label: '4.2 Sustainability', icon: 'fa-leaf',
       headerClass: 'sustainability-header', color: '#1F5B60', muted: '#99f6e4',
       items: [
         { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
@@ -320,7 +320,7 @@ function renderSustainabilityMetrics(metrics) {
       ]
     },
     {
-      id: 'quality', label: '4.3 Quality', icon: '🏆',
+      id: 'quality', label: '4.3 Quality', icon: 'fa-star',
       headerClass: 'quality-header', color: '#1F3A60', muted: '#bae6fd',
       items: [
         { num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
@@ -399,7 +399,7 @@ function renderSustainabilityMetrics(metrics) {
     html += `
       <div class="metric-dimension pw-dimension" id="pw-dim-${dim.id}">
         <div class="dimension-header ${dim.headerClass} pw-dim-header" style="cursor:pointer">
-          <span class="dimension-icon">${dim.icon}</span>
+          <span class="pw-dim-icon"><span class="fa ${dim.icon}"></span></span>
           <h3>${dim.label}</h3>
           <span class="pw-accordion-arrow fa fa-chevron-down" style="margin-left:auto;font-size:11px;color:rgba(255,255,255,0.75)"></span>
         </div>

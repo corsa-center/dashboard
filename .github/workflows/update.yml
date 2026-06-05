@@ -82,7 +82,7 @@ jobs:
           git checkout "${DEPLOY_BRANCH}"
           git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH}"
           git pull
-          git merge "${UPDATE_BRANCH}"
+          git merge "${UPDATE_BRANCH}" -X theirs
 
           # Force-include metrics files from the update branch.
           # A prior explicit deletion in main causes git merge to skip them;

@@ -358,7 +358,24 @@
 
 .pw-dimension { margin-bottom: 14px; }
 
-.pw-dim-header { cursor: pointer; user-select: none; }
+.pw-dim-header {
+  cursor: pointer; user-select: none;
+  padding: 8px 20px !important;
+  border-bottom: none !important;
+}
+
+.pw-dim-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.22);
+  border: 1.5px solid rgba(255, 255, 255, 0.45);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  .fa { font-size: 13px; color: #fff; }
+}
 .pw-dim-header:hover { filter: brightness(1.06); }
 
 .pw-accordion-arrow { transition: transform 0.2s; }

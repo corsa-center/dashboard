@@ -398,9 +398,9 @@ function renderSustainabilityMetrics(metrics) {
     const dimData = metrics ? metrics[dim.id] : null;
     html += `
       <div class="metric-dimension pw-dimension" id="pw-dim-${dim.id}">
-        <div class="dimension-header ${dim.headerClass} pw-dim-header" style="cursor:pointer">
+        <div class="dimension-header ${dim.headerClass} pw-dim-header" style="cursor:pointer;padding:5px 16px;border-bottom:none;align-items:center">
           <span class="pw-dim-icon"><span class="fa ${dim.icon}"></span></span>
-          <h3>${dim.label}</h3>
+          <h3 style="margin:0">${dim.label}</h3>
           <span class="pw-accordion-arrow fa fa-chevron-down" style="margin-left:auto;font-size:11px;color:rgba(255,255,255,0.75)"></span>
         </div>
         <div class="pw-card-grid">`;

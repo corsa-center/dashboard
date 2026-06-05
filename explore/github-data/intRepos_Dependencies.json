@@ -9950,6 +9950,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "nanobind",
+                                    "repository": {
+                                        "nameWithOwner": "wjakob/nanobind"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "alabaster",
                                     "repository": {
                                         "nameWithOwner": "sphinx-doc/alabaster"
@@ -10537,19 +10550,6 @@
                                     "packageName": "pyyaml",
                                     "repository": {
                                         "nameWithOwner": "yaml/pyyaml"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "nanobind",
-                                    "repository": {
-                                        "nameWithOwner": "wjakob/nanobind"
                                     }
                                 }
                             ]
@@ -16259,19 +16259,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "coverage",
-                                    "repository": {
-                                        "nameWithOwner": "coveragepy/coveragepy"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "black",
                                     "repository": {
                                         "nameWithOwner": "psf/black"
@@ -16356,6 +16343,19 @@
                                     "packageName": "pip",
                                     "repository": {
                                         "nameWithOwner": "pypa/pip"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "coverage",
+                                    "repository": {
+                                        "nameWithOwner": "coveragepy/coveragepy"
                                     }
                                 }
                             ]

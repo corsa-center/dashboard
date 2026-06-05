@@ -360,11 +360,8 @@
 
 .pw-dim-header {
   cursor: pointer; user-select: none;
-  padding: 7px 16px !important;
-  gap: 8px !important;
+  padding: 8px 20px !important;
   border-bottom: none !important;
-  h3 { font-size: 14px !important; }
-  .dimension-icon { font-size: 16px !important; }
 }
 .pw-dim-header:hover { filter: brightness(1.06); }
 

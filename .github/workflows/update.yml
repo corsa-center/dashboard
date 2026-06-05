@@ -83,6 +83,16 @@ jobs:
           git branch --set-upstream-to=origin/"${DEPLOY_BRANCH}" "${DEPLOY_BRANCH}"
           git pull
           git merge "${UPDATE_BRANCH}"
+
+          # Force-include metrics files from the update branch.
+          # A prior explicit deletion in main causes git merge to skip them;
+          # checking them out directly overrides that.
+          git checkout "${UPDATE_BRANCH}" -- explore/github-data/
+          git add explore/github-data/
+          if ! git diff --staged --quiet; then
+            git commit -m "Sync metrics files from ${UPDATE_BRANCH} branch"
+          fi
+
           git push --set-upstream origin "${DEPLOY_BRANCH}"
         env:
           DEPLOY_BRANCH: ${{ vars.DEPLOY_BRANCH }}

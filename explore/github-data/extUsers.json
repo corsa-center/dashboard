@@ -12727,7 +12727,8 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/116297520?v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "petsc/petsc"
+                    "petsc/petsc",
+                    "pghysels/STRUMPACK"
                 ]
             },
             "login": "NamjaeChoi",
@@ -50067,6 +50068,16 @@
             },
             "login": "hpcraink",
             "name": "Rainer Keller"
+        },
+        "hpkfft": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/142685350?u=19e5b9bbb6c58aa0ff42b68136c75b9c20c42629&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "hpkfft",
+            "name": "hpkfft.com"
         },
         "hpoussin": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/32227662?v=4",
@@ -100185,6 +100196,16 @@
             },
             "login": "xantares",
             "name": null
+        },
+        "xarkenz": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/46010001?u=f1054cebacae5072316470ac40b1d1543d58e80e&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "xarkenz",
+            "name": "Sean Clarke"
         },
         "xazhangAMD": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/135793234?u=127357fbc73a5d883c3e3a762f6c477d55ba4f06&v=4",

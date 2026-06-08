@@ -517,16 +517,16 @@
                         "size": 70832369
                     },
                     {
-                        "size": 3080056
+                        "size": 3082317
                     },
                     {
                         "size": 580819
                     },
                     {
-                        "size": 179980
+                        "size": 180069
                     },
                     {
-                        "size": 137711
+                        "size": 137704
                     },
                     {
                         "size": 97184
@@ -573,7 +573,7 @@
                     }
                 ],
                 "totalCount": 8,
-                "totalSize": 74969847
+                "totalSize": 74972190
             }
         },
         "CODARcode/Chimbuko": {
@@ -656,7 +656,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 49571282
+                        "size": 49571568
                     },
                     {
                         "size": 5745743
@@ -764,7 +764,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 64483735
+                "totalSize": 64484021
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -858,13 +858,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 131775
+                        "size": 153616
                     },
                     {
                         "size": 12563
                     },
                     {
-                        "size": 3750
+                        "size": 3378
                     },
                     {
                         "size": 1166
@@ -896,7 +896,7 @@
                     }
                 ],
                 "totalCount": 5,
-                "totalSize": 149421
+                "totalSize": 170890
             }
         },
         "Libensemble/libensemble": {
@@ -1770,7 +1770,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 17647394
+                        "size": 17648128
                     },
                     {
                         "size": 618262
@@ -1822,7 +1822,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 18709389
+                "totalSize": 18710123
             }
         },
         "anigmetov/oineus": {
@@ -2131,16 +2131,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12316490
+                        "size": 12315762
                     },
                     {
-                        "size": 5650011
+                        "size": 5650066
                     },
                     {
-                        "size": 826152
+                        "size": 826227
                     },
                     {
-                        "size": 167086
+                        "size": 167706
                     },
                     {
                         "size": 63932
@@ -2211,7 +2211,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 19089693
+                "totalSize": 19089715
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2973,13 +2973,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 13358234
+                        "size": 13401425
                     },
                     {
                         "size": 379473
                     },
                     {
-                        "size": 197252
+                        "size": 197416
                     },
                     {
                         "size": 163662
@@ -3025,7 +3025,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 14197909
+                "totalSize": 14241264
             }
         },
         "llnl/libROM": {
@@ -3317,31 +3317,31 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 727437943
+                        "size": 727602325
                     },
                     {
-                        "size": 538064459
+                        "size": 538229427
                     },
                     {
-                        "size": 222686311
+                        "size": 222705125
                     },
                     {
-                        "size": 192602005
+                        "size": 192607447
                     },
                     {
-                        "size": 28605212
+                        "size": 28652215
                     },
                     {
-                        "size": 14893623
+                        "size": 14901885
                     },
                     {
-                        "size": 12941396
+                        "size": 12949974
                     },
                     {
                         "size": 5563359
                     },
                     {
-                        "size": 4758583
+                        "size": 4764953
                     },
                     {
                         "size": 4462858
@@ -3353,7 +3353,7 @@
                         "size": 2247179
                     },
                     {
-                        "size": 1566438
+                        "size": 1567117
                     },
                     {
                         "size": 1434262
@@ -3386,7 +3386,7 @@
                         "size": 113047
                     },
                     {
-                        "size": 110662
+                        "size": 110804
                     },
                     {
                         "size": 80645
@@ -3619,7 +3619,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1765390871
+                "totalSize": 1765815604
             }
         },
         "mfem/mfem": {
@@ -4444,7 +4444,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 8178308
+                        "size": 8178869
                     },
                     {
                         "size": 524859
@@ -4545,7 +4545,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 8956860
+                "totalSize": 8957421
             }
         },
         "tpeterka/ChatVis": {

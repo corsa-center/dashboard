@@ -10219,6 +10219,16 @@
             "login": "KyleFromKitware",
             "name": "Kyle Edwards"
         },
+        "L3GiaBao": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/225020046?u=47fa8ed6d1973f85fae99296b4e8c502334d6e28&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "L3GiaBao",
+            "name": "Le Gia Bao"
+        },
         "LDAmorim": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/15057096?u=9397b71d9b5870db7c3ef915ab7ad03fd1eb0907&v=4",
             "contributedLabRepositories": {
@@ -34049,7 +34059,8 @@
                     "open-mpi/ompi",
                     "ornladios/ADIOS2",
                     "petsc/petsc",
-                    "spack/spack"
+                    "spack/spack",
+                    "trilinos/Trilinos"
                 ]
             },
             "login": "claude",
@@ -56968,7 +56979,8 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "AMReX-Codes/amrex",
-                    "spack/spack"
+                    "spack/spack",
+                    "trilinos/Trilinos"
                 ]
             },
             "login": "jrood-nrel",
@@ -100308,7 +100320,7 @@
             "name": "W\u00c1NG Xu\u011bru\u00ec"
         },
         "xen2": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/527565?u=c0971d6765122bf102b71bec3c864663fa9f943a&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/527565?u=e57afe4e3920f6aff45cc8bdbf1d608e170631d9&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
@@ -102158,7 +102170,8 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/271906?v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "mfem/mfem"
+                    "mfem/mfem",
+                    "xiaoyeli/superlu_mt"
                 ]
             },
             "login": "yurivict",

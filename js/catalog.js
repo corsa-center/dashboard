@@ -168,10 +168,6 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     <p class="stats text-center">
       <a href="${repo.url}"> <span class="fa fa-github"></span>GitHub Page </a>
 
-      <a href="${repo.url}/stargazers"> <span class="fa fa-star"></span>Community Interest: ${repo.stargazers.totalCount} stars</a>
-
-      <a href="${repo.url}/network"> <span class="fa fa-code-fork"></span>Forks: ${repo.forks.totalCount} </a>
-
       ${
         repo.cdash
           ? `
@@ -273,163 +269,243 @@ function loadSustainabilityMetrics(repoName) {
 }
 
 /**
- * Render sustainability metrics HTML
- * @param {Object} metrics metrics data for the repository (can be null)
+ * Render sustainability metrics as a pinwheel card grid.
+ * Each sub-metric is a blade: color=passing, muted=failing, gray=not collected.
+ * Works for any repository — data comes from {repo}-metrics/metrics.json.
+ * @param {Object|null} metrics parsed metrics.json (null = no data available)
  */
 function renderSustainabilityMetrics(metrics) {
   const metricsSection = document.getElementById('metrics-section');
 
-  // Helper function to render metric subsections
-  function renderMetricSubsections(dimensionData) {
-    if (!dimensionData) return '';
+  // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
+  const DIMENSIONS = [
+    {
+      id: 'impact', label: '4.1 Impact', icon: 'fa-line-chart',
+      headerClass: 'impact-header', color: '#1F6024', muted: '#bbf7d0',
+      items: [
+        { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
+          subMetrics: ['Enhanced Citations and Mentions','Improved DOI Tracking','Comprehensive Citation Metadata','Advanced Dependency Analysis','AI-Enhanced Training Detection'] },
+        { num: '4.1.2', blades: 3, short: 'Field Research', title: 'Field Research Impact',
+          subMetrics: ['AI-Enhanced Publication Analysis','Comprehensive Institutional Tracking','Impact Narrative Extraction'] }
+      ]
+    },
+    {
+      id: 'sustainability', label: '4.2 Sustainability', icon: 'fa-leaf',
+      headerClass: 'sustainability-header', color: '#1F5B60', muted: '#99f6e4',
+      items: [
+        { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
+          subMetrics: ['Enhanced Document Detection','Governance Keyword Analysis','OpenSSF Badge Integration','CHAOSS Governance Metrics','Governance Effectiveness Assessment'] },
+        { num: '4.2.2',  blades: 5,  short: 'Licensing & FAIR',    title: 'Open-Source Licensing and FAIR Compliance',
+          subMetrics: ['Enhanced License Detection','Automated FAIR4RS Assessment','OSI License Validation','License Exception Handling','FAIR Metadata Assessment'] },
+        { num: '4.2.3',  blades: 6,  short: 'Active Maintenance',  title: 'Active Maintenance',
+          subMetrics: ['Commit Activity Pattern Analysis','Maintenance Mode Indicator Detection','Activity Trend Monitoring','Release Pattern Assessment','Multi-Channel Communication Activity','Contributor Abandonment Forecasting'] },
+        { num: '4.2.4',  blades: 7,  short: 'Engagement',          title: 'Engagement',
+          subMetrics: ['Response Time Tracking','Issue Resolution Analysis','Pull Request Flow Assessment','Support Request Closure Analysis','Engagement Quality Metrics','Communication Pattern Analysis','Community Participation Assessment'] },
+        { num: '4.2.5',  blades: 8,  short: 'Outreach',            title: 'Outreach',
+          subMetrics: ['New Contributor Tracking','Contributor Retention Analysis','Contributor Lifecycle Mapping','Contribution Type Diversity','Good First Issue Effectiveness','External Event Participation','Training Material Integration','Onboarding Infrastructure Assessment'] },
+        { num: '4.2.6',  blades: 7,  short: 'Welcomeness',         title: 'Welcomeness',
+          subMetrics: ['CHAOSS Community Experience Metrics','Response Quality and Tone Analysis','Communication Sentiment Analysis','Contributor Journey Mapping','Language and Communication Review','Leadership Role Representation','Decision-Making Visibility'] },
+        { num: '4.2.7',  blades: 5,  short: 'Collaboration',       title: 'Collaboration',
+          subMetrics: ['Advanced Dependency Analysis','Cross-project Reference Detection','Interoperability Assessment','Collaboration Network Analysis','Standards Compliance Tracking'] },
+        { num: '4.2.8',  blades: 5,  short: 'Financial',           title: 'Financial Sustainability',
+          subMetrics: ['Enhanced Funding Documentation Analysis','Institutional Affiliation Tracking','NIH R50 Award Tracking','Corporate Sponsorship Detection','Funding Portfolio Analysis'] },
+        { num: '4.2.9',  blades: 5,  short: 'Institutional',       title: 'Institutional & Organizational Support',
+          subMetrics: ['RSE Position Detection','Institutional Support Tracking','Career Development Indicators','NIH R50 Award Integration','Institutional Policy Analysis'] },
+        { num: '4.2.10', blades: 5,  short: 'Community Health',    title: 'Project Longevity and Community Health',
+          subMetrics: ['Comprehensive Activity Analysis','Contributor Viability Assessment','Maintenance Mode Detection','Community Health Trends','Project Lifecycle Assessment'] }
+      ]
+    },
+    {
+      id: 'quality', label: '4.3 Quality', icon: 'fa-star',
+      headerClass: 'quality-header', color: '#1F3A60', muted: '#bae6fd',
+      items: [
+        { num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
+          subMetrics: ['Advanced Static Analysis','Enhanced Security Analysis','CERT Guidelines Compliance','Test Coverage Excellence','Reliability Trend Analysis'] },
+        { num: '4.3.2', blades: 5,  short: 'Dev Practices',    title: 'Development Practices',
+          subMetrics: ['CI/CD Effectiveness Assessment','Testing Framework Excellence','Code Review Quality Analysis','Development Tool Integration','Community Contribution Facilitation'] },
+        { num: '4.3.3', blades: 5,  short: 'Reproducibility',  title: 'Reproducibility',
+          subMetrics: ['FAIR4RS Compliance Assessment','Containerization Excellence','Version Control Best Practices','Environment Management','Reproducibility Documentation'] },
+        { num: '4.3.4', blades: 5,  short: 'Usability',        title: 'Usability',
+          subMetrics: ['User Experience Assessment','Documentation Completeness Analysis','Accessibility Feature Detection','Installation Success Tracking','Usage Analytics Integration'] },
+        { num: '4.3.5', blades: 5,  short: 'Accessibility',    title: 'Accessibility',
+          subMetrics: ['Portable Build System Detection','Container Availability Assessment','Architecture Compatibility Analysis','Platform Documentation Evaluation','Deployment Environment Testing'] },
+        { num: '4.3.6', blades: 5,  short: 'Maintainability',  title: 'Maintainability and Understandability',
+          subMetrics: ['Advanced Complexity Analysis','Code Quality Assessment','Documentation Quality Evaluation','Knowledge Distribution Analysis','Refactoring and Evolution Tracking'] },
+        { num: '4.3.7', blades: 10, short: 'Performance',      title: 'Performance and Efficiency',
+          subMetrics: ['Performance Benchmarking Integration','Environmental Impact Assessment','Resource Utilization Analysis','Scalability Assessment','Optimization Practice Evaluation','Memory Efficiency Analysis','I/O Performance Profiling','Algorithmic Complexity Assessment','Power Measurement Integration','Performance Portability Assessment'] }
+      ]
+    }
+  ];
 
-    return Object.entries(dimensionData)
-      .sort((a, b) => a[0].localeCompare(b[0])) // Sort by metric number (4.1.1, 4.1.2, etc.)
-      .map(([metricNum, metricInfo]) => {
-        const content = metricInfo.data
-          ? `<div class="metric-data">${metricInfo.data}</div>`
-          : `<div class="metric-placeholder">Metrics data will be displayed here</div>`;
+  // ── Helpers ─────────────────────────────────────────────────────────────────
+  const SCORE_KEYS = new Set(['score', 'compliance score']);
 
-        return `
-          <div class="metric-subsection">
-            <h4>${metricNum} ${metricInfo.title}</h4>
-            ${content}
-          </div>
-        `;
-      })
-      .join('');
+  function countSubItems(html) {
+    const div = document.createElement('div');
+    div.innerHTML = html;
+    let n = 0;
+    div.querySelectorAll('p').forEach(p => {
+      const s = p.querySelector('strong');
+      if (!s) return;
+      if (!SCORE_KEYS.has(s.textContent.replace(':', '').trim().toLowerCase())) n++;
+    });
+    return n || 4;
   }
 
-  // Build HTML structure
-  const impactSubsections = metrics?.impact
-    ? renderMetricSubsections(metrics.impact)
-    : `
-      <div class="metric-subsection">
-        <h4>4.1.1 Software Citation and Adoption</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.1.2 Field Research Impact</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-    `;
+  function parseScore(html) {
+    if (!html) return null;
+    const div = document.createElement('div');
+    div.innerHTML = html;
+    const text = div.textContent || '';
+    const m = text.match(/Score:\s*(\d+)\/(\d+)/);
+    if (!m) return null;
+    const raw = +m[1], denom = +m[2];
+    let failing = 0, na = 0;
+    div.querySelectorAll('p').forEach(p => {
+      if (p.classList.contains('sub-detail')) return;
+      if (!p.querySelector('strong')) return;
+      if (SCORE_KEYS.has(p.querySelector('strong').textContent.replace(':', '').trim().toLowerCase())) return;
+      if (p.textContent.includes('✗')) failing++;
+      else if (/\bN\/A\b|not applicable/i.test(p.textContent)) na++;
+    });
+    if (denom <= 20) return { filled: raw, failing, na, total: denom, label: `${raw}/${denom}` };
+    const total = countSubItems(html);
+    return { filled: Math.round(raw / denom * total), failing: 0, na: 0, total, label: `${raw}/${denom}` };
+  }
 
-  const sustainabilitySubsections = metrics?.sustainability
-    ? renderMetricSubsections(metrics.sustainability)
-    : `
-      <div class="metric-subsection">
-        <h4>4.2.1 Codes of Conduct (CoC), Governance, and Contributor Guidelines</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.2 Open-Source Licensing and FAIR Compliance</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.3 Active Maintenance</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.4 Engagement</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.5 Outreach</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.6 Welcomeness</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.7 Collaboration</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.8 Financial Sustainability</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.9 Institutional & Organizational Support</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.2.10 Project Longevity and Community Health</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-    `;
+  function pinwheelSVG(filled, failing, na, total, color, muted) {
+    const S = 64, cx = S / 2, cy = S / 2;
+    const R = S * 0.41, ri = S * 0.13, sw = S * 0.13, rw = S * 0.065, leanX = S * 0.09;
+    const bPath = `M ${-rw} ${-ri} C ${-sw*1.1} ${-(ri+R)*0.42}, ${-sw*0.3+leanX} ${-R*0.82}, ${leanX} ${-R} C ${sw*0.7+leanX} ${-R*0.82}, ${sw*1.0} ${-(ri+R)*0.42}, ${rw} ${-ri} Z`;
+    const GRAY = '#d1d5db';
+    const NA_STROKE = '#94a3b8';
+    let paths = '';
+    for (let i = 0; i < total; i++) {
+      const deg = (360 / total) * i;
+      const t = `translate(${cx},${cy}) rotate(${deg.toFixed(1)})`;
+      if (i < filled) {
+        paths += `<path d="${bPath}" fill="${color}" transform="${t}"/>`;
+      } else if (i < filled + failing) {
+        paths += `<path d="${bPath}" fill="${muted}" transform="${t}"/>`;
+      } else if (i < filled + failing + na) {
+        paths += `<path d="${bPath}" fill="none" stroke="${NA_STROKE}" stroke-width="1.5" stroke-dasharray="3 2" transform="${t}"/>`;
+      } else {
+        paths += `<path d="${bPath}" fill="${GRAY}" transform="${t}"/>`;
+      }
+    }
+    paths += `<circle cx="${cx}" cy="${cy}" r="${ri*0.75}" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>`;
+    return `<svg width="${S}" height="${S}" viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">${paths}</svg>`;
+  }
 
-  const qualitySubsections = metrics?.quality
-    ? renderMetricSubsections(metrics.quality)
-    : `
-      <div class="metric-subsection">
-        <h4>4.3.1 Reliability and Robustness</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.3.2 Development Practices</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.3.3 Reproducibility</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.3.4 Usability</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.3.5 Accessibility</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.3.6 Maintainability and Understandability</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-      <div class="metric-subsection">
-        <h4>4.3.7 Performance and Efficiency</h4>
-        <div class="metric-placeholder">Metrics data will be displayed here</div>
-      </div>
-    `;
+  // ── Build HTML ───────────────────────────────────────────────────────────────
+  let html = '<div class="pw-metrics-container"><h2 class="metrics-main-title">Metrics</h2>';
 
-  metricsSection.innerHTML = `
-    <div class="sustainability-metrics-container">
-      <h2 class="metrics-main-title">Metrics</h2>
+  DIMENSIONS.forEach(dim => {
+    const dimData = metrics ? metrics[dim.id] : null;
+    html += `
+      <div class="metric-dimension pw-dimension" id="pw-dim-${dim.id}">
+        <div class="dimension-header ${dim.headerClass} pw-dim-header" style="cursor:pointer">
+          <span class="pw-dim-icon"><span class="fa ${dim.icon}"></span></span>
+          <h3 style="margin:0">${dim.label}</h3>
+          <span class="pw-accordion-arrow fa fa-chevron-down" style="margin-left:auto;font-size:11px;color:rgba(255,255,255,0.75)"></span>
+        </div>
+        <div class="pw-card-grid">`;
 
-      <!-- Impact Dimension -->
-      <div class="metric-dimension">
-        <div class="dimension-header impact-header">
-          <span class="dimension-icon">📊</span>
-          <h3>4.1 Impact</h3>
-        </div>
-        <div class="dimension-content">
-          ${impactSubsections}
-        </div>
-      </div>
+    dim.items.forEach(item => {
+      const entry = dimData && dimData[item.num] ? dimData[item.num] : null;
+      const data = entry ? entry.data : null;
+      const score = parseScore(data);
+      const blades = item.blades || 4;
+      const filled = data ? (score ? score.filled : blades) : 0;
+      const failing = data ? (score ? score.failing : 0) : 0;
+      const na = data ? (score ? score.na : 0) : 0;
+      const total = score ? score.total : blades;
+      const collected = filled + failing;
+      const isPending = !data;
+      const pwColor = isPending ? '#cbd5e1' : dim.color;
+      const pwMuted = isPending ? '#e2e8f0' : dim.muted;
+      const scoreHTML = data
+        ? `<span>${filled}/${collected} ●</span>` + (collected < total ? `<span class="pw-score-total"> /${total}</span>` : '')
+        : `<span class="pw-score-total">○ pending</span>`;
 
-      <!-- Sustainability Dimension -->
-      <div class="metric-dimension">
-        <div class="dimension-header sustainability-header">
-          <span class="dimension-icon">♻️</span>
-          <h3>4.2 Sustainability</h3>
-        </div>
-        <div class="dimension-content">
-          ${sustainabilitySubsections}
-        </div>
-      </div>
+      html += `<div class="metric-card pw-card ${data ? 'has-data' : ''}"
+                    style="color:${isPending ? '#94a3b8' : dim.color}"
+                    data-dim="${dim.id}" data-num="${item.num}" title="${item.title}">
+        ${pinwheelSVG(filled, failing, na, total, pwColor, pwMuted)}
+        <div class="card-num">${item.num}</div>
+        <div class="card-title">${item.short}</div>
+      </div>`;
+    });
 
-      <!-- Quality Dimension -->
-      <div class="metric-dimension">
-        <div class="dimension-header quality-header">
-          <span class="dimension-icon">🏆</span>
-          <h3>4.3 Quality</h3>
+    html += `</div>
+        <div class="pw-detail-panel" id="pw-detail-${dim.id}">
+          <div class="pw-detail-header">
+            <span class="pw-detail-dot" style="background:${dim.color}"></span>
+            <span class="pw-detail-title"></span>
+          </div>
+          <div class="pw-detail-body"></div>
         </div>
-        <div class="dimension-content">
-          ${qualitySubsections}
-        </div>
-      </div>
-    </div>
-  `;
+      </div>`;
+  });
+
+  html += '</div>';
+  metricsSection.innerHTML = html;
+
+  // ── Wire up interactions via event delegation ────────────────────────────────
+  DIMENSIONS.forEach(dim => {
+    const dimData = metrics ? metrics[dim.id] : null;
+    const dimEl = document.getElementById(`pw-dim-${dim.id}`);
+    const panel = document.getElementById(`pw-detail-${dim.id}`);
+    const grid  = dimEl.querySelector('.pw-card-grid');
+    let activeCard = null;
+
+    // Accordion header
+    dimEl.querySelector('.pw-dim-header').addEventListener('click', () => {
+      const collapsed = grid.style.display === 'none';
+      grid.style.display = collapsed ? '' : 'none';
+      panel.style.display = collapsed ? '' : 'none';
+      const arrow = dimEl.querySelector('.pw-accordion-arrow');
+      arrow.style.transform = collapsed ? '' : 'rotate(-90deg)';
+    });
+
+    // Card clicks
+    grid.addEventListener('click', e => {
+      const card = e.target.closest('.pw-card');
+      if (!card) return;
+
+      const itemNum = card.dataset.num;
+      const itemDef = dim.items.find(i => i.num === itemNum);
+      const entry   = dimData && dimData[itemNum] ? dimData[itemNum] : null;
+      const data    = entry ? entry.data : null;
+
+      const opening = card !== activeCard;
+      if (activeCard) { activeCard.classList.remove('active'); activeCard = null; }
+      panel.classList.remove('pw-detail-visible');
+
+      if (opening) {
+        card.classList.add('active');
+        activeCard = card;
+        panel.querySelector('.pw-detail-title').textContent = `${itemNum}  ${itemDef ? itemDef.title : ''}`;
+
+        let bodyHTML = data || '';
+        if (!data && itemDef && itemDef.subMetrics) {
+          bodyHTML = itemDef.subMetrics.map(sm => `<p class="pw-pending-sub">${sm}</p>`).join('') +
+            '<p class="pw-pending-note">Data collection not yet implemented for this metric.</p>';
+        } else if (!data) {
+          bodyHTML = '<p class="pw-pending-note">Data collection pending.</p>';
+        }
+        // Strip the Score: line from the detail body
+        bodyHTML = bodyHTML.replace(/<p[^>]*><strong>Score:<\/strong>[^<]*<\/p>/g, '');
+
+        const body = panel.querySelector('.pw-detail-body');
+        body.innerHTML = bodyHTML;
+        body.querySelectorAll('p').forEach(p => {
+          if (p.textContent.includes('Not yet collected')) p.classList.add('pw-not-collected');
+        });
+        panel.classList.add('pw-detail-visible');
+      }
+    });
+  });
 }
 
 /**
@@ -525,13 +601,6 @@ function renderRepoListHtml() {
         <span class="fa fa-github"></span>
       </a>
 
-      <a href="${repo.gitUrl}/stargazers" title="Community Interest">
-        <span class="fa fa-star"></span> ${repo.stars}
-      </a>
-
-      <a href="${repo.gitUrl}/network" title="Repository Forks">
-        <span class="fa fa-code-fork"></span> ${repo.forks}
-      </a>
       <a href="/dashboard/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
         <span class="fa fa-pie-chart"></span>
       </a>

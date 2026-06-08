@@ -496,6 +496,9 @@ function renderSustainabilityMetrics(metrics) {
         }
         // Strip the Score: line from the detail body
         bodyHTML = bodyHTML.replace(/<p[^>]*><strong>Score:<\/strong>[^<]*<\/p>/g, '');
+        // Colorize ✓ and ✗ symbols
+        bodyHTML = bodyHTML.replace(/✓/g, '<span style="color:#16a34a;font-weight:600">✓</span>');
+        bodyHTML = bodyHTML.replace(/✗/g, '<span style="color:#dc2626;font-weight:600">✗</span>');
 
         const body = panel.querySelector('.pw-detail-body');
         body.innerHTML = bodyHTML;

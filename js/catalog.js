@@ -360,28 +360,38 @@ function renderSustainabilityMetrics(metrics) {
     const m = text.match(/Score:\s*(\d+)\/(\d+)/);
     if (!m) return null;
     const raw = +m[1], denom = +m[2];
-    let failing = 0;
+    let failing = 0, na = 0;
     div.querySelectorAll('p').forEach(p => {
       if (p.classList.contains('sub-detail')) return;
       if (!p.querySelector('strong')) return;
       if (SCORE_KEYS.has(p.querySelector('strong').textContent.replace(':', '').trim().toLowerCase())) return;
       if (p.textContent.includes('✗')) failing++;
+      else if (/\bN\/A\b|not applicable/i.test(p.textContent)) na++;
     });
-    if (denom <= 20) return { filled: raw, failing, total: denom, label: `${raw}/${denom}` };
+    if (denom <= 20) return { filled: raw, failing, na, total: denom, label: `${raw}/${denom}` };
     const total = countSubItems(html);
-    return { filled: Math.round(raw / denom * total), failing: 0, total, label: `${raw}/${denom}` };
+    return { filled: Math.round(raw / denom * total), failing: 0, na: 0, total, label: `${raw}/${denom}` };
   }
 
-  function pinwheelSVG(filled, failing, total, color, muted) {
+  function pinwheelSVG(filled, failing, na, total, color, muted) {
     const S = 64, cx = S / 2, cy = S / 2;
     const R = S * 0.41, ri = S * 0.13, sw = S * 0.13, rw = S * 0.065, leanX = S * 0.09;
     const bPath = `M ${-rw} ${-ri} C ${-sw*1.1} ${-(ri+R)*0.42}, ${-sw*0.3+leanX} ${-R*0.82}, ${leanX} ${-R} C ${sw*0.7+leanX} ${-R*0.82}, ${sw*1.0} ${-(ri+R)*0.42}, ${rw} ${-ri} Z`;
     const GRAY = '#d1d5db';
+    const NA_STROKE = '#94a3b8';
     let paths = '';
     for (let i = 0; i < total; i++) {
       const deg = (360 / total) * i;
-      const fill = i < filled ? color : i < filled + failing ? muted : GRAY;
-      paths += `<path d="${bPath}" fill="${fill}" transform="translate(${cx},${cy}) rotate(${deg.toFixed(1)})"/>`;
+      const t = `translate(${cx},${cy}) rotate(${deg.toFixed(1)})`;
+      if (i < filled) {
+        paths += `<path d="${bPath}" fill="${color}" transform="${t}"/>`;
+      } else if (i < filled + failing) {
+        paths += `<path d="${bPath}" fill="${muted}" transform="${t}"/>`;
+      } else if (i < filled + failing + na) {
+        paths += `<path d="${bPath}" fill="none" stroke="${NA_STROKE}" stroke-width="1.5" stroke-dasharray="3 2" transform="${t}"/>`;
+      } else {
+        paths += `<path d="${bPath}" fill="${GRAY}" transform="${t}"/>`;
+      }
     }
     paths += `<circle cx="${cx}" cy="${cy}" r="${ri*0.75}" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>`;
     return `<svg width="${S}" height="${S}" viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">${paths}</svg>`;
@@ -408,6 +418,7 @@ function renderSustainabilityMetrics(metrics) {
       const blades = item.blades || 4;
       const filled = data ? (score ? score.filled : blades) : 0;
       const failing = data ? (score ? score.failing : 0) : 0;
+      const na = data ? (score ? score.na : 0) : 0;
       const total = score ? score.total : blades;
       const collected = filled + failing;
       const isPending = !data;
@@ -420,7 +431,7 @@ function renderSustainabilityMetrics(metrics) {
       html += `<div class="metric-card pw-card ${data ? 'has-data' : ''}"
                     style="color:${isPending ? '#94a3b8' : dim.color}"
                     data-dim="${dim.id}" data-num="${item.num}" title="${item.title}">
-        ${pinwheelSVG(filled, failing, total, pwColor, pwMuted)}
+        ${pinwheelSVG(filled, failing, na, total, pwColor, pwMuted)}
         <div class="card-num">${item.num}</div>
         <div class="card-title">${item.short}</div>
       </div>`;

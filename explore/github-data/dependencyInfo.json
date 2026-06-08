@@ -1354,21 +1354,6 @@
                 "login": "certifi"
             }
         },
-        "certik/enum34": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "enum34",
-            "nameWithOwner": "certik/enum34",
-            "owner": {
-                "login": "certik"
-            }
-        },
         "clap-rs/clap": {
             "languages": {
                 "nodes": [
@@ -1898,16 +1883,6 @@
                 "login": "dtolnay"
             }
         },
-        "easimon/maximize-build-space": {
-            "languages": {
-                "nodes": []
-            },
-            "name": "maximize-build-space",
-            "nameWithOwner": "easimon/maximize-build-space",
-            "owner": {
-                "login": "easimon"
-            }
-        },
         "eic/trigger-gitlab-ci": {
             "languages": {
                 "nodes": []
@@ -2386,22 +2361,6 @@
                 "login": "hyperdevs-team"
             }
         },
-        "hyperopt/hyperopt": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "hyperopt",
-            "nameWithOwner": "hyperopt/hyperopt",
-            "owner": {
-                "isVerified": false,
-                "login": "hyperopt"
-            }
-        },
         "igrek51/diffs": {
             "languages": {
                 "nodes": [
@@ -2492,37 +2451,6 @@
             "owner": {
                 "isVerified": true,
                 "login": "ipython"
-            }
-        },
-        "ipython/ipython": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "ipython",
-            "nameWithOwner": "ipython/ipython",
-            "owner": {
-                "isVerified": true,
-                "login": "ipython"
-            }
-        },
-        "jakevdp/ipywidgets-static": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#DA5B0B",
-                        "name": "Jupyter Notebook"
-                    }
-                ]
-            },
-            "name": "ipywidgets-static",
-            "nameWithOwner": "jakevdp/ipywidgets-static",
-            "owner": {
-                "login": "jakevdp"
             }
         },
         "jared-hughes/isosurfaces": {
@@ -2743,22 +2671,6 @@
             },
             "name": "jupyter",
             "nameWithOwner": "jupyter/jupyter",
-            "owner": {
-                "isVerified": false,
-                "login": "jupyter"
-            }
-        },
-        "jupyter/jupyter_core": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "jupyter_core",
-            "nameWithOwner": "jupyter/jupyter_core",
             "owner": {
                 "isVerified": false,
                 "login": "jupyter"
@@ -3071,17 +2983,6 @@
             "nameWithOwner": "mcmtroffaes/sphinxcontrib-bibtex",
             "owner": {
                 "login": "mcmtroffaes"
-            }
-        },
-        "mfem/github-actions": {
-            "languages": {
-                "nodes": []
-            },
-            "name": "github-actions",
-            "nameWithOwner": "mfem/github-actions",
-            "owner": {
-                "isVerified": true,
-                "login": "mfem"
             }
         },
         "mgaitan/sphinxcontrib-mermaid": {
@@ -3573,22 +3474,6 @@
             },
             "name": "click",
             "nameWithOwner": "pallets/click",
-            "owner": {
-                "isVerified": true,
-                "login": "pallets"
-            }
-        },
-        "pallets/flask": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "flask",
-            "nameWithOwner": "pallets/flask",
             "owner": {
                 "isVerified": true,
                 "login": "pallets"

@@ -503,7 +503,11 @@ function renderSustainabilityMetrics(metrics) {
         const body = panel.querySelector('.pw-detail-body');
         body.innerHTML = bodyHTML;
         body.querySelectorAll('p').forEach(p => {
-          if (p.textContent.includes('Not yet collected')) p.classList.add('pw-not-collected');
+          if (p.classList.contains('sub-detail')) return;
+          const t = p.textContent;
+          if (t.includes('Not yet collected')) { p.classList.add('pw-not-collected'); return; }
+          if (t.includes('✓')) p.style.color = '#16a34a';
+          else if (t.includes('✗')) p.style.color = '#dc2626';
         });
         panel.classList.add('pw-detail-visible');
       }

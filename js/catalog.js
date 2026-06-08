@@ -506,8 +506,10 @@ function renderSustainabilityMetrics(metrics) {
           if (p.classList.contains('sub-detail')) return;
           const t = p.textContent;
           if (t.includes('Not yet collected')) { p.classList.add('pw-not-collected'); return; }
-          if (t.includes('✓')) p.style.color = '#16a34a';
-          else if (t.includes('✗')) p.style.color = '#dc2626';
+          const strong = p.querySelector('strong');
+          if (!strong) return;
+          if (t.includes('✓')) strong.style.color = '#16a34a';
+          else if (t.includes('✗')) strong.style.color = '#dc2626';
         });
         panel.classList.add('pw-detail-visible');
       }

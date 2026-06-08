@@ -168,10 +168,6 @@ function renderSingleRepoHTML(repo, pulls, issues) {
     <p class="stats text-center">
       <a href="${repo.url}"> <span class="fa fa-github"></span>GitHub Page </a>
 
-      <a href="${repo.url}/stargazers"> <span class="fa fa-star"></span>Community Interest: ${repo.stargazers.totalCount} stars</a>
-
-      <a href="${repo.url}/network"> <span class="fa fa-code-fork"></span>Forks: ${repo.forks.totalCount} </a>
-
       ${
         repo.cdash
           ? `
@@ -427,7 +423,6 @@ function renderSustainabilityMetrics(metrics) {
         ${pinwheelSVG(filled, failing, total, pwColor, pwMuted)}
         <div class="card-num">${item.num}</div>
         <div class="card-title">${item.short}</div>
-        <div class="card-score">${scoreHTML}</div>
       </div>`;
     });
 
@@ -488,6 +483,8 @@ function renderSustainabilityMetrics(metrics) {
         } else if (!data) {
           bodyHTML = '<p class="pw-pending-note">Data collection pending.</p>';
         }
+        // Strip the Score: line from the detail body
+        bodyHTML = bodyHTML.replace(/<p[^>]*><strong>Score:<\/strong>[^<]*<\/p>/g, '');
 
         const body = panel.querySelector('.pw-detail-body');
         body.innerHTML = bodyHTML;
@@ -593,13 +590,6 @@ function renderRepoListHtml() {
         <span class="fa fa-github"></span>
       </a>
 
-      <a href="${repo.gitUrl}/stargazers" title="Community Interest">
-        <span class="fa fa-star"></span> ${repo.stars}
-      </a>
-
-      <a href="${repo.gitUrl}/network" title="Repository Forks">
-        <span class="fa fa-code-fork"></span> ${repo.forks}
-      </a>
       <a href="/dashboard/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
         <span class="fa fa-pie-chart"></span>
       </a>

@@ -25,7 +25,7 @@
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 1515 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> 673 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> None \u2717</p>\n<p><strong>Support Request Closure Analysis:</strong> 1.00 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> Not yet collected</p>\n<p><strong>Communication Pattern Analysis:</strong> Not yet collected</p>\n<p><strong>Community Participation Assessment:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 1515 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> 673 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 100% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 1.00 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> Not yet collected</p>\n<p><strong>Communication Pattern Analysis:</strong> Not yet collected</p>\n<p><strong>Community Participation Assessment:</strong> Not yet collected</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 550 hours</p>\n<p><strong>Score:</strong> 3/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -59,7 +59,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 0/5 \u2717</p>\n<p><strong>Testing Framework Excellence:</strong> Not yet collected</p>\n<p><strong>Code Review Quality Analysis:</strong> Not yet collected</p>\n<p><strong>Development Tool Integration:</strong> Not yet collected</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 0/4 \u2717</p>\n<p><strong>Testing Framework Excellence:</strong> Not yet collected</p>\n<p><strong>Code Review Quality Analysis:</strong> Not yet collected</p>\n<p><strong>Development Tool Integration:</strong> Not yet collected</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -71,7 +71,7 @@
     },
     "4.3.5": {
       "title": "Accessibility",
-      "data": "<p><strong>Portable Build System Detection:</strong> \u2717</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> Not yet collected</p>\n<p><strong>Platform Documentation Evaluation:</strong> Not yet collected</p>\n<p><strong>Deployment Environment Testing:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Portable Build System Detection:</strong> \u2713</p><p class=\"sub-detail\">Makefile</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> Not yet collected</p>\n<p><strong>Platform Documentation Evaluation:</strong> Not yet collected</p>\n<p><strong>Deployment Environment Testing:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",

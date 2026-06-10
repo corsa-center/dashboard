@@ -770,13 +770,6 @@ function renderCassMetrics(metrics) {
 
   let html = `
     <h3>Sustainability Metrics</h3>
-    <p class="metrics-report-ref">
-      Based on the
-      <a href="https://zenodo.org/records/17704989" target="_blank" rel="noopener">
-        CASS Sustainability Metrics Report v3
-        <span class="fa fa-external-link" aria-hidden="true"></span>
-      </a>
-    </p>
     <div class="sustainability-overview">
       <div class="metric-score-card">
         <h4>Overall Sustainability Score</h4>

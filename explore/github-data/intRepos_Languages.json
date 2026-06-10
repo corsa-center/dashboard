@@ -4,7 +4,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12554418
+                        "size": 12554303
                     },
                     {
                         "size": 716202
@@ -119,7 +119,7 @@
                     }
                 ],
                 "totalCount": 16,
-                "totalSize": 13885299
+                "totalSize": 13885184
             }
         },
         "Alpine-DAV/ascent": {
@@ -517,16 +517,16 @@
                         "size": 70832369
                     },
                     {
-                        "size": 3082317
+                        "size": 3083640
                     },
                     {
                         "size": 580819
                     },
                     {
-                        "size": 180069
+                        "size": 181751
                     },
                     {
-                        "size": 137704
+                        "size": 138697
                     },
                     {
                         "size": 97184
@@ -573,7 +573,7 @@
                     }
                 ],
                 "totalCount": 8,
-                "totalSize": 74972190
+                "totalSize": 74976188
             }
         },
         "CODARcode/Chimbuko": {
@@ -683,10 +683,10 @@
                         "size": 143190
                     },
                     {
-                        "size": 126041
+                        "size": 127248
                     },
                     {
-                        "size": 60244
+                        "size": 126041
                     },
                     {
                         "size": 23049
@@ -739,12 +739,12 @@
                         "name": "Scilab"
                     },
                     {
-                        "color": "#0298c3",
-                        "name": "Perl"
-                    },
-                    {
                         "color": "#dad8d8",
                         "name": "PLSQL"
+                    },
+                    {
+                        "color": "#0298c3",
+                        "name": "Perl"
                     },
                     {
                         "color": "#4B6C4B",
@@ -764,7 +764,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 64484021
+                "totalSize": 64551025
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -858,7 +858,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 171755
+                        "size": 168961
                     },
                     {
                         "size": 3378
@@ -889,7 +889,7 @@
                     }
                 ],
                 "totalCount": 4,
-                "totalSize": 176474
+                "totalSize": 173680
             }
         },
         "Libensemble/libensemble": {
@@ -2124,16 +2124,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12309798
+                        "size": 12313241
                     },
                     {
-                        "size": 5652590
+                        "size": 5652652
                     },
                     {
                         "size": 826227
                     },
                     {
-                        "size": 167720
+                        "size": 167836
                     },
                     {
                         "size": 63932
@@ -2204,7 +2204,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 19086289
+                "totalSize": 19089910
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2548,10 +2548,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 26852830
+                        "size": 26882519
                     },
                     {
-                        "size": 3675614
+                        "size": 3674913
                     },
                     {
                         "size": 572983
@@ -2656,7 +2656,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 32307787
+                "totalSize": 32336775
             }
         },
         "icl-utk-edu/magma": {
@@ -2879,10 +2879,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 11154575
+                        "size": 11157689
                     },
                     {
-                        "size": 302933
+                        "size": 302970
                     },
                     {
                         "size": 63988
@@ -2959,20 +2959,20 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 11605448
+                "totalSize": 11608599
             }
         },
         "kokkos/kokkos-kernels": {
             "languages": {
                 "edges": [
                     {
-                        "size": 13401425
+                        "size": 13401764
                     },
                     {
                         "size": 379473
                     },
                     {
-                        "size": 197416
+                        "size": 204085
                     },
                     {
                         "size": 163662
@@ -3018,7 +3018,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 14241264
+                "totalSize": 14248272
             }
         },
         "llnl/libROM": {
@@ -3310,46 +3310,46 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 727739191
+                        "size": 726901257
                     },
                     {
-                        "size": 538236124
+                        "size": 538541216
                     },
                     {
-                        "size": 222743969
+                        "size": 222774053
                     },
                     {
-                        "size": 196906229
+                        "size": 196962467
                     },
                     {
-                        "size": 28680366
+                        "size": 28695056
                     },
                     {
-                        "size": 14901905
+                        "size": 14903597
                     },
                     {
-                        "size": 12949974
+                        "size": 12948019
                     },
                     {
-                        "size": 5561583
+                        "size": 5573175
                     },
                     {
-                        "size": 4764947
+                        "size": 4768719
                     },
                     {
                         "size": 4462926
                     },
                     {
-                        "size": 3008453
+                        "size": 3015524
                     },
                     {
                         "size": 2247179
                     },
                     {
-                        "size": 1567182
+                        "size": 1567239
                     },
                     {
-                        "size": 1440569
+                        "size": 1441229
                     },
                     {
                         "size": 1395815
@@ -3367,7 +3367,7 @@
                         "size": 292779
                     },
                     {
-                        "size": 266755
+                        "size": 268529
                     },
                     {
                         "size": 183797
@@ -3612,14 +3612,14 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1770329620
+                "totalSize": 1769922453
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 19552604
+                        "size": 19557487
                     },
                     {
                         "size": 307922
@@ -3692,7 +3692,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 20208607
+                "totalSize": 20213490
             }
         },
         "open-mpi/ompi": {
@@ -3800,7 +3800,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 9041046
+                        "size": 9046450
                     },
                     {
                         "size": 983046
@@ -3901,7 +3901,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 12082691
+                "totalSize": 12088095
             }
         },
         "patrickfan/GenAI4UQ": {
@@ -3925,16 +3925,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 45714810
+                        "size": 45728254
                     },
                     {
-                        "size": 3755148
+                        "size": 3755564
                     },
                     {
-                        "size": 3218598
+                        "size": 3219285
                     },
                     {
-                        "size": 1864395
+                        "size": 1864479
                     },
                     {
                         "size": 1063597
@@ -4107,7 +4107,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 58023793
+                "totalSize": 58038424
             }
         },
         "pghysels/STRUMPACK": {
@@ -4437,7 +4437,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 8178869
+                        "size": 8184607
                     },
                     {
                         "size": 524859
@@ -4538,7 +4538,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 8957421
+                "totalSize": 8963159
             }
         },
         "tpeterka/ChatVis": {
@@ -4562,13 +4562,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 176784337
+                        "size": 176879274
                     },
                     {
                         "size": 30953270
                     },
                     {
-                        "size": 27882792
+                        "size": 27882795
                     },
                     {
                         "size": 8377584
@@ -4577,7 +4577,7 @@
                         "size": 6229668
                     },
                     {
-                        "size": 5062332
+                        "size": 5063636
                     },
                     {
                         "size": 3529459
@@ -4772,7 +4772,7 @@
                     }
                 ],
                 "totalCount": 33,
-                "totalSize": 271115894
+                "totalSize": 271212138
             }
         },
         "visit-dav/visit": {

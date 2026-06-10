@@ -45,7 +45,7 @@
                 "totalCount": 3865
             },
             "pullRequests_Open": {
-                "totalCount": 36
+                "totalCount": 37
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -208,10 +208,10 @@
                 "totalCount": 14
             },
             "pullRequests_Merged": {
-                "totalCount": 206
+                "totalCount": 207
             },
             "pullRequests_Open": {
-                "totalCount": 2
+                "totalCount": 1
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -455,7 +455,7 @@
                 "totalCount": 327
             },
             "issues_Open": {
-                "totalCount": 35
+                "totalCount": 36
             },
             "languages": {
                 "totalCount": 9
@@ -513,7 +513,7 @@
                 "totalCount": 64
             },
             "languages": {
-                "totalCount": 8
+                "totalCount": 9
             },
             "licenseInfo": {
                 "name": "Other",
@@ -538,10 +538,10 @@
                 "totalCount": 101
             },
             "pullRequests_Merged": {
-                "totalCount": 640
+                "totalCount": 642
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 6
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -664,7 +664,7 @@
             },
             "description": "Official HDF5\u00ae Library Repository",
             "forks": {
-                "totalCount": 336
+                "totalCount": 338
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
@@ -702,7 +702,7 @@
                 "totalCount": 4644
             },
             "pullRequests_Open": {
-                "totalCount": 18
+                "totalCount": 20
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -778,10 +778,10 @@
             },
             "homepageUrl": "https://arxiv.org/abs/2410.24119",
             "issues_Closed": {
-                "totalCount": 3
+                "totalCount": 5
             },
             "issues_Open": {
-                "totalCount": 2
+                "totalCount": 0
             },
             "languages": {
                 "totalCount": 4
@@ -864,10 +864,10 @@
                 "totalCount": 179
             },
             "pullRequests_Merged": {
-                "totalCount": 1214
+                "totalCount": 1216
             },
             "pullRequests_Open": {
-                "totalCount": 16
+                "totalCount": 14
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -946,7 +946,7 @@
                 "totalCount": 141
             },
             "issues_Open": {
-                "totalCount": 27
+                "totalCount": 28
             },
             "languages": {
                 "totalCount": 9
@@ -977,7 +977,7 @@
                 "totalCount": 692
             },
             "pullRequests_Open": {
-                "totalCount": 3
+                "totalCount": 5
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -1049,7 +1049,7 @@
             },
             "description": "parallel finite element unstructured meshes",
             "forks": {
-                "totalCount": 64
+                "totalCount": 65
             },
             "homepageUrl": "http://scorec.github.io/core/",
             "issues_Closed": {
@@ -1471,10 +1471,10 @@
                 "totalCount": 37
             },
             "pullRequests_Merged": {
-                "totalCount": 201
+                "totalCount": 203
             },
             "pullRequests_Open": {
-                "totalCount": 20
+                "totalCount": 21
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -1601,7 +1601,7 @@
             },
             "description": "  Darshan I/O characterization tool",
             "forks": {
-                "totalCount": 41
+                "totalCount": 42
             },
             "homepageUrl": null,
             "issues_Closed": {
@@ -1802,10 +1802,10 @@
                 "totalCount": 174
             },
             "pullRequests_Merged": {
-                "totalCount": 1297
+                "totalCount": 1298
             },
             "pullRequests_Open": {
-                "totalCount": 30
+                "totalCount": 29
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2032,7 +2032,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 600
+                "totalCount": 601
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -2235,14 +2235,14 @@
             },
             "description": "Kokkos C++ Performance Portability Programming Ecosystem: The Programming Model - Parallel Execution and Memory Abstraction",
             "forks": {
-                "totalCount": 485
+                "totalCount": 486
             },
             "homepageUrl": "https://kokkos.org",
             "issues_Closed": {
                 "totalCount": 2809
             },
             "issues_Open": {
-                "totalCount": 497
+                "totalCount": 498
             },
             "languages": {
                 "totalCount": 11
@@ -2270,16 +2270,16 @@
                 "totalCount": 757
             },
             "pullRequests_Merged": {
-                "totalCount": 5099
+                "totalCount": 5102
             },
             "pullRequests_Open": {
-                "totalCount": 93
+                "totalCount": 92
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2563
+                "totalCount": 2565
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2323,13 +2323,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 209
+                "totalCount": 211
             },
             "pullRequests_Merged": {
                 "totalCount": 1996
             },
             "pullRequests_Open": {
-                "totalCount": 31
+                "totalCount": 30
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -2456,7 +2456,7 @@
             },
             "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
             "forks": {
-                "totalCount": 161
+                "totalCount": 162
             },
             "homepageUrl": "https://computing.llnl.gov/projects/sundials",
             "issues_Closed": {
@@ -2494,7 +2494,7 @@
                 "totalCount": 564
             },
             "pullRequests_Open": {
-                "totalCount": 15
+                "totalCount": 16
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2511,7 +2511,7 @@
             },
             "description": "Compressed numerical arrays that support high-speed random access",
             "forks": {
-                "totalCount": 166
+                "totalCount": 167
             },
             "homepageUrl": "http://zfp.llnl.gov",
             "issues_Closed": {
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 15141
+                "totalCount": 15151
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 66716
+                "totalCount": 66732
             },
             "issues_Open": {
-                "totalCount": 28828
+                "totalCount": 28837
             },
             "languages": {
                 "totalCount": 56
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 10395
+                "totalCount": 10411
             },
             "pullRequests_Merged": {
-                "totalCount": 87411
+                "totalCount": 87572
             },
             "pullRequests_Open": {
-                "totalCount": 8031
+                "totalCount": 8047
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 38735
+                "totalCount": 38747
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2665,7 +2665,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 2180
+                "totalCount": 2181
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -2676,14 +2676,14 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 896
+                "totalCount": 897
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
                 "totalCount": 3220
             },
             "issues_Open": {
-                "totalCount": 714
+                "totalCount": 716
             },
             "languages": {
                 "totalCount": 13
@@ -2714,13 +2714,13 @@
                 "totalCount": 8821
             },
             "pullRequests_Open": {
-                "totalCount": 81
+                "totalCount": 83
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2596
+                "totalCount": 2597
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2732,7 +2732,7 @@
             },
             "description": "Next generation of ADIOS developed in the Exascale Computing Program",
             "forks": {
-                "totalCount": 143
+                "totalCount": 142
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
@@ -2770,7 +2770,7 @@
                 "totalCount": 3058
             },
             "pullRequests_Open": {
-                "totalCount": 5
+                "totalCount": 7
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2987,7 +2987,7 @@
                 "totalCount": 3328
             },
             "pullRequests_Open": {
-                "totalCount": 66
+                "totalCount": 67
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -3048,7 +3048,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1337
+                "totalCount": 1338
             },
             "url": "https://github.com/pnnl/neuromancer"
         },
@@ -3178,7 +3178,7 @@
                 "totalCount": 7898
             },
             "issues_Open": {
-                "totalCount": 1334
+                "totalCount": 1335
             },
             "languages": {
                 "totalCount": 14
@@ -3203,10 +3203,10 @@
                 "name": "Python"
             },
             "pullRequests_Closed": {
-                "totalCount": 5203
+                "totalCount": 5205
             },
             "pullRequests_Merged": {
-                "totalCount": 37191
+                "totalCount": 37192
             },
             "pullRequests_Open": {
                 "totalCount": 406
@@ -3281,10 +3281,10 @@
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
-                "totalCount": 5387
+                "totalCount": 5388
             },
             "issues_Open": {
-                "totalCount": 261
+                "totalCount": 260
             },
             "languages": {
                 "totalCount": 33
@@ -3309,13 +3309,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 1213
+                "totalCount": 1214
             },
             "pullRequests_Merged": {
-                "totalCount": 8331
+                "totalCount": 8334
             },
             "pullRequests_Open": {
-                "totalCount": 81
+                "totalCount": 78
             },
             "repositoryTopics": {
                 "totalCount": 8

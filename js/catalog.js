@@ -486,7 +486,18 @@ function renderSustainabilityMetrics(metrics) {
       if (opening) {
         card.classList.add('active');
         activeCard = card;
-        panel.querySelector('.pw-detail-title').textContent = `${itemNum}  ${itemDef ? itemDef.title : ''}`;
+        const titleEl = panel.querySelector('.pw-detail-title');
+        const sectionDesc = SECTION_DESCRIPTIONS[itemNum];
+        const titleText = `${itemNum} ${itemDef ? itemDef.title : ''}`;
+        if (sectionDesc) {
+          const sup = `<sup class="metric-help" tabindex="0" role="button" `
+            + `aria-label="About ${escapeAttr(titleText)}" `
+            + `data-desc="${escapeAttr(sectionDesc)}">?</sup>`;
+          titleEl.innerHTML = titleText + sup;
+          attachTooltipHandlers(titleEl);
+        } else {
+          titleEl.textContent = titleText;
+        }
 
         let bodyHTML = data || '';
         if (!data && itemDef && itemDef.subMetrics) {
@@ -540,6 +551,32 @@ function getScoreLabel(score) {
 }
 
 // ─── CASS v3 per-package metrics rendering ────────────────────────────────────
+
+/**
+ * Brief descriptions for each CASS v3 section, sourced from the
+ * CASS Sustainability Metrics Report v3.
+ */
+const SECTION_DESCRIPTIONS = {
+  '4.1.1': 'Measures how frequently and accurately the software is cited in academic literature and adopted across research ecosystems, including DOI tracking and dependency analysis.',
+  '4.1.2': "Assesses the software's contribution to scientific discoveries and research outcomes within specific research domains.",
+  '4.2.1': 'Evaluates the presence and quality of governance documents, codes of conduct, and contributor guidelines that define community behavior and decision-making processes.',
+  '4.2.2': "Assesses the clarity and permissiveness of the project's license and its alignment with FAIR (Findable, Accessible, Interoperable, Reusable) principles for research software.",
+  '4.2.3': 'Measures the level of ongoing development activity including commit frequency, release cadence, and responsiveness to maintenance signals.',
+  '4.2.4': 'Evaluates how responsive and active the project team is in addressing issues, pull requests, and community support requests.',
+  '4.2.5': 'Measures efforts to attract new contributors, retain existing ones, and grow the project community through events and training materials.',
+  '4.2.6': 'Assesses the quality and inclusiveness of community interactions, including communication tone, contributor journey support, and leadership diversity.',
+  '4.2.7': 'Evaluates cross-project dependencies, interoperability with other tools, and participation in the broader scientific software ecosystem.',
+  '4.2.8': 'Measures the diversity and stability of funding sources, including grants, corporate sponsors, and institutional support.',
+  '4.2.9': 'Assesses organizational backing through dedicated RSE positions, institutional commitments, and career development pathways for research software engineers.',
+  '4.2.10': 'Evaluates long-term sustainability indicators including contributor diversity, activity trends, and community resilience over time.',
+  '4.3.1': 'Measures code correctness and safety through static analysis, security scanning, test coverage, and adherence to coding standards.',
+  '4.3.2': 'Evaluates the maturity of CI/CD pipelines, testing frameworks, code review processes, and development tooling.',
+  '4.3.3': 'Assesses whether the software can be reliably built and executed across different environments, including containerization and FAIR4RS compliance.',
+  '4.3.4': 'Measures how accessible the software is to its intended users, including documentation quality, installation ease, and user experience.',
+  '4.3.5': 'Evaluates the ability to build and run across diverse computing platforms, architectures, and deployment environments.',
+  '4.3.6': 'Assesses code complexity, documentation quality, knowledge distribution among contributors, and long-term code evolution patterns.',
+  '4.3.7': 'Measures computational performance, resource utilization, scalability, and environmental impact across different hardware platforms and architectures.',
+};
 
 /**
  * Descriptions for each CASS v3 sub-metric, sourced from the

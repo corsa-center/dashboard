@@ -490,8 +490,13 @@ function renderSustainabilityMetrics(metrics) {
 
         let bodyHTML = data || '';
         if (!data && itemDef && itemDef.subMetrics) {
-          bodyHTML = itemDef.subMetrics.map(sm => `<p class="pw-pending-sub">${sm}</p>`).join('') +
-            '<p class="pw-pending-note">Data collection not yet implemented for this metric.</p>';
+          bodyHTML = itemDef.subMetrics.map(sm => {
+            const desc = SUBMETRIC_DESCRIPTIONS[sm];
+            const sup = desc
+              ? `<sup class="metric-help" tabindex="0" role="button" aria-label="About ${escapeAttr(sm)}" data-desc="${escapeAttr(desc)}">?</sup>`
+              : '';
+            return `<p class="pw-pending-sub">${sm}${sup}</p>`;
+          }).join('') + '<p class="pw-pending-note">Data collection not yet implemented for this metric.</p>';
         } else if (!data) {
           bodyHTML = '<p class="pw-pending-note">Data collection pending.</p>';
         }
@@ -500,12 +505,12 @@ function renderSustainabilityMetrics(metrics) {
         // Colorize ✓ and ✗ symbols
         bodyHTML = bodyHTML.replace(/✓/g, '<span style="color:#16a34a;font-weight:600">✓</span>');
         bodyHTML = bodyHTML.replace(/✗/g, '<span style="color:#dc2626;font-weight:600">✗</span>');
-        // Inject sub-metric help tooltips
+        // Inject sub-metric help tooltips for collected sections
         if (data) bodyHTML = addSubmetricTooltips(bodyHTML);
 
         const body = panel.querySelector('.pw-detail-body');
         body.innerHTML = bodyHTML;
-        if (data) attachTooltipHandlers(body);
+        attachTooltipHandlers(body);
         body.querySelectorAll('p').forEach(p => {
           if (p.classList.contains('sub-detail')) return;
           const t = p.textContent;

@@ -379,6 +379,21 @@
                 "login": "Luthaf"
             }
         },
+        "MarcoGorelli/cython-lint": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "cython-lint",
+            "nameWithOwner": "MarcoGorelli/cython-lint",
+            "owner": {
+                "login": "MarcoGorelli"
+            }
+        },
         "Mattraks/delete-workflow-runs": {
             "languages": {
                 "nodes": [
@@ -1870,6 +1885,21 @@
             "nameWithOwner": "emk/cesu8-rs",
             "owner": {
                 "login": "emk"
+            }
+        },
+        "emmatyping/clang": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "clang",
+            "nameWithOwner": "emmatyping/clang",
+            "owner": {
+                "login": "emmatyping"
             }
         },
         "ericvsmith/dataclasses": {
@@ -4189,6 +4219,22 @@
                 "login": "pyutils"
             }
         },
+        "pyvista/pyvista": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pyvista",
+            "nameWithOwner": "pyvista/pyvista",
+            "owner": {
+                "isVerified": true,
+                "login": "pyvista"
+            }
+        },
         "r1chardj0n3s/parse": {
             "languages": {
                 "nodes": [
@@ -5304,6 +5350,21 @@
             "nameWithOwner": "tammoippen/plotille",
             "owner": {
                 "login": "tammoippen"
+            }
+        },
+        "tartley/colorama": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "colorama",
+            "nameWithOwner": "tartley/colorama",
+            "owner": {
+                "login": "tartley"
             }
         },
         "technote-space/broken-link-checker-action": {

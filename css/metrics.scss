@@ -292,6 +292,28 @@
   background: #e3f2fd;
 }
 
+.metrics-report-ref {
+  text-align: center;
+  font-size: 13px;
+  color: #6a737d;
+  margin: -12px 0 20px;
+}
+
+.metrics-report-ref a {
+  color: #005A5B;
+  text-decoration: none;
+}
+
+.metrics-report-ref a:hover {
+  text-decoration: underline;
+}
+
+.metrics-report-ref .fa {
+  font-size: 10px;
+  margin-left: 3px;
+  vertical-align: middle;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .metrics-grid {

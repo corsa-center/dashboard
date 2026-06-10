@@ -257,21 +257,6 @@
                 "login": "JelteF"
             }
         },
-        "JessicaTegner/pypandoc": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "pypandoc",
-            "nameWithOwner": "JessicaTegner/pypandoc",
-            "owner": {
-                "login": "JessicaTegner"
-            }
-        },
         "Jimver/cuda-toolkit": {
             "languages": {
                 "nodes": [
@@ -392,21 +377,6 @@
             "nameWithOwner": "Luthaf/log-once",
             "owner": {
                 "login": "Luthaf"
-            }
-        },
-        "MarcoGorelli/cython-lint": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "cython-lint",
-            "nameWithOwner": "MarcoGorelli/cython-lint",
-            "owner": {
-                "login": "MarcoGorelli"
             }
         },
         "Mattraks/delete-workflow-runs": {
@@ -1538,22 +1508,6 @@
                 "login": "crate-ci"
             }
         },
-        "crewAIInc/crewAI": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "crewAI",
-            "nameWithOwner": "crewAIInc/crewAI",
-            "owner": {
-                "isVerified": true,
-                "login": "crewAIInc"
-            }
-        },
         "cuviper/autocfg": {
             "languages": {
                 "nodes": [
@@ -1916,21 +1870,6 @@
             "nameWithOwner": "emk/cesu8-rs",
             "owner": {
                 "login": "emk"
-            }
-        },
-        "emmatyping/clang": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "clang",
-            "nameWithOwner": "emmatyping/clang",
-            "owner": {
-                "login": "emmatyping"
             }
         },
         "ericvsmith/dataclasses": {
@@ -2305,38 +2244,6 @@
             "nameWithOwner": "hhatto/autopep8",
             "owner": {
                 "login": "hhatto"
-            }
-        },
-        "huggingface/smolagents": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "smolagents",
-            "nameWithOwner": "huggingface/smolagents",
-            "owner": {
-                "isVerified": true,
-                "login": "huggingface"
-            }
-        },
-        "huggingface/transformers": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "transformers",
-            "nameWithOwner": "huggingface/transformers",
-            "owner": {
-                "isVerified": true,
-                "login": "huggingface"
             }
         },
         "hukkin/tomli": {
@@ -3530,22 +3437,6 @@
                 "login": "pacman82"
             }
         },
-        "pallets/click": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "click",
-            "nameWithOwner": "pallets/click",
-            "owner": {
-                "isVerified": true,
-                "login": "pallets"
-            }
-        },
         "pallets/flask": {
             "languages": {
                 "nodes": [
@@ -4296,22 +4187,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "pyutils"
-            }
-        },
-        "pyvista/pyvista": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "pyvista",
-            "nameWithOwner": "pyvista/pyvista",
-            "owner": {
-                "isVerified": true,
-                "login": "pyvista"
             }
         },
         "r1chardj0n3s/parse": {
@@ -5431,21 +5306,6 @@
                 "login": "tammoippen"
             }
         },
-        "tartley/colorama": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "colorama",
-            "nameWithOwner": "tartley/colorama",
-            "owner": {
-                "login": "tartley"
-            }
-        },
         "technote-space/broken-link-checker-action": {
             "languages": {
                 "nodes": [
@@ -5614,21 +5474,6 @@
             "nameWithOwner": "tr4n2uil/backend.django",
             "owner": {
                 "login": "tr4n2uil"
-            }
-        },
-        "uiri/toml": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "toml",
-            "nameWithOwner": "uiri/toml",
-            "owner": {
-                "login": "uiri"
             }
         },
         "uqfoundation/dill": {

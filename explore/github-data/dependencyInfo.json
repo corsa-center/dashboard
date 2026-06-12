@@ -4756,6 +4756,21 @@
                 "login": "shibukawa"
             }
         },
+        "shibukawa/snowball_py": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "snowball_py",
+            "nameWithOwner": "shibukawa/snowball_py",
+            "owner": {
+                "login": "shibukawa"
+            }
+        },
         "simpeg/discretize": {
             "languages": {
                 "nodes": [
@@ -4977,22 +4992,6 @@
             "owner": {
                 "isVerified": false,
                 "login": "smol-rs"
-            }
-        },
-        "snowballstem/snowball": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#555555",
-                        "name": "C"
-                    }
-                ]
-            },
-            "name": "snowball",
-            "nameWithOwner": "snowballstem/snowball",
-            "owner": {
-                "isVerified": false,
-                "login": "snowballstem"
             }
         },
         "softprops/action-gh-release": {

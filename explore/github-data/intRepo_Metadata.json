@@ -573,6 +573,12 @@
         ],
         "website": "https://adios2.readthedocs.io/en/latest/index.html"
     },
+    "paraview/paraview": {
+        "description": "Parallel Data Analysis and Visualization Application based on VTK.",
+        "name": "paraview/paraview",
+        "topics": null,
+        "website": "https://gitlab.kitware.com/paraview/paraview"
+    },
     "patrickfan/GenAI4UQ": {
         "description": null,
         "name": "patrickfan/GenAI4UQ",

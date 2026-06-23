@@ -551,6 +551,22 @@
                 "login": "SCOREC"
             }
         },
+        "SeleniumHQ/selenium": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#b07219",
+                        "name": "Java"
+                    }
+                ]
+            },
+            "name": "selenium",
+            "nameWithOwner": "SeleniumHQ/selenium",
+            "owner": {
+                "isVerified": false,
+                "login": "SeleniumHQ"
+            }
+        },
         "Smithay/calloop": {
             "languages": {
                 "nodes": [
@@ -1180,6 +1196,22 @@
             "nameWithOwner": "bluss/arrayvec",
             "owner": {
                 "login": "bluss"
+            }
+        },
+        "bokeh/bokeh": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "bokeh",
+            "nameWithOwner": "bokeh/bokeh",
+            "owner": {
+                "isVerified": true,
+                "login": "bokeh"
             }
         },
         "bprinty/iso": {
@@ -1829,6 +1861,17 @@
                 "login": "easimon"
             }
         },
+        "eic/trigger-gitlab-ci": {
+            "languages": {
+                "nodes": []
+            },
+            "name": "trigger-gitlab-ci",
+            "nameWithOwner": "eic/trigger-gitlab-ci",
+            "owner": {
+                "isVerified": false,
+                "login": "eic"
+            }
+        },
         "emk/cesu8-rs": {
             "languages": {
                 "nodes": [
@@ -2156,6 +2199,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "googleapis"
+            }
+        },
+        "gorakhargosh/watchdog": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "watchdog",
+            "nameWithOwner": "gorakhargosh/watchdog",
+            "owner": {
+                "login": "gorakhargosh"
             }
         },
         "hagenw/sphinxcontrib-katex": {
@@ -2580,6 +2638,22 @@
                 "login": "julia-actions"
             }
         },
+        "jupyter/jupyter": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "jupyter",
+            "nameWithOwner": "jupyter/jupyter",
+            "owner": {
+                "isVerified": false,
+                "login": "jupyter"
+            }
+        },
         "jupyter/jupyter_core": {
             "languages": {
                 "nodes": [
@@ -2591,6 +2665,22 @@
             },
             "name": "jupyter_core",
             "nameWithOwner": "jupyter/jupyter_core",
+            "owner": {
+                "isVerified": false,
+                "login": "jupyter"
+            }
+        },
+        "jupyter/notebook": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#DA5B0B",
+                        "name": "Jupyter Notebook"
+                    }
+                ]
+            },
+            "name": "notebook",
+            "nameWithOwner": "jupyter/notebook",
             "owner": {
                 "isVerified": false,
                 "login": "jupyter"
@@ -2764,6 +2854,22 @@
             "nameWithOwner": "lukka/get-cmake",
             "owner": {
                 "login": "lukka"
+            }
+        },
+        "lxml/lxml": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "lxml",
+            "nameWithOwner": "lxml/lxml",
+            "owner": {
+                "isVerified": false,
+                "login": "lxml"
             }
         },
         "lycheeverse/lychee-action": {
@@ -3052,6 +3158,21 @@
             "owner": {
                 "isVerified": true,
                 "login": "msys2"
+            }
+        },
+        "mwaskom/seaborn": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "seaborn",
+            "nameWithOwner": "mwaskom/seaborn",
+            "owner": {
+                "login": "mwaskom"
             }
         },
         "mxschmitt/action-tmate": {
@@ -3795,6 +3916,22 @@
                 "login": "pypa"
             }
         },
+        "pypa/twine": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "twine",
+            "nameWithOwner": "pypa/twine",
+            "owner": {
+                "isVerified": true,
+                "login": "pypa"
+            }
+        },
         "pypa/wheel": {
             "languages": {
                 "nodes": [
@@ -3838,6 +3975,22 @@
             },
             "name": "pytest-cov",
             "nameWithOwner": "pytest-dev/pytest-cov",
+            "owner": {
+                "isVerified": false,
+                "login": "pytest-dev"
+            }
+        },
+        "pytest-dev/pytest-runner": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pytest-runner",
+            "nameWithOwner": "pytest-dev/pytest-runner",
             "owner": {
                 "isVerified": false,
                 "login": "pytest-dev"
@@ -3921,6 +4074,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "python-distro"
+            }
+        },
+        "python-humanize/humanize": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "humanize",
+            "nameWithOwner": "python-humanize/humanize",
+            "owner": {
+                "isVerified": false,
+                "login": "python-humanize"
             }
         },
         "python-jsonschema/jsonschema": {
@@ -5026,6 +5195,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "sphinx-toolbox"
+            }
+        },
+        "sqlalchemy/mako": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "mako",
+            "nameWithOwner": "sqlalchemy/mako",
+            "owner": {
+                "isVerified": true,
+                "login": "sqlalchemy"
             }
         },
         "srggrs/assign-one-project-github-action": {

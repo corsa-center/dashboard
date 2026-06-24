@@ -3317,13 +3317,6 @@
                                     "repository": {
                                         "nameWithOwner": "actions/github-script"
                                     }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/stale",
-                                    "repository": {
-                                        "nameWithOwner": "actions/stale"
-                                    }
                                 }
                             ]
                         }
@@ -11568,6 +11561,32 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "coverage",
+                                    "repository": {
+                                        "nameWithOwner": "coveragepy/coveragepy"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "black",
                                     "repository": {
                                         "nameWithOwner": "psf/black"
@@ -11715,32 +11734,6 @@
                                     "packageName": "sphinxcontrib-svg2pdfconverter",
                                     "repository": {
                                         "nameWithOwner": "missinglinkelectronics/sphinxcontrib-svg2pdfconverter"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pip",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/pip"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "coverage",
-                                    "repository": {
-                                        "nameWithOwner": "coveragepy/coveragepy"
                                     }
                                 }
                             ]

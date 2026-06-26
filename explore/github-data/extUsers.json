@@ -272,16 +272,6 @@
             "login": "20DM",
             "name": "Christian Gutschow"
         },
-        "23silicon": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/45129680?u=40080e0d4c0092f362bcdcbe2520f2d75257b07d&v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
-            },
-            "login": "23silicon",
-            "name": "Nikhil Kotikalapudi"
-        },
         "2LoS": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/118823213?u=c92409dce0f4d24a55707f1bcefa9af4902504c1&v=4",
             "contributedLabRepositories": {
@@ -3863,6 +3853,16 @@
             "login": "Chirag-Khandelwal-1",
             "name": "Chirag Khandelwal"
         },
+        "ChiragPatel8": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/17272078?u=4c0a50b57176b9276df02d283f5c9aee2f151e78&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "ChiragPatel8",
+            "name": "Chirag Patel"
+        },
         "ChiragSW": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/119049661?u=5dec8fc8f7e2ac1b0e79649664fed6cffd778387&v=4",
             "contributedLabRepositories": {
@@ -5342,16 +5342,6 @@
             },
             "login": "DoktorC",
             "name": "Lorenzo Casalino"
-        },
-        "Dominicentek": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/69892109?u=cbf58ab0577797d705e6c9ee3be0fd9e447885ca&v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
-            },
-            "login": "Dominicentek",
-            "name": "Dominicentek"
         },
         "DominikAdamski": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/13538317?u=9a2e248f1c036f2eaefde731fe6a9f82ef19c39c&v=4",
@@ -44252,6 +44242,16 @@
             "login": "fgava90",
             "name": null
         },
+        "fgetcat": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/69892109?u=cbf58ab0577797d705e6c9ee3be0fd9e447885ca&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "fgetcat",
+            "name": "fgetcat"
+        },
         "fghanim": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/57640065?v=4",
             "contributedLabRepositories": {
@@ -48910,6 +48910,16 @@
             },
             "login": "hardik-corintis",
             "name": "Hardik Kothari"
+        },
+        "hardikxk": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/183656738?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "hardikxk",
+            "name": "Hardik Kumar"
         },
         "hariharan-devarajan": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/21210820?u=fdb7c14f970e5152d9db0d0d8f060bbe6146616a&v=4",
@@ -72376,6 +72386,16 @@
             "login": "nabw",
             "name": "Nico Barnafi"
         },
+        "nacgarg": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/8907939?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "nacgarg",
+            "name": "Nachi G"
+        },
         "nadavrot": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/8635342?u=522b15feb2b0dc80d493f9fdcc26870a58e0552c&v=4",
             "contributedLabRepositories": {
@@ -74324,6 +74344,16 @@
             },
             "login": "nkgh77",
             "name": null
+        },
+        "nkotikal": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/45129680?u=40080e0d4c0092f362bcdcbe2520f2d75257b07d&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "nkotikal",
+            "name": "Nikhil Kotikalapudi"
         },
         "nkoukpaizan": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/72402802?v=4",
@@ -80556,6 +80586,16 @@
             },
             "login": "qxy11",
             "name": "Janet Yang"
+        },
+        "qzhhhi": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/52377632?u=cea3a0c019d25d698b66935848cda519359f872a&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "qzhhhi",
+            "name": "Zihan Qin"
         },
         "r-a-sattarov": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/51679282?v=4",
@@ -91995,6 +92035,16 @@
             },
             "login": "t-brown",
             "name": "Timothy Brown"
+        },
+        "t-demchuk": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/109612249?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "t-demchuk",
+            "name": null
         },
         "t-karatsu": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/49965247?u=df936ece71e0a8dadaa93c670ef42f87d5f61c63&v=4",

@@ -1601,22 +1601,6 @@
                 "login": "dcchut"
             }
         },
-        "dependabot/fetch-metadata": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3178c6",
-                        "name": "TypeScript"
-                    }
-                ]
-            },
-            "name": "fetch-metadata",
-            "nameWithOwner": "dependabot/fetch-metadata",
-            "owner": {
-                "isVerified": true,
-                "login": "dependabot"
-            }
-        },
         "dmarx/keyframed": {
             "languages": {
                 "nodes": [
@@ -3895,22 +3879,6 @@
             },
             "name": "setuptools",
             "nameWithOwner": "pypa/setuptools",
-            "owner": {
-                "isVerified": true,
-                "login": "pypa"
-            }
-        },
-        "pypa/setuptools-scm": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "setuptools-scm",
-            "nameWithOwner": "pypa/setuptools-scm",
             "owner": {
                 "isVerified": true,
                 "login": "pypa"

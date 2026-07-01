@@ -880,6 +880,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Feature: pure stop_and_print subroutine",
+                        "publishedAt": "2026-06-30T22:42:13Z",
+                        "tagName": "4.0.0"
+                    },
+                    {
                         "name": "Expand compiler support: Lfortran and Flang 22",
                         "publishedAt": "2026-02-26T02:53:44Z",
                         "tagName": "3.6.2"

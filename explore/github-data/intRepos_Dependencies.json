@@ -9987,6 +9987,271 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "astroid",
+                                    "repository": {
+                                        "nameWithOwner": "pylint-dev/astroid"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "black",
+                                    "repository": {
+                                        "nameWithOwner": "psf/black"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "certifi",
+                                    "repository": {
+                                        "nameWithOwner": "certifi/python-certifi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cffi",
+                                    "repository": {
+                                        "nameWithOwner": "python-cffi/cffi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "charset-normalizer",
+                                    "repository": {
+                                        "nameWithOwner": "jawah/charset_normalizer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "click",
+                                    "repository": {
+                                        "nameWithOwner": "pallets/click"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cryptography",
+                                    "repository": {
+                                        "nameWithOwner": "pyca/cryptography"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "darker",
+                                    "repository": {
+                                        "nameWithOwner": "akaihola/darker"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "deprecated",
+                                    "repository": {
+                                        "nameWithOwner": "laurent-laporte-pro/deprecated"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "dill",
+                                    "repository": {
+                                        "nameWithOwner": "uqfoundation/dill"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "doc8",
+                                    "repository": {
+                                        "nameWithOwner": "PyCQA/doc8"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "docutils",
+                                    "repository": {
+                                        "nameWithOwner": "jwilk-mirrors/docutils"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "gitdb",
+                                    "repository": {
+                                        "nameWithOwner": "gitpython-developers/gitdb"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "gitpython",
+                                    "repository": {
+                                        "nameWithOwner": "gitpython-developers/GitPython"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "idna",
+                                    "repository": {
+                                        "nameWithOwner": "kjd/idna"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "isort",
+                                    "repository": {
+                                        "nameWithOwner": "PyCQA/isort"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "lit",
+                                    "repository": {
+                                        "nameWithOwner": "llvm/llvm-project"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mccabe",
+                                    "repository": {
+                                        "nameWithOwner": "PyCQA/mccabe"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mypy-extensions",
+                                    "repository": {
+                                        "nameWithOwner": "python/mypy_extensions"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "packaging",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/packaging"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pathspec",
+                                    "repository": {
+                                        "nameWithOwner": "cpburnz/python-pathspec"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "platformdirs",
+                                    "repository": {
+                                        "nameWithOwner": "tox-dev/platformdirs"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pycparser",
+                                    "repository": {
+                                        "nameWithOwner": "eliben/pycparser"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygithub",
+                                    "repository": {
+                                        "nameWithOwner": "PyGithub/PyGithub"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygments",
+                                    "repository": {
+                                        "nameWithOwner": "pygments/pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pyjwt",
+                                    "repository": {
+                                        "nameWithOwner": "jpadilla/pyjwt"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pylint",
+                                    "repository": {
+                                        "nameWithOwner": "pylint-dev/pylint"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pynacl",
+                                    "repository": {
+                                        "nameWithOwner": "pyca/pynacl"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "requests",
+                                    "repository": {
+                                        "nameWithOwner": "psf/requests"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "restructuredtext-lint",
+                                    "repository": {
+                                        "nameWithOwner": "twolfson/restructuredtext-lint"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "smmap",
+                                    "repository": {
+                                        "nameWithOwner": "gitpython-developers/smmap"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "stevedore",
+                                    "repository": {
+                                        "nameWithOwner": "openstack/stevedore"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "toml",
+                                    "repository": {
+                                        "nameWithOwner": "uiri/toml"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "tomlkit",
+                                    "repository": {
+                                        "nameWithOwner": "python-poetry/tomlkit"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "typing-extensions",
+                                    "repository": {
+                                        "nameWithOwner": "python/typing"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "urllib3",
+                                    "repository": {
+                                        "nameWithOwner": "urllib3/urllib3"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "wrapt",
+                                    "repository": {
+                                        "nameWithOwner": "GrahamDumpleton/wrapt"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "psutil",
                                     "repository": {
                                         "nameWithOwner": "giampaolo/psutil"
@@ -10322,271 +10587,6 @@
                                     "packageName": "urllib3",
                                     "repository": {
                                         "nameWithOwner": "urllib3/urllib3"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "astroid",
-                                    "repository": {
-                                        "nameWithOwner": "pylint-dev/astroid"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "black",
-                                    "repository": {
-                                        "nameWithOwner": "psf/black"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "certifi",
-                                    "repository": {
-                                        "nameWithOwner": "certifi/python-certifi"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "cffi",
-                                    "repository": {
-                                        "nameWithOwner": "python-cffi/cffi"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "charset-normalizer",
-                                    "repository": {
-                                        "nameWithOwner": "jawah/charset_normalizer"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "click",
-                                    "repository": {
-                                        "nameWithOwner": "pallets/click"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "cryptography",
-                                    "repository": {
-                                        "nameWithOwner": "pyca/cryptography"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "darker",
-                                    "repository": {
-                                        "nameWithOwner": "akaihola/darker"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "deprecated",
-                                    "repository": {
-                                        "nameWithOwner": "laurent-laporte-pro/deprecated"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "dill",
-                                    "repository": {
-                                        "nameWithOwner": "uqfoundation/dill"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "doc8",
-                                    "repository": {
-                                        "nameWithOwner": "PyCQA/doc8"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "docutils",
-                                    "repository": {
-                                        "nameWithOwner": "jwilk-mirrors/docutils"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "gitdb",
-                                    "repository": {
-                                        "nameWithOwner": "gitpython-developers/gitdb"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "gitpython",
-                                    "repository": {
-                                        "nameWithOwner": "gitpython-developers/GitPython"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "idna",
-                                    "repository": {
-                                        "nameWithOwner": "kjd/idna"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "isort",
-                                    "repository": {
-                                        "nameWithOwner": "PyCQA/isort"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "lit",
-                                    "repository": {
-                                        "nameWithOwner": "llvm/llvm-project"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "mccabe",
-                                    "repository": {
-                                        "nameWithOwner": "PyCQA/mccabe"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "mypy-extensions",
-                                    "repository": {
-                                        "nameWithOwner": "python/mypy_extensions"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "packaging",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/packaging"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pathspec",
-                                    "repository": {
-                                        "nameWithOwner": "cpburnz/python-pathspec"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "platformdirs",
-                                    "repository": {
-                                        "nameWithOwner": "tox-dev/platformdirs"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pycparser",
-                                    "repository": {
-                                        "nameWithOwner": "eliben/pycparser"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pygithub",
-                                    "repository": {
-                                        "nameWithOwner": "PyGithub/PyGithub"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pygments",
-                                    "repository": {
-                                        "nameWithOwner": "pygments/pygments"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pyjwt",
-                                    "repository": {
-                                        "nameWithOwner": "jpadilla/pyjwt"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pylint",
-                                    "repository": {
-                                        "nameWithOwner": "pylint-dev/pylint"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pynacl",
-                                    "repository": {
-                                        "nameWithOwner": "pyca/pynacl"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "requests",
-                                    "repository": {
-                                        "nameWithOwner": "psf/requests"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "restructuredtext-lint",
-                                    "repository": {
-                                        "nameWithOwner": "twolfson/restructuredtext-lint"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "smmap",
-                                    "repository": {
-                                        "nameWithOwner": "gitpython-developers/smmap"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "stevedore",
-                                    "repository": {
-                                        "nameWithOwner": "openstack/stevedore"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "toml",
-                                    "repository": {
-                                        "nameWithOwner": "uiri/toml"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "tomlkit",
-                                    "repository": {
-                                        "nameWithOwner": "python-poetry/tomlkit"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "typing-extensions",
-                                    "repository": {
-                                        "nameWithOwner": "python/typing"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "urllib3",
-                                    "repository": {
-                                        "nameWithOwner": "urllib3/urllib3"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "wrapt",
-                                    "repository": {
-                                        "nameWithOwner": "GrahamDumpleton/wrapt"
                                     }
                                 }
                             ]
@@ -16322,32 +16322,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "pip",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/pip"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "coverage",
-                                    "repository": {
-                                        "nameWithOwner": "coveragepy/coveragepy"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "black",
                                     "repository": {
                                         "nameWithOwner": "psf/black"
@@ -16495,6 +16469,32 @@
                                     "packageName": "sphinxcontrib-svg2pdfconverter",
                                     "repository": {
                                         "nameWithOwner": "missinglinkelectronics/sphinxcontrib-svg2pdfconverter"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "coverage",
+                                    "repository": {
+                                        "nameWithOwner": "coveragepy/coveragepy"
                                     }
                                 }
                             ]

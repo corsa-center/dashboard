@@ -486,7 +486,7 @@
                 "totalCount": 1502
             },
             "pullRequests_Open": {
-                "totalCount": 15
+                "totalCount": 16
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -664,14 +664,14 @@
             },
             "description": "Official HDF5\u00ae Library Repository",
             "forks": {
-                "totalCount": 339
+                "totalCount": 340
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
                 "totalCount": 946
             },
             "issues_Open": {
-                "totalCount": 321
+                "totalCount": 322
             },
             "languages": {
                 "totalCount": 15
@@ -696,13 +696,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 484
+                "totalCount": 485
             },
             "pullRequests_Merged": {
-                "totalCount": 4675
+                "totalCount": 4676
             },
             "pullRequests_Open": {
-                "totalCount": 22
+                "totalCount": 23
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -994,7 +994,7 @@
             },
             "description": "Source code repository of PnetCDF library and utilities",
             "forks": {
-                "totalCount": 32
+                "totalCount": 33
             },
             "homepageUrl": "https://parallel-netcdf.github.io",
             "issues_Closed": {
@@ -1633,7 +1633,7 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 45
+                "totalCount": 46
             },
             "pullRequests_Merged": {
                 "totalCount": 359
@@ -2032,7 +2032,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 607
+                "totalCount": 608
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -2069,7 +2069,7 @@
             },
             "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
             "forks": {
-                "totalCount": 246
+                "totalCount": 245
             },
             "homepageUrl": "https://www.llnl.gov/casc/hypre/",
             "issues_Closed": {
@@ -2242,7 +2242,7 @@
                 "totalCount": 2816
             },
             "issues_Open": {
-                "totalCount": 504
+                "totalCount": 505
             },
             "languages": {
                 "totalCount": 11
@@ -2279,7 +2279,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2591
+                "totalCount": 2592
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 15393
+                "totalCount": 15401
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 67321
+                "totalCount": 67327
             },
             "issues_Open": {
-                "totalCount": 29066
+                "totalCount": 29073
             },
             "languages": {
                 "totalCount": 56
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 10824
+                "totalCount": 10830
             },
             "pullRequests_Merged": {
-                "totalCount": 90487
+                "totalCount": 90519
             },
             "pullRequests_Open": {
-                "totalCount": 8305
+                "totalCount": 8329
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 39080
+                "totalCount": 39097
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2625,10 +2625,10 @@
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
-                "totalCount": 2392
+                "totalCount": 2393
             },
             "issues_Open": {
-                "totalCount": 85
+                "totalCount": 84
             },
             "languages": {
                 "totalCount": 10
@@ -2659,7 +2659,7 @@
                 "totalCount": 2031
             },
             "pullRequests_Open": {
-                "totalCount": 145
+                "totalCount": 146
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2680,10 +2680,10 @@
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
-                "totalCount": 3259
+                "totalCount": 3260
             },
             "issues_Open": {
-                "totalCount": 735
+                "totalCount": 734
             },
             "languages": {
                 "totalCount": 12
@@ -2711,16 +2711,16 @@
                 "totalCount": 1124
             },
             "pullRequests_Merged": {
-                "totalCount": 8922
+                "totalCount": 8925
             },
             "pullRequests_Open": {
-                "totalCount": 69
+                "totalCount": 70
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2609
+                "totalCount": 2611
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2868,7 +2868,7 @@
             },
             "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
             "forks": {
-                "totalCount": 280
+                "totalCount": 279
             },
             "homepageUrl": "https://gitlab.com/petsc/petsc",
             "languages": {
@@ -2883,7 +2883,7 @@
                 "name": "C"
             },
             "stargazers": {
-                "totalCount": 183
+                "totalCount": 184
             },
             "url": "https://gitlab.com/petsc/petsc"
         },
@@ -2949,7 +2949,7 @@
             },
             "description": "Official MPICH Repository",
             "forks": {
-                "totalCount": 313
+                "totalCount": 314
             },
             "homepageUrl": "http://www.mpich.org",
             "issues_Closed": {
@@ -2987,7 +2987,7 @@
                 "totalCount": 3346
             },
             "pullRequests_Open": {
-                "totalCount": 67
+                "totalCount": 69
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -3048,7 +3048,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1348
+                "totalCount": 1349
             },
             "url": "https://github.com/pnnl/neuromancer"
         },
@@ -3171,11 +3171,11 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2315
+                "totalCount": 2316
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
-                "totalCount": 7916
+                "totalCount": 7917
             },
             "issues_Open": {
                 "totalCount": 1339
@@ -3209,7 +3209,7 @@
                 "totalCount": 37271
             },
             "pullRequests_Open": {
-                "totalCount": 421
+                "totalCount": 423
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -3281,10 +3281,10 @@
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
-                "totalCount": 5398
+                "totalCount": 5400
             },
             "issues_Open": {
-                "totalCount": 255
+                "totalCount": 253
             },
             "languages": {
                 "totalCount": 33
@@ -3315,7 +3315,7 @@
                 "totalCount": 8389
             },
             "pullRequests_Open": {
-                "totalCount": 85
+                "totalCount": 86
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3418,10 +3418,10 @@
             },
             "homepageUrl": "",
             "issues_Closed": {
-                "totalCount": 63
+                "totalCount": 64
             },
             "issues_Open": {
-                "totalCount": 24
+                "totalCount": 23
             },
             "languages": {
                 "totalCount": 9

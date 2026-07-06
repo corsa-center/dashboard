@@ -52515,6 +52515,16 @@
             "login": "ishaangandhi",
             "name": "Ishaan Gandhi"
         },
+        "ishevlyakov": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/68034103?u=bd3a6fb4b68a79df5d278e77ddb475398f9cb844&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "ishevlyakov",
+            "name": "Igor Shevlyakov"
+        },
         "ishitatsuyuki": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/12389383?u=6b8f2c316f30a7c38bd211d3c0a15c0a5a50d807&v=4",
             "contributedLabRepositories": {
@@ -56477,7 +56487,7 @@
             "name": "Jo\u00e3o Batista Fernandes"
         },
         "joaomlneto": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/1539767?u=09d1bc2a6af660d491db832b3b740874ac315975&v=4",
+            "avatarUrl": "https://avatars.githubusercontent.com/u/1539767?u=f6ae2b01886cbfd2a6b5919ec5a0d19d425df6dd&v=4",
             "contributedLabRepositories": {
                 "nodes": [
                     "mfem/mfem"
@@ -57993,7 +58003,8 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/617316?v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "open-mpi/ompi"
+                    "open-mpi/ompi",
+                    "pmodels/mpich"
                 ]
             },
             "login": "jsquyres",
@@ -78495,16 +78506,6 @@
             "login": "picsel2",
             "name": "Sebastian Grabowski"
         },
-        "pierluigilenoci": {
-            "avatarUrl": "https://avatars.githubusercontent.com/u/36044817?u=7161497afa106f1c920f8643878925ab1119f32f&v=4",
-            "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
-            },
-            "login": "pierluigilenoci",
-            "name": "Pierluigi Lenoci"
-        },
         "pierre-leon": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/23051249?u=5486f6ccdf04a3e32109d9df9c091099fc76435d&v=4",
             "contributedLabRepositories": {
@@ -91099,7 +91100,7 @@
                 ]
             },
             "login": "sternenseemann",
-            "name": null
+            "name": "Lukas Epple"
         },
         "stevan-cvetkovic": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/180873645?u=56ae889d884c2cb97745cedacad59b9511cb7caf&v=4",

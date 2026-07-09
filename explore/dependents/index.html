@@ -1,58 +1,140 @@
----
-title: Project Dependent Visualizations
-layout: default
-ext-js:
-  - https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js
-  - https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js
-  - https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js
-js:
-  - js/explore/helpers.js
----
-<h2 class="page-header text-center" id="projectTitle">Project Dependent Visualizations</h2>
-
-<!-- Preset vis display areas -->
-<main id="content" class="text-center">
-<div class="dv-landing-container">
-    <div class="dv-landing-header">
-        <h1>Dependency Graph Visualizer</h1>
-        <p class="dv-subtitle">Explore software supply chains, discover dependents, and generate SPDX manifests.</p>
-    </div>
-
-    <div class="dv-landing-grid">
-        <div class="dv-card">
-            <h3>Explore Dependents</h3>
-            <p>View downstream consumers in a sortable data table or visualize them in an interactive network graph.</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corsa Tools - Project Dependents Visualizer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="landing-page">
+    <header class="site-header">
+      <a class="brand" href="/dashboard/" aria-label="Corsa home"><img src="assets/corsa-logo.png" alt="Corsa" /></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <div class="nav-item"><a href="/dashboard/catalog/">Catalog</a></div>
+        <div class="nav-item active has-dropdown">
+          <a href="/dashboard/explore/">Explore</a>
+          <div class="site-dropdown" aria-label="Explore menu">
+            <a href="/dashboard/explore/dependencies/">Dependencies</a>
+            <a href="/dashboard/explore/spack-dependencies/">Spack Dependencies</a>
+            <a href="/dashboard/explore/project-metrics/">Project Metric Visualizer</a>
+            <a class="active" href="/dashboard/explore/dependents/">Project Dependent Visualizer</a>
+          </div>
         </div>
-
-        <div class="dv-card">
-            <h3>SPDX Generation</h3>
-            <p>Click any row or node to extract valid SPDX 2.3 snippets securely pinned to specific commit SHAs.</p>
+        <div class="nav-item has-dropdown">
+          <a href="/dashboard/about/">About</a>
+          <div class="site-dropdown" aria-label="About menu">
+            <a href="/dashboard/about/faq/">FAQ</a>
+            <a href="/dashboard/about/licenses/">Licenses Guide</a>
+          </div>
         </div>
-
-        <div class="dv-card">
-            <h3>Rich Metadata</h3>
-            <p>Automatically aggregates repository stars, commit history, contributor counts, and academic citations.</p>
+        <div class="nav-item has-dropdown">
+          <a href="/dashboard/news/">News</a>
+          <div class="site-dropdown" aria-label="News menu">
+            <a href="/dashboard/news/archive/">Archive</a>
+          </div>
         </div>
+        <a class="icon-link" href="https://github.com/cass-community" aria-label="GitHub"><img src="assets/github-icon.svg" alt="" /></a>
+        <a class="icon-link" href="https://twitter.com/cass" aria-label="Twitter"><span class="fa fa-twitter fa-lg" aria-hidden="true"></span></a>
+      </nav>
+    </header>
+
+    <main class="landing">
+      <section class="hero">
+        <p class="product-label">Project Dependents Visualizer</p>
+        <h1>Explore who depends on your software</h1>
+        <p class="hero-copy">Discover downstream consumers, explore software supply chains, inspect repository metadata, and generate SPDX manifests.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="visualizer/index.html">
+            <span class="button-icon data-icon" aria-hidden="true"></span>
+            Explore example data
+          </a>
+          <a class="button secondary" id="uploadData" href="visualizer/index.html?upload=1">
+            <span class="button-icon upload-icon" aria-hidden="true"></span>
+            Upload your data
+          </a>
+        </div>
+        <button class="guide-link" type="button" id="openGuide">
+          <img class="button-icon asset-icon" src="assets/book-open-icon.svg" alt="" aria-hidden="true" />
+          View data format and setup guide
+        </button>
+      </section>
+
+      <section class="feature-grid" aria-label="Features">
+        <article class="feature-card">
+          <div class="feature-icon figma-feature-icon" aria-hidden="true"><img src="assets/feature-dependents-icon.svg" alt="" /></div>
+          <h2>Explore Dependents</h2>
+          <p>View downstream consumers in a sortable data table or visualize them in an interactive network graph.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon figma-feature-icon" aria-hidden="true"><img src="assets/feature-spdx-icon.svg" alt="" /></div>
+          <h2>SPDX Generation</h2>
+          <p>Click any row or node to extract valid SPDX 2.3 snippets securely pinned to specific commit SHAs.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-icon figma-feature-icon" aria-hidden="true"><img src="assets/feature-metadata-icon.svg" alt="" /></div>
+          <h2>Inspect Rich Metadata</h2>
+          <p>Automatically aggregates repository stars, commit history, contributor counts, and academic citations.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="doe-footer">
+      <div class="doe-band"></div>
+      <div class="doe-lockup">
+        <img class="doe-logo-image" src="assets/doe-logo.png" alt="U.S. Department of Energy" />
+        <span class="divider"></span>
+        <span class="office-science">Office of<br />Science</span>
+      </div>
+      <a class="contact-button" href="mailto:cass-steering-committee@email.ornl.gov">Contact Us</a>
+    </footer>
+
+    <div class="modal-backdrop" id="guideModal" aria-hidden="true">
+      <section class="guide-modal" role="dialog" aria-modal="true" aria-labelledby="guideTitle">
+        <header class="modal-header">
+          <h2 id="guideTitle">How to Use the Dashboard</h2>
+          <button class="close-button" type="button" id="closeGuide" aria-label="Close guide"></button>
+        </header>
+        <div class="modal-body">
+          <div class="guide-step">
+            <span class="step-icon figma-step-icon"><img src="assets/modal-upload-icon.svg" alt="" aria-hidden="true" /></span>
+            <div>
+              <h3>Upload your data</h3>
+              <p>Upload a .zip artifact generated by the GitHub Action or a supported .json file.</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-icon figma-step-icon"><img src="assets/modal-table-icon.svg" alt="" aria-hidden="true" /></span>
+            <div>
+              <h3>Explore and filter dependents</h3>
+              <p>Search, sort, filter, and group downstream consumers in the List view tab.</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-icon figma-step-icon"><img src="assets/modal-network-icon.svg" alt="" aria-hidden="true" /></span>
+            <div>
+              <h3>Visualize the network</h3>
+              <p>Switch to graph view to explore deep, multi-level dependency chains in tree or radial layouts.</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-icon figma-step-icon"><img src="assets/modal-inspect-icon.svg" alt="" aria-hidden="true" /></span>
+            <div>
+              <h3>Inspect and export package data</h3>
+              <p>Select a package from the list or graph to view repository metadata, citation information, and its SPDX manifest data.</p>
+            </div>
+          </div>
+        </div>
+        <footer class="modal-footer">
+          <a class="button primary" href="visualizer/index.html"><span class="button-icon data-icon" aria-hidden="true"></span>Explore example data</a>
+          <a class="button secondary" href="visualizer/index.html?upload=1"><span class="button-icon upload-icon" aria-hidden="true"></span>Upload your data</a>
+        </footer>
+      </section>
     </div>
 
-    <div class="dv-landing-instructions" style="background: #252526; padding: 20px; border-radius: 8px; border: 1px solid #333; text-align: left; margin-bottom: 40px;">
-        <h3 style="margin-top: 0; color: #fff;">How to Use the Dashboard</h3>
-        <ul style="color: #ccc; line-height: 1.6; margin-bottom: 0;">
-            <li><strong>Upload Data:</strong> Use the control panel to upload the <code>.zip</code> artifact generated by the GitHub Action.</li>
-            <li><strong>List View (Default):</strong> Sort consumers by stars, contributors, or activity. Click any row to view its SPDX manifest.</li>
-            <li><strong>Graph View:</strong> Toggle to the Graph display to visually map deep, multi-level dependency chains.</li>
-            <li><strong>Prune & Filter:</strong> Use the Depth slider to filter out indirect dependencies and focus on direct (L1) consumers.</li>
-        </ul>
-    </div>
-
-    <div class="dv-landing-actions" style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-        <a href="{{ '/explore/dependents/visualizer/index.html' | relative_url }}" class="dv-btn-large" style="background: #007bff; color: #fff; border: 2px solid #007bff; padding: 15px 30px; border-radius: 6px; font-size: 1.1rem; font-weight: bold; text-decoration: none; min-width: 220px; text-align: center; box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);">
-            Open Empty Dashboard
-        </a>
-        
-        <a href="{{ '/explore/dependents/visualizer/index.html?url=example_data.zip' | relative_url }}" class="dv-btn-large" style="background: #252526; color: #fff; border: 2px solid #555; padding: 15px 30px; border-radius: 6px; font-size: 1.1rem; font-weight: bold; text-decoration: none; min-width: 220px; text-align: center; transition: border-color 0.2s;" onmouseover="this.style.borderColor='#aaa'" onmouseout="this.style.borderColor='#555'">
-            Load Example Data
-        </a>
-    </div>
-</div>
-</main>
+    <script src="script.js"></script>
+  </body>
+</html>

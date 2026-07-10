@@ -2185,6 +2185,22 @@
                 "login": "dcchut"
             }
         },
+        "deepin-community/sphinxext-rediraffe": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "sphinxext-rediraffe",
+            "nameWithOwner": "deepin-community/sphinxext-rediraffe",
+            "owner": {
+                "isVerified": false,
+                "login": "deepin-community"
+            }
+        },
         "dependabot/fetch-metadata": {
             "languages": {
                 "nodes": [
@@ -4151,6 +4167,22 @@
                 "login": "micromatch"
             }
         },
+        "microsoft/TypeScript": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "TypeScript",
+            "nameWithOwner": "microsoft/TypeScript",
+            "owner": {
+                "isVerified": true,
+                "login": "microsoft"
+            }
+        },
         "microsoft/azure-devops-node-api": {
             "languages": {
                 "nodes": [
@@ -4178,22 +4210,6 @@
             },
             "name": "tslib",
             "nameWithOwner": "microsoft/tslib",
-            "owner": {
-                "isVerified": true,
-                "login": "microsoft"
-            }
-        },
-        "microsoft/typescript-go": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#00ADD8",
-                        "name": "Go"
-                    }
-                ]
-            },
-            "name": "typescript-go",
-            "nameWithOwner": "microsoft/typescript-go",
             "owner": {
                 "isVerified": true,
                 "login": "microsoft"

@@ -2022,17 +2022,6 @@
                 "login": "console-rs"
             }
         },
-        "contain-rs/bit-set": {
-            "languages": {
-                "nodes": []
-            },
-            "name": "bit-set",
-            "nameWithOwner": "contain-rs/bit-set",
-            "owner": {
-                "isVerified": false,
-                "login": "contain-rs"
-            }
-        },
         "contain-rs/bit-vec": {
             "languages": {
                 "nodes": [

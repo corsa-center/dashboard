@@ -237,7 +237,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 366935
+                        "size": 368070
                     },
                     {
                         "size": 277912
@@ -261,7 +261,7 @@
                     }
                 ],
                 "totalCount": 3,
-                "totalSize": 667696
+                "totalSize": 668831
             }
         },
         "BerkeleyLab/fiats": {
@@ -1770,7 +1770,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 17919473
+                        "size": 17919995
                     },
                     {
                         "size": 628564
@@ -1822,7 +1822,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 19012002
+                "totalSize": 19012524
             }
         },
         "anigmetov/oineus": {
@@ -2131,13 +2131,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12309736
+                        "size": 12311121
                     },
                     {
-                        "size": 5655569
+                        "size": 5656093
                     },
                     {
-                        "size": 826227
+                        "size": 826234
                     },
                     {
                         "size": 171129
@@ -2211,7 +2211,7 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 19092615
+                "totalSize": 19094531
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2555,13 +2555,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 26883808
+                        "size": 26883997
                     },
                     {
                         "size": 3674913
                     },
                     {
-                        "size": 573618
+                        "size": 574403
                     },
                     {
                         "size": 492073
@@ -2663,7 +2663,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 32338666
+                "totalSize": 32339640
             }
         },
         "icl-utk-edu/magma": {
@@ -2973,13 +2973,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 13477053
+                        "size": 13469454
                     },
                     {
                         "size": 379473
                     },
                     {
-                        "size": 204508
+                        "size": 204888
                     },
                     {
                         "size": 163662
@@ -3025,7 +3025,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 14323984
+                "totalSize": 14316765
             }
         },
         "llnl/libROM": {
@@ -3317,31 +3317,31 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 733506086
+                        "size": 733817880
                     },
                     {
-                        "size": 545563306
+                        "size": 545759213
                     },
                     {
-                        "size": 222258794
+                        "size": 222285813
                     },
                     {
-                        "size": 205868033
+                        "size": 205890255
                     },
                     {
-                        "size": 29547623
+                        "size": 29582551
                     },
                     {
-                        "size": 15394659
+                        "size": 15395256
                     },
                     {
-                        "size": 13204579
+                        "size": 13260404
                     },
                     {
-                        "size": 5671859
+                        "size": 5681191
                     },
                     {
-                        "size": 4868772
+                        "size": 4871426
                     },
                     {
                         "size": 4464502
@@ -3350,19 +3350,19 @@
                         "size": 3389764
                     },
                     {
-                        "size": 2276235
+                        "size": 2276233
                     },
                     {
-                        "size": 1704327
+                        "size": 1704405
                     },
                     {
-                        "size": 1521095
+                        "size": 1523309
                     },
                     {
                         "size": 1402149
                     },
                     {
-                        "size": 1228399
+                        "size": 1229830
                     },
                     {
                         "size": 417694
@@ -3619,7 +3619,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1794377655
+                "totalSize": 1795041654
             }
         },
         "mfem/mfem": {
@@ -3706,22 +3706,22 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 22653398
+                        "size": 22806002
                     },
                     {
-                        "size": 935934
+                        "size": 933607
                     },
                     {
-                        "size": 596898
+                        "size": 601589
                     },
                     {
-                        "size": 504447
+                        "size": 550600
                     },
                     {
                         "size": 271019
                     },
                     {
-                        "size": 260137
+                        "size": 257071
                     },
                     {
                         "size": 209138
@@ -3793,14 +3793,14 @@
                     }
                 ],
                 "totalCount": 12,
-                "totalSize": 25573268
+                "totalSize": 25771323
             }
         },
         "ornladios/ADIOS2": {
             "languages": {
                 "edges": [
                     {
-                        "size": 9080606
+                        "size": 9080886
                     },
                     {
                         "size": 983046
@@ -3901,7 +3901,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 12120782
+                "totalSize": 12121062
             }
         },
         "patrickfan/GenAI4UQ": {
@@ -3931,7 +3931,7 @@
                         "size": 3736178
                     },
                     {
-                        "size": 3228364
+                        "size": 3228385
                     },
                     {
                         "size": 1874594
@@ -4107,7 +4107,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 58275707
+                "totalSize": 58275728
             }
         },
         "pghysels/STRUMPACK": {
@@ -4437,7 +4437,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 8341785
+                        "size": 8344146
                     },
                     {
                         "size": 527942
@@ -4538,7 +4538,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 9128507
+                "totalSize": 9130868
             }
         },
         "tpeterka/ChatVis": {

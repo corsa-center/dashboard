@@ -2624,27 +2624,6 @@
                         "url": "https://github.com/topics/python"
                     },
                     {
-                        "resourcePath": "/topics/pytorch",
-                        "topic": {
-                            "name": "pytorch"
-                        },
-                        "url": "https://github.com/topics/pytorch"
-                    },
-                    {
-                        "resourcePath": "/topics/autotune",
-                        "topic": {
-                            "name": "autotune"
-                        },
-                        "url": "https://github.com/topics/autotune"
-                    },
-                    {
-                        "resourcePath": "/topics/tensorflow",
-                        "topic": {
-                            "name": "tensorflow"
-                        },
-                        "url": "https://github.com/topics/tensorflow"
-                    },
-                    {
                         "resourcePath": "/topics/hyperparameter-tuning",
                         "topic": {
                             "name": "hyperparameter-tuning"
@@ -2652,7 +2631,7 @@
                         "url": "https://github.com/topics/hyperparameter-tuning"
                     }
                 ],
-                "totalCount": 10
+                "totalCount": 7
             }
         }
     }

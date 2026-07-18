@@ -1152,6 +1152,22 @@
                 "login": "aws-actions"
             }
         },
+        "bandframework/surmise": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#DA5B0B",
+                        "name": "Jupyter Notebook"
+                    }
+                ]
+            },
+            "name": "surmise",
+            "nameWithOwner": "bandframework/surmise",
+            "owner": {
+                "isVerified": false,
+                "login": "bandframework"
+            }
+        },
         "benjaminp/six": {
             "languages": {
                 "nodes": [
@@ -3723,6 +3739,22 @@
                 "login": "prefix-dev"
             }
         },
+        "proxystore/proxystore": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "proxystore",
+            "nameWithOwner": "proxystore/proxystore",
+            "owner": {
+                "isVerified": false,
+                "login": "proxystore"
+            }
+        },
         "psf/black": {
             "languages": {
                 "nodes": [
@@ -4393,6 +4425,22 @@
                 "login": "readthedocs"
             }
         },
+        "redis/redis-py": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "redis-py",
+            "nameWithOwner": "redis/redis-py",
+            "owner": {
+                "isVerified": true,
+                "login": "redis"
+            }
+        },
         "rickstaa/action-create-tag": {
             "languages": {
                 "nodes": [
@@ -4643,6 +4691,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "rust-ndarray"
+            }
+        },
+        "saschpe/pyenchant": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pyenchant",
+            "nameWithOwner": "saschpe/pyenchant",
+            "owner": {
+                "login": "saschpe"
             }
         },
         "scikit-build/moderncmakedomain": {
@@ -5797,6 +5860,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "yaml"
+            }
+        },
+        "yfaming/enchant": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "enchant",
+            "nameWithOwner": "yfaming/enchant",
+            "owner": {
+                "login": "yfaming"
             }
         },
         "yu-liang-kono/interactor": {

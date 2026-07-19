@@ -7,7 +7,7 @@
             },
             "description": "AMReX: Software Framework for Block Structured AMR",
             "forks": {
-                "totalCount": 444
+                "totalCount": 445
             },
             "homepageUrl": "https://amrex-codes.github.io/amrex",
             "issues_Closed": {
@@ -45,7 +45,7 @@
                 "totalCount": 3934
             },
             "pullRequests_Open": {
-                "totalCount": 33
+                "totalCount": 34
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -107,7 +107,7 @@
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 253
+                "totalCount": 254
             },
             "url": "https://github.com/Alpine-DAV/ascent"
         },
@@ -208,10 +208,10 @@
                 "totalCount": 15
             },
             "pullRequests_Merged": {
-                "totalCount": 220
+                "totalCount": 221
             },
             "pullRequests_Open": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -238,7 +238,7 @@
                 "totalCount": 3
             },
             "languages": {
-                "totalCount": 3
+                "totalCount": 4
             },
             "licenseInfo": {
                 "name": "Other",
@@ -260,13 +260,13 @@
                 "name": "Fortran"
             },
             "pullRequests_Closed": {
-                "totalCount": 20
+                "totalCount": 22
             },
             "pullRequests_Merged": {
-                "totalCount": 237
+                "totalCount": 239
             },
             "pullRequests_Open": {
-                "totalCount": 5
+                "totalCount": 3
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -373,7 +373,7 @@
                 "totalCount": 14
             },
             "pullRequests_Merged": {
-                "totalCount": 145
+                "totalCount": 146
             },
             "pullRequests_Open": {
                 "totalCount": 0
@@ -503,14 +503,14 @@
             },
             "description": "chipStar is a tool for compiling and running HIP/CUDA on SPIR-V via OpenCL or Level Zero APIs.",
             "forks": {
-                "totalCount": 45
+                "totalCount": 46
             },
             "homepageUrl": "",
             "issues_Closed": {
-                "totalCount": 500
+                "totalCount": 501
             },
             "issues_Open": {
-                "totalCount": 38
+                "totalCount": 37
             },
             "languages": {
                 "totalCount": 9
@@ -538,10 +538,10 @@
                 "totalCount": 108
             },
             "pullRequests_Merged": {
-                "totalCount": 675
+                "totalCount": 678
             },
             "pullRequests_Open": {
-                "totalCount": 5
+                "totalCount": 11
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -702,7 +702,7 @@
                 "totalCount": 4696
             },
             "pullRequests_Open": {
-                "totalCount": 24
+                "totalCount": 26
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -1093,7 +1093,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 197
+                "totalCount": 199
             },
             "url": "https://github.com/SCOREC/core"
         },
@@ -1370,7 +1370,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 762
+                "totalCount": 763
             },
             "url": "https://github.com/StanfordLegion/legion"
         },
@@ -1805,7 +1805,7 @@
                 "totalCount": 1326
             },
             "pullRequests_Open": {
-                "totalCount": 36
+                "totalCount": 37
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2279,7 +2279,7 @@
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2610
+                "totalCount": 2611
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2335,7 +2335,7 @@
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 396
+                "totalCount": 397
             },
             "url": "https://github.com/kokkos/kokkos-kernels"
         },
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 15546
+                "totalCount": 15561
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 67751
+                "totalCount": 67762
             },
             "issues_Open": {
-                "totalCount": 29086
+                "totalCount": 29095
             },
             "languages": {
                 "totalCount": 56
@@ -2585,7 +2585,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6255
+                "totalCount": 6258
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 11090
+                "totalCount": 11102
             },
             "pullRequests_Merged": {
-                "totalCount": 92606
+                "totalCount": 92651
             },
             "pullRequests_Open": {
-                "totalCount": 8460
+                "totalCount": 8471
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 39330
+                "totalCount": 39350
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2676,14 +2676,14 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 912
+                "totalCount": 913
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
                 "totalCount": 3266
             },
             "issues_Open": {
-                "totalCount": 739
+                "totalCount": 740
             },
             "languages": {
                 "totalCount": 12
@@ -2714,7 +2714,7 @@
                 "totalCount": 8968
             },
             "pullRequests_Open": {
-                "totalCount": 69
+                "totalCount": 70
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -2764,13 +2764,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 701
+                "totalCount": 702
             },
             "pullRequests_Merged": {
-                "totalCount": 3093
+                "totalCount": 3094
             },
             "pullRequests_Open": {
-                "totalCount": 10
+                "totalCount": 8
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2956,7 +2956,7 @@
                 "totalCount": 3441
             },
             "issues_Open": {
-                "totalCount": 230
+                "totalCount": 231
             },
             "languages": {
                 "totalCount": 14
@@ -2984,10 +2984,10 @@
                 "totalCount": 744
             },
             "pullRequests_Merged": {
-                "totalCount": 3355
+                "totalCount": 3356
             },
             "pullRequests_Open": {
-                "totalCount": 70
+                "totalCount": 69
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -3209,13 +3209,13 @@
                 "totalCount": 37337
             },
             "pullRequests_Open": {
-                "totalCount": 429
+                "totalCount": 430
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 5093
+                "totalCount": 5094
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3277,14 +3277,14 @@
             },
             "description": "Primary repository for the Trilinos Project",
             "forks": {
-                "totalCount": 611
+                "totalCount": 612
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
-                "totalCount": 5404
+                "totalCount": 5405
             },
             "issues_Open": {
-                "totalCount": 254
+                "totalCount": 253
             },
             "languages": {
                 "totalCount": 33
@@ -3309,7 +3309,7 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 1221
+                "totalCount": 1222
             },
             "pullRequests_Merged": {
                 "totalCount": 8437
@@ -3321,7 +3321,7 @@
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 1404
+                "totalCount": 1405
             },
             "url": "https://github.com/trilinos/Trilinos"
         },

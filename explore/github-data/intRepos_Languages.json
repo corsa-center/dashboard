@@ -275,6 +275,9 @@
                     },
                     {
                         "size": 807
+                    },
+                    {
+                        "size": 631
                     }
                 ],
                 "nodes": [
@@ -289,10 +292,14 @@
                     {
                         "color": "#555555",
                         "name": "C"
+                    },
+                    {
+                        "color": "#f0a9f0",
+                        "name": "Gnuplot"
                     }
                 ],
-                "totalCount": 3,
-                "totalSize": 296145
+                "totalCount": 4,
+                "totalSize": 296776
             }
         },
         "BerkeleyLab/gasnet": {
@@ -517,7 +524,7 @@
                         "size": 70832369
                     },
                     {
-                        "size": 3140700
+                        "size": 3141162
                     },
                     {
                         "size": 2006341
@@ -529,7 +536,7 @@
                         "size": 202136
                     },
                     {
-                        "size": 140703
+                        "size": 140831
                     },
                     {
                         "size": 99263
@@ -580,7 +587,7 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 77069021
+                "totalSize": 77069611
             }
         },
         "CODARcode/Chimbuko": {
@@ -3317,22 +3324,22 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 735971782
+                        "size": 735997011
                     },
                     {
-                        "size": 547057188
+                        "size": 547103943
                     },
                     {
-                        "size": 222432463
+                        "size": 222444112
                     },
                     {
                         "size": 205941078
                     },
                     {
-                        "size": 29774394
+                        "size": 29777745
                     },
                     {
-                        "size": 15440461
+                        "size": 15443880
                     },
                     {
                         "size": 13432985
@@ -3341,7 +3348,7 @@
                         "size": 5725456
                     },
                     {
-                        "size": 4908146
+                        "size": 4909406
                     },
                     {
                         "size": 4469850
@@ -3353,10 +3360,10 @@
                         "size": 2276253
                     },
                     {
-                        "size": 1732550
+                        "size": 1733870
                     },
                     {
-                        "size": 1533320
+                        "size": 1534415
                     },
                     {
                         "size": 1402851
@@ -3386,7 +3393,7 @@
                         "size": 113047
                     },
                     {
-                        "size": 112877
+                        "size": 112925
                     },
                     {
                         "size": 81660
@@ -3619,7 +3626,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1799012662
+                "totalSize": 1799106788
             }
         },
         "mfem/mfem": {
@@ -3800,7 +3807,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 9093261
+                        "size": 9098406
                     },
                     {
                         "size": 983046
@@ -3901,7 +3908,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 12138406
+                "totalSize": 12143551
             }
         },
         "patrickfan/GenAI4UQ": {
@@ -4194,7 +4201,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 19685237
+                        "size": 19685408
                     },
                     {
                         "size": 931727
@@ -4295,7 +4302,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 23471013
+                "totalSize": 23471184
             }
         },
         "pnnl/neuromancer": {

@@ -283,7 +283,7 @@
             },
             "description": "The main repository for the GASNet/GASNet-EX communication library",
             "forks": {
-                "totalCount": 2
+                "totalCount": 3
             },
             "homepageUrl": "https://gasnet.lbl.gov/",
             "issues_Closed": {
@@ -668,10 +668,10 @@
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 957
+                "totalCount": 958
             },
             "issues_Open": {
-                "totalCount": 316
+                "totalCount": 315
             },
             "languages": {
                 "totalCount": 15
@@ -699,7 +699,7 @@
                 "totalCount": 488
             },
             "pullRequests_Merged": {
-                "totalCount": 4696
+                "totalCount": 4697
             },
             "pullRequests_Open": {
                 "totalCount": 26
@@ -1201,10 +1201,10 @@
                 "totalCount": 29
             },
             "pullRequests_Merged": {
-                "totalCount": 127
+                "totalCount": 128
             },
             "pullRequests_Open": {
-                "totalCount": 14
+                "totalCount": 13
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -1932,7 +1932,7 @@
             },
             "description": "Flang is a Fortran language front-end designed for integration with LLVM.",
             "forks": {
-                "totalCount": 146
+                "totalCount": 147
             },
             "homepageUrl": "",
             "issues_Closed": {
@@ -2298,7 +2298,7 @@
                 "totalCount": 782
             },
             "issues_Open": {
-                "totalCount": 131
+                "totalCount": 132
             },
             "languages": {
                 "totalCount": 7
@@ -2566,14 +2566,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 15561
+                "totalCount": 15565
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 67762
+                "totalCount": 67770
             },
             "issues_Open": {
-                "totalCount": 29095
+                "totalCount": 29103
             },
             "languages": {
                 "totalCount": 56
@@ -2598,19 +2598,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 11102
+                "totalCount": 11111
             },
             "pullRequests_Merged": {
-                "totalCount": 92651
+                "totalCount": 92682
             },
             "pullRequests_Open": {
-                "totalCount": 8471
+                "totalCount": 8489
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 39350
+                "totalCount": 39359
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2625,10 +2625,10 @@
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
-                "totalCount": 2393
+                "totalCount": 2395
             },
             "issues_Open": {
-                "totalCount": 88
+                "totalCount": 86
             },
             "languages": {
                 "totalCount": 10
@@ -2665,7 +2665,7 @@
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 2203
+                "totalCount": 2204
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -2676,7 +2676,7 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 913
+                "totalCount": 912
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
@@ -2711,16 +2711,16 @@
                 "totalCount": 1125
             },
             "pullRequests_Merged": {
-                "totalCount": 8968
+                "totalCount": 8969
             },
             "pullRequests_Open": {
-                "totalCount": 70
+                "totalCount": 73
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 2617
+                "totalCount": 2618
             },
             "url": "https://github.com/open-mpi/ompi"
         },
@@ -2981,7 +2981,7 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 744
+                "totalCount": 745
             },
             "pullRequests_Merged": {
                 "totalCount": 3356
@@ -3171,7 +3171,7 @@
             },
             "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
             "forks": {
-                "totalCount": 2320
+                "totalCount": 2321
             },
             "homepageUrl": "https://spack.io",
             "issues_Closed": {
@@ -3315,7 +3315,7 @@
                 "totalCount": 8437
             },
             "pullRequests_Open": {
-                "totalCount": 81
+                "totalCount": 82
             },
             "repositoryTopics": {
                 "totalCount": 8

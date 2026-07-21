@@ -1,282 +1,310 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corsa Tools - Dependency Dashboard</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="dashboard-page">
-    <header class="site-header">
-      <a class="brand" href="/dashboard/" aria-label="Corsa home"><img src="assets/corsa-logo.png" alt="Corsa" /></a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <div class="nav-item"><a href="/dashboard/catalog/">Catalog</a></div>
-        <div class="nav-item active has-dropdown">
-          <a href="/dashboard/explore/">Explore</a>
-          <div class="site-dropdown" aria-label="Explore menu">
-            <a href="/dashboard/explore/dependencies/">Dependencies</a>
-            <a href="/dashboard/explore/spack-dependencies/">Spack Dependencies</a>
-            <a href="/dashboard/explore/project-metrics/">Project Metric Visualizer</a>
-            <a class="active" href="/dashboard/explore/dependents/">Project Dependent Visualizer</a>
-          </div>
+---
+title: Project Dependent Visualizations
+layout: default
+body_class: dv-visualizer-page
+---
+<h2 class="page-header text-center" id="projectTitle">Project Dependent Visualizations</h2>
+
+<div id="dependency-visualizer" class="dv-app-container">
+    <div class="dv-top-nav">
+        <div class="dv-nav-brand">
+            <svg class="dv-branch-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.10508 15.2101C8.21506 15.6501 9 16.7334 9 18C9 19.6569 7.65685 21 6 21C4.34315 21 3 19.6569 3 18C3 16.6938 3.83481 15.5825 5 15.1707V8.82929C3.83481 8.41746 3 7.30622 3 6C3 4.34315 4.34315 3 6 3C7.65685 3 9 4.34315 9 6C9 7.30622 8.16519 8.41746 7 8.82929V11.9996C7.83566 11.3719 8.87439 11 10 11H14C15.3835 11 16.5482 10.0635 16.8949 8.78991C15.7849 8.34988 15 7.26661 15 6C15 4.34315 16.3431 3 18 3C19.6569 3 21 4.34315 21 6C21 7.3332 20.1303 8.46329 18.9274 8.85392C18.5222 11.2085 16.4703 13 14 13H10C8.61653 13 7.45179 13.9365 7.10508 15.2101ZM6 17C5.44772 17 5 17.4477 5 18C5 18.5523 5.44772 19 6 19C6.55228 19 7 18.5523 7 18C7 17.4477 6.55228 17 6 17ZM6 5C5.44772 5 5 5.44772 5 6C5 6.55228 5.44772 7 6 7C6.55228 7 7 6.55228 7 6C7 5.44772 6.55228 5 6 5ZM18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"></path></svg>
+            <span style="font-weight: bold; font-size: 1.1rem; margin-left: 8px;">Dependency Dashboard</span>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="/dashboard/about/">About</a>
-          <div class="site-dropdown" aria-label="About menu">
-            <a href="/dashboard/about/faq/">FAQ</a>
-            <a href="/dashboard/about/licenses/">Licenses Guide</a>
-          </div>
+        <div>
+            <button type="button" class="dv-btn dv-btn-primary dv-upload-trigger" data-upload-open style="margin: 0;">Upload Data (.zip / .json)</button>
         </div>
-        <div class="nav-item has-dropdown">
-          <a href="/dashboard/news/">News</a>
-          <div class="site-dropdown" aria-label="News menu">
-            <a href="/dashboard/news/archive/">Archive</a>
-          </div>
-        </div>
-        <a class="icon-link" href="https://github.com/cass-community" aria-label="GitHub"><img src="assets/github-icon.svg" alt="" /></a>
-        <a class="icon-link" href="https://twitter.com/cass" aria-label="Twitter"><span class="fa fa-twitter fa-lg" aria-hidden="true"></span></a>
-      </nav>
-    </header>
-
-    <main>
-      <section class="dashboard-title">
-        <h1>Project dependents visualizer</h1>
-        <p>Explore downstream dependents, network relationships, and academic citations.</p>
-      </section>
-
-      <section class="dashboard-shell" aria-label="Dependency dashboard">
-        <div class="dashboard-topbar">
-          <div class="panel-title">
-            <img class="dashboard-title-icon" src="assets/dashboard-title-icon.svg" alt="" aria-hidden="true" />
-            <span>Dependency dashboard</span>
-          </div>
-          <button class="mini-button blue" id="openUploadModal" type="button"><span class="button-icon upload-icon" aria-hidden="true"></span>Upload data (.zip / .json)</button>
-        </div>
-
-        <div class="project-strip">
-          <div>
-            <div class="project-name">zfp <span class="info-wrap"><button class="info-button" type="button" aria-label="Data source information" aria-describedby="dataSourceTooltip">i</button><span class="data-source-tooltip" id="dataSourceTooltip" role="tooltip"><span><em>File</em><code>zfp-dependents.json</code></span><span><em>Version</em><code>v0.5.5</code></span><span><em>Updated</em><code>Mar 3, 2026</code></span><span><em>Format</em><code>JSON</code></span></span></span></div>
-            <p>Compressed numerical arrays that support high-speed random access</p>
-          </div>
-          <div class="stats">
-            <div><strong>507</strong><span>dependents</span></div>
-            <div><strong>459</strong><span>organizations</span></div>
-          </div>
-        </div>
-
-        <div class="workspace">
-          <div class="main-panel">
-            <div class="tabs" role="tablist" aria-label="Dashboard views">
-              <button class="tab active" type="button" data-tab="dependents">Dependents</button>
-              <button class="tab" type="button" data-tab="graph">Network graph</button>
-              <button class="tab" type="button" data-tab="citations">Citations</button>
-            </div>
-
-            <section class="tab-panel active" id="dependentsPanel" data-panel="dependents">
-              <div class="toolbar">
-                <div class="toolbar-controls">
-                  <input type="search" placeholder="Search packages or owners..." aria-label="Search packages or owners" />
-                  <label class="sort-control">Sort by <select id="sortFilter"><option value="stars-desc">Github stars (High to Low)</option><option value="stars-asc">Github stars (Low to High)</option><option value="package-name">Package name</option></select></label>
-                  <label class="depth-control">Max depth <select id="depthFilter"><option value="all">All Levels</option><option value="L1">L1 only</option><option value="L2">L2 only</option></select></label>
-                  <label class="check"><input type="checkbox" /> Group by organization</label>
-                  <label class="check"><input type="checkbox" /> Leaf nodes only</label>
-                </div>
-                <div class="result-count-row"><span class="result-count">Showing 10 of 507 dependents</span></div>
-              </div>
-              <div class="data-table" role="table" aria-label="Dependents">
-                <div class="table-row table-head" role="row">
-                  <span>Package</span><span>Owner</span><span>Depth</span><span>Stars</span><span>Last update</span>
-                </div>
-                <button class="table-row" type="button" data-package="godot" role="row"><span>godot</span><span>godotengine</span><span class="depth l1">L1</span><span>107,283</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="vcpkg" role="row"><span>vcpkg <b>Leaf</b></span><span>microsoft</span><span class="depth">L2</span><span>26,696</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="filament" role="row"><span>filament</span><span>google</span><span class="depth l1">L1</span><span>19,728</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="blender" role="row"><span>blender <b>Leaf</b></span><span>blender</span><span class="depth">L2</span><span>17,634</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="bgfx" role="row"><span>bgfx <b>Leaf</b></span><span>bkaradzic</span><span class="depth">L2</span><span>16,806</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="homebrew-core" role="row"><span>homebrew-core <b>Leaf</b></span><span>Homebrew</span><span class="depth">L2</span><span>15,078</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="dolphin" role="row"><span>dolphin <b>Leaf</b></span><span>dolphin-emu</span><span class="depth">L2</span><span>14,682</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="Open3D" role="row"><span>Open3D <b>Leaf</b></span><span>isl-org</span><span class="depth">L2</span><span>13,362</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="LunaTranslator" role="row"><span>LunaTranslator <b>Leaf</b></span><span>HIllya51</span><span class="depth">L2</span><span>10,796</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="gcc" role="row"><span>gcc <b>Leaf</b></span><span>gcc-mirror</span><span class="depth">L2</span><span>10,726</span><span>2026-03-03</span></button>
-                <button class="table-row" type="button" data-package="vtk" data-extra-row role="row" hidden><span>vtk</span><span>Kitware</span><span class="depth l1">L1</span><span>9,842</span><span>2026-02-28</span></button>
-                <button class="table-row" type="button" data-package="openfoam" data-extra-row role="row" hidden><span>OpenFOAM</span><span>OpenFOAM</span><span class="depth l1">L1</span><span>8,917</span><span>2026-02-27</span></button>
-                <button class="table-row" type="button" data-package="paraview" data-extra-row role="row" hidden><span>ParaView</span><span>Kitware</span><span class="depth l1">L1</span><span>7,904</span><span>2026-02-25</span></button>
-                <button class="table-row" type="button" data-package="lammps" data-extra-row role="row" hidden><span>LAMMPS</span><span>lammps</span><span class="depth l1">L1</span><span>7,566</span><span>2026-02-23</span></button>
-                <button class="table-row" type="button" data-package="visit" data-extra-row role="row" hidden><span>VisIt <b>Leaf</b></span><span>visit-dav</span><span class="depth">L2</span><span>4,831</span><span>2026-02-21</span></button>
-                <button class="table-row" type="button" data-package="meshio" data-extra-row role="row" hidden><span>meshio <b>Leaf</b></span><span>nschloe</span><span class="depth">L2</span><span>4,320</span><span>2026-02-19</span></button>
-                <button class="table-row" type="button" data-package="fenics" data-extra-row role="row" hidden><span>FEniCS <b>Leaf</b></span><span>FEniCS</span><span class="depth">L2</span><span>3,207</span><span>2026-02-18</span></button>
-                <button class="table-row" type="button" data-package="trilinos" data-extra-row role="row" hidden><span>Trilinos <b>Leaf</b></span><span>trilinos</span><span class="depth">L2</span><span>2,914</span><span>2026-02-16</span></button>
-                <button class="table-row" type="button" data-package="amanzi" data-extra-row role="row" hidden><span>Amanzi <b>Leaf</b></span><span>amanzi</span><span class="depth">L2</span><span>1,842</span><span>2026-02-14</span></button>
-                <button class="table-row" type="button" data-package="libpressio" data-extra-row role="row" hidden><span>libpressio <b>Leaf</b></span><span>robertu94</span><span class="depth">L2</span><span>1,128</span><span>2026-02-12</span></button>
-                <button class="table-row" type="button" data-package="mfem" data-extra-row role="row" hidden><span>MFEM</span><span>mfem</span><span class="depth l1">L1</span><span>1,096</span><span>2026-02-10</span></button>
-                <button class="table-row" type="button" data-package="catalyst" data-extra-row role="row" hidden><span>Catalyst <b>Leaf</b></span><span>Kitware</span><span class="depth">L2</span><span>924</span><span>2026-02-08</span></button>
-              </div>
-              <button class="show-more" id="showMoreRows" type="button">Show 10 more rows</button>
-            </section>
-
-            <section class="tab-panel graph-panel" id="graphPanel" data-panel="graph">
-              <div class="graph-toolbar">
-                <label>Max packages <input type="range" min="10" max="100" value="50" /> 50</label>
-                <input type="search" placeholder="Package name..." aria-label="Package name" />
-                <button type="button">Go</button>
-                <label class="zoom"><input type="range" min="0" max="100" value="56" /></label>
-                <button type="button">Center root</button>
-                <button type="button">Fit all</button>
-                <span class="segmented"><button class="active" type="button">Tree</button><button type="button">Radial</button></span>
-                <button type="button">Export PNG</button>
-              </div>
-              <div class="graph-canvas" aria-label="Network graph visualization">
-                <div class="edge edge-long"></div>
-                <div class="edge edge-mid"></div>
-                <button class="node root" type="button" data-package="zfp">zfp</button>
-                <button class="node selected" type="button" data-package="filament">filament</button>
-                <button class="node" style="--x: 25%; --y: 54%" type="button" data-package="godot">godot</button>
-                <button class="node" style="--x: 7%; --y: 56%" type="button" data-package="openvdb">openvdb</button>
-                <button class="node" style="--x: 17%; --y: 56%" type="button" data-package="blender">blender</button>
-                <button class="node" style="--x: 38%; --y: 56%" type="button" data-package="open3d">Open3D</button>
-                <button class="node" style="--x: 52%; --y: 56%" type="button" data-package="pytorch3d">pytorch3d</button>
-                <button class="node" style="--x: 66%; --y: 56%" type="button" data-package="dolphin">dolphin</button>
-                <button class="node" style="--x: 82%; --y: 56%" type="button" data-package="gcc">gcc</button>
-                <div class="legend">
-                  <span><i class="red"></i> Root project</span>
-                  <span><i></i> Direct dependent</span>
-                  <span><i class="muted"></i> Indirect dependent</span>
-                  <span><i class="blue"></i> Selected package</span>
-                </div>
-              </div>
-            </section>
-
-            <section class="tab-panel citations-panel" id="citationsPanel" data-panel="citations">
-              <div class="citation-summary">
-                <span>Academic papers and DOIs extracted from downstream repositories.</span>
-                <strong>5 publications found</strong>
-              </div>
-              <article class="citation-card">
-                <h2>Error Analysis of ZFP Compression for Floating-Point Data</h2>
-                <p>SIAM Journal on Scientific Computing | DOI: 10.1137/18M1168332</p>
-                <div class="citation-actions"><a href="https://doi.org/10.1137/18M1168332">Read original paper</a><button type="button">Copy DOI</button></div>
-                <div class="cited-by"><span>Cited by downstream consumers</span><p>zfp | Dependency chain: zfp</p><button type="button">View in graph</button></div>
-              </article>
-              <article class="citation-card">
-                <h2>Fixed-Rate Compressed Floating-Point Arrays</h2>
-                <p>IEEE Transactions on Visualization and Computer Graphics | DOI: 10.1109/TVCG.2014.2346458</p>
-                <div class="citation-actions"><a href="https://doi.org/10.1109/TVCG.2014.2346458">Read original paper</a><button type="button">Copy DOI</button></div>
-                <div class="cited-by"><span>Cited by downstream consumers</span><p>zfp | Dependency chain: zfp</p><button type="button">View in graph</button></div>
-              </article>
-              <article class="citation-card">
-                <h2>Instant neural graphics primitives with a multiresolution hash encoding</h2>
-                <p>ACM Transactions on Graphics | DOI: 10.1145/3528223.3530127</p>
-                <div class="citation-actions"><a href="https://doi.org/10.1145/3528223.3530127">Read original paper</a><button type="button">Copy DOI</button></div>
-                <div class="cited-by"><span>Cited by downstream consumers</span><p>zfp | Dependency chain: blender -> ngp</p><button type="button">View in graph</button></div>
-              </article>
-            </section>
-          </div>
-
-          <aside class="inspector" aria-label="Inspector">
-            <header>Inspector</header>
-            <div class="inspector-empty" id="emptyInspector">
-              <div class="empty-icon inspect-icon" aria-hidden="true"></div>
-              <h2>Select a package</h2>
-              <p>Choose a package from the list or graph to view its repository metadata and SPDX manifest.</p>
-            </div>
-            <div class="inspector-detail" id="detailInspector" hidden>
-              <div class="package-heading">
-                <div><h2 id="packageName">filament</h2><p id="packageOwner">google</p></div>
-                <span class="depth l1" id="packageDepth">L1</span>
-              </div>
-              <div class="metric-grid">
-                <div><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z" /></svg>Stars</span><strong id="packageStars">107,283</strong></div>
-                <div><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3" /><path d="M3.5 19a5.5 5.5 0 0 1 11 0M17 8v6M14 11h6" /></svg>Contributors</span><strong>3,213</strong></div>
-                <div><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v17M7 6h10M5 6l-3 6h6L5 6Zm14 0-3 6h6l-3-6ZM8 20h8" /></svg>License</span><strong>MIT</strong></div>
-                <div><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4-8 4-8-4 8-4Zm-8 9 8 4 8-4M4 17l8 4 8-4" /></svg>Chain depth</span><strong id="packageChain">L1</strong></div>
-              </div>
-              <button class="ghost-action" type="button" id="switchViewButton">View dependents in graph</button>
-              <div class="snippet-header"><span>SPDX snippet</span><button type="button">Copy</button></div>
-              <pre class="code-block"><code>{
-  "spdxVersion": "SPDX-2.3",
-  "dataLicense": "CC0-1.0",
-  "SPDXID": "SPDXRef-DOCUMENT",
-  "name": "zfp-godot-snippet",
-  "documentNamespace":
-    "https://corsa.ornl.gov/spdx/zfp-godot-20260303",
-  "packages": [
-    {
-      "SPDXID": "SPDXRef-godot",
-      "name": "godot",
-      "versionInfo": "4.2.1-stable",
-      "downloadLocation":
-        "https://github.com/godotengine/godot",
-      "filesAnalyzed": false,
-      "licenseConcluded": "MIT",
-      "licenseDeclared": "MIT",
-      "supplier": "Organization: godotengine",
-      "externalRefs": [
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceType": "purl",
-          "referenceLocator":
-            "pkg:github/godotengine/godot@4.2.1-stable"
-        }
-      ]
-    }
-  ],
-  "relationships": [
-    {
-      "spdxElementId": "SPDXRef-DOCUMENT",
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-godot"
-    },
-    {
-      "spdxElementId": "SPDXRef-godot",
-      "relationshipType": "DEPENDS_ON",
-      "relatedSpdxElement": "SPDXRef-zfp"
-    }
-  ]
-}</code></pre>
-              <button class="download-button" type="button">Download snippet</button>
-              <button class="text-button" type="button">Download all manifests (.zip)</button>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer class="doe-footer">
-      <div class="doe-band"></div>
-      <div class="doe-lockup">
-        <img class="doe-logo-image" src="assets/doe-logo.png" alt="U.S. Department of Energy" />
-        <span class="divider"></span>
-        <span class="office-science">Office of<br />Science</span>
-      </div>
-      <a class="contact-button" href="mailto:cass-steering-committee@email.ornl.gov">Contact Us</a>
-    </footer>
-
-    <div class="modal-backdrop upload-backdrop" id="uploadModal" aria-hidden="true">
-      <section class="upload-modal" role="dialog" aria-modal="true" aria-labelledby="uploadTitle">
-        <header class="modal-header">
-          <div><h2 id="uploadTitle">Upload your data</h2><p>Load a dependents artifact to explore in the dashboard.</p></div>
-          <button class="close-button" type="button" id="closeUploadModal" aria-label="Close upload dialog"></button>
-        </header>
-        <div class="upload-modal-body">
-          <label class="upload-dropzone" for="dependencyFile">
-            <span class="upload-drop-icon upload-icon" aria-hidden="true"></span>
-            <strong>Choose a file or drag it here</strong>
-            <span>Upload a .zip artifact generated by the GitHub Action or a supported .json file.</span>
-            <span class="choose-file-button">Choose file</span>
-          </label>
-          <input id="dependencyFile" type="file" accept=".zip,.json,application/zip,application/json" hidden />
-          <div class="upload-file-row" id="uploadFileRow" hidden><span id="uploadFileName"></span><button type="button" id="removeUploadFile">Remove</button></div>
-        </div>
-        <footer class="upload-modal-footer">
-          <button class="upload-cancel" id="cancelUpload" type="button">Cancel</button>
-          <button class="mini-button blue upload-submit" id="submitUpload" type="button" disabled>Upload data</button>
-        </footer>
-      </section>
     </div>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+    <div class="dv-project-header">
+        <div style="flex: 1;">
+            <div class="dv-project-name-row">
+                <h1 id="ph-title" style="margin: 0 0 5px 0; font-size: 1.8rem; color: #fff;">No Project Loaded</h1>
+                <span class="dv-info-wrap">
+                    <button class="dv-info-button" type="button" aria-label="Dependency dashboard data details">i</button>
+                    <span class="dv-data-source-tooltip" role="tooltip">
+                        <span><em>File</em><code id="dv-info-file">dependents.json</code></span>
+                        <span><em>Version</em><code id="dv-info-version">-</code></span>
+                        <span><em>Updated</em><code id="dv-info-updated">-</code></span>
+                        <span><em>Format</em><code id="dv-info-format">JSON</code></span>
+                    </span>
+                </span>
+            </div>
+            <p id="ph-desc" style="margin: 0; color: #aaa; font-size: 0.9rem;">Upload an artifact to begin analysis.</p>
+        </div>
+        <div class="dv-ph-stats">
+            <div class="dv-ph-stat">
+                <span class="dv-ph-val" id="ph-stat-deps">0</span>
+                <span class="dv-ph-label">Dependents</span>
+            </div>
+            <div class="dv-ph-stat">
+                <span class="dv-ph-val" id="ph-stat-orgs">0</span>
+                <span class="dv-ph-label">Organizations</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="dv-main-layout">
+        <div class="dv-content-area">
+            <div class="dv-tabs">
+                <button class="dv-tab-btn active" onclick="switchTab('list')">Dependents List</button>
+                <button class="dv-tab-btn" onclick="switchTab('graph')">Network Graph</button>
+                <button class="dv-tab-btn" onclick="switchTab('citations')">Citations</button>
+            </div>
+
+            <div id="tab-list" class="dv-tab-content active">
+                <div class="dv-toolbar">
+                    <input type="search" id="list-search-input" class="dv-input dv-list-search" placeholder="Search packages or owners..." oninput="renderMainView()">
+                    <div class="dv-toolbar-group">
+                        <label>Sort by</label>
+                        <select id="list-sort-select" class="dv-input" onchange="renderMainView()">
+                            <option value="stars">GitHub Stars (High to Low)</option>
+                            <option value="name">Lexicographical (A-Z)</option>
+                            <option value="contributors">Contributors</option>
+                            <option value="lastUpdate">Recently Updated</option>
+                        </select>
+                    </div>
+                    <div class="dv-toolbar-group">
+                        <label>Max depth</label>
+                        <select id="list-depth-select" class="dv-input" onchange="renderMainView()">
+                            <option value="10">All Levels</option>
+                            <option value="1">Direct (L1) Only</option>
+                            <option value="2">Up to L2</option>
+                            <option value="3">Up to L3</option>
+                        </select>
+                    </div>
+                    <div class="dv-toolbar-group dv-check-group" style="flex-direction: row; align-items: center; gap: 15px;">
+                        <label class="dv-check-label" style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                            <input type="checkbox" id="toggle-group-org" onchange="renderMainView()"> Group by Organization
+                        </label>
+                        <label class="dv-check-label" style="display: flex; align-items: center; gap: 5px; cursor: pointer;">
+                            <input type="checkbox" id="toggle-leaf-nodes" onchange="renderMainView()"> Leaf Nodes Only
+                        </label>
+                    </div>
+                    <div class="dv-result-count-row">
+                        <span class="dv-result-count">Showing <span id="list-showing-count">0</span> of <span id="list-total-count">0</span> dependents</span>
+                    </div>
+                </div>
+
+                <div class="dv-table-container">
+                    <table class="dv-table" id="dv-main-table">
+                        <thead>
+                            <tr>
+                                <th>Package</th>
+                                <th>Owner</th>
+                                <th>Type</th>
+                                <th>Stars</th>
+                                <th>Last Update</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dv-table-body">
+                            <tr><td colspan="5" style="text-align: center; padding: 20px;">Upload data to view dependents.</td></tr>
+                        </tbody>
+                    </table>
+                    <div id="list-load-more" style="text-align: center; padding: 15px; display: none;">
+                        <button class="dv-show-more" onclick="loadMorePackages()">Show 10 more rows</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-graph" class="dv-tab-content">
+                <div class="dv-toolbar dv-graph-toolbar">
+                    <div class="dv-toolbar-group dv-graph-limit-group">
+                        <label>Max packages</label>
+                        <div class="dv-inline-control">
+                            <input type="range" id="graph-limit" min="10" max="500" value="50" step="10" oninput="updateGraphState()">
+                            <span id="graph-limit-val">50</span>
+                        </div>
+                    </div>
+                    
+                    <div class="dv-toolbar-group dv-graph-search-group">
+                        <div class="dv-row">
+                            <input type="text" id="node-search" list="node-list" placeholder="Search package name..." class="dv-input" aria-label="Search package name">
+                            <datalist id="node-list"></datalist>
+                            <button class="dv-btn-small" onclick="searchNode()">Go</button>
+                        </div>
+                    </div>
+
+                    <div class="dv-toolbar-group dv-graph-action-group">
+                        <div class="dv-row dv-zoom-row">
+                            <button class="dv-btn-small dv-icon-text-button dv-zoom-out-button" onclick="zoomBy(0.8)" aria-label="Zoom out">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 4.99L19 20.49l-4.99-5v-.79l-.27-.27A6.47 6.47 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3Zm-3 5.75v1.5h6v-1.5h-6Z"></path></svg>
+                            </button>
+                            <input type="range" id="zoom-slider" min="0.05" max="4" step="0.05" value="1" oninput="setZoom(this.value)">
+                            <button class="dv-btn-small dv-icon-text-button dv-zoom-in-button" onclick="zoomBy(1.25)" aria-label="Zoom in">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 4.99L19 20.49l-4.99-5v-.79l-.27-.27A6.47 6.47 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3Zm-.75 3.25v2.5h-2.5v1.5h2.5v2.5h1.5v-2.5h2.5v-1.5h-2.5v-2.5h-1.5Z"></path></svg>
+                            </button>
+                        </div>
+                        <button class="dv-btn-small" onclick="centerRoot()">Center Root</button>
+                        <button class="dv-btn-small" onclick="fitGraph()">Fit All</button>
+                        <details class="dv-layout-menu">
+                            <summary aria-label="Graph layout">
+                                <svg class="dv-layout-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="3" width="8" height="5" rx="1.5"></rect><rect x="3" y="16" width="7" height="5" rx="1.5"></rect><rect x="14" y="16" width="7" height="5" rx="1.5"></rect><path d="M12 8v4"></path><path d="M6.5 16v-4h11v4"></path></svg>
+                                <span class="dv-layout-tooltip">Graph layout</span>
+                            </summary>
+                            <div class="dv-layout-options">
+                                <button id="btn-view-detailed" class="dv-btn-small dv-btn-active" onclick="setGraphLayout('detailed'); this.closest('details').removeAttribute('open');">Tree</button>
+                                <button id="btn-view-radial" class="dv-btn-small" onclick="setGraphLayout('radial'); this.closest('details').removeAttribute('open');">Radial</button>
+                            </div>
+                        </details>
+                        <button class="dv-btn-small" onclick="exportImage()" id="export-png-btn-container">Export PNG</button>
+                    </div>
+                </div>
+                <div id="cy" class="dv-canvas"></div>
+            </div>
+
+            <div id="tab-citations" class="dv-tab-content">
+                <div class="dv-toolbar dv-citation-summary">
+                    <p>Academic papers and DOIs extracted from downstream repositories.</p>
+                    <strong id="dv-citation-count">0 publications found</strong>
+                </div>
+                <div id="citations-container" style="padding: 20px; overflow-y: auto;">
+                    </div>
+            </div>
+        </div>
+
+        <div class="dv-inspector">
+            <h3 style="margin: 0 0 15px 0; font-size: 1.1rem; color: #fff; border-bottom: 1px solid #333; padding-bottom: 10px;">Inspector</h3>
+            
+            <div id="inspector-empty" style="color: #888; text-align: center; margin-top: 50px;">
+                Select a package from the list or graph to view details and SPDX manifests.
+            </div>
+
+            <div id="inspector-content" style="display: none; flex-direction: column; gap: 15px;">
+                <div>
+                    <h2 id="insp-title" style="margin: 0; color: #fff; font-size: 1.3rem;">Package Name</h2>
+                    <p id="insp-owner" style="margin: 0; color: #aaa; font-size: 0.85rem;">Owner</p>
+                </div>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; background: #1e1e1e; padding: 10px; border-radius: 6px; border: 1px solid #333;">
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">Stars</span><strong id="insp-stars" style="color: #fff;">0</strong></div>
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">Contributors</span><strong id="insp-contribs" style="color: #fff;">0</strong></div>
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">License</span><strong id="insp-license" style="color: #fff;">None</strong></div>
+                    <div><span style="display: block; font-size: 0.7rem; color: #888; text-transform: uppercase;">Chain Depth</span><strong id="insp-depth" style="color: #fff;">L1</strong></div>
+                </div>
+
+                <button class="dv-btn dv-btn-secondary" id="insp-btn-explore" onclick="exploreNode()">Explore Dependents in Graph</button>
+
+                <div id="insp-paper" style="display: none; background: rgba(0, 123, 255, 0.1); border: 1px solid #007bff; padding: 10px; border-radius: 4px;">
+                    </div>
+
+                <div style="display: flex; flex-direction: column; gap: 5px; flex-grow: 1;">
+                    <label style="font-size: 0.85rem; color: #ccc; display: flex; justify-content: space-between;">
+                        SPDX Manifest
+                        <a href="#" onclick="copySPDX()" style="color: #007bff; text-decoration: none;">Copy</a>
+                    </label>
+                    <pre style="margin: 0; background: #111; padding: 10px; border: 1px solid #333; border-radius: 4px; overflow-x: auto; color: #aaa; font-size: 0.75rem; max-height: 250px;"><code id="insp-spdx">Loading...</code></pre>
+                    <button class="dv-btn dv-btn-primary" onclick="downloadSingleSPDX()" style="margin-top: 5px;">Download Snippet</button>
+                    <button class="dv-btn dv-btn-secondary" onclick="downloadAllSPDX()" style="margin-top: 5px;">Download ALL Manifests (.zip)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dv-upload-backdrop" data-upload-modal aria-hidden="true">
+    <section class="dv-upload-modal" role="dialog" aria-modal="true" aria-labelledby="dv-upload-title">
+        <header class="dv-upload-modal-header">
+            <div>
+                <h2 id="dv-upload-title">Upload your data</h2>
+                <p>Load a dependents artifact to explore in the dashboard.</p>
+            </div>
+            <button class="dv-upload-close" type="button" data-upload-close aria-label="Close upload dialog"></button>
+        </header>
+
+        <div class="dv-upload-modal-body">
+            <label class="dv-upload-dropzone" for="dv-file-upload" data-upload-dropzone>
+                <span class="dv-upload-drop-icon" aria-hidden="true"></span>
+                <strong>Choose a file or drag it here</strong>
+                <span>Upload a .zip artifact generated by the GitHub Action or a supported .json file.</span>
+                <span class="dv-choose-file-button">Choose file</span>
+            </label>
+            <input type="file" id="dv-file-upload" accept=".zip,.json,application/zip,application/json" hidden>
+            <div class="dv-upload-file-row" data-upload-file-row hidden>
+                <span data-upload-file-name></span>
+                <button type="button" data-upload-remove>Remove</button>
+            </div>
+        </div>
+
+        <footer class="dv-upload-modal-footer">
+            <button class="dv-upload-cancel" type="button" data-upload-cancel>Cancel</button>
+            <label class="dv-btn dv-btn-primary dv-upload-submit" for="dv-file-upload">Choose file</label>
+        </footer>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dagre/0.8.5/dagre.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cytoscape-dagre@2.5.0/cytoscape-dagre.min.js"></script>
+<script src="{{ 'js/explore/dependent-view/dependent-viz.js' | relative_url }}?v=dashboard-tooltip-citation-final"></script>
+<script>
+    (() => {
+        const modal = document.querySelector("[data-upload-modal]");
+        const openButton = document.querySelector("[data-upload-open]");
+        const closeButtons = document.querySelectorAll("[data-upload-close], [data-upload-cancel]");
+        const input = document.getElementById("dv-file-upload");
+        const dropzone = document.querySelector("[data-upload-dropzone]");
+        const fileRow = document.querySelector("[data-upload-file-row]");
+        const fileName = document.querySelector("[data-upload-file-name]");
+        const removeButton = document.querySelector("[data-upload-remove]");
+        if (!modal || !openButton || !input || !dropzone) return;
+
+        const openModal = () => {
+            modal.classList.add("open");
+            modal.setAttribute("aria-hidden", "false");
+        };
+
+        const closeModal = () => {
+            modal.classList.remove("open");
+            modal.setAttribute("aria-hidden", "true");
+            openButton.focus();
+        };
+
+        const showFileName = () => {
+            const file = input.files && input.files[0];
+            if (!file || !fileRow || !fileName) return;
+            fileName.textContent = file.name;
+            fileRow.hidden = false;
+            closeModal();
+        };
+
+        openButton.addEventListener("click", openModal);
+        closeButtons.forEach(button => button.addEventListener("click", closeModal));
+        modal.addEventListener("click", event => {
+            if (event.target === modal) closeModal();
+        });
+        document.addEventListener("keydown", event => {
+            if (event.key === "Escape" && modal.classList.contains("open")) closeModal();
+        });
+
+        input.addEventListener("change", showFileName);
+        removeButton?.addEventListener("click", () => {
+            input.value = "";
+            if (fileRow) fileRow.hidden = true;
+        });
+
+        ["dragenter", "dragover"].forEach(type => {
+            dropzone.addEventListener(type, event => {
+                event.preventDefault();
+                dropzone.classList.add("is-dragging");
+            });
+        });
+
+        ["dragleave", "drop"].forEach(type => {
+            dropzone.addEventListener(type, event => {
+                event.preventDefault();
+                dropzone.classList.remove("is-dragging");
+            });
+        });
+
+        dropzone.addEventListener("drop", event => {
+            const file = event.dataTransfer?.files?.[0];
+            if (!file) return;
+            const transfer = new DataTransfer();
+            transfer.items.add(file);
+            input.files = transfer.files;
+            input.dispatchEvent(new Event("change", { bubbles: true }));
+        });
+    })();
+</script>

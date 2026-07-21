@@ -1963,6 +1963,8 @@ body.dv-visualizer-page {
     --dv-blue: #006de1;
     --dv-blue-hover: #0058b7;
     --dv-blue-2: #51a2ff;
+    --dv-shell-width: 1355px;
+    --dv-shell-gutter: 24px;
     --dv-ink: #0f172a;
     --dv-muted: #64748b;
     --dv-line: #e2e8f0;
@@ -1992,17 +1994,18 @@ body.dv-visualizer-page .page-header {
 }
 
 body.dv-visualizer-page #projectTitle {
-    align-items: flex-start;
     background: linear-gradient(180deg, var(--dv-page) 0%, rgba(226, 232, 240, 0.28) 100%);
-    display: flex;
-    flex-direction: column;
+    display: block;
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 22px;
     font-weight: 600;
-    height: 86px;
-    justify-content: center;
-    line-height: 33px;
-    padding: 18px clamp(24px, 9vw, 153px);
+    line-height: 28px;
+    min-height: 112px;
+    padding-bottom: 28px;
+    padding-left: max(var(--dv-shell-gutter), calc((100vw - var(--dv-shell-width)) / 2));
+    padding-right: max(var(--dv-shell-gutter), calc((100vw - var(--dv-shell-width)) / 2));
+    padding-top: 28px;
+    text-align: left;
     width: 100%;
 }
 
@@ -2013,6 +2016,23 @@ body.dv-visualizer-page #projectTitle::after {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
+    margin-top: 2px;
+}
+
+body.dv-visualizer-page #projectTitle .anchorjs-link {
+    color: #64748b;
+    display: inline-flex;
+    font-size: 15px;
+    line-height: 1;
+    padding-left: 7px !important;
+    text-decoration: none;
+    transform: translateY(-1px);
+    vertical-align: middle;
+}
+
+body.dv-visualizer-page #projectTitle:hover .anchorjs-link,
+body.dv-visualizer-page #projectTitle .anchorjs-link:focus {
+    color: var(--dv-blue);
 }
 
 body.dv-landing-page #projectTitle {
@@ -2042,7 +2062,7 @@ body.dv-landing-page .dv-landing-header {
     flex-direction: column;
     justify-content: center;
     min-height: 399px;
-    padding: 92px 24px 42px;
+    padding: 92px max(var(--dv-shell-gutter), calc((100vw - var(--dv-shell-width)) / 2)) 42px;
     text-align: center;
     width: 100%;
 }
@@ -2087,9 +2107,9 @@ body.dv-landing-page .dv-modal-footer {
 body.dv-landing-page .dv-landing-grid {
     gap: 24px;
     margin: auto;
-    max-width: 1230px;
-    padding: 0 24px;
-    width: 100%;
+    max-width: var(--dv-shell-width);
+    padding: 0;
+    width: calc(100% - (var(--dv-shell-gutter) * 2));
 }
 
 body.dv-landing-page .dv-card {
@@ -2363,11 +2383,11 @@ body.dv-visualizer-page .dv-app-container {
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     font-size: 13px;
     height: 707px;
-    margin: 12px auto 30px;
-    max-width: 1355px;
+    margin: 24px auto 40px;
+    max-width: var(--dv-shell-width);
     min-height: 707px;
     overflow: hidden;
-    width: calc(100% - 48px);
+    width: calc(100% - (var(--dv-shell-gutter) * 2));
 }
 
 body.dv-visualizer-page .dv-top-nav,
@@ -2377,7 +2397,7 @@ body.dv-visualizer-page .dv-project-header {
     display: flex;
     flex: 0 0 auto;
     justify-content: space-between;
-    padding: 11px 19px;
+    padding: 14px 22px;
 }
 
 body.dv-visualizer-page .dv-top-nav {
@@ -2386,8 +2406,8 @@ body.dv-visualizer-page .dv-top-nav {
 
 body.dv-visualizer-page .dv-project-header {
     background: var(--dv-panel-soft);
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-top: 18px;
 }
 
 body.dv-visualizer-page .dv-nav-brand {
@@ -2425,6 +2445,15 @@ body.dv-visualizer-page .dv-info-wrap {
     position: relative;
 }
 
+body.dv-visualizer-page .dv-info-wrap::before {
+    content: "";
+    height: 14px;
+    left: -6px;
+    position: absolute;
+    top: 18px;
+    width: 42px;
+}
+
 body.dv-visualizer-page .dv-info-button {
     align-items: center;
     background: rgba(43, 127, 255, 0.1);
@@ -2435,6 +2464,7 @@ body.dv-visualizer-page .dv-info-button {
     display: inline-flex;
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 12px;
+    font-weight: 500;
     height: 19px;
     justify-content: center;
     line-height: 1;
@@ -2443,49 +2473,56 @@ body.dv-visualizer-page .dv-info-button {
 }
 
 body.dv-visualizer-page .dv-data-source-tooltip {
-    background: #181b23;
+    background: #1a1d26;
     border: 1px solid #33384a;
-    border-radius: 10px;
-    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2), 0 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    box-shadow: 0 22px 36px rgba(0, 0, 0, 0.32), 0 8px 12px rgba(0, 0, 0, 0.18);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 18px;
     left: -16px;
     opacity: 0;
-    padding: 18px 22px;
+    padding: 20px 26px;
     pointer-events: none;
     position: absolute;
     top: 30px;
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     transition: opacity 120ms ease, transform 120ms ease, visibility 120ms ease;
     visibility: hidden;
-    width: 350px;
-    z-index: 30;
+    width: min(445px, calc(100vw - 56px));
+    z-index: 80;
 }
 
 body.dv-visualizer-page .dv-data-source-tooltip span {
     align-items: center;
     display: flex;
+    gap: 36px;
     justify-content: space-between;
-    min-height: 24px;
+    min-height: 26px;
 }
 
 body.dv-visualizer-page .dv-data-source-tooltip em {
     color: #8b95b0;
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 17px;
 }
 
 body.dv-visualizer-page .dv-data-source-tooltip code {
-    color: var(--dv-text-soft);
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    color: #d2d9f9;
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 400;
     letter-spacing: 0;
-    line-height: 20px;
+    line-height: 17px;
+    padding: 0 !important;
+    text-align: right;
+    white-space: nowrap;
 }
 
 body.dv-visualizer-page .dv-info-wrap:hover .dv-data-source-tooltip,
@@ -3263,17 +3300,17 @@ body.dv-visualizer-page .dv-citation-card {
 
 body.dv-visualizer-page .dv-citation-title {
     color: #c8ccd8;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
-    line-height: 22px;
-    margin: 18px 20px 8px;
+    line-height: 18px;
+    margin: 16px 20px 8px;
 }
 
 body.dv-visualizer-page .dv-citation-meta {
     color: #8b95b0 !important;
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 12px !important;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 18px;
     margin: 0 20px 16px;
 }
@@ -3292,10 +3329,10 @@ body.dv-visualizer-page .dv-copy-doi {
     border: 0;
     cursor: pointer;
     display: inline-flex;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     gap: 6px;
-    line-height: 20px;
+    line-height: 18px;
     padding: 0;
     text-decoration: none;
 }
@@ -3368,10 +3405,10 @@ body.dv-visualizer-page .dv-cited-by button {
     border-radius: 6px;
     color: var(--dv-blue-2);
     flex: 0 0 auto;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     gap: 7px;
-    min-height: 34px;
+    min-height: 32px;
     padding: 0 13px;
 }
 
@@ -3654,7 +3691,7 @@ body.dv-visualizer-page .contact-us:hover {
     body.dv-visualizer-page .dv-app-container {
         height: auto;
         min-height: 780px;
-        width: calc(100% - 24px);
+        width: calc(100% - (var(--dv-shell-gutter) * 2));
     }
 
     body.dv-visualizer-page .dv-main-layout {

@@ -1,43 +1,61 @@
-from scraper.github import queryManager as qm
+import sys
 import os
-from os import environ as env
 import json
 import requests
-import sys
+from os import environ as env
 from urllib.parse import quote as urlquote
+from scraper.github import queryManager as qm
+from gh_collector import gh_data_dir, gh_queries_dir, load_data, load_input_lists
 
-ghDataDir = env.get("GITHUB_DATA", "../github-data")
-datfilepath = "%s/intReposInfo.json" % ghDataDir
-cdash_data_path = os.path.normpath(os.path.join(ghDataDir, "..", "cass_project_data"))
-queryPath = "../queries/org-Repos-Info.gql"
-queryPathInd = "../queries/repo-Info.gql"
+ghDataDir = gh_data_dir()
+datfilepath = ghDataDir / "intReposInfo.json"
+cdash_data_path = ghDataDir.parent / "cass_project_data"
+queryPath = str(gh_queries_dir() / "org-Repos-Info.gql")
+queryPathInd = str(gh_queries_dir() / "repo-Info.gql")
 
-# Initialize data collector (single file for all repo types)
-dataCollector = qm.DataManager(datfilepath, False)
-dataCollector.data = {"data": {}}
+dataCollector = load_data(datfilepath)
+
+
+def _stargazers_from_metrics(repoKey):
+    """Read the star count corsa-center/metrics already collected for this repo via REST.
+
+    GitHub's default Actions token forbids the GraphQL `stargazers` connection on
+    repos outside this one, so that field is no longer requested here (see
+    queries/repo-Info.gql and org-Repos-Info.gql). corsa-center/metrics collects
+    stars via the REST API instead, which isn't subject to that restriction.
+    """
+    metrics_file = ghDataDir / ("%s-metrics" % repoKey.split("/")[-1]) / "metrics.json"
+    if not metrics_file.exists():
+        return None
+    try:
+        with open(metrics_file) as f:
+            return {"totalCount": json.load(f).get("stars", 0)}
+    except Exception:
+        return None
 
 # setup cdash repo context
 cdash_mapping = {}
-with open(os.path.join(cdash_data_path, "cass_member_cdashes.csv")) as f:
+with open(os.path.join(str(cdash_data_path), "cass_member_cdashes.csv")) as f:
     for line in f.readlines():
         repo, cdash_url = line.strip("\n").split(",")
         cdash_mapping[repo] = cdash_url
 
-# Read input lists of organizations and independent repos of interest
-inputLists = qm.DataManager("../input_lists.json", True)
+inputLists = load_input_lists()
+seen_repos = set()
+any_failures = False
 for hostUrl, hostInfo in inputLists.data.items():
     repoType = hostInfo["repoType"]
     if repoType == "bitbucket":
         print("%s: %s support not yet enabled, skipping for now" % (hostUrl, repoType))
         continue
     if repoType == "gitlab":
-        # Handle GitLab repos via REST API
         print("%s: Gathering GitLab repo info..." % hostUrl)
         apiToken = env.get(hostInfo.get("apiEnvKey", ""), "")
         headers = {}
         if apiToken:
             headers["PRIVATE-TOKEN"] = apiToken
         repolist = hostInfo.get("repos", []) + hostInfo.get("extraRepos", [])
+        failed = 0
         for repo in repolist:
             print("\n'%s'" % repo)
             try:
@@ -46,7 +64,6 @@ for hostUrl, hostInfo in inputLists.data.items():
                 resp.raise_for_status()
                 proj = resp.json()
 
-                # Map GitLab API fields to the same format as GitHub data
                 info = {}
                 info["createdAt"] = proj.get("created_at")
                 info["defaultBranchRef"] = {"name": proj.get("default_branch")}
@@ -68,7 +85,6 @@ for hostUrl, hostInfo in inputLists.data.items():
                 info["stargazers"] = {"totalCount": proj.get("star_count", 0)}
                 info["url"] = proj.get("web_url", "%s/%s" % (hostUrl, repo))
 
-                # Fetch languages
                 try:
                     langResp = requests.get(
                         "%s/api/v4/projects/%s/languages" % (hostUrl, urlquote(repo, safe="")),
@@ -84,11 +100,19 @@ for hostUrl, hostInfo in inputLists.data.items():
 
                 repoKey = info["nameWithOwner"]
                 dataCollector.data["data"][repoKey] = info
+                seen_repos.add(repoKey)
                 print("'%s' Done!" % repo)
             except Exception as error:
                 print("Warning: Could not complete '%s'" % repo)
                 print(error)
+                failed += 1
                 continue
+
+        if repolist and failed == len(repolist):
+            sys.exit("All queries failed for %s; refusing to overwrite data" % hostUrl)
+        if failed > 0:
+            any_failures = True
+
         print("\n%s: GitLab data gathering complete!" % hostUrl)
         continue
     if repoType != "github":
@@ -98,7 +122,6 @@ for hostUrl, hostInfo in inputLists.data.items():
     orglist = hostInfo["orgs"]
     repolist = hostInfo["repos"]
 
-    # Initialize query manager
     '''
     TODO we will soon want to do a couple of things:
     1. The type of the "queryMan" object should be determined by the "repoType" string (i.e. GitlabQueryManger)
@@ -107,8 +130,8 @@ for hostUrl, hostInfo in inputLists.data.items():
     '''
     queryMan = qm.GitHubQueryManager(apiToken=env.get(hostInfo["apiEnvKey"]))
 
-    # Iterate through orgs of interest
     print("%s: Gathering data across multiple paginated queries..." % hostUrl)
+    failed_orgs = 0
     for org in orglist:
         print("\n'%s'" % (org))
 
@@ -123,13 +146,17 @@ for hostUrl, hostInfo in inputLists.data.items():
         except Exception as error:
             print("Warning: Could not complete '%s'" % (org))
             print(error)
+            failed_orgs += 1
             continue
 
-        # Update collective data
         for repo in outObj["data"]["organization"]["repositories"]["nodes"]:
             repoKey = repo["nameWithOwner"]
-            # TODO maybe handle each hostURL differently?
+            old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
             dataCollector.data["data"][repoKey] = repo
+            dataCollector.data["data"][repoKey]["stargazers"] = (
+                _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
+            )
+            seen_repos.add(repoKey)
             if repoKey in cdash_mapping:
                 dataCollector.data["data"][repoKey]["cdash"] = cdash_mapping[repoKey]
 
@@ -137,9 +164,9 @@ for hostUrl, hostInfo in inputLists.data.items():
 
     print("\n%s: Collective data gathering Part1of2 complete!" % (hostUrl))
 
-    # Iterate through independent repos
     print("%s: Adding independent repos..." % (hostUrl))
     print("%s: Gathering data across multiple queries..." % (hostUrl))
+    failed_repos = 0
     for repo in repolist:
         print("\n'%s'" % (repo))
 
@@ -151,12 +178,16 @@ for hostUrl, hostInfo in inputLists.data.items():
         except Exception as error:
             print("Warning: Could not complete '%s'" % (repo))
             print(error)
+            failed_repos += 1
             continue
 
-        # Update collective data
         repoKey = outObj["data"]["repository"]["nameWithOwner"]
-        # TODO maybe handle each hostURL differently?
+        old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
         dataCollector.data["data"][repoKey] = outObj["data"]["repository"]
+        dataCollector.data["data"][repoKey]["stargazers"] = (
+            _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
+        )
+        seen_repos.add(repoKey)
         if repoKey in cdash_mapping:
             dataCollector.data["data"][repoKey]["cdash"] = cdash_mapping[repoKey]
 
@@ -164,7 +195,20 @@ for hostUrl, hostInfo in inputLists.data.items():
 
     print("\n%s: Collective data gathering Part2of2 complete!" % (hostUrl))
 
-# Write output file
+    total_attempted = len(orglist) + len(repolist)
+    total_failed = failed_orgs + failed_repos
+    if total_attempted > 0 and total_failed == total_attempted:
+        sys.exit("All queries failed for %s; refusing to overwrite data" % hostUrl)
+    if failed_orgs > 0 or failed_repos > 0:
+        any_failures = True
+
+if not any_failures:
+    print("Removing data for repos no longer in the list...")
+    for repo in list(dataCollector.data["data"].keys()):
+        if repo not in seen_repos:
+            dataCollector.data["data"].pop(repo)
+            print("Removed '%s'" % repo)
+
 dataCollector.fileSave(newline="\n")
 
 print("\nDone!\n")

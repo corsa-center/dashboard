@@ -1,51 +1,70 @@
-from scraper.github import queryManager as qm
-from os import environ as env
+import os
+import sys
+import requests
+from gh_collector import gh_data_dir, load_data, load_repo_list
 from datetime import date, timedelta
 
-ghDataDir = env.get("GITHUB_DATA", "../github-data")
-datfilepath = "%s/intRepos_StarHistory.json" % ghDataDir
-queryPath = "../queries/repo-Stargazers.gql"
+ghDataDir = gh_data_dir()
+datfilepath = ghDataDir / "intRepos_StarHistory.json"
 
-# Read repo info data file (to use as repo list)
-inputLists = qm.DataManager("%s/intReposInfo.json" % ghDataDir, True)
-# Populate repo list
-repolist = []
-print("Getting internal repos ...")
-repolist = sorted(inputLists.data["data"].keys())
-print("Repo list complete. Found %d repos." % (len(repolist)))
+repolist = load_repo_list(ghDataDir)
+dataCollector = load_data(datfilepath)
 
-# Initialize query manager
-queryMan = qm.GitHubQueryManager()
+# GraphQL's stargazers connection is forbidden for the default Actions
+# token on repos outside this one (see get_repos_info.py). The REST
+# stargazers endpoint isn't subject to that restriction, and with this
+# media type also returns each star's timestamp.
+headers = {"Accept": "application/vnd.github.star+json"}
+api_token = os.environ.get("GITHUB_API_TOKEN")
+if api_token:
+    headers["Authorization"] = "token %s" % api_token
 
-# Initialize data collector
-dataCollector = qm.DataManager(datfilepath, False)
-dataCollector.data = {"data": {}}
-
-# Iterate through internal repos
 print("Gathering data across multiple paginated queries...")
+failed = 0
 for repo in repolist:
     print("\n'%s'" % (repo))
 
-    r = repo.split("/")
     try:
-        outObj = queryMan.queryGitHubFromFile(
-            queryPath,
-            {"ownName": r[0], "repoName": r[1], "numUsers": 100, "pgCursor": None},
-            paginate=True,
-            cursorVar="pgCursor",
-            keysToList=["data", "repository", "stargazers", "edges"],
-        )
+        starred_ats = []
+        page = 1
+        while True:
+            resp = requests.get(
+                "https://api.github.com/repos/%s/stargazers" % repo,
+                headers=headers,
+                params={"per_page": 100, "page": page},
+                timeout=30,
+            )
+            resp.raise_for_status()
+            batch = resp.json()
+            if not batch:
+                break
+            starred_ats.extend(item["starred_at"] for item in batch)
+            if len(batch) < 100:
+                break
+            page += 1
     except Exception as error:
         print("Warning: Could not complete '%s'" % (repo))
         print(error)
+        failed += 1
         continue
 
-    # Update collective data
-    dataCollector.data["data"][repo] = outObj["data"]["repository"]
+    dataCollector.data["data"][repo] = {
+        "stargazers": {"edges": [{"starredAt": s} for s in starred_ats]}
+    }
 
     print("'%s' Done!" % (repo))
 
 print("\nCollective data gathering complete!")
+
+if repolist and failed == len(repolist):
+    sys.exit("All queries failed; refusing to overwrite data")
+
+if failed == 0:
+    print("Removing data for repos no longer in the list...")
+    for repo in list(dataCollector.data["data"].keys()):
+        if repo not in repolist:
+            dataCollector.data["data"].pop(repo)
+            print("Removed '%s'" % repo)
 
 
 def next_weekday(d, weekday):
@@ -60,8 +79,11 @@ def toDate(isoStr):
 
 
 for repo in dataCollector.data["data"]:
+    entry = dataCollector.data["data"][repo]
+    if not isinstance(entry, dict) or "stargazers" not in entry:
+        continue  # already transformed on a prior run; this repo failed this run
     dateRange = list(
-        map(toDate, dataCollector.data["data"][repo]["stargazers"]["edges"])
+        map(toDate, entry["stargazers"]["edges"])
     )
     dateList = []
     dateElement = {"date": None, "value": None}
@@ -77,7 +99,6 @@ for repo in dataCollector.data["data"]:
             dateElement["value"] = 1
     dataCollector.data["data"][repo] = dateList
 
-# Write output files
 dataCollector.fileSave(newline="\n")
 
 print("\nDone!\n")

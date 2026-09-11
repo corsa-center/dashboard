@@ -1694,5 +1694,10 @@ query {
   if (params.has('bid') && params.has('cdash')) {
     const cdashUrl = new URL('https://' + params.get('cdash') + '/builds/' + params.get('bid'));
     viz.loadCDashBuild(cdashUrl).catch(err => console.error('CDash auto-load failed:', err));
+  } else if (params.has('cdashProject')) {
+    // Catalog repos link here with their project-level CDash dashboard URL
+    // (see explore/cass_project_data/cass_member_cdashes.csv); no build id yet,
+    // so show the build-picker calendar instead of loading a specific build.
+    viz.loadCDashDashboard(params.get('cdashProject')).catch(err => console.error('CDash dashboard auto-load failed:', err));
   }
 }());

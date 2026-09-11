@@ -172,7 +172,7 @@ function renderSingleRepoHTML(repo, pulls, issues) {
         repo.cdash
           ? `
           <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>CDash Dashboard </a>
-          <a href="${window.config.baseUrl}/explore/project-metrics/metrics/?cdashProject=${encodeURIComponent(repo.cdash)}"> <span class="fa fa-bar-chart"></span>Code Complexity Metrics </a>
+          <a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}"> <span class="fa fa-bar-chart"></span>Code Complexity Metrics </a>
       `
           : ''
       }
@@ -989,7 +989,7 @@ function renderRepoListHtml() {
         repo.cdash
           ? `
           <a href="${repo.cdash}" title="CDash Testing Dashboard"><img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" alt="CDash"></img></a>
-          <a href="${window.config.baseUrl}/explore/project-metrics/metrics/?cdashProject=${encodeURIComponent(repo.cdash)}" title="Code Complexity Metrics"><span class="fa fa-bar-chart"></span></a>
+          <a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}" title="Code Complexity Metrics"><span class="fa fa-bar-chart"></span></a>
       `
           : ''
       }

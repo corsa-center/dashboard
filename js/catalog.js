@@ -423,10 +423,20 @@ function renderSustainabilityMetrics(metrics, repoName) {
     }
   }
 
+  const legendHTML = `
+    <div class="pw-legend" role="note" aria-label="Metric blade legend">
+      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--filled"></span>Collected &amp; passing</span>
+      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--failing"></span>Collected &amp; failing</span>
+      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--na"></span>Not applicable</span>
+      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--pending"></span>Not yet collected</span>
+      <span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>
+    </div>`;
+
   let html = `<div class="pw-metrics-container">
     <div class="metrics-header">
       <h2 class="metrics-main-title">Metrics</h2>
       ${lastUpdatedHTML}
+      ${legendHTML}
     </div>`;
 
   DIMENSIONS.forEach(dim => {
@@ -529,11 +539,20 @@ function renderSustainabilityMetrics(metrics, repoName) {
 
         let bodyHTML = data || '';
         if (!data && itemDef && itemDef.subMetrics) {
+          // "Advanced Complexity Analysis" (4.3.6) is exactly what the Project
+          // Metric Visualizer already computes from clang-tidy/CDash output --
+          // mark it as explorable via that tool instead of a plain dead end,
+          // since the pinwheel's compact blades have no per-sub-metric identity
+          // to color individually (they're a filled/failing/na count, not a map).
           bodyHTML = itemDef.subMetrics.map(sm => {
             const desc = SUBMETRIC_DESCRIPTIONS[sm];
             const sup = desc
               ? `<sup class="metric-help" tabindex="0" role="button" aria-label="About ${escapeAttr(sm)}" data-desc="${escapeAttr(desc)}">?</sup>`
               : '';
+            if (sm === 'Advanced Complexity Analysis') {
+              const complexityLink = `<a class="pw-complexity-link" href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repoName)}" target="_blank" rel="noopener"><span class="fa fa-bar-chart"></span> View live complexity metrics</a>`;
+              return `<p class="pw-pending-sub pw-pending-sub--explorable"><span class="pw-legend-badge">&#9670;</span>${sm}${sup} ${complexityLink}</p>`;
+            }
             return `<p class="pw-pending-sub">${sm}${sup}</p>`;
           }).join('') + '<p class="pw-pending-note">Data collection not yet implemented for this metric.</p>';
         } else if (!data) {
@@ -546,16 +565,6 @@ function renderSustainabilityMetrics(metrics, repoName) {
         bodyHTML = bodyHTML.replace(/✗/g, '<span style="color:#dc2626;font-weight:600">✗</span>');
         // Inject sub-metric help tooltips for collected sections
         if (data) bodyHTML = addSubmetricTooltips(bodyHTML);
-        // "Advanced Complexity Analysis" (4.3.6) is exactly what the Project
-        // Metric Visualizer already computes from clang-tidy/CDash output --
-        // link straight to it instead of leaving this as a dead-end row.
-        if (itemNum === '4.3.6') {
-          const complexityLink = ` <a class="pw-complexity-link" href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repoName)}" target="_blank" rel="noopener"><span class="fa fa-bar-chart"></span> View live complexity metrics</a>`;
-          bodyHTML = bodyHTML.replace(
-            /Advanced Complexity Analysis(<sup[^>]*>\?<\/sup>)?/,
-            (match) => match + complexityLink
-          );
-        }
 
         const body = panel.querySelector('.pw-detail-body');
         body.innerHTML = bodyHTML;

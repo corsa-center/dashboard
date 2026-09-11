@@ -1,16 +1,16 @@
-Repo,CDash URL
-spack/spack,https://cdash.spack.io
-kokkos/kokkos,https://my.cdash.org/index.php?project=Kokkos
-trilinos/Trilinos,https://trilinos-cdash.sandia.gov
-LLNL/zfp,https://open.cdash.org/index.php?project=zfp
-HDFGroup/hdf5,https://my.cdash.org/index.php?project=HDF5
-visit-dav/visit,https://cdash.hpcvis.com
-ginkgo-project/ginkgo,https://my.cdash.org/index.php?project=Ginkgo%20Project
-kokkos/kokkos-kernels,https://my.cdash.org/index.php?project=Kokkos%20Kernels
-sandialabs/Albany,https://my.cdash.org/index.php?project=Albany
-ornladios/ADIOS2,https://open.cdash.org/index.php?project=ADIOS
-Alpine-DAV/ascent,https://my.dash.org/index.php?project=AscentParaViewTests
-xiaoyeli/superlu_dist,https://my.cdash.org/index.php?project=superlu_dist
-diatomic/diy,https://open.cdash.org/index.php?project=diy
-viskores/viskores,https://open.cdash.org/index.php?project=Viskores
-E4S-Project/e4s,https://cdash.spack.io
+Repo,CDash URL,Clang-Tidy Metrics
+spack/spack,https://cdash.spack.io,no
+kokkos/kokkos,https://my.cdash.org/index.php?project=Kokkos,no
+trilinos/Trilinos,https://trilinos-cdash.sandia.gov,yes
+LLNL/zfp,https://open.cdash.org/index.php?project=zfp,no
+HDFGroup/hdf5,https://my.cdash.org/index.php?project=HDF5,yes
+visit-dav/visit,https://cdash.hpcvis.com,no
+ginkgo-project/ginkgo,https://my.cdash.org/index.php?project=Ginkgo%20Project,no
+kokkos/kokkos-kernels,https://my.cdash.org/index.php?project=Kokkos%20Kernels,no
+sandialabs/Albany,https://my.cdash.org/index.php?project=Albany,no
+ornladios/ADIOS2,https://open.cdash.org/index.php?project=ADIOS,no
+Alpine-DAV/ascent,https://my.dash.org/index.php?project=AscentParaViewTests,no
+xiaoyeli/superlu_dist,https://my.cdash.org/index.php?project=superlu_dist,no
+diatomic/diy,https://open.cdash.org/index.php?project=diy,no
+viskores/viskores,https://open.cdash.org/index.php?project=Viskores,no
+E4S-Project/e4s,https://cdash.spack.io,no

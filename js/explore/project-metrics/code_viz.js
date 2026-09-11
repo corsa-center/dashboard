@@ -1708,6 +1708,12 @@ query {
           console.error(`No CDash dashboard known for repo "${repoKey}"`);
           return;
         }
+        // Most CDash-mapped repos don't actually publish clang-tidy output as a
+        // CDash file object, so their build picker would just be a dead end.
+        if (!repo.clangTidyMetrics) {
+          console.error(`Repo "${repoKey}" has a CDash dashboard but doesn't publish clang-tidy metrics`);
+          return;
+        }
         return viz.loadCDashDashboard(repo.cdash);
       })
       .catch(err => console.error('CDash dashboard auto-load failed:', err));

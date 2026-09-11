@@ -172,7 +172,11 @@ function renderSingleRepoHTML(repo, pulls, issues) {
         repo.cdash
           ? `
           <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>CDash Dashboard </a>
-          <a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}"> <span class="fa fa-bar-chart"></span>Code Complexity Metrics </a>
+          ${
+            repo.clangTidyMetrics
+              ? `<a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}"> <span class="fa fa-bar-chart"></span>Code Complexity Metrics </a>`
+              : ''
+          }
       `
           : ''
       }
@@ -236,7 +240,7 @@ function renderSingleRepo(queryParam) {
           draw_pie_repoIssues('pieIssues', queryParam);
         }
         // Load and display sustainability metrics
-        loadSustainabilityMetrics(queryParam);
+        loadSustainabilityMetrics(queryParam, !!repo.clangTidyMetrics);
       } else {
         renderSingleRepoError(queryParam);
       }
@@ -247,8 +251,9 @@ function renderSingleRepo(queryParam) {
  * Load and display sustainability metrics for a repository.
  * Tries the new per-package CASS format first; falls back to the legacy flat format.
  * @param {string} repoName repository name (owner/repo format)
+ * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
  */
-function loadSustainabilityMetrics(repoName) {
+function loadSustainabilityMetrics(repoName, hasClangTidyMetrics) {
   // Extract repository name from owner/repo format (e.g., HDFGroup/hdf5 -> hdf5)
   const repoNameOnly = repoName.split('/')[1];
   const metricsPath = `${window.config.baseUrl}/explore/github-data/${repoNameOnly}-metrics/metrics.json`;
@@ -261,12 +266,12 @@ function loadSustainabilityMetrics(repoName) {
       return res.json();
     })
     .then((metricsData) => {
-      renderSustainabilityMetrics(metricsData, repoName);
+      renderSustainabilityMetrics(metricsData, repoName, hasClangTidyMetrics);
     })
     .catch((error) => {
       console.log('Sustainability metrics not available:', error);
       // Still render the metrics structure with all placeholders
-      renderSustainabilityMetrics(null, repoName);
+      renderSustainabilityMetrics(null, repoName, hasClangTidyMetrics);
     });
 }
 
@@ -276,8 +281,9 @@ function loadSustainabilityMetrics(repoName) {
  * Works for any repository — data comes from {repo}-metrics/metrics.json.
  * @param {Object|null} metrics parsed metrics.json (null = no data available)
  * @param {string} repoName repository name (owner/repo format)
+ * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
  */
-function renderSustainabilityMetrics(metrics, repoName) {
+function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
   const metricsSection = document.getElementById('metrics-section');
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
@@ -429,7 +435,7 @@ function renderSustainabilityMetrics(metrics, repoName) {
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--failing"></span>Collected &amp; failing</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--na"></span>Not applicable</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--pending"></span>Not yet collected</span>
-      <span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>
+      ${hasClangTidyMetrics ? '<span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>' : ''}
     </div>`;
 
   let html = `<div class="pw-metrics-container">
@@ -549,7 +555,7 @@ function renderSustainabilityMetrics(metrics, repoName) {
             const sup = desc
               ? `<sup class="metric-help" tabindex="0" role="button" aria-label="About ${escapeAttr(sm)}" data-desc="${escapeAttr(desc)}">?</sup>`
               : '';
-            if (sm === 'Advanced Complexity Analysis') {
+            if (sm === 'Advanced Complexity Analysis' && hasClangTidyMetrics) {
               const complexityLink = `<a class="pw-complexity-link" href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repoName)}" target="_blank" rel="noopener"><span class="fa fa-bar-chart"></span> View live complexity metrics</a>`;
               return `<p class="pw-pending-sub pw-pending-sub--explorable"><span class="pw-legend-badge">&#9670;</span>${sm}${sup} ${complexityLink}</p>`;
             }
@@ -1009,7 +1015,11 @@ function renderRepoListHtml() {
         repo.cdash
           ? `
           <a href="${repo.cdash}" title="CDash Testing Dashboard"><img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" alt="CDash"></img></a>
-          <a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}" title="Code Complexity Metrics"><span class="fa fa-bar-chart"></span></a>
+          ${
+            repo.clangTidyMetrics
+              ? `<a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}" title="Code Complexity Metrics"><span class="fa fa-bar-chart"></span></a>`
+              : ''
+          }
       `
           : ''
       }

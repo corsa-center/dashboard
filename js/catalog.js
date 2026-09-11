@@ -261,12 +261,12 @@ function loadSustainabilityMetrics(repoName) {
       return res.json();
     })
     .then((metricsData) => {
-      renderSustainabilityMetrics(metricsData);
+      renderSustainabilityMetrics(metricsData, repoName);
     })
     .catch((error) => {
       console.log('Sustainability metrics not available:', error);
       // Still render the metrics structure with all placeholders
-      renderSustainabilityMetrics(null);
+      renderSustainabilityMetrics(null, repoName);
     });
 }
 
@@ -275,8 +275,9 @@ function loadSustainabilityMetrics(repoName) {
  * Each sub-metric is a blade: color=passing, muted=failing, gray=not collected.
  * Works for any repository — data comes from {repo}-metrics/metrics.json.
  * @param {Object|null} metrics parsed metrics.json (null = no data available)
+ * @param {string} repoName repository name (owner/repo format)
  */
-function renderSustainabilityMetrics(metrics) {
+function renderSustainabilityMetrics(metrics, repoName) {
   const metricsSection = document.getElementById('metrics-section');
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
@@ -545,6 +546,16 @@ function renderSustainabilityMetrics(metrics) {
         bodyHTML = bodyHTML.replace(/✗/g, '<span style="color:#dc2626;font-weight:600">✗</span>');
         // Inject sub-metric help tooltips for collected sections
         if (data) bodyHTML = addSubmetricTooltips(bodyHTML);
+        // "Advanced Complexity Analysis" (4.3.6) is exactly what the Project
+        // Metric Visualizer already computes from clang-tidy/CDash output --
+        // link straight to it instead of leaving this as a dead-end row.
+        if (itemNum === '4.3.6') {
+          const complexityLink = ` <a class="pw-complexity-link" href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repoName)}" target="_blank" rel="noopener"><span class="fa fa-bar-chart"></span> View live complexity metrics</a>`;
+          bodyHTML = bodyHTML.replace(
+            /Advanced Complexity Analysis(<sup[^>]*>\?<\/sup>)?/,
+            (match) => match + complexityLink
+          );
+        }
 
         const body = panel.querySelector('.pw-detail-body');
         body.innerHTML = bodyHTML;

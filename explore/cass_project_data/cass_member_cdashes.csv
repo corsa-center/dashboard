@@ -1,9 +1,9 @@
 Repo,CDash URL,Clang-Tidy Metrics
 spack/spack,https://cdash.spack.io,no
 kokkos/kokkos,https://my.cdash.org/index.php?project=Kokkos,no
-trilinos/Trilinos,https://trilinos-cdash.sandia.gov,yes
+trilinos/Trilinos,https://trilinos-cdash.sandia.gov,no
 LLNL/zfp,https://open.cdash.org/index.php?project=zfp,no
-HDFGroup/hdf5,https://my.cdash.org/index.php?project=HDF5,yes
+HDFGroup/hdf5,https://my.cdash.org/index.php?project=HDF5,no
 visit-dav/visit,https://cdash.hpcvis.com,no
 ginkgo-project/ginkgo,https://my.cdash.org/index.php?project=Ginkgo%20Project,no
 kokkos/kokkos-kernels,https://my.cdash.org/index.php?project=Kokkos%20Kernels,no

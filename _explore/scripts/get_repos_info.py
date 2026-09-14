@@ -1,5 +1,6 @@
 import sys
 import os
+import csv
 import json
 import requests
 from os import environ as env
@@ -34,11 +35,18 @@ def _stargazers_from_metrics(repoKey):
         return None
 
 # setup cdash repo context
+# "Clang-Tidy Metrics" tracks which repos actually publish clang-tidy output as a
+# CDash file object -- most CDash-mapped repos don't, so only those get a link into
+# the Project Metric Visualizer (see js/catalog.js). Update this column as more
+# projects start publishing it.
 cdash_mapping = {}
+clang_tidy_repos = set()
 with open(os.path.join(str(cdash_data_path), "cass_member_cdashes.csv")) as f:
-    for line in f.readlines():
-        repo, cdash_url = line.strip("\n").split(",")
-        cdash_mapping[repo] = cdash_url
+    for row in csv.DictReader(f):
+        repo = row["Repo"]
+        cdash_mapping[repo] = row["CDash URL"]
+        if row.get("Clang-Tidy Metrics", "").strip().lower() in ("yes", "true"):
+            clang_tidy_repos.add(repo)
 
 inputLists = load_input_lists()
 seen_repos = set()
@@ -159,6 +167,8 @@ for hostUrl, hostInfo in inputLists.data.items():
             seen_repos.add(repoKey)
             if repoKey in cdash_mapping:
                 dataCollector.data["data"][repoKey]["cdash"] = cdash_mapping[repoKey]
+            if repoKey in clang_tidy_repos:
+                dataCollector.data["data"][repoKey]["clangTidyMetrics"] = True
 
         print("'%s' Done!" % (org))
 
@@ -190,6 +200,8 @@ for hostUrl, hostInfo in inputLists.data.items():
         seen_repos.add(repoKey)
         if repoKey in cdash_mapping:
             dataCollector.data["data"][repoKey]["cdash"] = cdash_mapping[repoKey]
+        if repoKey in clang_tidy_repos:
+            dataCollector.data["data"][repoKey]["clangTidyMetrics"] = True
 
         print("'%s' Done!" % (repo))
 

@@ -286,14 +286,14 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   const metricsSection = document.getElementById('metrics-section');
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
-  // Dimension colors: 3 hues from the dataviz categorical palette (rust,
-  // emerald, blue -- ~140-165deg apart), not the site's own palette, whose
+  // Dimension colors: 3 hues from the dataviz categorical palette (crimson,
+  // emerald, blue -- ~145-165deg apart), not the site's own palette, whose
   // green/teal were too close in both hue and lightness to tell apart.
-  // Verified CVD-safe via validate_palette.js (worst adjacent ΔE 10.4).
+  // Verified CVD-safe via validate_palette.js (worst adjacent ΔE 9.7).
   const DIMENSIONS = [
     {
       id: 'impact', label: 'Impact', icon: 'fa-line-chart',
-      headerClass: 'impact-header', color: '#742506', muted: '#FAB89E',
+      headerClass: 'impact-header', color: '#810E0E', muted: '#F5A3A3',
       items: [
         { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
           subMetrics: ['Enhanced Citations and Mentions','Improved DOI Tracking','Comprehensive Citation Metadata','Advanced Dependency Analysis','AI-Enhanced Training Detection'] },

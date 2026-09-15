@@ -242,7 +242,7 @@
 }
 
 .impact-header {
-  background: linear-gradient(135deg, #742506 0%, #88452B 33%, #9D654F 66%, #B18574 100%);
+  background: linear-gradient(135deg, #810E0E 0%, #933131 33%, #A65555 66%, #B87878 100%);
 }
 
 .impact-header h3,
@@ -330,8 +330,8 @@
 
 /* Hover effects for dimension-specific colors */
 .metric-dimension:has(.impact-header) .metric-subsection:hover {
-  border-left-color: #742506;
-  background: #fdf1ec;
+  border-left-color: #810E0E;
+  background: #fdecec;
 }
 
 .metric-dimension:has(.ecosystem-header) .metric-subsection:hover {

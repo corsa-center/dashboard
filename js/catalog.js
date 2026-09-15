@@ -588,19 +588,6 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
   });
 }
 
-/**
- * Get descriptive label for sustainability score
- * @param {number} score score value (0-100)
- * @returns {string} descriptive label
- */
-function getScoreLabel(score) {
-  if (score >= 80) return 'Excellent';
-  if (score >= 60) return 'Good';
-  if (score >= 40) return 'Fair';
-  if (score >= 20) return 'Needs Improvement';
-  return 'Limited Data';
-}
-
 // ─── CASS v3 per-package metrics rendering ────────────────────────────────────
 
 /**
@@ -852,69 +839,6 @@ function attachTooltipHandlers(container) {
       }
     });
   });
-}
-
-/**
- * Render the new CASS v3 per-package metrics.json format.
- * Sections with collected data show their HTML; stub sections show a placeholder.
- * Each sub-metric label gets a "?" superscript tooltip sourced from SUBMETRIC_DESCRIPTIONS.
- * @param {Object} metrics Parsed metrics.json object
- */
-function renderCassMetrics(metrics) {
-  const metricsSection = document.getElementById('metrics-section');
-  if (!metricsSection) return;
-
-  const dimensions = [
-    { key: 'impact',         label: 'Impact' },
-    { key: 'sustainability', label: 'Sustainability' },
-    { key: 'quality',        label: 'Quality' },
-  ];
-
-  let html = `
-    <h3>Sustainability Metrics</h3>
-    <div class="sustainability-overview">
-      <div class="metric-score-card">
-        <h4>Overall Sustainability Score</h4>
-        <div class="score-circle">
-          <span class="score-value">${metrics.overall_score != null ? metrics.overall_score : '–'}/100</span>
-        </div>
-        <p class="score-label">${getScoreLabel(metrics.overall_score || 0)}</p>
-      </div>
-    </div>
-  `;
-
-  dimensions.forEach(({ key, label }) => {
-    const sections = metrics[key];
-    if (!sections) return;
-
-    const sortedEntries = Object.entries(sections).sort((a, b) =>
-      a[0].localeCompare(b[0], undefined, { numeric: true })
-    );
-
-    html += `<div class="metric-dimension">
-      <div class="dimension-header"><h3>${label}</h3></div>
-      <div class="dimension-content">`;
-
-    sortedEntries.forEach(([num, info]) => {
-      if (!info || !info.data) {
-        html += `<div class="metric-subsection metric-subsection--stub">
-          <h4>${info ? info.title : ''}</h4>
-          <p class="metric-stub-note">Not yet collected</p>
-        </div>`;
-      } else {
-        const processedData = addSubmetricTooltips(info.data);
-        html += `<div class="metric-subsection">
-          <h4>${info.title}</h4>
-          <div class="metric-data">${processedData}</div>
-        </div>`;
-      }
-    });
-
-    html += `</div></div>`;
-  });
-
-  metricsSection.innerHTML = html;
-  attachTooltipHandlers(metricsSection);
 }
 
 /////////////////////////////////////////////////////////

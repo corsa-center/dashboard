@@ -1,10 +1,10 @@
 # Website Categories
 
-This folder is the home of the JSON file containing the info for the software catalog categories that are displayed on the website's home page. If any edits need to be made to these categories, just edit the data in the JSON and the home page will reflect your changes automatically. (These catalog categories/topics are separate from the category tags on News posts.)
+This folder is the home of the JSON file containing the info for the software catalog categories used internally by the catalog to group repositories by topic. If any edits need to be made to these categories, just edit the data in the JSON. (These catalog categories/topics are separate from the category tags on News posts.)
 
 A repository can have up to 20 tags. The list below also contains each category's blurb to ensure consistency in phrasing and length. Note that in some cases the category is plural but the corresponding tag is singular.
 
-For each category, this file contains its title, [icon][icon dir] filepath, and category description. This data is read by the [category info javascript][js dir].
+For each category, this file contains its title, [icon][icon dir] filepath, and category description. This data is read by the [catalog javascript][js dir].
 
 - **Artificial Intelligence**: Domain-aware methods to ingest scientific knowledge and robust Machine Learning techniques that aid in simulation and automating scientific and engineering processes - `artificial-intelligence`, `evolutionary-algorithms`, `intelligent-agents`, `machine-learning`, `clustering`, `neuromorphic-computing`, `reduced-order-models`, `text-analysis`
 - **Scientific Data Management**: Robust systems which capture both the data and metadata needed for secure storage, searchability and harmonization throughout the data’s lifecycle - `data-enclave`, `data-integration`, `data-lifecycle management`, `data-storage-systems`, `in-situ-and-in-transit-workflows`, `intelligent-data-management`, `intelligent-automated-archives`, `knowlege-management`, `portals`, `storage-and-io`, `workflow-automation`
@@ -21,4 +21,4 @@ To add a new category to the catalog:
 4. Tag repos with the new topic as appropriate.
 
 [icon dir]: ../assets/images/categories/
-[js dir]: ../js/homepage.js
+[js dir]: ../js/catalog.js

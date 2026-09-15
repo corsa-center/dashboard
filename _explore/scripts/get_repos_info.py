@@ -7,6 +7,7 @@ from os import environ as env
 from urllib.parse import quote as urlquote
 from scraper.github import queryManager as qm
 from gh_collector import gh_data_dir, gh_queries_dir, load_data, load_input_lists
+import cdash_client
 
 ghDataDir = gh_data_dir()
 datfilepath = ghDataDir / "intReposInfo.json"
@@ -35,18 +36,26 @@ def _stargazers_from_metrics(repoKey):
         return None
 
 # setup cdash repo context
-# "Clang-Tidy Metrics" tracks which repos actually publish clang-tidy output as a
-# CDash file object -- most CDash-mapped repos don't, so only those get a link into
-# the Project Metric Visualizer (see js/catalog.js). Update this column as more
-# projects start publishing it.
 cdash_mapping = {}
-clang_tidy_repos = set()
 with open(os.path.join(str(cdash_data_path), "cass_member_cdashes.csv")) as f:
     for row in csv.DictReader(f):
-        repo = row["Repo"]
-        cdash_mapping[repo] = row["CDash URL"]
-        if row.get("Clang-Tidy Metrics", "").strip().lower() in ("yes", "true"):
-            clang_tidy_repos.add(repo)
+        cdash_mapping[row["Repo"]] = row["CDash URL"]
+
+
+def _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics):
+    """Attach CDash info to a repo, live-checking whether it publishes
+    clang-tidy output as a CDash file object (see js/catalog.js). Most
+    CDash-mapped repos don't. If the CDash instance can't be reached or
+    queried, keep whatever was last recorded rather than assume "no".
+    """
+    if repoKey not in cdash_mapping:
+        return
+    cdash_url = cdash_mapping[repoKey]
+    dataCollector.data["data"][repoKey]["cdash"] = cdash_url
+    detected = cdash_client.has_recent_file_upload(cdash_url)
+    dataCollector.data["data"][repoKey]["clangTidyMetrics"] = (
+        bool(old_clang_tidy_metrics) if detected is None else detected
+    )
 
 inputLists = load_input_lists()
 seen_repos = set()
@@ -160,15 +169,13 @@ for hostUrl, hostInfo in inputLists.data.items():
         for repo in outObj["data"]["organization"]["repositories"]["nodes"]:
             repoKey = repo["nameWithOwner"]
             old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
+            old_clang_tidy_metrics = dataCollector.data["data"].get(repoKey, {}).get("clangTidyMetrics")
             dataCollector.data["data"][repoKey] = repo
             dataCollector.data["data"][repoKey]["stargazers"] = (
                 _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
             )
             seen_repos.add(repoKey)
-            if repoKey in cdash_mapping:
-                dataCollector.data["data"][repoKey]["cdash"] = cdash_mapping[repoKey]
-            if repoKey in clang_tidy_repos:
-                dataCollector.data["data"][repoKey]["clangTidyMetrics"] = True
+            _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics)
 
         print("'%s' Done!" % (org))
 
@@ -193,15 +200,13 @@ for hostUrl, hostInfo in inputLists.data.items():
 
         repoKey = outObj["data"]["repository"]["nameWithOwner"]
         old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
+        old_clang_tidy_metrics = dataCollector.data["data"].get(repoKey, {}).get("clangTidyMetrics")
         dataCollector.data["data"][repoKey] = outObj["data"]["repository"]
         dataCollector.data["data"][repoKey]["stargazers"] = (
             _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
         )
         seen_repos.add(repoKey)
-        if repoKey in cdash_mapping:
-            dataCollector.data["data"][repoKey]["cdash"] = cdash_mapping[repoKey]
-        if repoKey in clang_tidy_repos:
-            dataCollector.data["data"][repoKey]["clangTidyMetrics"] = True
+        _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics)
 
         print("'%s' Done!" % (repo))
 

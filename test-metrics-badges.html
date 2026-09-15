@@ -75,7 +75,7 @@
     }
 
     .impact-header      { background: linear-gradient(135deg, #5f27cd 0%, #a29bfe 100%); }
-    .sustainability-header { background: linear-gradient(135deg, #0c7e57 0%, #6ee7b7 100%); }
+    .ecosystem-header   { background: linear-gradient(135deg, #0c7e57 0%, #6ee7b7 100%); }
     .quality-header     { background: linear-gradient(135deg, #0284c7 0%, #7dd3fc 100%); }
 
     .dimension-header { cursor: pointer; }
@@ -295,19 +295,19 @@
       <div class="no-data-note" id="impact-no-data-note"></div>
     </div>
 
-    <!-- 4.2 Sustainability -->
+    <!-- 4.2 Ecosystem -->
     <div class="dimension">
-      <div class="dimension-header sustainability-header" onclick="toggleDimension(this)">
+      <div class="dimension-header ecosystem-header" onclick="toggleDimension(this)">
         <span class="dimension-icon">♻️</span>
-        <h3>4.2 Sustainability</h3>
+        <h3>4.2 Ecosystem</h3>
         <span class="fa fa-chevron-down accordion-arrow"></span>
       </div>
-      <div class="chip-grid" id="sustainability-chips"></div>
-      <div class="detail-panel" id="sustainability-detail">
-        <div class="detail-header" id="sustainability-detail-title"></div>
-        <div class="detail-content" id="sustainability-detail-body"></div>
+      <div class="chip-grid" id="ecosystem-chips"></div>
+      <div class="detail-panel" id="ecosystem-detail">
+        <div class="detail-header" id="ecosystem-detail-title"></div>
+        <div class="detail-content" id="ecosystem-detail-body"></div>
       </div>
-      <div class="no-data-note" id="sustainability-no-data-note"></div>
+      <div class="no-data-note" id="ecosystem-no-data-note"></div>
     </div>
 
     <!-- 4.3 Quality -->
@@ -333,7 +333,7 @@
         "4.1.1": { title: "Software Citation and Adoption", short: "Citation & Adoption", data: null },
         "4.1.2": { title: "Field Research Impact",          short: "Field Research",      data: null }
       },
-      sustainability: {
+      ecosystem: {
         "4.2.1": {
           title: "Codes of Conduct, Governance, and Contributor Guidelines",
           short: "CoC & Governance",
@@ -480,9 +480,9 @@
       }
     }
 
-    renderDimension('impact',         metrics.impact);
-    renderDimension('sustainability', metrics.sustainability);
-    renderDimension('quality',        metrics.quality);
+    renderDimension('impact',    metrics.impact);
+    renderDimension('ecosystem', metrics.ecosystem);
+    renderDimension('quality',   metrics.quality);
 
     function toggleDimension(header) {
       header.closest('.dimension').classList.toggle('collapsed');

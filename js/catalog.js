@@ -238,8 +238,8 @@ function renderSingleRepo(queryParam) {
         if (issues) {
           draw_pie_repoIssues('pieIssues', queryParam);
         }
-        // Load and display sustainability metrics
-        loadSustainabilityMetrics(queryParam, !!repo.clangTidyMetrics);
+        // Load and display ecosystem metrics
+        loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
       } else {
         renderSingleRepoError(queryParam);
       }
@@ -247,12 +247,12 @@ function renderSingleRepo(queryParam) {
 }
 
 /**
- * Load and display sustainability metrics for a repository.
+ * Load and display ecosystem metrics for a repository.
  * Tries the new per-package CASS format first; falls back to the legacy flat format.
  * @param {string} repoName repository name (owner/repo format)
  * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
  */
-function loadSustainabilityMetrics(repoName, hasClangTidyMetrics) {
+function loadEcosystemMetrics(repoName, hasClangTidyMetrics) {
   // Extract repository name from owner/repo format (e.g., HDFGroup/hdf5 -> hdf5)
   const repoNameOnly = repoName.split('/')[1];
   const metricsPath = `${window.config.baseUrl}/explore/github-data/${repoNameOnly}-metrics/metrics.json`;
@@ -265,24 +265,24 @@ function loadSustainabilityMetrics(repoName, hasClangTidyMetrics) {
       return res.json();
     })
     .then((metricsData) => {
-      renderSustainabilityMetrics(metricsData, repoName, hasClangTidyMetrics);
+      renderEcosystemMetrics(metricsData, repoName, hasClangTidyMetrics);
     })
     .catch((error) => {
-      console.log('Sustainability metrics not available:', error);
+      console.log('Ecosystem metrics not available:', error);
       // Still render the metrics structure with all placeholders
-      renderSustainabilityMetrics(null, repoName, hasClangTidyMetrics);
+      renderEcosystemMetrics(null, repoName, hasClangTidyMetrics);
     });
 }
 
 /**
- * Render sustainability metrics as a pinwheel card grid.
+ * Render ecosystem metrics as a pinwheel card grid.
  * Each sub-metric is a blade: color=passing, muted=failing, gray=not collected.
  * Works for any repository — data comes from {repo}-metrics/metrics.json.
  * @param {Object|null} metrics parsed metrics.json (null = no data available)
  * @param {string} repoName repository name (owner/repo format)
  * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
  */
-function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
+function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   const metricsSection = document.getElementById('metrics-section');
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
@@ -298,8 +298,8 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
       ]
     },
     {
-      id: 'sustainability', label: 'Sustainability', icon: 'fa-leaf',
-      headerClass: 'sustainability-header', color: '#1F5B60', muted: '#99f6e4',
+      id: 'ecosystem', label: 'Ecosystem', icon: 'fa-leaf',
+      headerClass: 'ecosystem-header', color: '#1F5B60', muted: '#99f6e4',
       items: [
         { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
           subMetrics: ['Enhanced Document Detection','Governance Keyword Analysis','OpenSSF Badge Integration','CHAOSS Governance Metrics','Governance Effectiveness Assessment'] },

@@ -286,10 +286,14 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   const metricsSection = document.getElementById('metrics-section');
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
+  // Dimension colors: 3 hues from the dataviz categorical palette (rust,
+  // emerald, blue -- ~140-165deg apart), not the site's own palette, whose
+  // green/teal were too close in both hue and lightness to tell apart.
+  // Verified CVD-safe via validate_palette.js (worst adjacent ΔE 10.4).
   const DIMENSIONS = [
     {
       id: 'impact', label: 'Impact', icon: 'fa-line-chart',
-      headerClass: 'impact-header', color: '#1F6024', muted: '#bbf7d0',
+      headerClass: 'impact-header', color: '#742506', muted: '#FAB89E',
       items: [
         { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
           subMetrics: ['Enhanced Citations and Mentions','Improved DOI Tracking','Comprehensive Citation Metadata','Advanced Dependency Analysis','AI-Enhanced Training Detection'] },
@@ -299,7 +303,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     },
     {
       id: 'ecosystem', label: 'Ecosystem', icon: 'fa-leaf',
-      headerClass: 'ecosystem-header', color: '#1F5B60', muted: '#99f6e4',
+      headerClass: 'ecosystem-header', color: '#0C6F4B', muted: '#A3F5D7',
       items: [
         { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
           subMetrics: ['Enhanced Document Detection','Governance Keyword Analysis','OpenSSF Badge Integration','CHAOSS Governance Metrics','Governance Effectiveness Assessment'] },
@@ -325,7 +329,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     },
     {
       id: 'quality', label: 'Quality', icon: 'fa-star',
-      headerClass: 'quality-header', color: '#1F3A60', muted: '#bae6fd',
+      headerClass: 'quality-header', color: '#084691', muted: '#9EC7FA',
       items: [
         { num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
           subMetrics: ['Advanced Static Analysis','Enhanced Security Analysis','CERT Guidelines Compliance','Test Coverage Excellence','Reliability Trend Analysis'] },
@@ -389,10 +393,18 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     return { filled: Math.round(raw / denom * total), failing: 0, na: 0, total, label: `${raw}/${denom}` };
   }
 
+  // Single pinwheel-blade outline, drawn pointing "up" from a local origin
+  // at (0,0); pinwheelSVG rotates copies of it around a hub, legendBladeCluster
+  // lines copies of it up side by side.
+  function bladePath(S) {
+    const R = S * 0.41, ri = S * 0.13, sw = S * 0.13, rw = S * 0.065, leanX = S * 0.09;
+    return `M ${-rw} ${-ri} C ${-sw*1.1} ${-(ri+R)*0.42}, ${-sw*0.3+leanX} ${-R*0.82}, ${leanX} ${-R} C ${sw*0.7+leanX} ${-R*0.82}, ${sw*1.0} ${-(ri+R)*0.42}, ${rw} ${-ri} Z`;
+  }
+
   function pinwheelSVG(filled, failing, na, total, color, muted) {
     const S = 64, cx = S / 2, cy = S / 2;
-    const R = S * 0.41, ri = S * 0.13, sw = S * 0.13, rw = S * 0.065, leanX = S * 0.09;
-    const bPath = `M ${-rw} ${-ri} C ${-sw*1.1} ${-(ri+R)*0.42}, ${-sw*0.3+leanX} ${-R*0.82}, ${leanX} ${-R} C ${sw*0.7+leanX} ${-R*0.82}, ${sw*1.0} ${-(ri+R)*0.42}, ${rw} ${-ri} Z`;
+    const ri = S * 0.13;
+    const bPath = bladePath(S);
     const GRAY = '#d1d5db';
     const NA_STROKE = '#94a3b8';
     let paths = '';
@@ -413,6 +425,21 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     return `<svg width="${S}" height="${S}" viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">${paths}</svg>`;
   }
 
+  // Legend icon: one blade per dimension, in that dimension's color, lined
+  // up side by side -- shows the actual chart hues instead of a single
+  // generic swatch color.
+  function legendBladeCluster(colors) {
+    const S = 22, R = S * 0.41, ri = S * 0.13;
+    const bPath = bladePath(S);
+    const step = S * 0.62;
+    const w = step * (colors.length - 1) + S * 0.7;
+    const h = R + ri + 2;
+    const blades = colors.map((c, i) =>
+      `<path d="${bPath}" fill="${c}" transform="translate(${S * 0.35 + step * i},${h - 2})"/>`
+    ).join('');
+    return `<svg class="pw-legend-blades" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${blades}</svg>`;
+  }
+
   // ── Build HTML ───────────────────────────────────────────────────────────────
   // The collection pipeline runs on its own schedule, separate from the
   // dashboard's daily data refresh, so this can lag well behind "today" --
@@ -428,10 +455,12 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     }
   }
 
+  const passingBlades = legendBladeCluster(DIMENSIONS.map(d => d.color));
+  const failingBlades = legendBladeCluster(DIMENSIONS.map(d => d.muted));
   const legendHTML = `
-    <div class="pw-legend" role="note" aria-label="Metric blade legend">
-      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--filled"></span>Collected &amp; passing</span>
-      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--failing"></span>Collected &amp; failing</span>
+    <div class="pw-legend" role="note" aria-label="Metric blade legend. Blade color matches each dimension's section color.">
+      <span class="pw-legend-item">${passingBlades}Collected &amp; passing</span>
+      <span class="pw-legend-item">${failingBlades}Collected &amp; failing</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--na"></span>Not applicable</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--pending"></span>Not yet collected</span>
       ${hasClangTidyMetrics ? '<span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>' : ''}

@@ -49,7 +49,7 @@ Each `metrics.json` file contains three main dimensions:
       "data": null
     }
   },
-  "sustainability": {
+  "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
       "data": null
@@ -131,7 +131,7 @@ Each `metrics.json` file contains three main dimensions:
 
 ### Dimensions
 1. **impact**: Measures software influence and adoption (4.1.x metrics)
-2. **sustainability**: Measures community health and longevity (4.2.x metrics)
+2. **ecosystem**: Measures community health and longevity (4.2.x metrics)
 3. **quality**: Measures technical excellence and usability (4.3.x metrics)
 
 ### Metric Objects

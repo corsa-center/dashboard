@@ -34,6 +34,9 @@ For a repository `Owner/Repository`:
 
 ## Metrics JSON Structure
 
+> [!NOTE]
+> Throughout the metrics collection framework and sustainability dashboard, we refer to 'Ecosystem' in place of the CASS 'Sustainability' dimension.
+
 Each `metrics.json` file contains three main dimensions:
 
 ```json

@@ -164,6 +164,41 @@
   margin-top: 8px;
 }
 
+.pw-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
+  margin-top: 14px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+.pw-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pw-legend-swatch {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+.pw-legend-swatch--filled  { background: #475569; }
+.pw-legend-swatch--failing { background: #cbd5e1; }
+.pw-legend-swatch--na      { background: none; border: 1.5px dashed #94a3b8; }
+.pw-legend-swatch--pending { background: #d1d5db; }
+
+.pw-legend-badge {
+  color: #0284c7;
+  font-size: 13px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
 /* Dimension Cards */
 .metric-dimension {
   background: #ffffff;
@@ -466,7 +501,16 @@
   .pw-not-collected strong { color: #94a3b8; }
   .pw-pending-sub { color: #94a3b8; font-style: italic; margin: 3px 0; }
   .pw-pending-sub::before { content: '○ '; opacity: 0.6; }
+  .pw-pending-sub.pw-pending-sub--explorable { color: #0284c7; font-style: normal; }
+  .pw-pending-sub.pw-pending-sub--explorable::before { content: none; }
   .pw-pending-note { margin-top: 10px; padding-top: 8px; border-top: 1px dashed #e2e8f0; font-size: 11px; color: #94a3b8; font-style: italic; }
+
+  .pw-complexity-link {
+    margin-left: 8px;
+    font-weight: 600;
+    white-space: nowrap;
+    .fa { margin-right: 3px; }
+  }
 }
 
 @media (max-width: 600px) {

@@ -1694,5 +1694,28 @@ query {
   if (params.has('bid') && params.has('cdash')) {
     const cdashUrl = new URL('https://' + params.get('cdash') + '/builds/' + params.get('bid'));
     viz.loadCDashBuild(cdashUrl).catch(err => console.error('CDash auto-load failed:', err));
+  } else if (params.has('repo')) {
+    // Catalog repos link here as ?repo=owner/name (same convention as
+    // /catalog/?repo=owner/name). Resolve it to that repo's CDash project
+    // URL the same way catalog.js does, then show the build-picker
+    // calendar for it — no build id needed upfront.
+    const repoKey = params.get('repo');
+    fetch(`${window.config.baseUrl}/explore/github-data/intReposInfo.json`)
+      .then((res) => res.json())
+      .then((infoJson) => {
+        const repo = infoJson.data[repoKey];
+        if (!repo || !repo.cdash) {
+          console.error(`No CDash dashboard known for repo "${repoKey}"`);
+          return;
+        }
+        // Most CDash-mapped repos don't actually publish clang-tidy output as a
+        // CDash file object, so their build picker would just be a dead end.
+        if (!repo.clangTidyMetrics) {
+          console.error(`Repo "${repoKey}" has a CDash dashboard but doesn't publish clang-tidy metrics`);
+          return;
+        }
+        return viz.loadCDashDashboard(repo.cdash);
+      })
+      .catch(err => console.error('CDash dashboard auto-load failed:', err));
   }
 }());

@@ -1,10 +1,10 @@
 Repo,CDash URL
-spack/spack,https://cdash.spack.io
+spack/spack,https://cdash.spack.io/index.php?project=Spack
 kokkos/kokkos,https://my.cdash.org/index.php?project=Kokkos
-trilinos/Trilinos,https://trilinos-cdash.sandia.gov
+trilinos/Trilinos,https://trilinos-cdash.sandia.gov/index.php?project=Trilinos
 LLNL/zfp,https://open.cdash.org/index.php?project=zfp
-HDfGroup/hdf5,https://my.cdash.org/index.php?project=HDF5
-visit-dav/visit,https://cdash.hpcvis.com
+HDFGroup/hdf5,https://my.cdash.org/index.php?project=HDF5
+visit-dav/visit,https://cdash.hpcvis.com/index.php?project=VisIt
 ginkgo-project/ginkgo,https://my.cdash.org/index.php?project=Ginkgo%20Project
 kokkos/kokkos-kernels,https://my.cdash.org/index.php?project=Kokkos%20Kernels
 sandialabs/Albany,https://my.cdash.org/index.php?project=Albany
@@ -13,4 +13,4 @@ Alpine-DAV/ascent,https://my.dash.org/index.php?project=AscentParaViewTests
 xiaoyeli/superlu_dist,https://my.cdash.org/index.php?project=superlu_dist
 diatomic/diy,https://open.cdash.org/index.php?project=diy
 viskores/viskores,https://open.cdash.org/index.php?project=Viskores
-E4S-Project/e4s,https://cdash.spack.io
+E4S-Project/e4s,https://cdash.spack.io/index.php?project=E4S

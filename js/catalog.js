@@ -17,8 +17,7 @@ var stdDotRadius = 4,
 const HIDDEN_CLASS = 'hidden';
 
 const REPO_SECTION_ELEMENT = document.getElementById('repositories');
-const ELEMENT_NAV_DESKTOP = document.getElementById('category-nav');
-const ELEMENT_NAV_MOBILE = document.getElementById('category-hamburger-nav');
+const ELEMENT_LETTER_JUMP = document.getElementById('letter-jump');
 const REPO_HEADER_ELEMENT = document.getElementById('category-header');
 const ELEMENT_WELCOME_TEXT = document.getElementById('welcome-text');
 
@@ -239,8 +238,8 @@ function renderSingleRepo(queryParam) {
         if (issues) {
           draw_pie_repoIssues('pieIssues', queryParam);
         }
-        // Load and display sustainability metrics
-        loadSustainabilityMetrics(queryParam, !!repo.clangTidyMetrics);
+        // Load and display ecosystem metrics
+        loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
       } else {
         renderSingleRepoError(queryParam);
       }
@@ -248,12 +247,12 @@ function renderSingleRepo(queryParam) {
 }
 
 /**
- * Load and display sustainability metrics for a repository.
+ * Load and display ecosystem metrics for a repository.
  * Tries the new per-package CASS format first; falls back to the legacy flat format.
  * @param {string} repoName repository name (owner/repo format)
  * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
  */
-function loadSustainabilityMetrics(repoName, hasClangTidyMetrics) {
+function loadEcosystemMetrics(repoName, hasClangTidyMetrics) {
   // Extract repository name from owner/repo format (e.g., HDFGroup/hdf5 -> hdf5)
   const repoNameOnly = repoName.split('/')[1];
   const metricsPath = `${window.config.baseUrl}/explore/github-data/${repoNameOnly}-metrics/metrics.json`;
@@ -266,30 +265,30 @@ function loadSustainabilityMetrics(repoName, hasClangTidyMetrics) {
       return res.json();
     })
     .then((metricsData) => {
-      renderSustainabilityMetrics(metricsData, repoName, hasClangTidyMetrics);
+      renderEcosystemMetrics(metricsData, repoName, hasClangTidyMetrics);
     })
     .catch((error) => {
-      console.log('Sustainability metrics not available:', error);
+      console.log('Ecosystem metrics not available:', error);
       // Still render the metrics structure with all placeholders
-      renderSustainabilityMetrics(null, repoName, hasClangTidyMetrics);
+      renderEcosystemMetrics(null, repoName, hasClangTidyMetrics);
     });
 }
 
 /**
- * Render sustainability metrics as a pinwheel card grid.
+ * Render ecosystem metrics as a pinwheel card grid.
  * Each sub-metric is a blade: color=passing, muted=failing, gray=not collected.
  * Works for any repository — data comes from {repo}-metrics/metrics.json.
  * @param {Object|null} metrics parsed metrics.json (null = no data available)
  * @param {string} repoName repository name (owner/repo format)
  * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
  */
-function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
+function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   const metricsSection = document.getElementById('metrics-section');
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
   const DIMENSIONS = [
     {
-      id: 'impact', label: '4.1 Impact', icon: 'fa-line-chart',
+      id: 'impact', label: 'Impact', icon: 'fa-line-chart',
       headerClass: 'impact-header', color: '#1F6024', muted: '#bbf7d0',
       items: [
         { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
@@ -299,8 +298,8 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
       ]
     },
     {
-      id: 'sustainability', label: '4.2 Sustainability', icon: 'fa-leaf',
-      headerClass: 'sustainability-header', color: '#1F5B60', muted: '#99f6e4',
+      id: 'ecosystem', label: 'Ecosystem', icon: 'fa-leaf',
+      headerClass: 'ecosystem-header', color: '#1F5B60', muted: '#99f6e4',
       items: [
         { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
           subMetrics: ['Enhanced Document Detection','Governance Keyword Analysis','OpenSSF Badge Integration','CHAOSS Governance Metrics','Governance Effectiveness Assessment'] },
@@ -325,7 +324,7 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
       ]
     },
     {
-      id: 'quality', label: '4.3 Quality', icon: 'fa-star',
+      id: 'quality', label: 'Quality', icon: 'fa-star',
       headerClass: 'quality-header', color: '#1F3A60', muted: '#bae6fd',
       items: [
         { num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
@@ -477,7 +476,6 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
                     style="color:${isPending ? '#94a3b8' : dim.color}"
                     data-dim="${dim.id}" data-num="${item.num}" title="${item.title}">
         ${pinwheelSVG(filled, failing, na, total, pwColor, pwMuted)}
-        <div class="card-num">${item.num}</div>
         <div class="card-title">${item.short}</div>
       </div>`;
     });
@@ -532,7 +530,7 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
         activeCard = card;
         const titleEl = panel.querySelector('.pw-detail-title');
         const sectionDesc = SECTION_DESCRIPTIONS[itemNum];
-        const titleText = `${itemNum} ${itemDef ? itemDef.title : ''}`;
+        const titleText = itemDef ? itemDef.title : '';
         if (sectionDesc) {
           const sup = `<sup class="metric-help" tabindex="0" role="button" `
             + `aria-label="About ${escapeAttr(titleText)}" `
@@ -588,19 +586,6 @@ function renderSustainabilityMetrics(metrics, repoName, hasClangTidyMetrics) {
       }
     });
   });
-}
-
-/**
- * Get descriptive label for sustainability score
- * @param {number} score score value (0-100)
- * @returns {string} descriptive label
- */
-function getScoreLabel(score) {
-  if (score >= 80) return 'Excellent';
-  if (score >= 60) return 'Good';
-  if (score >= 40) return 'Fair';
-  if (score >= 20) return 'Needs Improvement';
-  return 'Limited Data';
 }
 
 // ─── CASS v3 per-package metrics rendering ────────────────────────────────────
@@ -856,69 +841,6 @@ function attachTooltipHandlers(container) {
   });
 }
 
-/**
- * Render the new CASS v3 per-package metrics.json format.
- * Sections with collected data show their HTML; stub sections show a placeholder.
- * Each sub-metric label gets a "?" superscript tooltip sourced from SUBMETRIC_DESCRIPTIONS.
- * @param {Object} metrics Parsed metrics.json object
- */
-function renderCassMetrics(metrics) {
-  const metricsSection = document.getElementById('metrics-section');
-  if (!metricsSection) return;
-
-  const dimensions = [
-    { key: 'impact',         label: '4.1 Impact' },
-    { key: 'sustainability', label: '4.2 Sustainability' },
-    { key: 'quality',        label: '4.3 Quality' },
-  ];
-
-  let html = `
-    <h3>Sustainability Metrics</h3>
-    <div class="sustainability-overview">
-      <div class="metric-score-card">
-        <h4>Overall Sustainability Score</h4>
-        <div class="score-circle">
-          <span class="score-value">${metrics.overall_score != null ? metrics.overall_score : '–'}/100</span>
-        </div>
-        <p class="score-label">${getScoreLabel(metrics.overall_score || 0)}</p>
-      </div>
-    </div>
-  `;
-
-  dimensions.forEach(({ key, label }) => {
-    const sections = metrics[key];
-    if (!sections) return;
-
-    const sortedEntries = Object.entries(sections).sort((a, b) =>
-      a[0].localeCompare(b[0], undefined, { numeric: true })
-    );
-
-    html += `<div class="metric-dimension">
-      <div class="dimension-header"><h3>${label}</h3></div>
-      <div class="dimension-content">`;
-
-    sortedEntries.forEach(([num, info]) => {
-      if (!info || !info.data) {
-        html += `<div class="metric-subsection metric-subsection--stub">
-          <h4>${num} ${info ? info.title : ''}</h4>
-          <p class="metric-stub-note">Not yet collected</p>
-        </div>`;
-      } else {
-        const processedData = addSubmetricTooltips(info.data);
-        html += `<div class="metric-subsection">
-          <h4>${num} ${info.title}</h4>
-          <div class="metric-data">${processedData}</div>
-        </div>`;
-      }
-    });
-
-    html += `</div></div>`;
-  });
-
-  metricsSection.innerHTML = html;
-  attachTooltipHandlers(metricsSection);
-}
-
 /////////////////////////////////////////////////////////
 //////////// REPO LIST RENDER FUNCTIONS /////////////
 /////////////////////////////////////////////////////////
@@ -940,6 +862,38 @@ function renderRepoListHeaderHtml() {
       <p>${category.description.short}${category.description.long}</p>
     </div>
   `;
+}
+
+/**
+ * Render (or hide) the A-Z jump bar above the repo grid.
+ * Only meaningful when the visible list is sorted alphabetically by name -
+ * jumping to "L" makes no sense when the list is ordered by stars.
+ * @param {Array} items the already-filtered, already-sorted repo list
+ * @param {boolean} isNameSort whether the current sort is by name
+ */
+function renderLetterJumpHtml(items, isNameSort) {
+  if (!ELEMENT_LETTER_JUMP) return;
+  if (!isNameSort || !items.length) {
+    ELEMENT_LETTER_JUMP.innerHTML = '';
+    ELEMENT_LETTER_JUMP.classList.add(HIDDEN_CLASS);
+    return;
+  }
+  const availableLetters = new Set(
+    items.map((repo) => {
+      const firstChar = repo.name.charAt(0).toUpperCase();
+      return /[A-Z]/.test(firstChar) ? firstChar : '#';
+    }),
+  );
+  const letters = ['#', ...Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i))];
+  ELEMENT_LETTER_JUMP.innerHTML = letters
+    .map((letter) => `<button type="button" data-letter="${letter}" ${availableLetters.has(letter) ? '' : 'disabled'}>${letter}</button>`)
+    .join('');
+  ELEMENT_LETTER_JUMP.classList.remove(HIDDEN_CLASS);
+  ELEMENT_LETTER_JUMP.querySelectorAll('button:not([disabled])').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.getElementById(`letter-${btn.dataset.letter}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
 }
 
 function renderRepoListHtml() {
@@ -981,10 +935,24 @@ function renderRepoListHtml() {
   if (isOrderReversed) {
     items.reverse();
   }
+
+  const isNameSort = resolvedOrderProp === 'name';
+  renderLetterJumpHtml(items, isNameSort);
+  const seenLetters = new Set();
+
   REPO_SECTION_ELEMENT.innerHTML = items
-    .map(
-      (repo) => `
-  <div class="catalog-grid-item">
+    .map((repo) => {
+      let anchorId = '';
+      if (isNameSort) {
+        const firstChar = repo.name.charAt(0).toUpperCase();
+        const letter = /[A-Z]/.test(firstChar) ? firstChar : '#';
+        if (!seenLetters.has(letter)) {
+          seenLetters.add(letter);
+          anchorId = `letter-${letter}`;
+        }
+      }
+      return `
+  <div class="catalog-grid-item" ${anchorId ? `id="${anchorId}"` : ''}>
     <a class="repoLink">
       <h3 class="text-center">
         <span title="Name">${repo.name}</span>
@@ -1026,8 +994,8 @@ function renderRepoListHtml() {
 
     </p>
   </div>
-  `,
-    )
+  `;
+    })
     .join('');
   const repoLinks = document.getElementsByClassName('repoLink');
   for (let i = 0; i < repoLinks.length; i++) {
@@ -1046,15 +1014,6 @@ function renderRepoListHtml() {
 function onCategoryUpdate(categoryIdx) {
   selectedCategoryIndex = categoryIdx;
   console.log(`Category updated to index ${categoryIdx}, category: ${catData[categoryIdx]?.title}, repos count: ${topicRepos[categoryIdx]?.length}`);
-  const categoryButtons = document.getElementsByClassName('tab');
-  for (let i = 0; i < categoryButtons.length; i++) {
-    const button = categoryButtons[i];
-    if (button.id.endsWith(categoryIdx)) {
-      button.classList.add('selected-tab');
-    } else {
-      button.classList.remove('selected-tab');
-    }
-  }
   // Show welcome text only for "All Software" category (index 0)
   if (ELEMENT_WELCOME_TEXT) {
     if (categoryIdx === 0) {
@@ -1114,58 +1073,11 @@ function setVisibleRepo(newValue, shouldPushState) {
               return x < y ? -1 : x > y ? 1 : 0;
             })
             .forEach((category) => catData.push(category));
-          // get selected index from URL query param, or default to "all software" if invalid/no param
-          const initialCategory = new URLSearchParams(window.location.search).get('category')?.toLowerCase() || 'all';
-          for (let c = 0; c < catData.length; c++) {
-            if (catData[c].urlParam === initialCategory) {
-              selectedCategoryIndex = c;
-              break;
-            }
-          }
-
-          // render category specific HTML
+          // Category tabs are no longer shown in the UI - always list all software.
+          // (catData/topicRepos are still populated per-category below since that
+          // grouping is still useful internally, e.g. for ordering.)
+          selectedCategoryIndex = 0;
           renderRepoListHeaderHtml();
-          ELEMENT_NAV_DESKTOP.innerHTML = catData
-            .map(
-              (category, idx) => `
-            <button id="btn__${idx}" class="tab${idx === selectedCategoryIndex ? ' selected-tab' : ''}">
-              <img
-                src="${window.config.baseUrl}${category.icon.path}"
-                height="40"
-                width="40"
-                alt="${category.icon.alt}"
-                title="${category.icon.alt}"
-                loading="lazy"
-              />
-              <span>
-                ${sanitizeHTML(category.displayTitle)}
-              </span>
-            </button>
-          `,
-            )
-            .join('');
-          ELEMENT_NAV_MOBILE.innerHTML = catData
-            .map(
-              (category, idx) => `
-            <button id="nav-btn__${idx}" class="tab${idx === selectedCategoryIndex ? ' selected-tab' : ''}">${sanitizeHTML(
-                category.displayTitle,
-              )}</button>
-          `,
-            )
-            .join('');
-          const tabElements = document.getElementsByClassName('tab');
-          for (let i = 0; i < tabElements.length; i++) {
-            const ele = tabElements[i];
-            const tabIdx = Number(ele.id.split('__')[1]);
-            ele.addEventListener('click', () => {
-              window.history.pushState(
-                { categoryIndex: tabIdx, repo: visibleRepo },
-                '',
-                `?category=${catData[tabIdx].urlParam}&repo=${visibleRepo}`,
-              );
-              onCategoryUpdate(tabIdx);
-            });
-          }
 
           // map topics to categories - first try CASS explicit mapping, then fall back to topics
           fetch(`${window.config.baseUrl}/catalog/cass_category_mapping.json`)
@@ -1288,11 +1200,6 @@ document.getElementById('searchText').addEventListener('input', (e) => {
 document.getElementById('orderProp').addEventListener('change', (e) => {
   orderProp = e.target.value;
   renderRepoListHtml();
-});
-
-// mobile nav
-document.getElementById('category-hamburger-btn').addEventListener('click', () => {
-  ELEMENT_NAV_MOBILE.classList.toggle(HIDDEN_CLASS);
 });
 
 // back button on category list

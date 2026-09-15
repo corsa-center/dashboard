@@ -244,12 +244,12 @@
   color: #ffffff !important;
 }
 
-.sustainability-header {
+.ecosystem-header {
   background: linear-gradient(135deg, #1F5B60 0%, #3F7370 33%, #5F8B8F 66%, #7FA3AF 100%);
 }
 
-.sustainability-header h3,
-.sustainability-header .dimension-icon {
+.ecosystem-header h3,
+.ecosystem-header .dimension-icon {
   color: #ffffff !important;
 }
 
@@ -328,7 +328,7 @@
   background: #f0fdf4;
 }
 
-.metric-dimension:has(.sustainability-header) .metric-subsection:hover {
+.metric-dimension:has(.ecosystem-header) .metric-subsection:hover {
   border-left-color: #1F5B60;
   background: #ecfeff;
 }
@@ -456,7 +456,6 @@
   &.active { border-color: currentColor; box-shadow: 0 0 0 3px rgba(0,0,0,0.08); }
 }
 
-.card-num   { font-size: 10px; font-weight: 700; color: #94a3b8; letter-spacing: 0.02em; }
 .card-title { font-size: 11px; font-weight: 500; color: #374151; line-height: 1.35; min-height: 28px; display: flex; align-items: center; justify-content: center; }
 .card-score { font-size: 10px; font-weight: 600; margin-top: 2px; }
 .pw-score-total { color: #94a3b8; font-weight: 400; }

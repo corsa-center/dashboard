@@ -268,6 +268,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     {
       id: 'impact', label: 'Impact', icon: 'fa-line-chart',
       headerClass: 'impact-header', color: '#810E0E', muted: '#F5A3A3',
+      headerGradient: 'linear-gradient(135deg, #810E0E 0%, #933131 33%, #A65555 66%, #B87878 100%)',
       items: [
         { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
           subMetrics: ['Enhanced Citations and Mentions','Improved DOI Tracking','Comprehensive Citation Metadata','Advanced Dependency Analysis','AI-Enhanced Training Detection'] },
@@ -278,6 +279,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     {
       id: 'ecosystem', label: 'Ecosystem', icon: 'fa-leaf',
       headerClass: 'ecosystem-header', color: '#0C6F4B', muted: '#A3F5D7',
+      headerGradient: 'linear-gradient(135deg, #0C6F4B 0%, #308465 33%, #539980 66%, #77AE9A 100%)',
       items: [
         { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
           subMetrics: ['Enhanced Document Detection','Governance Keyword Analysis','OpenSSF Badge Integration','CHAOSS Governance Metrics','Governance Effectiveness Assessment'] },
@@ -304,6 +306,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     {
       id: 'quality', label: 'Quality', icon: 'fa-star',
       headerClass: 'quality-header', color: '#084691', muted: '#9EC7FA',
+      headerGradient: 'linear-gradient(135deg, #084691 0%, #2C61A1 33%, #507CB1 66%, #7597C1 100%)',
       items: [
         { num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
           subMetrics: ['Advanced Static Analysis','Enhanced Security Analysis','CERT Guidelines Compliance','Test Coverage Excellence','Reliability Trend Analysis'] },
@@ -324,6 +327,14 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       ]
     }
   ];
+
+  // Publish each dimension's solid color and header gradient as CSS custom
+  // properties so metrics.scss follows them automatically -- change a color
+  // above and nothing in the CSS needs to be touched.
+  DIMENSIONS.forEach(dim => {
+    document.documentElement.style.setProperty(`--dim-${dim.id}`, dim.color);
+    document.documentElement.style.setProperty(`--dim-${dim.id}-header`, dim.headerGradient);
+  });
 
   // ── Helpers ─────────────────────────────────────────────────────────────────
   const SCORE_KEYS = new Set(['score', 'compliance score']);

@@ -241,8 +241,11 @@
   color: #1a202c;
 }
 
+// Header gradients and hover-border colors default here but are set on
+// :root at runtime from the DIMENSIONS array in catalog.js (the single
+// source of truth) -- change a dimension's color there, not here.
 .impact-header {
-  background: linear-gradient(135deg, #810E0E 0%, #933131 33%, #A65555 66%, #B87878 100%);
+  background: var(--dim-impact-header, linear-gradient(135deg, #810E0E 0%, #933131 33%, #A65555 66%, #B87878 100%));
 }
 
 .impact-header h3,
@@ -251,7 +254,7 @@
 }
 
 .ecosystem-header {
-  background: linear-gradient(135deg, #0C6F4B 0%, #308465 33%, #539980 66%, #77AE9A 100%);
+  background: var(--dim-ecosystem-header, linear-gradient(135deg, #0C6F4B 0%, #308465 33%, #539980 66%, #77AE9A 100%));
 }
 
 .ecosystem-header h3,
@@ -260,7 +263,7 @@
 }
 
 .quality-header {
-  background: linear-gradient(135deg, #084691 0%, #2C61A1 33%, #507CB1 66%, #7597C1 100%);
+  background: var(--dim-quality-header, linear-gradient(135deg, #084691 0%, #2C61A1 33%, #507CB1 66%, #7597C1 100%));
 }
 
 .quality-header h3,
@@ -330,17 +333,17 @@
 
 /* Hover effects for dimension-specific colors */
 .metric-dimension:has(.impact-header) .metric-subsection:hover {
-  border-left-color: #810E0E;
+  border-left-color: var(--dim-impact, #810E0E);
   background: #fdecec;
 }
 
 .metric-dimension:has(.ecosystem-header) .metric-subsection:hover {
-  border-left-color: #0C6F4B;
+  border-left-color: var(--dim-ecosystem, #0C6F4B);
   background: #ecfdf6;
 }
 
 .metric-dimension:has(.quality-header) .metric-subsection:hover {
-  border-left-color: #084691;
+  border-left-color: var(--dim-quality, #084691);
   background: #e9f1fc;
 }
 

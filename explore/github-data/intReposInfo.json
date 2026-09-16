@@ -11,10 +11,10 @@
             },
             "homepageUrl": "https://amrex-codes.github.io/amrex",
             "issues_Closed": {
-                "totalCount": 986
+                "totalCount": 987
             },
             "issues_Open": {
-                "totalCount": 123
+                "totalCount": 122
             },
             "languages": {
                 "totalCount": 16
@@ -42,21 +42,22 @@
                 "totalCount": 304
             },
             "pullRequests_Merged": {
-                "totalCount": 4102
+                "totalCount": 4105
             },
             "pullRequests_Open": {
-                "totalCount": 41
+                "totalCount": 42
             },
             "repositoryTopics": {
                 "totalCount": 6
             },
             "stargazers": {
-                "totalCount": 804
+                "totalCount": 806
             },
             "url": "https://github.com/AMReX-Codes/amrex"
         },
         "Alpine-DAV/ascent": {
             "cdash": "https://my.dash.org/index.php?project=AscentParaViewTests",
+            "clangTidyMetrics": false,
             "createdAt": "2017-02-08T19:21:22Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -101,7 +102,7 @@
                 "totalCount": 960
             },
             "pullRequests_Open": {
-                "totalCount": 12
+                "totalCount": 13
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -211,7 +212,7 @@
                 "totalCount": 241
             },
             "pullRequests_Open": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "repositoryTopics": {
                 "totalCount": 10
@@ -373,10 +374,10 @@
                 "totalCount": 14
             },
             "pullRequests_Merged": {
-                "totalCount": 155
+                "totalCount": 156
             },
             "pullRequests_Open": {
-                "totalCount": 1
+                "totalCount": 0
             },
             "repositoryTopics": {
                 "totalCount": 5
@@ -507,10 +508,10 @@
             },
             "homepageUrl": "",
             "issues_Closed": {
-                "totalCount": 591
+                "totalCount": 594
             },
             "issues_Open": {
-                "totalCount": 109
+                "totalCount": 112
             },
             "languages": {
                 "totalCount": 10
@@ -538,16 +539,16 @@
                 "totalCount": 121
             },
             "pullRequests_Merged": {
-                "totalCount": 786
+                "totalCount": 789
             },
             "pullRequests_Open": {
-                "totalCount": 6
+                "totalCount": 9
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 375
+                "totalCount": 377
             },
             "url": "https://github.com/CHIP-SPV/chipStar"
         },
@@ -602,7 +603,8 @@
             "url": "https://github.com/CODARcode/Chimbuko"
         },
         "E4S-Project/e4s": {
-            "cdash": "https://cdash.spack.io",
+            "cdash": "https://cdash.spack.io/index.php?project=E4S",
+            "clangTidyMetrics": false,
             "createdAt": "2020-09-20T23:09:32Z",
             "defaultBranchRef": {
                 "name": "master"
@@ -616,7 +618,7 @@
                 "totalCount": 82
             },
             "issues_Open": {
-                "totalCount": 28
+                "totalCount": 29
             },
             "languages": {
                 "totalCount": 5
@@ -659,6 +661,7 @@
         },
         "HDFGroup/hdf5": {
             "cdash": "https://my.cdash.org/index.php?project=HDF5",
+            "clangTidyMetrics": false,
             "createdAt": "2020-04-24T18:25:20Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -700,16 +703,16 @@
                 "totalCount": 501
             },
             "pullRequests_Merged": {
-                "totalCount": 4765
+                "totalCount": 4768
             },
             "pullRequests_Open": {
-                "totalCount": 35
+                "totalCount": 33
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 988
+                "totalCount": 986
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -874,7 +877,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 0
+                "totalCount": 76
             },
             "url": "https://github.com/Libensemble/libensemble"
         },
@@ -1499,7 +1502,7 @@
                 "totalCount": 66
             },
             "issues_Open": {
-                "totalCount": 26
+                "totalCount": 27
             },
             "languages": {
                 "totalCount": 7
@@ -1530,13 +1533,13 @@
                 "totalCount": 272
             },
             "pullRequests_Open": {
-                "totalCount": 21
+                "totalCount": 22
             },
             "repositoryTopics": {
                 "totalCount": 8
             },
             "stargazers": {
-                "totalCount": 82
+                "totalCount": 0
             },
             "url": "https://github.com/Viskores/viskores"
         },
@@ -1657,7 +1660,7 @@
             },
             "description": "  Darshan I/O characterization tool",
             "forks": {
-                "totalCount": 42
+                "totalCount": 43
             },
             "homepageUrl": null,
             "issues_Closed": {
@@ -1762,6 +1765,7 @@
         },
         "diatomic/diy": {
             "cdash": "https://open.cdash.org/index.php?project=diy",
+            "clangTidyMetrics": false,
             "createdAt": "2015-05-22T18:49:06Z",
             "defaultBranchRef": {
                 "name": "master"
@@ -1827,10 +1831,10 @@
             },
             "homepageUrl": "http://www.paradyn.org",
             "issues_Closed": {
-                "totalCount": 634
+                "totalCount": 635
             },
             "issues_Open": {
-                "totalCount": 145
+                "totalCount": 144
             },
             "languages": {
                 "totalCount": 11
@@ -1855,13 +1859,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 186
+                "totalCount": 190
             },
             "pullRequests_Merged": {
-                "totalCount": 1367
+                "totalCount": 1369
             },
             "pullRequests_Open": {
-                "totalCount": 40
+                "totalCount": 34
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2038,6 +2042,7 @@
         },
         "ginkgo-project/ginkgo": {
             "cdash": "https://my.cdash.org/index.php?project=Ginkgo%20Project",
+            "clangTidyMetrics": false,
             "createdAt": "2018-01-11T16:14:21Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -2088,7 +2093,7 @@
                 "totalCount": 12
             },
             "stargazers": {
-                "totalCount": 622
+                "totalCount": 623
             },
             "url": "https://github.com/ginkgo-project/ginkgo"
         },
@@ -2187,7 +2192,7 @@
                 "totalCount": 527
             },
             "issues_Open": {
-                "totalCount": 141
+                "totalCount": 142
             },
             "languages": {
                 "totalCount": 15
@@ -2224,7 +2229,7 @@
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 855
+                "totalCount": 856
             },
             "url": "https://github.com/hypre-space/hypre"
         },
@@ -2290,11 +2295,11 @@
             },
             "description": null,
             "forks": {
-                "totalCount": 89
+                "totalCount": 90
             },
             "homepageUrl": null,
             "issues_Closed": {
-                "totalCount": 127
+                "totalCount": 128
             },
             "issues_Open": {
                 "totalCount": 43
@@ -2328,7 +2333,7 @@
                 "totalCount": 427
             },
             "pullRequests_Open": {
-                "totalCount": 22
+                "totalCount": 23
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -2340,6 +2345,7 @@
         },
         "kokkos/kokkos": {
             "cdash": "https://my.cdash.org/index.php?project=Kokkos",
+            "clangTidyMetrics": false,
             "createdAt": "2015-04-08T21:55:55Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -2353,7 +2359,7 @@
                 "totalCount": 2912
             },
             "issues_Open": {
-                "totalCount": 439
+                "totalCount": 440
             },
             "languages": {
                 "totalCount": 11
@@ -2378,13 +2384,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 795
+                "totalCount": 797
             },
             "pullRequests_Merged": {
-                "totalCount": 5281
+                "totalCount": 5287
             },
             "pullRequests_Open": {
-                "totalCount": 111
+                "totalCount": 104
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -2396,6 +2402,7 @@
         },
         "kokkos/kokkos-kernels": {
             "cdash": "https://my.cdash.org/index.php?project=Kokkos%20Kernels",
+            "clangTidyMetrics": false,
             "createdAt": "2017-01-10T20:49:21Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -2437,10 +2444,10 @@
                 "totalCount": 235
             },
             "pullRequests_Merged": {
-                "totalCount": 2115
+                "totalCount": 2117
             },
             "pullRequests_Open": {
-                "totalCount": 37
+                "totalCount": 41
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -2605,7 +2612,7 @@
                 "totalCount": 613
             },
             "pullRequests_Open": {
-                "totalCount": 14
+                "totalCount": 15
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2677,14 +2684,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 16231
+                "totalCount": 16243
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 69548
+                "totalCount": 69588
             },
             "issues_Open": {
-                "totalCount": 29388
+                "totalCount": 29378
             },
             "languages": {
                 "totalCount": 56
@@ -2696,7 +2703,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6313
+                "totalCount": 6315
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2709,13 +2716,13 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 12167
+                "totalCount": 12197
             },
             "pullRequests_Merged": {
-                "totalCount": 101042
+                "totalCount": 101258
             },
             "pullRequests_Open": {
-                "totalCount": 9750
+                "totalCount": 9781
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -2732,7 +2739,7 @@
             },
             "description": "Lightweight, general, scalable C++ library for finite element methods",
             "forks": {
-                "totalCount": 629
+                "totalCount": 630
             },
             "homepageUrl": "http://mfem.org",
             "issues_Closed": {
@@ -2764,13 +2771,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 453
+                "totalCount": 455
             },
             "pullRequests_Merged": {
                 "totalCount": 2096
             },
             "pullRequests_Open": {
-                "totalCount": 144
+                "totalCount": 142
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2787,11 +2794,11 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 933
+                "totalCount": 934
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
-                "totalCount": 3289
+                "totalCount": 3291
             },
             "issues_Open": {
                 "totalCount": 754
@@ -2806,7 +2813,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 322
+                "totalCount": 323
             },
             "name": "ompi",
             "nameWithOwner": "open-mpi/ompi",
@@ -2822,10 +2829,10 @@
                 "totalCount": 1150
             },
             "pullRequests_Merged": {
-                "totalCount": 9148
+                "totalCount": 9154
             },
             "pullRequests_Open": {
-                "totalCount": 89
+                "totalCount": 90
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -2837,13 +2844,14 @@
         },
         "ornladios/ADIOS2": {
             "cdash": "https://open.cdash.org/index.php?project=ADIOS",
+            "clangTidyMetrics": false,
             "createdAt": "2016-12-06T16:39:55Z",
             "defaultBranchRef": {
                 "name": "master"
             },
             "description": "Next generation of ADIOS developed in the Exascale Computing Program",
             "forks": {
-                "totalCount": 148
+                "totalCount": 149
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
@@ -2862,7 +2870,7 @@
                 "url": "http://choosealicense.com/licenses/apache-2.0/"
             },
             "mentionableUsers": {
-                "totalCount": 86
+                "totalCount": 87
             },
             "name": "ADIOS2",
             "nameWithOwner": "ornladios/ADIOS2",
@@ -2878,10 +2886,10 @@
                 "totalCount": 713
             },
             "pullRequests_Merged": {
-                "totalCount": 3134
+                "totalCount": 3135
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2898,7 +2906,7 @@
             },
             "description": "Parallel Data Analysis and Visualization Application based on VTK.",
             "forks": {
-                "totalCount": 382
+                "totalCount": 383
             },
             "homepageUrl": "https://gitlab.kitware.com/paraview/paraview",
             "languages": {
@@ -3012,7 +3020,7 @@
                 "totalCount": 50
             },
             "issues_Open": {
-                "totalCount": 68
+                "totalCount": 69
             },
             "languages": {
                 "totalCount": 10
@@ -3060,14 +3068,14 @@
             },
             "description": "Official MPICH Repository",
             "forks": {
-                "totalCount": 319
+                "totalCount": 320
             },
             "homepageUrl": "http://www.mpich.org",
             "issues_Closed": {
                 "totalCount": 3477
             },
             "issues_Open": {
-                "totalCount": 220
+                "totalCount": 222
             },
             "languages": {
                 "totalCount": 14
@@ -3079,7 +3087,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 126
+                "totalCount": 127
             },
             "name": "mpich",
             "nameWithOwner": "pmodels/mpich",
@@ -3095,16 +3103,16 @@
                 "totalCount": 748
             },
             "pullRequests_Merged": {
-                "totalCount": 3401
+                "totalCount": 3403
             },
             "pullRequests_Open": {
-                "totalCount": 77
+                "totalCount": 78
             },
             "repositoryTopics": {
                 "totalCount": 4
             },
             "stargazers": {
-                "totalCount": 686
+                "totalCount": 0
             },
             "url": "https://github.com/pmodels/mpich"
         },
@@ -3165,6 +3173,7 @@
         },
         "sandialabs/Albany": {
             "cdash": "https://my.cdash.org/index.php?project=Albany",
+            "clangTidyMetrics": false,
             "createdAt": "2014-03-20T02:32:15Z",
             "defaultBranchRef": {
                 "name": "master"
@@ -3206,10 +3215,10 @@
                 "totalCount": 28
             },
             "pullRequests_Merged": {
-                "totalCount": 384
+                "totalCount": 385
             },
             "pullRequests_Open": {
-                "totalCount": 1
+                "totalCount": 2
             },
             "repositoryTopics": {
                 "totalCount": 3
@@ -3330,7 +3339,8 @@
             "url": "https://github.com/snl-dakota/dakota"
         },
         "spack/spack": {
-            "cdash": "https://cdash.spack.io",
+            "cdash": "https://cdash.spack.io/index.php?project=Spack",
+            "clangTidyMetrics": false,
             "createdAt": "2014-01-08T09:22:12Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -3344,7 +3354,7 @@
                 "totalCount": 7961
             },
             "issues_Open": {
-                "totalCount": 1332
+                "totalCount": 1335
             },
             "languages": {
                 "totalCount": 13
@@ -3372,16 +3382,16 @@
                 "totalCount": 5280
             },
             "pullRequests_Merged": {
-                "totalCount": 37490
+                "totalCount": 37498
             },
             "pullRequests_Open": {
-                "totalCount": 468
+                "totalCount": 474
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 5121
+                "totalCount": 5124
             },
             "url": "https://github.com/spack/spack"
         },
@@ -3436,7 +3446,8 @@
             "url": "https://github.com/tpeterka/ChatVis"
         },
         "trilinos/Trilinos": {
-            "cdash": "https://trilinos-cdash.sandia.gov",
+            "cdash": "https://trilinos-cdash.sandia.gov/index.php?project=Trilinos",
+            "clangTidyMetrics": false,
             "createdAt": "2015-11-16T19:39:16Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -3478,10 +3489,10 @@
                 "totalCount": 1238
             },
             "pullRequests_Merged": {
-                "totalCount": 8608
+                "totalCount": 8612
             },
             "pullRequests_Open": {
-                "totalCount": 85
+                "totalCount": 81
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3492,7 +3503,8 @@
             "url": "https://github.com/trilinos/Trilinos"
         },
         "visit-dav/visit": {
-            "cdash": "https://cdash.hpcvis.com",
+            "cdash": "https://cdash.hpcvis.com/index.php?project=VisIt",
+            "clangTidyMetrics": false,
             "createdAt": "2019-01-13T23:27:26Z",
             "defaultBranchRef": {
                 "name": "develop"
@@ -3537,7 +3549,7 @@
                 "totalCount": 3574
             },
             "pullRequests_Open": {
-                "totalCount": 20
+                "totalCount": 22
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3630,6 +3642,7 @@
         },
         "xiaoyeli/superlu_dist": {
             "cdash": "https://my.cdash.org/index.php?project=superlu_dist",
+            "clangTidyMetrics": false,
             "createdAt": "2016-02-23T20:10:16Z",
             "defaultBranchRef": {
                 "name": "master"
@@ -3787,7 +3800,7 @@
                 "totalCount": 0
             },
             "repositoryTopics": {
-                "totalCount": 10
+                "totalCount": 11
             },
             "stargazers": {
                 "totalCount": 0

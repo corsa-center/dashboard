@@ -351,27 +351,28 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     }
   ];
 
+  // Publish each dimension's color as a CSS custom property so the header/hover
+  // styling in metrics.scss follows it automatically -- change a color above and
+  // nothing in the CSS needs to be touched.
+  DIMENSIONS.forEach(dim => {
+    document.documentElement.style.setProperty(`--dim-${dim.id}`, dim.color);
+  });
+
   // ── Helpers ─────────────────────────────────────────────────────────────────
-  const SCORE_KEYS = new Set(['score', 'compliance score']);
+  // "Citation Score" (4.1.1) is a computed 0-100 summary, not a sub-metric row --
+  // exclude it the same way the plain "Score:" tally line is excluded everywhere else.
+  const SCORE_KEYS = new Set(['score', 'compliance score', 'citation score']);
 
-  function countSubItems(html) {
-    const div = document.createElement('div');
-    div.innerHTML = html;
-    let n = 0;
-    div.querySelectorAll('p').forEach(p => {
-      const s = p.querySelector('strong');
-      if (!s) return;
-      if (!SCORE_KEYS.has(s.textContent.replace(':', '').trim().toLowerCase())) n++;
-    });
-    return n || 4;
-  }
-
-  function parseScore(html) {
+  /**
+   * @param {string} html sub-metric HTML for one item
+   * @param {number} blades the item's declared sub-metric count (DIMENSIONS[].items[].blades)
+   */
+  function parseScore(html, blades) {
     if (!html) return null;
     const div = document.createElement('div');
     div.innerHTML = html;
     const text = div.textContent || '';
-    const m = text.match(/Score:\s*(\d+)\/(\d+)/);
+    const m = text.match(/Score:\s*(\d+(?:\.\d+)?)\/(\d+)/);
     if (!m) return null;
     const raw = +m[1], denom = +m[2];
     let failing = 0, na = 0, rows = 0;
@@ -389,8 +390,11 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     // number of sub-metric rows actually present so those still claim a
     // (gray, not-collected) slot instead of shrinking the whole wheel.
     if (denom <= 20) return { filled: raw, failing, na, total: Math.max(denom, rows), label: `${raw}/${denom}` };
-    const total = countSubItems(html);
-    return { filled: Math.round(raw / denom * total), failing: 0, na: 0, total, label: `${raw}/${denom}` };
+    // A percentage-style score (e.g. "Citation Score: 29.9/100") doesn't map to
+    // individual sub-metric pass/fail -- scale it against the item's own declared
+    // blade count instead of the incidental number of raw stat rows the collector
+    // happens to print, so the wheel size stays the same for every project.
+    return { filled: Math.round(raw / denom * blades), failing: 0, na: 0, total: blades, label: `${raw}/${denom}` };
   }
 
   // Single pinwheel-blade outline, drawn pointing "up" from a local origin
@@ -487,8 +491,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     dim.items.forEach(item => {
       const entry = dimData && dimData[item.num] ? dimData[item.num] : null;
       const data = entry ? entry.data : null;
-      const score = parseScore(data);
       const blades = item.blades || 4;
+      const score = parseScore(data, blades);
       const filled = data ? (score ? score.filled : blades) : 0;
       const failing = data ? (score ? score.failing : 0) : 0;
       const na = data ? (score ? score.na : 0) : 0;
@@ -591,8 +595,9 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
         } else if (!data) {
           bodyHTML = '<p class="pw-pending-note">Data collection pending.</p>';
         }
-        // Strip the Score: line from the detail body
-        bodyHTML = bodyHTML.replace(/<p[^>]*><strong>Score:<\/strong>[^<]*<\/p>/g, '');
+        // Strip the Score:/Citation Score: tally line from the detail body -- it's
+        // already reflected in the card's filled/total count.
+        bodyHTML = bodyHTML.replace(/<p[^>]*><strong>(?:\w+\s+)?Score:<\/strong>[^<]*<\/p>/g, '');
         // Colorize ✓ and ✗ symbols
         bodyHTML = bodyHTML.replace(/✓/g, '<span style="color:#16a34a;font-weight:600">✓</span>');
         bodyHTML = bodyHTML.replace(/✗/g, '<span style="color:#dc2626;font-weight:600">✗</span>');

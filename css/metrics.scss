@@ -241,8 +241,11 @@
   color: #1a202c;
 }
 
+// Dimension colors default here but are set on :root at runtime from the
+// DIMENSIONS array in catalog.js (the single source of truth) -- change a
+// dimension's color there, not here.
 .impact-header {
-  background: #810E0E;
+  background: var(--dim-impact, #810E0E);
 }
 
 .impact-header h3,
@@ -251,7 +254,7 @@
 }
 
 .ecosystem-header {
-  background: #0C6F4B;
+  background: var(--dim-ecosystem, #0C6F4B);
 }
 
 .ecosystem-header h3,
@@ -260,7 +263,7 @@
 }
 
 .quality-header {
-  background: #084691;
+  background: var(--dim-quality, #084691);
 }
 
 .quality-header h3,
@@ -330,17 +333,17 @@
 
 /* Hover effects for dimension-specific colors */
 .metric-dimension:has(.impact-header) .metric-subsection:hover {
-  border-left-color: #810E0E;
+  border-left-color: var(--dim-impact, #810E0E);
   background: #fdecec;
 }
 
 .metric-dimension:has(.ecosystem-header) .metric-subsection:hover {
-  border-left-color: #0C6F4B;
+  border-left-color: var(--dim-ecosystem, #0C6F4B);
   background: #ecfdf6;
 }
 
 .metric-dimension:has(.quality-header) .metric-subsection:hover {
-  border-left-color: #084691;
+  border-left-color: var(--dim-quality, #084691);
   background: #e9f1fc;
 }
 
@@ -520,74 +523,6 @@
 
 @media (max-width: 600px) {
   .pw-card-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
-}
-
-/* ── CASS v3 per-package metrics ─────────────────────────────────────────── */
-
-.metric-dimension {
-  margin: 24px 0;
-  border: 1px solid #e1e4e8;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.dimension-header {
-  background: #005A5B;
-  padding: 10px 18px;
-}
-
-.dimension-header h3 {
-  color: white;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.dimension-content {
-  padding: 16px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 14px;
-}
-
-.metric-subsection {
-  background: white;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 14px 16px;
-}
-
-.metric-subsection h4 {
-  color: #24292e;
-  font-size: 13px;
-  font-weight: 600;
-  margin: 0 0 10px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.metric-subsection--stub {
-  opacity: 0.55;
-}
-
-.metric-stub-note {
-  color: #6a737d;
-  font-style: italic;
-  font-size: 12px;
-  margin: 0;
-}
-
-.metric-data p {
-  margin: 3px 0;
-  font-size: 13px;
-  color: #24292e;
-  line-height: 1.5;
-}
-
-.metric-data p.sub-detail {
-  margin-left: 14px;
-  color: #6a737d;
-  font-size: 12px;
 }
 
 /* ── Sub-metric help tooltip ─────────────────────────────────────────────── */

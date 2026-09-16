@@ -36984,6 +36984,16 @@
             "login": "cugni",
             "name": "Cesare Cugnasco"
         },
+        "cuishuang": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/15921519?u=4023ca13aba5032231b047f278e60ce45c37ae63&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "cuishuang",
+            "name": "cui fliter"
+        },
         "cuiweixie": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1579517?u=e897ebe119b54f736a2ff9a246ed8c4ac327d17e&v=4",
             "contributedLabRepositories": {
@@ -69086,6 +69096,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/2982494?v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "open-mpi/ompi",
                     "spack/spack"
                 ]
             },
@@ -72412,6 +72423,16 @@
             },
             "login": "mmhopki",
             "name": "Matthew Hopkins"
+        },
+        "mmiftahx": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/132245715?u=3c90d93ba9be2fd4595051d89d67bb1c5983d102&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "mmiftahx",
+            "name": "Mian Miftah"
         },
         "mmilanifard": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/32752864?v=4",
@@ -81552,6 +81573,7 @@
                     "CEED/libCEED",
                     "hypre-space/hypre",
                     "petsc/petsc",
+                    "pmodels/mpich",
                     "spack/spack",
                     "xiaoyeli/superlu",
                     "xiaoyeli/superlu_dist"
@@ -89930,6 +89952,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/8583900?u=49ca1263bfad8a74b3ddf9eb773998acc968e69b&v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "ornladios/ADIOS2",
                     "petsc/petsc"
                 ]
             },

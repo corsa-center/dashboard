@@ -371,7 +371,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     const div = document.createElement('div');
     div.innerHTML = html;
     const text = div.textContent || '';
-    const m = text.match(/Score:\s*(\d+)\/(\d+)/);
+    const m = text.match(/Score:\s*([\d.]+)\/(\d+)/);
     if (!m) return null;
     const raw = +m[1], denom = +m[2];
     let failing = 0, na = 0, rows = 0;
@@ -389,13 +389,16 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     // number of sub-metric rows actually present so those still claim a
     // (gray, not-collected) slot instead of shrinking the whole wheel.
     if (denom <= 20) return { filled: raw, failing, na, total: Math.max(denom, rows), label: `${raw}/${denom}` };
+    // A percentage score (e.g. "30.0/100") is a single computed value, not
+    // a per-row pass/fail verdict -- every row here is a plain data point
+    // that was successfully collected, not a "failing" check. Show them all
+    // as collected; the score itself is reported as text, not wedge fill.
     const total = countSubItems(html);
-    return { filled: Math.round(raw / denom * total), failing: 0, na: 0, total, label: `${raw}/${denom}` };
+    return { filled: total - na, failing: 0, na, total, label: `${raw}/${denom}` };
   }
 
   // Single pinwheel-blade outline, drawn pointing "up" from a local origin
-  // at (0,0); pinwheelSVG rotates copies of it around a hub, legendBladeCluster
-  // lines copies of it up side by side.
+  // at (0,0); pinwheelSVG rotates copies of it around a hub.
   function bladePath(S) {
     const R = S * 0.41, ri = S * 0.13, sw = S * 0.13, rw = S * 0.065, leanX = S * 0.09;
     return `M ${-rw} ${-ri} C ${-sw*1.1} ${-(ri+R)*0.42}, ${-sw*0.3+leanX} ${-R*0.82}, ${leanX} ${-R} C ${sw*0.7+leanX} ${-R*0.82}, ${sw*1.0} ${-(ri+R)*0.42}, ${rw} ${-ri} Z`;
@@ -425,19 +428,17 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     return `<svg width="${S}" height="${S}" viewBox="0 0 ${S} ${S}" xmlns="http://www.w3.org/2000/svg">${paths}</svg>`;
   }
 
-  // Legend icon: one blade per dimension, in that dimension's color, lined
-  // up side by side -- shows the actual chart hues instead of a single
-  // generic swatch color.
-  function legendBladeCluster(colors) {
-    const S = 22, R = S * 0.41, ri = S * 0.13;
-    const bPath = bladePath(S);
-    const step = S * 0.62;
-    const w = step * (colors.length - 1) + S * 0.7;
-    const h = R + ri + 2;
-    const blades = colors.map((c, i) =>
-      `<path d="${bPath}" fill="${c}" transform="translate(${S * 0.35 + step * i},${h - 2})"/>`
+  // Legend icon: one box per dimension, in that dimension's color, connected
+  // side by side -- shows the actual chart hues instead of a single generic
+  // swatch color.
+  function legendBoxCluster(colors) {
+    const S = 16, gap = 2;
+    const w = colors.length * S + (colors.length - 1) * gap;
+    const h = S;
+    const boxes = colors.map((c, i) =>
+      `<rect x="${i * (S + gap)}" y="0" width="${S}" height="${S}" rx="2" fill="${c}"/>`
     ).join('');
-    return `<svg class="pw-legend-blades" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${blades}</svg>`;
+    return `<svg class="pw-legend-boxes" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${boxes}</svg>`;
   }
 
   // ── Build HTML ───────────────────────────────────────────────────────────────
@@ -455,8 +456,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     }
   }
 
-  const passingBlades = legendBladeCluster(DIMENSIONS.map(d => d.color));
-  const failingBlades = legendBladeCluster(DIMENSIONS.map(d => d.muted));
+  const passingBlades = legendBoxCluster(DIMENSIONS.map(d => d.color));
+  const failingBlades = legendBoxCluster(DIMENSIONS.map(d => d.muted));
   const legendHTML = `
     <div class="pw-legend" role="note" aria-label="Metric blade legend. Blade color matches each dimension's section color.">
       <span class="pw-legend-item">${passingBlades}Collected &amp; passing</span>
@@ -608,8 +609,19 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
           if (t.includes('Not yet collected')) { p.classList.add('pw-not-collected'); return; }
           const strong = p.querySelector('strong');
           if (!strong) return;
-          if (t.includes('✓')) strong.style.color = '#16a34a';
-          else if (t.includes('✗')) strong.style.color = '#dc2626';
+          if (t.includes('✓')) { strong.style.color = '#16a34a'; return; }
+          if (t.includes('✗')) { strong.style.color = '#dc2626'; return; }
+          // No ✓/✗ check mark -- a raw count or score (e.g. Citation &
+          // Adoption's GitHub Stars, Citation Score). There's no failing
+          // reading for a bare number, so just distinguish "there's evidence"
+          // (green) from "zero/no evidence" (gray) rather than guess a
+          // pass/fail threshold. Split on the first ':' rather than reading
+          // past <strong> directly, since a tooltipped label's injected
+          // <sup> leaves <strong> unclosed and it ends up wrapping the value.
+          const valueText = t.slice(t.indexOf(':') + 1);
+          const num = valueText.match(/[\d,]+(?:\.\d+)?/);
+          const value = num ? parseFloat(num[0].replace(/,/g, '')) : 0;
+          strong.style.color = value > 0 ? '#16a34a' : '#94a3b8';
         });
         panel.classList.add('pw-detail-visible');
       }
@@ -659,6 +671,14 @@ const SUBMETRIC_DESCRIPTIONS = {
   "AI-Enhanced Training Detection": "Machine learning-powered analysis of educational content across platforms including Coursera, edX, institutional repositories, and GitHub Classroom materials.",
   "Reverse-Dependency Analysis": "Count of downstream packages and repositories that declare this software as a dependency, via package-registry APIs (ecosyste.ms).",
   "Package-Manager Downloads": "Download counts from the package registries the software is distributed through. Evidence of distribution rather than use, and not comparable across registries with different reporting windows.",
+  // 4.1.1 renders its own labels instead of the report's five sub-metric
+  // names (see METRICS_CATALOG.md) -- these compose the Citation Score.
+  "Formal Citations": "Peer-reviewed academic citation count from Semantic Scholar and OpenAlex. Weighted 40% of the Citation Score.",
+  "Informal Mentions": "Mentions in blog posts, documentation, and other non-peer-reviewed sources, via Semantic Scholar. Weighted 20% of the Citation Score.",
+  "Dependent Packages": "Count of downstream dependents. GitHub's API has no direct 'used by' count, so fork count is used as a proxy. Weighted 30% of the Citation Score.",
+  "GitHub Stars": "Star count from the GitHub API. Shown as context alongside the Citation Score; not itself weighted into it.",
+  "GitHub Forks": "Fork count from the GitHub API. Shown as context alongside the Citation Score; not itself weighted into it -- the same count also stands in for Dependent Packages, which is weighted.",
+  "Citation Score": "Weighted composite (0-100) of Formal Citations (40%), Dependent Packages (30%), Informal Mentions (20%), and DOI Resolutions (10%).",
   // 4.1.2 Field Research Impact
   "AI-Enhanced Publication Analysis": "Large language model-powered analysis of scientific literature to identify software-enabled discoveries and methodological innovations.",
   "Comprehensive Institutional Tracking": "Advanced web scraping and API integration with major research facilities, national laboratories, and computational centers.",

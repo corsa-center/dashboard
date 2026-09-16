@@ -187,10 +187,16 @@
   flex-shrink: 0;
   display: inline-block;
 }
-.pw-legend-swatch--filled  { background: #475569; }
-.pw-legend-swatch--failing { background: #cbd5e1; }
-.pw-legend-swatch--na      { background: none; border: 1.5px dashed #94a3b8; }
-.pw-legend-swatch--pending { background: #d1d5db; }
+.pw-legend-swatch--na      { background: none; border: 1.5px dashed #64748b; }
+.pw-legend-swatch--pending { background: #e2e8f0; }
+
+// Passing/failing legend icons: the actual pinwheel-blade shape, one per
+// dimension, in that dimension's real color -- see legendBladeCluster().
+.pw-legend-blades {
+  height: 14px;
+  width: auto;
+  flex-shrink: 0;
+}
 
 .pw-legend-badge {
   color: #0284c7;
@@ -236,7 +242,7 @@
 }
 
 .impact-header {
-  background: linear-gradient(135deg, #1F6024 0%, #3F7844 33%, #5F9063 66%, #7FA883 100%);
+  background: linear-gradient(135deg, #810E0E 0%, #933131 33%, #A65555 66%, #B87878 100%);
 }
 
 .impact-header h3,
@@ -245,7 +251,7 @@
 }
 
 .ecosystem-header {
-  background: linear-gradient(135deg, #1F5B60 0%, #3F7370 33%, #5F8B8F 66%, #7FA3AF 100%);
+  background: linear-gradient(135deg, #0C6F4B 0%, #308465 33%, #539980 66%, #77AE9A 100%);
 }
 
 .ecosystem-header h3,
@@ -254,7 +260,7 @@
 }
 
 .quality-header {
-  background: linear-gradient(135deg, #1F3A60 0%, #3F5270 33%, #5F6A8F 66%, #7F82AF 100%);
+  background: linear-gradient(135deg, #084691 0%, #2C61A1 33%, #507CB1 66%, #7597C1 100%);
 }
 
 .quality-header h3,
@@ -324,18 +330,18 @@
 
 /* Hover effects for dimension-specific colors */
 .metric-dimension:has(.impact-header) .metric-subsection:hover {
-  border-left-color: #1F6024;
-  background: #f0fdf4;
+  border-left-color: #810E0E;
+  background: #fdecec;
 }
 
 .metric-dimension:has(.ecosystem-header) .metric-subsection:hover {
-  border-left-color: #1F5B60;
-  background: #ecfeff;
+  border-left-color: #0C6F4B;
+  background: #ecfdf6;
 }
 
 .metric-dimension:has(.quality-header) .metric-subsection:hover {
-  border-left-color: #1F3A60;
-  background: #e3f2fd;
+  border-left-color: #084691;
+  background: #e9f1fc;
 }
 
 /* Responsive design */

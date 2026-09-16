@@ -37,50 +37,72 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          RUN_ID=$(gh run list \
+          # corsa-center/metrics moved from one full-portfolio run to hourly
+          # ~2-package round-robin batches (its own request volume no longer
+          # fits the fetches' rate-limit budget otherwise -- see its
+          # collect-and-sync.yml). Pulling only the single latest run here
+          # worked when "latest" meant "the whole catalog"; now it means
+          # "whichever ~2 packages happened to run last," so this job's own
+          # once-daily schedule would only ever refresh ~2 of ~71 packages
+          # and leave the rest stale indefinitely. Pull the last 48 runs
+          # instead (roughly 2 days at the source's hourly cadence -- a full
+          # round-robin cycle takes ~36 hours, so this comfortably covers one
+          # full cycle even if a sync day is missed) and apply them oldest
+          # to newest, so a package touched by more than one run in the
+          # window ends up with its most recent data, and each package keeps
+          # the generated_at of the specific run that actually produced it.
+          RUN_IDS=$(gh run list \
             --repo corsa-center/metrics \
             --workflow collect-and-sync.yml \
             --status success \
-            --limit 1 \
-            --json databaseId \
-            --jq '.[0].databaseId // empty')
+            --limit 48 \
+            --json databaseId,createdAt \
+            --jq 'sort_by(.createdAt) | .[].databaseId')
 
-          if [ -z "$RUN_ID" ]; then
-            echo "::warning::No successful metrics run found in corsa-center/metrics — skipping"
+          if [ -z "$RUN_IDS" ]; then
+            echo "::warning::No successful metrics runs found in corsa-center/metrics — skipping"
             exit 0
           fi
 
-          GENERATED_AT=$(gh run view "$RUN_ID" --repo corsa-center/metrics --json createdAt --jq .createdAt)
+          for RUN_ID in $RUN_IDS; do
+            GENERATED_AT=$(gh run view "$RUN_ID" --repo corsa-center/metrics --json createdAt --jq .createdAt)
+            STAGING=$(mktemp -d)
+            echo "Downloading sustainability-metrics artifact from run $RUN_ID (generated $GENERATED_AT)"
+            if ! gh run download "$RUN_ID" \
+              --repo corsa-center/metrics \
+              --name sustainability-metrics \
+              --dir "$STAGING" 2>/tmp/download-err; then
+              # A dry-run dispatch (used for validation, e.g. today's fixes)
+              # uploads no artifact at all -- that's not a failure worth
+              # stopping the rest of the window over, just nothing to apply.
+              echo "::notice::No artifact for run $RUN_ID ($(cat /tmp/download-err | tail -1)), skipping"
+              rm -rf "$STAGING"
+              continue
+            fi
 
-          STAGING=$(mktemp -d)
-          echo "Downloading sustainability-metrics artifact from run $RUN_ID (generated $GENERATED_AT)"
-          gh run download "$RUN_ID" \
-            --repo corsa-center/metrics \
-            --name sustainability-metrics \
-            --dir "$STAGING"
-
-          # Only replace the packages this artifact actually contains. It can
-          # cover a subset of all tracked packages -- e.g. a manual debug run
-          # scoped with --software, or collect-and-sync.yml's own job timeout
-          # cutting a full run short before every package finishes -- so a
-          # blanket delete-then-replace here would silently wipe good,
-          # already-published data for every package the run didn't get to.
-          echo "Packages updated:"
-          shopt -s nullglob
-          for pkg_dir in "$STAGING"/*-metrics/; do
-            pkg_name=$(basename "$pkg_dir")
-            # Stamp with the source run's own creation time rather than "now"
-            # -- that's when this data was actually produced, which is what
-            # the dashboard's "last updated" display should reflect even if
-            # this daily job runs on a day the metrics pipeline didn't.
-            jq -a --arg t "$GENERATED_AT" '.generated_at = $t' \
-              "$pkg_dir/metrics.json" > "$pkg_dir/metrics.json.tmp" \
-              && mv "$pkg_dir/metrics.json.tmp" "$pkg_dir/metrics.json"
-            rm -rf "explore/github-data/$pkg_name"
-            cp -r "$pkg_dir" "explore/github-data/$pkg_name"
-            echo "  $pkg_name"
+            # Only replace the packages this artifact actually contains. It
+            # can cover a subset of all tracked packages -- e.g. a manual
+            # debug run scoped with --software or --group, or
+            # collect-and-sync.yml's own job timeout cutting a run short --
+            # so a blanket delete-then-replace here would silently wipe
+            # good, already-published data for every other package.
+            echo "Packages updated by run $RUN_ID:"
+            shopt -s nullglob
+            for pkg_dir in "$STAGING"/*-metrics/; do
+              pkg_name=$(basename "$pkg_dir")
+              # Stamp with the source run's own creation time rather than
+              # "now" -- that's when this specific package's data was
+              # actually produced, which is what the dashboard's "last
+              # updated" display should reflect.
+              jq -a --arg t "$GENERATED_AT" '.generated_at = $t' \
+                "$pkg_dir/metrics.json" > "$pkg_dir/metrics.json.tmp" \
+                && mv "$pkg_dir/metrics.json.tmp" "$pkg_dir/metrics.json"
+              rm -rf "explore/github-data/$pkg_name"
+              cp -r "$pkg_dir" "explore/github-data/$pkg_name"
+              echo "  $pkg_name"
+            done
+            rm -rf "$STAGING"
           done
-          rm -rf "$STAGING"
 
       - name: Run update script
         run:

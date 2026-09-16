@@ -127,10 +127,8 @@ function renderSingleRepoError(queryParam) {
 
 /**
  * @param {Object} repo repo property from intReposInfo.json
- * @param {number} pulls count of all pull requests (open + closed)
- * @param {number} issues count of all issues (open + closed)
  */
-function renderSingleRepoHTML(repo, pulls, issues) {
+function renderSingleRepoHTML(repo) {
   ELEMENT_SINGLE_REPO_TARGET.innerHTML = `
     <h2 class="page-header text-center">
       <a class="title" href="${repo.url}" title="View Project on GitHub">${sanitizeHTML(repo.name)}</a>
@@ -213,31 +211,7 @@ function renderSingleRepo(queryParam) {
       const reposObj = infoJson.data;
       if (reposObj.hasOwnProperty(queryParam)) {
         const repo = reposObj[queryParam];
-        let pulls = 0;
-        let issues = 0;
-        const pullCounters = ['pullRequests_Merged', 'pullRequests_Open'];
-        const issueCounters = ['issues_Closed', 'issues_Open'];
-        pullCounters.forEach(function (c) {
-          pulls += repo[c]['totalCount'];
-        });
-        issueCounters.forEach(function (c) {
-          issues += repo[c]['totalCount'];
-        });
-        renderSingleRepoHTML(repo, pulls, issues);
-        draw_line_repoActivity('repoActivityChart', queryParam);
-        draw_pie_repoUsers('pieUsers', queryParam);
-        draw_line_repoCreationHistory('repoCreationHistory', queryParam);
-        draw_pie_languages('languagePie', queryParam);
-        draw_cloud_topics('topicCloud', queryParam);
-        if (repo.stargazers.totalCount) {
-          draw_line_repoStarHistory('repoStarHistory', queryParam);
-        }
-        if (pulls) {
-          draw_pie_repoPulls('piePulls', queryParam);
-        }
-        if (issues) {
-          draw_pie_repoIssues('pieIssues', queryParam);
-        }
+        renderSingleRepoHTML(repo);
         // Load and display ecosystem metrics
         loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
       } else {

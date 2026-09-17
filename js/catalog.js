@@ -109,6 +109,35 @@ function containsTopics(catTopics, repoTopics) {
   return false;
 }
 
+/**
+ * repo.owner from intReposInfo.json is a GitHub-style {login, avatarUrl}
+ * object for GitHub repos, but a plain login string for GitLab repos (see
+ * the GitLab-support collector) -- normalize to the login string so callers
+ * don't have to know which host a repo came from.
+ * @param {Object|string} owner repo.owner as it appears in intReposInfo.json
+ * @returns {string}
+ */
+function ownerLogin(owner) {
+  return typeof owner === 'string' ? owner : owner.login;
+}
+
+/**
+ * Build a link to the repo owner's profile on whichever host the repo
+ * actually lives on (GitHub, GitLab, gitlab.kitware.com, ...) instead of
+ * assuming github.com.
+ * @param {Object} repo repo property from intReposInfo.json
+ * @returns {string}
+ */
+function ownerProfileUrl(repo) {
+  const login = ownerLogin(repo.owner);
+  try {
+    const repoUrl = new URL(repo.url);
+    return `${repoUrl.protocol}//${repoUrl.host}/${login}`;
+  } catch (e) {
+    return `https://github.com/${login}`;
+  }
+}
+
 //////////////////////////////////////////////////////////
 ///////////////// REPO DETAIL FUNCTIONS //////////////////
 //////////////////////////////////////////////////////////
@@ -133,8 +162,8 @@ function renderSingleRepoHTML(repo) {
     <h2 class="page-header text-center">
       <a class="title" href="${repo.url}" title="View Project on GitHub">${sanitizeHTML(repo.name)}</a>
       <br />
-      <a class="subtitle" href="https://github.com/${repo.owner.login}" title="View Owner on GitHub">
-        <span class="fa fa-user-circle"></span>${repo.owner.login}
+      <a class="subtitle" href="${ownerProfileUrl(repo)}" title="View Owner">
+        <span class="fa fa-user-circle"></span>${ownerLogin(repo.owner)}
       </a>
       ${
         repo.primaryLanguage
@@ -1158,6 +1187,18 @@ function setVisibleRepo(newValue, shouldPushState) {
             .then((res) => res.json())
             .then((infoJson) => {
               const reposInfoObj = infoJson.data;
+              // "ALL SOFTWARE" (topicRepos[0]) is meant to include every repo we
+              // have data for, but the CASS mapping and topics-based passes above
+              // only find repos that have GitHub topics data -- a GitLab-hosted
+              // repo (see the GitLab-support collector) never appears in
+              // intRepos_Topics.json, so it would otherwise silently never make
+              // it into the list. Backfill any repo missing from that pass.
+              for (let r in reposInfoObj) {
+                const alreadyAdded = topicRepos[0].some((existing) => existing.nameWithOwner === r);
+                if (!alreadyAdded) {
+                  topicRepos[0].push({ nameWithOwner: r });
+                }
+              }
               for (let repo in reposInfoObj) {
                     //reposInfoObj[repo] is the actual repo object
                     for (let j in topicRepos) {
@@ -1171,7 +1212,7 @@ function setVisibleRepo(newValue, shouldPushState) {
                           category[count]['name'] = reposInfoObj[repo].name;
                           category[count]['description'] = reposInfoObj[repo].description;
                           category[count]['ownerAvatar'] = reposInfoObj[repo].owner.avatarUrl;
-                          category[count]['owner'] = reposInfoObj[repo].owner.login;
+                          category[count]['owner'] = ownerLogin(reposInfoObj[repo].owner);
                           category[count]['stars'] = reposInfoObj[repo].stargazers.totalCount;
                           category[count]['gitUrl'] = reposInfoObj[repo].url;
                           category[count]['homepageUrl'] = reposInfoObj[repo].homepageUrl;

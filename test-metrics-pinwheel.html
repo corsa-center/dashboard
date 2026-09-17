@@ -368,8 +368,8 @@
 
     // ── Pinwheel SVG builder ──────────────────────────────────────────────────
     // Three blade states:
-    //   0 .. filled-1            → color  (passing)
-    //   filled .. filled+failing-1 → muted  (collected but failing / not meeting standard)
+    //   0 .. filled-1            → color  (meets threshold)
+    //   filled .. filled+failing-1 → muted  (collected, below threshold)
     //   filled+failing .. total-1  → gray   (not yet collected)
     function pinwheelSVG(filled, failing, total, color, muted) {
       const S  = 64;
@@ -393,8 +393,8 @@
       for (let i = 0; i < total; i++) {
         const deg = (360 / total) * i;
         let fill;
-        if      (i < filled)          fill = color;   // passing
-        else if (i < filled + failing) fill = muted;   // failing / not meeting standard
+        if      (i < filled)          fill = color;   // meets threshold
+        else if (i < filled + failing) fill = muted;   // collected, below threshold
         else                           fill = GRAY;    // not yet collected
         parts.push(
           `<path d="${bPath}" fill="${fill}" `+

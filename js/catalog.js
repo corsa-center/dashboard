@@ -250,7 +250,7 @@ function loadEcosystemMetrics(repoName, hasClangTidyMetrics) {
 
 /**
  * Render ecosystem metrics as a pinwheel card grid.
- * Each sub-metric is a blade: color=passing, muted=failing, gray=not collected.
+ * Each sub-metric is a blade: color=meets threshold, muted=below threshold, gray=not collected.
  * Works for any repository — data comes from {repo}-metrics/metrics.json.
  * @param {Object|null} metrics parsed metrics.json (null = no data available)
  * @param {string} repoName repository name (owner/repo format)
@@ -445,8 +445,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   const failingBlades = legendBoxCluster(DIMENSIONS.map(d => d.muted));
   const legendHTML = `
     <div class="pw-legend" role="note" aria-label="Metric blade legend. Blade color matches each dimension's section color.">
-      <span class="pw-legend-item">${passingBlades}Collected &amp; passing</span>
-      <span class="pw-legend-item">${failingBlades}Collected &amp; failing</span>
+      <span class="pw-legend-item">${passingBlades}Collected, meets threshold</span>
+      <span class="pw-legend-item">${failingBlades}Collected, below threshold</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--na"></span>Not applicable</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--pending"></span>Not yet collected</span>
       ${hasClangTidyMetrics ? '<span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>' : ''}
@@ -672,7 +672,7 @@ const SUBMETRIC_DESCRIPTIONS = {
   "Enhanced Document Detection": "Advanced file scanning for CODE_OF_CONDUCT.md, CONTRIBUTING.md, GOVERNANCE.md, and variant naming conventions using GitHub Contents API.",
   "Governance Keyword Analysis": "Natural language processing to detect governance-related keywords, decision-making processes, and community structure indicators.",
   "OpenSSF Badge Integration": "Automated assessment of OpenSSF Best Practices Badge completion status, particularly governance documentation requirements.",
-  "OpenSSF Scorecard": "Automated OpenSSF Scorecard assessment (0–10) covering branch protection, code review, dependency update automation, and vulnerability disclosure, with a per-check breakdown of the checks a project is failing.",
+  "OpenSSF Scorecard": "Automated OpenSSF Scorecard assessment (0–10) covering branch protection, code review, dependency update automation, and vulnerability disclosure, with a per-check breakdown of the checks below threshold.",
   "CHAOSS Governance Metrics": "Implementation of standardized CHAOSS governance health indicators, including decision-making transparency and community participation metrics.",
   "Governance Effectiveness Assessment": "Analysis of issue resolution patterns, decision implementation tracking, and community participation in governance processes.",
   // 4.2.2 Open-Source Licensing and FAIR Compliance

@@ -2,6 +2,10 @@
   "package": "E4S-Project/e4s",
   "stars": 41,
   "forks": 15,
+  "config_exclusions": {
+    "ecosystem": [],
+    "quality": []
+  },
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
@@ -23,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 24 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 20 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v25.11 (304 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 13 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 3 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 24 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 21 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v25.11 (305 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 13 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 3 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -88,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-15T21:13:34Z"
+  "generated_at": "2026-09-16T20:54:22Z"
 }

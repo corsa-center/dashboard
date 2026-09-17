@@ -1,11 +1,15 @@
 {
   "package": "Libensemble/libensemble",
-  "stars": 76,
-  "forks": 31,
+  "stars": 0,
+  "forks": 0,
+  "config_exclusions": {
+    "ecosystem": [],
+    "quality": []
+  },
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 31</p>\n<p><strong>GitHub Stars:</strong> 76</p>\n<p><strong>GitHub Forks:</strong> 31</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 22 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,774,553</p>\n<p class=\"sub-detail\">conda 1,773,541 (total), pypi 1,012 (last-month)</p>\n<p><strong>Citation Score:</strong> 22.5/100</p>"
+      "data": "<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 22 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,774,553</p>\n<p class=\"sub-detail\">conda 1,773,541 (total), pypi 1,012 (last-month)</p>\n<p><strong>Citation Score:</strong> 0.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -61,7 +65,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 3/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 0/4 indicators \u2717</p>\n<p><strong>Code Review Quality Analysis:</strong> No merged PRs to sample \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 0/3 met</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 0/6 \u2717</p>\n<p><strong>Testing Framework Excellence:</strong> 0/4 indicators \u2717</p>\n<p><strong>Code Review Quality Analysis:</strong> No merged PRs to sample \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 0/3 met</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -88,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 4.8/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-15T21:13:34Z"
+  "generated_at": "2026-09-16T20:54:22Z"
 }

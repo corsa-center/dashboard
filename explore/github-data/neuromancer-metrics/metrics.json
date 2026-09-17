@@ -1,11 +1,15 @@
 {
   "package": "pnnl/neuromancer",
-  "stars": 1371,
+  "stars": 1372,
   "forks": 188,
+  "config_exclusions": {
+    "ecosystem": [],
+    "quality": []
+  },
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 188</p>\n<p><strong>GitHub Stars:</strong> 1,371</p>\n<p><strong>GitHub Forks:</strong> 188</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 1 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 612</p>\n<p class=\"sub-detail\">pypi 9 (last-month), pypi 603 (last-month)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 188</p>\n<p><strong>GitHub Stars:</strong> 1,372</p>\n<p><strong>GitHub Forks:</strong> 188</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 1 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 612</p>\n<p class=\"sub-detail\">pypi 9 (last-month), pypi 603 (last-month)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -23,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 25 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 12 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.5.6 (354 days ago), 2/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 30 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 11 of 13 previously active contributors stopped (85%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 25 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 13 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.5.6 (355 days ago), 2/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 30 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 11 of 13 previously active contributors stopped (85%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -88,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-15T21:13:34Z"
+  "generated_at": "2026-09-16T20:54:22Z"
 }

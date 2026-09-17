@@ -2,6 +2,10 @@
   "package": "OpenMP-Validation-and-Verification/OpenMP_VV",
   "stars": 0,
   "forks": 0,
+  "config_exclusions": {
+    "ecosystem": [],
+    "quality": []
+  },
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
@@ -88,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-15T21:13:34Z"
+  "generated_at": "2026-09-16T20:54:22Z"
 }

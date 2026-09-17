@@ -2,6 +2,10 @@
   "package": "kokkos/kokkos-kernels",
   "stars": 0,
   "forks": 0,
+  "config_exclusions": {
+    "ecosystem": [],
+    "quality": []
+  },
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
@@ -43,11 +47,11 @@
     },
     "4.2.8": {
       "title": "Financial Sustainability",
-      "data": "<p><strong>Enhanced Funding Documentation Analysis:</strong> No funding documentation found \u2717</p>\n<p><strong>Institutional Affiliation Tracking:</strong> 0 organizations across 0/0 top contributors \u2717</p>\n<p><strong>NIH R50 Award Tracking:</strong> Not yet collected</p>\n<p><strong>Corporate Sponsorship Detection:</strong> No sponsorship signals found \u2717</p>\n<p><strong>Funding Portfolio Analysis:</strong> 0 distinct funding source(s) \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Enhanced Funding Documentation Analysis:</strong> 1 award reference(s) \u2713</p>\n<p class=\"sub-detail\">DE-NA0003525</p>\n<p><strong>Institutional Affiliation Tracking:</strong> 7 organizations across 12/25 top contributors \u2713</p>\n<p class=\"sub-detail\">Sandia National Labs, Sandia National Laboratories, AMD, Google, Los Alamos National Laboratory</p>\n<p><strong>NIH R50 Award Tracking:</strong> Not yet collected</p>\n<p><strong>Corporate Sponsorship Detection:</strong> organization-owned repository \u2713</p>\n<p><strong>Funding Portfolio Analysis:</strong> 1 distinct funding source(s) \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.9": {
       "title": "Institutional & Organizational Support",
-      "data": "<p><strong>RSE Position Detection:</strong> Not yet collected</p>\n<p><strong>Institutional Support Tracking:</strong> 0 distinct organizations backing contributors \u2717</p>\n<p><strong>Career Development Indicators:</strong> Not yet collected</p>\n<p><strong>NIH R50 Award Integration:</strong> Not yet collected</p>\n<p><strong>Institutional Policy Analysis:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>RSE Position Detection:</strong> Not yet collected</p>\n<p><strong>Institutional Support Tracking:</strong> 7 distinct organizations backing contributors \u2713</p>\n<p class=\"sub-detail\">Sandia National Labs (4), Sandia National Laboratories (3), AMD (1), Google (1), Los Alamos National Laboratory (1)</p>\n<p><strong>Career Development Indicators:</strong> Not yet collected</p>\n<p><strong>NIH R50 Award Integration:</strong> Not yet collected</p>\n<p><strong>Institutional Policy Analysis:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
@@ -57,27 +61,27 @@
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> No CodeQL workflow found \u2717</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> Project does not record defect reports by type or label \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> clang-tidy \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/kokkos/kokkos-kernels/blob/develop/.github/workflows/codeql.yml\">CodeQL enabled</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> 1 secure-coding indicator: Warnings as errors \u2713</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> Project does not record defect reports by type or label \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/6 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 0/4 indicators \u2717</p>\n<p><strong>Code Review Quality Analysis:</strong> No merged PRs to sample \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge <a href=\"https://www.bestpractices.dev/projects/9534\">Passing</a> (100%) \u2713</p>\n<p class=\"sub-detail\">Governance criteria: 4/4 met</p>\n<p class=\"sub-detail\">Security criteria: 2/3 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/6 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">CTest / CMake testing</p>\n<p><strong>Code Review Quality Analysis:</strong> 100.0% of 48 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 3/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config, Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge <a href=\"https://www.bestpractices.dev/projects/9534\">Passing</a> (100%) \u2713</p>\n<p class=\"sub-detail\">Governance criteria: 4/4 met</p>\n<p class=\"sub-detail\">Security criteria: 2/3 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2717</p>\n<p><strong>Version Control Best Practices:</strong> \u2717</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2717</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">5.2.2, 5.2.1</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide, Release / build notes</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
-      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 0/4 core sections \u2717</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 2 package managers: go, spack \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 2/4 core sections; docs/ present \u2717</p>\n<p class=\"sub-detail\">Installation, Usage</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 2 package managers: go, spack \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.3.5": {
       "title": "Accessibility",
-      "data": "<p><strong>Portable Build System Detection:</strong> \u2717</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> No CI architectures detected \u2717</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> No CI runner environments detected \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Portable Build System Detection:</strong> \u2713</p><p class=\"sub-detail\">CMake</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> x86-64 only \u2717</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> 2 environments: Linux, macOS \u2713</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> No source files identified \u2717</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> No source files identified \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 0 documentation files (0.00 ratio) \u2717</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 0 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 0% of commits (0 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> No commits sampled \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 900 source files, mean 11.5 KB, 0.9% over 100 KB, depth 6 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 352 test files for 900 source files (0.39 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 139 documentation files (0.15 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 0 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 0% of commits (0 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 16 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">CI cleanup (#3288); Make prefix sums public; common util cleanup (#3254); EXPECT*KK macro rework (#3258)</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -85,8 +89,8 @@
     },
     "4.3.8": {
       "title": "Software Supply Chain Integrity",
-      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 9.2/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
+      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> Published with release 5.2.2: kokkos-kernels-5.2.2.intoto.jsonl \u2713</p>\n<p class=\"sub-detail\">https://github.com/kokkos/kokkos-kernels/releases/download/5.2.2/kokkos-kernels-5.2.2.intoto.jsonl</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 9.2/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/2</p>"
     }
   },
-  "generated_at": "2026-09-15T21:13:34Z"
+  "generated_at": "2026-09-16T20:54:22Z"
 }

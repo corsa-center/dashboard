@@ -190,8 +190,8 @@
 .pw-legend-swatch--na      { background: none; border: 2px dashed #64748b; }
 .pw-legend-swatch--pending { background: #e2e8f0; }
 
-// Passing/failing legend icons: one box per dimension, in that dimension's
-// real color -- see legendBoxCluster().
+// Meets-threshold/below-threshold legend icons: one box per dimension, in
+// that dimension's real color -- see legendBoxCluster().
 .pw-legend-boxes {
   height: 16px;
   width: auto;

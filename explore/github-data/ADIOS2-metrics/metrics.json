@@ -27,11 +27,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 919 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.12.1 (141 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 83 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 8 of 19 previously active contributors stopped (42%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 923 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.12.1 (141 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 83 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 8 of 19 previously active contributors stopped (42%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 4 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 260 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 80% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 1.14 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 53% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 73% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 6 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 4 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 260 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 80% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 1.14 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 53% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 72% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 6 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">919 commits and 5 release(s) in the last year; active in 49/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">83 contributors; top contributor 22.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-09-29 (10.0 yrs); GitHub repo created 2016-12-06 (9.8 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">923 commits and 5 release(s) in the last year; active in 49/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">83 contributors; top contributor 22.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-09-29 (10.0 yrs); GitHub repo created 2016-12-06 (9.8 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -81,7 +81,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 1,369 source files, mean 14.8 KB, 2.2% over 100 KB, depth 9 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 571 test files for 1,369 source files (0.42 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 184 documentation files (0.13 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 22.6% of commits (83 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 5 of 300 recent commits \u2717</p>\n<p class=\"sub-detail\">testing: make XRootD HTTPS cleanup reliable; Derived expression grammar rework: '/' always division, paths via bindings or backticks, named constants; attributes (@attr, read per step) and single-value variables as expression inputs; JIT fusion optional without dill >= 4.0; Test: use MPI-aware cleanup in attribute-only step test</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 1,369 source files, mean 14.8 KB, 2.2% over 100 KB, depth 9 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 571 test files for 1,369 source files (0.42 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 184 documentation files (0.13 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 22.7% of commits (83 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 5 of 300 recent commits \u2717</p>\n<p class=\"sub-detail\">testing: make XRootD HTTPS cleanup reliable; Derived expression grammar rework: '/' always division, paths via bindings or backticks, named constants; attributes (@attr, read per step) and single-value variables as expression inputs; JIT fusion optional without dill >= 4.0; Test: use MPI-aware cleanup in attribute-only step test</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 7.9/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-17T10:45:30Z"
+  "generated_at": "2026-09-17T20:11:18Z"
 }

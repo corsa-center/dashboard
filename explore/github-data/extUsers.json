@@ -3140,8 +3140,7 @@
                 "nodes": [
                     "AMReX-Codes/amrex",
                     "Viskores/viskores",
-                    "spack/spack",
-                    "visit-dav/visit"
+                    "spack/spack"
                 ]
             },
             "login": "BenWibking",
@@ -7312,6 +7311,7 @@
             "contributedLabRepositories": {
                 "nodes": [
                     "HDFGroup/hdf5",
+                    "open-mpi/ompi",
                     "pmodels/mpich"
                 ]
             },
@@ -9316,6 +9316,16 @@
             },
             "login": "JieyangChen7",
             "name": "Jieyang Chen"
+        },
+        "JihyeonJeong129": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/84846295?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "JihyeonJeong129",
+            "name": "Jeong Jihyeon"
         },
         "JimLaskey": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/63007666?u=a89c5504fd204f3e745f47c721ab6910b9258a0c&v=4",
@@ -21563,11 +21573,19 @@
         "abel-bernabeu": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/2643095?u=96d30d53afd8a4e9bfa3bdc58344669ffc590788&v=4",
             "contributedLabRepositories": {
+                "nodes": []
+            },
+            "login": "abel-bernabeu",
+            "name": "Abel Bernabeu"
+        },
+        "abel-bernabeu-bolt-graphics": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/2643095?u=96d30d53afd8a4e9bfa3bdc58344669ffc590788&v=4",
+            "contributedLabRepositories": {
                 "nodes": [
                     "llvm/llvm-project"
                 ]
             },
-            "login": "abel-bernabeu",
+            "login": "abel-bernabeu-bolt-graphics",
             "name": "Abel Bernabeu"
         },
         "abelkocsis": {
@@ -24437,6 +24455,16 @@
             },
             "login": "alexey-bataev",
             "name": "Alexey Bataev"
+        },
+        "alexey-gusarov": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/2213498?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "alexey-gusarov",
+            "name": null
         },
         "alexeyr": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/24733?u=79ccff5846e0334da2a407f5b5340f80cdb2503d&v=4",
@@ -48248,6 +48276,16 @@
             },
             "login": "gix",
             "name": "Nico Rieck"
+        },
+        "gjamesli2126": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/46471838?u=23e4d4ae02b70f53d2c4bb4a4aec14bf4d3b9b67&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "open-mpi/ompi"
+                ]
+            },
+            "login": "gjamesli2126",
+            "name": "Chieh-En Li"
         },
         "gjasny": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1165598?v=4",
@@ -104919,6 +104957,16 @@
             "login": "yassinz",
             "name": null
         },
+        "yasster": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/22300127?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "yasster",
+            "name": "Yassine Missoum"
+        },
         "yasushi-saito": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/546227?u=87c0ef5b0dd505fe3e526067e91eff71e09c63d8&v=4",
             "contributedLabRepositories": {
@@ -106936,9 +106984,7 @@
         "ziliangzl": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/164990887?u=1115aaa43e83bbbe11acd6b7706ddd6eb0abd2f7&v=4",
             "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
+                "nodes": []
             },
             "login": "ziliangzl",
             "name": "Ziliang Zhang"

@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 416 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 78 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> legion-26.06.0 (77 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 61 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 15 of 19 previously active contributors stopped (79%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 405 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 80 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> legion-26.06.0 (79 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 61 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 15 of 19 previously active contributors stopped (79%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">416 commits and 4 release(s) in the last year; active in 39/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">61 contributors; top contributor 48.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2012-11-17 (13.8 yrs); GitHub repo created 2012-11-17 (13.8 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">405 commits and 4 release(s) in the last year; active in 37/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">61 contributors; top contributor 48.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2012-11-17 (13.8 yrs); GitHub repo created 2012-11-17 (13.8 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 3.7/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-17T23:21:55Z"
+  "generated_at": "2026-09-19T05:57:45Z"
 }

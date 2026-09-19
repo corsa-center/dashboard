@@ -1,7 +1,7 @@
 {
   "package": "xiaoyeli/superlu_mt",
   "stars": 39,
-  "forks": 22,
+  "forks": 23,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 22</p>\n<p><strong>GitHub Stars:</strong> 39</p>\n<p><strong>GitHub Forks:</strong> 22</p>\n<p><strong>Citation Score:</strong> 20.4/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 23</p>\n<p><strong>GitHub Stars:</strong> 39</p>\n<p><strong>GitHub Forks:</strong> 23</p>\n<p><strong>Citation Score:</strong> 20.7/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 56.96/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 18/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 77/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 83/100</p>\n<p class=\"sub-detail\">Time To Close: 100/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 56.99/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 18/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 77/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 83/100</p>\n<p class=\"sub-detail\">Time To Close: 100/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-18T03:32:50Z"
+  "generated_at": "2026-09-18T23:36:50Z"
 }

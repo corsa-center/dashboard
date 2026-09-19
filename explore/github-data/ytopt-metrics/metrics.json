@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 18</p>\n<p><strong>GitHub Stars:</strong> 55</p>\n<p><strong>GitHub Forks:</strong> 18</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 1 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 51</p>\n<p class=\"sub-detail\">pypi 51 (last-month)</p>\n<p><strong>Citation Score:</strong> 19.1/100</p>"
+      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>Dependent Packages:</strong> 18</p>\n<p><strong>GitHub Stars:</strong> 55</p>\n<p><strong>GitHub Forks:</strong> 18</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 1 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 51</p>\n<p class=\"sub-detail\">pypi 51 (last-month)</p>\n<p><strong>Citation Score:</strong> 39.1/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 119 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0 (150 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 11 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 119 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 2 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0 (151 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 11 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">119 commits and 4 release(s) in the last year; active in 27/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">11 contributors; top contributor 66.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-01-16 (7.7 yrs); GitHub repo created 2019-01-15 (7.7 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">119 commits and 4 release(s) in the last year; active in 28/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">11 contributors; top contributor 66.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-01-16 (7.7 yrs); GitHub repo created 2019-01-15 (7.7 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-18T04:35:51Z"
+  "generated_at": "2026-09-19T00:40:05Z"
 }

@@ -27,11 +27,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 436 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> Old_master_support_end (2339 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 64 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 9 previously active contributors stopped (33%) \u2713</p>\n<p><strong>Score:</strong> 3/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 436 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> Old_master_support_end (2340 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 64 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 9 previously active contributors stopped (33%) \u2713</p>\n<p><strong>Score:</strong> 3/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 2 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 100 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 87% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.43 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 60% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 20% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 21 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 2 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 100 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 87% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.43 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 60% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 22% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 21 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-18T03:32:50Z"
+  "generated_at": "2026-09-18T23:36:50Z"
 }

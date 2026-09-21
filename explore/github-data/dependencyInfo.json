@@ -662,6 +662,17 @@
                 "login": "abranhe"
             }
         },
+        "actions/attest-build-provenance": {
+            "languages": {
+                "nodes": []
+            },
+            "name": "attest-build-provenance",
+            "nameWithOwner": "actions/attest-build-provenance",
+            "owner": {
+                "isVerified": true,
+                "login": "actions"
+            }
+        },
         "actions/cache": {
             "languages": {
                 "nodes": [
@@ -1008,6 +1019,22 @@
             "nameWithOwner": "alexheretic/ab-glyph",
             "owner": {
                 "login": "alexheretic"
+            }
+        },
+        "anchore/sbom-action": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "sbom-action",
+            "nameWithOwner": "anchore/sbom-action",
+            "owner": {
+                "isVerified": true,
+                "login": "anchore"
             }
         },
         "annotated-types/annotated-types": {

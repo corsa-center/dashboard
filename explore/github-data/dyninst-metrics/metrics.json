@@ -27,11 +27,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 312 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v13.0.0 (912 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 62 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 10 previously active contributors stopped (30%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 315 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v13.0.0 (913 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 62 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 10 previously active contributors stopped (30%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 1 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 5941 hours \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 70% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.88 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 50% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 43% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 69 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 1 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 5941 hours \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 70% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.88 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 50% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 42% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 69 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">312 commits and 0 release(s) in the last year; active in 46/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">62 contributors; top contributor 24.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 1993-05-07 (33.4 yrs); GitHub repo created 2016-05-02 (10.4 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">315 commits and 0 release(s) in the last year; active in 46/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">62 contributors; top contributor 24.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 1993-05-07 (33.4 yrs); GitHub repo created 2016-05-02 (10.4 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 8.1/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-19T23:54:16Z"
+  "generated_at": "2026-09-21T05:24:29Z"
 }

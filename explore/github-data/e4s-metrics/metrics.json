@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 15</p>\n<p><strong>GitHub Stars:</strong> 41</p>\n<p><strong>GitHub Forks:</strong> 15</p>\n<p><strong>Citation Score:</strong> 18.0/100</p>"
+      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>Dependent Packages:</strong> 15</p>\n<p><strong>GitHub Stars:</strong> 41</p>\n<p><strong>GitHub Forks:</strong> 15</p>\n<p><strong>Citation Score:</strong> 38.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/E4S-Project/e4s/blob/master/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: <a href=\"https://github.com/E4S-Project/governance/blob/main/GOVERNANCE.md\">GOVERNANCE.md</a></p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 2/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 44.76/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issues Inclusivity: 14/100</p>\n<p class=\"sub-detail\">Project Popularity: 18/100</p>\n<p class=\"sub-detail\">Time To Close: 40/100</p>\n<p class=\"sub-detail\">Issue Age: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 72/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 880 days ago \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/E4S-Project/e4s/blob/master/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: <a href=\"https://github.com/E4S-Project/governance/blob/main/GOVERNANCE.md\">GOVERNANCE.md</a></p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 2/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 44.76/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issues Inclusivity: 14/100</p>\n<p class=\"sub-detail\">Project Popularity: 18/100</p>\n<p class=\"sub-detail\">Time To Close: 40/100</p>\n<p class=\"sub-detail\">Issue Age: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 72/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 881 days ago \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 26 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v25.11 (309 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 13 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 3 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 26 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 2 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v25.11 (310 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 13 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 3 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-19T21:46:59Z"
+  "generated_at": "2026-09-21T03:17:21Z"
 }

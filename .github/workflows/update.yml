@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write  # needed to dispatch pages.yml after pushing new data
 
 jobs:
   update:
@@ -132,3 +133,14 @@ jobs:
       - name: Push directly to deploy branch
         if: steps.check-changes.outputs.has-changes == 'true'
         run: git push origin "HEAD:$DEPLOY_BRANCH"
+
+      - name: Trigger Pages deployment
+        if: steps.check-changes.outputs.has-changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # A push made with the automatic GITHUB_TOKEN doesn't fire other
+          # workflows' `push` triggers (GitHub's anti-recursion guard), so
+          # pages.yml never redeploys from this commit on its own --
+          # dispatch it explicitly instead.
+          gh workflow run pages.yml --repo "${{ github.repository }}" --ref "$DEPLOY_BRANCH"

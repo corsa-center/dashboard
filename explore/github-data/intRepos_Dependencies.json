@@ -7,6 +7,374 @@
                         "dependencies": {
                             "nodes": [
                                 {
+                                    "packageManager": "PIP",
+                                    "packageName": "alabaster",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/alabaster"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "babel",
+                                    "repository": {
+                                        "nameWithOwner": "python-babel/babel"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "certifi",
+                                    "repository": {
+                                        "nameWithOwner": "certifi/python-certifi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "charset-normalizer",
+                                    "repository": {
+                                        "nameWithOwner": "jawah/charset_normalizer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "docutils",
+                                    "repository": {
+                                        "nameWithOwner": "jwilk-mirrors/docutils"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "idna",
+                                    "repository": {
+                                        "nameWithOwner": "kjd/idna"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "imagesize",
+                                    "repository": {
+                                        "nameWithOwner": "shibukawa/imagesize_py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jinja2",
+                                    "repository": {
+                                        "nameWithOwner": "pallets/jinja"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "markupsafe",
+                                    "repository": {
+                                        "nameWithOwner": "pallets/markupsafe"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "packaging",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/packaging"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygments",
+                                    "repository": {
+                                        "nameWithOwner": "pygments/pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "requests",
+                                    "repository": {
+                                        "nameWithOwner": "psf/requests"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "snowballstemmer",
+                                    "repository": {
+                                        "nameWithOwner": "shibukawa/snowball_py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinx"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx-rtd-theme",
+                                    "repository": {
+                                        "nameWithOwner": "readthedocs/sphinx_rtd_theme"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-applehelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-applehelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-devhelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-devhelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-htmlhelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-htmlhelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-jquery",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-contrib/jquery"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-jsmath",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-jsmath"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-qthelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-qthelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-serializinghtml",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-serializinghtml"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "urllib3",
+                                    "repository": {
+                                        "nameWithOwner": "urllib3/urllib3"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "annotated-doc",
+                                    "repository": {
+                                        "nameWithOwner": "fastapi/annotated-doc"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cmake",
+                                    "repository": {
+                                        "nameWithOwner": "scikit-build/cmake-python-distributions"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "iniconfig",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/iniconfig"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jaraco-context",
+                                    "repository": {
+                                        "nameWithOwner": "jaraco/jaraco.context"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jaraco-functools",
+                                    "repository": {
+                                        "nameWithOwner": "jaraco/jaraco.functools"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jaraco-text",
+                                    "repository": {
+                                        "nameWithOwner": "jaraco/jaraco.text"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "markdown-it-py",
+                                    "repository": {
+                                        "nameWithOwner": "executablebooks/markdown-it-py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mdurl",
+                                    "repository": {
+                                        "nameWithOwner": "executablebooks/mdurl"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "more-itertools",
+                                    "repository": {
+                                        "nameWithOwner": "more-itertools/more-itertools"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mpi4py",
+                                    "repository": {
+                                        "nameWithOwner": "mpi4py/mpi4py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numpy",
+                                    "repository": {
+                                        "nameWithOwner": "numpy/numpy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "packaging",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/packaging"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pandas",
+                                    "repository": {
+                                        "nameWithOwner": "pandas-dev/pandas"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pluggy",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pluggy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygments",
+                                    "repository": {
+                                        "nameWithOwner": "pygments/pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "python-dateutil",
+                                    "repository": {
+                                        "nameWithOwner": "dateutil/dateutil"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "rich",
+                                    "repository": {
+                                        "nameWithOwner": "Textualize/rich"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "setuptools",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/setuptools"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "shellingham",
+                                    "repository": {
+                                        "nameWithOwner": "sarugaku/shellingham"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "six",
+                                    "repository": {
+                                        "nameWithOwner": "benjaminp/six"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "typer",
+                                    "repository": {
+                                        "nameWithOwner": "fastapi/typer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "typer-slim",
+                                    "repository": {
+                                        "nameWithOwner": "fastapi/typer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "wheel",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/wheel"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "codespell",
+                                    "repository": {
+                                        "nameWithOwner": "codespell-project/codespell"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/cache",
                                     "repository": {
@@ -557,6 +925,367 @@
                                     "packageName": "seanmiddleditch/gha-setup-ninja",
                                     "repository": {
                                         "nameWithOwner": "seanmiddleditch/gha-setup-ninja"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "codespell",
+                                    "repository": {
+                                        "nameWithOwner": "codespell-project/codespell"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "alabaster",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/alabaster"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "babel",
+                                    "repository": {
+                                        "nameWithOwner": "python-babel/babel"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "certifi",
+                                    "repository": {
+                                        "nameWithOwner": "certifi/python-certifi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "charset-normalizer",
+                                    "repository": {
+                                        "nameWithOwner": "jawah/charset_normalizer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "docutils",
+                                    "repository": {
+                                        "nameWithOwner": "jwilk-mirrors/docutils"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "idna",
+                                    "repository": {
+                                        "nameWithOwner": "kjd/idna"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "imagesize",
+                                    "repository": {
+                                        "nameWithOwner": "shibukawa/imagesize_py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jinja2",
+                                    "repository": {
+                                        "nameWithOwner": "pallets/jinja"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "markupsafe",
+                                    "repository": {
+                                        "nameWithOwner": "pallets/markupsafe"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "packaging",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/packaging"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygments",
+                                    "repository": {
+                                        "nameWithOwner": "pygments/pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "requests",
+                                    "repository": {
+                                        "nameWithOwner": "psf/requests"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "snowballstemmer",
+                                    "repository": {
+                                        "nameWithOwner": "shibukawa/snowball_py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinx"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx-rtd-theme",
+                                    "repository": {
+                                        "nameWithOwner": "readthedocs/sphinx_rtd_theme"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-applehelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-applehelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-devhelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-devhelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-htmlhelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-htmlhelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-jquery",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-contrib/jquery"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-jsmath",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-jsmath"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-qthelp",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-qthelp"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-serializinghtml",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinxcontrib-serializinghtml"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "urllib3",
+                                    "repository": {
+                                        "nameWithOwner": "urllib3/urllib3"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "annotated-doc",
+                                    "repository": {
+                                        "nameWithOwner": "fastapi/annotated-doc"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cmake",
+                                    "repository": {
+                                        "nameWithOwner": "scikit-build/cmake-python-distributions"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "iniconfig",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/iniconfig"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jaraco-context",
+                                    "repository": {
+                                        "nameWithOwner": "jaraco/jaraco.context"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jaraco-functools",
+                                    "repository": {
+                                        "nameWithOwner": "jaraco/jaraco.functools"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "jaraco-text",
+                                    "repository": {
+                                        "nameWithOwner": "jaraco/jaraco.text"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "markdown-it-py",
+                                    "repository": {
+                                        "nameWithOwner": "executablebooks/markdown-it-py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mdurl",
+                                    "repository": {
+                                        "nameWithOwner": "executablebooks/mdurl"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "more-itertools",
+                                    "repository": {
+                                        "nameWithOwner": "more-itertools/more-itertools"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mpi4py",
+                                    "repository": {
+                                        "nameWithOwner": "mpi4py/mpi4py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numpy",
+                                    "repository": {
+                                        "nameWithOwner": "numpy/numpy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "packaging",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/packaging"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pandas",
+                                    "repository": {
+                                        "nameWithOwner": "pandas-dev/pandas"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pip",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/pip"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pluggy",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pluggy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygments",
+                                    "repository": {
+                                        "nameWithOwner": "pygments/pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "python-dateutil",
+                                    "repository": {
+                                        "nameWithOwner": "dateutil/dateutil"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "rich",
+                                    "repository": {
+                                        "nameWithOwner": "Textualize/rich"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "setuptools",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/setuptools"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "shellingham",
+                                    "repository": {
+                                        "nameWithOwner": "sarugaku/shellingham"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "six",
+                                    "repository": {
+                                        "nameWithOwner": "benjaminp/six"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "typer",
+                                    "repository": {
+                                        "nameWithOwner": "fastapi/typer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "typer-slim",
+                                    "repository": {
+                                        "nameWithOwner": "fastapi/typer"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "wheel",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/wheel"
                                     }
                                 }
                             ]
@@ -5604,26 +6333,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "nanobind",
-                                    "repository": {
-                                        "nameWithOwner": "wjakob/nanobind"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "numpy",
-                                    "repository": {
-                                        "nameWithOwner": "numpy/numpy"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "alabaster",
                                     "repository": {
                                         "nameWithOwner": "sphinx-doc/alabaster"
@@ -5836,6 +6545,26 @@
                                     "packageName": "pyyaml",
                                     "repository": {
                                         "nameWithOwner": "yaml/pyyaml"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "nanobind",
+                                    "repository": {
+                                        "nameWithOwner": "wjakob/nanobind"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numpy",
+                                    "repository": {
+                                        "nameWithOwner": "numpy/numpy"
                                     }
                                 }
                             ]
@@ -12531,89 +13260,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "docutils",
-                                    "repository": {
-                                        "nameWithOwner": "jwilk-mirrors/docutils"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "furo",
-                                    "repository": {
-                                        "nameWithOwner": "pradyunsg/furo"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "idna",
-                                    "repository": {
-                                        "nameWithOwner": "kjd/idna"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pygments",
-                                    "repository": {
-                                        "nameWithOwner": "pygments/pygments"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pytest",
-                                    "repository": {
-                                        "nameWithOwner": "pytest-dev/pytest"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinx"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-copybutton",
-                                    "repository": {
-                                        "nameWithOwner": "executablebooks/sphinx-copybutton"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-last-updated-by-git",
-                                    "repository": {
-                                        "nameWithOwner": "mgeier/sphinx-last-updated-by-git"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-sitemap",
-                                    "repository": {
-                                        "nameWithOwner": "jdillard/sphinx-sitemap"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-programoutput",
-                                    "repository": {
-                                        "nameWithOwner": "OpenNTI/sphinxcontrib-programoutput"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinxcontrib-svg2pdfconverter",
-                                    "repository": {
-                                        "nameWithOwner": "missinglinkelectronics/sphinxcontrib-svg2pdfconverter"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "coverage",
                                     "repository": {
                                         "nameWithOwner": "coveragepy/coveragepy"
@@ -12765,6 +13411,89 @@
                                     "packageName": "vermin",
                                     "repository": {
                                         "nameWithOwner": "netromdk/vermin"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "docutils",
+                                    "repository": {
+                                        "nameWithOwner": "jwilk-mirrors/docutils"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "furo",
+                                    "repository": {
+                                        "nameWithOwner": "pradyunsg/furo"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "idna",
+                                    "repository": {
+                                        "nameWithOwner": "kjd/idna"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pygments",
+                                    "repository": {
+                                        "nameWithOwner": "pygments/pygments"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinx"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx-copybutton",
+                                    "repository": {
+                                        "nameWithOwner": "executablebooks/sphinx-copybutton"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx-last-updated-by-git",
+                                    "repository": {
+                                        "nameWithOwner": "mgeier/sphinx-last-updated-by-git"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx-sitemap",
+                                    "repository": {
+                                        "nameWithOwner": "jdillard/sphinx-sitemap"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-programoutput",
+                                    "repository": {
+                                        "nameWithOwner": "OpenNTI/sphinxcontrib-programoutput"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinxcontrib-svg2pdfconverter",
+                                    "repository": {
+                                        "nameWithOwner": "missinglinkelectronics/sphinxcontrib-svg2pdfconverter"
                                     }
                                 }
                             ]

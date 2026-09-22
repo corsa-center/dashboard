@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 20</p>\n<p><strong>Dependent Packages:</strong> 130</p>\n<p><strong>GitHub Stars:</strong> 623</p>\n<p><strong>GitHub Forks:</strong> 130</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 2 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 56.4/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 130</p>\n<p><strong>GitHub Stars:</strong> 623</p>\n<p><strong>GitHub Forks:</strong> 130</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 2 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/ginkgo-project/ginkgo/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 53.58/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issues Inclusivity: 0/100</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issue Age: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 70/100</p>\n<p class=\"sub-detail\">Project Popularity: 76/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 10 days ago \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/ginkgo-project/ginkgo/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 53.58/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issues Inclusivity: 0/100</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issue Age: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 70/100</p>\n<p class=\"sub-detail\">Project Popularity: 76/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 11 days ago \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 553 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.11.0 (279 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 6 of 15 previously active contributors stopped (40%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 555 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.11.0 (280 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 6 of 15 previously active contributors stopped (40%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -55,13 +55,13 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">553 commits and 1 release(s) in the last year; active in 46/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">29 contributors; top contributor 27.1% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2017-07-13 (9.2 yrs); GitHub repo created 2018-01-11 (8.7 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">555 commits and 1 release(s) in the last year; active in 46/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">29 contributors; top contributor 27.1% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2017-07-13 (9.2 yrs); GitHub repo created 2018-01-11 (8.7 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> SonarQube/SonarCloud \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> Not yet collected</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/ginkgo-project/ginkgo\">88.5%</a> (Codecov) \u2713</p>\n<p class=\"sub-detail\">67,266/76,028 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> Project does not record defect reports by type or label \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> SonarQube/SonarCloud \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> No CodeQL workflow found \u2717</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/ginkgo-project/ginkgo\">88.5%</a> (Codecov) \u2713</p>\n<p class=\"sub-detail\">67,266/76,028 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> Project does not record defect reports by type or label \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-20T23:03:48Z"
+  "generated_at": "2026-09-22T05:43:19Z"
 }

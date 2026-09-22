@@ -1476,6 +1476,22 @@
                 "login": "codespell-project"
             }
         },
+        "codespell-project/codespell": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "codespell",
+            "nameWithOwner": "codespell-project/codespell",
+            "owner": {
+                "isVerified": false,
+                "login": "codespell-project"
+            }
+        },
         "conda-incubator/setup-miniconda": {
             "languages": {
                 "nodes": [
@@ -2105,6 +2121,38 @@
                 "login": "facelessuser"
             }
         },
+        "fastapi/annotated-doc": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "annotated-doc",
+            "nameWithOwner": "fastapi/annotated-doc",
+            "owner": {
+                "isVerified": false,
+                "login": "fastapi"
+            }
+        },
+        "fastapi/typer": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "typer",
+            "nameWithOwner": "fastapi/typer",
+            "owner": {
+                "isVerified": false,
+                "login": "fastapi"
+            }
+        },
         "ferrilab/bitvec": {
             "languages": {
                 "nodes": [
@@ -2521,6 +2569,51 @@
             "nameWithOwner": "jakevdp/ipywidgets-static",
             "owner": {
                 "login": "jakevdp"
+            }
+        },
+        "jaraco/jaraco.context": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "jaraco.context",
+            "nameWithOwner": "jaraco/jaraco.context",
+            "owner": {
+                "login": "jaraco"
+            }
+        },
+        "jaraco/jaraco.functools": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "jaraco.functools",
+            "nameWithOwner": "jaraco/jaraco.functools",
+            "owner": {
+                "login": "jaraco"
+            }
+        },
+        "jaraco/jaraco.text": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "jaraco.text",
+            "nameWithOwner": "jaraco/jaraco.text",
+            "owner": {
+                "login": "jaraco"
             }
         },
         "jared-hughes/isosurfaces": {
@@ -3231,6 +3324,22 @@
             "nameWithOwner": "mknejp/delete-release-assets",
             "owner": {
                 "login": "mknejp"
+            }
+        },
+        "more-itertools/more-itertools": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "more-itertools",
+            "nameWithOwner": "more-itertools/more-itertools",
+            "owner": {
+                "isVerified": false,
+                "login": "more-itertools"
             }
         },
         "mpi4py/mpi4py": {
@@ -4193,6 +4302,38 @@
                 "login": "pypa"
             }
         },
+        "pytest-dev/iniconfig": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "iniconfig",
+            "nameWithOwner": "pytest-dev/iniconfig",
+            "owner": {
+                "isVerified": false,
+                "login": "pytest-dev"
+            }
+        },
+        "pytest-dev/pluggy": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pluggy",
+            "nameWithOwner": "pytest-dev/pluggy",
+            "owner": {
+                "isVerified": false,
+                "login": "pytest-dev"
+            }
+        },
         "pytest-dev/pytest": {
             "languages": {
                 "nodes": [
@@ -4859,6 +5000,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "rust-ndarray"
+            }
+        },
+        "sarugaku/shellingham": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "shellingham",
+            "nameWithOwner": "sarugaku/shellingham",
+            "owner": {
+                "isVerified": false,
+                "login": "sarugaku"
             }
         },
         "saschpe/pyenchant": {

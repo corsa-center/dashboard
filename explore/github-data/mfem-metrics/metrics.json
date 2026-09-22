@@ -1,6 +1,6 @@
 {
   "package": "mfem/mfem",
-  "stars": 2242,
+  "stars": 2243,
   "forks": 652,
   "config_exclusions": {
     "ecosystem": [],
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 652</p>\n<p><strong>GitHub Stars:</strong> 2,242</p>\n<p><strong>GitHub Forks:</strong> 652</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 10 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 652</p>\n<p><strong>GitHub Stars:</strong> 2,243</p>\n<p><strong>GitHub Forks:</strong> 652</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 10 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/mfem/mfem/blob/master/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/mfem/mfem/blob/master/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 3/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Decision process, Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/mfem/mfem\">6/10</a> (7/12 checks passed) \u2717</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#token-permissions\">Token-Permissions</a>: 0/10 \u2014 detected GitHub workflow tokens with excessive permissions</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 71.88/100 (good) \u2713</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 50/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 20 days ago \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/mfem/mfem/blob/master/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/mfem/mfem/blob/master/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 3/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Decision process, Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/mfem/mfem\">6/10</a> (7/12 checks passed) \u2717</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#token-permissions\">Token-Permissions</a>: 0/10 \u2014 detected GitHub workflow tokens with excessive permissions</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 71.88/100 (good) \u2713</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 50/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 21 days ago \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -65,7 +65,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 3/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 96.0% of 25 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 2/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 96.0% of 25 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 2/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 6/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-21T02:13:13Z"
+  "generated_at": "2026-09-21T22:19:40Z"
 }

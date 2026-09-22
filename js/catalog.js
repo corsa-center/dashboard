@@ -481,8 +481,21 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       ${hasClangTidyMetrics ? '<span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>' : ''}
     </div>`;
 
+  const disclaimerHTML = `
+    <div class="metrics-disclaimer" role="note">
+      <span class="fa fa-exclamation-triangle" aria-hidden="true"></span>
+      <span>
+        The following metric results are preliminary and currently undergoing quality assurance.
+        They should not be considered a final assessment of project compliance. For comprehensive
+        details on the methodology under review, refer to the
+        <a href="https://zenodo.org/records/17704989" target="_blank" rel="noopener">CASS Sustainability Metrics Report v3
+          <span class="fa fa-external-link" aria-hidden="true"></span></a>.
+      </span>
+    </div>`;
+
   let html = `<div class="pw-metrics-container">
     <div class="metrics-header">
+      ${disclaimerHTML}
       <h2 class="metrics-main-title">Metrics</h2>
       ${lastUpdatedHTML}
       ${legendHTML}

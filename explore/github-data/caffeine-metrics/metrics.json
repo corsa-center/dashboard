@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 18</p>\n<p><strong>GitHub Stars:</strong> 61</p>\n<p><strong>GitHub Forks:</strong> 18</p>\n<p><strong>Citation Score:</strong> 19.1/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 2,710</p>\n<p><strong>Dependent Packages:</strong> 18</p>\n<p><strong>GitHub Stars:</strong> 61</p>\n<p><strong>GitHub Forks:</strong> 18</p>\n<p><strong>Citation Score:</strong> 59.1/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 454 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 5 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 0.8.0 (88 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 7 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 4 previously active contributors stopped (25%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 454 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 5 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 0.8.0 (89 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 7 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 4 previously active contributors stopped (25%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -61,7 +61,7 @@
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> No CodeQL workflow found \u2717</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> Project does not record defect reports by type or label \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> No CodeQL workflow found \u2717</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> 2 defect reports in the last year vs 4 the year before (improving, by label) \u2713</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-22T01:31:08Z"
+  "generated_at": "2026-09-22T21:38:11Z"
 }

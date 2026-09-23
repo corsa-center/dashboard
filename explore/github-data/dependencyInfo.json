@@ -631,6 +631,21 @@
                 "login": "Textualize"
             }
         },
+        "TheMrMilchmann/setup-msvc-dev": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "setup-msvc-dev",
+            "nameWithOwner": "TheMrMilchmann/setup-msvc-dev",
+            "owner": {
+                "login": "TheMrMilchmann"
+            }
+        },
         "VACUMM/sphinx-fortran": {
             "languages": {
                 "nodes": [
@@ -1209,6 +1224,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "bandframework"
+            }
+        },
+        "beartype/plum": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "plum",
+            "nameWithOwner": "beartype/plum",
+            "owner": {
+                "isVerified": false,
+                "login": "beartype"
             }
         },
         "benjaminp/six": {
@@ -3326,6 +3357,22 @@
                 "login": "mknejp"
             }
         },
+        "mlflow/mlflow": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "mlflow",
+            "nameWithOwner": "mlflow/mlflow",
+            "owner": {
+                "isVerified": false,
+                "login": "mlflow"
+            }
+        },
         "more-itertools/more-itertools": {
             "languages": {
                 "nodes": [
@@ -3480,6 +3527,22 @@
             "nameWithOwner": "netromdk/vermin",
             "owner": {
                 "login": "netromdk"
+            }
+        },
+        "networkx/networkx": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "networkx",
+            "nameWithOwner": "networkx/networkx",
+            "owner": {
+                "isVerified": false,
+                "login": "networkx"
             }
         },
         "ngentile92/indices": {
@@ -4124,6 +4187,22 @@
             "owner": {
                 "isVerified": false,
                 "login": "pydata"
+            }
+        },
+        "pydot/pydot": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pydot",
+            "nameWithOwner": "pydot/pydot",
+            "owner": {
+                "isVerified": false,
+                "login": "pydot"
             }
         },
         "pygments/pygments": {
@@ -4794,6 +4873,21 @@
             "owner": {
                 "isVerified": false,
                 "login": "rkyv"
+            }
+        },
+        "rlalik/setup-cpp-compiler": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#89e051",
+                        "name": "Shell"
+                    }
+                ]
+            },
+            "name": "setup-cpp-compiler",
+            "nameWithOwner": "rlalik/setup-cpp-compiler",
+            "owner": {
+                "login": "rlalik"
             }
         },
         "robinraju/release-downloader": {

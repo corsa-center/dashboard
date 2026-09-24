@@ -1,7 +1,7 @@
 {
   "package": "open-mpi/ompi",
-  "stars": 2644,
-  "forks": 998,
+  "stars": 2646,
+  "forks": 1001,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 998</p>\n<p><strong>GitHub Stars:</strong> 2,644</p>\n<p><strong>GitHub Forks:</strong> 998</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 59 dependent packages, 80 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,248,010</p>\n<p class=\"sub-detail\">conda 28,060 (total), pypi 30,233 (last-month), conda 552,826 (total), conda 636,422 (total), conda 469 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 1,001</p>\n<p><strong>GitHub Stars:</strong> 2,646</p>\n<p><strong>GitHub Forks:</strong> 1,001</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 59 dependent packages, 80 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,242,928</p>\n<p class=\"sub-detail\">conda 28,060 (total), pypi 25,151 (last-month), conda 636,422 (total), conda 552,826 (total), conda 469 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/open-mpi/ompi/blob/main/.github/CODE_OF_CONDUCT.md\">.github/CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/open-mpi/ompi/blob/main/.github/CONTRIBUTING.md\">.github/CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 2/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/open-mpi/ompi\">7/10</a> (7/11 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 70.46/100 (good) \u2713</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 86/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 1513 days ago \u2717</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/open-mpi/ompi/blob/main/.github/CODE_OF_CONDUCT.md\">.github/CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/open-mpi/ompi/blob/main/docs/contributing.rst\">docs/contributing.rst</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 2/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/open-mpi/ompi\">7/10</a> (7/11 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 59.44/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 29/100</p>\n<p class=\"sub-detail\">Documentation Usability: 72/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 94/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 65 days ago \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,15 +27,15 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 870 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 305 (bus factor: 5)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 22 of 49 previously active contributors stopped (45%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 936 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 306 (bus factor: 5)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 23 of 49 previously active contributors stopped (47%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 4 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 125 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 2.33 \u2717</p>\n<p><strong>Engagement Quality Metrics:</strong> 2 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 70% of issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 80% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 46 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 0 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 105024 hours \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 97% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.15 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 93% of issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 81% of 59 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 45 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
-      "data": "<p><strong>New Contributor Tracking:</strong> 30 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> 40.0% of new contributors returned \u2717</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 108 one-time / 84 casual / 113 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> 9 open, 21 closed \u2713</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 2/4 resources \u2717</p>\n<p class=\"sub-detail\">Contributing guide, Issue templates</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>New Contributor Tracking:</strong> 32 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> 40.6% of new contributors returned \u2717</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 108 one-time / 84 casual / 114 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> 9 open, 21 closed \u2713</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 3/4 resources \u2713</p>\n<p class=\"sub-detail\">Contributing guide, Issue templates, Getting-started guide</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.2.6": {
       "title": "Welcomeness",
@@ -43,7 +43,7 @@
     },
     "4.2.7": {
       "title": "Collaboration",
-      "data": "<p><strong>Advanced Dependency Analysis:</strong> 3 ecosystems: conda, go, pypi \u2713</p>\n<p><strong>Cross-project Reference Detection:</strong> Not yet collected</p>\n<p><strong>Interoperability Assessment:</strong> Not yet collected</p>\n<p><strong>Collaboration Network Analysis:</strong> 59 dependent packages, 80 dependent repositories \u2713</p>\n<p><strong>Standards Compliance Tracking:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Advanced Dependency Analysis:</strong> 2 ecosystems: conda, pypi \u2713</p>\n<p><strong>Cross-project Reference Detection:</strong> Not yet collected</p>\n<p><strong>Interoperability Assessment:</strong> Not yet collected</p>\n<p><strong>Collaboration Network Analysis:</strong> 59 dependent packages, 80 dependent repositories \u2713</p>\n<p><strong>Standards Compliance Tracking:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.8": {
       "title": "Financial Sustainability",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">870 commits and 0 release(s) in the last year; active in 52/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">305 contributors; top contributor 20.4% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2003-11-22 (22.8 yrs); GitHub repo created 2014-09-16 (12.0 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">936 commits and 0 release(s) in the last year; active in 52/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">306 contributors; top contributor 20.5% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2003-11-22 (22.8 yrs); GitHub repo created 2014-09-16 (12.0 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -65,7 +65,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 4/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 100.0% of 46 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Code formatter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 2/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 4/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 100.0% of 47 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Code formatter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 2/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -73,15 +73,15 @@
     },
     "4.3.4": {
       "title": "Usability",
-      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 1/4 core sections; docs/ present; documentation site published \u2713</p>\n<p class=\"sub-detail\">Installation</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 3 package managers: conda, go, pypi \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 1/4 core sections; docs/ present; documentation site published \u2713</p>\n<p class=\"sub-detail\">Installation</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 2 package managers: conda, pypi \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.5": {
       "title": "Accessibility",
-      "data": "<p><strong>Portable Build System Detection:</strong> \u2713</p><p class=\"sub-detail\">Autoconf</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> x86-64 plus RISC-V \u2713</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> 2 environments: Linux, macOS \u2713</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Portable Build System Detection:</strong> \u2713</p><p class=\"sub-detail\">Autoconf, Makefile</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> x86-64 plus RISC-V \u2713</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> 2 environments: Linux, macOS \u2713</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 2,769 source files, mean 7.6 KB, 0.3% over 100 KB, depth 6 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 262 test files for 2,769 source files (0.09 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 1,001 documentation files (0.36 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 20.4% of commits (305 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 21 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Rework opal_os_dirpath_destroy() with descriptor-relative traversal; Rework opal_os_dirpath_create() to avoid stat/chmod TOCTOU races; Merge pull request #14427 from bwbarrett/cleanup/codeql-mpi4py-injection</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 2,769 source files, mean 7.6 KB, 0.3% over 100 KB, depth 6 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 262 test files for 2,769 source files (0.09 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 1,001 documentation files (0.36 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 20.5% of commits (306 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 18 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">dpm: one cleanup path, and no lists of one-proc objects; Rework opal_os_dirpath_destroy() with descriptor-relative traversal; Rework opal_os_dirpath_create() to avoid stat/chmod TOCTOU races</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -89,8 +89,8 @@
     },
     "4.3.8": {
       "title": "Software Supply Chain Integrity",
-      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 7/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
+      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 7/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-17T09:42:35Z"
+  "generated_at": "2026-09-24T21:10:11Z"
 }

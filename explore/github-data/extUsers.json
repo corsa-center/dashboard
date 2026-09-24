@@ -23249,6 +23249,16 @@
             "login": "ahsansaghir",
             "name": null
         },
+        "ahueck": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/11541540?u=377686dd3c1f8f870d5d9312cd7825ed1c73e2ba&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "ahueck",
+            "name": "Alexander H\u00fcck"
+        },
         "ahunt": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1546915?u=462a70d5c6a7ba5a156871ee60398075e0159a5f&v=4",
             "contributedLabRepositories": {
@@ -56875,7 +56885,8 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/2894451?v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "spack/spack"
+                    "spack/spack",
+                    "xiaoyeli/superlu_dist"
                 ]
             },
             "login": "jhale",
@@ -83619,6 +83630,16 @@
             },
             "login": "rakuco",
             "name": "Raphael Kubo da Costa"
+        },
+        "rakumarp": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/260868190?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "open-mpi/ompi"
+                ]
+            },
+            "login": "rakumarp",
+            "name": "Rajeev kumar"
         },
         "ralfgunter": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/133558?u=3efbc637c29ffe4ad20c6a13075920512fdb394e&v=4",

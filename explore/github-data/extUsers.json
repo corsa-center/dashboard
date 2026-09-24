@@ -11133,6 +11133,7 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/25577083?v=4",
             "contributedLabRepositories": {
                 "nodes": [
+                    "open-mpi/ompi",
                     "pmodels/mpich",
                     "spack/spack"
                 ]
@@ -12144,6 +12145,16 @@
             "login": "ManuelvOK",
             "name": null
         },
+        "MaooJian": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/218750216?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "MaooJian",
+            "name": "MaoJian"
+        },
         "MarDiehl": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/6196733?u=f7bec2f876391dec40c68fdcbdb41faf37bacb9d&v=4",
             "contributedLabRepositories": {
@@ -12568,6 +12579,16 @@
             },
             "login": "Max191",
             "name": null
+        },
+        "MaxBrandtner-IBM": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/332817956?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "MaxBrandtner-IBM",
+            "name": "Max Brandtner"
         },
         "MaxDesiatov": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/112310?u=3c86a5baad3413ec9df4c30c094d1fe89ca411b6&v=4",
@@ -16266,6 +16287,16 @@
             },
             "login": "Ruturaj4",
             "name": "Ruturaj Kiran Vaidya"
+        },
+        "RyanJK5": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/42697391?u=c155e7461625a3ce82a289304af26c176f0466f5&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "SCOREC/pumi-pic"
+                ]
+            },
+            "login": "RyanJK5",
+            "name": "Ryan Keane"
         },
         "RyanRio": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/25875031?v=4",
@@ -35656,6 +35687,7 @@
                     "Viskores/viskores",
                     "anigmetov/oineus",
                     "dyninst/dyninst",
+                    "icl-utk-edu/papi",
                     "kokkos/kokkos",
                     "kokkos/kokkos-kernels",
                     "llvm/llvm-project",
@@ -35663,6 +35695,7 @@
                     "open-mpi/ompi",
                     "ornladios/ADIOS2",
                     "petsc/petsc",
+                    "pghysels/STRUMPACK",
                     "sandialabs/Albany",
                     "spack/spack",
                     "trilinos/Trilinos",
@@ -37931,6 +37964,16 @@
             },
             "login": "daniel-man",
             "name": "Daniel Man"
+        },
+        "daniel-petrovic": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/1634408?u=2aa82f5295ff980fc4bab95dd39d373ef2baf585&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "daniel-petrovic",
+            "name": "Daniel Petrovic"
         },
         "daniel-zabawa": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/114955280?v=4",
@@ -52470,6 +52513,16 @@
             "login": "huntergr-arm",
             "name": "Graham Hunter"
         },
+        "huojiangming": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/132136056?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "pghysels/STRUMPACK"
+                ]
+            },
+            "login": "huojiangming",
+            "name": null
+        },
         "huseyin-donmez": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/47868641?u=dc4acd460270196292debefa85cd0d3e910d215c&v=4",
             "contributedLabRepositories": {
@@ -55186,6 +55239,16 @@
             },
             "login": "jandupej",
             "name": "Jan Dupej"
+        },
+        "jane-street": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/181335520?u=4c66a7ee9473efc669525a6f0fcee3a04aa5d8f3&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "jane-street",
+            "name": "Aditya Mishra"
         },
         "janearthur": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/29445454?v=4",
@@ -60510,6 +60573,16 @@
             },
             "login": "jz10",
             "name": "Jisheng Zhao"
+        },
+        "jzakharovnv": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/282980813?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "jzakharovnv",
+            "name": "Jonathan Zakharov"
         },
         "jzbrooks": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/5142575?u=6f5b764aa04af64f0a05f6a1e339466cfee81356&v=4",
@@ -77289,6 +77362,16 @@
             "login": "nsurbay",
             "name": null
         },
+        "ntsemah": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/229602724?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "open-mpi/ompi"
+                ]
+            },
+            "login": "ntsemah",
+            "name": "Noam Tsemah"
+        },
         "nujaa": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/32955781?v=4",
             "contributedLabRepositories": {
@@ -80343,9 +80426,7 @@
         "pguthrey": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/42252188?u=c25f4bc0f44b98daea15443ccb80eb5e3ed99fa0&v=4",
             "contributedLabRepositories": {
-                "nodes": [
-                    "mfem/mfem"
-                ]
+                "nodes": []
             },
             "login": "pguthrey",
             "name": "Pierson Guthrey"

@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 208 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 27 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 2026.02 (211 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 3 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 208 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 21 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 2026.02 (206 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 3 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">208 commits and 1 release(s) in the last year; active in 17/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">3 contributors; top contributor 96.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Growing \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2024-09-26 (2.0 yrs); GitHub repo created 2024-09-26 (2.0 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">208 commits and 1 release(s) in the last year; active in 22/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">3 contributors; top contributor 96.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Growing \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2024-09-26 (2.0 yrs); GitHub repo created 2024-09-26 (2.0 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -65,11 +65,11 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 4/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 0.0% of 8 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 1/2 met</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 0.0% of 8 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 1/2 met</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2717</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">2026.02, 2024.09</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2717</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2717</p>\n<p><strong>Version Control Best Practices:</strong> \u2717</p><p class=\"sub-detail\">2026.02, 2024.09</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
     }
   },
-  "generated_at": "2026-09-22T22:41:09Z"
+  "generated_at": "2026-09-17T08:40:16Z"
 }

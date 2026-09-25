@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 38</p>\n<p><strong>GitHub Stars:</strong> 5</p>\n<p><strong>GitHub Forks:</strong> 0</p>\n<p><strong>Citation Score:</strong> 31.8/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 5</p>\n<p><strong>GitHub Forks:</strong> 0</p>\n<p><strong>Citation Score:</strong> 0.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 35 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 103 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> version_1.0 (335 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 2 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 35 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 104 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> version_1.0 (336 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 2 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-24T22:13:40Z"
+  "generated_at": "2026-09-25T08:44:33Z"
 }

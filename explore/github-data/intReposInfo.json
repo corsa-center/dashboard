@@ -508,10 +508,10 @@
             },
             "homepageUrl": "",
             "issues_Closed": {
-                "totalCount": 615
+                "totalCount": 618
             },
             "issues_Open": {
-                "totalCount": 119
+                "totalCount": 117
             },
             "languages": {
                 "totalCount": 10
@@ -539,10 +539,10 @@
                 "totalCount": 122
             },
             "pullRequests_Merged": {
-                "totalCount": 819
+                "totalCount": 822
             },
             "pullRequests_Open": {
-                "totalCount": 11
+                "totalCount": 8
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -675,7 +675,7 @@
                 "totalCount": 992
             },
             "issues_Open": {
-                "totalCount": 317
+                "totalCount": 318
             },
             "languages": {
                 "totalCount": 15
@@ -767,7 +767,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 0
+                "totalCount": 345
             },
             "url": "https://github.com/HPCToolkit/hpctoolkit"
         },
@@ -2684,14 +2684,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 16346
+                "totalCount": 16350
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 69825
+                "totalCount": 69834
             },
             "issues_Open": {
-                "totalCount": 29513
+                "totalCount": 29518
             },
             "languages": {
                 "totalCount": 56
@@ -2716,13 +2716,13 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 12395
+                "totalCount": 12417
             },
             "pullRequests_Merged": {
-                "totalCount": 102851
+                "totalCount": 102916
             },
             "pullRequests_Open": {
-                "totalCount": 10031
+                "totalCount": 10007
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -2794,7 +2794,7 @@
             },
             "description": "Open MPI main development repository",
             "forks": {
-                "totalCount": 938
+                "totalCount": 939
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
@@ -2987,7 +2987,7 @@
             },
             "description": "PETSc, pronounced PET-see (the S is silent), is a suite of data structures and routines for the scalable (parallel) solution of scientific applications modeled by partial differential equations.",
             "forks": {
-                "totalCount": 315
+                "totalCount": 316
             },
             "homepageUrl": "https://gitlab.com/petsc/petsc",
             "languages": {

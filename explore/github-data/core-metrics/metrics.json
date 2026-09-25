@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 69</p>\n<p><strong>GitHub Stars:</strong> 203</p>\n<p><strong>GitHub Forks:</strong> 69</p>\n<p><strong>Citation Score:</strong> 27.6/100</p>"
+      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>Dependent Packages:</strong> 69</p>\n<p><strong>GitHub Stars:</strong> 203</p>\n<p><strong>GitHub Forks:</strong> 69</p>\n<p><strong>Citation Score:</strong> 47.6/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-24T20:06:26Z"
+  "generated_at": "2026-09-25T06:37:45Z"
 }

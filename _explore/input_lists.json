@@ -6,7 +6,6 @@
             "berkeleylab/gasnet",
             "berkeleylab/upcxx",
             "deephyper/deephyper",
-            "e4s-project/e4s",
             "ebugger/empirical-roofline-toolkit",
             "sandialabs/albany"
         ],
@@ -15,7 +14,6 @@
         "repoType": "github",
         "repos": [
             "alpine-dav/ascent",
-            "amrex-codes/amrex",
             "anigmetov/oineus",
             "anlsys/aml",
             "berkeleylab/caffeine",
@@ -30,7 +28,6 @@
             "deephyper/deephyper",
             "diatomic/diy",
             "dyninst/dyninst",
-            "e4s-project/e4s",
             "ebugger/empirical-roofline-toolkit",
             "exalearn/exarl",
             "ginkgo-project/ginkgo",
@@ -56,7 +53,6 @@
             "parallel-netcdf/pnetcdf",
             "paraview/paraview",
             "patrickfan/genai4uq",
-            "petsc/petsc",
             "pghysels/strumpack",
             "pmodels/mpich",
             "pnnl/neuromancer",
@@ -88,7 +84,6 @@
         "repos": [
             "hpctoolkit/hpctoolkit",
             "paraview/paraview",
-            "petsc/petsc"
         ]
     },
     "https://gitlab.kitware.com": {

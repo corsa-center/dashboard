@@ -240,9 +240,14 @@ function renderSingleRepo(queryParam) {
       const reposObj = infoJson.data;
       if (reposObj.hasOwnProperty(queryParam)) {
         const repo = reposObj[queryParam];
-        renderSingleRepoHTML(repo);
-        // Load and display ecosystem metrics
-        loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
+        const private_repo = 1
+        if (private_repo) {
+          renderWithPassword(repo, queryParam, !!repo.clangTidyMetrics)
+        } else {
+          renderSingleRepoHTML(repo);
+          // Load and display ecosystem metrics
+          loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
+        }
       } else {
         renderSingleRepoError(queryParam);
       }
@@ -1118,12 +1123,71 @@ function showSingleRepo() {
   ELEMENTS_ONLY_LIST.forEach((ele) => ele.classList.add(HIDDEN_CLASS));
 }
 
+function renderWithPassword(repo, repoName, hasClangTidyMetrics) {
+  ELEMENT_SINGLE_REPO_TARGET.innerHTML = `
+      <div id="authn_content" class="authn-content">
+      <div class="authn-page">
+        <div class="authn-form">
+          <div class="authn-instructions">
+            <p class="authn-title">Login Required</p>
+            <p>This page has not yet been made public. Please login to continue.</p>
+          </div>
+          <hr class="authn-hr" />
+
+          <form id="authn-form" action="#" method="post">
+            <input
+              id="authn-password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              autofocus
+            />
+
+            <label
+              id="authn-remember-label"
+              class="authn-remember"
+            >
+              <input id="authn-remember" type="checkbox" name="remember" />
+              Remember me
+            </label>
+
+            <input
+              type="submit"
+              class="authn-login-button"
+              value="Login"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+      `;
+    document
+        .getElementById("authn-form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const password = document.getElementById(
+              "authn-password"
+            ).value,
+            isRememberChecked = document.getElementById(
+              "authn-remember"
+            ).checked;
+
+          if (checkPassword(password)) {
+            renderSingleRepoHTML(repo);
+            loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
+          }
+          console.log("password:", password)
+          console.log("remember:", isRememberChecked)
+        });
+}
+
 /**
  *
  * User has selected a visible repository. If user selects empty repository, render category list instead.
  *
  * @param {string} newValue the next repo to change
- * @param {boolean} shouldPushState Set to true the first time the user navigates to the catalog, or navigates from history. 
+ * @param {boolean} shouldPushState Set to true the first time the user navigates to the catalog, or navigates from history.
  *   Leave as false or undefined if the user triggers a click event.
  *
  */

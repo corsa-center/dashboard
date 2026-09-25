@@ -1,60 +1,5 @@
 {
     "data": {
-        "AMReX-Codes/amrex": {
-            "createdAt": "2017-04-28T19:37:00Z",
-            "defaultBranchRef": {
-                "name": "development"
-            },
-            "description": "AMReX: Software Framework for Block Structured AMR",
-            "forks": {
-                "totalCount": 460
-            },
-            "homepageUrl": "https://amrex-codes.github.io/amrex",
-            "issues_Closed": {
-                "totalCount": 1008
-            },
-            "issues_Open": {
-                "totalCount": 103
-            },
-            "languages": {
-                "totalCount": 17
-            },
-            "licenseInfo": {
-                "name": "Other",
-                "nickname": null,
-                "spdxId": "NOASSERTION",
-                "url": "http://choosealicense.com/licenses/other/"
-            },
-            "mentionableUsers": {
-                "totalCount": 205
-            },
-            "name": "amrex",
-            "nameWithOwner": "AMReX-Codes/amrex",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/25084337?v=4",
-                "login": "AMReX-Codes"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "C++"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 306
-            },
-            "pullRequests_Merged": {
-                "totalCount": 4157
-            },
-            "pullRequests_Open": {
-                "totalCount": 40
-            },
-            "repositoryTopics": {
-                "totalCount": 6
-            },
-            "stargazers": {
-                "totalCount": 807
-            },
-            "url": "https://github.com/AMReX-Codes/amrex"
-        },
         "Alpine-DAV/ascent": {
             "cdash": "https://my.dash.org/index.php?project=AscentParaViewTests",
             "clangTidyMetrics": false,
@@ -601,63 +546,6 @@
                 "totalCount": 8
             },
             "url": "https://github.com/CODARcode/Chimbuko"
-        },
-        "E4S-Project/e4s": {
-            "cdash": "https://cdash.spack.io/index.php?project=E4S",
-            "clangTidyMetrics": false,
-            "createdAt": "2020-09-20T23:09:32Z",
-            "defaultBranchRef": {
-                "name": "master"
-            },
-            "description": "E4S",
-            "forks": {
-                "totalCount": 15
-            },
-            "homepageUrl": "https://e4s.io/",
-            "issues_Closed": {
-                "totalCount": 89
-            },
-            "issues_Open": {
-                "totalCount": 28
-            },
-            "languages": {
-                "totalCount": 5
-            },
-            "licenseInfo": {
-                "name": "MIT License",
-                "nickname": null,
-                "spdxId": "MIT",
-                "url": "http://choosealicense.com/licenses/mit/"
-            },
-            "mentionableUsers": {
-                "totalCount": 14
-            },
-            "name": "e4s",
-            "nameWithOwner": "E4S-Project/e4s",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/45146401?v=4",
-                "login": "E4S-Project"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "Shell"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 18
-            },
-            "pullRequests_Merged": {
-                "totalCount": 69
-            },
-            "pullRequests_Open": {
-                "totalCount": 1
-            },
-            "repositoryTopics": {
-                "totalCount": 0
-            },
-            "stargazers": {
-                "totalCount": 41
-            },
-            "url": "https://github.com/E4S-Project/e4s"
         },
         "HDFGroup/hdf5": {
             "cdash": "https://my.cdash.org/index.php?project=HDF5",
@@ -2123,61 +2011,6 @@
             },
             "url": "https://gitlab.com/hpctoolkit/hpctoolkit"
         },
-        "hypre-space/hypre": {
-            "createdAt": "2018-11-19T20:42:15Z",
-            "defaultBranchRef": {
-                "name": "master"
-            },
-            "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
-            "forks": {
-                "totalCount": 252
-            },
-            "homepageUrl": "https://www.llnl.gov/casc/hypre/",
-            "issues_Closed": {
-                "totalCount": 527
-            },
-            "issues_Open": {
-                "totalCount": 144
-            },
-            "languages": {
-                "totalCount": 15
-            },
-            "licenseInfo": {
-                "name": "Other",
-                "nickname": null,
-                "spdxId": "NOASSERTION",
-                "url": "http://choosealicense.com/licenses/other/"
-            },
-            "mentionableUsers": {
-                "totalCount": 65
-            },
-            "name": "hypre",
-            "nameWithOwner": "hypre-space/hypre",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/44828226?v=4",
-                "login": "hypre-space"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "C"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 63
-            },
-            "pullRequests_Merged": {
-                "totalCount": 847
-            },
-            "pullRequests_Open": {
-                "totalCount": 43
-            },
-            "repositoryTopics": {
-                "totalCount": 4
-            },
-            "stargazers": {
-                "totalCount": 860
-            },
-            "url": "https://github.com/hypre-space/hypre"
-        },
         "icl-utk-edu/magma": {
             "createdAt": "2023-04-05T15:59:59Z",
             "defaultBranchRef": {
@@ -2511,61 +2344,6 @@
                 "totalCount": 63
             },
             "url": "https://github.com/llnl/pylibROM"
-        },
-        "llnl/sundials": {
-            "createdAt": "2017-10-05T17:20:03Z",
-            "defaultBranchRef": {
-                "name": "main"
-            },
-            "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
-            "forks": {
-                "totalCount": 167
-            },
-            "homepageUrl": "https://computing.llnl.gov/projects/sundials",
-            "issues_Closed": {
-                "totalCount": 232
-            },
-            "issues_Open": {
-                "totalCount": 36
-            },
-            "languages": {
-                "totalCount": 12
-            },
-            "licenseInfo": {
-                "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-                "nickname": "Modified BSD License",
-                "spdxId": "BSD-3-Clause",
-                "url": "http://choosealicense.com/licenses/bsd-3-clause/"
-            },
-            "mentionableUsers": {
-                "totalCount": 39
-            },
-            "name": "sundials",
-            "nameWithOwner": "llnl/sundials",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/5921419?v=4",
-                "login": "llnl"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "C"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 120
-            },
-            "pullRequests_Merged": {
-                "totalCount": 616
-            },
-            "pullRequests_Open": {
-                "totalCount": 19
-            },
-            "repositoryTopics": {
-                "totalCount": 12
-            },
-            "stargazers": {
-                "totalCount": 690
-            },
-            "url": "https://github.com/llnl/sundials"
         },
         "llnl/zfp": {
             "createdAt": "2016-03-24T02:10:02Z",
@@ -3282,63 +3060,6 @@
                 "totalCount": 160
             },
             "url": "https://github.com/snl-dakota/dakota"
-        },
-        "spack/spack": {
-            "cdash": "https://cdash.spack.io/index.php?project=Spack",
-            "clangTidyMetrics": false,
-            "createdAt": "2014-01-08T09:22:12Z",
-            "defaultBranchRef": {
-                "name": "develop"
-            },
-            "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
-            "forks": {
-                "totalCount": 2339
-            },
-            "homepageUrl": "https://spack.io",
-            "issues_Closed": {
-                "totalCount": 7966
-            },
-            "issues_Open": {
-                "totalCount": 1334
-            },
-            "languages": {
-                "totalCount": 13
-            },
-            "licenseInfo": {
-                "name": "Apache License 2.0",
-                "nickname": null,
-                "spdxId": "Apache-2.0",
-                "url": "http://choosealicense.com/licenses/apache-2.0/"
-            },
-            "mentionableUsers": {
-                "totalCount": 1525
-            },
-            "name": "spack",
-            "nameWithOwner": "spack/spack",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/25539161?v=4",
-                "login": "spack"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "Python"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 5294
-            },
-            "pullRequests_Merged": {
-                "totalCount": 37542
-            },
-            "pullRequests_Open": {
-                "totalCount": 479
-            },
-            "repositoryTopics": {
-                "totalCount": 11
-            },
-            "stargazers": {
-                "totalCount": 5130
-            },
-            "url": "https://github.com/spack/spack"
         },
         "tpeterka/ChatVis": {
             "createdAt": "2025-09-15T19:25:58Z",

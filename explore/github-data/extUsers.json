@@ -79075,9 +79075,7 @@
         "patacca": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/5869031?v=4",
             "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
+                "nodes": []
             },
             "login": "patacca",
             "name": "Riccardo Mori"
@@ -107305,7 +107303,9 @@
         "ziliangzl": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/164990887?u=1115aaa43e83bbbe11acd6b7706ddd6eb0abd2f7&v=4",
             "contributedLabRepositories": {
-                "nodes": []
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
             },
             "login": "ziliangzl",
             "name": "Ziliang Zhang"

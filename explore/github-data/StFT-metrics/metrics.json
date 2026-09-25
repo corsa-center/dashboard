@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 5</p>\n<p><strong>GitHub Forks:</strong> 0</p>\n<p><strong>Citation Score:</strong> 0.0/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 38</p>\n<p><strong>GitHub Stars:</strong> 5</p>\n<p><strong>GitHub Forks:</strong> 0</p>\n<p><strong>Citation Score:</strong> 31.8/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-24T12:42:09Z"
+  "generated_at": "2026-09-24T22:13:40Z"
 }

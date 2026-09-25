@@ -1985,61 +1985,6 @@
             },
             "url": "https://github.com/exalearn/EXARL"
         },
-        "flang-compiler/flang": {
-            "createdAt": "2017-05-10T19:13:24Z",
-            "defaultBranchRef": {
-                "name": "master"
-            },
-            "description": "Flang is a Fortran language front-end designed for integration with LLVM.",
-            "forks": {
-                "totalCount": 145
-            },
-            "homepageUrl": "",
-            "issues_Closed": {
-                "totalCount": 296
-            },
-            "issues_Open": {
-                "totalCount": 265
-            },
-            "languages": {
-                "totalCount": 12
-            },
-            "licenseInfo": {
-                "name": "Other",
-                "nickname": null,
-                "spdxId": "NOASSERTION",
-                "url": "http://choosealicense.com/licenses/other/"
-            },
-            "mentionableUsers": {
-                "totalCount": 56
-            },
-            "name": "flang",
-            "nameWithOwner": "flang-compiler/flang",
-            "owner": {
-                "avatarUrl": "https://avatars.githubusercontent.com/u/27519978?v=4",
-                "login": "flang-compiler"
-            },
-            "parent": null,
-            "primaryLanguage": {
-                "name": "C"
-            },
-            "pullRequests_Closed": {
-                "totalCount": 191
-            },
-            "pullRequests_Merged": {
-                "totalCount": 700
-            },
-            "pullRequests_Open": {
-                "totalCount": 21
-            },
-            "repositoryTopics": {
-                "totalCount": 4
-            },
-            "stargazers": {
-                "totalCount": 865
-            },
-            "url": "https://github.com/flang-compiler/flang"
-        },
         "ginkgo-project/ginkgo": {
             "cdash": "https://my.cdash.org/index.php?project=Ginkgo%20Project",
             "clangTidyMetrics": false,

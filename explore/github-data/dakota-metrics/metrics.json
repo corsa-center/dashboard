@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 61.47/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 67/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 1413 days ago \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 61.47/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 67/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 1414 days ago \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 495 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_09_04 (20 days ago), 7/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 28 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 495 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_09_04 (21 days ago), 7/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 28 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-25T07:41:24Z"
+  "generated_at": "2026-09-25T17:10:02Z"
 }

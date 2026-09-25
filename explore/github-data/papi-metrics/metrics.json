@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 59</p>\n<p><strong>Dependent Packages:</strong> 91</p>\n<p><strong>GitHub Stars:</strong> 230</p>\n<p><strong>GitHub Forks:</strong> 91</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 19 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 64.9/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 91</p>\n<p><strong>GitHub Stars:</strong> 230</p>\n<p><strong>GitHub Forks:</strong> 91</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 19 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 29.4/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 292 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> papi-7-2-0-t (456 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 65 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Mailing list, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 14 of 16 previously active contributors stopped (88%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 292 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> papi-7-2-0-t (456 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 65 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues, Mailing list, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 14 of 16 previously active contributors stopped (88%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-25T08:44:33Z"
+  "generated_at": "2026-09-25T18:13:16Z"
 }

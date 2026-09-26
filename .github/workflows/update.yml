@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write  # needed to dispatch pages.yml after pushing new data
 
 jobs:
   update:
@@ -51,13 +52,21 @@ jobs:
           # to newest, so a package touched by more than one run in the
           # window ends up with its most recent data, and each package keeps
           # the generated_at of the specific run that actually produced it.
+          #
+          # Don't rely on the API returning newest runs first: on 2026-09-24
+          # `gh run list --status success --limit 48` returned the *oldest*
+          # 48 successful runs (June through 09-17), and applying them rolled
+          # every package back a week. Bound the query by creation date and
+          # pick the newest 48 ourselves.
+          SINCE=$(date -u -d '3 days ago' +%Y-%m-%d)
           RUN_IDS=$(gh run list \
             --repo corsa-center/metrics \
             --workflow collect-and-sync.yml \
             --status success \
-            --limit 48 \
+            --created ">=$SINCE" \
+            --limit 200 \
             --json databaseId,createdAt \
-            --jq 'sort_by(.createdAt) | .[].databaseId')
+            --jq 'sort_by(.createdAt) | .[-48:] | .[].databaseId')
 
           if [ -z "$RUN_IDS" ]; then
             echo "::warning::No successful metrics runs found in corsa-center/metrics — skipping"
@@ -90,6 +99,16 @@ jobs:
             shopt -s nullglob
             for pkg_dir in "$STAGING"/*-metrics/; do
               pkg_name=$(basename "$pkg_dir")
+              # Never replace published data with older data, whatever
+              # order the runs above came back in.
+              existing="explore/github-data/$pkg_name/metrics.json"
+              if [ -f "$existing" ]; then
+                existing_at=$(jq -r '.generated_at // empty' "$existing")
+                if [[ -n "$existing_at" && "$GENERATED_AT" < "$existing_at" ]]; then
+                  echo "  $pkg_name (skipped: published data from $existing_at is newer)"
+                  continue
+                fi
+              fi
               # Stamp with the source run's own creation time rather than
               # "now" -- that's when this specific package's data was
               # actually produced, which is what the dashboard's "last
@@ -132,3 +151,14 @@ jobs:
       - name: Push directly to deploy branch
         if: steps.check-changes.outputs.has-changes == 'true'
         run: git push origin "HEAD:$DEPLOY_BRANCH"
+
+      - name: Trigger Pages deployment
+        if: steps.check-changes.outputs.has-changes == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # A push made with the automatic GITHUB_TOKEN doesn't fire other
+          # workflows' `push` triggers (GitHub's anti-recursion guard), so
+          # pages.yml never redeploys from this commit on its own --
+          # dispatch it explicitly instead.
+          gh workflow run pages.yml --repo "${{ github.repository }}" --ref "$DEPLOY_BRANCH"

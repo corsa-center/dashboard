@@ -1,6 +1,6 @@
 {
   "package": "icl-utk-edu/magma",
-  "stars": 119,
+  "stars": 118,
   "forks": 48,
   "config_exclusions": {
     "ecosystem": [],
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 48</p>\n<p><strong>GitHub Stars:</strong> 119</p>\n<p><strong>GitHub Forks:</strong> 48</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 12 dependent packages, 13 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 12,415</p>\n<p class=\"sub-detail\">conda 12,415 (total)</p>\n<p><strong>Citation Score:</strong> 25.3/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 48</p>\n<p><strong>GitHub Stars:</strong> 118</p>\n<p><strong>GitHub Forks:</strong> 48</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 12 dependent packages, 13 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 12,415</p>\n<p class=\"sub-detail\">conda 12,415 (total)</p>\n<p><strong>Citation Score:</strong> 25.3/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 55.74/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 45/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 56.19/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 45/100</p>\n<p class=\"sub-detail\">Documentation Usability: 58/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,11 +27,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 120 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 9 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.10.0 (201 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 38 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Mailing list, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 7 of 9 previously active contributors stopped (78%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 117 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 15 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.10.0 (207 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 38 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Issues, Mailing list, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 7 of 9 previously active contributors stopped (78%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 23 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 65 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.67 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 57% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 70% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 60 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 23 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 65 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.67 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 57% of issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 71% of 59 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 60 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">120 commits and 1 release(s) in the last year; active in 22/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">38 contributors; top contributor 29.8% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-09-08 (17.0 yrs); GitHub repo created 2023-04-05 (3.5 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">117 commits and 1 release(s) in the last year; active in 23/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">38 contributors; top contributor 29.8% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-09-08 (17.0 yrs); GitHub repo created 2023-04-05 (3.5 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -89,8 +89,8 @@
     },
     "4.3.8": {
       "title": "Software Supply Chain Integrity",
-      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
+      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-19T21:46:59Z"
+  "generated_at": "2026-09-25T17:10:02Z"
 }

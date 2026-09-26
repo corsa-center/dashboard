@@ -6,9 +6,7 @@
             "berkeleylab/gasnet",
             "berkeleylab/upcxx",
             "deephyper/deephyper",
-            "e4s-project/e4s",
             "ebugger/empirical-roofline-toolkit",
-            "flang-compiler/flang",
             "sandialabs/albany"
         ],
         "memberOrgs": [],
@@ -16,7 +14,6 @@
         "repoType": "github",
         "repos": [
             "alpine-dav/ascent",
-            "amrex-codes/amrex",
             "anigmetov/oineus",
             "anlsys/aml",
             "berkeleylab/caffeine",
@@ -31,15 +28,12 @@
             "deephyper/deephyper",
             "diatomic/diy",
             "dyninst/dyninst",
-            "e4s-project/e4s",
             "ebugger/empirical-roofline-toolkit",
             "exalearn/exarl",
-            "flang-compiler/flang",
             "ginkgo-project/ginkgo",
             "hdfgroup/hdf5",
             "hkvinge/tagtorch",
             "hpctoolkit/hpctoolkit",
-            "hypre-space/hypre",
             "icl-utk-edu/magma",
             "icl-utk-edu/papi",
             "kokkos/kokkos",
@@ -48,7 +42,6 @@
             "libensemble/libensemble",
             "llnl/librom",
             "llnl/pylibrom",
-            "llnl/sundials",
             "llnl/zfp",
             "llvm/llvm-project",
             "mfem/mfem",
@@ -60,7 +53,6 @@
             "parallel-netcdf/pnetcdf",
             "paraview/paraview",
             "patrickfan/genai4uq",
-            "petsc/petsc",
             "pghysels/strumpack",
             "pmodels/mpich",
             "pnnl/neuromancer",
@@ -72,7 +64,6 @@
             "scorec/pumi-pic",
             "shaw-git/caesar",
             "snl-dakota/dakota",
-            "spack/spack",
             "stanfordlegion/legion",
             "tpeterka/chatvis",
             "trilinos/trilinos",
@@ -93,7 +84,6 @@
         "repos": [
             "hpctoolkit/hpctoolkit",
             "paraview/paraview",
-            "petsc/petsc"
         ]
     },
     "https://gitlab.kitware.com": {

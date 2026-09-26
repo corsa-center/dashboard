@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 44.41/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 0/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 23/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 75/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 84/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 50.93/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 0/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 23/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 75/100</p>\n<p class=\"sub-detail\">Documentation Usability: 77/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 84/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 119 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 3 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0 (152 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 11 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 119 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 8 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0 (157 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 11 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -35,7 +35,7 @@
     },
     "4.2.5": {
       "title": "Outreach",
-      "data": "<p><strong>New Contributor Tracking:</strong> 0 in last 1 year \u2717</p>\n<p><strong>Contributor Retention Analysis:</strong> No new contributors to measure \u2717</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 3 one-time / 1 casual / 7 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> No newcomer-labelled issues \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 0/4 resources \u2717</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>New Contributor Tracking:</strong> 0 in last 1 year \u2717</p>\n<p><strong>Contributor Retention Analysis:</strong> No new contributors to measure \u2717</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 3 one-time / 1 casual / 7 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> No newcomer-labelled issues \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 1/4 resources \u2717</p>\n<p class=\"sub-detail\">Getting-started guide</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.2.6": {
       "title": "Welcomeness",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">119 commits and 4 release(s) in the last year; active in 28/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">11 contributors; top contributor 66.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-01-16 (7.7 yrs); GitHub repo created 2019-01-15 (7.7 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">119 commits and 4 release(s) in the last year; active in 27/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">11 contributors; top contributor 66.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-01-16 (7.7 yrs); GitHub repo created 2019-01-15 (7.7 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -89,8 +89,8 @@
     },
     "4.3.8": {
       "title": "Software Supply Chain Integrity",
-      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
+      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-20T06:13:08Z"
+  "generated_at": "2026-09-25T16:06:25Z"
 }

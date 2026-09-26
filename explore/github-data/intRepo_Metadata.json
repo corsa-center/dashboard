@@ -387,17 +387,6 @@
         "topics": null,
         "website": ""
     },
-    "flang-compiler/flang": {
-        "description": "Flang is a Fortran language front-end designed for integration with LLVM.",
-        "name": "flang-compiler/flang",
-        "topics": [
-            "fortran",
-            "compiler",
-            "llvm",
-            "fortran-compiler"
-        ],
-        "website": ""
-    },
     "ginkgo-project/ginkgo": {
         "description": "Numerical linear algebra software package",
         "name": "ginkgo-project/ginkgo",

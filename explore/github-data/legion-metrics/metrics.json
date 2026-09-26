@@ -1,6 +1,6 @@
 {
   "package": "StanfordLegion/legion",
-  "stars": 768,
+  "stars": 770,
   "forks": 153,
   "config_exclusions": {
     "ecosystem": [],
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Dependent Packages:</strong> 153</p>\n<p><strong>GitHub Stars:</strong> 768</p>\n<p><strong>GitHub Forks:</strong> 153</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 5,525</p>\n<p class=\"sub-detail\">cargo 5,525 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>Dependent Packages:</strong> 153</p>\n<p><strong>GitHub Stars:</strong> 770</p>\n<p><strong>GitHub Forks:</strong> 153</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 5,525</p>\n<p class=\"sub-detail\">cargo 5,525 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/StanfordLegion/legion\">3.7/10</a> (3/9 checks passed) \u2717</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#code-review\">Code-Review</a>: 0/10 \u2014 Found 0/30 approved changesets -- score normalized to 0</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#sast\">SAST</a>: 0/10 \u2014 no SAST tool detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 37.04/100 (poor) \u2717</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 2/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 27/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Project Popularity: 84/100</p>\n<p class=\"sub-detail\">Documentation Usability: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/StanfordLegion/legion\">3.5/10</a> (3/9 checks passed) \u2717</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#code-review\">Code-Review</a>: 0/10 \u2014 Found 0/30 approved changesets -- score normalized to 0</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#sast\">SAST</a>: 0/10 \u2014 no SAST tool detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/f92023a3f77879f96e0c9c1305f289d755be4bb6/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 45.84/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 2/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 27/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Documentation Usability: 81/100</p>\n<p class=\"sub-detail\">Project Popularity: 84/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 405 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 80 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> legion-26.06.0 (79 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 61 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 15 of 19 previously active contributors stopped (79%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 381 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 86 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> legion-26.06.0 (85 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 61 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 15 of 19 previously active contributors stopped (79%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">405 commits and 4 release(s) in the last year; active in 37/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">61 contributors; top contributor 48.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2012-11-17 (13.8 yrs); GitHub repo created 2012-11-17 (13.8 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">381 commits and 4 release(s) in the last year; active in 37/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">61 contributors; top contributor 48.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2012-11-17 (13.9 yrs); GitHub repo created 2012-11-17 (13.9 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -65,11 +65,11 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 3/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 0.0% of 1 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Pre-commit hooks</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 2/2 met</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 4/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 0.0% of 1 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Pre-commit hooks</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2717</p><p class=\"sub-detail\">legion-26.06.0, legion-26.03.0</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2717</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">legion-26.06.0, legion-26.03.0</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -89,8 +89,8 @@
     },
     "4.3.8": {
       "title": "Software Supply Chain Integrity",
-      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> Not yet collected</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 3.7/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 0/2</p>"
+      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 3.5/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-19T15:27:14Z"
+  "generated_at": "2026-09-25T11:54:16Z"
 }

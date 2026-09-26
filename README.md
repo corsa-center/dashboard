@@ -2,7 +2,7 @@
 
 Original Author: Ian Lee <lee1001@llnl.gov>
 
-Welcome to the CORSA Sustainability Dashboard! The purpose of this dashboard is to showcase the sustainability activities of open source scientific software under the stewardship of CASS.
+Welcome to the CORSA Sustainability Dashboard! The purpose of this dashboard is to showcase the sustainability activities of open source scientific software under the stewardship of CORSA.
 
 ## Prerequisites
 

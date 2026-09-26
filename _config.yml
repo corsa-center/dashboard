@@ -9,17 +9,17 @@ repo_branch: "dev"
 # tree path varies based on github/gitlab repo, gitlab should be "-/tree"
 repo_tree_path: "tree"
 repo_blob_path: "blob"
-lab_name: "CASS"
+lab_name: "CORSA"
 
 ### SEO ###
 
 title: Sustainability Dashboard
 tagline: A hub for showcasing the sustainability of scientific open-source software
 description: "Get the latest news and metadata about scientific software"
-url: "https://cass-community.github.io/dashboard/"
+url: "https://corsa-center.github.io/dashboard/"
 author: "CORSA Open Source Software <info@corsa.center>"
 twitter:
-  username: cass
+  username: corsa
 
 # google_site_verification: 477TVoInt3HiUgSl_hU4rb5_JrgNMKK5Rl-KPMUClpQ
 
@@ -61,7 +61,7 @@ defaults:
       path: ""
     values:
       image:
-        path: /assets/images/logo/cass-small-logo.png
+        path: /assets/images/logo/corsa-logo.png
 
 permalink: pretty
 

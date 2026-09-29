@@ -3103,6 +3103,22 @@
                 "login": "madsmtm"
             }
         },
+        "mamba-org/setup-micromamba": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "setup-micromamba",
+            "nameWithOwner": "mamba-org/setup-micromamba",
+            "owner": {
+                "isVerified": false,
+                "login": "mamba-org"
+            }
+        },
         "manicmaniac/inline": {
             "languages": {
                 "nodes": [
@@ -5532,6 +5548,17 @@
             "owner": {
                 "isVerified": false,
                 "login": "softwareforgood"
+            }
+        },
+        "spack/setup-spack": {
+            "languages": {
+                "nodes": []
+            },
+            "name": "setup-spack",
+            "nameWithOwner": "spack/setup-spack",
+            "owner": {
+                "isVerified": true,
+                "login": "spack"
             }
         },
         "sphinx-contrib/googleanalytics": {

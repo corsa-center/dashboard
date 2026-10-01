@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 45.7/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 52/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 64/100</p>\n<p class=\"sub-detail\">Documentation Usability: 73/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 80/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> No governance ownership or upkeep found \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 45.7/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 52/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 64/100</p>\n<p class=\"sub-detail\">Documentation Usability: 73/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 80/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,11 +27,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 37 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 28 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 41 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 5 previously active contributors stopped (20%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 37 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 41 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 5 previously active contributors stopped (20%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 266 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 1.91 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 73% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 33% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 15 hours</p>\n<p><strong>Score:</strong> 7/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 5 issues opened 30-365 days ago (3 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 5 opened, 3 closed 30-365 days ago (1.67 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 73% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 33% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 18 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -43,7 +43,7 @@
     },
     "4.2.7": {
       "title": "Collaboration",
-      "data": "<p><strong>Advanced Dependency Analysis:</strong> Not packaged in any indexed ecosystem \u2717</p>\n<p><strong>Cross-project Reference Detection:</strong> Not yet collected</p>\n<p><strong>Interoperability Assessment:</strong> Not yet collected</p>\n<p><strong>Collaboration Network Analysis:</strong> No downstream dependents found \u2717</p>\n<p><strong>Standards Compliance Tracking:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/2</p>"
+      "data": "<p><strong>Advanced Dependency Analysis:</strong> Not packaged in any indexed ecosystem \u2717</p>\n<p><strong>Cross-project Reference Detection:</strong> Not yet collected</p>\n<p><strong>Interoperability Assessment:</strong> Not yet collected</p>\n<p><strong>Collaboration Network Analysis:</strong> No downstream dependents found in registries; source-level dependents not audited</p>\n<p><strong>Standards Compliance Tracking:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/1</p>"
     },
     "4.2.8": {
       "title": "Financial Sustainability",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">37 commits and 0 release(s) in the last year; active in 13/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">41 contributors; top contributor 30.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2014-05-15 (12.4 yrs); GitHub repo created 2014-06-09 (12.3 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">37 commits and 0 release(s) in the last year; active in 15/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">41 contributors; top contributor 30.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2014-05-15 (12.4 yrs); GitHub repo created 2014-06-09 (12.3 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -65,7 +65,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 87.5% of 40 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 1/4 indicators \u2717</p>\n<p class=\"sub-detail\">Test suite directory</p>\n<p><strong>Code Review Quality Analysis:</strong> 87.5% of 40 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -81,7 +81,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 526 source files, mean 5.4 KB, 0.0% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 161 test files for 526 source files (0.31 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 29 documentation files (0.06 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 30.6% of commits (41 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 15 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">restore old header, mark deprecated; Fix cleanup-caches workflow for PRs from forks (#507); test: cleanup capCheckParam and capGeomTest</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 526 source files, mean 5.4 KB, 0.0% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 161 test files for 526 source files (0.31 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 29 documentation files (0.06 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 30.6% of commits (41 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 15 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">restore old header, mark deprecated; Fix cleanup-caches workflow for PRs from forks (#507); test: cleanup capCheckParam and capGeomTest</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-28T12:46:08Z"
+  "generated_at": "2026-09-30T14:42:57Z"
 }

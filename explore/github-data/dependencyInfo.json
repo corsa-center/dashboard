@@ -4333,6 +4333,22 @@
                 "login": "pypa"
             }
         },
+        "pypa/pipx": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pipx",
+            "nameWithOwner": "pypa/pipx",
+            "owner": {
+                "isVerified": true,
+                "login": "pypa"
+            }
+        },
         "pypa/setuptools": {
             "languages": {
                 "nodes": [

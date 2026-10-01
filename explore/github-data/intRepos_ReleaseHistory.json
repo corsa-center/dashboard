@@ -577,6 +577,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "0.8.2",
+                        "publishedAt": "2026-10-01T06:58:13Z",
+                        "tagName": "0.8.2"
+                    },
+                    {
                         "name": "0.8.0",
                         "publishedAt": "2026-06-25T21:21:05Z",
                         "tagName": "0.8.0"
@@ -1916,6 +1921,11 @@
         "StanfordLegion/legion": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "Version 26.09.0 (September 30, 2026)",
+                        "publishedAt": "2026-09-30T19:48:06Z",
+                        "tagName": "legion-26.09.0"
+                    },
                     {
                         "name": "Version 26.06.0 (June 30, 2026)",
                         "publishedAt": "2026-07-02T00:15:22Z",
@@ -4966,6 +4976,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "stable_2026_09_30",
+                        "publishedAt": "2026-09-30T10:31:53Z",
+                        "tagName": "vstable_2026_09_30"
+                    },
+                    {
                         "name": "stable_2026_09_04",
                         "publishedAt": "2026-09-04T10:02:58Z",
                         "tagName": "vstable_2026_09_04"
@@ -4984,11 +4999,6 @@
                         "name": "stable_2026_09_01",
                         "publishedAt": "2026-09-01T10:04:06Z",
                         "tagName": "vstable_2026_09_01"
-                    },
-                    {
-                        "name": "stable_2026_08_31",
-                        "publishedAt": "2026-08-31T10:02:42Z",
-                        "tagName": "vstable_2026_08_31"
                     },
                     {
                         "name": "6.24.0",

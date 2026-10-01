@@ -1,7 +1,7 @@
 {
   "package": "llnl/zfp",
   "stars": 886,
-  "forks": 182,
+  "forks": 183,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 768</p>\n<p><strong>GitHub Stars:</strong> 886</p>\n<p><strong>GitHub Forks:</strong> 182</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 13 dependent packages, 111 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 7,039,837</p>\n<p class=\"sub-detail\">conda 7,036,246 (total), conda 3,591 (total)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 770</p>\n<p><strong>GitHub Stars:</strong> 886</p>\n<p><strong>GitHub Forks:</strong> 183</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 13 dependent packages, 111 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 7,057,031</p>\n<p class=\"sub-detail\">conda 7,053,440 (total), conda 3,591 (total)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/llnl/zfp/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 65.57/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Time To Close: 40/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 78/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 89/100</p>\n<p class=\"sub-detail\">Project Popularity: 93/100</p>\n<p class=\"sub-detail\">Documentation Usability: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> docs updated 1790 days ago \u2717</p>\n<p><strong>Score:</strong> 1/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/llnl/zfp/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 67.91/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Time To Close: 40/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 86/100</p>\n<p class=\"sub-detail\">Project Popularity: 93/100</p>\n<p class=\"sub-detail\">Documentation Usability: 100/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1791 days ago \u2717</p>\n<p><strong>Score:</strong> 1/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,11 +27,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 66 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 1.0.1 (1018 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 30 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 6 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 76 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 1.0.1 (1019 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 30 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 6 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 2 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 636 hours \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 0.72 \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 97% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 87% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 18 hours</p>\n<p><strong>Score:</strong> 7/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 2 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 1454 hours median to close, for 8 issues opened 30-365 days ago (3 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 87% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 8 opened, 8 closed 30-365 days ago (1.00 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 97% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 95% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 29 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -55,17 +55,17 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">66 commits and 0 release(s) in the last year; active in 20/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">30 contributors; top contributor 54.8% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-03-25 (10.5 yrs); GitHub repo created 2016-03-24 (10.5 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">76 commits and 0 release(s) in the last year; active in 20/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">30 contributors; top contributor 54.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-03-25 (10.5 yrs); GitHub repo created 2016-03-24 (10.5 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/llnl/zfp/actions/workflows/github-code-scanning/codeql\">CodeQL enabled (default setup)</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/llnl/zfp\">94.8%</a> (Codecov) \u2713</p>\n<p class=\"sub-detail\">11,897/12,552 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> Project does not record defect reports by type or label \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/llnl/zfp/actions/workflows/github-code-scanning/codeql\">CodeQL enabled (default setup)</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/llnl/zfp\">94.8%</a> (Codecov) \u2713</p>\n<p class=\"sub-detail\">11,897/12,552 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> 2 defect report(s) found by issue type or label over two years, too few to judge a trend</p>\n<p><strong>Score:</strong> 2/4</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, CTest / CMake testing</p>\n<p><strong>Code Review Quality Analysis:</strong> 30.8% of 39 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 1/3 met</p>\n<p class=\"sub-detail\">Security criteria: 2/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, CTest / CMake testing</p>\n<p><strong>Code Review Quality Analysis:</strong> 27.9% of 43 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 1/3 met</p>\n<p class=\"sub-detail\">Security criteria: 2/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -73,7 +73,7 @@
     },
     "4.3.4": {
       "title": "Usability",
-      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 1/4 core sections; docs/ present; documentation site published \u2713</p>\n<p class=\"sub-detail\">Usage</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 2 package managers: conda, spack \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/2</p>"
+      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 3/4 core sections; docs/ present; documentation site published \u2713</p>\n<p class=\"sub-detail\">Usage, Examples, Support</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 2 package managers: conda, spack \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 2/2</p>"
     },
     "4.3.5": {
       "title": "Accessibility",
@@ -81,7 +81,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 200 source files, mean 4.4 KB, 0.0% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 350 test files for 200 source files (1.75 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 35 documentation files (0.17 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 54.8% of commits (30 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 9 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Suppress NumPy deprecated API warnings; Handle deprecated newshape parameter in np.reshape; Clean up minor issues in documentation [skip ci]</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 200 source files, mean 4.4 KB, 0.0% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 350 test files for 200 source files (1.75 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 35 documentation files (0.17 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 54.7% of commits (30 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 8 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Remove obsolete CI_GITHUB_ROBOT_TOKEN; Suppress NumPy deprecated API warnings; Handle deprecated newshape parameter in np.reshape</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-09-29T13:42:45Z"
+  "generated_at": "2026-09-30T09:15:59Z"
 }

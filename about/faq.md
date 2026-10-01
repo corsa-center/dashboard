@@ -7,7 +7,7 @@ layout: default
 
 {: .page-header .no_toc}
 
-_These FAQs primarily target developers working on the projects being stewarded by CASS. Don't see your question listed below? Please contact [CASS](mailto:info@corsa.center)._
+_These FAQs primarily target developers working on the projects being stewarded by CORSA. Don't see your question listed below? Please contact [CORSA](mailto:info@corsa.center)._
 
 -   Table of Contents
     {:toc}
@@ -24,7 +24,7 @@ If you’re new to GitHub and open source in general, figuring out how to get se
 
     - **Photo**: A headshot photo, or image that is uniquely you.
     - **Name**: Your first and last name.
-    - **Bio**: Include a few words about yourself! Don't forget to mention CASS!
+    - **Bio**: Include a few words about yourself! Don't forget to mention CORSA!
     - **URL**: This might be your work  page, or a personal website if you prefer.
     - **Company**: Whatever company you work for.
     - **Location**: Your primary location.

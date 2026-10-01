@@ -2,8 +2,8 @@ name: Get Cass Projects
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "6 0 * * *"
+  #schedule:
+  #  - cron: "6 0 * * *"
 
 jobs:
   run-script:

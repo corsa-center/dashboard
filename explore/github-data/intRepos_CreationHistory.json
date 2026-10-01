@@ -1,10 +1,5 @@
 {
     "data": {
-        "AMReX-Codes/amrex": {
-            "createdAt": "2017-04-28T19:37:00Z",
-            "firstCommitAt": "1993-03-12T19:37:55Z",
-            "initBeforeGitHubRepo": false
-        },
         "Alpine-DAV/ascent": {
             "createdAt": "2017-02-08T19:21:22Z",
             "firstCommitAt": "2017-01-10T18:21:14Z",
@@ -53,11 +48,6 @@
         "CODARcode/Chimbuko": {
             "createdAt": "2017-12-11T12:34:40Z",
             "firstCommitAt": "2017-12-11T12:34:41Z",
-            "initBeforeGitHubRepo": false
-        },
-        "E4S-Project/e4s": {
-            "createdAt": "2020-09-20T23:09:32Z",
-            "firstCommitAt": "2020-09-20T23:14:25Z",
             "initBeforeGitHubRepo": false
         },
         "HDFGroup/hdf5": {
@@ -180,11 +170,6 @@
             "firstCommitAt": "2019-12-09T16:18:06Z",
             "initBeforeGitHubRepo": false
         },
-        "flang-compiler/flang": {
-            "createdAt": "2017-05-10T19:13:24Z",
-            "firstCommitAt": "2017-05-11T22:34:13Z",
-            "initBeforeGitHubRepo": false
-        },
         "ginkgo-project/ginkgo": {
             "createdAt": "2018-01-11T16:14:21Z",
             "firstCommitAt": "2017-07-13T02:05:45Z",
@@ -198,11 +183,6 @@
         "hpctoolkit/hpctoolkit": {
             "createdAt": "2022-08-18T22:10:27.848Z",
             "firstCommitAt": "2022-08-18T21:50:53Z",
-            "initBeforeGitHubRepo": true
-        },
-        "hypre-space/hypre": {
-            "createdAt": "2018-11-19T20:42:15Z",
-            "firstCommitAt": "1996-08-08T22:50:42Z",
             "initBeforeGitHubRepo": true
         },
         "icl-utk-edu/magma": {
@@ -233,11 +213,6 @@
         "llnl/pylibROM": {
             "createdAt": "2023-08-09T00:19:01Z",
             "firstCommitAt": "2023-05-16T21:57:57Z",
-            "initBeforeGitHubRepo": true
-        },
-        "llnl/sundials": {
-            "createdAt": "2017-10-05T17:20:03Z",
-            "firstCommitAt": "2002-02-11T23:57:38Z",
             "initBeforeGitHubRepo": true
         },
         "llnl/zfp": {
@@ -308,11 +283,6 @@
         "snl-dakota/dakota": {
             "createdAt": "2021-08-17T16:32:56Z",
             "firstCommitAt": "2010-10-25T21:05:53Z",
-            "initBeforeGitHubRepo": true
-        },
-        "spack/spack": {
-            "createdAt": "2014-01-08T09:22:12Z",
-            "firstCommitAt": "2013-02-14T01:50:44Z",
             "initBeforeGitHubRepo": true
         },
         "tpeterka/ChatVis": {

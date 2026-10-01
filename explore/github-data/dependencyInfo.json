@@ -1292,8 +1292,8 @@
             "languages": {
                 "nodes": [
                     {
-                        "color": "#3572A5",
-                        "name": "Python"
+                        "color": "#3178c6",
+                        "name": "TypeScript"
                     }
                 ]
             },
@@ -3103,6 +3103,22 @@
                 "login": "madsmtm"
             }
         },
+        "mamba-org/setup-micromamba": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3178c6",
+                        "name": "TypeScript"
+                    }
+                ]
+            },
+            "name": "setup-micromamba",
+            "nameWithOwner": "mamba-org/setup-micromamba",
+            "owner": {
+                "isVerified": false,
+                "login": "mamba-org"
+            }
+        },
         "manicmaniac/inline": {
             "languages": {
                 "nodes": [
@@ -4317,6 +4333,22 @@
                 "login": "pypa"
             }
         },
+        "pypa/pipx": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "pipx",
+            "nameWithOwner": "pypa/pipx",
+            "owner": {
+                "isVerified": true,
+                "login": "pypa"
+            }
+        },
         "pypa/setuptools": {
             "languages": {
                 "nodes": [
@@ -5269,21 +5301,6 @@
                 "login": "shibukawa"
             }
         },
-        "shibukawa/snowball_py": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "snowball_py",
-            "nameWithOwner": "shibukawa/snowball_py",
-            "owner": {
-                "login": "shibukawa"
-            }
-        },
         "simpeg/discretize": {
             "languages": {
                 "nodes": [
@@ -5507,6 +5524,22 @@
                 "login": "smol-rs"
             }
         },
+        "snowballstem/snowball": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#555555",
+                        "name": "C"
+                    }
+                ]
+            },
+            "name": "snowball",
+            "nameWithOwner": "snowballstem/snowball",
+            "owner": {
+                "isVerified": false,
+                "login": "snowballstem"
+            }
+        },
         "softprops/action-gh-release": {
             "languages": {
                 "nodes": [
@@ -5531,6 +5564,17 @@
             "owner": {
                 "isVerified": false,
                 "login": "softwareforgood"
+            }
+        },
+        "spack/setup-spack": {
+            "languages": {
+                "nodes": []
+            },
+            "name": "setup-spack",
+            "nameWithOwner": "spack/setup-spack",
+            "owner": {
+                "isVerified": true,
+                "login": "spack"
             }
         },
         "sphinx-contrib/googleanalytics": {

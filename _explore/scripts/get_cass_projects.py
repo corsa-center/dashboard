@@ -27,6 +27,14 @@ REPO_CORRECTIONS = {
     "snl-dakota": "snl-dakota/dakota",
 }
 
+DISABLED_REPOS = {
+    "AMReX-Codes/amrex",
+    "llnl/sundials",
+    "spack/spack",
+    "E4S-Project/e4s",
+    "hypre-space/hypre",
+}
+
 # Function to get the content of a file from GitHub
 def get_file_content(file_url):
     response = requests.get(file_url)
@@ -80,7 +88,7 @@ def read_nested_list_in_json(file_path, key_path):
             else:
                 print(f"Key '{key}' not found in the JSON file.")
                 return
-  
+
         final_key = key_path[-1]
         if final_key in nested_data and isinstance(nested_data[final_key], list):
             return nested_data[final_key]
@@ -128,8 +136,11 @@ if response.status_code == 200:
                             part_after_url = re.sub(r'/releases$', '', part_after_url)
                             if part_after_url.endswith('/'):
                                 part_after_url = part_after_url[:-1]
-                            github_list.append((part_after_url))
-                            print(f"Appended \"{part_after_url}\" to github_list.")
+                            if part_after_url not in DISABLED_REPOS:
+                                github_list.append((part_after_url))
+                                print(f"Appended \"{part_after_url}\" to github_list.")
+                            else:
+                                print(f"Skipping {md_file['name']}: disabled")
                             break
                         elif gitlab_match:
                             part_after_url = gitlab_match.group(2).strip().lstrip('/').lower()

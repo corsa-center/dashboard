@@ -1,17 +1,4 @@
 {
-    "AMReX-Codes/amrex": {
-        "description": "AMReX: Software Framework for Block Structured AMR",
-        "name": "AMReX-Codes/amrex",
-        "topics": [
-            "amrex",
-            "amr",
-            "high-performance-computing",
-            "hpsf",
-            "scientific-computing",
-            "adaptive-mesh-refinement"
-        ],
-        "website": "https://amrex-codes.github.io/amrex"
-    },
     "Alpine-DAV/ascent": {
         "description": "A flyweight in situ visualization and analysis runtime for multi-physics HPC simulations",
         "name": "Alpine-DAV/ascent",
@@ -157,12 +144,6 @@
         "name": "CODARcode/Chimbuko",
         "topics": null,
         "website": ""
-    },
-    "E4S-Project/e4s": {
-        "description": "E4S",
-        "name": "E4S-Project/e4s",
-        "topics": null,
-        "website": "https://e4s.io/"
     },
     "HDFGroup/hdf5": {
         "description": "Official HDF5\u00ae Library Repository",
@@ -387,17 +368,6 @@
         "topics": null,
         "website": ""
     },
-    "flang-compiler/flang": {
-        "description": "Flang is a Fortran language front-end designed for integration with LLVM.",
-        "name": "flang-compiler/flang",
-        "topics": [
-            "fortran",
-            "compiler",
-            "llvm",
-            "fortran-compiler"
-        ],
-        "website": ""
-    },
     "ginkgo-project/ginkgo": {
         "description": "Numerical linear algebra software package",
         "name": "ginkgo-project/ginkgo",
@@ -428,17 +398,6 @@
         "name": "hpctoolkit/hpctoolkit",
         "topics": null,
         "website": "https://gitlab.com/hpctoolkit/hpctoolkit"
-    },
-    "hypre-space/hypre": {
-        "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
-        "name": "hypre-space/hypre",
-        "topics": [
-            "math-physics",
-            "library",
-            "hpc",
-            "radiuss"
-        ],
-        "website": "https://www.llnl.gov/casc/hypre/"
     },
     "icl-utk-edu/magma": {
         "description": null,
@@ -501,25 +460,6 @@
         "name": "llnl/pylibROM",
         "topics": null,
         "website": "https://www.librom.net"
-    },
-    "llnl/sundials": {
-        "description": "Official development repository for SUNDIALS - a SUite of Nonlinear and DIfferential/ALgebraic equation Solvers. Pull requests are welcome for bug fixes and minor changes.",
-        "name": "llnl/sundials",
-        "topics": [
-            "ode-solver",
-            "dae-solver",
-            "nonlinear-equation-solver",
-            "sensitivity-analysis",
-            "time-integration",
-            "scientific-computing",
-            "parallel-computing",
-            "hpc",
-            "math-physics",
-            "radiuss",
-            "solver",
-            "high-performance-computing"
-        ],
-        "website": "https://computing.llnl.gov/projects/sundials"
     },
     "llnl/zfp": {
         "description": "Compressed numerical arrays that support high-speed random access",
@@ -685,24 +625,6 @@
         "name": "snl-dakota/dakota",
         "topics": null,
         "website": ""
-    },
-    "spack/spack": {
-        "description": "A flexible package manager that supports multiple versions, configurations, platforms, and compilers.",
-        "name": "spack/spack",
-        "topics": [
-            "python",
-            "spack",
-            "package-manager",
-            "hpc",
-            "build-tools",
-            "radiuss",
-            "scientific-computing",
-            "macos",
-            "linux",
-            "hpsf",
-            "windows"
-        ],
-        "website": "https://spack.io"
     },
     "tpeterka/ChatVis": {
         "description": "Scientific visualization agent and benchmark",

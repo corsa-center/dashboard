@@ -133,10 +133,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 35698764
+                        "size": 35673409
                     },
                     {
-                        "size": 638268
+                        "size": 638358
                     },
                     {
                         "size": 556929
@@ -154,7 +154,7 @@
                         "size": 128450
                     },
                     {
-                        "size": 112089
+                        "size": 112153
                     },
                     {
                         "size": 27373
@@ -220,7 +220,7 @@
                     }
                 ],
                 "totalCount": 12,
-                "totalSize": 38300061
+                "totalSize": 38274860
             }
         },
         "BerkeleyLab/StFT": {
@@ -250,7 +250,7 @@
                         "size": 277873
                     },
                     {
-                        "size": 35237
+                        "size": 35235
                     },
                     {
                         "size": 4588
@@ -275,7 +275,7 @@
                     }
                 ],
                 "totalCount": 4,
-                "totalSize": 705001
+                "totalSize": 704999
             }
         },
         "BerkeleyLab/fiats": {
@@ -547,10 +547,10 @@
                         "size": 587564
                     },
                     {
-                        "size": 448386
+                        "size": 449232
                     },
                     {
-                        "size": 238254
+                        "size": 238500
                     },
                     {
                         "size": 200783
@@ -608,7 +608,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 77908893
+                "totalSize": 77909985
             }
         },
         "CODARcode/Chimbuko": {
@@ -719,7 +719,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 49835536
+                        "size": 49845709
                     },
                     {
                         "size": 5843027
@@ -728,7 +728,7 @@
                         "size": 3426958
                     },
                     {
-                        "size": 2022766
+                        "size": 2023321
                     },
                     {
                         "size": 1447114
@@ -827,7 +827,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 64864163
+                "totalSize": 64874891
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -2027,7 +2027,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 1874303
+                        "size": 1874546
                     },
                     {
                         "size": 554249
@@ -2128,7 +2128,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 3450020
+                "totalSize": 3450263
             }
         },
         "deephyper/deephyper": {
@@ -2875,16 +2875,16 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 20807997
+                        "size": 20813376
                     },
                     {
                         "size": 430660
                     },
                     {
-                        "size": 396804
+                        "size": 396832
                     },
                     {
-                        "size": 283868
+                        "size": 284408
                     },
                     {
                         "size": 184249
@@ -2990,14 +2990,14 @@
                     }
                 ],
                 "totalCount": 16,
-                "totalSize": 22527495
+                "totalSize": 22533442
             }
         },
         "kokkos/kokkos": {
             "languages": {
                 "edges": [
                     {
-                        "size": 11715762
+                        "size": 11725589
                     },
                     {
                         "size": 348472
@@ -3077,14 +3077,14 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 12244942
+                "totalSize": 12254769
             }
         },
         "kokkos/kokkos-kernels": {
             "languages": {
                 "edges": [
                     {
-                        "size": 13459544
+                        "size": 13459425
                     },
                     {
                         "size": 379473
@@ -3136,7 +3136,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 14306641
+                "totalSize": 14306522
             }
         },
         "llnl/libROM": {
@@ -3428,58 +3428,58 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 760327771
+                        "size": 760970280
                     },
                     {
-                        "size": 561033251
+                        "size": 561334728
                     },
                     {
-                        "size": 224921701
+                        "size": 224939053
                     },
                     {
-                        "size": 218710950
+                        "size": 218723950
                     },
                     {
-                        "size": 31833662
+                        "size": 31852172
                     },
                     {
-                        "size": 16089057
+                        "size": 16095350
                     },
                     {
-                        "size": 14587291
+                        "size": 14614303
                     },
                     {
-                        "size": 5921751
+                        "size": 5940319
                     },
                     {
-                        "size": 5192690
+                        "size": 5195336
                     },
                     {
-                        "size": 4506473
+                        "size": 4506416
                     },
                     {
-                        "size": 4033060
+                        "size": 4042424
                     },
                     {
                         "size": 2279232
                     },
                     {
-                        "size": 1896040
+                        "size": 1898301
                     },
                     {
-                        "size": 1534375
+                        "size": 1536994
                     },
                     {
-                        "size": 1531180
+                        "size": 1535661
                     },
                     {
                         "size": 1231569
                     },
                     {
-                        "size": 417420
+                        "size": 417559
                     },
                     {
-                        "size": 338556
+                        "size": 338413
                     },
                     {
                         "size": 294894
@@ -3494,7 +3494,7 @@
                         "size": 127345
                     },
                     {
-                        "size": 116646
+                        "size": 116734
                     },
                     {
                         "size": 113529
@@ -3557,12 +3557,12 @@
                         "name": "Starlark"
                     },
                     {
-                        "color": "#4F3A4F",
-                        "name": "HIP"
-                    },
-                    {
                         "color": "#3A4E3A",
                         "name": "Cuda"
+                    },
+                    {
+                        "color": "#4F3A4F",
+                        "name": "HIP"
                     },
                     {
                         "color": "#6866fb",
@@ -3730,7 +3730,7 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1858135993
+                "totalSize": 1859202112
             }
         },
         "mfem/mfem": {
@@ -3810,7 +3810,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 23998888
+                        "size": 24010482
                     },
                     {
                         "size": 1039468
@@ -3897,14 +3897,14 @@
                     }
                 ],
                 "totalCount": 12,
-                "totalSize": 27903282
+                "totalSize": 27914876
             }
         },
         "ornladios/ADIOS2": {
             "languages": {
                 "edges": [
                     {
-                        "size": 9340635
+                        "size": 9340910
                     },
                     {
                         "size": 984176
@@ -4005,7 +4005,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 12407066
+                "totalSize": 12407341
             }
         },
         "patrickfan/GenAI4UQ": {
@@ -4029,7 +4029,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 46726105
+                        "size": 46726106
                     },
                     {
                         "size": 3778382
@@ -4211,7 +4211,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 59234329
+                "totalSize": 59234330
             }
         },
         "pghysels/STRUMPACK": {
@@ -4437,13 +4437,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 5287924
+                        "size": 5385491
                     },
                     {
                         "size": 2024773
                     },
                     {
-                        "size": 271517
+                        "size": 274597
                     },
                     {
                         "size": 234474
@@ -4503,7 +4503,7 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 7931268
+                "totalSize": 8031915
             }
         },
         "sandialabs/pytuq": {
@@ -4541,7 +4541,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 13141174
+                        "size": 13142425
                     },
                     {
                         "size": 3992919
@@ -4684,7 +4684,7 @@
                     }
                 ],
                 "totalCount": 20,
-                "totalSize": 18427634
+                "totalSize": 18428885
             }
         },
         "spack/spack": {
@@ -5026,19 +5026,19 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 75216924
+                        "size": 75220974
                     },
                     {
-                        "size": 12727962
+                        "size": 12728201
                     },
                     {
-                        "size": 3876301
+                        "size": 3877622
                     },
                     {
                         "size": 3008680
                     },
                     {
-                        "size": 1270728
+                        "size": 1270858
                     },
                     {
                         "size": 1123401
@@ -5183,7 +5183,7 @@
                     }
                 ],
                 "totalCount": 22,
-                "totalSize": 98900854
+                "totalSize": 98906594
             }
         },
         "xiaoyeli/superlu": {
@@ -5357,7 +5357,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 3626113
+                        "size": 3626409
                     },
                     {
                         "size": 21877
@@ -5402,7 +5402,7 @@
                     }
                 ],
                 "totalCount": 6,
-                "totalSize": 3673623
+                "totalSize": 3673919
             }
         },
         "ytopt-team/ytopt": {

@@ -6414,6 +6414,51 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "nanobind",
+                                    "repository": {
+                                        "nameWithOwner": "wjakob/nanobind"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numpy",
+                                    "repository": {
+                                        "nameWithOwner": "numpy/numpy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "scikit-build-core",
+                                    "repository": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "nanobind",
+                                    "repository": {
+                                        "nameWithOwner": "wjakob/nanobind"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numpy",
+                                    "repository": {
+                                        "nameWithOwner": "numpy/numpy"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "alabaster",
                                     "repository": {
                                         "nameWithOwner": "sphinx-doc/alabaster"
@@ -6865,51 +6910,6 @@
                         "dependencies": {
                             "nodes": [
                                 {
-                                    "packageManager": "PIP",
-                                    "packageName": "nanobind",
-                                    "repository": {
-                                        "nameWithOwner": "wjakob/nanobind"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "numpy",
-                                    "repository": {
-                                        "nameWithOwner": "numpy/numpy"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "scikit-build-core",
-                                    "repository": null
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "nanobind",
-                                    "repository": {
-                                        "nameWithOwner": "wjakob/nanobind"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "numpy",
-                                    "repository": {
-                                        "nameWithOwner": "numpy/numpy"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",
                                     "repository": {
@@ -7222,6 +7222,117 @@
                                 },
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "jupyterlab",
+                                    "repository": {
+                                        "nameWithOwner": "jupyterlab/jupyterlab"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "lxml",
+                                    "repository": {
+                                        "nameWithOwner": "lxml/lxml"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mako",
+                                    "repository": {
+                                        "nameWithOwner": "sqlalchemy/mako"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "matplotlib",
+                                    "repository": {
+                                        "nameWithOwner": "matplotlib/matplotlib"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numpy",
+                                    "repository": {
+                                        "nameWithOwner": "numpy/numpy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pandas",
+                                    "repository": {
+                                        "nameWithOwner": "pandas-dev/pandas"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pytest-runner",
+                                    "repository": {
+                                        "nameWithOwner": "pytest-dev/pytest-runner"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "seaborn",
+                                    "repository": {
+                                        "nameWithOwner": "mwaskom/seaborn"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinx"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx-rtd-theme",
+                                    "repository": {
+                                        "nameWithOwner": "readthedocs/sphinx_rtd_theme"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "twine",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/twine"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "watchdog",
+                                    "repository": {
+                                        "nameWithOwner": "gorakhargosh/watchdog"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "wheel",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/wheel"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cffi",
+                                    "repository": {
+                                        "nameWithOwner": "python-cffi/cffi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "humanize",
                                     "repository": {
                                         "nameWithOwner": "python-humanize/humanize"
@@ -7357,117 +7468,6 @@
                                     "packageName": "pandas",
                                     "repository": {
                                         "nameWithOwner": "pandas-dev/pandas"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "cffi",
-                                    "repository": {
-                                        "nameWithOwner": "python-cffi/cffi"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "jupyterlab",
-                                    "repository": {
-                                        "nameWithOwner": "jupyterlab/jupyterlab"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "lxml",
-                                    "repository": {
-                                        "nameWithOwner": "lxml/lxml"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "mako",
-                                    "repository": {
-                                        "nameWithOwner": "sqlalchemy/mako"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "matplotlib",
-                                    "repository": {
-                                        "nameWithOwner": "matplotlib/matplotlib"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "numpy",
-                                    "repository": {
-                                        "nameWithOwner": "numpy/numpy"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pandas",
-                                    "repository": {
-                                        "nameWithOwner": "pandas-dev/pandas"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pytest",
-                                    "repository": {
-                                        "nameWithOwner": "pytest-dev/pytest"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pytest-runner",
-                                    "repository": {
-                                        "nameWithOwner": "pytest-dev/pytest-runner"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "seaborn",
-                                    "repository": {
-                                        "nameWithOwner": "mwaskom/seaborn"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinx"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx-rtd-theme",
-                                    "repository": {
-                                        "nameWithOwner": "readthedocs/sphinx_rtd_theme"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "twine",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/twine"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "watchdog",
-                                    "repository": {
-                                        "nameWithOwner": "gorakhargosh/watchdog"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "wheel",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/wheel"
                                     }
                                 }
                             ]
@@ -12607,108 +12607,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "mpi4py",
-                                    "repository": {
-                                        "nameWithOwner": "mpi4py/mpi4py"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "mypy",
-                                    "repository": {
-                                        "nameWithOwner": "python/mypy"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pyvista",
-                                    "repository": {
-                                        "nameWithOwner": "pyvista/pyvista"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "packaging",
-                                    "repository": {
-                                        "nameWithOwner": "pypa/packaging"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pydata-sphinx-theme",
-                                    "repository": {
-                                        "nameWithOwner": "pydata/pydata-sphinx-theme"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "pylit",
-                                    "repository": {
-                                        "nameWithOwner": "slott56/PyLit-3"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphinx",
-                                    "repository": {
-                                        "nameWithOwner": "sphinx-doc/sphinx"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "sphobjinv",
-                                    "repository": {
-                                        "nameWithOwner": "bskinn/sphobjinv"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "typing-extensions",
-                                    "repository": {
-                                        "nameWithOwner": "python/typing"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "cython",
-                                    "repository": {
-                                        "nameWithOwner": "cython/cython"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "cython-lint",
-                                    "repository": {
-                                        "nameWithOwner": "MarcoGorelli/cython-lint"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
-                                    "packageName": "ruff",
-                                    "repository": {
-                                        "nameWithOwner": "astral-sh/ruff"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "cython",
                                     "repository": {
                                         "nameWithOwner": "cython/cython"
@@ -12824,6 +12722,108 @@
                                     "packageName": "wheel",
                                     "repository": {
                                         "nameWithOwner": "pypa/wheel"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "packaging",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/packaging"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pydata-sphinx-theme",
+                                    "repository": {
+                                        "nameWithOwner": "pydata/pydata-sphinx-theme"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pylit",
+                                    "repository": {
+                                        "nameWithOwner": "slott56/PyLit-3"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphinx",
+                                    "repository": {
+                                        "nameWithOwner": "sphinx-doc/sphinx"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "sphobjinv",
+                                    "repository": {
+                                        "nameWithOwner": "bskinn/sphobjinv"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "typing-extensions",
+                                    "repository": {
+                                        "nameWithOwner": "python/typing"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cython",
+                                    "repository": {
+                                        "nameWithOwner": "cython/cython"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cython-lint",
+                                    "repository": {
+                                        "nameWithOwner": "MarcoGorelli/cython-lint"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "ruff",
+                                    "repository": {
+                                        "nameWithOwner": "astral-sh/ruff"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mpi4py",
+                                    "repository": {
+                                        "nameWithOwner": "mpi4py/mpi4py"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "mypy",
+                                    "repository": {
+                                        "nameWithOwner": "python/mypy"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "pyvista",
+                                    "repository": {
+                                        "nameWithOwner": "pyvista/pyvista"
                                     }
                                 }
                             ]

@@ -1648,6 +1648,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "JSS-Paper-Release",
+                        "publishedAt": "2026-10-02T15:04:26Z",
+                        "tagName": "2026.10.v2"
+                    },
+                    {
                         "name": "JSS Paper Release",
                         "publishedAt": "2026-10-01T20:54:14Z",
                         "tagName": "2026.10"
@@ -4981,6 +4986,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "stable_2026_10_02",
+                        "publishedAt": "2026-10-02T11:06:41Z",
+                        "tagName": "vstable_2026_10_02"
+                    },
+                    {
                         "name": "stable_2026_10_01",
                         "publishedAt": "2026-10-01T10:57:16Z",
                         "tagName": "vstable_2026_10_01"
@@ -4999,11 +5009,6 @@
                         "name": "stable_2026_09_03",
                         "publishedAt": "2026-09-03T10:03:35Z",
                         "tagName": "vstable_2026_09_03"
-                    },
-                    {
-                        "name": "stable_2026_09_02",
-                        "publishedAt": "2026-09-02T10:04:19Z",
-                        "tagName": "vstable_2026_09_02"
                     },
                     {
                         "name": "6.24.0",

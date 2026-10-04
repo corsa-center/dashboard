@@ -1932,6 +1932,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "Version 26.09.1 (October 4, 2026)",
+                        "publishedAt": "2026-10-04T00:37:31Z",
+                        "tagName": "legion-26.09.1"
+                    },
+                    {
                         "name": "Version 26.09.0 (September 30, 2026)",
                         "publishedAt": "2026-09-30T19:48:06Z",
                         "tagName": "legion-26.09.0"

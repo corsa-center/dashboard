@@ -3537,6 +3537,16 @@
             "login": "Bryce-MW",
             "name": "Bryce Wilson"
         },
+        "BtbN": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/294293?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "BtbN",
+            "name": null
+        },
         "Budovi": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/23473432?v=4",
             "contributedLabRepositories": {
@@ -8396,6 +8406,16 @@
             "login": "Ivaylo",
             "name": null
         },
+        "IvyXu420": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/219543465?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "IvyXu420",
+            "name": "Ivy Xu"
+        },
         "Izaron": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/5406399?u=62d47bb6cf5c0d6d19b2bc4a52e56087e06f16cc&v=4",
             "contributedLabRepositories": {
@@ -11846,6 +11866,16 @@
             },
             "login": "MagunRa",
             "name": "Moritz Huck"
+        },
+        "Maher-star-eng": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/236586801?u=1ac835876c75fc5d38cf39b48a77bd827615e922&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "Maher-star-eng",
+            "name": "Maher Ahmed Maher Shola"
         },
         "MaheshRavishankar": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/1663364?v=4",
@@ -18433,9 +18463,7 @@
         "ThePo1es": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/190378110?v=4",
             "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
+                "nodes": []
             },
             "login": "ThePo1es",
             "name": null
@@ -35164,7 +35192,8 @@
                     "pghysels/STRUMPACK",
                     "sandialabs/Albany",
                     "trilinos/Trilinos",
-                    "xiaoyeli/superlu_dist"
+                    "xiaoyeli/superlu_dist",
+                    "xiaoyeli/superlu_mt"
                 ]
             },
             "login": "claude",

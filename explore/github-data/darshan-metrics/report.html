@@ -38,7 +38,7 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 @media (max-width: 40rem) { ul.rows > li { grid-template-columns: 1fr; gap: 0; } }
 </style></head><body><main>
 <h1>Sustainability metrics report: darshan-hpc/darshan</h1>
-<p class="meta">Collected 2026-10-03 22:25 UTC</p>
+<p class="meta">Collected 2026-10-05 04:44 UTC</p>
 <div class="box">
 <p><b>How to read this report.</b> Each row is one sub-metric from the CASS Sustainability Metrics Report, exactly as the dashboard shows it. <span class="pass">✓ met</span> and <span class="fail">✗ not met</span> compare the measured value with the threshold listed under it. <span class="unscored">Not scored</span> rows were reported but not judged — not yet collected, not applicable, or too little data — and are left out of the section score, which is ✓ rows out of ✓ and ✗ rows. Grey lines under a row are the evidence it was based on.</p>
 </div>
@@ -47,7 +47,7 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 <table><thead><tr><th>Dimension</th><th class="num">Score</th><th class="num">Weight</th><th>Averaged over</th></tr></thead><tbody>
 <tr><td>Impact</td><td class="num">25</td><td class="num">0.33</td><td>No collector returned a score</td></tr>
 <tr><td>Ecosystem</td><td class="num">47</td><td class="num">0.34</td><td>Governance documents (4.2.1) 0; Licensing (4.2.2) 67; Active maintenance (4.2.3) 60; CHAOSS health score (4.2.1) 47; OpenSSF Best Practices badge (4.3.2) 60; Engagement (4.2.4) 71; Outreach (4.2.5) 60; Financial sustainability (4.2.8) 50; Welcomeness (4.2.6) 100; Collaboration (4.2.7) 0; FAIR licensing (4.2.2) 0</td></tr>
-<tr><td>Quality</td><td class="num">56</td><td class="num">0.33</td><td>CI/CD (4.3.2) 60; Reproducibility (4.3.3) 25; Accessibility (4.3.5) 27; Test coverage (4.3.1) 78; Static analysis (4.3.1) 100; Development tooling (4.3.2) 67; Deployment environments (4.3.5) 100; Usability (4.3.4) 0; Maintainability (4.3.6) 75; Reliability (4.3.1) 50; Supply chain integrity (4.3.8) 33</td></tr>
+<tr><td>Quality</td><td class="num">54</td><td class="num">0.33</td><td>CI/CD (4.3.2) 60; Reproducibility (4.3.3) 25; Accessibility (4.3.5) 27; Static analysis (4.3.1) 100; Development tooling (4.3.2) 67; Deployment environments (4.3.5) 100; Usability (4.3.4) 0; Maintainability (4.3.6) 75; Reliability (4.3.1) 50; Supply chain integrity (4.3.8) 33</td></tr>
 <tr><td><b>Overall</b></td><td class="num"><b>42</b></td><td></td><td></td></tr></tbody></table>
 <nav><h2>Sections</h2><ol>
 <li><a href="#s4-1-1">4.1.1 Software Citation and Adoption</a></li>
@@ -103,10 +103,10 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 </ul>
 <h3 id="s4-2-3">4.2.3 Active Maintenance<span class="score">Score 5/6</span></h3>
 <ul class="rows">
-<li><span class="mark pass">✓ met</span><div><b>Commit Activity Pattern Analysis:</b> Active — 102 commits (52 weeks)<div class="detail">Last Commit: 1 days ago</div></div></li>
+<li><span class="mark pass">✓ met</span><div><b>Commit Activity Pattern Analysis:</b> Active — 98 commits (52 weeks)<div class="detail">Last Commit: 2 days ago</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Maintenance Mode Indicator Detection:</b> No maintenance flags</div></li>
 <li><span class="mark pass">✓ met</span><div><b>Activity Trend Monitoring:</b> Increasing<div class="threshold"><b>Threshold:</b> stable or increasing</div></div></li>
-<li><span class="mark pass">✓ met</span><div><b>Release Pattern Assessment:</b> 3.5.0 (348 days ago), 1/yr<div class="detail">Contributors: 22 (bus factor: 2)</div><div class="threshold"><b>Threshold:</b> 1 — releases in the last year, minimum</div></div></li>
+<li><span class="mark pass">✓ met</span><div><b>Release Pattern Assessment:</b> 3.5.0 (349 days ago), 1/yr<div class="detail">Contributors: 22 (bus factor: 2)</div><div class="threshold"><b>Threshold:</b> 1 — releases in the last year, minimum</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Multi-Channel Communication Activity:</b> 3 channels<div class="detail">GitHub Discussions, Wiki, GitHub Issues</div><div class="threshold"><b>Threshold:</b> min channels = 2 — distinct channels found, minimum</div><div class="threshold">min community issues = 5 — issues opened from outside the maintainer group in the last 365 days before the issue tracker counts as a channel</div></div></li>
 <li><span class="mark fail">✗ not met</span><div><b>Contributor Abandonment Forecasting:</b> 4 of 7 previously active contributors stopped (57%)<div class="threshold"><b>Threshold:</b> 0.5 — departure rate, maximum</div></div></li>
 </ul>
@@ -167,7 +167,7 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 </ul>
 <h3 id="s4-2-10">4.2.10 Project Longevity and Community Health<span class="score">Score 4/5</span></h3>
 <ul class="rows">
-<li><span class="mark pass">✓ met</span><div><b>Comprehensive Activity Analysis:</b> 2/3 dimensions active<div class="detail">102 commits and 1 release(s) in the last year; active in 23/52 weeks</div><div class="threshold"><b>Threshold:</b> min dimensions = 2 — of 3 dimensions active, minimum</div><div class="threshold">min active weeks = 26 — of 52 weeks with a commit, minimum</div><div class="threshold">min releases last year = 1 — releases in the last year, minimum</div></div></li>
+<li><span class="mark pass">✓ met</span><div><b>Comprehensive Activity Analysis:</b> 2/3 dimensions active<div class="detail">98 commits and 1 release(s) in the last year; active in 24/52 weeks</div><div class="threshold"><b>Threshold:</b> min dimensions = 2 — of 3 dimensions active, minimum</div><div class="threshold">min active weeks = 26 — of 52 weeks with a commit, minimum</div><div class="threshold">min releases last year = 1 — releases in the last year, minimum</div></div></li>
 <li><span class="mark fail">✗ not met</span><div><b>Contributor Viability Assessment:</b> Bus factor 2<div class="detail">22 contributors; top contributor 36.7% of commits</div><div class="threshold"><b>Threshold:</b> 3 — bus factor, minimum</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Maintenance Mode Detection:</b> No warning indicators<div class="threshold"><b>Threshold:</b> max days since push = 365 — days since last push before it&#x27;s a warning sign</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Community Health Trends:</b> Increasing<div class="threshold"><b>Threshold:</b> stable or increasing</div></div></li>
@@ -179,7 +179,7 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 <li><span class="mark pass">✓ met</span><div><b>Advanced Static Analysis:</b> mypy<div class="threshold"><b>Threshold:</b> 1 — defect-analysis tools found beyond CodeQL, minimum</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Enhanced Security Analysis:</b> <a href="https://github.com/darshan-hpc/darshan/actions/workflows/github-code-scanning/codeql">CodeQL enabled (default setup)</a></div></li>
 <li><span class="mark fail">✗ not met</span><div><b>CERT Guidelines Compliance:</b> No hardening settings found in the build files or CI<div class="detail">Practice indicators, not audited conformance</div><div class="threshold"><b>Threshold:</b> 1 — secure-coding hardening indicators found, minimum</div></div></li>
-<li><span class="mark fail">✗ not met</span><div><b>Test Coverage Excellence:</b> <a href="https://codecov.io/gh/darshan-hpc/darshan">77.6%</a> (Codecov)<div class="detail">2,874/3,702 lines covered</div><div class="threshold"><b>Threshold:</b> 80 — Codecov line coverage %, minimum</div></div></li>
+<li><span class="mark fail">✗ not met</span><div><b>Test Coverage Excellence:</b> No Codecov data found<div class="threshold"><b>Threshold:</b> 80 — Codecov line coverage %, minimum</div></div></li>
 <li><span class="mark unscored">Not scored</span><div><b>Reliability Trend Analysis:</b> 0 defect report(s) found by issue type or label over two years, too few to judge a trend<div class="threshold"><b>Threshold:</b> min trend volume = 5 — combined recent+previous defect reports, minimum (below this the comparison is noise)</div><div class="threshold">trend tolerance = 1.25 — recent:previous ratio at or under which the trend still counts as stable</div><div class="threshold">significance = 0.05 — one-sided binomial p-value a rising/falling split must be under to count as a trend</div><div class="threshold">passing directions = stable or improving — trend direction must be one of these to meet the threshold</div></div></li>
 </ul>
 <h3 id="s4-3-2">4.3.2 Development Practices<span class="score">Score 3/5</span></h3>

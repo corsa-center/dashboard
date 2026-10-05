@@ -44,7 +44,7 @@
                 "totalCount": 80
             },
             "pullRequests_Merged": {
-                "totalCount": 971
+                "totalCount": 972
             },
             "pullRequests_Open": {
                 "totalCount": 10
@@ -456,7 +456,7 @@
                 "totalCount": 638
             },
             "issues_Open": {
-                "totalCount": 129
+                "totalCount": 130
             },
             "languages": {
                 "totalCount": 10
@@ -487,13 +487,13 @@
                 "totalCount": 845
             },
             "pullRequests_Open": {
-                "totalCount": 12
+                "totalCount": 13
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 383
+                "totalCount": 384
             },
             "url": "https://github.com/CHIP-SPV/chipStar"
         },
@@ -594,13 +594,13 @@
                 "totalCount": 4786
             },
             "pullRequests_Open": {
-                "totalCount": 52
+                "totalCount": 55
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 991
+                "totalCount": 992
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -655,7 +655,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 345
+                "totalCount": 0
             },
             "url": "https://github.com/HPCToolkit/hpctoolkit"
         },
@@ -710,7 +710,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 19
+                "totalCount": 20
             },
             "url": "https://github.com/Lab-Notebooks/CodeScribe"
         },
@@ -976,7 +976,7 @@
                 "totalCount": 23
             },
             "pullRequests_Merged": {
-                "totalCount": 161
+                "totalCount": 162
             },
             "pullRequests_Open": {
                 "totalCount": 1
@@ -1277,7 +1277,7 @@
             },
             "homepageUrl": "https://legion.stanford.edu",
             "issues_Closed": {
-                "totalCount": 1241
+                "totalCount": 1242
             },
             "issues_Open": {
                 "totalCount": 297
@@ -1747,13 +1747,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 193
+                "totalCount": 194
             },
             "pullRequests_Merged": {
-                "totalCount": 1400
+                "totalCount": 1402
             },
             "pullRequests_Open": {
-                "totalCount": 44
+                "totalCount": 41
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -1917,7 +1917,7 @@
                 "totalCount": 147
             },
             "pullRequests_Merged": {
-                "totalCount": 1280
+                "totalCount": 1282
             },
             "pullRequests_Open": {
                 "totalCount": 95
@@ -2396,7 +2396,7 @@
                 "totalCount": 5
             },
             "stargazers": {
-                "totalCount": 886
+                "totalCount": 887
             },
             "url": "https://github.com/llnl/zfp"
         },
@@ -2407,14 +2407,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 16481
+                "totalCount": 16492
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 70081
+                "totalCount": 70089
             },
             "issues_Open": {
-                "totalCount": 29701
+                "totalCount": 29723
             },
             "languages": {
                 "totalCount": 56
@@ -2426,7 +2426,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6434
+                "totalCount": 6436
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2439,19 +2439,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 12650
+                "totalCount": 12666
             },
             "pullRequests_Merged": {
-                "totalCount": 104319
+                "totalCount": 104391
             },
             "pullRequests_Open": {
-                "totalCount": 10291
+                "totalCount": 10321
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 40912
+                "totalCount": 40921
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2469,7 +2469,7 @@
                 "totalCount": 2414
             },
             "issues_Open": {
-                "totalCount": 86
+                "totalCount": 87
             },
             "languages": {
                 "totalCount": 9
@@ -2500,7 +2500,7 @@
                 "totalCount": 2101
             },
             "pullRequests_Open": {
-                "totalCount": 156
+                "totalCount": 157
             },
             "repositoryTopics": {
                 "totalCount": 11
@@ -2578,10 +2578,10 @@
             },
             "homepageUrl": "https://adios2.readthedocs.io/en/latest/index.html",
             "issues_Closed": {
-                "totalCount": 1231
+                "totalCount": 1234
             },
             "issues_Open": {
-                "totalCount": 42
+                "totalCount": 39
             },
             "languages": {
                 "totalCount": 14
@@ -2609,10 +2609,10 @@
                 "totalCount": 719
             },
             "pullRequests_Merged": {
-                "totalCount": 3152
+                "totalCount": 3153
             },
             "pullRequests_Open": {
-                "totalCount": 9
+                "totalCount": 10
             },
             "repositoryTopics": {
                 "totalCount": 9
@@ -2829,7 +2829,7 @@
                 "totalCount": 3419
             },
             "pullRequests_Open": {
-                "totalCount": 74
+                "totalCount": 75
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2846,7 +2846,7 @@
             },
             "description": "Pytorch-based framework for solving parametric constrained optimization problems, physics-informed system identification, and parametric model predictive control. ",
             "forks": {
-                "totalCount": 188
+                "totalCount": 187
             },
             "homepageUrl": "https://pnnl.github.io/neuromancer/",
             "issues_Closed": {
@@ -3057,7 +3057,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 160
+                "totalCount": 161
             },
             "url": "https://github.com/snl-dakota/dakota"
         },
@@ -3120,14 +3120,14 @@
             },
             "description": "Primary repository for the Trilinos Project",
             "forks": {
-                "totalCount": 617
+                "totalCount": 618
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
                 "totalCount": 5447
             },
             "issues_Open": {
-                "totalCount": 242
+                "totalCount": 243
             },
             "languages": {
                 "totalCount": 33
@@ -3158,7 +3158,7 @@
                 "totalCount": 8649
             },
             "pullRequests_Open": {
-                "totalCount": 83
+                "totalCount": 84
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3322,7 +3322,7 @@
                 "totalCount": 80
             },
             "issues_Open": {
-                "totalCount": 67
+                "totalCount": 68
             },
             "languages": {
                 "totalCount": 12
@@ -3389,7 +3389,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 8
+                "totalCount": 9
             },
             "name": "superlu_mt",
             "nameWithOwner": "xiaoyeli/superlu_mt",
@@ -3405,7 +3405,7 @@
                 "totalCount": 3
             },
             "pullRequests_Merged": {
-                "totalCount": 12
+                "totalCount": 13
             },
             "pullRequests_Open": {
                 "totalCount": 0

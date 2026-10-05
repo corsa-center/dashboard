@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 102 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 3.5.0 (348 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 22 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 7 previously active contributors stopped (57%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 98 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 2 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 3.5.0 (349 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 22 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 7 previously active contributors stopped (57%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -55,13 +55,13 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">102 commits and 1 release(s) in the last year; active in 23/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">22 contributors; top contributor 36.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-06-17 (17.3 yrs); GitHub repo created 2021-05-12 (5.4 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">98 commits and 1 release(s) in the last year; active in 24/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">22 contributors; top contributor 36.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-06-17 (17.3 yrs); GitHub repo created 2021-05-12 (5.4 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> mypy \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/darshan-hpc/darshan/actions/workflows/github-code-scanning/codeql\">CodeQL enabled (default setup)</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/darshan-hpc/darshan\">77.6%</a> (Codecov) \u2717</p>\n<p class=\"sub-detail\">2,874/3,702 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> 0 defect report(s) found by issue type or label over two years, too few to judge a trend</p>\n<p><strong>Score:</strong> 2/4</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> mypy \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/darshan-hpc/darshan/actions/workflows/github-code-scanning/codeql\">CodeQL enabled (default setup)</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> 0 defect report(s) found by issue type or label over two years, too few to judge a trend</p>\n<p><strong>Score:</strong> 2/4</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-03T22:22:38Z"
+  "generated_at": "2026-10-05T04:42:00Z"
 }

@@ -1,6 +1,6 @@
 {
   "package": "snl-dakota/dakota",
-  "stars": 160,
+  "stars": 161,
   "forks": 52,
   "config_exclusions": {
     "ecosystem": [],
@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 160</p>\n<p><strong>GitHub Forks:</strong> 52</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 217,816</p>\n<p class=\"sub-detail\">conda 217,816 (total)</p>\n<p><strong>Citation Score:</strong> 25.8/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 161</p>\n<p><strong>GitHub Forks:</strong> 52</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 218,252</p>\n<p class=\"sub-detail\">conda 218,252 (total)</p>\n<p><strong>Citation Score:</strong> 25.8/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 63.13/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 78/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1422 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 63.14/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 78/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1423 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 536 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_10_02 (1 days ago), 7/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 536 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 3 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_10_04 (0 days ago), 7/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -69,7 +69,7 @@
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">vstable_2026_10_02, vstable_2026_10_01</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">vstable_2026_10_04, vstable_2026_10_02</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-03T20:13:25Z"
+  "generated_at": "2026-10-05T02:33:24Z"
 }

@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>GitHub Stars:</strong> 26</p>\n<p><strong>GitHub Forks:</strong> 5</p>\n<p><strong>Citation Score:</strong> 31.6/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 26</p>\n<p><strong>GitHub Forks:</strong> 5</p>\n<p><strong>Citation Score:</strong> 11.7/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +19,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 26.77/100 (poor) \u2717</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 0/100</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Project Popularity: 10/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Documentation Usability: 46/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 32.51/100 (poor) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Project Popularity: 10/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Documentation Usability: 46/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 0 commits (52 weeks) \u2717</p>\n<p class=\"sub-detail\">Last Commit: 2669 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 1 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 0 commits (52 weeks) \u2717</p>\n<p class=\"sub-detail\">Last Commit: 2670 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 1 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 1/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -35,7 +35,7 @@
     },
     "4.2.5": {
       "title": "Outreach",
-      "data": "<p><strong>New Contributor Tracking:</strong> 0 in last 1 year \u2717</p>\n<p><strong>Contributor Retention Analysis:</strong> No new contributors to measure \u2717</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 0 one-time / 0 casual / 1 repeat \u2717</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> No newcomer-labelled issues \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 0/4 resources \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>New Contributor Tracking:</strong> 0 in last 1 year \u2717</p>\n<p><strong>Contributor Retention Analysis:</strong> No new contributors to measure</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 0 one-time / 0 casual / 1 repeat \u2717</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> No newcomer-labelled issues \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 0/4 resources \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.6": {
       "title": "Welcomeness",
@@ -55,7 +55,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 0/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">0 commits and 0 release(s) in the last year; active in 0/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">1 contributors; top contributor 100.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No push in 2669 days \u2717</p>\n<p><strong>Community Health Trends:</strong> Inactive \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Legacy \u2717</p>\n<p class=\"sub-detail\">Project age: first commit 2019-06-14 (7.3 yrs); GitHub repo created 2019-06-14 (7.3 yrs)</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 0/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">0 commits and 0 release(s) in the last year; active in 0/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">1 contributors; top contributor 100.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No push in 2670 days \u2717</p>\n<p><strong>Community Health Trends:</strong> Inactive \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Legacy \u2717</p>\n<p class=\"sub-detail\">Project age: first commit 2019-06-14 (7.3 yrs); GitHub repo created 2019-06-14 (7.3 yrs)</p>\n<p><strong>Score:</strong> 0/5</p>"
     }
   },
   "quality": {
@@ -65,7 +65,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 0/4 \u2717</p>\n<p><strong>Testing Framework Excellence:</strong> 0/4 indicators \u2717</p>\n<p><strong>Code Review Quality Analysis:</strong> No merged PRs to sample \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 1/3 met</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 0/4 \u2717</p>\n<p><strong>Testing Framework Excellence:</strong> 0/4 indicators \u2717</p>\n<p><strong>Code Review Quality Analysis:</strong> No merged pull requests to sample</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 1/3 met</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -77,7 +77,7 @@
     },
     "4.3.5": {
       "title": "Accessibility",
-      "data": "<p><strong>Portable Build System Detection:</strong> \u2717</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> No CI architectures detected \u2717</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README or install guide \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> No CI runner environments detected \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Portable Build System Detection:</strong> \u2717</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> No CI architectures detected \u2717</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README, install or getting-started guide \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> No CI runner environments detected \u2717</p>\n<p><strong>Score:</strong> 0/5</p>"
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-04T22:11:57Z"
+  "generated_at": "2026-10-06T04:58:20Z"
 }

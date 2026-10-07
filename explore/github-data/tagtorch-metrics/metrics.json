@@ -9,7 +9,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 3</p>\n<p><strong>GitHub Forks:</strong> 0</p>\n<p><strong>Citation Score:</strong> 0.0/100</p>"
+      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>GitHub Stars:</strong> 3</p>\n<p><strong>GitHub Forks:</strong> 0</p>\n<p><strong>Citation Score:</strong> 20.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -27,7 +27,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 5 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 12 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 2 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 5 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 13 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 2 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -92,5 +92,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> 0 of 134 pinned dependencies have a known vulnerability \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-06T07:10:43Z"
+  "generated_at": "2026-10-07T03:53:20Z"
 }

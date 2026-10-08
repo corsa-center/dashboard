@@ -18,22 +18,22 @@ queryPathInd = str(gh_queries_dir() / "repo-Info.gql")
 dataCollector = load_data(datfilepath)
 
 
-def _stargazers_from_metrics(repoKey):
-    """Read the star count corsa-center/metrics already collected for this repo via REST.
-
-    GitHub's default Actions token forbids the GraphQL `stargazers` connection on
-    repos outside this one, so that field is no longer requested here (see
-    queries/repo-Info.gql and org-Repos-Info.gql). corsa-center/metrics collects
-    stars via the REST API instead, which isn't subject to that restriction.
-    """
-    metrics_file = ghDataDir / ("%s-metrics" % repoKey.split("/")[-1]) / "metrics.json"
-    if not metrics_file.exists():
-        return None
-    try:
-        with open(metrics_file) as f:
-            return {"totalCount": json.load(f).get("stars", 0)}
-    except Exception:
-        return None
+# def _stargazers_from_metrics(repoKey):
+#     """Read the star count corsa-center/metrics already collected for this repo via REST.
+#
+#     GitHub's default Actions token forbids the GraphQL `stargazers` connection on
+#     repos outside this one, so that field is no longer requested here (see
+#     queries/repo-Info.gql and org-Repos-Info.gql). corsa-center/metrics collects
+#     stars via the REST API instead, which isn't subject to that restriction.
+#     """
+#     metrics_file = ghDataDir / ("%s-metrics" % repoKey.split("/")[-1]) / "metrics.json"
+#     if not metrics_file.exists():
+#         return None
+#     try:
+#         with open(metrics_file) as f:
+#             return {"totalCount": json.load(f).get("stars", 0)}
+#     except Exception:
+#         return None
 
 # setup cdash repo context
 cdash_mapping = {}
@@ -85,7 +85,7 @@ for hostUrl, hostInfo in inputLists.data.items():
                 info["createdAt"] = proj.get("created_at")
                 info["defaultBranchRef"] = {"name": proj.get("default_branch")}
                 info["description"] = proj.get("description", "")
-                info["forks"] = {"totalCount": proj.get("forks_count", 0)}
+                # info["forks"] = {"totalCount": proj.get("forks_count", 0)}
                 info["homepageUrl"] = proj.get("web_url")
                 info["languages"] = {"totalCount": 0}
                 info["licenseInfo"] = None
@@ -99,7 +99,7 @@ for hostUrl, hostInfo in inputLists.data.items():
                 info["owner"] = proj.get("namespace", {}).get("full_path", "")
                 info["parent"] = None
                 info["primaryLanguage"] = None
-                info["stargazers"] = {"totalCount": proj.get("star_count", 0)}
+                # info["stargazers"] = {"totalCount": proj.get("star_count", 0)}
                 info["url"] = proj.get("web_url", "%s/%s" % (hostUrl, repo))
 
                 try:
@@ -145,72 +145,72 @@ for hostUrl, hostInfo in inputLists.data.items():
     2. We will need to pass in "hostUrl" as an eventual constructor argument
     3. Make all functions abstract in the base class for easier typing
     '''
-    queryMan = qm.GitHubQueryManager(apiToken=env.get(hostInfo["apiEnvKey"]))
-
-    print("%s: Gathering data across multiple paginated queries..." % hostUrl)
-    failed_orgs = 0
-    for org in orglist:
-        print("\n'%s'" % (org))
-
-        try:
-            outObj = queryMan.queryGitHubFromFile(
-                queryPath,
-                {"orgName": org, "numRepos": 50, "pgCursor": None},
-                paginate=True,
-                cursorVar="pgCursor",
-                keysToList=["data", "organization", "repositories", "nodes"],
-            )
-        except Exception as error:
-            print("Warning: Could not complete '%s'" % (org))
-            print(error)
-            failed_orgs += 1
-            continue
-
-        for repo in outObj["data"]["organization"]["repositories"]["nodes"]:
-            repoKey = repo["nameWithOwner"]
-            old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
-            old_clang_tidy_metrics = dataCollector.data["data"].get(repoKey, {}).get("clangTidyMetrics")
-            dataCollector.data["data"][repoKey] = repo
-            dataCollector.data["data"][repoKey]["stargazers"] = (
-                _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
-            )
-            seen_repos.add(repoKey)
-            _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics)
-
-        print("'%s' Done!" % (org))
-
-    print("\n%s: Collective data gathering Part1of2 complete!" % (hostUrl))
-
-    print("%s: Adding independent repos..." % (hostUrl))
-    print("%s: Gathering data across multiple queries..." % (hostUrl))
-    failed_repos = 0
-    for repo in repolist:
-        print("\n'%s'" % (repo))
-
-        r = repo.split("/")
-        try:
-            outObj = queryMan.queryGitHubFromFile(
-                queryPathInd, {"ownName": r[0], "repoName": r[1]}
-            )
-        except Exception as error:
-            print("Warning: Could not complete '%s'" % (repo))
-            print(error)
-            failed_repos += 1
-            continue
-
-        repoKey = outObj["data"]["repository"]["nameWithOwner"]
-        old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
-        old_clang_tidy_metrics = dataCollector.data["data"].get(repoKey, {}).get("clangTidyMetrics")
-        dataCollector.data["data"][repoKey] = outObj["data"]["repository"]
-        dataCollector.data["data"][repoKey]["stargazers"] = (
-            _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
-        )
-        seen_repos.add(repoKey)
-        _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics)
-
-        print("'%s' Done!" % (repo))
-
-    print("\n%s: Collective data gathering Part2of2 complete!" % (hostUrl))
+    # queryMan = qm.GitHubQueryManager(apiToken=env.get(hostInfo["apiEnvKey"]))
+    #
+    # print("%s: Gathering data across multiple paginated queries..." % hostUrl)
+    # failed_orgs = 0
+    # for org in orglist:
+    #     print("\n'%s'" % (org))
+    #
+    #     try:
+    #         outObj = queryMan.queryGitHubFromFile(
+    #             queryPath,
+    #             {"orgName": org, "numRepos": 50, "pgCursor": None},
+    #             paginate=True,
+    #             cursorVar="pgCursor",
+    #             keysToList=["data", "organization", "repositories", "nodes"],
+    #         )
+    #     except Exception as error:
+    #         print("Warning: Could not complete '%s'" % (org))
+    #         print(error)
+    #         failed_orgs += 1
+    #         continue
+    #
+    #     for repo in outObj["data"]["organization"]["repositories"]["nodes"]:
+    #         repoKey = repo["nameWithOwner"]
+    #         old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
+    #         old_clang_tidy_metrics = dataCollector.data["data"].get(repoKey, {}).get("clangTidyMetrics")
+    #         dataCollector.data["data"][repoKey] = repo
+    #         dataCollector.data["data"][repoKey]["stargazers"] = (
+    #             _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
+    #         )
+    #         seen_repos.add(repoKey)
+    #         _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics)
+    #
+    #     print("'%s' Done!" % (org))
+    #
+    # print("\n%s: Collective data gathering Part1of2 complete!" % (hostUrl))
+    #
+    # print("%s: Adding independent repos..." % (hostUrl))
+    # print("%s: Gathering data across multiple queries..." % (hostUrl))
+    # failed_repos = 0
+    # for repo in repolist:
+    #     print("\n'%s'" % (repo))
+    #
+    #     r = repo.split("/")
+    #     try:
+    #         outObj = queryMan.queryGitHubFromFile(
+    #             queryPathInd, {"ownName": r[0], "repoName": r[1]}
+    #         )
+    #     except Exception as error:
+    #         print("Warning: Could not complete '%s'" % (repo))
+    #         print(error)
+    #         failed_repos += 1
+    #         continue
+    #
+    #     repoKey = outObj["data"]["repository"]["nameWithOwner"]
+    #     old_stargazers = dataCollector.data["data"].get(repoKey, {}).get("stargazers")
+    #     old_clang_tidy_metrics = dataCollector.data["data"].get(repoKey, {}).get("clangTidyMetrics")
+    #     dataCollector.data["data"][repoKey] = outObj["data"]["repository"]
+    #     dataCollector.data["data"][repoKey]["stargazers"] = (
+    #         _stargazers_from_metrics(repoKey) or old_stargazers or {"totalCount": 0}
+    #     )
+    #     seen_repos.add(repoKey)
+    #     _apply_cdash_data(dataCollector, repoKey, old_clang_tidy_metrics)
+    #
+    #     print("'%s' Done!" % (repo))
+    #
+    # print("\n%s: Collective data gathering Part2of2 complete!" % (hostUrl))
 
     total_attempted = len(orglist) + len(repolist)
     total_failed = failed_orgs + failed_repos
@@ -225,6 +225,7 @@ if not any_failures:
         if repo not in seen_repos:
             dataCollector.data["data"].pop(repo)
             print("Removed '%s'" % repo)
+
 
 dataCollector.fileSave(newline="\n")
 

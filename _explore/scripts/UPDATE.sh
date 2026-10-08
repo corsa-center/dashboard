@@ -88,37 +88,37 @@ runScript cleanup_inputs.py
 # emptying it, so later scripts still have something to iterate over.
 runScript --soft get_repos_info.py
 # Required before any other member scripts (output used as member list)
-runScript --soft get_internal_members.py
+#runScript --soft get_internal_members.py
 
 
 # --- EXTERNAL V INTERNAL ---
-runScript --soft get_members_extrepos.py
-runScript --soft get_repos_users.py
+#runScript --soft get_members_extrepos.py
+#runScript --soft get_repos_users.py
 
 
 # --- ADDITIONAL REPO DETAILS ---
-runScript --soft get_repos_languages.py
-runScript --soft get_repos_topics.py
+#runScript --soft get_repos_languages.py
+#runScript --soft get_repos_topics.py FIXME
 # These two hit GitHub's per-repo /stats endpoints, which can 202 (stats not
 # yet cached) for every repo at once -- a transient, not code, problem.
-runScript --soft get_repos_activitycommits.py
-runScript --soft get_repos_activitylines.py
-runScript --soft get_repos_dependencies.py
-runScript --soft get_dependency_info.py
+#runScript --soft get_repos_activitycommits.py
+#runScript --soft get_repos_activitylines.py
+#runScript --soft get_repos_dependencies.py FIXME
+#runScript --soft get_dependency_info.py FIXME
 
 
 # --- HISTORY FOR ALL TIME ---
-runScript --soft get_repos_starhistory.py
-runScript --soft get_repos_releases.py
-runScript --soft get_repos_creationhistory.py
+#runScript --soft get_repos_starhistory.py
+#runScript --soft get_repos_releases.py
+#runScript --soft get_repos_creationhistory.py
 
 # --- SPACK DEPENDENCY INFO ---
-runScript --spack get_spack_dependencies.py --input-list ../input_lists.json
+#runScript --spack get_spack_dependencies.py --input-list ../input_lists.json FIXME
 
 # RUN THIS LAST
-runScript build_yearlist.py  # Used in case of long term cumulative data
+#runScript build_yearlist.py  # Used in case of long term cumulative data
 
-runScript gather_repo_metadata.py  # Generate simplified metadata file
+#runScript gather_repo_metadata.py  # Generate simplified metadata file
 
 
 echo "UPDATE COMPLETE"

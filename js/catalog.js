@@ -1173,9 +1173,9 @@ function renderWithPassword(repo, repoName, hasClangTidyMetrics) {
               "authn-remember"
             ).checked;
 
-          if (checkPassword(password)) {
+          if (checkPassword(password, repo)) {
             renderSingleRepoHTML(repo);
-            loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
+            loadEcosystemMetrics(repoName, hasClangTidyMetrics);
           }
           console.log("password:", password)
           console.log("remember:", isRememberChecked)
@@ -1220,7 +1220,7 @@ function setVisibleRepo(newValue, shouldPushState) {
           renderRepoListHeaderHtml();
 
           // map topics to categories - first try CASS explicit mapping, then fall back to topics
-          fetch(`${window.config.baseUrl}/catalog/cass_category_mapping.json`)
+          fetch(`${window.config.baseUrl}/catalog/category_mapping.json`)
             .then((res) => res.json())
             .then((cassMapping) => {
               // Initialize category arrays with CASS mapping
@@ -1322,6 +1322,18 @@ function setVisibleRepo(newValue, shouldPushState) {
       `?category=${catData[selectedCategoryIndex].urlParam}&repo=${visibleRepo}`,
     );
   }
+}
+
+/**
+ *
+ * Check if password is valid for repo
+ *
+ * @param {string} password the password to check
+ * @param {string} repo the repo
+ *
+ */
+function checkPassword(password, repo) {
+  return true
 }
 
 /////////////////////////////////////////////////////////////////

@@ -980,6 +980,16 @@
             "login": "Adar-Dagan",
             "name": "Adar Dagan"
         },
+        "Adarsh-Me": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/122873385?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "Adarsh-Me",
+            "name": "Adarsh Mishra"
+        },
         "AdelekeBankole": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/86932837?u=ec2d0a596620f8e1c947693029eebb1cc851bda5&v=4",
             "contributedLabRepositories": {
@@ -11378,6 +11388,16 @@
             "login": "LongshengDu",
             "name": "Longsheng Du"
         },
+        "Lorcan7274": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/204036350?u=22bd39a6950f99b7591d6024a1ef60a2b9054617&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "Lorcan7274",
+            "name": "Lorcan Purcell"
+        },
         "LorienLV": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/31626586?u=3f276b954e9a1875a14b235dc3492872de64190e&v=4",
             "contributedLabRepositories": {
@@ -18821,9 +18841,7 @@
         "TokynBlast": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/134459455?u=e4bb22555573ca83906019c09c1cff7a574e2b6c&v=4",
             "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
+                "nodes": []
             },
             "login": "TokynBlast",
             "name": "\ud83c\udf59 \ud835\udc79\ud835\udc96\ud835\udc93\ud835\udc8a \ud83c\udf8b"
@@ -23143,6 +23161,16 @@
             },
             "login": "aingerson",
             "name": "Alexia Ingerson"
+        },
+        "ainozaki": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/63230966?u=f64682e764d511a7b458cdfa9e2cf26143e8ad78&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "ainozaki",
+            "name": "Ai Nozaki"
         },
         "airglow923": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/37762634?v=4",
@@ -31166,6 +31194,16 @@
             "login": "boegel",
             "name": "Kenneth Hoste"
         },
+        "boehmc": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/12933614?u=d908fe7872446ff72855128ec8f31b3ab8405833&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "petsc/petsc"
+                ]
+            },
+            "login": "boehmc",
+            "name": "Christian Boehm"
+        },
         "boga95": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/22390475?v=4",
             "contributedLabRepositories": {
@@ -35280,6 +35318,7 @@
                     "ornladios/ADIOS2",
                     "petsc/petsc",
                     "pghysels/STRUMPACK",
+                    "pmodels/mpich",
                     "sandialabs/Albany",
                     "trilinos/Trilinos",
                     "xiaoyeli/superlu_dist",
@@ -36531,7 +36570,9 @@
         "cryptoad": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/6046310?u=351a98508cff371f9ff7032005f29aab70e55c6e&v=4",
             "contributedLabRepositories": {
-                "nodes": []
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
             },
             "login": "cryptoad",
             "name": "Kostya Kortchinsky"
@@ -36980,6 +37021,16 @@
             },
             "login": "cynecx",
             "name": "cynecx"
+        },
+        "cypherzhang": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/22232328?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "cypherzhang",
+            "name": "Xu Zhang"
         },
         "cyr1l0u": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/164659715?v=4",
@@ -51807,6 +51858,16 @@
             },
             "login": "hzhou",
             "name": "Hui Zhou"
+        },
+        "hzhou-muse": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/333831751?u=50090dc8ec856356c5eb78c79913b9bbd1075166&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "pmodels/mpich"
+                ]
+            },
+            "login": "hzhou-muse",
+            "name": "hzhou-muse"
         },
         "i-ky": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/25753618?v=4",
@@ -75659,6 +75720,16 @@
             "login": "npf",
             "name": "Pierre Neyron"
         },
+        "nphtan": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/54285952?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "kokkos/kokkos"
+                ]
+            },
+            "login": "nphtan",
+            "name": "Nigel Tan"
+        },
         "npmccallum": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/288304?u=f6a49c6ad4154352e8778985ecc1a18c0fd30753&v=4",
             "contributedLabRepositories": {
@@ -89116,9 +89187,7 @@
         "simonzgx": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/22232328?v=4",
             "contributedLabRepositories": {
-                "nodes": [
-                    "llvm/llvm-project"
-                ]
+                "nodes": []
             },
             "login": "simonzgx",
             "name": "Xu Zhang"
@@ -92203,6 +92272,16 @@
             },
             "login": "sukhbinder",
             "name": "Sukhbinder Singh"
+        },
+        "sukritkalra": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/4013287?u=63810cab8b740b850a92a73e322ec82c128b60da&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "sukritkalra",
+            "name": "Sukrit Kalra"
         },
         "sullan2": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/62622802?v=4",

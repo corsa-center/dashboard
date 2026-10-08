@@ -1877,6 +1877,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
+                                    "packageName": "setuptools",
+                                    "repository": {
+                                        "nameWithOwner": "pypa/setuptools"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
                                     "packageName": "numba",
                                     "repository": {
                                         "nameWithOwner": "numba/numba"
@@ -1934,6 +1947,26 @@
                                     "packageName": "numpy",
                                     "repository": {
                                         "nameWithOwner": "numpy/numpy"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "cffi",
+                                    "repository": {
+                                        "nameWithOwner": "python-cffi/cffi"
+                                    }
+                                },
+                                {
+                                    "packageManager": "PIP",
+                                    "packageName": "numba",
+                                    "repository": {
+                                        "nameWithOwner": "numba/numba"
                                     }
                                 }
                             ]
@@ -2025,9 +2058,9 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "codecov/codecov-action",
+                                    "packageName": "rscohn2/setup-oneapi",
                                     "repository": {
-                                        "nameWithOwner": "codecov/codecov-action"
+                                        "nameWithOwner": "marcfehling/setup-oneapi"
                                     }
                                 }
                             ]
@@ -2045,9 +2078,9 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "rscohn2/setup-oneapi",
+                                    "packageName": "codecov/codecov-action",
                                     "repository": {
-                                        "nameWithOwner": "marcfehling/setup-oneapi"
+                                        "nameWithOwner": "codecov/codecov-action"
                                     }
                                 }
                             ]

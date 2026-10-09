@@ -241,7 +241,7 @@ function renderSingleRepo(queryParam) {
       if (reposObj.hasOwnProperty(queryParam)) {
         const repo = reposObj[queryParam];
         const hasClangTidyMetrics = !!repo.clangTidyMetrics;
-        fetchEcosystemMetrics(queryParam).then((metricsData) => {
+        fetchMetrics(queryParam).then((metricsData) => {
           const showRepo = () => {
             renderSingleRepoHTML(repo);
             renderEcosystemMetrics(metricsData, queryParam, hasClangTidyMetrics);
@@ -263,12 +263,12 @@ function renderSingleRepo(queryParam) {
 }
 
 /**
- * Fetch a repository's ecosystem metrics.
+ * Fetch a repository's metrics.json (metrics plus its catalog metadata).
  * @param {string} repoName repository name (owner/repo format)
  * @returns {Promise<Object|null>} parsed metrics.json, or null if unavailable
  *   (renderEcosystemMetrics then shows the structure with all placeholders)
  */
-function fetchEcosystemMetrics(repoName) {
+function fetchMetrics(repoName) {
   // Extract repository name from owner/repo format (e.g., HDFGroup/hdf5 -> hdf5)
   const repoNameOnly = repoName.split('/')[1];
   const metricsPath = `${window.config.baseUrl}/explore/github-data/${repoNameOnly}-metrics/metrics.json`;

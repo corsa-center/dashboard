@@ -7109,6 +7109,21 @@
                 "login": "shibukawa"
             }
         },
+        "shibukawa/snowball_py": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "snowball_py",
+            "nameWithOwner": "shibukawa/snowball_py",
+            "owner": {
+                "login": "shibukawa"
+            }
+        },
         "simonhaenisch/prettier-plugin-organize-imports": {
             "languages": {
                 "nodes": [

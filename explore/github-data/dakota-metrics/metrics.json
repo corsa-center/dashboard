@@ -1,6 +1,16 @@
 {
-  "package": "snl-dakota/dakota",
-  "stars": 161,
+  "package": "dakota",
+  "metadata": {
+    "schema": 1,
+    "published": false,
+    "name": "dakota",
+    "description": "The core Dakota project",
+    "repo_type": "github",
+    "repo_url": "https://github.com/snl-dakota/dakota",
+    "default_branch": "devel",
+    "primary_language": "C++"
+  },
+  "stars": 162,
   "forks": 52,
   "config_exclusions": {
     "ecosystem": [],
@@ -9,7 +19,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 161</p>\n<p><strong>GitHub Forks:</strong> 52</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 218,650</p>\n<p class=\"sub-detail\">conda 218,650 (total)</p>\n<p><strong>Citation Score:</strong> 25.8/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 162</p>\n<p><strong>GitHub Forks:</strong> 52</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 219,426</p>\n<p class=\"sub-detail\">conda 219,426 (total)</p>\n<p><strong>Citation Score:</strong> 25.8/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +29,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 69.14/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 78/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Release Frequency: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1425 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 66.23/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 58/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Release Frequency: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1430 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,11 +37,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 569 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_10_07 (0 days ago), 51/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 577 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 3 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_10_12 (0 days ago), 51/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 286 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 2 issues opened 30-365 days ago (2 still open) -- only 2 issue(s) in the window, too few to judge</p>\n<p><strong>Pull Request Flow Assessment:</strong> 78% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 2 opened, 0 closed 30-365 days ago -- only 2 issue(s) in the window, too few to judge</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 20% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 100% of 39 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 484 hours</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 286 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 1 issues opened 30-365 days ago (1 still open) -- only 1 issue(s) in the window, too few to judge</p>\n<p><strong>Pull Request Flow Assessment:</strong> 58% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 1 opened, 0 closed 30-365 days ago -- only 1 issue(s) in the window, too few to judge</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 20% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 100% of 42 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 484 hours</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -55,7 +65,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">569 commits and 51 release(s) in the last year; active in 51/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">29 contributors; top contributor 33.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2010-10-25 (15.9 yrs); GitHub repo created 2021-08-17 (5.1 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">577 commits and 51 release(s) in the last year; active in 49/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">29 contributors; top contributor 33.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2010-10-25 (16.0 yrs); GitHub repo created 2021-08-17 (5.1 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -69,7 +79,7 @@
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">vstable_2026_10_07, vstable_2026_10_06</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">vstable_2026_10_12, vstable_2026_10_11</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -81,7 +91,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 926 source files, mean 17.6 KB, 2.5% over 100 KB, depth 12 \u2717</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 230 test files for 926 source files (0.25 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 472 documentation files (0.51 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 33.3% of commits (29 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 10 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Clean up and improve docs; More cleanup; Additional cleanup of shims</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 901 source files, mean 17.4 KB, 2.4% over 100 KB, depth 12 \u2717</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 232 test files for 901 source files (0.26 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 472 documentation files (0.52 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 33.3% of commits (29 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 10 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Clean up and improve docs; Remove legacy input Data classes; More cleanup</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -92,5 +102,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-07T14:45:17Z"
+  "generated_at": "2026-10-12T14:19:19Z"
 }

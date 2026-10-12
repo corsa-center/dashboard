@@ -1,7 +1,17 @@
 {
-  "package": "xiaoyeli/superlu",
+  "package": "superlu",
+  "metadata": {
+    "schema": 1,
+    "published": false,
+    "name": "superlu",
+    "description": "Supernodal sparse direct solver.  https://portal.nersc.gov/project/sparse/superlu/",
+    "repo_type": "github",
+    "repo_url": "https://github.com/xiaoyeli/superlu",
+    "default_branch": "master",
+    "primary_language": "C"
+  },
   "stars": 337,
-  "forks": 104,
+  "forks": 105,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -9,7 +19,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 337</p>\n<p><strong>GitHub Forks:</strong> 104</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 5 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 337</p>\n<p><strong>GitHub Forks:</strong> 105</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 6 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 16</p>\n<p class=\"sub-detail\">homebrew 16 (last-month)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -19,7 +29,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 52.53/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 62/100</p>\n<p class=\"sub-detail\">Documentation Usability: 65/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 88/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 90/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 52.56/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 62/100</p>\n<p class=\"sub-detail\">Documentation Usability: 65/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 88/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 90/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -27,7 +37,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 25 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 37 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v7.0.1 (517 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 28 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 3 previously active contributors stopped (67%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 25 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 42 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v7.0.1 (522 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 28 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 2 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -43,7 +53,7 @@
     },
     "4.2.7": {
       "title": "Collaboration",
-      "data": "<p><strong>Advanced Dependency Analysis:</strong> 3 ecosystems: debian, spack, ubuntu \u2713</p>\n<p><strong>Cross-project Reference Detection:</strong> Not yet collected</p>\n<p><strong>Interoperability Assessment:</strong> Not yet collected</p>\n<p><strong>Collaboration Network Analysis:</strong> 5 dependent packages, 0 dependent repositories in registries; source-level dependents not audited</p>\n<p><strong>Standards Compliance Tracking:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/1</p>"
+      "data": "<p><strong>Advanced Dependency Analysis:</strong> 4 ecosystems: debian, homebrew, spack, ubuntu \u2713</p>\n<p><strong>Cross-project Reference Detection:</strong> Not yet collected</p>\n<p><strong>Interoperability Assessment:</strong> Not yet collected</p>\n<p><strong>Collaboration Network Analysis:</strong> 6 dependent packages, 0 dependent repositories in registries; source-level dependents not audited</p>\n<p><strong>Standards Compliance Tracking:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/1</p>"
     },
     "4.2.8": {
       "title": "Financial Sustainability",
@@ -55,7 +65,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">25 commits and 0 release(s) in the last year; active in 11/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">28 contributors; top contributor 42.4% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2015-07-24 (11.2 yrs); GitHub repo created 2016-02-04 (10.7 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">25 commits and 0 release(s) in the last year; active in 13/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">28 contributors; top contributor 42.4% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2015-07-24 (11.2 yrs); GitHub repo created 2016-02-04 (10.7 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -73,7 +83,7 @@
     },
     "4.3.4": {
       "title": "Usability",
-      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 1/4 core sections; doc/ present \u2717</p>\n<p class=\"sub-detail\">Installation</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 3 package managers: debian, spack, ubuntu \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/2</p>"
+      "data": "<p><strong>User Experience Assessment:</strong> Not yet collected</p>\n<p><strong>Documentation Completeness Analysis:</strong> README covers 1/4 core sections; doc/ present \u2717</p>\n<p class=\"sub-detail\">Installation</p>\n<p><strong>Accessibility Feature Detection:</strong> Not yet collected</p>\n<p><strong>Installation Success Tracking:</strong> Installable from 4 package managers: debian, homebrew, spack, ubuntu \u2713</p>\n<p><strong>Usage Analytics Integration:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/2</p>"
     },
     "4.3.5": {
       "title": "Accessibility",
@@ -92,5 +102,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-07T09:16:19Z"
+  "generated_at": "2026-10-12T13:12:31Z"
 }

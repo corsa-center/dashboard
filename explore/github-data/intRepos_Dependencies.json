@@ -8235,6 +8235,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/labeler",
+                                    "repository": {
+                                        "nameWithOwner": "actions/labeler"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"

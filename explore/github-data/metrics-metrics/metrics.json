@@ -19,7 +19,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>GitHub Stars:</strong> 1</p>\n<p><strong>GitHub Forks:</strong> 4</p>\n<p><strong>Citation Score:</strong> 30.5/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 1</p>\n<p><strong>GitHub Forks:</strong> 4</p>\n<p><strong>Citation Score:</strong> 10.5/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -29,7 +29,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: <a href=\"https://github.com/corsa-center/metrics/blob/main/docs/GOVERNANCE.md\">docs/GOVERNANCE.md</a></p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/corsa-center/metrics/blob/main/docs/CONTRIBUTING.md\">docs/CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 3/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Decision process, Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 49.44/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Project Popularity: 1/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 5/100</p>\n<p class=\"sub-detail\">Issue Age: 40/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 85/100</p>\n<p class=\"sub-detail\">Time To Close: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 4 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: <a href=\"https://github.com/corsa-center/metrics/blob/main/docs/GOVERNANCE.md\">docs/GOVERNANCE.md</a></p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/corsa-center/metrics/blob/main/docs/CONTRIBUTING.md\">docs/CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 3/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Decision process, Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 49.44/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Project Popularity: 1/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 5/100</p>\n<p class=\"sub-detail\">Issue Age: 40/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 85/100</p>\n<p class=\"sub-detail\">Time To Close: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 5 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -37,7 +37,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 283 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 3 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 282 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 3 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -45,7 +45,7 @@
     },
     "4.2.5": {
       "title": "Outreach",
-      "data": "<p><strong>New Contributor Tracking:</strong> 2 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> 2 new contributor(s) in the last year; too few to judge retention</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 0 one-time / 0 casual / 3 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> No newcomer-labelled issues \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 3/4 resources \u2713</p>\n<p class=\"sub-detail\">Contributing guide, Issue templates, Getting-started guide</p>\n<p><strong>Score:</strong> 3/4</p>"
+      "data": "<p><strong>New Contributor Tracking:</strong> 1 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> 1 new contributor(s) in the last year; too few to judge retention</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 0 one-time / 0 casual / 3 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> No newcomer-labelled issues \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 3/4 resources \u2713</p>\n<p class=\"sub-detail\">Contributing guide, Issue templates, Getting-started guide</p>\n<p><strong>Score:</strong> 3/4</p>"
     },
     "4.2.6": {
       "title": "Welcomeness",
@@ -65,7 +65,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">283 commits and 0 release(s) in the last year; active in 12/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">3 contributors; top contributor 86.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Growing \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2024-08-20 (2.1 yrs); GitHub repo created 2024-08-20 (2.1 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">282 commits and 0 release(s) in the last year; active in 12/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">3 contributors; top contributor 86.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Growing \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2024-08-20 (2.1 yrs); GitHub repo created 2024-08-20 (2.1 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -102,5 +102,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-12T22:00:07Z"
+  "generated_at": "2026-10-14T04:36:14Z"
 }

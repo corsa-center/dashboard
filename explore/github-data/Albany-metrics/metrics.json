@@ -9,10 +9,22 @@
     "repo_url": "https://github.com/sandialabs/Albany",
     "default_branch": "master",
     "primary_language": "C++",
-    "cdash": "https://my.cdash.org/index.php?project=Albany"
+    "cdash": "https://my.cdash.org/index.php?project=Albany",
+    "language": "C++",
+    "created_at": "2014-03-20T02:32:15Z",
+    "updated_at": "2026-10-13T16:05:47Z",
+    "pushed_at": "2026-10-14T20:58:36Z",
+    "license": {
+      "spdx_id": "NOASSERTION",
+      "name": "Other",
+      "key": "other"
+    },
+    "archived": false,
+    "disabled": false,
+    "size_kb": 993494
   },
   "stars": 333,
-  "forks": 100,
+  "forks": 99,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -20,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 333</p>\n<p><strong>GitHub Forks:</strong> 100</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>GitHub Stars:</strong> 333</p>\n<p><strong>GitHub Forks:</strong> 99</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 49.9/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -30,7 +42,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 51.69/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 61/100</p>\n<p class=\"sub-detail\">Documentation Usability: 69/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p class=\"sub-detail\">Issues Inclusivity: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> CODEOWNERS defined \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 51.65/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 61/100</p>\n<p class=\"sub-detail\">Documentation Usability: 69/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p class=\"sub-detail\">Issues Inclusivity: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> CODEOWNERS defined \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -38,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 447 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> Old_master_support_end (2365 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 66 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 9 previously active contributors stopped (33%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 447 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> Old_master_support_end (2366 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 66 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 9 previously active contributors stopped (33%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -103,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-14T01:21:50Z"
+  "generated_at": "2026-10-14T21:22:17Z"
 }

@@ -8,7 +8,19 @@
     "repo_type": "github",
     "repo_url": "https://github.com/darshan-hpc/darshan",
     "default_branch": "main",
-    "primary_language": "C"
+    "primary_language": "C",
+    "language": "C",
+    "created_at": "2021-05-12T21:21:37Z",
+    "updated_at": "2026-10-12T15:54:22Z",
+    "pushed_at": "2026-10-12T15:54:24Z",
+    "license": {
+      "spdx_id": "NOASSERTION",
+      "name": "Other",
+      "key": "other"
+    },
+    "archived": false,
+    "disabled": false,
+    "size_kb": 21770
   },
   "stars": 79,
   "forks": 43,
@@ -37,7 +49,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 87 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 3.5.0 (357 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 22 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 6 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 87 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 2 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 3.5.0 (359 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 22 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 6 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -65,7 +77,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">87 commits and 1 release(s) in the last year; active in 22/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">22 contributors; top contributor 36.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-06-17 (17.3 yrs); GitHub repo created 2021-05-12 (5.4 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">87 commits and 1 release(s) in the last year; active in 23/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">22 contributors; top contributor 36.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-06-17 (17.3 yrs); GitHub repo created 2021-05-12 (5.4 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -102,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-13T11:02:17Z"
+  "generated_at": "2026-10-15T03:52:26Z"
 }

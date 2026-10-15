@@ -4,11 +4,23 @@
     "schema": 1,
     "published": true,
     "name": "CORSA Metrics Dashboard",
-    "description": "Sustainability metrics dashboard",
+    "description": "Sustainability metrics dashboard ",
     "repo_type": "github",
     "repo_url": "https://github.com/corsa-center/dashboard",
     "default_branch": "main",
-    "primary_language": "HTML"
+    "primary_language": "HTML",
+    "language": "HTML",
+    "created_at": "2024-11-20T21:30:42Z",
+    "updated_at": "2026-10-14T07:15:59Z",
+    "pushed_at": "2026-10-14T07:15:53Z",
+    "license": {
+      "spdx_id": "MIT",
+      "name": "MIT License",
+      "key": "mit"
+    },
+    "archived": false,
+    "disabled": false,
+    "size_kb": 78257
   },
   "stars": 0,
   "forks": 7,
@@ -29,7 +41,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/corsa-center/dashboard/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 57.4/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Project Popularity: 1/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 22/100</p>\n<p class=\"sub-detail\">Documentation Usability: 81/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Time To Close: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1474 days ago \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/corsa-center/dashboard/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 57.4/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Release Frequency: 0/100</p>\n<p class=\"sub-detail\">Project Popularity: 1/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 22/100</p>\n<p class=\"sub-detail\">Documentation Usability: 81/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p class=\"sub-detail\">Time To Close: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1475 days ago \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -65,7 +77,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">985 commits and 0 release(s) in the last year; active in 51/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">34 contributors; top contributor 38.2% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2015-11-25 (10.9 yrs); GitHub repo created 2024-11-20 (1.9 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">985 commits and 0 release(s) in the last year; active in 51/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">34 contributors; top contributor 38.1% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2015-11-25 (10.9 yrs); GitHub repo created 2024-11-20 (1.9 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -91,7 +103,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 71 source files, mean 7.7 KB, 0.0% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 0 test files for 71 source files (0.00 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 15 documentation files (0.21 ratio) \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 38.2% of commits (34 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 11 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Remove dead per-repo chart calls that crashed on every catalog page load; Merge pull request #98 from brtnfld/catalog/simplify-listing-and-metrics; Remove dead code left over from the category-tab removal</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 71 source files, mean 7.7 KB, 0.0% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 0 test files for 71 source files (0.00 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 15 documentation files (0.21 ratio) \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 38.1% of commits (34 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 11 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Remove dead per-repo chart calls that crashed on every catalog page load; Merge pull request #98 from brtnfld/catalog/simplify-listing-and-metrics; Remove dead code left over from the category-tab removal</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -102,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-14T03:31:36Z"
+  "generated_at": "2026-10-14T23:33:00Z"
 }

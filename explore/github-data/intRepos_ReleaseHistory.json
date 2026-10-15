@@ -5026,6 +5026,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "stable_2026_10_14",
+                        "publishedAt": "2026-10-14T10:03:52Z",
+                        "tagName": "vstable_2026_10_14"
+                    },
+                    {
                         "name": "stable_2026_10_13",
                         "publishedAt": "2026-10-13T10:02:34Z",
                         "tagName": "vstable_2026_10_13"
@@ -5044,11 +5049,6 @@
                         "name": "stable_2026_10_09",
                         "publishedAt": "2026-10-09T11:29:58Z",
                         "tagName": "vstable_2026_10_09"
-                    },
-                    {
-                        "name": "stable_2026_10_08",
-                        "publishedAt": "2026-10-08T10:21:17Z",
-                        "tagName": "vstable_2026_10_08"
                     },
                     {
                         "name": "6.24.0",

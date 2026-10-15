@@ -8,7 +8,19 @@
     "repo_type": "github",
     "repo_url": "https://github.com/xiaoyeli/superlu",
     "default_branch": "master",
-    "primary_language": "C"
+    "primary_language": "C",
+    "language": "C",
+    "created_at": "2016-02-04T00:21:41Z",
+    "updated_at": "2026-10-07T03:29:34Z",
+    "pushed_at": "2026-08-31T04:13:04Z",
+    "license": {
+      "spdx_id": "NOASSERTION",
+      "name": "Other",
+      "key": "other"
+    },
+    "archived": false,
+    "disabled": false,
+    "size_kb": 8066
   },
   "stars": 337,
   "forks": 105,
@@ -37,7 +49,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 25 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 44 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v7.0.1 (524 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 28 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 2 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 25 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 44 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v7.0.1 (525 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 28 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 2 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 4/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -102,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-14T05:40:55Z"
+  "generated_at": "2026-10-15T01:42:15Z"
 }

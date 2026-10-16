@@ -4737,6 +4737,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "MPICH 5.1.0a1 Released",
+                        "publishedAt": "2026-10-15T15:36:14Z",
+                        "tagName": "v5.1.0a1"
+                    },
+                    {
                         "name": "MPICH 5.0.2 Released",
                         "publishedAt": "2026-09-28T17:42:19Z",
                         "tagName": "v5.0.2"

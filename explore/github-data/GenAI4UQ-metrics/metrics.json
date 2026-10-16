@@ -8,7 +8,19 @@
     "repo_type": "github",
     "repo_url": "https://github.com/patrickfan/GenAI4UQ",
     "default_branch": "main",
-    "primary_language": "Python"
+    "primary_language": "Python",
+    "language": "Python",
+    "created_at": "2024-11-26T01:27:02Z",
+    "updated_at": "2026-04-21T15:17:00Z",
+    "pushed_at": "2026-02-17T20:40:33Z",
+    "license": {
+      "spdx_id": "MIT",
+      "name": "MIT License",
+      "key": "mit"
+    },
+    "archived": false,
+    "disabled": false,
+    "size_kb": 4195
   },
   "stars": 11,
   "forks": 2,
@@ -37,7 +49,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 238 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 1 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 240 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 1 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -102,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> 1 of 1 pinned dependencies have a known vulnerability \u2717</p>\n<p class=\"sub-detail\">['scikit-learn==1.2.2 (PyPI)']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/3</p>"
     }
   },
-  "generated_at": "2026-10-14T20:06:22Z"
+  "generated_at": "2026-10-16T02:50:24Z"
 }

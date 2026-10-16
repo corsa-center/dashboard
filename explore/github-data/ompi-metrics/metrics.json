@@ -12,8 +12,8 @@
     "homepage": "https://www.open-mpi.org",
     "language": "C",
     "created_at": "2014-09-16T16:08:30Z",
-    "updated_at": "2026-10-15T00:08:06Z",
-    "pushed_at": "2026-10-14T23:35:07Z",
+    "updated_at": "2026-10-15T21:08:28Z",
+    "pushed_at": "2026-10-15T21:08:54Z",
     "license": {
       "spdx_id": "NOASSERTION",
       "name": "Other",
@@ -21,10 +21,10 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 192016
+    "size_kb": 192026
   },
-  "stars": 2665,
-  "forks": 1008,
+  "stars": 2667,
+  "forks": 1007,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -32,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 2,665</p>\n<p><strong>GitHub Forks:</strong> 1,008</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 59 dependent packages, 80 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,248,314</p>\n<p class=\"sub-detail\">conda 28,060 (total), homebrew 3,005 (last-month), pypi 27,532 (last-month), conda 469 (total), conda 552,826 (total), conda 636,422 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 2,667</p>\n<p><strong>GitHub Forks:</strong> 1,007</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 59 dependent packages, 80 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,248,386</p>\n<p class=\"sub-detail\">conda 28,060 (total), homebrew 3,077 (last-month), pypi 27,532 (last-month), conda 469 (total), conda 552,826 (total), conda 636,422 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -42,7 +42,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/open-mpi/ompi/blob/main/.github/CODE_OF_CONDUCT.md\">.github/CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/open-mpi/ompi/blob/main/docs/contributing.rst\">docs/contributing.rst</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 2/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/open-mpi/ompi\">7/10</a> (7/11 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 88.82/100 (excellent) \u2713</p>\n<p class=\"sub-detail\">Documentation Usability: 72/100</p>\n<p class=\"sub-detail\">Release Frequency: 80/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 94/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 85 days ago \u2717</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/open-mpi/ompi/blob/main/.github/CODE_OF_CONDUCT.md\">.github/CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/open-mpi/ompi/blob/main/docs/contributing.rst\">docs/contributing.rst</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 2/4 concepts documented \u2713</p>\n<p class=\"sub-detail\">Defined roles, Conflict resolution</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/open-mpi/ompi\">7/10</a> (7/11 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#security-policy\">Security-Policy</a>: 0/10 \u2014 security policy file not detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 0/10 \u2014 dependency not pinned by hash detected -- score normalized to 0</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 88.82/100 (excellent) \u2713</p>\n<p class=\"sub-detail\">Documentation Usability: 72/100</p>\n<p class=\"sub-detail\">Release Frequency: 80/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 94/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 86 days ago \u2717</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -50,11 +50,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,038 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v5.0.11 (50 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 303 (bus factor: 5)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 24 of 51 previously active contributors stopped (47%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,040 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v5.0.11 (51 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 303 (bus factor: 5)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 24 of 51 previously active contributors stopped (47%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 16 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 646 hours median to close, for 100 issues opened 30-365 days ago (32 still open) \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 213 opened, 183 closed 30-365 days ago (1.16 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 67% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 75% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 26 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 16 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 511 hours median to close, for 100 issues opened 30-365 days ago (30 still open) \u2713</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 215 opened, 183 closed 30-365 days ago (1.17 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 67% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 82% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 41 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,038 commits and 4 release(s) in the last year; active in 52/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">303 contributors; top contributor 20.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2003-11-22 (22.9 yrs); GitHub repo created 2014-09-16 (12.1 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,040 commits and 4 release(s) in the last year; active in 52/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">303 contributors; top contributor 20.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2003-11-22 (22.9 yrs); GitHub repo created 2014-09-16 (12.1 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -104,7 +104,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 2,773 source files, mean 7.8 KB, 0.3% over 100 KB, depth 6 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 273 test files for 2,773 source files (0.10 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 1,003 documentation files (0.36 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 20.7% of commits (303 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 11 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">dpm: one cleanup path, and no lists of one-proc objects; Rework opal_os_dirpath_destroy() with descriptor-relative traversal; Rework opal_os_dirpath_create() to avoid stat/chmod TOCTOU races</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 2,773 source files, mean 7.8 KB, 0.3% over 100 KB, depth 6 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 273 test files for 2,773 source files (0.10 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 1,003 documentation files (0.36 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 5 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 20.7% of commits (303 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 9 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">dpm: one cleanup path, and no lists of one-proc objects; Rework opal_os_dirpath_destroy() with descriptor-relative traversal; Rework opal_os_dirpath_create() to avoid stat/chmod TOCTOU races</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 7/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-15T04:56:17Z"
+  "generated_at": "2026-10-16T00:41:49Z"
 }

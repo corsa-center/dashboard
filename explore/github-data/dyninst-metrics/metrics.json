@@ -13,7 +13,7 @@
     "language": "C",
     "created_at": "2016-05-02T20:06:57Z",
     "updated_at": "2026-10-15T15:24:28Z",
-    "pushed_at": "2026-10-15T23:55:57Z",
+    "pushed_at": "2026-10-16T21:15:08Z",
     "license": {
       "spdx_id": "LGPL-2.1",
       "name": "GNU Lesser General Public License v2.1",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 220236
+    "size_kb": 220250
   },
   "stars": 838,
   "forks": 177,
@@ -32,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>GitHub Stars:</strong> 838</p>\n<p><strong>GitHub Forks:</strong> 177</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 13 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 50.0/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 838</p>\n<p><strong>GitHub Forks:</strong> 177</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 13 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -50,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 332 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v13.0.0 (938 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 62 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 10 previously active contributors stopped (30%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 332 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v13.0.0 (939 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 62 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 10 previously active contributors stopped (30%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -88,7 +88,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 3/6 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 97.7% of 44 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Dependency automation, Code formatter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 2/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 4/6 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 97.7% of 44 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Dependency automation, Code formatter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 2/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 8.4/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-16T02:50:24Z"
+  "generated_at": "2026-10-16T22:32:20Z"
 }

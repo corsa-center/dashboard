@@ -6487,6 +6487,16 @@
             "login": "Felle33",
             "name": "Tommaso Fellegara"
         },
+        "Ferdi265": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/4077106?u=d1208acacf4c9911929440716465f23b9702f7a6&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "Ferdi265",
+            "name": "Ferdinand Bachmann"
+        },
         "Fil-Den": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/30150049?u=3f1964a7935e4b42fe51b5c1dee390f563ddf55d&v=4",
             "contributedLabRepositories": {
@@ -15773,6 +15783,16 @@
             },
             "login": "Rayfxl",
             "name": "Xiaolei Feng"
+        },
+        "RaymondMichael": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/10959107?u=6352378a3453857f3c30d90be7f36cd183bdb41c&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "pmodels/mpich"
+                ]
+            },
+            "login": "RaymondMichael",
+            "name": "Michael A. Raymond"
         },
         "ReVe1uv": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/26534507?v=4",
@@ -64560,6 +64580,16 @@
             "login": "lexi-nadia",
             "name": null
         },
+        "lezcano": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/3291265?u=8175804d1adf7d06c998584221058f673280f1d8&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "lezcano",
+            "name": "Mario Lezcano Casado"
+        },
         "lf-": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/6652840?u=62bcfb9e4c072001ff0bd892d702d47396da93bf&v=4",
             "contributedLabRepositories": {
@@ -66759,6 +66789,16 @@
             "login": "lzto",
             "name": "Tong Zhang"
         },
+        "m-amirpour": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/114127081?u=48e14b32516301b1a025084c641f72c92887a1e9&v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "m-amirpour",
+            "name": "Muhammad Mahdi Amirpour"
+        },
         "m-fila": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/37295697?v=4",
             "contributedLabRepositories": {
@@ -68900,6 +68940,16 @@
             },
             "login": "max-ku",
             "name": "Max Kudryavtsev"
+        },
+        "max-winkler": {
+            "avatarUrl": "https://avatars.githubusercontent.com/u/39961831?v=4",
+            "contributedLabRepositories": {
+                "nodes": [
+                    "llvm/llvm-project"
+                ]
+            },
+            "login": "max-winkler",
+            "name": null
         },
         "maxaehle": {
             "avatarUrl": "https://avatars.githubusercontent.com/u/72806890?u=320403c0df3fc67b4cc6e7d7f8b369a20e3c6143&v=4",
@@ -89454,7 +89504,8 @@
             "avatarUrl": "https://avatars.githubusercontent.com/u/1364410?u=42136bb6aad7feb59480564e87b845d7136ac8b4&v=4",
             "contributedLabRepositories": {
                 "nodes": [
-                    "OpenMP-Validation-and-Verification/OpenMP_VV"
+                    "OpenMP-Validation-and-Verification/OpenMP_VV",
+                    "llvm/llvm-project"
                 ]
             },
             "login": "simoatze",

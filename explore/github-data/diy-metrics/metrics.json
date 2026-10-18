@@ -32,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 16</p>\n<p><strong>GitHub Stars:</strong> 51</p>\n<p><strong>GitHub Forks:</strong> 22</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 44.9/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 51</p>\n<p><strong>GitHub Forks:</strong> 22</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 20.4/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -50,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 43 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 99 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> 3.6.0 (952 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 20 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 7 previously active contributors stopped (57%) \u2717</p>\n<p><strong>Score:</strong> 2/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 43 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 100 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> 3.6.0 (953 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 20 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 7 previously active contributors stopped (57%) \u2717</p>\n<p><strong>Score:</strong> 2/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">43 commits and 0 release(s) in the last year; active in 14/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">20 contributors; top contributor 70.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2014-06-15 (12.3 yrs); GitHub repo created 2015-05-22 (11.4 yrs)</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">43 commits and 0 release(s) in the last year; active in 13/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">20 contributors; top contributor 70.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2014-06-15 (12.3 yrs); GitHub repo created 2015-05-22 (11.4 yrs)</p>\n<p><strong>Score:</strong> 2/5</p>"
     }
   },
   "quality": {
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-16T21:27:05Z"
+  "generated_at": "2026-10-18T03:26:05Z"
 }

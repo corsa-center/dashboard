@@ -31,7 +31,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitLab Stars:</strong> 306</p>\n<p><strong>GitLab Forks:</strong> 1,003</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 36 dependent packages, 167 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 9,116,555</p>\n<p class=\"sub-detail\">conda 9,109,743 (total), homebrew 1,993 (last-month), conda 1,658 (total), conda 3,161 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
+      "data": "<p><strong>GitLab Stars:</strong> 306</p>\n<p><strong>GitLab Forks:</strong> 1,003</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 36 dependent packages, 167 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 9,121,752</p>\n<p class=\"sub-detail\">conda 9,114,940 (total), homebrew 1,993 (last-month), conda 1,658 (total), conda 3,161 (total)</p>\n<p><strong>Citation Score:</strong> 30.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -114,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-18T04:30:04Z"
+  "generated_at": "2026-10-18T14:42:59Z"
 }

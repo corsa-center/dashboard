@@ -38,17 +38,17 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 @media (max-width: 40rem) { ul.rows > li { grid-template-columns: 1fr; gap: 0; } }
 </style></head><body><main>
 <h1>Sustainability metrics report: Trilinos</h1>
-<p class="meta">Collected 2026-10-18 03:27 UTC</p>
+<p class="meta">Collected 2026-10-18 23:58 UTC</p>
 <div class="box">
 <p><b>How to read this report.</b> Each row is one sub-metric from the CASS Sustainability Metrics Report, exactly as the dashboard shows it. <span class="pass">✓ met</span> and <span class="fail">✗ not met</span> compare the measured value with the threshold listed under it. <span class="unscored">Not scored</span> rows were reported but not judged — not yet collected, not applicable, or too little data — and are left out of the section score, which is ✓ rows out of ✓ and ✗ rows. Grey lines under a row are the evidence it was based on.</p>
 </div>
 <h2>Scores</h2>
 <p>A dimension score is the average of the percentage each of its collectors reports, not a count of the ✓ rows below. The overall score is the weighted sum of the three dimension scores.</p>
 <table><thead><tr><th>Dimension</th><th class="num">Score</th><th class="num">Weight</th><th>Averaged over</th></tr></thead><tbody>
-<tr><td>Impact</td><td class="num">57</td><td class="num">0.33</td><td>No collector returned a score</td></tr>
+<tr><td>Impact</td><td class="num">44</td><td class="num">0.33</td><td>No collector returned a score</td></tr>
 <tr><td>Ecosystem</td><td class="num">86</td><td class="num">0.34</td><td>Governance documents (4.2.1) 100; Licensing (4.2.2) 67; Active maintenance (4.2.3) 100; CHAOSS health score (4.2.1) 88; OpenSSF Best Practices badge (4.3.2) 100; Engagement (4.2.4) 86; OpenSSF Scorecard (4.2.1) 73; Outreach (4.2.5) 75; Financial sustainability (4.2.8) 75; Welcomeness (4.2.6) 100; Collaboration (4.2.7) 100; FAIR licensing (4.2.2) 67</td></tr>
 <tr><td>Quality</td><td class="num">71</td><td class="num">0.33</td><td>CI/CD (4.3.2) 67; Reproducibility (4.3.3) 33; Accessibility (4.3.5) 27; Static analysis (4.3.1) 100; Development tooling (4.3.2) 100; Deployment environments (4.3.5) 50; Usability (4.3.4) 100; Maintainability (4.3.6) 100; Reliability (4.3.1) 100; Supply chain integrity (4.3.8) 33</td></tr>
-<tr><td><b>Overall</b></td><td class="num"><b>71</b></td><td></td><td></td></tr></tbody></table>
+<tr><td><b>Overall</b></td><td class="num"><b>67</b></td><td></td><td></td></tr></tbody></table>
 <nav><h2>Sections</h2><ol>
 <li><a href="#s4-1-1">4.1.1 Software Citation and Adoption</a></li>
 <li><a href="#s4-1-2">4.1.2 Field Research Impact</a></li>
@@ -74,12 +74,12 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 <h2>Impact dimension</h2>
 <h3 id="s4-1-1">4.1.1 Software Citation and Adoption</h3>
 <ul class="rows">
-<li><span class="mark unscored">Not scored</span><div><b>Formal Citations:</b> 22</div></li>
+<li><span class="mark unscored">Not scored</span><div><b>Formal Citations:</b> 4</div></li>
 <li><span class="mark unscored">Not scored</span><div><b>GitHub Stars:</b> 1,439</div></li>
 <li><span class="mark unscored">Not scored</span><div><b>GitHub Forks:</b> 634</div></li>
 <li><span class="mark unscored">Not scored</span><div><b>Reverse-Dependency Analysis:</b> 30 dependent packages, 0 dependent repositories</div></li>
-<li><span class="mark unscored">Not scored</span><div><b>Package-Manager Downloads:</b> 330,691<div class="detail">conda 107,950 (total), conda 222,741 (total)</div></div></li>
-<li><span class="mark unscored">Not scored</span><div><b>Citation Score:</b> 57.2/100</div></li>
+<li><span class="mark unscored">Not scored</span><div><b>Package-Manager Downloads:</b> 330,720<div class="detail">conda 107,950 (total), conda 222,770 (total)</div></div></li>
+<li><span class="mark unscored">Not scored</span><div><b>Citation Score:</b> 44.0/100</div></li>
 </ul>
 <h3 id="s4-1-2">4.1.2 Field Research Impact</h3>
 <p class="muted">Not yet collected.</p>
@@ -90,7 +90,7 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 <li><span class="mark pass">✓ met</span><div><b>Governance Keyword Analysis:</b> 2/4 concepts documented<div class="detail">Defined roles, Conflict resolution</div><div class="threshold"><b>Threshold:</b> 2 — of 4 governance concept groups, minimum documented</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>OpenSSF Scorecard:</b> <a href="https://scorecard.dev/viewer/?uri=github.com/trilinos/Trilinos">7.3/10</a> (12/16 checks passed)<div class="detail"><a href="https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#token-permissions">Token-Permissions</a>: 0/10 — detected GitHub workflow tokens with excessive permissions</div><div class="detail"><a href="https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#fuzzing">Fuzzing</a>: 0/10 — project is not fuzzed</div><div class="detail"><a href="https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#vulnerabilities">Vulnerabilities</a>: 1/10 — 9 existing vulnerabilities detected</div><div class="detail"><a href="https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#cii-best-practices">CII-Best-Practices</a>: 5/10 — badge detected: Passing</div><div class="threshold"><b>Threshold:</b> min score = 7.0 — OpenSSF Scorecard score /10, minimum</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>CHAOSS Governance Metrics:</b> 87.5/100 (excellent)<div class="detail">Time To Close: 60/100</div><div class="detail">Release Frequency: 80/100</div><div class="detail">Issues Inclusivity: 80/100</div><div class="detail">Change Request Closure Ratio: 90/100</div><div class="detail">Project Popularity: 100/100</div><div class="detail">Documentation Usability: 100/100</div><div class="detail">Issue Age: 100/100</div><div class="threshold"><b>Threshold:</b> 60 — weighted CHAOSS health score /100, minimum</div></div></li>
-<li><span class="mark pass">✓ met</span><div><b>Governance Effectiveness Assessment:</b> CODEOWNERS defined; docs updated 596 days ago<div class="threshold"><b>Threshold:</b> stale days = 1095 — three years</div></div></li>
+<li><span class="mark pass">✓ met</span><div><b>Governance Effectiveness Assessment:</b> CODEOWNERS defined; docs updated 597 days ago<div class="threshold"><b>Threshold:</b> stale days = 1095 — three years</div></div></li>
 </ul>
 <h3 id="s4-2-2">4.2.2 Open-Source Licensing and FAIR Compliance<span class="score">Score 4/5</span></h3>
 <ul class="rows">
@@ -102,10 +102,10 @@ nav ol { columns: 2 16rem; padding-left: 1.25rem; margin: .5rem 0; }
 </ul>
 <h3 id="s4-2-3">4.2.3 Active Maintenance<span class="score">Score 6/6</span></h3>
 <ul class="rows">
-<li><span class="mark pass">✓ met</span><div><b>Commit Activity Pattern Analysis:</b> Active — 2,348 commits (52 weeks)<div class="detail">Last Commit: 0 days ago</div></div></li>
+<li><span class="mark pass">✓ met</span><div><b>Commit Activity Pattern Analysis:</b> Active — 2,348 commits (52 weeks)<div class="detail">Last Commit: 1 days ago</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Maintenance Mode Indicator Detection:</b> No maintenance flags</div></li>
 <li><span class="mark pass">✓ met</span><div><b>Activity Trend Monitoring:</b> Increasing<div class="threshold"><b>Threshold:</b> stable or increasing</div></div></li>
-<li><span class="mark pass">✓ met</span><div><b>Release Pattern Assessment:</b> trilinos-release-17-2-1 (47 days ago), 12/yr<div class="detail">Contributors: 211 (bus factor: 12)</div><div class="threshold"><b>Threshold:</b> 1 — releases in the last year, minimum</div></div></li>
+<li><span class="mark pass">✓ met</span><div><b>Release Pattern Assessment:</b> trilinos-release-17-2-1 (48 days ago), 12/yr<div class="detail">Contributors: 211 (bus factor: 12)</div><div class="threshold"><b>Threshold:</b> 1 — releases in the last year, minimum</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Multi-Channel Communication Activity:</b> 3 channels<div class="detail">GitHub Discussions, Wiki, GitHub Issues</div><div class="threshold"><b>Threshold:</b> min channels = 2 — distinct channels found, minimum</div><div class="threshold">min community issues = 5 — issues opened from outside the maintainer group in the last 365 days before the issue tracker counts as a channel</div></div></li>
 <li><span class="mark pass">✓ met</span><div><b>Contributor Abandonment Forecasting:</b> 27 of 65 previously active contributors stopped (42%)<div class="threshold"><b>Threshold:</b> 0.5 — departure rate, maximum</div></div></li>
 </ul>

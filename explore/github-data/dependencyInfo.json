@@ -7805,6 +7805,21 @@
                 "login": "supercharge"
             }
         },
+        "svenevs/exhale": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "exhale",
+            "nameWithOwner": "svenevs/exhale",
+            "owner": {
+                "login": "svenevs"
+            }
+        },
         "tabulator-tables/tabulator": {
             "languages": {
                 "nodes": [

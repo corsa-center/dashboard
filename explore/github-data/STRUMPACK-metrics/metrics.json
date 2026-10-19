@@ -12,8 +12,8 @@
     "homepage": "http://portal.nersc.gov/project/sparse/strumpack/",
     "language": "C++",
     "created_at": "2017-06-08T17:12:31Z",
-    "updated_at": "2026-10-12T09:52:39Z",
-    "pushed_at": "2026-10-05T22:51:05Z",
+    "updated_at": "2026-10-18T14:42:40Z",
+    "pushed_at": "2026-10-18T14:42:36Z",
     "license": {
       "spdx_id": "NOASSERTION",
       "name": "Other",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 10068
+    "size_kb": 10080
   },
   "stars": 203,
   "forks": 53,
@@ -50,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 20 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 12 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v8.1.0 (12 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 20 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 21 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v8.1.0 (12 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 20 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">20 commits and 1 release(s) in the last year; active in 10/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">20 contributors; top contributor 84.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2017-06-08 (9.4 yrs); GitHub repo created 2017-06-08 (9.4 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 2/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">21 commits and 1 release(s) in the last year; active in 11/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">20 contributors; top contributor 84.2% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2017-06-08 (9.4 yrs); GitHub repo created 2017-06-08 (9.4 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -88,7 +88,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 4/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 29.2% of 24 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 5/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 29.2% of 24 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 0/4 tools \u2717</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -104,7 +104,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 277 source files, mean 15.6 KB, 0.7% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 13 test files for 277 source files (0.05 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 25 documentation files (0.09 ratio) \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 84.3% of commits (20 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 19 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Clean up the vectorpool, no more than 4 vectors; Cleanup github test script; Refactoring</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 277 source files, mean 15.6 KB, 0.7% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 13 test files for 277 source files (0.05 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 25 documentation files (0.09 ratio) \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 84.2% of commits (20 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 19 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Clean up the vectorpool, no more than 4 vectors; Cleanup github test script; Refactoring</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-18T01:18:05Z"
+  "generated_at": "2026-10-18T21:48:59Z"
 }

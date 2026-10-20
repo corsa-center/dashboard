@@ -2496,6 +2496,19 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
+                                    "packageName": "actions/github-script",
+                                    "repository": {
+                                        "nameWithOwner": "actions/github-script"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
@@ -2535,6 +2548,19 @@
                                         "nameWithOwner": "actions/checkout"
                                     }
                                 },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/github-script",
+                                    "repository": {
+                                        "nameWithOwner": "actions/github-script"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
                                     "packageName": "actions/github-script",
@@ -12317,13 +12343,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "PIP",
-                                    "packageName": "llvm-lnt",
-                                    "repository": {
-                                        "nameWithOwner": "llvm/llvm-lnt"
-                                    }
-                                },
-                                {
-                                    "packageManager": "PIP",
                                     "packageName": "pygithub",
                                     "repository": {
                                         "nameWithOwner": "PyGithub/PyGithub"
@@ -12617,7 +12636,7 @@
                                     "packageManager": "PIP",
                                     "packageName": "snowballstemmer",
                                     "repository": {
-                                        "nameWithOwner": "snowballstem/snowball"
+                                        "nameWithOwner": "shibukawa/snowball_py"
                                     }
                                 },
                                 {
@@ -14093,26 +14112,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "actions/checkout",
-                                    "repository": {
-                                        "nameWithOwner": "actions/checkout"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "actions/github-script",
-                                    "repository": {
-                                        "nameWithOwner": "actions/github-script"
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "dependencies": {
-                            "nodes": [
-                                {
-                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/cache/restore",
                                     "repository": {
                                         "nameWithOwner": "actions/cache"
@@ -14161,9 +14160,9 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "actions/github-script",
+                                    "packageName": "docker/login-action",
                                     "repository": {
-                                        "nameWithOwner": "actions/github-script"
+                                        "nameWithOwner": "docker/login-action"
                                     }
                                 }
                             ]
@@ -14181,9 +14180,36 @@
                                 },
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "docker/login-action",
+                                    "packageName": "actions/download-artifact",
                                     "repository": {
-                                        "nameWithOwner": "docker/login-action"
+                                        "nameWithOwner": "actions/download-artifact"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/setup-python",
+                                    "repository": {
+                                        "nameWithOwner": "actions/setup-python"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/github-script",
+                                    "repository": {
+                                        "nameWithOwner": "actions/github-script"
                                     }
                                 }
                             ]
@@ -14257,6 +14283,46 @@
                                     "packageName": "actions/checkout",
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/upload-artifact",
+                                    "repository": {
+                                        "nameWithOwner": "actions/upload-artifact"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "dependencies": {
+                            "nodes": [
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/checkout",
+                                    "repository": {
+                                        "nameWithOwner": "actions/checkout"
+                                    }
+                                },
+                                {
+                                    "packageManager": "ACTIONS",
+                                    "packageName": "actions/upload-artifact",
+                                    "repository": {
+                                        "nameWithOwner": "actions/upload-artifact"
                                     }
                                 }
                             ]

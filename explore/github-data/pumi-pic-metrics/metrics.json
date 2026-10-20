@@ -12,8 +12,8 @@
     "homepage": "https://scorec.github.io/pumi-pic/",
     "language": "C++",
     "created_at": "2018-05-17T15:26:56Z",
-    "updated_at": "2026-10-15T13:39:55Z",
-    "pushed_at": "2026-10-15T13:40:20Z",
+    "updated_at": "2026-10-17T01:06:49Z",
+    "pushed_at": "2026-10-17T01:07:07Z",
     "license": {
       "spdx_id": "BSD-3-Clause",
       "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 3991
+    "size_kb": 3886
   },
   "stars": 43,
   "forks": 17,
@@ -42,7 +42,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 43.84/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 19/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Documentation Usability: 30/100</p>\n<p class=\"sub-detail\">Time To Close: 40/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 45/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 90/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> CODEOWNERS defined \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 43.29/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 19/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Documentation Usability: 30/100</p>\n<p class=\"sub-detail\">Time To Close: 40/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 40/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 90/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> CODEOWNERS defined \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -50,11 +50,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 21 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 2.1.2 (788 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 12 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 5 previously active contributors stopped (60%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 23 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 2 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 2.1.2 (791 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 12 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Wiki</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 5 previously active contributors stopped (60%) \u2717</p>\n<p><strong>Score:</strong> 3/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 22 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 5 issues opened 30-365 days ago (4 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 87% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 5 opened, 1 closed 30-365 days ago (5.00 opened per closed) \u2717</p>\n<p><strong>Engagement Quality Metrics:</strong> 4 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 53% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 83% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 9 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 14 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 5 issues opened 30-365 days ago (4 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 5 opened, 1 closed 30-365 days ago (5.00 opened per closed) \u2717</p>\n<p><strong>Engagement Quality Metrics:</strong> 3.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 57% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 80% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 7 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">21 commits and 0 release(s) in the last year; active in 8/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">12 contributors; top contributor 36.5% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2018-05-17 (8.4 yrs); GitHub repo created 2018-05-17 (8.4 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">23 commits and 0 release(s) in the last year; active in 8/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">12 contributors; top contributor 36.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2018-05-17 (8.4 yrs); GitHub repo created 2018-05-17 (8.4 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -100,11 +100,11 @@
     },
     "4.3.5": {
       "title": "Accessibility",
-      "data": "<p><strong>Portable Build System Detection:</strong> \u2713</p><p class=\"sub-detail\">CMake</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> x86-64 only \u2717</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README, install or getting-started guide \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> 1 environment: Linux \u2717</p>\n<p><strong>Score:</strong> 1/5</p>"
+      "data": "<p><strong>Portable Build System Detection:</strong> \u2713</p><p class=\"sub-detail\">CMake</p>\n<p><strong>Container Availability Assessment:</strong> \u2717</p>\n<p><strong>Architecture Compatibility Analysis:</strong> x86-64 only; GPU targets: NVIDIA GPU (CUDA) \u2713</p>\n<p><strong>Platform Documentation Evaluation:</strong> No supported platforms named in the README, install or getting-started guide \u2717</p>\n<p><strong>Deployment Environment Testing:</strong> 1 environment: Linux \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 82 source files, mean 6.9 KB, 0.0% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 47 test files for 82 source files (0.57 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 4 documentation files (0.05 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 36.5% of commits (12 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 6 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">remove unused; deprecate HostMirror; refactor github test</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 82 source files, mean 6.9 KB, 0.0% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 47 test files for 82 source files (0.57 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 4 documentation files (0.05 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 36.6% of commits (12 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 6 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">remove unused; deprecate HostMirror; refactor github test</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-16T14:45:11Z"
+  "generated_at": "2026-10-19T22:23:08Z"
 }

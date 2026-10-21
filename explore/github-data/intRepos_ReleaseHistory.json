@@ -3568,6 +3568,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "LLVM 23.1.4",
+                        "publishedAt": "2026-10-20T13:03:13Z",
+                        "tagName": "llvmorg-23.1.4"
+                    },
+                    {
                         "name": "LLVM 23.1.3",
                         "publishedAt": "2026-10-06T14:53:00Z",
                         "tagName": "llvmorg-23.1.3"
@@ -5031,6 +5036,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "stable_2026_10_20",
+                        "publishedAt": "2026-10-20T09:46:29Z",
+                        "tagName": "vstable_2026_10_20"
+                    },
+                    {
                         "name": "stable_2026_10_19",
                         "publishedAt": "2026-10-19T17:38:40Z",
                         "tagName": "vstable_2026_10_19"
@@ -5049,11 +5059,6 @@
                         "name": "stable_2026_10_12",
                         "publishedAt": "2026-10-12T10:03:50Z",
                         "tagName": "vstable_2026_10_12"
-                    },
-                    {
-                        "name": "stable_2026_10_11",
-                        "publishedAt": "2026-10-11T10:03:43Z",
-                        "tagName": "vstable_2026_10_11"
                     },
                     {
                         "name": "6.24.0",

@@ -44,7 +44,7 @@
                 "totalCount": 80
             },
             "pullRequests_Merged": {
-                "totalCount": 977
+                "totalCount": 978
             },
             "pullRequests_Open": {
                 "totalCount": 8
@@ -453,10 +453,10 @@
             },
             "homepageUrl": "",
             "issues_Closed": {
-                "totalCount": 684
+                "totalCount": 698
             },
             "issues_Open": {
-                "totalCount": 231
+                "totalCount": 232
             },
             "languages": {
                 "totalCount": 10
@@ -481,19 +481,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 127
+                "totalCount": 137
             },
             "pullRequests_Merged": {
-                "totalCount": 912
+                "totalCount": 917
             },
             "pullRequests_Open": {
-                "totalCount": 87
+                "totalCount": 88
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 388
+                "totalCount": 389
             },
             "url": "https://github.com/CHIP-SPV/chipStar"
         },
@@ -560,10 +560,10 @@
             },
             "homepageUrl": "https://www.hdfgroup.org/",
             "issues_Closed": {
-                "totalCount": 1013
+                "totalCount": 1017
             },
             "issues_Open": {
-                "totalCount": 322
+                "totalCount": 321
             },
             "languages": {
                 "totalCount": 15
@@ -591,16 +591,16 @@
                 "totalCount": 507
             },
             "pullRequests_Merged": {
-                "totalCount": 4804
+                "totalCount": 4809
             },
             "pullRequests_Open": {
-                "totalCount": 57
+                "totalCount": 53
             },
             "repositoryTopics": {
                 "totalCount": 9
             },
             "stargazers": {
-                "totalCount": 994
+                "totalCount": 993
             },
             "url": "https://github.com/HDFGroup/hdf5"
         },
@@ -831,14 +831,14 @@
             },
             "description": "OpenACC Validation and Verification Testsuite repository",
             "forks": {
-                "totalCount": 26
+                "totalCount": 27
             },
             "homepageUrl": "",
             "issues_Closed": {
                 "totalCount": 17
             },
             "issues_Open": {
-                "totalCount": 12
+                "totalCount": 13
             },
             "languages": {
                 "totalCount": 7
@@ -869,7 +869,7 @@
                 "totalCount": 79
             },
             "pullRequests_Open": {
-                "totalCount": 15
+                "totalCount": 16
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -1280,7 +1280,7 @@
                 "totalCount": 1245
             },
             "issues_Open": {
-                "totalCount": 296
+                "totalCount": 297
             },
             "languages": {
                 "totalCount": 20
@@ -1421,7 +1421,7 @@
                 "totalCount": 285
             },
             "pullRequests_Open": {
-                "totalCount": 20
+                "totalCount": 21
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -1722,7 +1722,7 @@
                 "totalCount": 644
             },
             "issues_Open": {
-                "totalCount": 146
+                "totalCount": 147
             },
             "languages": {
                 "totalCount": 10
@@ -1734,7 +1734,7 @@
                 "url": "http://choosealicense.com/licenses/lgpl-2.1/"
             },
             "mentionableUsers": {
-                "totalCount": 60
+                "totalCount": 61
             },
             "name": "dyninst",
             "nameWithOwner": "dyninst/dyninst",
@@ -1750,10 +1750,10 @@
                 "totalCount": 198
             },
             "pullRequests_Merged": {
-                "totalCount": 1435
+                "totalCount": 1436
             },
             "pullRequests_Open": {
-                "totalCount": 71
+                "totalCount": 73
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -1920,7 +1920,7 @@
                 "totalCount": 1292
             },
             "pullRequests_Open": {
-                "totalCount": 93
+                "totalCount": 95
             },
             "repositoryTopics": {
                 "totalCount": 12
@@ -2105,13 +2105,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 53
+                "totalCount": 52
             },
             "pullRequests_Merged": {
                 "totalCount": 463
             },
             "pullRequests_Open": {
-                "totalCount": 23
+                "totalCount": 26
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -2130,11 +2130,11 @@
             },
             "description": "Kokkos C++ Performance Portability Programming Ecosystem: The Programming Model - Parallel Execution and Memory Abstraction",
             "forks": {
-                "totalCount": 510
+                "totalCount": 511
             },
             "homepageUrl": "https://kokkos.org",
             "issues_Closed": {
-                "totalCount": 2989
+                "totalCount": 2990
             },
             "issues_Open": {
                 "totalCount": 394
@@ -2162,19 +2162,19 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 811
+                "totalCount": 812
             },
             "pullRequests_Merged": {
-                "totalCount": 5378
+                "totalCount": 5379
             },
             "pullRequests_Open": {
-                "totalCount": 107
+                "totalCount": 111
             },
             "repositoryTopics": {
                 "totalCount": 7
             },
             "stargazers": {
-                "totalCount": 2713
+                "totalCount": 2716
             },
             "url": "https://github.com/kokkos/kokkos"
         },
@@ -2222,10 +2222,10 @@
                 "totalCount": 236
             },
             "pullRequests_Merged": {
-                "totalCount": 2157
+                "totalCount": 2159
             },
             "pullRequests_Open": {
-                "totalCount": 37
+                "totalCount": 41
             },
             "repositoryTopics": {
                 "totalCount": 7
@@ -2407,14 +2407,14 @@
             },
             "description": "The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.",
             "forks": {
-                "totalCount": 16727
+                "totalCount": 16744
             },
             "homepageUrl": "http://llvm.org",
             "issues_Closed": {
-                "totalCount": 70621
+                "totalCount": 70662
             },
             "issues_Open": {
-                "totalCount": 30066
+                "totalCount": 30097
             },
             "languages": {
                 "totalCount": 56
@@ -2426,7 +2426,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 6523
+                "totalCount": 6527
             },
             "name": "llvm-project",
             "nameWithOwner": "llvm/llvm-project",
@@ -2439,19 +2439,19 @@
                 "name": "LLVM"
             },
             "pullRequests_Closed": {
-                "totalCount": 13153
+                "totalCount": 13187
             },
             "pullRequests_Merged": {
-                "totalCount": 107497
+                "totalCount": 107748
             },
             "pullRequests_Open": {
-                "totalCount": 10753
+                "totalCount": 10794
             },
             "repositoryTopics": {
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 41119
+                "totalCount": 41143
             },
             "url": "https://github.com/llvm/llvm-project"
         },
@@ -2481,7 +2481,7 @@
                 "url": "http://choosealicense.com/licenses/bsd-3-clause/"
             },
             "mentionableUsers": {
-                "totalCount": 220
+                "totalCount": 221
             },
             "name": "mfem",
             "nameWithOwner": "mfem/mfem",
@@ -2497,16 +2497,16 @@
                 "totalCount": 472
             },
             "pullRequests_Merged": {
-                "totalCount": 2131
+                "totalCount": 2132
             },
             "pullRequests_Open": {
-                "totalCount": 197
+                "totalCount": 196
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 2269
+                "totalCount": 2270
             },
             "url": "https://github.com/mfem/mfem"
         },
@@ -2521,13 +2521,13 @@
             },
             "homepageUrl": "https://www.open-mpi.org",
             "issues_Closed": {
-                "totalCount": 3803
+                "totalCount": 3805
             },
             "issues_Open": {
-                "totalCount": 267
+                "totalCount": 265
             },
             "languages": {
-                "totalCount": 12
+                "totalCount": 13
             },
             "licenseInfo": {
                 "name": "Other",
@@ -2536,7 +2536,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 329
+                "totalCount": 330
             },
             "name": "ompi",
             "nameWithOwner": "open-mpi/ompi",
@@ -2549,13 +2549,13 @@
                 "name": "C"
             },
             "pullRequests_Closed": {
-                "totalCount": 1171
+                "totalCount": 1174
             },
             "pullRequests_Merged": {
-                "totalCount": 9323
+                "totalCount": 9334
             },
             "pullRequests_Open": {
-                "totalCount": 112
+                "totalCount": 109
             },
             "repositoryTopics": {
                 "totalCount": 6
@@ -2829,7 +2829,7 @@
                 "totalCount": 3454
             },
             "pullRequests_Open": {
-                "totalCount": 76
+                "totalCount": 77
             },
             "repositoryTopics": {
                 "totalCount": 4
@@ -2856,7 +2856,7 @@
                 "totalCount": 9
             },
             "languages": {
-                "totalCount": 3
+                "totalCount": 4
             },
             "licenseInfo": {
                 "name": "Other",
@@ -2865,7 +2865,7 @@
                 "url": "http://choosealicense.com/licenses/other/"
             },
             "mentionableUsers": {
-                "totalCount": 36
+                "totalCount": 38
             },
             "name": "neuromancer",
             "nameWithOwner": "pnnl/neuromancer",
@@ -2881,16 +2881,16 @@
                 "totalCount": 36
             },
             "pullRequests_Merged": {
-                "totalCount": 126
+                "totalCount": 127
             },
             "pullRequests_Open": {
-                "totalCount": 8
+                "totalCount": 7
             },
             "repositoryTopics": {
                 "totalCount": 11
             },
             "stargazers": {
-                "totalCount": 1382
+                "totalCount": 1383
             },
             "url": "https://github.com/pnnl/neuromancer"
         },
@@ -3124,10 +3124,10 @@
             },
             "homepageUrl": "https://trilinos.org/",
             "issues_Closed": {
-                "totalCount": 5478
+                "totalCount": 5482
             },
             "issues_Open": {
-                "totalCount": 239
+                "totalCount": 238
             },
             "languages": {
                 "totalCount": 33
@@ -3152,13 +3152,13 @@
                 "name": "C++"
             },
             "pullRequests_Closed": {
-                "totalCount": 1247
+                "totalCount": 1248
             },
             "pullRequests_Merged": {
-                "totalCount": 8707
+                "totalCount": 8711
             },
             "pullRequests_Open": {
-                "totalCount": 83
+                "totalCount": 85
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3215,7 +3215,7 @@
                 "totalCount": 3591
             },
             "pullRequests_Open": {
-                "totalCount": 19
+                "totalCount": 22
             },
             "repositoryTopics": {
                 "totalCount": 8
@@ -3296,7 +3296,7 @@
                 "totalCount": 79
             },
             "pullRequests_Open": {
-                "totalCount": 3
+                "totalCount": 5
             },
             "repositoryTopics": {
                 "totalCount": 0
@@ -3359,7 +3359,7 @@
                 "totalCount": 0
             },
             "stargazers": {
-                "totalCount": 224
+                "totalCount": 225
             },
             "url": "https://github.com/xiaoyeli/superlu_dist"
         },

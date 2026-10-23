@@ -5041,6 +5041,11 @@
             "releases": {
                 "nodes": [
                     {
+                        "name": "stable_2026_10_22",
+                        "publishedAt": "2026-10-22T09:09:57Z",
+                        "tagName": "vstable_2026_10_22"
+                    },
+                    {
                         "name": "stable_2026_10_21",
                         "publishedAt": "2026-10-21T10:03:05Z",
                         "tagName": "vstable_2026_10_21"
@@ -5059,11 +5064,6 @@
                         "name": "stable_2026_10_14",
                         "publishedAt": "2026-10-14T10:03:52Z",
                         "tagName": "vstable_2026_10_14"
-                    },
-                    {
-                        "name": "stable_2026_10_13",
-                        "publishedAt": "2026-10-13T10:02:34Z",
-                        "tagName": "vstable_2026_10_13"
                     },
                     {
                         "name": "6.24.0",
@@ -5735,6 +5735,11 @@
         "xiaoyeli/superlu_dist": {
             "releases": {
                 "nodes": [
+                    {
+                        "name": "v9.3.1",
+                        "publishedAt": "2026-10-23T00:46:56Z",
+                        "tagName": "v9.3.1"
+                    },
                     {
                         "name": "v9.3.0",
                         "publishedAt": "2026-09-24T19:24:22Z",

@@ -462,7 +462,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 3403929
+                        "size": 3431368
                     },
                     {
                         "size": 1617844
@@ -480,7 +480,7 @@
                         "size": 228266
                     },
                     {
-                        "size": 54757
+                        "size": 54875
                     },
                     {
                         "size": 14199
@@ -528,7 +528,7 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 6167607
+                "totalSize": 6195164
             }
         },
         "CHIP-SPV/chipStar": {
@@ -550,10 +550,10 @@
                         "size": 480053
                     },
                     {
-                        "size": 253401
+                        "size": 253523
                     },
                     {
-                        "size": 210127
+                        "size": 210334
                     },
                     {
                         "size": 107815
@@ -608,7 +608,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 78022153
+                "totalSize": 78022482
             }
         },
         "CODARcode/Chimbuko": {
@@ -719,7 +719,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 49978325
+                        "size": 49992641
                     },
                     {
                         "size": 5843027
@@ -728,7 +728,7 @@
                         "size": 3426958
                     },
                     {
-                        "size": 2025922
+                        "size": 2026269
                     },
                     {
                         "size": 1447114
@@ -827,7 +827,7 @@
                     }
                 ],
                 "totalCount": 15,
-                "totalSize": 65011499
+                "totalSize": 65026162
             }
         },
         "HPCToolkit/hpctoolkit": {
@@ -1035,7 +1035,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 1142279
+                        "size": 1142312
                     },
                     {
                         "size": 1109444
@@ -1087,7 +1087,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 3436761
+                "totalSize": 3436794
             }
         },
         "OpenMP-Validation-and-Verification/OpenMP_VV": {
@@ -1386,19 +1386,19 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 1380717
+                        "size": 1479686
                     },
                     {
                         "size": 76471
                     },
                     {
-                        "size": 72490
+                        "size": 72960
                     },
                     {
                         "size": 71583
                     },
                     {
-                        "size": 33430
+                        "size": 33466
                     },
                     {
                         "size": 6709
@@ -1445,7 +1445,7 @@
                     }
                 ],
                 "totalCount": 8,
-                "totalSize": 1649398
+                "totalSize": 1748873
             }
         },
         "SCOREC/pumi-pic": {
@@ -1690,7 +1690,7 @@
                         "size": 1017990
                     },
                     {
-                        "size": 970915
+                        "size": 973475
                     },
                     {
                         "size": 602966
@@ -1708,10 +1708,10 @@
                         "size": 118385
                     },
                     {
-                        "size": 72033
+                        "size": 72034
                     },
                     {
-                        "size": 51979
+                        "size": 53019
                     },
                     {
                         "size": 20544
@@ -1864,7 +1864,7 @@
                     }
                 ],
                 "totalCount": 27,
-                "totalSize": 39728740
+                "totalSize": 39732341
             }
         },
         "Viskores/viskores": {
@@ -2232,13 +2232,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 13742016
+                        "size": 13743217
                     },
                     {
-                        "size": 6262164
+                        "size": 6271469
                     },
                     {
-                        "size": 247246
+                        "size": 252001
                     },
                     {
                         "size": 68469
@@ -2305,7 +2305,7 @@
                     }
                 ],
                 "totalCount": 10,
-                "totalSize": 20387098
+                "totalSize": 20402359
             }
         },
         "ebugger/Empirical-Roofline-Toolkit": {
@@ -2503,10 +2503,10 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12868781
+                        "size": 12872027
                     },
                     {
-                        "size": 253111
+                        "size": 253689
                     },
                     {
                         "size": 149595
@@ -2555,7 +2555,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 13435461
+                "totalSize": 13439285
             }
         },
         "hkvinge/tagtorch": {
@@ -2875,7 +2875,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 20797551
+                        "size": 20834146
                     },
                     {
                         "size": 430660
@@ -2890,7 +2890,7 @@
                         "size": 184249
                     },
                     {
-                        "size": 155619
+                        "size": 156392
                     },
                     {
                         "size": 147049
@@ -2990,17 +2990,17 @@
                     }
                 ],
                 "totalCount": 16,
-                "totalSize": 22519079
+                "totalSize": 22556447
             }
         },
         "kokkos/kokkos": {
             "languages": {
                 "edges": [
                     {
-                        "size": 11860618
+                        "size": 11872759
                     },
                     {
-                        "size": 348836
+                        "size": 348702
                     },
                     {
                         "size": 66840
@@ -3077,20 +3077,20 @@
                     }
                 ],
                 "totalCount": 11,
-                "totalSize": 12391773
+                "totalSize": 12403780
             }
         },
         "kokkos/kokkos-kernels": {
             "languages": {
                 "edges": [
                     {
-                        "size": 13514797
+                        "size": 13514653
                     },
                     {
                         "size": 379473
                     },
                     {
-                        "size": 207106
+                        "size": 207105
                     },
                     {
                         "size": 164013
@@ -3136,7 +3136,7 @@
                     }
                 ],
                 "totalCount": 7,
-                "totalSize": 14364474
+                "totalSize": 14364329
             }
         },
         "llnl/libROM": {
@@ -3428,49 +3428,49 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 776780602
+                        "size": 777577695
                     },
                     {
-                        "size": 566085959
+                        "size": 566449909
                     },
                     {
-                        "size": 225871601
+                        "size": 225920023
                     },
                     {
-                        "size": 218109443
+                        "size": 218129709
                     },
                     {
-                        "size": 32890847
+                        "size": 33052208
                     },
                     {
-                        "size": 16188527
+                        "size": 16219874
                     },
                     {
-                        "size": 14895513
+                        "size": 14928723
                     },
                     {
-                        "size": 6184826
+                        "size": 6188018
                     },
                     {
-                        "size": 5307187
+                        "size": 5302581
                     },
                     {
                         "size": 4542242
                     },
                     {
-                        "size": 4180526
+                        "size": 4180658
                     },
                     {
                         "size": 2279359
                     },
                     {
-                        "size": 1924274
+                        "size": 1926717
                     },
                     {
                         "size": 1674821
                     },
                     {
-                        "size": 1636730
+                        "size": 1640448
                     },
                     {
                         "size": 1241548
@@ -3705,16 +3705,16 @@
                         "name": "POV-Ray SDL"
                     },
                     {
+                        "color": "#F05138",
+                        "name": "Swift"
+                    },
+                    {
                         "color": null,
                         "name": "DTrace"
                     },
                     {
                         "color": null,
                         "name": "Limbo"
-                    },
-                    {
-                        "color": "#F05138",
-                        "name": "Swift"
                     },
                     {
                         "color": "#4F5D95",
@@ -3730,14 +3730,14 @@
                     }
                 ],
                 "totalCount": 56,
-                "totalSize": 1882300471
+                "totalSize": 1883761207
             }
         },
         "mfem/mfem": {
             "languages": {
                 "edges": [
                     {
-                        "size": 20370329
+                        "size": 20388401
                     },
                     {
                         "size": 313867
@@ -3803,14 +3803,14 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 21041262
+                "totalSize": 21059334
             }
         },
         "open-mpi/ompi": {
             "languages": {
                 "edges": [
                     {
-                        "size": 24413352
+                        "size": 24444069
                     },
                     {
                         "size": 1040796
@@ -3819,7 +3819,7 @@
                         "size": 971306
                     },
                     {
-                        "size": 661424
+                        "size": 661601
                     },
                     {
                         "size": 563381
@@ -3904,20 +3904,20 @@
                     }
                 ],
                 "totalCount": 13,
-                "totalSize": 28361517
+                "totalSize": 28392411
             }
         },
         "ornladios/ADIOS2": {
             "languages": {
                 "edges": [
                     {
-                        "size": 9328270
+                        "size": 9361325
                     },
                     {
                         "size": 853889
                     },
                     {
-                        "size": 822639
+                        "size": 823017
                     },
                     {
                         "size": 668496
@@ -4012,7 +4012,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 12269067
+                "totalSize": 12302500
             }
         },
         "patrickfan/GenAI4UQ": {
@@ -4036,13 +4036,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 46946977
+                        "size": 46977517
                     },
                     {
-                        "size": 3830663
+                        "size": 3838158
                     },
                     {
-                        "size": 3321605
+                        "size": 3325286
                     },
                     {
                         "size": 1929682
@@ -4054,7 +4054,7 @@
                         "size": 977885
                     },
                     {
-                        "size": 498611
+                        "size": 498486
                     },
                     {
                         "size": 251939
@@ -4218,7 +4218,7 @@
                     }
                 ],
                 "totalCount": 26,
-                "totalSize": 59549015
+                "totalSize": 59590606
             }
         },
         "pghysels/STRUMPACK": {
@@ -4305,7 +4305,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 19170642
+                        "size": 19170327
                     },
                     {
                         "size": 924009
@@ -4317,13 +4317,13 @@
                         "size": 575197
                     },
                     {
-                        "size": 497175
+                        "size": 497450
                     },
                     {
-                        "size": 312359
+                        "size": 312986
                     },
                     {
-                        "size": 312218
+                        "size": 297478
                     },
                     {
                         "size": 165646
@@ -4406,7 +4406,7 @@
                     }
                 ],
                 "totalCount": 14,
-                "totalSize": 22965675
+                "totalSize": 22951522
             }
         },
         "pnnl/neuromancer": {
@@ -4555,13 +4555,13 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 12857667
+                        "size": 12860939
                     },
                     {
-                        "size": 4148858
+                        "size": 4148960
                     },
                     {
-                        "size": 411714
+                        "size": 411794
                     },
                     {
                         "size": 388615
@@ -4684,7 +4684,7 @@
                     }
                 ],
                 "totalCount": 18,
-                "totalSize": 18248216
+                "totalSize": 18251670
             }
         },
         "spack/spack": {
@@ -4809,7 +4809,7 @@
             "languages": {
                 "edges": [
                     {
-                        "size": 179677178
+                        "size": 180625842
                     },
                     {
                         "size": 31083754
@@ -4824,10 +4824,10 @@
                         "size": 6229668
                     },
                     {
-                        "size": 5117346
+                        "size": 5143244
                     },
                     {
-                        "size": 3683964
+                        "size": 3761734
                     },
                     {
                         "size": 3108282
@@ -4836,7 +4836,7 @@
                         "size": 1464204
                     },
                     {
-                        "size": 1454998
+                        "size": 1459543
                     },
                     {
                         "size": 1357094
@@ -5019,7 +5019,7 @@
                     }
                 ],
                 "totalCount": 33,
-                "totalSize": 272972340
+                "totalSize": 274029217
             }
         },
         "visit-dav/visit": {
@@ -5038,7 +5038,7 @@
                         "size": 3010878
                     },
                     {
-                        "size": 1271356
+                        "size": 1271414
                     },
                     {
                         "size": 1123630
@@ -5183,14 +5183,14 @@
                     }
                 ],
                 "totalCount": 22,
-                "totalSize": 98939906
+                "totalSize": 98939964
             }
         },
         "xiaoyeli/superlu": {
             "languages": {
                 "edges": [
                     {
-                        "size": 3322140
+                        "size": 3323311
                     },
                     {
                         "size": 36897
@@ -5256,14 +5256,14 @@
                     }
                 ],
                 "totalCount": 9,
-                "totalSize": 3468297
+                "totalSize": 3469468
             }
         },
         "xiaoyeli/superlu_dist": {
             "languages": {
                 "edges": [
                     {
-                        "size": 9468956
+                        "size": 9478789
                     },
                     {
                         "size": 1102464
@@ -5350,7 +5350,7 @@
                     }
                 ],
                 "totalCount": 12,
-                "totalSize": 12186989
+                "totalSize": 12196822
             }
         },
         "xiaoyeli/superlu_mt": {

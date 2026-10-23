@@ -12,7 +12,7 @@
     "language": "C++",
     "created_at": "2021-08-17T16:32:56Z",
     "updated_at": "2026-10-21T15:57:03Z",
-    "pushed_at": "2026-10-21T15:56:54Z",
+    "pushed_at": "2026-10-22T09:09:56Z",
     "license": {
       "spdx_id": "NOASSERTION",
       "name": "Other",
@@ -41,7 +41,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 66.22/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 58/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Release Frequency: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1440 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 2/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/snl-dakota/.github/blob/main/CODE_OF_CONDUCT.md\">CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/snl-dakota/.github/blob/main/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Conflict resolution</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 74.22/100 (good) \u2713</p>\n<p class=\"sub-detail\">Project Popularity: 47/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 58/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 74/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Release Frequency: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1440 days ago \u2717</p>\n<p><strong>Score:</strong> 2/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -49,11 +49,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 568 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_10_21 (0 days ago), 52/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 568 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> vstable_2026_10_22 (0 days ago), 52/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 29 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Discussions</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 7 previously active contributors stopped (29%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 286 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 1 issues opened 30-365 days ago (1 still open) -- only 1 issue(s) in the window, too few to judge</p>\n<p><strong>Pull Request Flow Assessment:</strong> 58% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 1 opened, 0 closed 30-365 days ago -- only 1 issue(s) in the window, too few to judge</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 20% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 100% of 42 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 484 hours</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 286 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> Not yet collected</p>\n<p><strong>Pull Request Flow Assessment:</strong> 58% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> Not yet collected</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 20% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 100% of 42 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 484 hours</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -83,7 +83,7 @@
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> No CodeQL workflow found \u2717</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> 0 defect report(s) found by issue type or label over two years, too few to judge a trend</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> No defect-analysis tooling found beyond CodeQL \u2717</p>\n<p><strong>Enhanced Security Analysis:</strong> No CodeQL workflow found \u2717</p>\n<p><strong>CERT Guidelines Compliance:</strong> No hardening settings found in the build files or CI \u2717</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> No Codecov data found \u2717</p>\n<p><strong>Reliability Trend Analysis:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
@@ -91,7 +91,7 @@
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">vstable_2026_10_21, vstable_2026_10_20</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2717</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">vstable_2026_10_22, vstable_2026_10_21</p>\n<p><strong>Environment Management:</strong> \u2717</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Install / build guide</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -114,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-22T04:09:48Z"
+  "generated_at": "2026-10-22T14:03:15Z"
 }

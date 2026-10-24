@@ -12,7 +12,7 @@
     "homepage": "https://www.librom.net",
     "language": "C++",
     "created_at": "2016-03-31T20:20:55Z",
-    "updated_at": "2026-10-14T13:42:37Z",
+    "updated_at": "2026-10-23T04:25:14Z",
     "pushed_at": "2026-05-14T14:53:01Z",
     "license": {
       "spdx_id": "NOASSERTION",
@@ -23,7 +23,7 @@
     "disabled": false,
     "size_kb": 57178
   },
-  "stars": 239,
+  "stars": 240,
   "forks": 48,
   "config_exclusions": {
     "ecosystem": [],
@@ -32,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 4</p>\n<p><strong>GitHub Stars:</strong> 239</p>\n<p><strong>GitHub Forks:</strong> 48</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 39.2/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 4</p>\n<p><strong>GitHub Stars:</strong> 240</p>\n<p><strong>GitHub Forks:</strong> 48</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 0 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 39.2/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-23T03:10:55Z"
+  "generated_at": "2026-10-23T13:03:39Z"
 }

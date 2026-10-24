@@ -12,8 +12,8 @@
     "homepage": "https://github.com/ytopt-team/ytopt",
     "language": "C",
     "created_at": "2019-01-15T18:31:40Z",
-    "updated_at": "2026-10-22T21:59:47Z",
-    "pushed_at": "2026-10-22T21:59:42Z",
+    "updated_at": "2026-10-24T02:10:15Z",
+    "pushed_at": "2026-10-24T01:41:56Z",
     "license": {
       "spdx_id": "BSD-2-Clause",
       "name": "BSD 2-Clause \"Simplified\" License",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 517454
+    "size_kb": 517478
   },
   "stars": 55,
   "forks": 18,
@@ -50,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 129 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0 (185 days ago), 3/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 11 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 0 of 1 previously active contributors stopped (0%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 131 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0 (186 days ago), 3/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 11 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">129 commits and 3 release(s) in the last year; active in 28/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">11 contributors; top contributor 67.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-01-16 (7.8 yrs); GitHub repo created 2019-01-15 (7.8 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">131 commits and 3 release(s) in the last year; active in 29/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">11 contributors; top contributor 67.8% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-01-16 (7.8 yrs); GitHub repo created 2019-01-15 (7.8 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -104,7 +104,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 1,532 source files, mean 23.8 KB, 3.0% over 100 KB, depth 10 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 56 test files for 1,532 source files (0.04 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 69 documentation files (0.05 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 67.0% of commits (11 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 4 of 300 recent commits \u2717</p>\n<p class=\"sub-detail\">\tnew file:   ytopt-libe/hpo/cleanup.sh; Merge pull request #32 from ytopt-team/cleanup-temp; Merge pull request #37 from jlnav/refactor/deprecate_balsam1</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 1,534 source files, mean 23.8 KB, 3.0% over 100 KB, depth 10 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 56 test files for 1,534 source files (0.04 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 71 documentation files (0.05 ratio); Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 67.8% of commits (11 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 3 of 300 recent commits \u2717</p>\n<p class=\"sub-detail\">\tnew file:   ytopt-libe/hpo/cleanup.sh; Merge pull request #32 from ytopt-team/cleanup-temp; Merge pull request #37 from jlnav/refactor/deprecate_balsam1</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-22T22:52:51Z"
+  "generated_at": "2026-10-24T04:30:27Z"
 }

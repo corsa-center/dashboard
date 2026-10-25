@@ -13,7 +13,7 @@
     "language": "C",
     "created_at": "2016-05-02T20:06:57Z",
     "updated_at": "2026-10-23T00:16:08Z",
-    "pushed_at": "2026-10-24T00:09:32Z",
+    "pushed_at": "2026-10-24T09:21:46Z",
     "license": {
       "spdx_id": "LGPL-2.1",
       "name": "GNU Lesser General Public License v2.1",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 219980
+    "size_kb": 220069
   },
   "stars": 840,
   "forks": 180,
@@ -42,7 +42,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/dyninst/dyninst\">8.4/10</a> (14/17 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#branch-protection\">Branch-Protection</a>: 5/10 \u2014 branch protection is not maximal on development and all release branches</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 82.4/100 (excellent) \u2713</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 75/100</p>\n<p class=\"sub-detail\">Time To Close: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 88/100</p>\n<p class=\"sub-detail\">Project Popularity: 91/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/dyninst/dyninst\">8.4/10</a> (14/17 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 0/10 \u2014 no effort to earn an OpenSSF best practices badge detected</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#branch-protection\">Branch-Protection</a>: 5/10 \u2014 branch protection is not maximal on development and all release branches</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 78.23/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issues Inclusivity: 33/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Time To Close: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 88/100</p>\n<p class=\"sub-detail\">Project Popularity: 91/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -50,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 349 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v13.0.0 (946 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 63 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 10 previously active contributors stopped (30%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 349 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v13.0.0 (947 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 63 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 10 previously active contributors stopped (30%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Scorecard: 8.4/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-24T00:02:26Z"
+  "generated_at": "2026-10-24T20:44:08Z"
 }

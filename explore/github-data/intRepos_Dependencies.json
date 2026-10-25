@@ -2656,13 +2656,6 @@
                             "nodes": [
                                 {
                                     "packageManager": "ACTIONS",
-                                    "packageName": "actions/cache",
-                                    "repository": {
-                                        "nameWithOwner": "actions/cache"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
                                     "packageName": "actions/checkout",
                                     "repository": {
                                         "nameWithOwner": "actions/checkout"
@@ -2673,13 +2666,6 @@
                                     "packageName": "actions/upload-artifact",
                                     "repository": {
                                         "nameWithOwner": "actions/upload-artifact"
-                                    }
-                                },
-                                {
-                                    "packageManager": "ACTIONS",
-                                    "packageName": "fkirc/skip-duplicate-actions",
-                                    "repository": {
-                                        "nameWithOwner": "fkirc/skip-duplicate-actions"
                                     }
                                 }
                             ]
@@ -20758,9 +20744,7 @@
                                 {
                                     "packageManager": "PIP",
                                     "packageName": "coord",
-                                    "repository": {
-                                        "nameWithOwner": "keithschulze/coord"
-                                    }
+                                    "repository": null
                                 },
                                 {
                                     "packageManager": "PIP",

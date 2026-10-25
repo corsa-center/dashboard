@@ -13,7 +13,7 @@
     "homepage": "https://kokkos.org",
     "language": "C++",
     "created_at": "2015-04-08T21:55:55Z",
-    "updated_at": "2026-10-23T15:12:27Z",
+    "updated_at": "2026-10-24T11:45:24Z",
     "pushed_at": "2026-10-23T15:12:19Z",
     "license": {
       "spdx_id": "NOASSERTION",
@@ -24,8 +24,8 @@
     "disabled": false,
     "size_kb": 44175
   },
-  "stars": 2716,
-  "forks": 532,
+  "stars": 2717,
+  "forks": 533,
   "config_exclusions": {
     "ecosystem": [],
     "quality": []
@@ -33,7 +33,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 478</p>\n<p><strong>GitHub Stars:</strong> 2,716</p>\n<p><strong>GitHub Forks:</strong> 532</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 52 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 405,429</p>\n<p class=\"sub-detail\">conda 405,429 (total)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 478</p>\n<p><strong>GitHub Stars:</strong> 2,717</p>\n<p><strong>GitHub Forks:</strong> 533</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 52 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 406,506</p>\n<p class=\"sub-detail\">conda 406,506 (total)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -43,7 +43,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 3/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/kokkos/kokkos/blob/develop/docs/CODE_OF_CONDUCT.md\">docs/CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: <a href=\"https://github.com/kokkos/governance/blob/main/GOVERNANCE.md\">GOVERNANCE.md</a></p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/kokkos/kokkos/blob/develop/docs/CONTRIBUTING.md\">docs/CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/kokkos/kokkos\">8.7/10</a> (14/17 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#branch-protection\">Branch-Protection</a>: 4/10 \u2014 branch protection is not maximal on development and all release branches</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 5/10 \u2014 badge detected: Passing</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 81.95/100 (excellent) \u2713</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 88/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 88/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Release Frequency: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 109 days ago \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 3/3 \u2713</p>\n<p class=\"sub-detail\">Code of Conduct: <a href=\"https://github.com/kokkos/kokkos/blob/develop/docs/CODE_OF_CONDUCT.md\">docs/CODE_OF_CONDUCT.md</a></p>\n<p class=\"sub-detail\">Governance: <a href=\"https://github.com/kokkos/governance/blob/main/GOVERNANCE.md\">GOVERNANCE.md</a></p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/kokkos/kokkos/blob/develop/docs/CONTRIBUTING.md\">docs/CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/kokkos/kokkos\">8.7/10</a> (14/17 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#branch-protection\">Branch-Protection</a>: 4/10 \u2014 branch protection is not maximal on development and all release branches</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/61e84743356275f6ffca23b1b2f2cb945e19eb96/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 5/10 \u2014 badge detected: Passing</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 81.95/100 (excellent) \u2713</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 88/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 88/100</p>\n<p class=\"sub-detail\">Project Popularity: 100/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p class=\"sub-detail\">Release Frequency: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 110 days ago \u2717</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -51,11 +51,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,138 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 5.2.2 (42 days ago), 11/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 182 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues, Chat (Slack/Discord/Matrix)</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 17 of 48 previously active contributors stopped (35%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,132 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 5.2.2 (44 days ago), 11/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 182 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues, Chat (Slack/Discord/Matrix)</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 17 of 48 previously active contributors stopped (35%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 40 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 1585 hours median to close, for 100 issues opened 30-365 days ago (42 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 165 opened, 218 closed 30-365 days ago (0.76 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 63% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 77% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 119 hours</p>\n<p><strong>Score:</strong> 5/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 40 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 1585 hours median to close, for 100 issues opened 30-365 days ago (43 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 164 opened, 218 closed 30-365 days ago (0.75 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 63% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 77% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 119 hours</p>\n<p><strong>Score:</strong> 5/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -79,13 +79,13 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,138 commits and 11 release(s) in the last year; active in 52/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">182 contributors; top contributor 26.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2015-04-09 (11.5 yrs); GitHub repo created 2015-04-08 (11.5 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,132 commits and 11 release(s) in the last year; active in 52/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">182 contributors; top contributor 26.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2015-04-09 (11.5 yrs); GitHub repo created 2015-04-08 (11.5 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
     "4.3.1": {
       "title": "Reliability and Robustness",
-      "data": "<p><strong>Advanced Static Analysis:</strong> Sanitizers, clang-tidy \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/kokkos/kokkos/blob/develop/.github/workflows/codeql.yml\">CodeQL enabled</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> 2 secure-coding indicators: Warnings as errors, Sanitizers \u2713</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/kokkos/kokkos\">85.2%</a> (Codecov) \u2713</p>\n<p class=\"sub-detail\">9,706/11,395 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> 12 defect reports in the last year vs 20 the year before (stable -- change within normal variation, by label) \u2713</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Advanced Static Analysis:</strong> Sanitizers, clang-tidy \u2713</p>\n<p><strong>Enhanced Security Analysis:</strong> <a href=\"https://github.com/kokkos/kokkos/blob/develop/.github/workflows/codeql.yml\">CodeQL enabled</a> \u2713</p>\n<p><strong>CERT Guidelines Compliance:</strong> 2 secure-coding indicators: Warnings as errors, Sanitizers \u2713</p>\n<p class=\"sub-detail\">Practice indicators, not audited conformance</p>\n<p><strong>Test Coverage Excellence:</strong> <a href=\"https://codecov.io/gh/kokkos/kokkos\">85.2%</a> (Codecov) \u2713</p>\n<p class=\"sub-detail\">9,706/11,395 lines covered</p>\n<p><strong>Reliability Trend Analysis:</strong> 11 defect reports in the last year vs 19 the year before (stable -- change within normal variation, by label) \u2713</p>\n<p><strong>Score:</strong> 5/5</p>"
     },
     "4.3.2": {
       "title": "Development Practices",
@@ -116,5 +116,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> Published with release 5.2.2: kokkos-5.2.2.intoto.jsonl \u2713</p>\n<p class=\"sub-detail\">https://github.com/kokkos/kokkos/releases/download/5.2.2/kokkos-5.2.2.intoto.jsonl</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 8.7/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 2/3</p>"
     }
   },
-  "generated_at": "2026-10-23T19:43:38Z"
+  "generated_at": "2026-10-25T01:11:49Z"
 }

@@ -2865,21 +2865,6 @@
                 "login": "fitzgen"
             }
         },
-        "fkirc/skip-duplicate-actions": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3178c6",
-                        "name": "TypeScript"
-                    }
-                ]
-            },
-            "name": "skip-duplicate-actions",
-            "nameWithOwner": "fkirc/skip-duplicate-actions",
-            "owner": {
-                "login": "fkirc"
-            }
-        },
         "fortran-lang/setup-fortran": {
             "languages": {
                 "nodes": [
@@ -3951,21 +3936,6 @@
             "nameWithOwner": "keegancsmith/MCP",
             "owner": {
                 "login": "keegancsmith"
-            }
-        },
-        "keithschulze/coord": {
-            "languages": {
-                "nodes": [
-                    {
-                        "color": "#3572A5",
-                        "name": "Python"
-                    }
-                ]
-            },
-            "name": "coord",
-            "nameWithOwner": "keithschulze/coord",
-            "owner": {
-                "login": "keithschulze"
             }
         },
         "kennethreitz-archive/args": {

@@ -3,7 +3,8 @@ name: Run data update
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 2 * * *"  # Run daily at 2:00 AM UTC
+    # After metrics_data's 12:30 UTC "Generate Dashboard Data" run.
+    - cron: "30 13 * * *"
 
 permissions:
   contents: write
@@ -26,102 +27,59 @@ jobs:
 
       - run: pip install -r _explore/scripts/requirements.txt
 
-      - name: Setup Spack # Spack is not yet pip installable, so we must install via the actions
-        uses: spack/setup-spack@16b756799ede8b28951287f89bcd3fdb32ec1ca3 # v3.0.0
+      # Repository, dependency and Spack data, and each package's
+      # sustainability metrics, come from corsa-center/metrics_data: its
+      # collection runs commit metrics into data/YYYYMMDD/, and its 12:30
+      # UTC "Generate Dashboard Data" run adds intReposInfo.json,
+      # intRepos_Dependencies.json and the two Spack files beside them.
+      # metrics_data is private, so this needs a token that can read it.
+      - name: Check out metrics_data
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
-          spack_ref: v1.1.1
-          buildcache: false
-          color: false
-          spack_path: spack
+          repository: corsa-center/metrics_data
+          token: ${{ secrets.METRICS_DATA_TOKEN }}
+          path: .metrics_data
 
-      - name: Download sustainability metrics
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copy data from metrics_data
         run: |
-          # corsa-center/metrics moved from one full-portfolio run to hourly
-          # ~2-package round-robin batches (its own request volume no longer
-          # fits the fetches' rate-limit budget otherwise -- see its
-          # collect-and-sync.yml). Pulling only the single latest run here
-          # worked when "latest" meant "the whole catalog"; now it means
-          # "whichever ~2 packages happened to run last," so this job's own
-          # once-daily schedule would only ever refresh ~2 of ~71 packages
-          # and leave the rest stale indefinitely. Pull the last 48 runs
-          # instead (roughly 2 days at the source's hourly cadence -- a full
-          # round-robin cycle takes ~36 hours, so this comfortably covers one
-          # full cycle even if a sync day is missed) and apply them oldest
-          # to newest, so a package touched by more than one run in the
-          # window ends up with its most recent data, and each package keeps
-          # the generated_at of the specific run that actually produced it.
-          #
-          # Don't rely on the API returning newest runs first: on 2026-09-24
-          # `gh run list --status success --limit 48` returned the *oldest*
-          # 48 successful runs (June through 09-17), and applying them rolled
-          # every package back a week. Bound the query by creation date and
-          # pick the newest 48 ourselves.
-          SINCE=$(date -u -d '3 days ago' +%Y-%m-%d)
-          RUN_IDS=$(gh run list \
-            --repo corsa-center/metrics \
-            --workflow collect-and-sync.yml \
-            --status success \
-            --created ">=$SINCE" \
-            --limit 200 \
-            --json databaseId,createdAt \
-            --jq 'sort_by(.createdAt) | .[-48:] | .[].databaseId')
+          SRC=.metrics_data/data
 
-          if [ -z "$RUN_IDS" ]; then
-            echo "::warning::No successful metrics runs found in corsa-center/metrics — skipping"
-            exit 0
+          # The newest day the generator has run for.
+          LATEST=$(ls -d "$SRC"/[0-9]*/intReposInfo.json 2>/dev/null | sort | tail -1 | xargs -r dirname)
+          if [ -z "$LATEST" ]; then
+            echo "::error::No generated dashboard data in corsa-center/metrics_data"
+            exit 1
           fi
+          LATEST_DAY=$(basename "$LATEST")
+          if [[ "$LATEST_DAY" < "$(date -u -d '2 days ago' +%Y%m%d)" ]]; then
+            echo "::warning::Newest generated dashboard data is from $LATEST_DAY"
+          fi
+          for f in intReposInfo.json intRepos_Dependencies.json spackPackageDependencies.json spackPackageDependents.json; do
+            cp "$LATEST/$f" "explore/github-data/$f"
+          done
+          echo "Repository data from $LATEST_DAY"
 
-          for RUN_ID in $RUN_IDS; do
-            GENERATED_AT=$(gh run view "$RUN_ID" --repo corsa-center/metrics --json createdAt --jq .createdAt)
-            STAGING=$(mktemp -d)
-            echo "Downloading sustainability-metrics artifact from run $RUN_ID (generated $GENERATED_AT)"
-            if ! gh run download "$RUN_ID" \
-              --repo corsa-center/metrics \
-              --name sustainability-metrics \
-              --dir "$STAGING" 2>/tmp/download-err; then
-              # A dry-run dispatch (used for validation, e.g. today's fixes)
-              # uploads no artifact at all -- that's not a failure worth
-              # stopping the rest of the window over, just nothing to apply.
-              echo "::notice::No artifact for run $RUN_ID ($(cat /tmp/download-err | tail -1)), skipping"
-              rm -rf "$STAGING"
-              continue
-            fi
-
-            # Only replace the packages this artifact actually contains. It
-            # can cover a subset of all tracked packages -- e.g. a manual
-            # debug run scoped with --software or --group, or
-            # collect-and-sync.yml's own job timeout cutting a run short --
-            # so a blanket delete-then-replace here would silently wipe
-            # good, already-published data for every other package.
-            echo "Packages updated by run $RUN_ID:"
-            shopt -s nullglob
-            for pkg_dir in "$STAGING"/*-metrics/; do
+          # Collection runs in batches, so one day's directory can be
+          # partial: give each package its newest metrics from the last
+          # week, applying days oldest first.
+          CUTOFF=$(date -u -d '7 days ago' +%Y%m%d)
+          shopt -s nullglob
+          for day_dir in $(ls -d "$SRC"/[0-9]*/ | sort); do
+            day=$(basename "$day_dir")
+            [[ "$day" < "$CUTOFF" ]] && continue
+            for pkg_dir in "$day_dir"*-metrics/; do
               pkg_name=$(basename "$pkg_dir")
-              # Never replace published data with older data, whatever
-              # order the runs above came back in.
-              existing="explore/github-data/$pkg_name/metrics.json"
-              if [ -f "$existing" ]; then
-                existing_at=$(jq -r '.generated_at // empty' "$existing")
-                if [[ -n "$existing_at" && "$GENERATED_AT" < "$existing_at" ]]; then
-                  echo "  $pkg_name (skipped: published data from $existing_at is newer)"
-                  continue
-                fi
-              fi
-              # Stamp with the source run's own creation time rather than
-              # "now" -- that's when this specific package's data was
-              # actually produced, which is what the dashboard's "last
-              # updated" display should reflect.
-              jq -a --arg t "$GENERATED_AT" '.generated_at = $t' \
-                "$pkg_dir/metrics.json" > "$pkg_dir/metrics.json.tmp" \
-                && mv "$pkg_dir/metrics.json.tmp" "$pkg_dir/metrics.json"
               rm -rf "explore/github-data/$pkg_name"
               cp -r "$pkg_dir" "explore/github-data/$pkg_name"
-              echo "  $pkg_name"
+              # Collected before the collector wrote generated_at itself.
+              jq -a --arg t "${day:0:4}-${day:4:2}-${day:6:2}T00:00:00Z" '.generated_at //= $t' \
+                "explore/github-data/$pkg_name/metrics.json" > metrics.json.tmp \
+                && mv metrics.json.tmp "explore/github-data/$pkg_name/metrics.json"
             done
-            rm -rf "$STAGING"
           done
+
+          # Keep the checkout out of the commit below.
+          rm -rf .metrics_data
 
       - name: Run update script
         run:

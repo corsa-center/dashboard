@@ -33,7 +33,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 225</p>\n<p><strong>GitHub Forks:</strong> 85</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 16 dependent packages, 8 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,722,754</p>\n<p class=\"sub-detail\">conda 1,722,754 (total)</p>\n<p><strong>Citation Score:</strong> 29.0/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 225</p>\n<p><strong>GitHub Forks:</strong> 85</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 16 dependent packages, 8 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 1,723,763</p>\n<p class=\"sub-detail\">conda 1,723,763 (total)</p>\n<p><strong>Citation Score:</strong> 29.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -116,5 +116,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-25T02:17:39Z"
+  "generated_at": "2026-10-25T12:07:09Z"
 }

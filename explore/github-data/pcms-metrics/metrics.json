@@ -12,8 +12,8 @@
     "homepage": "https://scorec.github.io/pcms/",
     "language": "C++",
     "created_at": "2019-02-26T17:17:48Z",
-    "updated_at": "2026-10-23T06:58:34Z",
-    "pushed_at": "2026-10-23T06:58:28Z",
+    "updated_at": "2026-10-25T03:42:52Z",
+    "pushed_at": "2026-10-25T03:42:47Z",
     "license": {
       "spdx_id": "BSD-3-Clause",
       "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 37314
+    "size_kb": 37316
   },
   "stars": 10,
   "forks": 18,
@@ -32,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 2</p>\n<p><strong>GitHub Stars:</strong> 10</p>\n<p><strong>GitHub Forks:</strong> 18</p>\n<p><strong>Citation Score:</strong> 28.7/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 10</p>\n<p><strong>GitHub Forks:</strong> 18</p>\n<p><strong>Citation Score:</strong> 19.1/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -42,7 +42,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 43.7/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 7/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 40/100</p>\n<p class=\"sub-detail\">Documentation Usability: 50/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 50/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 78/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 42.03/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 7/100</p>\n<p class=\"sub-detail\">Release Frequency: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 33/100</p>\n<p class=\"sub-detail\">Issue Age: 40/100</p>\n<p class=\"sub-detail\">Documentation Usability: 50/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 78/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -50,11 +50,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 633 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v0.3.0 (234 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 14 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 8 previously active contributors stopped (12%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 634 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v0.3.0 (235 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 14 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 1 channel \u2717</p>\n<p class=\"sub-detail\">GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 8 previously active contributors stopped (25%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 68 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 3978 hours median to close, for 71 issues opened 30-365 days ago (31 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 87% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 71 opened, 47 closed 30-365 days ago (1.51 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 50% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 35% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 142 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 68 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 3978 hours median to close, for 71 issues opened 30-365 days ago (31 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 87% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 71 opened, 47 closed 30-365 days ago (1.51 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 1 comments per issue (median) \u2717</p>\n<p><strong>Communication Pattern Analysis:</strong> 50% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 33% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 84 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">633 commits and 1 release(s) in the last year; active in 48/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">14 contributors; top contributor 31.8% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-03-25 (7.6 yrs); GitHub repo created 2019-02-26 (7.7 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">634 commits and 1 release(s) in the last year; active in 47/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">14 contributors; top contributor 31.9% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2019-03-25 (7.6 yrs); GitHub repo created 2019-02-26 (7.7 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -88,7 +88,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 3/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, pytest, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 69.2% of 39 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 2/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 3/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, pytest, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 66.7% of 39 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -104,7 +104,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 198 source files, mean 5.2 KB, 0.5% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 70 test files for 198 source files (0.35 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 14 documentation files (0.07 ratio); Doxygen, Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 31.8% of commits (14 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 12 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">use flag to specify if cleanup happens; Fix clang-tidy findings in coordinate transformation tests and example; simplification of out of bounds point handling</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 198 source files, mean 5.2 KB, 0.5% over 100 KB, depth 5 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 70 test files for 198 source files (0.35 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 14 documentation files (0.07 ratio); Doxygen, Sphinx \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 31.9% of commits (14 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 12 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">use flag to specify if cleanup happens; Fix clang-tidy findings in coordinate transformation tests and example; simplification of out of bounds point handling</p>\n<p><strong>Score:</strong> 5/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-24T20:44:08Z"
+  "generated_at": "2026-10-26T02:13:01Z"
 }

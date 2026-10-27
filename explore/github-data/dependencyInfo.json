@@ -213,6 +213,22 @@
                 "login": "DefinitelyTyped"
             }
         },
+        "DevTable/aniso8601-fake": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "aniso8601-fake",
+            "nameWithOwner": "DevTable/aniso8601-fake",
+            "owner": {
+                "isVerified": false,
+                "login": "DevTable"
+            }
+        },
         "DoozyX/clang-format-lint-action": {
             "languages": {
                 "nodes": [
@@ -1265,6 +1281,21 @@
             },
             "name": "darker",
             "nameWithOwner": "akaihola/darker",
+            "owner": {
+                "login": "akaihola"
+            }
+        },
+        "akaihola/typing": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "typing",
+            "nameWithOwner": "akaihola/typing",
             "owner": {
                 "login": "akaihola"
             }
@@ -2863,6 +2894,22 @@
             "nameWithOwner": "fitzgen/bumpalo",
             "owner": {
                 "login": "fitzgen"
+            }
+        },
+        "flask-restful/flask-restful": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "flask-restful",
+            "nameWithOwner": "flask-restful/flask-restful",
+            "owner": {
+                "isVerified": false,
+                "login": "flask-restful"
             }
         },
         "fortran-lang/setup-fortran": {
@@ -5285,6 +5332,54 @@
                 "login": "palantir"
             }
         },
+        "pallets-eco/blinker": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "blinker",
+            "nameWithOwner": "pallets-eco/blinker",
+            "owner": {
+                "isVerified": true,
+                "login": "pallets-eco"
+            }
+        },
+        "pallets-eco/flask-wtf": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "flask-wtf",
+            "nameWithOwner": "pallets-eco/flask-wtf",
+            "owner": {
+                "isVerified": true,
+                "login": "pallets-eco"
+            }
+        },
+        "pallets-eco/wtforms": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "wtforms",
+            "nameWithOwner": "pallets-eco/wtforms",
+            "owner": {
+                "isVerified": true,
+                "login": "pallets-eco"
+            }
+        },
         "pallets/click": {
             "languages": {
                 "nodes": [
@@ -5317,6 +5412,22 @@
                 "login": "pallets"
             }
         },
+        "pallets/itsdangerous": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "itsdangerous",
+            "nameWithOwner": "pallets/itsdangerous",
+            "owner": {
+                "isVerified": true,
+                "login": "pallets"
+            }
+        },
         "pallets/jinja": {
             "languages": {
                 "nodes": [
@@ -5344,6 +5455,22 @@
             },
             "name": "markupsafe",
             "nameWithOwner": "pallets/markupsafe",
+            "owner": {
+                "isVerified": true,
+                "login": "pallets"
+            }
+        },
+        "pallets/werkzeug": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "werkzeug",
+            "nameWithOwner": "pallets/werkzeug",
             "owner": {
                 "isVerified": true,
                 "login": "pallets"
@@ -7682,6 +7809,22 @@
                 "login": "sqlalchemy"
             }
         },
+        "sqlalchemy/sqlalchemy": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#3572A5",
+                        "name": "Python"
+                    }
+                ]
+            },
+            "name": "sqlalchemy",
+            "nameWithOwner": "sqlalchemy/sqlalchemy",
+            "owner": {
+                "isVerified": true,
+                "login": "sqlalchemy"
+            }
+        },
         "srggrs/assign-one-project-github-action": {
             "languages": {
                 "nodes": [
@@ -7727,6 +7870,21 @@
             "owner": {
                 "isVerified": true,
                 "login": "step-security"
+            }
+        },
+        "stub42/pytz": {
+            "languages": {
+                "nodes": [
+                    {
+                        "color": "#555555",
+                        "name": "C"
+                    }
+                ]
+            },
+            "name": "pytz",
+            "nameWithOwner": "stub42/pytz",
+            "owner": {
+                "login": "stub42"
             }
         },
         "styfle/cancel-workflow-action": {

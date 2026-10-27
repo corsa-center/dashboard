@@ -11,8 +11,8 @@
     "primary_language": "C++",
     "homepage": "https://gitlab.kitware.com/paraview/paraview",
     "created_at": "2015-02-27T10:46:15.123-05:00",
-    "updated_at": "2026-10-25T00:01:56.842-04:00",
-    "pushed_at": "2026-10-25T00:01:56.842-04:00",
+    "updated_at": "2026-10-26T13:55:15.609-04:00",
+    "pushed_at": "2026-10-26T13:55:15.609-04:00",
     "license": {
       "spdx_id": null,
       "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -41,7 +41,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://gitlab.kitware.com/paraview/paraview/-/blob/HEAD/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 71.16/100 (good) \u2713</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 53/100</p>\n<p class=\"sub-detail\">Project Popularity: 72/100</p>\n<p class=\"sub-detail\">Release Frequency: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 87/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 566 days ago \u2717</p>\n<p><strong>Score:</strong> 1/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://gitlab.kitware.com/paraview/paraview/-/blob/HEAD/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 71.09/100 (good) \u2713</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 53/100</p>\n<p class=\"sub-detail\">Project Popularity: 72/100</p>\n<p class=\"sub-detail\">Release Frequency: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 85/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 86/100</p>\n<p class=\"sub-detail\">Issue Age: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 567 days ago \u2717</p>\n<p><strong>Score:</strong> 1/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -49,11 +49,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,000 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v6.2.0 (26 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 58 (bus factor: 4)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitLab Issues, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,000 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v6.2.0 (27 days ago), 4/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 58 (bus factor: 4)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitLab Issues, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 5/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> no response to any of 30 sampled issue(s) \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 100 issues opened 30-365 days ago (62 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 92% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 272 opened, 517 closed 30-365 days ago (0.53 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 0% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 100% of 43 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 115 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> no response to any of 30 sampled issue(s) \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 100 issues opened 30-365 days ago (63 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 83% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 273 opened, 512 closed 30-365 days ago (0.53 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 0% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 100% of 42 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 115 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -77,7 +77,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,000 commits and 4 release(s) in the last year; active in 28/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 4 \u2713</p>\n<p class=\"sub-detail\">58 contributors; top contributor 24.7% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2026-10-25 (0.0 yrs); GitHub repo created 2015-02-27 (11.7 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,000 commits and 4 release(s) in the last year; active in 28/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 4 \u2713</p>\n<p class=\"sub-detail\">58 contributors; top contributor 24.8% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Stable \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2026-10-26 (0.0 yrs); GitHub repo created 2015-02-27 (11.7 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -87,7 +87,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 0.0% of 26 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 1/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 2/3 met</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 0.0% of 25 merged PRs reviewed \u2717</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 1/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 2/3 met</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -103,7 +103,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 4,288 source files, mean 0.0 KB, 0.0% over 100 KB, depth 11 \u2717</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 422 test files for 4,288 source files (0.10 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 157 documentation files (0.04 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 4 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 24.7% of commits (58 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 25 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Merge topic 'location-plugin-iface-simplify'; Simplify getting the MPI communicator in the DPvtk reader; Fix the copyright and remove unused test dependencies</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 4,288 source files, mean 0.0 KB, 0.0% over 100 KB, depth 11 \u2717</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 422 test files for 4,288 source files (0.10 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 158 documentation files (0.04 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 4 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 24.8% of commits (58 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 24 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Merge topic 'location-plugin-iface-simplify'; Simplify getting the MPI communicator in the DPvtk reader; Fix the copyright and remove unused test dependencies</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -114,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-25T21:54:36Z"
+  "generated_at": "2026-10-27T03:21:02Z"
 }

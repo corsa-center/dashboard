@@ -11,7 +11,7 @@
     "primary_language": "C",
     "language": "C",
     "created_at": "2021-05-12T21:21:37Z",
-    "updated_at": "2026-10-23T08:30:47Z",
+    "updated_at": "2026-10-26T16:48:28Z",
     "pushed_at": "2026-10-12T15:54:24Z",
     "license": {
       "spdx_id": "NOASSERTION",
@@ -22,7 +22,7 @@
     "disabled": false,
     "size_kb": 21770
   },
-  "stars": 80,
+  "stars": 81,
   "forks": 42,
   "config_exclusions": {
     "ecosystem": [],
@@ -31,7 +31,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>GitHub Stars:</strong> 80</p>\n<p><strong>GitHub Forks:</strong> 42</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 4 dependent packages, 2 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 503</p>\n<p class=\"sub-detail\">pypi 503 (last-month)</p>\n<p><strong>Citation Score:</strong> 24.4/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 81</p>\n<p><strong>GitHub Forks:</strong> 42</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 4 dependent packages, 2 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 503</p>\n<p class=\"sub-detail\">pypi 503 (last-month)</p>\n<p><strong>Citation Score:</strong> 24.4/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -41,7 +41,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 58.06/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 36/100</p>\n<p class=\"sub-detail\">Documentation Usability: 53/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 82/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 0/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: Not found</p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 58.12/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Project Popularity: 37/100</p>\n<p class=\"sub-detail\">Documentation Usability: 53/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 82/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p class=\"sub-detail\">Time To Close: Not collected</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -49,7 +49,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 83 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 13 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 3.5.0 (370 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 22 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 7 previously active contributors stopped (43%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 82 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 14 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 3.5.0 (371 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 22 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 3 of 7 previously active contributors stopped (43%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -77,7 +77,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">83 commits and 0 release(s) in the last year; active in 20/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">22 contributors; top contributor 36.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-06-17 (17.4 yrs); GitHub repo created 2021-05-12 (5.5 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">82 commits and 0 release(s) in the last year; active in 20/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 2 \u2717</p>\n<p class=\"sub-detail\">22 contributors; top contributor 36.6% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2009-06-17 (17.4 yrs); GitHub repo created 2021-05-12 (5.5 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -114,5 +114,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-25T23:01:01Z"
+  "generated_at": "2026-10-27T05:30:52Z"
 }

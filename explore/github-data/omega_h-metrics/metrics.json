@@ -12,8 +12,8 @@
     "homepage": "https://scorec.github.io/omega_h/",
     "language": "C++",
     "created_at": "2018-09-13T19:54:04Z",
-    "updated_at": "2026-10-21T16:09:34Z",
-    "pushed_at": "2026-10-21T16:09:26Z",
+    "updated_at": "2026-10-26T19:38:34Z",
+    "pushed_at": "2026-10-26T19:38:27Z",
     "license": {
       "spdx_id": "NOASSERTION",
       "name": "Other",
@@ -21,7 +21,7 @@
     },
     "archived": false,
     "disabled": false,
-    "size_kb": 13734
+    "size_kb": 13772
   },
   "stars": 3,
   "forks": 13,
@@ -50,15 +50,15 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 144 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 4 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> scorec-v11.2.0 (93 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 33 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 8 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 151 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> scorec-v11.2.0 (94 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 34 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 8 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 25 issues opened 30-365 days ago (15 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 25 opened, 13 closed 30-365 days ago (1.92 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 77% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 77% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 73 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 25 issues opened 30-365 days ago (14 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 25 opened, 13 closed 30-365 days ago (1.92 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 77% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 77% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 94 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
-      "data": "<p><strong>New Contributor Tracking:</strong> 0 in last 1 year \u2717</p>\n<p><strong>Contributor Retention Analysis:</strong> No new contributors to measure</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 8 one-time / 10 casual / 15 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> 4 open, 3 closed \u2713</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 2/4 resources \u2717</p>\n<p class=\"sub-detail\">Contributing guide, Getting-started guide</p>\n<p><strong>Score:</strong> 2/4</p>"
+      "data": "<p><strong>New Contributor Tracking:</strong> 1 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> 1 new contributor(s) in the last year; too few to judge retention</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 9 one-time / 10 casual / 15 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> 4 open, 3 closed \u2713</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 2/4 resources \u2717</p>\n<p class=\"sub-detail\">Contributing guide, Getting-started guide</p>\n<p><strong>Score:</strong> 3/4</p>"
     },
     "4.2.6": {
       "title": "Welcomeness",
@@ -78,7 +78,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">144 commits and 5 release(s) in the last year; active in 35/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">33 contributors; top contributor 75.5% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-05-12 (10.5 yrs); GitHub repo created 2018-09-13 (8.1 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">151 commits and 5 release(s) in the last year; active in 33/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">34 contributors; top contributor 75.4% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-05-12 (10.5 yrs); GitHub repo created 2018-09-13 (8.1 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -88,7 +88,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">pytest, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 89.1% of 46 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 1/4 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">pytest, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 91.3% of 46 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 2/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 0/3 met</p>\n<p class=\"sub-detail\">Security criteria: 0/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 4/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -104,7 +104,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 366 source files, mean 6.0 KB, 0.3% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 42 test files for 366 source files (0.11 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 8 documentation files (0.02 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 75.5% of commits (33 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 9 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">remove unused; simplify build; Refactor read_node_file and read_ele_file functions to use HostWrite types instead of std::vector</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 366 source files, mean 6.0 KB, 0.3% over 100 KB, depth 4 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 42 test files for 366 source files (0.11 ratio) \u2717</p>\n<p><strong>Documentation Quality Evaluation:</strong> 8 documentation files (0.02 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">Top contributor: 75.4% of commits (34 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 9 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">remove unused; simplify build; Refactor read_node_file and read_ele_file functions to use HostWrite types instead of std::vector</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-25T23:01:01Z"
+  "generated_at": "2026-10-27T05:30:52Z"
 }

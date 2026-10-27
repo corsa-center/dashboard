@@ -33,7 +33,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 234</p>\n<p><strong>GitHub Stars:</strong> 329</p>\n<p><strong>GitHub Forks:</strong> 160</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 24 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 6,464,601</p>\n<p class=\"sub-detail\">conda 4,409,904 (total), conda 2,049,848 (total), pypi 4,849 (last-month)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 248</p>\n<p><strong>GitHub Stars:</strong> 329</p>\n<p><strong>GitHub Forks:</strong> 160</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 24 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 6,466,062</p>\n<p class=\"sub-detail\">conda 4,411,365 (total), conda 2,049,848 (total), pypi 4,849 (last-month)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -116,5 +116,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 7.9/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-26T02:13:01Z"
+  "generated_at": "2026-10-26T12:02:28Z"
 }

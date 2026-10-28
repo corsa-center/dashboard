@@ -30,7 +30,11 @@ for repo in repolist:
     r = repo.split("/")
 
     print("Part 1)  Get creation date...")
-    repoData = {"createdAt": inputLists.data["data"][repo]["createdAt"]}
+    repoData = {"createdAt": inputLists.data["data"][repo].get("createdAt")}
+    if not repoData["createdAt"]:
+        # The collector couldn't reach the repository; try again next run.
+        print("Warning: no creation date for '%s'" % (repo))
+        continue
 
     print("Part 2)  Get pre-GitHub commit timestamps...")
 

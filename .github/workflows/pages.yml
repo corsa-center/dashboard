@@ -3,15 +3,16 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+# Builds the site with fresh data and deploys it to GitHub Pages. The data
+# isn't committed to this repository: each run takes the repository,
+# dependency, Spack and per-package metrics data from corsa-center/metrics_data,
+# runs _explore/scripts/UPDATE.sh for the rest, and deploys the result.
 name: Deploy site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
-  #push:
-  #  branches: ["main"]
-  #  paths-ignore:
-  #    - '.github/**'
+  schedule:
+    # After metrics_data's 12:30 UTC "Generate Dashboard Data" run.
+    - cron: "30 13 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -40,6 +41,92 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
         with:
           submodules: false
+
+      # The update scripts keep a repository's previous entry when its query
+      # fails, so start from the last successful run's data. Restored beside
+      # the checkout rather than into it, so a cached copy never overwrites a
+      # file that is committed.
+      - name: Restore previous data
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
+        with:
+          path: .previous-data
+          key: github-data-${{ github.run_id }}
+          restore-keys: github-data-
+
+      - name: Seed data from the previous run
+        run: |
+          if [ -d .previous-data ]; then
+            cp -rn .previous-data/. explore/github-data/
+          fi
+
+      # metrics_data's collection runs commit metrics into data/YYYYMMDD/, and
+      # its 12:30 UTC "Generate Dashboard Data" run adds intReposInfo.json,
+      # intRepos_Dependencies.json and the two Spack files beside them.
+      # metrics_data is private, so this needs a token that can read it.
+      - name: Check out metrics_data
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          repository: corsa-center/metrics_data
+          token: ${{ secrets.METRICS_DATA_TOKEN }}
+          path: .metrics_data
+
+      - name: Copy data from metrics_data
+        run: |
+          SRC=.metrics_data/data
+
+          # The newest day the generator has run for.
+          LATEST=$(ls -d "$SRC"/[0-9]*/intReposInfo.json 2>/dev/null | sort | tail -1 | xargs -r dirname)
+          if [ -z "$LATEST" ]; then
+            echo "::error::No generated dashboard data in corsa-center/metrics_data"
+            exit 1
+          fi
+          LATEST_DAY=$(basename "$LATEST")
+          if [[ "$LATEST_DAY" < "$(date -u -d '2 days ago' +%Y%m%d)" ]]; then
+            echo "::warning::Newest generated dashboard data is from $LATEST_DAY"
+          fi
+          for f in intReposInfo.json intRepos_Dependencies.json spackPackageDependencies.json spackPackageDependents.json; do
+            cp "$LATEST/$f" "explore/github-data/$f"
+          done
+          echo "Repository data from $LATEST_DAY"
+
+          # Collection runs in batches, so one day's directory can be
+          # partial: give each package its newest metrics from the last
+          # week, applying days oldest first.
+          CUTOFF=$(date -u -d '7 days ago' +%Y%m%d)
+          shopt -s nullglob
+          for day_dir in $(ls -d "$SRC"/[0-9]*/ | sort); do
+            day=$(basename "$day_dir")
+            [[ "$day" < "$CUTOFF" ]] && continue
+            for pkg_dir in "$day_dir"*-metrics/; do
+              pkg_name=$(basename "$pkg_dir")
+              rm -rf "explore/github-data/$pkg_name"
+              cp -r "$pkg_dir" "explore/github-data/$pkg_name"
+              # Collected before the collector wrote generated_at itself.
+              jq -a --arg t "${day:0:4}-${day:4:2}-${day:6:2}T00:00:00Z" '.generated_at //= $t' \
+                "explore/github-data/$pkg_name/metrics.json" > metrics.json.tmp \
+                && mv metrics.json.tmp "explore/github-data/$pkg_name/metrics.json"
+            done
+          done
+
+          rm -rf .metrics_data
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.10'
+
+      - run: pip install -r _explore/scripts/requirements.txt
+
+      - name: Run update script
+        run: ./_explore/scripts/UPDATE.sh
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Saved by the cache step's post-job hook, only if the build succeeds.
+      - name: Keep data for the next run
+        run: |
+          rm -rf .previous-data
+          cp -r explore/github-data .previous-data
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0
         with:

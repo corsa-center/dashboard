@@ -77,7 +77,7 @@ runScript cleanup_inputs.py
 # --- BASIC DATA ---
 # intReposInfo.json (the repo list every repo script below iterates over),
 # intRepos_Dependencies.json and the Spack dependency files are copied from
-# corsa-center/metrics_data by update.yml before this runs.
+# corsa-center/metrics_data by .github/workflows/pages.yml before this runs.
 # Required before any other member scripts (output used as member list)
 runScript --soft get_internal_members.py
 

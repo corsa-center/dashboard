@@ -84,9 +84,9 @@ New files are created for each type of data structure.
 For most files, data is overwritten each time the scripts are run.  
 Other scripts may collect cumulative data with a daily timestamp. If one of these scripts is run multiple times in a single day, the entry for that day will be overwritten.
 
-Running [`UPDATE.sh`][updatesh] will run all of the necessary scripts in the appropriate order to fetch the latest data. It will also update [`LAST_UPDATE.txt`][lastup] to record when this complete data update was last run.
+Running [`UPDATE.sh`][updatesh] will run all of the necessary scripts in the appropriate order to fetch the latest data. It will also update `LAST_UPDATE.txt` to record when this complete data update was last run.
 
-The scripts are only for gathering new data. You do not need them to run in order to view the webpage visualizations.
+The data is not committed to this repository. The daily Pages deployment ([`.github/workflows/pages.yml`][pagesyml]) copies the repository, dependency, Spack and per-package metrics data from corsa-center/metrics_data into [`explore/github-data`][data dir], runs `UPDATE.sh` for the rest, and deploys the site. To view the visualizations locally, generate the data the same way first.
 
 [jump2 scripts]: #scripts
 [inputs file]: input_lists.json
@@ -95,7 +95,7 @@ The scripts are only for gathering new data. You do not need them to run in orde
 [scripts dir]: scripts
 [requires]: scripts/requirements.txt
 [updatesh]: scripts/UPDATE.sh
-[lastup]: LAST_UPDATE.txt
+[pagesyml]: ../.github/workflows/pages.yml
 [gitgraphql]: https://developer.github.com/v4/
 [oauth]: https://github.com/settings/developers
 [personaltoken]: https://github.com/settings/tokens

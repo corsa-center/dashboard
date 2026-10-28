@@ -236,3 +236,27 @@ $RECYCLE.BIN/
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+
+### Generated at deploy time by .github/workflows/pages.yml ###
+_explore/LAST_UPDATE.txt
+_explore/LAST_UPDATE.log
+/explore/github-data/*-metrics/
+/explore/github-data/YEARS.json
+/explore/github-data/dependencyInfo.json
+/explore/github-data/extRepos.json
+/explore/github-data/extUsers.json
+/explore/github-data/intRepo_Metadata.json
+/explore/github-data/intReposInfo.json
+/explore/github-data/intRepos_ActivityCommits.json
+/explore/github-data/intRepos_ActivityLines.json
+/explore/github-data/intRepos_CreationHistory.json
+/explore/github-data/intRepos_Dependencies.json
+/explore/github-data/intRepos_Languages.json
+/explore/github-data/intRepos_ReleaseHistory.json
+/explore/github-data/intRepos_StarHistory.json
+/explore/github-data/intRepos_Topics.json
+/explore/github-data/intUsers.json
+/explore/github-data/spackPackageDependencies.json
+/explore/github-data/spackPackageDependents.json
+.metrics_data/
+.previous-data/

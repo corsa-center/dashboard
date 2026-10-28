@@ -32,6 +32,10 @@ bundle exec jekyll serve --livereload --incremental
 
 Finally, open <http://localhost:4000> in a web browser.
 
+### Data
+
+The catalog and Explore pages read their data from `explore/github-data/`, which isn't committed to this repository. The daily Pages deployment ([`.github/workflows/pages.yml`](.github/workflows/pages.yml)) copies it from the private [corsa-center/metrics_data](https://github.com/corsa-center/metrics_data) repository: the dashboard files from the newest `data/YYYYMMDD/` directory, and each package's newest `*-metrics/` directory from the last week. To see real data locally, copy the same files into `explore/github-data/` before starting the server.
+
 ### Tips
 
 The gems in your sourcefile get updated frequently. It is a good idea to occasionally run `bundle update` from within your project's root directory to make sure the software on your computer is up to date.

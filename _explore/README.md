@@ -1,11 +1,11 @@
-# How to Generate New Data
+# The Original Data Collection Scripts
+
+**The deployed site no longer runs these scripts.** All of its data now comes from corsa-center/metrics_data (see [`./scripts`][jump2 scripts] below). They are kept for reference, and can still be run by hand:
 
 ```bash
 cd _explore/scripts/
 ./UPDATE.sh
 ```
-
-_(Additional script functionality detailed in the [`./scripts` section below][jump2 scripts].)_
 
 **IMPORTANT!**
 Scripts which fetch data from Github require an environment variable `GITHUB_API_TOKEN` containing a valid GitHub [OAuth token][oauth] or [personal access token][personaltoken].
@@ -86,7 +86,7 @@ Other scripts may collect cumulative data with a daily timestamp. If one of thes
 
 Running [`UPDATE.sh`][updatesh] will run all of the necessary scripts in the appropriate order to fetch the latest data. It will also update `LAST_UPDATE.txt` to record when this complete data update was last run.
 
-The data is not committed to this repository. The daily Pages deployment ([`.github/workflows/pages.yml`][pagesyml]) copies the repository, dependency, Spack and per-package metrics data from corsa-center/metrics_data into [`explore/github-data`][data dir], runs `UPDATE.sh` for the rest, and deploys the site. To view the visualizations locally, generate the data the same way first.
+The deployed site no longer uses these scripts. Its data is not committed to this repository: the daily Pages deployment ([`.github/workflows/pages.yml`][pagesyml]) copies all of it from corsa-center/metrics_data into [`explore/github-data`][data dir] and deploys the site. To view the site locally, copy the data the same way first.
 
 [jump2 scripts]: #scripts
 [inputs file]: input_lists.json

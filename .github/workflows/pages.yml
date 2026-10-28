@@ -4,9 +4,8 @@
 # documentation.
 
 # Builds the site with fresh data and deploys it to GitHub Pages. The data
-# isn't committed to this repository: each run takes the repository,
-# dependency, Spack and per-package metrics data from corsa-center/metrics_data,
-# runs _explore/scripts/UPDATE.sh for the rest, and deploys the result.
+# isn't committed to this repository: each run takes it all from
+# corsa-center/metrics_data and deploys the result.
 name: Deploy site to Pages
 
 on:
@@ -44,26 +43,9 @@ jobs:
         with:
           submodules: false
 
-      # The update scripts keep a repository's previous entry when its query
-      # fails, so start from the last successful run's data. Restored beside
-      # the checkout rather than into it, so a cached copy never overwrites a
-      # file that is committed.
-      - name: Restore previous data
-        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6
-        with:
-          path: .previous-data
-          key: github-data-${{ github.run_id }}
-          restore-keys: github-data-
-
-      - name: Seed data from the previous run
-        run: |
-          if [ -d .previous-data ]; then
-            cp -rn .previous-data/. explore/github-data/
-          fi
-
       # metrics_data's collection runs commit metrics into data/YYYYMMDD/, and
-      # its 12:30 UTC "Generate Dashboard Data" run adds intReposInfo.json,
-      # intRepos_Dependencies.json and the two Spack files beside them.
+      # its 12:30 UTC "Generate Dashboard Data" run adds the dashboard's
+      # repository, topic, dependency and Spack files beside them.
       # metrics_data is private, so this needs a token that can read it.
       - name: Check out metrics_data
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
@@ -86,7 +68,8 @@ jobs:
           if [[ "$LATEST_DAY" < "$(date -u -d '2 days ago' +%Y%m%d)" ]]; then
             echo "::warning::Newest generated dashboard data is from $LATEST_DAY"
           fi
-          for f in intReposInfo.json intRepos_Dependencies.json spackPackageDependencies.json spackPackageDependents.json; do
+          for f in intReposInfo.json intRepos_Topics.json intRepos_Dependencies.json dependencyInfo.json \
+                   spackPackageDependencies.json spackPackageDependents.json; do
             cp "$LATEST/$f" "explore/github-data/$f"
           done
           echo "Repository data from $LATEST_DAY"
@@ -111,23 +94,6 @@ jobs:
           done
 
           rm -rf .metrics_data
-
-      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
-        with:
-          python-version: '3.10'
-
-      - run: pip install -r _explore/scripts/requirements.txt
-
-      - name: Run update script
-        run: ./_explore/scripts/UPDATE.sh
-        env:
-          GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # Saved by the cache step's post-job hook, only if the build succeeds.
-      - name: Keep data for the next run
-        run: |
-          rm -rf .previous-data
-          cp -r explore/github-data .previous-data
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1.321.0

@@ -144,20 +144,12 @@ Each metric contains:
   - `null`: Shows placeholder text
   - HTML/text string: Rendered in the metrics card
 
-## Creating Metrics for a New Package
+## Where These Files Come From
 
-1. **Create directory**: `mkdir {repository-name}-metrics`
-2. **Copy template**: Use `hdf5-metrics/metrics.json` as a template
-3. **Update package field**: Set to correct `Owner/Repository`
-4. **Add data**: Populate `data` fields as metrics become available
+The `*-metrics/` directories aren't committed to this repository, and editing them here has no effect. The metrics collector ([corsa-center/metrics](https://github.com/corsa-center/metrics)) writes them into [corsa-center/metrics_data](https://github.com/corsa-center/metrics_data), and the Pages deployment copies each package's newest one in when it builds the site.
 
-Example for creating Trilinos metrics:
-
-```bash
-mkdir Trilinos-metrics
-cp hdf5-metrics/metrics.json Trilinos-metrics/metrics.json
-# Edit Trilinos-metrics/metrics.json and update "package" field
-```
+- **To add a package**, add its `package_config/*.yaml` entry to [corsa-center/metrics_packages](https://github.com/corsa-center/metrics_packages). The next collection run picks it up.
+- **To change what a metric shows**, change the collector, or for a single package, use the `overrides` block of its package config.
 
 ## How the Dashboard Uses These Files
 
@@ -168,17 +160,7 @@ The dashboard JavaScript:
 4. Renders metrics with data or placeholders
 5. Falls back gracefully if directory doesn't exist
 
-## Adding Metrics Data
-
-To populate metrics for an existing package:
-
-1. Navigate to the package directory (e.g., `hdf5-metrics/`)
-2. Edit `metrics.json`
-3. Find the metric you want to populate
-4. Replace `"data": null` with your content:
-   ```json
-   "data": "<p><strong>Key metric:</strong> Value</p><p>Additional info</p>"
-   ```
+## Metric Data
 
 ### Data Format Options
 
@@ -200,6 +182,5 @@ The `data` field supports:
 
 This structure provides:
 - **Clear separation** between software packages
-- **Easy addition** of new packages (just create new directory)
 - **Scalability** for additional files per package in the future
 - **Simple maintenance** (each package isolated)

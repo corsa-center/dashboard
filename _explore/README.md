@@ -1,11 +1,11 @@
-# How to Generate New Data
+# The Original Data Collection Scripts
+
+**The deployed site no longer runs these scripts.** All of its data now comes from corsa-center/metrics_data (see [`./scripts`][jump2 scripts] below). They are kept for reference, and can still be run by hand:
 
 ```bash
 cd _explore/scripts/
 ./UPDATE.sh
 ```
-
-_(Additional script functionality detailed in the [`./scripts` section below][jump2 scripts].)_
 
 **IMPORTANT!**
 Scripts which fetch data from Github require an environment variable `GITHUB_API_TOKEN` containing a valid GitHub [OAuth token][oauth] or [personal access token][personaltoken].

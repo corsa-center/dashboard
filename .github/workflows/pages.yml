@@ -35,7 +35,9 @@ env:
 jobs:
   # Build job
   build:
-    runs-on: ubuntu-latest
+    # ubuntu-latest is now 26.04, which setup-ruby has no Ruby 3.1 build
+    # for. Moving past 3.1 means updating the github-pages gem set first.
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6

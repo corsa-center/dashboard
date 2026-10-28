@@ -75,9 +75,9 @@ exclude:
   - CONTRIBUTING.md
   - convert-to-gh-pages.sh
   - Makefile
-  - README.md
-  - setup.cfg
-  - worker.Dockerfile
+  # Every README, not just the top-level one: github-pages' readme-index
+  # plugin otherwise publishes a directory's README as its index page.
+  - "*README.md"
 
 sass:
   style: compressed

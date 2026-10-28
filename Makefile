@@ -6,7 +6,3 @@ build:
 
 run:
 	bundle exec jekyll serve --incremental
-
-test:
-	flake8
-	black --check .

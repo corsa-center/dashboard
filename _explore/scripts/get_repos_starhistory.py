@@ -11,7 +11,7 @@ repolist = load_repo_list(ghDataDir)
 dataCollector = load_data(datfilepath)
 
 # GraphQL's stargazers connection is forbidden for the default Actions
-# token on repos outside this one (see get_repos_info.py). The REST
+# token on repos outside this one. The REST
 # stargazers endpoint isn't subject to that restriction, and with this
 # media type also returns each star's timestamp.
 headers = {"Accept": "application/vnd.github.star+json"}

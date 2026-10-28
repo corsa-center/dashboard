@@ -240,9 +240,22 @@ function renderSingleRepo(queryParam) {
       const reposObj = infoJson.data;
       if (reposObj.hasOwnProperty(queryParam)) {
         const repo = reposObj[queryParam];
-        renderSingleRepoHTML(repo);
-        // Load and display ecosystem metrics
-        loadEcosystemMetrics(queryParam, !!repo.clangTidyMetrics);
+        const hasClangTidyMetrics = !!repo.clangTidyMetrics;
+        fetchMetrics(queryParam).then((metricsData) => {
+          const showRepo = () => {
+            renderSingleRepoHTML(repo);
+            renderEcosystemMetrics(metricsData, queryParam, hasClangTidyMetrics);
+          };
+          // metrics.json carries the package's metrics_data catalog entry as
+          // `metadata`. Only an explicit `published: false` asks for a
+          // password, so packages without that entry stay visible.
+          const metadata = (metricsData && metricsData.metadata) || {};
+          if (metadata.published === false && !isUnlocked(queryParam, metadata.password_sha256)) {
+            renderWithPassword(queryParam, metadata.password_sha256, showRepo);
+          } else {
+            showRepo();
+          }
+        });
       } else {
         renderSingleRepoError(queryParam);
       }
@@ -250,30 +263,26 @@ function renderSingleRepo(queryParam) {
 }
 
 /**
- * Load and display ecosystem metrics for a repository.
- * Tries the new per-package CASS format first; falls back to the legacy flat format.
+ * Fetch a repository's metrics.json (metrics plus its catalog metadata).
  * @param {string} repoName repository name (owner/repo format)
- * @param {boolean} hasClangTidyMetrics whether this repo publishes clang-tidy data via CDash
+ * @returns {Promise<Object|null>} parsed metrics.json, or null if unavailable
+ *   (renderEcosystemMetrics then shows the structure with all placeholders)
  */
-function loadEcosystemMetrics(repoName, hasClangTidyMetrics) {
+function fetchMetrics(repoName) {
   // Extract repository name from owner/repo format (e.g., HDFGroup/hdf5 -> hdf5)
   const repoNameOnly = repoName.split('/')[1];
   const metricsPath = `${window.config.baseUrl}/explore/github-data/${repoNameOnly}-metrics/metrics.json`;
 
-  fetch(metricsPath)
+  return fetch(metricsPath)
     .then((res) => {
       if (!res.ok) {
         throw new Error(`Metrics file not found: ${repoNameOnly}-metrics/metrics.json`);
       }
       return res.json();
     })
-    .then((metricsData) => {
-      renderEcosystemMetrics(metricsData, repoName, hasClangTidyMetrics);
-    })
     .catch((error) => {
       console.log('Ecosystem metrics not available:', error);
-      // Still render the metrics structure with all placeholders
-      renderEcosystemMetrics(null, repoName, hasClangTidyMetrics);
+      return null;
     });
 }
 
@@ -1119,11 +1128,89 @@ function showSingleRepo() {
 }
 
 /**
+ * Show a login form for an unpublished package; call onUnlock once the
+ * entered password matches.
+ *
+ * This is a courtesy gate, not access control: the site is static, so the
+ * metrics.json behind it (and the hash checked here) can be fetched directly.
+ *
+ * @param {string} repoName repository name (owner/repo format)
+ * @param {string|undefined} passwordHash hex SHA-256 of the package's password
+ * @param {Function} onUnlock renders the package page
+ */
+function renderWithPassword(repoName, passwordHash, onUnlock) {
+  ELEMENT_SINGLE_REPO_TARGET.innerHTML = `
+      <div id="authn_content" class="authn-content">
+      <div class="authn-page">
+        <div class="authn-form">
+          <div class="authn-instructions">
+            <p class="authn-title">Login Required</p>
+            <p>This page has not yet been made public. Please login to continue.</p>
+          </div>
+          <hr class="authn-hr" />
+
+          <p id="authn-error" class="authn-error" hidden></p>
+          <form id="authn-form" action="#" method="post">
+            <input
+              id="authn-password"
+              type="password"
+              name="password"
+              placeholder="Password"
+              autofocus
+            />
+
+            <label
+              id="authn-remember-label"
+              class="authn-remember"
+            >
+              <input id="authn-remember" type="checkbox" name="remember" />
+              Remember me
+            </label>
+
+            <input
+              type="submit"
+              class="authn-login-button"
+              value="Login"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+      `;
+    document
+        .getElementById("authn-form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+
+          const password = document.getElementById(
+              "authn-password"
+            ).value,
+            isRememberChecked = document.getElementById(
+              "authn-remember"
+            ).checked;
+
+          const error = document.getElementById("authn-error");
+          if (!passwordHash) {
+            error.textContent = "No password has been set for this package yet.";
+            error.hidden = false;
+            return;
+          }
+          if (await checkPassword(password, passwordHash)) {
+            rememberUnlock(repoName, passwordHash, isRememberChecked);
+            onUnlock();
+          } else {
+            error.textContent = "Incorrect password.";
+            error.hidden = false;
+          }
+        });
+}
+
+/**
  *
  * User has selected a visible repository. If user selects empty repository, render category list instead.
  *
  * @param {string} newValue the next repo to change
- * @param {boolean} shouldPushState Set to true the first time the user navigates to the catalog, or navigates from history. 
+ * @param {boolean} shouldPushState Set to true the first time the user navigates to the catalog, or navigates from history.
  *   Leave as false or undefined if the user triggers a click event.
  *
  */
@@ -1156,7 +1243,7 @@ function setVisibleRepo(newValue, shouldPushState) {
           renderRepoListHeaderHtml();
 
           // map topics to categories - first try CASS explicit mapping, then fall back to topics
-          fetch(`${window.config.baseUrl}/catalog/cass_category_mapping.json`)
+          fetch(`${window.config.baseUrl}/catalog/category_mapping.json`)
             .then((res) => res.json())
             .then((cassMapping) => {
               // Initialize category arrays with CASS mapping
@@ -1257,6 +1344,61 @@ function setVisibleRepo(newValue, shouldPushState) {
       '',
       `?category=${catData[selectedCategoryIndex].urlParam}&repo=${visibleRepo}`,
     );
+  }
+}
+
+/**
+ *
+ * Check if password matches a package's password hash
+ *
+ * @param {string} password the password to check
+ * @param {string} passwordHash hex SHA-256 of the expected password
+ * @returns {Promise<boolean>}
+ *
+ */
+async function checkPassword(password, passwordHash) {
+  const digest = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(password));
+  const hex = Array.from(new Uint8Array(digest), (b) => b.toString(16).padStart(2, '0')).join('');
+  return hex === String(passwordHash).toLowerCase();
+}
+
+const UNLOCK_KEY_PREFIX = 'authn-unlocked:';
+
+/**
+ * Whether this package was already unlocked in this browser. The stored value
+ * is the hash that was matched, so changing a package's password locks it again.
+ *
+ * @param {string} repoName repository name (owner/repo format)
+ * @param {string|undefined} passwordHash the package's current password hash
+ */
+function isUnlocked(repoName, passwordHash) {
+  if (!passwordHash) {
+    return false;
+  }
+  for (const storage of ['sessionStorage', 'localStorage']) {
+    try {
+      if (window[storage].getItem(UNLOCK_KEY_PREFIX + repoName) === passwordHash) {
+        return true;
+      }
+    } catch (e) {
+      // Storage unavailable (private browsing, blocked site data): ask again.
+    }
+  }
+  return false;
+}
+
+/**
+ * Remember an unlock for this tab, or across visits when "Remember me" is checked.
+ *
+ * @param {string} repoName repository name (owner/repo format)
+ * @param {string} passwordHash the hash that was matched
+ * @param {boolean} remember keep the unlock after the browser is closed
+ */
+function rememberUnlock(repoName, passwordHash, remember) {
+  try {
+    window[remember ? 'localStorage' : 'sessionStorage'].setItem(UNLOCK_KEY_PREFIX + repoName, passwordHash);
+  } catch (e) {
+    // Storage unavailable: the page still unlocks, just not on the next visit.
   }
 }
 

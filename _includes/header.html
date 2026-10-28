@@ -15,7 +15,7 @@
       {% if page.url contains "/explore/" %} class="nav-item active has-dropdown"
       {% else %} class="nav-item has-dropdown"
       {% endif %}>
-      <a href="{{ 'explore' | relative_url }}">Explore</a>
+      Explore
       <div class="site-dropdown" aria-label="Explore menu">
         <a {% if page.url contains "/explore/dependencies/" %}class="active"{% endif %} href="{{ 'explore/dependencies' | relative_url }}">Dependencies</a>
         <a {% if page.url contains "/explore/spack-dependencies/" %}class="active"{% endif %} href="{{ 'explore/spack-dependencies' | relative_url }}">Spack Dependencies</a>

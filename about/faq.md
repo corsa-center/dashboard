@@ -74,6 +74,6 @@ Open an issue and/or pull request and we will review it.
 
 1. Remove your repo’s topic tags (e.g., `math-physics`), which connect it to this website’s browsable categories. 
 
-2. Submit a pull request [updating the `input_lists.json` file]({{site.repo_url}}/{{site.repo_blob_path}}/{{site.repo_branch}}/_explore/input_lists.json) to remove your repo’s name if necessary. 
+2. Submit a pull request to [corsa-center/metrics_packages](https://github.com/corsa-center/metrics_packages) removing your package's `package_config` file if necessary. 
 
 3. Change your repo's status via Settings > Manage Access > Who has access > Manage > Danger Zone > Archive this repository (`settings#danger-zone`). 

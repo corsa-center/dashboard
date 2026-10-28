@@ -19,9 +19,23 @@
       "name": "Other",
       "key": "other"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/11546113?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 5049
+    "size_kb": 5049,
+    "topics": [],
+    "stars": 51,
+    "forks": 22,
+    "pull_requests": {
+      "open": 2,
+      "closed": 13,
+      "merged": 19
+    },
+    "issues": {
+      "open": 16,
+      "closed": 47
+    },
+    "mentionable_users": 20
   },
   "stars": 51,
   "forks": 22,
@@ -32,7 +46,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Informal Mentions:</strong> 100</p>\n<p><strong>GitHub Stars:</strong> 51</p>\n<p><strong>GitHub Forks:</strong> 22</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 40.4/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 51</p>\n<p><strong>GitHub Forks:</strong> 22</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 1 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 20.4/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -50,7 +64,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 43 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 109 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> 3.6.0 (962 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 20 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 42 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 110 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> 3.6.0 (963 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 20 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 7 previously active contributors stopped (57%) \u2717</p>\n<p><strong>Score:</strong> 2/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -78,7 +92,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">43 commits and 0 release(s) in the last year; active in 13/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">20 contributors; top contributor 70.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2014-06-15 (12.4 yrs); GitHub repo created 2015-05-22 (11.4 yrs)</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 1/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">42 commits and 0 release(s) in the last year; active in 12/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">20 contributors; top contributor 70.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2014-06-15 (12.4 yrs); GitHub repo created 2015-05-22 (11.4 yrs)</p>\n<p><strong>Score:</strong> 2/5</p>"
     }
   },
   "quality": {
@@ -115,5 +129,142 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-26T21:56:12Z"
+  "generated_at": "2026-10-28T03:22:52Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "C++",
+          "color": "#f34b7d"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "superbrothers/close-pull-request",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "superbrothers/close-pull-request"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "breathe",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "breathe-doc/breathe"
+                }
+              },
+              {
+                "packageName": "furo",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pradyunsg/furo"
+                }
+              },
+              {
+                "packageName": "sphinx",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "sphinx-doc/sphinx"
+                }
+              },
+              {
+                "packageName": "sphinx-copybutton",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "executablebooks/sphinx-copybutton"
+                }
+              },
+              {
+                "packageName": "sphinxcontrib-moderncmakedomain",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "scikit-build/moderncmakedomain"
+                }
+              },
+              {
+                "packageName": "sphinxcontrib-svg2pdfconverter",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "missinglinkelectronics/sphinxcontrib-svg2pdfconverter"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "pytest",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pytest-dev/pytest"
+                }
+              },
+              {
+                "packageName": "build",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pypa/build"
+                }
+              },
+              {
+                "packageName": "pytest-timeout",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pytest-dev/pytest-timeout"
+                }
+              },
+              {
+                "packageName": "scipy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "scipy/scipy"
+                }
+              },
+              {
+                "packageName": "scipy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "scipy/scipy"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

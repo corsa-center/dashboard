@@ -18,9 +18,23 @@
       "name": "MIT License",
       "key": "mit"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/31777976?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 4195
+    "size_kb": 4195,
+    "topics": [],
+    "stars": 11,
+    "forks": 2,
+    "pull_requests": {
+      "open": 0,
+      "closed": 0,
+      "merged": 0
+    },
+    "issues": {
+      "open": 0,
+      "closed": 0
+    },
+    "mentionable_users": 1
   },
   "stars": 11,
   "forks": 2,
@@ -49,7 +63,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 250 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 1 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 2/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 252 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 1 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 2/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -114,5 +128,53 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> 1 of 1 pinned dependencies have a known vulnerability \u2717</p>\n<p class=\"sub-detail\">['scikit-learn==1.2.2 (PyPI)']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 0/3</p>"
     }
   },
-  "generated_at": "2026-10-26T12:02:28Z"
+  "generated_at": "2026-10-28T04:26:45Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python",
+          "color": "#3572A5"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "hyperopt",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "hyperopt/hyperopt"
+                }
+              },
+              {
+                "packageName": "ray",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "ray-project/ray"
+                }
+              },
+              {
+                "packageName": "scikit-learn",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "scikit-learn/scikit-learn"
+                }
+              },
+              {
+                "packageName": "torch",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pytorch/pytorch"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

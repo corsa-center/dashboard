@@ -32,7 +32,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 2,736</p>\n<p><strong>GitHub Stars:</strong> 63</p>\n<p><strong>GitHub Forks:</strong> 19</p>\n<p><strong>Citation Score:</strong> 59.5/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 63</p>\n<p><strong>GitHub Forks:</strong> 19</p>\n<p><strong>Citation Score:</strong> 19.5/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -50,7 +50,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 487 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 17 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 0.8.4 (17 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 7 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 4 previously active contributors stopped (25%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 487 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 17 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> 0.8.4 (18 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 7 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 4 previously active contributors stopped (25%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -115,5 +115,5 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T01:11:23Z"
+  "generated_at": "2026-10-27T11:02:58Z"
 }

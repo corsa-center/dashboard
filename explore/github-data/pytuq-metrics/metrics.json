@@ -19,9 +19,38 @@
       "name": "Other",
       "key": "other"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/4993680?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 9595
+    "size_kb": 9595,
+    "topics": [
+      "bayesian-inference",
+      "forward-propagation",
+      "inverse-problems",
+      "model-error",
+      "regression",
+      "scr-3177",
+      "snl-data-analysis",
+      "snl-other",
+      "snl-science-libs",
+      "sparse-regression",
+      "surrogate-models",
+      "surrogates",
+      "uncertainty-quantification",
+      "uq"
+    ],
+    "stars": 10,
+    "forks": 5,
+    "pull_requests": {
+      "open": 0,
+      "closed": 0,
+      "merged": 27
+    },
+    "issues": {
+      "open": 0,
+      "closed": 24
+    },
+    "mentionable_users": 5
   },
   "stars": 10,
   "forks": 5,
@@ -50,7 +79,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 60 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 67 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0.0z (408 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 5 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 60 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 68 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> v1.0.0z (409 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 5 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> Not enough contributor history to assess (needs two years)</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -115,5 +144,202 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T02:15:49Z"
+  "generated_at": "2026-10-27T22:00:11Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python",
+          "color": "#3572A5"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "dill",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "uqfoundation/dill"
+                }
+              },
+              {
+                "packageName": "matplotlib",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "matplotlib/matplotlib"
+                }
+              },
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "pyswarms",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "ljvmiranda921/pyswarms"
+                }
+              },
+              {
+                "packageName": "scipy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "scipy/scipy"
+                }
+              },
+              {
+                "packageName": "torch",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pytorch/pytorch"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/setup-python",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/setup-python"
+                }
+              },
+              {
+                "packageName": "actions/upload-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/upload-artifact"
+                }
+              },
+              {
+                "packageName": "coverallsapp/github-action",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "coverallsapp/github-action"
+                }
+              },
+              {
+                "packageName": "peaceiris/actions-gh-pages",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "peaceiris/actions-gh-pages"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/setup-python",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/setup-python"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "anthropic",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "anthropics/anthropic-sdk-python"
+                }
+              },
+              {
+                "packageName": "google-genai",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "googleapis/python-genai"
+                }
+              },
+              {
+                "packageName": "ipykernel",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "ipython/ipykernel"
+                }
+              },
+              {
+                "packageName": "matplotlib",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "matplotlib/matplotlib"
+                }
+              },
+              {
+                "packageName": "mcp",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "keegancsmith/MCP"
+                }
+              },
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "openai",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "openai/openai-python"
+                }
+              },
+              {
+                "packageName": "python-dotenv",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "theskumar/python-dotenv"
+                }
+              },
+              {
+                "packageName": "pytuq",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "scipy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "scipy/scipy"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

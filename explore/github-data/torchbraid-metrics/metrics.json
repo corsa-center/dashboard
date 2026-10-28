@@ -18,9 +18,23 @@
       "name": "Other",
       "key": "other"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/82042930?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 103509
+    "size_kb": 103509,
+    "topics": [],
+    "stars": 9,
+    "forks": 8,
+    "pull_requests": {
+      "open": 0,
+      "closed": 0,
+      "merged": 14
+    },
+    "issues": {
+      "open": 0,
+      "closed": 7
+    },
+    "mentionable_users": 16
   },
   "stars": 9,
   "forks": 8,
@@ -49,7 +63,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 0 commits (52 weeks) \u2717</p>\n<p class=\"sub-detail\">Last Commit: 429 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 9 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 1 previously active contributors stopped (100%) \u2717</p>\n<p><strong>Score:</strong> 1/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 0 commits (52 weeks) \u2717</p>\n<p class=\"sub-detail\">Last Commit: 431 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> No releases, 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 9 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 1 previously active contributors stopped (100%) \u2717</p>\n<p><strong>Score:</strong> 1/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -114,5 +128,101 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-26T12:02:28Z"
+  "generated_at": "2026-10-28T04:26:45Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "Python",
+          "color": "#3572A5"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "cython",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "cython/cython"
+                }
+              },
+              {
+                "packageName": "matplotlib",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "matplotlib/matplotlib"
+                }
+              },
+              {
+                "packageName": "mpi4py",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "mpi4py/mpi4py"
+                }
+              },
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "setuptools",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pypa/setuptools"
+                }
+              },
+              {
+                "packageName": "torch",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pytorch/pytorch"
+                }
+              },
+              {
+                "packageName": "torchvision",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pytorch/vision"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/cache",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/cache"
+                }
+              },
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/setup-python",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/setup-python"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

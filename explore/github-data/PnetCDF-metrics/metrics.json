@@ -19,9 +19,30 @@
       "name": "Other",
       "key": "other"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/24639103?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 36620
+    "size_kb": 36620,
+    "topics": [
+      "c",
+      "fortran",
+      "mpi-io",
+      "netcdf",
+      "parallel-io",
+      "pnetcdf"
+    ],
+    "stars": 110,
+    "forks": 36,
+    "pull_requests": {
+      "open": 1,
+      "closed": 23,
+      "merged": 162
+    },
+    "issues": {
+      "open": 6,
+      "closed": 52
+    },
+    "mentionable_users": 15
   },
   "stars": 110,
   "forks": 36,
@@ -32,7 +53,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 5</p>\n<p><strong>GitHub Stars:</strong> 110</p>\n<p><strong>GitHub Forks:</strong> 36</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 19 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 39.0/100</p>"
+      "data": "<p><strong>GitHub Stars:</strong> 110</p>\n<p><strong>GitHub Forks:</strong> 36</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 19 dependent packages, 0 dependent repositories</p>\n<p><strong>Citation Score:</strong> 23.5/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -50,7 +71,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 483 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 22 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> checkpoint.1.15.1 (38 days ago), 2/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 16 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 2 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 483 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 23 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Declining \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> checkpoint.1.15.1 (39 days ago), 2/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 16 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 1 of 2 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -78,7 +99,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">483 commits and 2 release(s) in the last year; active in 45/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">16 contributors; top contributor 80.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2003-02-05 (23.7 yrs); GitHub repo created 2017-04-18 (9.5 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">483 commits and 2 release(s) in the last year; active in 44/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">16 contributors; top contributor 80.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Declining \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2003-02-05 (23.7 yrs); GitHub repo created 2017-04-18 (9.5 yrs)</p>\n<p><strong>Score:</strong> 3/5</p>"
     }
   },
   "quality": {
@@ -115,5 +136,65 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T04:27:12Z"
+  "generated_at": "2026-10-28T00:10:51Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "C",
+          "color": "#555555"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "mamba-org/setup-micromamba",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "mamba-org/setup-micromamba"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

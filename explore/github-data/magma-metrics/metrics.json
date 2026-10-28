@@ -12,15 +12,29 @@
     "language": "Fortran",
     "created_at": "2023-04-05T15:59:59Z",
     "updated_at": "2026-10-23T15:33:15Z",
-    "pushed_at": "2026-10-23T15:33:09Z",
+    "pushed_at": "2026-10-27T18:43:24Z",
     "license": {
       "spdx_id": "BSD-3-Clause",
       "name": "BSD 3-Clause \"New\" or \"Revised\" License",
       "key": "bsd-3-clause"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/70462541?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 32614
+    "size_kb": 32733,
+    "topics": [],
+    "stars": 120,
+    "forks": 51,
+    "pull_requests": {
+      "open": 8,
+      "closed": 6,
+      "merged": 51
+    },
+    "issues": {
+      "open": 13,
+      "closed": 21
+    },
+    "mentionable_users": 38
   },
   "stars": 120,
   "forks": 51,
@@ -41,7 +55,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/icl-utk-edu/magma/blob/HEAD/docs/contributors-guide.txt\">docs/contributors-guide.txt</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 59.57/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Project Popularity: 46/100</p>\n<p class=\"sub-detail\">Documentation Usability: 58/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 94/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 529 days ago \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/icl-utk-edu/magma/blob/HEAD/docs/contributors-guide.txt\">docs/contributors-guide.txt</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 59.57/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Release Frequency: 40/100</p>\n<p class=\"sub-detail\">Project Popularity: 46/100</p>\n<p class=\"sub-detail\">Documentation Usability: 58/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 94/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 530 days ago \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -49,7 +63,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 96 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 3 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.10.0 (238 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 39 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Issues, Mailing list, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 8 of 10 previously active contributors stopped (80%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 96 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 4 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.10.0 (239 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 39 (bus factor: 2)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Issues, Mailing list, Forum</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 8 of 10 previously active contributors stopped (80%) \u2717</p>\n<p><strong>Score:</strong> 5/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -114,5 +128,45 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T00:06:43Z"
+  "generated_at": "2026-10-27T20:55:17Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "Fortran",
+          "color": "#4d41b1"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "flask",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pallets/flask"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

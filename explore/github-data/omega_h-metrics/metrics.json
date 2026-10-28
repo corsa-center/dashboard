@@ -19,9 +19,26 @@
       "name": "Other",
       "key": "other"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/7839226?v=4",
+    "parent": "sandialabs/omega_h",
     "archived": false,
     "disabled": false,
-    "size_kb": 13772
+    "size_kb": 13772,
+    "topics": [
+      "kokkos"
+    ],
+    "stars": 3,
+    "forks": 13,
+    "pull_requests": {
+      "open": 8,
+      "closed": 15,
+      "merged": 135
+    },
+    "issues": {
+      "open": 22,
+      "closed": 72
+    },
+    "mentionable_users": 5
   },
   "stars": 3,
   "forks": 13,
@@ -42,7 +59,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/SCOREC/omega_h#contributing\">README</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 53.54/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 3/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 62/100</p>\n<p class=\"sub-detail\">Documentation Usability: 65/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/SCOREC/omega_h#contributing\">README</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 46.62/100 (fair) \u2717</p>\n<p class=\"sub-detail\">Project Popularity: 3/100</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 53/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Documentation Usability: 65/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 92/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS \u2717</p>\n<p><strong>Score:</strong> 0/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -50,11 +67,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 151 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> scorec-v11.2.0 (94 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 34 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 8 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 150 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> scorec-v11.2.0 (95 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 34 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 2 channels \u2713</p>\n<p class=\"sub-detail\">Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 4 of 8 previously active contributors stopped (50%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 25 issues opened 30-365 days ago (14 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 25 opened, 13 closed 30-365 days ago (1.92 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 3 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 77% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 77% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 94 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 11 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 1964 hours median to close, for 25 issues opened 30-365 days ago (7 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 90% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 25 opened, 13 closed 30-365 days ago (1.92 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2.5 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 73% of community issues answered within a week \u2713</p>\n<p><strong>Community Participation Assessment:</strong> 77% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 94 hours</p>\n<p><strong>Score:</strong> 6/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -78,7 +95,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">151 commits and 5 release(s) in the last year; active in 33/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">34 contributors; top contributor 75.4% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-05-12 (10.5 yrs); GitHub repo created 2018-09-13 (8.1 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">150 commits and 5 release(s) in the last year; active in 33/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">34 contributors; top contributor 75.4% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-05-12 (10.5 yrs); GitHub repo created 2018-09-13 (8.1 yrs)</p>\n<p><strong>Score:</strong> 4/5</p>"
     }
   },
   "quality": {
@@ -115,5 +132,139 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T05:30:52Z"
+  "generated_at": "2026-10-28T01:14:45Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "C++",
+          "color": "#f34b7d"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/cache",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/cache"
+                }
+              },
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/setup-python",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/setup-python"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/download-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/download-artifact"
+                }
+              },
+              {
+                "packageName": "actions/github-script",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/github-script"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/deploy-pages",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/deploy-pages"
+                }
+              },
+              {
+                "packageName": "actions/upload-pages-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/upload-pages-artifact"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "SCOREC/github-actions/.github/workflows/globus-test.yml",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "SCOREC/github-actions"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/upload-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/upload-artifact"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

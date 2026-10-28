@@ -13,9 +13,23 @@
     "created_at": "2017-12-11T12:34:40Z",
     "updated_at": "2026-03-16T06:31:07Z",
     "pushed_at": "2025-09-15T22:14:46Z",
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/22968668?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 39793
+    "size_kb": 39793,
+    "topics": [],
+    "stars": 8,
+    "forks": 3,
+    "pull_requests": {
+      "open": 0,
+      "closed": 0,
+      "merged": 6
+    },
+    "issues": {
+      "open": 0,
+      "closed": 0
+    },
+    "mentionable_users": 9
   },
   "stars": 8,
   "forks": 3,
@@ -44,7 +58,7 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 0 commits (52 weeks) \u2717</p>\n<p class=\"sub-detail\">Last Commit: 406 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> v7.0 (406 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 7 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 2 previously active contributors stopped (100%) \u2717</p>\n<p><strong>Score:</strong> 1/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 0 commits (52 weeks) \u2717</p>\n<p class=\"sub-detail\">Last Commit: 407 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Inactive \u2717</p>\n<p><strong>Release Pattern Assessment:</strong> v7.0 (407 days ago), 0/yr \u2717</p>\n<p class=\"sub-detail\">Contributors: 7 (bus factor: 1)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 0 channels \u2717</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 2 of 2 previously active contributors stopped (100%) \u2717</p>\n<p><strong>Score:</strong> 1/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
@@ -72,7 +86,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 0/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">0 commits and 0 release(s) in the last year; active in 0/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">7 contributors; top contributor 60.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No push in 406 days \u2717</p>\n<p><strong>Community Health Trends:</strong> Inactive \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Legacy \u2717</p>\n<p class=\"sub-detail\">Project age: first commit 2017-12-11 (8.9 yrs); GitHub repo created 2017-12-11 (8.9 yrs)</p>\n<p><strong>Score:</strong> 0/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 0/3 dimensions active \u2717</p>\n<p class=\"sub-detail\">0 commits and 0 release(s) in the last year; active in 0/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 1 \u2717</p>\n<p class=\"sub-detail\">7 contributors; top contributor 60.0% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No push in 407 days \u2717</p>\n<p><strong>Community Health Trends:</strong> Inactive \u2717</p>\n<p><strong>Project Lifecycle Assessment:</strong> Legacy \u2717</p>\n<p class=\"sub-detail\">Project age: first commit 2017-12-11 (8.9 yrs); GitHub repo created 2017-12-11 (8.9 yrs)</p>\n<p><strong>Score:</strong> 0/5</p>"
     }
   },
   "quality": {
@@ -109,5 +123,18 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T04:27:12Z"
+  "generated_at": "2026-10-28T00:10:51Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "HTML",
+          "color": "#e34c26"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": []
+    }
+  }
 }

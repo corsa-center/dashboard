@@ -18,9 +18,23 @@
       "name": "Other",
       "key": "other"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/1506660?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 10568
+    "size_kb": 10568,
+    "topics": [],
+    "stars": 13,
+    "forks": 6,
+    "pull_requests": {
+      "open": 1,
+      "closed": 0,
+      "merged": 3
+    },
+    "issues": {
+      "open": 0,
+      "closed": 1
+    },
+    "mentionable_users": 5
   },
   "stars": 13,
   "forks": 6,
@@ -114,5 +128,18 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> requirements.txt has no exactly-pinned/registry dependencies to check \u2713</p>\n<p class=\"sub-detail\">['requirements.txt']</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T04:27:12Z"
+  "generated_at": "2026-10-28T00:10:51Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "C++",
+          "color": "#f34b7d"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": []
+    }
+  }
 }

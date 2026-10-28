@@ -13,16 +13,39 @@
     "homepage": "https://visit.llnl.gov",
     "language": "C",
     "created_at": "2019-01-13T23:27:26Z",
-    "updated_at": "2026-10-26T23:35:00Z",
-    "pushed_at": "2026-10-26T23:35:30Z",
+    "updated_at": "2026-10-27T18:10:36Z",
+    "pushed_at": "2026-10-27T18:11:14Z",
     "license": {
       "spdx_id": "BSD-3-Clause",
       "name": "BSD 3-Clause \"New\" or \"Revised\" License",
       "key": "bsd-3-clause"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/26772601?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 418294
+    "size_kb": 418324,
+    "topics": [
+      "data-analysis",
+      "data-viz",
+      "hpc",
+      "python",
+      "radiuss",
+      "scientific-computing",
+      "scientific-visualization",
+      "visualization"
+    ],
+    "stars": 537,
+    "forks": 140,
+    "pull_requests": {
+      "open": 19,
+      "closed": 159,
+      "merged": 3598
+    },
+    "issues": {
+      "open": 1920,
+      "closed": 3879
+    },
+    "mentionable_users": 71
   },
   "stars": 537,
   "forks": 140,
@@ -43,7 +66,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/visit-dav/visit/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 65.03/100 (good) \u2713</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 29/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Project Popularity: 75/100</p>\n<p class=\"sub-detail\">Issue Age: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 84/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 94/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1917 days ago \u2717</p>\n<p><strong>Score:</strong> 1/4</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/visit-dav/visit/blob/develop/CONTRIBUTING.md\">CONTRIBUTING.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 0/4 concepts documented \u2717</p>\n<p><strong>OpenSSF Badge Integration:</strong> Not yet collected</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 65.51/100 (good) \u2713</p>\n<p class=\"sub-detail\">Time To Close: 20/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 31/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Project Popularity: 75/100</p>\n<p class=\"sub-detail\">Issue Age: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 84/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 96/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> no CODEOWNERS; docs updated 1918 days ago \u2717</p>\n<p><strong>Score:</strong> 1/4</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -51,11 +74,11 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 317 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v3.5.0 (180 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 63 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 7 of 17 previously active contributors stopped (41%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 317 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Stable \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v3.5.0 (181 days ago), 1/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 63 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 3 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 7 of 17 previously active contributors stopped (41%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 278 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 100 issues opened 30-365 days ago (60 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 178 opened, 170 closed 30-365 days ago (1.05 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 47% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 45% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 96 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 278 hours \u2717</p>\n<p><strong>Issue Resolution Analysis:</strong> over half still open, for 100 issues opened 30-365 days ago (59 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 93% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 178 opened, 170 closed 30-365 days ago (1.05 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 2 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 47% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 48% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 96 hours</p>\n<p><strong>Score:</strong> 4/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
@@ -89,7 +112,7 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 3/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 89.4% of 47 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 1/3 met</p>\n<p class=\"sub-detail\">Security criteria: 2/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 3/5 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 2/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target</p>\n<p><strong>Code Review Quality Analysis:</strong> 91.7% of 48 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 1/4 tools \u2717</p>\n<p class=\"sub-detail\">Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge not registered \u2717</p>\n<p class=\"sub-detail\">Governance criteria: 1/3 met</p>\n<p class=\"sub-detail\">Security criteria: 2/2 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
@@ -116,5 +139,659 @@
       "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-27T00:06:43Z"
+  "generated_at": "2026-10-27T20:55:17Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "C",
+          "color": "#555555"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "urllib3",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "urllib3/urllib3"
+                }
+              },
+              {
+                "packageName": "acknowledgements",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "advection",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "inkenbrandt/advection"
+                }
+              },
+              {
+                "packageName": "aitoff",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "alabaster",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "sphinx-doc/alabaster"
+                }
+              },
+              {
+                "packageName": "ang",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "annot",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "antialiasing",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "ao",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "Critteros/AO"
+                }
+              },
+              {
+                "packageName": "arg",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "abranhe/arg"
+                }
+              },
+              {
+                "packageName": "args",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "kennethreitz-archive/args"
+                }
+              },
+              {
+                "packageName": "arial",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "atts",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "avt",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "alexcapstick/alexs-visualisation-tools"
+                }
+              },
+              {
+                "packageName": "babel",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "python-babel/babel"
+                }
+              },
+              {
+                "packageName": "backend",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "tr4n2uil/backend.django"
+                }
+              },
+              {
+                "packageName": "backticks",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "bbox",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "varunagrawal/bbox"
+                }
+              },
+              {
+                "packageName": "bs",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "builtin",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "callbackname",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "cancelled",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "cancelling",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "cartesian",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "Ohjeah/cartesian"
+                }
+              },
+              {
+                "packageName": "cauchy",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "certifi",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "certifi/python-certifi"
+                }
+              },
+              {
+                "packageName": "charset-normalizer",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "jawah/charset_normalizer"
+                }
+              },
+              {
+                "packageName": "checkbox",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "checkboxes",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "childs",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "coeff",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "coord",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "coords",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "cpk",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "afdaniele/cpk"
+                }
+              },
+              {
+                "packageName": "crosshairs",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "cueing",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "darwin",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "dbs",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "dmwm/DBS"
+                }
+              },
+              {
+                "packageName": "dest",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "deviatoric",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "diffs",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "igrek51/diffs"
+                }
+              },
+              {
+                "packageName": "dir",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "dirname",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "discretize",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "simpeg/discretize"
+                }
+              },
+              {
+                "packageName": "docutils",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "jwilk-mirrors/docutils"
+                }
+              },
+              {
+                "packageName": "downloadable",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "downsampling",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "dropdown",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "ds",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "asciimoo/ds"
+                }
+              },
+              {
+                "packageName": "eigen",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "jrl-umi3218/Eigen3ToPython"
+                }
+              },
+              {
+                "packageName": "elif",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "equi",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "exprs",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "extremum",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "flipbook",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "broadinstitute/flipbook"
+                }
+              },
+              {
+                "packageName": "flipbooks",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "flythrough",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "framestep",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "freeform",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "fullframe",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "fullname",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "func",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "glyphed",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "groningen",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "hostname",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "jpgoldberg/python-hostname"
+                }
+              },
+              {
+                "packageName": "hotpoint",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "hotpoints",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "iconified",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "idna",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "kjd/idna"
+                }
+              },
+              {
+                "packageName": "imagesize",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "shibukawa/imagesize_py"
+                }
+              },
+              {
+                "packageName": "importlib-metadata",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "python/importlib_metadata"
+                }
+              },
+              {
+                "packageName": "incr",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "indices",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "ngentile92/indices"
+                }
+              },
+              {
+                "packageName": "inline",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "manicmaniac/inline"
+                }
+              },
+              {
+                "packageName": "interactor",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "yu-liang-kono/interactor"
+                }
+              },
+              {
+                "packageName": "iso",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "bprinty/iso"
+                }
+              },
+              {
+                "packageName": "isosurface",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "isosurfaces",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "jared-hughes/isosurfaces"
+                }
+              },
+              {
+                "packageName": "isosurfacing",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "isovolume",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "jinja2",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pallets/jinja"
+                }
+              },
+              {
+                "packageName": "jmol",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "keyframe",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "keyframed",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "dmarx/keyframed"
+                }
+              },
+              {
+                "packageName": "keyframes",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "keyframing",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "kf",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "wingsit/KF"
+                }
+              },
+              {
+                "packageName": "laplacian",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "lbound",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "lineout",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "claydodo/lineout"
+                }
+              },
+              {
+                "packageName": "lineouts",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "linux",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "localhost",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "Grupo-de-Oceanografia-Costeira/localhost"
+                }
+              },
+              {
+                "packageName": "lpr",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "lyapunov",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "markupsafe",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pallets/markupsafe"
+                }
+              },
+              {
+                "packageName": "maxima",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "maxx",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "watermarkhu/maxx"
+                }
+              },
+              {
+                "packageName": "maxy",
+                "packageManager": "PIP",
+                "repository": null
+              },
+              {
+                "packageName": "maxz",
+                "packageManager": "PIP",
+                "repository": null
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/setup-python",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/setup-python"
+                }
+              },
+              {
+                "packageName": "tj-actions/changed-files",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "tj-actions/changed-files"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "mpi4py/setup-mpi",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "mpi4py/setup-mpi"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

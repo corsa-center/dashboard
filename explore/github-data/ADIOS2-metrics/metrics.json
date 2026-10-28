@@ -13,16 +13,40 @@
     "homepage": "https://adios2.readthedocs.io/en/latest/index.html",
     "language": "C++",
     "created_at": "2016-12-06T16:39:55Z",
-    "updated_at": "2026-10-24T23:59:33Z",
-    "pushed_at": "2026-10-24T23:59:27Z",
+    "updated_at": "2026-10-27T21:02:13Z",
+    "pushed_at": "2026-10-27T21:02:09Z",
     "license": {
       "spdx_id": "Apache-2.0",
       "name": "Apache License 2.0",
       "key": "apache-2.0"
     },
+    "owner_avatar_url": "https://avatars.githubusercontent.com/u/3661939?v=4",
     "archived": false,
     "disabled": false,
-    "size_kb": 42292
+    "size_kb": 42312,
+    "topics": [
+      "adios",
+      "cmake",
+      "ecp",
+      "exascale",
+      "exascale-computing",
+      "hdf5",
+      "high-performance-computing",
+      "hpc",
+      "io"
+    ],
+    "stars": 329,
+    "forks": 160,
+    "pull_requests": {
+      "open": 2,
+      "closed": 730,
+      "merged": 3177
+    },
+    "issues": {
+      "open": 38,
+      "closed": 1243
+    },
+    "mentionable_users": 89
   },
   "stars": 329,
   "forks": 160,
@@ -33,7 +57,7 @@
   "impact": {
     "4.1.1": {
       "title": "Software Citation and Adoption",
-      "data": "<p><strong>Formal Citations:</strong> 248</p>\n<p><strong>GitHub Stars:</strong> 329</p>\n<p><strong>GitHub Forks:</strong> 160</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 24 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 6,466,062</p>\n<p class=\"sub-detail\">conda 4,411,365 (total), conda 2,049,848 (total), pypi 4,849 (last-month)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
+      "data": "<p><strong>Formal Citations:</strong> 248</p>\n<p><strong>GitHub Stars:</strong> 329</p>\n<p><strong>GitHub Forks:</strong> 160</p>\n<p><strong>Reverse-Dependency Analysis:</strong> 24 dependent packages, 0 dependent repositories</p>\n<p><strong>Package-Manager Downloads:</strong> 6,467,874</p>\n<p class=\"sub-detail\">conda 4,413,177 (total), conda 2,049,848 (total), pypi 4,849 (last-month)</p>\n<p><strong>Citation Score:</strong> 70.0/100</p>"
     },
     "4.1.2": {
       "title": "Field Research Impact",
@@ -43,7 +67,7 @@
   "ecosystem": {
     "4.2.1": {
       "title": "Codes of Conduct (CoC), Governance, and Contributor Guidelines",
-      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/ornladios/ADIOS2/blob/master/Contributing.md\">Contributing.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/ornladios/ADIOS2\">7.9/10</a> (12/17 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#token-permissions\">Token-Permissions</a>: 0/10 \u2014 detected GitHub workflow tokens with excessive permissions</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 4/10 \u2014 dependency not pinned by hash detected -- score normalized to 4</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 5/10 \u2014 badge detected: Passing</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#branch-protection\">Branch-Protection</a>: 5/10 \u2014 branch protection is not maximal on development and all release branches</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 69.15/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 70/100</p>\n<p class=\"sub-detail\">Project Popularity: 71/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> CODEOWNERS defined; docs updated 27 days ago \u2713</p>\n<p><strong>Score:</strong> 3/5</p>"
+      "data": "<p><strong>Enhanced Document Detection:</strong> 1/3 \u2717</p>\n<p class=\"sub-detail\">Code of Conduct: Not found</p>\n<p class=\"sub-detail\">Governance: Not found</p>\n<p class=\"sub-detail\">Contributing Guidelines: <a href=\"https://github.com/ornladios/ADIOS2/blob/master/Contributing.md\">Contributing.md</a></p>\n<p><strong>Governance Keyword Analysis:</strong> 1/4 concepts documented \u2717</p>\n<p class=\"sub-detail\">Defined roles</p>\n<p><strong>OpenSSF Scorecard:</strong> <a href=\"https://scorecard.dev/viewer/?uri=github.com/ornladios/ADIOS2\">7.4/10</a> (12/17 checks passed) \u2713</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#token-permissions\">Token-Permissions</a>: 0/10 \u2014 detected GitHub workflow tokens with excessive permissions</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#fuzzing\">Fuzzing</a>: 0/10 \u2014 project is not fuzzed</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#branch-protection\">Branch-Protection</a>: 0/10 \u2014 branch protection not enabled on development/release branches</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#pinned-dependencies\">Pinned-Dependencies</a>: 4/10 \u2014 dependency not pinned by hash detected -- score normalized to 4</p>\n<p class=\"sub-detail\"><a href=\"https://github.com/ossf/scorecard/blob/c395761df6afe1a69e476bc60a013a94bcbc153f/docs/checks.md#cii-best-practices\">CII-Best-Practices</a>: 5/10 \u2014 badge detected: Passing</p>\n<p><strong>CHAOSS Governance Metrics:</strong> 68.85/100 (good) \u2713</p>\n<p class=\"sub-detail\">Issue Age: 20/100</p>\n<p class=\"sub-detail\">Time To Close: 60/100</p>\n<p class=\"sub-detail\">Release Frequency: 60/100</p>\n<p class=\"sub-detail\">Change Request Closure Ratio: 68/100</p>\n<p class=\"sub-detail\">Project Popularity: 71/100</p>\n<p class=\"sub-detail\">Issues Inclusivity: 80/100</p>\n<p class=\"sub-detail\">Documentation Usability: 100/100</p>\n<p><strong>Governance Effectiveness Assessment:</strong> CODEOWNERS defined; docs updated 29 days ago \u2713</p>\n<p><strong>Score:</strong> 3/5</p>"
     },
     "4.2.2": {
       "title": "Open-Source Licensing and FAIR Compliance",
@@ -51,15 +75,15 @@
     },
     "4.2.3": {
       "title": "Active Maintenance",
-      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 998 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 1 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.12.1 (180 days ago), 5/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 86 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 8 of 24 previously active contributors stopped (33%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
+      "data": "<p><strong>Commit Activity Pattern Analysis:</strong> Active \u2014 1,004 commits (52 weeks) \u2713</p>\n<p class=\"sub-detail\">Last Commit: 0 days ago</p>\n<p><strong>Maintenance Mode Indicator Detection:</strong> No maintenance flags \u2713</p>\n<p><strong>Activity Trend Monitoring:</strong> Increasing \u2713</p>\n<p><strong>Release Pattern Assessment:</strong> v2.13.0-rc1 (0 days ago), 6/yr \u2713</p>\n<p class=\"sub-detail\">Contributors: 86 (bus factor: 3)</p>\n<p><strong>Multi-Channel Communication Activity:</strong> 4 channels \u2713</p>\n<p class=\"sub-detail\">GitHub Discussions, Wiki, GitHub Issues, Mailing list</p>\n<p><strong>Contributor Abandonment Forecasting:</strong> 8 of 24 previously active contributors stopped (33%) \u2713</p>\n<p><strong>Score:</strong> 6/6</p>"
     },
     "4.2.4": {
       "title": "Engagement",
-      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 1102 hours median to close, for 53 issues opened 30-365 days ago (11 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 70% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 53 opened, 66 closed 30-365 days ago (0.80 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 4 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 57% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 78% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 71 hours</p>\n<p><strong>Score:</strong> 5/7</p>"
+      "data": "<p><strong>Response Time Tracking:</strong> 3 hours \u2713</p>\n<p><strong>Issue Resolution Analysis:</strong> 1102 hours median to close, for 53 issues opened 30-365 days ago (11 still open) \u2717</p>\n<p><strong>Pull Request Flow Assessment:</strong> 73% \u2713</p>\n<p><strong>Support Request Closure Analysis:</strong> 53 opened, 66 closed 30-365 days ago (0.80 opened per closed) \u2713</p>\n<p><strong>Engagement Quality Metrics:</strong> 4 comments per issue (median) \u2713</p>\n<p><strong>Communication Pattern Analysis:</strong> 57% of community issues answered within a week \u2717</p>\n<p><strong>Community Participation Assessment:</strong> 72% of 60 issues and PRs opened from outside the maintainer group \u2713</p>\n<p class=\"sub-detail\">Median PR Cycle Time: 72 hours</p>\n<p><strong>Score:</strong> 5/7</p>"
     },
     "4.2.5": {
       "title": "Outreach",
-      "data": "<p><strong>New Contributor Tracking:</strong> 14 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> Not measurable: the last 1000 commits don't reach back 365 days</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 27 one-time / 20 casual / 39 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> 0 open, 19 closed \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 3/4 resources \u2713</p>\n<p class=\"sub-detail\">Contributing guide, Issue templates, Getting-started guide</p>\n<p><strong>Score:</strong> 3/4</p>"
+      "data": "<p><strong>New Contributor Tracking:</strong> 13 in last 1 year \u2713</p>\n<p><strong>Contributor Retention Analysis:</strong> Not measurable: the last 1000 commits don't reach back 365 days</p>\n<p><strong>Contributor Lifecycle Mapping:</strong> 27 one-time / 20 casual / 39 repeat \u2713</p>\n<p><strong>Contribution Type Diversity:</strong> Not yet collected</p>\n<p><strong>Good First Issue Effectiveness:</strong> 0 open, 19 closed \u2717</p>\n<p><strong>External Event Participation:</strong> Not yet collected</p>\n<p><strong>Training Material Integration:</strong> Not yet collected</p>\n<p><strong>Onboarding Infrastructure Assessment:</strong> 3/4 resources \u2713</p>\n<p class=\"sub-detail\">Contributing guide, Issue templates, Getting-started guide</p>\n<p><strong>Score:</strong> 3/4</p>"
     },
     "4.2.6": {
       "title": "Welcomeness",
@@ -79,7 +103,7 @@
     },
     "4.2.10": {
       "title": "Project Longevity and Community Health",
-      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">998 commits and 5 release(s) in the last year; active in 50/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">86 contributors; top contributor 23.2% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-09-29 (10.1 yrs); GitHub repo created 2016-12-06 (9.9 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Comprehensive Activity Analysis:</strong> 3/3 dimensions active \u2713</p>\n<p class=\"sub-detail\">1,004 commits and 6 release(s) in the last year; active in 50/52 weeks</p>\n<p><strong>Contributor Viability Assessment:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">86 contributors; top contributor 23.3% of commits</p>\n<p><strong>Maintenance Mode Detection:</strong> No warning indicators \u2713</p>\n<p><strong>Community Health Trends:</strong> Increasing \u2713</p>\n<p><strong>Project Lifecycle Assessment:</strong> Mature \u2713</p>\n<p class=\"sub-detail\">Project age: first commit 2016-09-29 (10.1 yrs); GitHub repo created 2016-12-06 (9.9 yrs)</p>\n<p><strong>Score:</strong> 5/5</p>"
     }
   },
   "quality": {
@@ -89,11 +113,11 @@
     },
     "4.3.2": {
       "title": "Development Practices",
-      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 5/6 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 3/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target, Unit-test framework</p>\n<p><strong>Code Review Quality Analysis:</strong> 100.0% of 35 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 3/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config, Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge <a href=\"https://www.bestpractices.dev/projects/11410\">Passing</a> (100%) \u2713</p>\n<p class=\"sub-detail\">Governance criteria: 2/4 met</p>\n<p class=\"sub-detail\">Security criteria: 2/3 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>CI/CD Effectiveness Assessment:</strong> 5/6 \u2713</p>\n<p><strong>Testing Framework Excellence:</strong> 3/4 indicators \u2713</p>\n<p class=\"sub-detail\">Test suite directory, Build-system test target, Unit-test framework</p>\n<p><strong>Code Review Quality Analysis:</strong> 100.0% of 34 merged PRs reviewed \u2713</p>\n<p><strong>Development Tool Integration:</strong> 3/4 tools \u2713</p>\n<p class=\"sub-detail\">Code formatter config, Linter config, Dependency automation</p>\n<p><strong>Community Contribution Facilitation:</strong> OpenSSF Badge <a href=\"https://www.bestpractices.dev/projects/11410\">Passing</a> (100%) \u2713</p>\n<p class=\"sub-detail\">Governance criteria: 2/4 met</p>\n<p class=\"sub-detail\">Security criteria: 2/3 met</p>\n<p class=\"sub-detail\">Quality criteria: 3/3 met</p>\n<p><strong>Score:</strong> 5/5</p>"
     },
     "4.3.3": {
       "title": "Reproducibility",
-      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2713</p><p class=\"sub-detail\">CITATION.cff</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile, Singularity / Apptainer</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">v2.12.1, v2.12.0</p>\n<p><strong>Environment Management:</strong> \u2713</p><p class=\"sub-detail\">Versioned dependency manifest, Dependabot dependency updates, scripts/ci/gh-actions/conda-env-macos.yml</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Environment specification, Install / build guide</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>FAIR4RS Compliance Assessment:</strong> \u2713</p><p class=\"sub-detail\">CITATION.cff</p>\n<p><strong>Containerization Excellence:</strong> \u2713</p><p class=\"sub-detail\">Dockerfile, Singularity / Apptainer</p>\n<p><strong>Version Control Best Practices:</strong> \u2713</p><p class=\"sub-detail\">v2.13.0-rc1, v2.12.1</p>\n<p><strong>Environment Management:</strong> \u2713</p><p class=\"sub-detail\">Versioned dependency manifest, Dependabot dependency updates, scripts/ci/gh-actions/conda-env-macos.yml</p>\n<p><strong>Reproducibility Documentation:</strong> \u2713</p><p class=\"sub-detail\">Environment specification, Install / build guide</p>\n<p><strong>Score:</strong> 5/5</p>"
     },
     "4.3.4": {
       "title": "Usability",
@@ -105,7 +129,7 @@
     },
     "4.3.6": {
       "title": "Maintainability and Understandability",
-      "data": "<p><strong>Advanced Complexity Analysis:</strong> 1,265 source files, mean 15.0 KB, 2.2% over 100 KB, depth 9 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 467 test files for 1,265 source files (0.37 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 150 documentation files (0.12 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 23.2% of commits (86 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 6 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Modernize FindZeroMQ.cmake and fix some ZeroMQ related compile bugs; thirdparty: remove unused include for systemtools; testing: make XRootD HTTPS cleanup reliable</p>\n<p><strong>Score:</strong> 5/5</p>"
+      "data": "<p><strong>Advanced Complexity Analysis:</strong> 1,265 source files, mean 15.0 KB, 2.2% over 100 KB, depth 9 \u2713</p>\n<p class=\"sub-detail\">Structural proxy: file size and nesting, not static analysis</p>\n<p><strong>Code Quality Assessment:</strong> 468 test files for 1,265 source files (0.37 ratio) \u2713</p>\n<p><strong>Documentation Quality Evaluation:</strong> 150 documentation files (0.12 ratio); Doxygen \u2713</p>\n<p><strong>Knowledge Distribution Analysis:</strong> Bus factor 3 \u2713</p>\n<p class=\"sub-detail\">Top contributor: 23.3% of commits (86 total contributors)</p>\n<p><strong>Refactoring and Evolution Tracking:</strong> 7 of 300 recent commits \u2713</p>\n<p class=\"sub-detail\">Merge pull request #5240 from eisenhauer/selection-cleanup; Modernize FindZeroMQ.cmake and fix some ZeroMQ related compile bugs; thirdparty: remove unused include for systemtools</p>\n<p><strong>Score:</strong> 5/5</p>"
     },
     "4.3.7": {
       "title": "Performance and Efficiency",
@@ -113,8 +137,332 @@
     },
     "4.3.8": {
       "title": "Software Supply Chain Integrity",
-      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 7.9/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
+      "data": "<p><strong>SBOM Detection:</strong> No SBOM found \u2717</p>\n<p><strong>Build Provenance:</strong> No build provenance found \u2717</p>\n<p><strong>Dependency Vulnerability Posture:</strong> No dependency lockfile found at the repository root \u2713</p>\n<p><strong>Dependency Freshness:</strong> Not yet collected</p>\n<p class=\"sub-detail\">OpenSSF Badge: passing \u00b7 OpenSSF Scorecard: 7.4/10 \u2014 practices this section does not measure directly</p>\n<p><strong>Score:</strong> 1/3</p>"
     }
   },
-  "generated_at": "2026-10-26T12:02:28Z"
+  "generated_at": "2026-10-28T04:26:45Z",
+  "dependencies": {
+    "languages": {
+      "nodes": [
+        {
+          "name": "C++",
+          "color": "#f34b7d"
+        }
+      ]
+    },
+    "dependencyGraphManifests": {
+      "nodes": [
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "setuptools-scm",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pypa/setuptools-scm"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "numpy",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "numpy/numpy"
+                }
+              },
+              {
+                "packageName": "pip",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pypa/pip"
+                }
+              },
+              {
+                "packageName": "setuptools-scm",
+                "packageManager": "PIP",
+                "repository": {
+                  "nameWithOwner": "pypa/setuptools-scm"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "korthout/backport-action",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "korthout/backport-action"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "dependabot/fetch-metadata",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "dependabot/fetch-metadata"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/cache/restore",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/cache"
+                }
+              },
+              {
+                "packageName": "actions/cache/save",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/cache"
+                }
+              },
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/download-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/download-artifact"
+                }
+              },
+              {
+                "packageName": "actions/upload-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/upload-artifact"
+                }
+              },
+              {
+                "packageName": "advanced-security/filter-sarif",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "advanced-security/filter-sarif"
+                }
+              },
+              {
+                "packageName": "eWaterCycle/setup-apptainer",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "eWaterCycle/setup-apptainer"
+                }
+              },
+              {
+                "packageName": "github/codeql-action/analyze",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "github/codeql-action"
+                }
+              },
+              {
+                "packageName": "github/codeql-action/init",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "github/codeql-action"
+                }
+              },
+              {
+                "packageName": "github/codeql-action/upload-sarif",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "github/codeql-action"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "Kitware/cdash-status",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "Kitware/cdash-status"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/download-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/download-artifact"
+                }
+              },
+              {
+                "packageName": "actions/setup-python",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/setup-python"
+                }
+              },
+              {
+                "packageName": "actions/upload-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/upload-artifact"
+                }
+              },
+              {
+                "packageName": "pypa/cibuildwheel",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "pypa/cibuildwheel"
+                }
+              },
+              {
+                "packageName": "pypa/gh-action-pypi-publish",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "pypa/gh-action-pypi-publish"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/checkout",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/checkout"
+                }
+              },
+              {
+                "packageName": "actions/upload-artifact",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/upload-artifact"
+                }
+              },
+              {
+                "packageName": "github/codeql-action/upload-sarif",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "github/codeql-action"
+                }
+              },
+              {
+                "packageName": "ossf/scorecard-action",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "ossf/scorecard-action"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "dependencies": {
+            "nodes": [
+              {
+                "packageName": "actions/stale",
+                "packageManager": "ACTIONS",
+                "repository": {
+                  "nameWithOwner": "actions/stale"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 }

@@ -2,7 +2,7 @@
 
 Original Author: Ian Lee <lee1001@llnl.gov>
 
-Welcome to the CORSA Sustainability Dashboard! The purpose of this dashboard is to showcase the sustainability activities of open source scientific software under the stewardship of CORSA.
+Welcome to the CORSA Sustainability Dashboard! The purpose of this dashboard is to showcase the sustainability activities of open source scientific software.
 
 ## Prerequisites
 
@@ -50,7 +50,11 @@ If you have any questions, please don't hesitate to contact the dashboard admini
 
 You can also find us on our mailing list: <info@corsa.center>.
 
-# Release
+## Release
 
 The code of this site is released under the MIT License. For more details, see the
 [LICENSE](LICENSE) File.
+
+## Acknowledgements
+
+This work is supported by the U.S. Department of Energy, Office of Science, Office of Advanced Scientific Computing Research, Next-Generation Scientific Software Technologies program, under contract number DE-AC05-00OR22725.

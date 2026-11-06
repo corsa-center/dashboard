@@ -479,6 +479,17 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     }
   }
 
+  // The collector writes report.html beside metrics.json: the same results
+  // as one page, with an anchor per metric (4.2.3 -> #s4-2-3). Links to it
+  // stay hidden until a HEAD request confirms this package has one.
+  const reportUrl = metrics
+    ? `${window.config.baseUrl}/explore/github-data/${repoName.split('/')[1]}-metrics/report.html`
+    : null;
+  const reportAnchor = (num) => `${reportUrl}#s${num.replace(/\./g, '-')}`;
+  const fullReportHTML = reportUrl
+    ? `<div class="pw-report-row"><a class="pw-report-link" href="${reportUrl}" target="_blank" rel="noopener"><span class="fa fa-file-text-o"></span> Full report</a></div>`
+    : '';
+
   const passingBlades = legendBoxCluster(DIMENSIONS.map(d => d.color));
   const failingBlades = legendBoxCluster(DIMENSIONS.map(d => d.muted));
   const legendHTML = `
@@ -494,6 +505,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     <div class="metrics-header">
       <h2 class="metrics-main-title">Metrics</h2>
       ${lastUpdatedHTML}
+      ${fullReportHTML}
       ${legendHTML}
     </div>`;
 
@@ -504,6 +516,9 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
         <div class="dimension-header ${dim.headerClass} pw-dim-header" style="cursor:pointer">
           <span class="pw-dim-icon"><span class="fa ${dim.icon}"></span></span>
           <h3 style="margin:0">${dim.label}</h3>
+          ${reportUrl
+            ? `<a class="pw-report-link pw-dim-report-link" href="${reportAnchor(dim.items[0].num)}" target="_blank" rel="noopener" title="${dim.label} in the full report" aria-label="${dim.label} in the full report"><span class="fa fa-external-link"></span></a>`
+            : ''}
           <span class="pw-accordion-arrow fa fa-chevron-down" style="margin-left:auto;font-size:11px;color:rgba(255,255,255,0.75)"></span>
         </div>
         <div class="pw-card-grid">`;
@@ -538,6 +553,9 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
           <div class="pw-detail-header">
             <span class="pw-detail-dot" style="background:${dim.color}"></span>
             <span class="pw-detail-title"></span>
+            ${reportUrl
+              ? `<a class="pw-report-link pw-detail-report-link" target="_blank" rel="noopener">View in full report <span class="fa fa-external-link"></span></a>`
+              : ''}
           </div>
           <div class="pw-detail-body"></div>
         </div>
@@ -546,6 +564,14 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
 
   html += '</div>';
   metricsSection.innerHTML = html;
+
+  if (reportUrl) {
+    fetch(reportUrl, { method: 'HEAD' })
+      .then((res) => {
+        if (res.ok) metricsSection.querySelector('.pw-metrics-container').classList.add('pw-has-report');
+      })
+      .catch(() => {});
+  }
 
   // ── Wire up interactions via event delegation ────────────────────────────────
   DIMENSIONS.forEach(dim => {
@@ -556,7 +582,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     let activeCard = null;
 
     // Accordion header
-    dimEl.querySelector('.pw-dim-header').addEventListener('click', () => {
+    dimEl.querySelector('.pw-dim-header').addEventListener('click', (e) => {
+      if (e.target.closest('.pw-dim-report-link')) return; // follow the link, don't toggle
       const collapsed = grid.style.display === 'none';
       grid.style.display = collapsed ? '' : 'none';
       panel.style.display = collapsed ? '' : 'none';
@@ -582,6 +609,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
         card.classList.add('active');
         activeCard = card;
         const titleEl = panel.querySelector('.pw-detail-title');
+        const detailReportLink = panel.querySelector('.pw-detail-report-link');
+        if (detailReportLink) detailReportLink.href = reportAnchor(itemNum);
         const sectionDesc = SECTION_DESCRIPTIONS[itemNum];
         const titleText = itemDef ? itemDef.title : '';
         if (sectionDesc) {

@@ -197,7 +197,7 @@ function renderSingleRepoHTML(repo) {
       ${
         repo.cdash
           ? `
-          <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" height="20" width="20" class="cdash-icon"></img>CDash Dashboard </a>
+          <a href="${repo.cdash}"> <img src="${window.config.baseUrl}/assets/images/logos/cdash.svg" class="cdash-icon" alt="">CDash Dashboard </a>
           ${
             repo.clangTidyMetrics
               ? `<a href="${window.config.baseUrl}/explore/project-metrics/metrics/?repo=${encodeURIComponent(repo.nameWithOwner)}"> <span class="fa fa-bar-chart"></span>Code Complexity Metrics </a>`
@@ -1025,6 +1025,7 @@ function renderRepoListHtml() {
       }
       return `
   <div class="catalog-grid-item" ${anchorId ? `id="${anchorId}"` : ''}>
+    ${repo.published !== false ? '' : '<span class="fa fa-lock catalog-lock-icon" title="Not public" aria-label="Not public"></span>'}
     <a class="repoLink">
       <h3 class="text-center">
         <span title="Name">${repo.name}</span>
@@ -1312,6 +1313,7 @@ function setVisibleRepo(newValue, shouldPushState) {
                           if (reposInfoObj[repo].cdash) {
                             category[count]['cdash'] = reposInfoObj[repo].cdash
                           }
+                          category[count]['published'] = reposInfoObj[repo].published;
                         }
                       }
                     }

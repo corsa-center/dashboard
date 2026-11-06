@@ -44,3 +44,10 @@ p.stats > a {
 p.stats > a > span.fa {
   margin-right: 8px;
 }
+
+p.stats > a > img.cdash-icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 8px;
+  vertical-align: -0.125em;
+}

@@ -296,6 +296,9 @@ function fetchMetrics(repoName) {
  */
 function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   const metricsSection = document.getElementById('metrics-section');
+  // The impact/ecosystem/quality sections, under `formatted` in files
+  // written since corsa-center/metrics#110 and at the top level before.
+  const sections = metrics ? (metrics.formatted || metrics) : null;
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
   // Dimension colors: 3 hues from the dataviz categorical palette (crimson,
@@ -510,7 +513,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
     </div>`;
 
   DIMENSIONS.forEach(dim => {
-    const dimData = metrics ? metrics[dim.id] : null;
+    const dimData = sections ? sections[dim.id] : null;
     html += `
       <div class="metric-dimension pw-dimension" id="pw-dim-${dim.id}">
         <div class="dimension-header ${dim.headerClass} pw-dim-header" style="cursor:pointer">
@@ -575,7 +578,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
 
   // ── Wire up interactions via event delegation ────────────────────────────────
   DIMENSIONS.forEach(dim => {
-    const dimData = metrics ? metrics[dim.id] : null;
+    const dimData = sections ? sections[dim.id] : null;
     const dimEl = document.getElementById(`pw-dim-${dim.id}`);
     const panel = document.getElementById(`pw-detail-${dim.id}`);
     const grid  = dimEl.querySelector('.pw-card-grid');

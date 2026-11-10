@@ -1,0 +1,19 @@
+js/catalog.js
+  s_4e3949389844f1::t_9509da7a244cc6 430,520,681-683
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "20b00b0e253f42e63c32a0d7a34c0b288a13a903",
+  "prompts": {},
+  "sessions": {
+    "s_4e3949389844f1": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ceb7fc8f-5133-4c4b-ba7b-566881c935ea",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "M. Scot Breitenfeld <brtnfld@hdfgroup.org>"
+    }
+  }
+}

@@ -427,7 +427,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       else if (/\bN\/A\b|not applicable/i.test(p.textContent)) na++;
     });
     // The collector's own denominator only counts sub-metrics it actually
-    // scored -- a sub-metric it hasn't implemented yet ("Not yet collected")
+    // scored -- one not implemented yet, or unavailable this run
     // has a row here but isn't part of that count. Widen the wheel to the
     // number of sub-metric rows actually present so those still claim a
     // (gray, not-collected) slot instead of shrinking the whole wheel.
@@ -517,7 +517,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       <span class="pw-legend-item">${passingBlades}Collected, meets threshold</span>
       <span class="pw-legend-item">${failingBlades}Collected, below threshold</span>
       <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--na"></span>Not applicable</span>
-      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--pending"></span>Not yet collected</span>
+      <span class="pw-legend-item"><span class="pw-legend-swatch pw-legend-swatch--pending"></span>Not yet implemented or unavailable this run</span>
       ${hasClangTidyMetrics ? '<span class="pw-legend-item"><span class="pw-legend-badge">&#9670;</span>Explorable via external tool</span>' : ''}
     </div>`;
 
@@ -678,7 +678,9 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
         body.querySelectorAll('p').forEach(p => {
           if (p.classList.contains('sub-detail')) return;
           const t = p.textContent;
-          if (t.includes('Not yet collected')) { p.classList.add('pw-not-collected'); return; }
+          // "Not yet collected" is the wording in metrics written before
+          // corsa-center/metrics split it into these two.
+          if (/Not yet implemented|Unavailable|Not yet collected/.test(t)) { p.classList.add('pw-not-collected'); return; }
           const strong = p.querySelector('strong');
           if (!strong) return;
           if (t.includes('✓')) { strong.style.color = '#16a34a'; return; }

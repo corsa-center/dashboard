@@ -155,6 +155,23 @@ function renderSingleRepoError(queryParam) {
 }
 
 /**
+ * Link to the Spack page for the package built from this repository, which
+ * is often not named after it (SCOREC/core is Spack's pumi). spackPackage
+ * is null when Spack has no package for the repository, so there is no
+ * link; data without spackPackage falls back to the repository's name.
+ * @param {Object} repo catalog entry
+ */
+function spackDependenciesLink(repo) {
+  const pkg = 'spackPackage' in repo ? repo.spackPackage : repo.name;
+  if (!pkg) {
+    return '';
+  }
+  return `<a href="/dashboard/explore/spack-dependencies/?package=${encodeURIComponent(pkg)}" title="View Spack Dependencies">
+        <span class="fa fa-pie-chart"></span>
+      </a>`;
+}
+
+/**
  * @param {Object} repo repo property from intReposInfo.json
  */
 function renderSingleRepoHTML(repo) {
@@ -1072,9 +1089,7 @@ function renderRepoListHtml() {
         <span class="fa fa-github"></span>
       </a>
 
-      <a href="/dashboard/explore/spack-dependencies/?package=${repo.name}" title="View Dependencies">
-        <span class="fa fa-pie-chart"></span>
-      </a>
+      ${spackDependenciesLink(repo)}
       ${
         repo.homepageUrl
           ? `
@@ -1346,6 +1361,9 @@ function setVisibleRepo(newValue, shouldPushState) {
                             category[count]['cdash'] = reposInfoObj[repo].cdash
                           }
                           category[count]['published'] = reposInfoObj[repo].published;
+                          if ('spackPackage' in reposInfoObj[repo]) {
+                            category[count]['spackPackage'] = reposInfoObj[repo].spackPackage;
+                          }
                         }
                       }
                     }

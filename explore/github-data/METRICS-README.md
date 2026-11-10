@@ -137,6 +137,10 @@ Each `metrics.json` file contains three main dimensions:
 2. **ecosystem**: Measures community health and longevity (4.2.x metrics)
 3. **quality**: Measures technical excellence and usability (4.3.x metrics)
 
+Files written since [corsa-center/metrics#110](https://github.com/corsa-center/metrics/pull/110) also have:
+- **formatted**: the same `impact`, `ecosystem` and `quality` sections. The dashboard reads them from here, falling back to the top level for older files. The top-level copies will be dropped once every file the dashboard can show has `formatted`.
+- **metrics**: the raw measurements the scores and sections were computed from: `overall_score`, then per dimension its `score`, `score_components` (each sub-collector's percentage) and each sub-collector's result. The dashboard doesn't read it.
+
 ### Metric Objects
 Each metric contains:
 - **title**: Human-readable name

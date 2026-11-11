@@ -316,6 +316,11 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   // The impact/ecosystem/quality sections, under `formatted` in files
   // written since corsa-center/metrics#110 and at the top level before.
   const sections = metrics ? (metrics.formatted || metrics) : null;
+  // One metric's entry: formatted[dimension][metric], named by the metric's
+  // path (ecosystem/licensing is formatted.ecosystem.licensing) since
+  // corsa-center/metrics#117; keyed by CASS section number before.
+  const sectionEntry = (dimData, item) =>
+    (dimData && (dimData[item.key] || dimData[item.num])) || null;
 
   // ── Sub-metric definitions (CASS Sustainability Metrics Report v3) ──────────
   // Dimension colors: 3 hues from the dataviz categorical palette (crimson,
@@ -328,9 +333,9 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       headerClass: 'impact-header', color: '#810E0E', muted: '#F5A3A3',
       headerGradient: 'linear-gradient(135deg, #810E0E 0%, #933131 33%, #A65555 66%, #B87878 100%)',
       items: [
-        { num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
+        { key: 'citation_and_adoption', num: '4.1.1', blades: 5, short: 'Citation & Adoption', title: 'Software Citation and Adoption',
           subMetrics: ['Enhanced Citations and Mentions','Improved DOI Tracking','Comprehensive Citation Metadata','Advanced Dependency Analysis','AI-Enhanced Training Detection'] },
-        { num: '4.1.2', blades: 3, short: 'Field Research', title: 'Field Research Impact',
+        { key: 'field_research', num: '4.1.2', blades: 3, short: 'Field Research', title: 'Field Research Impact',
           subMetrics: ['AI-Enhanced Publication Analysis','Comprehensive Institutional Tracking','Impact Narrative Extraction'] }
       ]
     },
@@ -339,25 +344,25 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       headerClass: 'ecosystem-header', color: '#0C6F4B', muted: '#A3F5D7',
       headerGradient: 'linear-gradient(135deg, #0C6F4B 0%, #308465 33%, #539980 66%, #77AE9A 100%)',
       items: [
-        { num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
+        { key: 'governance', num: '4.2.1',  blades: 5,  short: 'CoC & Governance',    title: 'Codes of Conduct (CoC), Governance, and Contributor Guidelines',
           subMetrics: ['Enhanced Document Detection','Governance Keyword Analysis','OpenSSF Badge Integration','CHAOSS Governance Metrics','Governance Effectiveness Assessment'] },
-        { num: '4.2.2',  blades: 5,  short: 'Licensing & FAIR',    title: 'Open-Source Licensing and FAIR Compliance',
+        { key: 'licensing', num: '4.2.2',  blades: 5,  short: 'Licensing & FAIR',    title: 'Open-Source Licensing and FAIR Compliance',
           subMetrics: ['Enhanced License Detection','Automated FAIR4RS Assessment','OSI License Validation','License Exception Handling','FAIR Metadata Assessment'] },
-        { num: '4.2.3',  blades: 6,  short: 'Active Maintenance',  title: 'Active Maintenance',
+        { key: 'active_maintenance', num: '4.2.3',  blades: 6,  short: 'Active Maintenance',  title: 'Active Maintenance',
           subMetrics: ['Commit Activity Pattern Analysis','Maintenance Mode Indicator Detection','Activity Trend Monitoring','Release Pattern Assessment','Multi-Channel Communication Activity','Contributor Abandonment Forecasting'] },
-        { num: '4.2.4',  blades: 7,  short: 'Engagement',          title: 'Engagement',
+        { key: 'engagement', num: '4.2.4',  blades: 7,  short: 'Engagement',          title: 'Engagement',
           subMetrics: ['Response Time Tracking','Issue Resolution Analysis','Pull Request Flow Assessment','Support Request Closure Analysis','Engagement Quality Metrics','Communication Pattern Analysis','Community Participation Assessment'] },
-        { num: '4.2.5',  blades: 8,  short: 'Outreach',            title: 'Outreach',
+        { key: 'outreach', num: '4.2.5',  blades: 8,  short: 'Outreach',            title: 'Outreach',
           subMetrics: ['New Contributor Tracking','Contributor Retention Analysis','Contributor Lifecycle Mapping','Contribution Type Diversity','Good First Issue Effectiveness','External Event Participation','Training Material Integration','Onboarding Infrastructure Assessment'] },
-        { num: '4.2.6',  blades: 7,  short: 'Welcomeness',         title: 'Welcomeness',
+        { key: 'welcomeness', num: '4.2.6',  blades: 7,  short: 'Welcomeness',         title: 'Welcomeness',
           subMetrics: ['CHAOSS Community Experience Metrics','Response Quality and Tone Analysis','Communication Sentiment Analysis','Contributor Journey Mapping','Language and Communication Review','Leadership Role Representation','Decision-Making Visibility'] },
-        { num: '4.2.7',  blades: 5,  short: 'Collaboration',       title: 'Collaboration',
+        { key: 'collaboration', num: '4.2.7',  blades: 5,  short: 'Collaboration',       title: 'Collaboration',
           subMetrics: ['Advanced Dependency Analysis','Cross-project Reference Detection','Interoperability Assessment','Collaboration Network Analysis','Standards Compliance Tracking'] },
-        { num: '4.2.8',  blades: 5,  short: 'Financial',           title: 'Financial Sustainability',
+        { key: 'financial_sustainability', num: '4.2.8',  blades: 5,  short: 'Financial',           title: 'Financial Sustainability',
           subMetrics: ['Enhanced Funding Documentation Analysis','Institutional Affiliation Tracking','NIH R50 Award Tracking','Corporate Sponsorship Detection','Funding Portfolio Analysis'] },
-        { num: '4.2.9',  blades: 5,  short: 'Institutional',       title: 'Institutional & Organizational Support',
+        { key: 'institutional_support', num: '4.2.9',  blades: 5,  short: 'Institutional',       title: 'Institutional & Organizational Support',
           subMetrics: ['RSE Position Detection','Institutional Support Tracking','Career Development Indicators','NIH R50 Award Integration','Institutional Policy Analysis'] },
-        { num: '4.2.10', blades: 5,  short: 'Community Health',    title: 'Project Longevity and Community Health',
+        { key: 'project_longevity', num: '4.2.10', blades: 5,  short: 'Community Health',    title: 'Project Longevity and Community Health',
           subMetrics: ['Comprehensive Activity Analysis','Contributor Viability Assessment','Maintenance Mode Detection','Community Health Trends','Project Lifecycle Assessment'] }
       ]
     },
@@ -366,21 +371,21 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       headerClass: 'quality-header', color: '#084691', muted: '#9EC7FA',
       headerGradient: 'linear-gradient(135deg, #084691 0%, #2C61A1 33%, #507CB1 66%, #7597C1 100%)',
       items: [
-        { num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
+        { key: 'reliability', num: '4.3.1', blades: 5,  short: 'Reliability',      title: 'Reliability and Robustness',
           subMetrics: ['Advanced Static Analysis','Enhanced Security Analysis','CERT Guidelines Compliance','Test Coverage Excellence','Reliability Trend Analysis'] },
-        { num: '4.3.2', blades: 5,  short: 'Dev Practices',    title: 'Development Practices',
+        { key: 'development_practices', num: '4.3.2', blades: 5,  short: 'Dev Practices',    title: 'Development Practices',
           subMetrics: ['CI/CD Effectiveness Assessment','Testing Framework Excellence','Code Review Quality Analysis','Development Tool Integration','Community Contribution Facilitation'] },
-        { num: '4.3.3', blades: 5,  short: 'Reproducibility',  title: 'Reproducibility',
+        { key: 'reproducibility', num: '4.3.3', blades: 5,  short: 'Reproducibility',  title: 'Reproducibility',
           subMetrics: ['FAIR4RS Compliance Assessment','Containerization Excellence','Version Control Best Practices','Environment Management','Reproducibility Documentation'] },
-        { num: '4.3.4', blades: 5,  short: 'Usability',        title: 'Usability',
+        { key: 'usability', num: '4.3.4', blades: 5,  short: 'Usability',        title: 'Usability',
           subMetrics: ['User Experience Assessment','Documentation Completeness Analysis','Accessibility Feature Detection','Installation Success Tracking','Usage Analytics Integration'] },
-        { num: '4.3.5', blades: 5,  short: 'Accessibility',    title: 'Accessibility',
+        { key: 'accessibility', num: '4.3.5', blades: 5,  short: 'Accessibility',    title: 'Accessibility',
           subMetrics: ['Portable Build System Detection','Container Availability Assessment','Architecture Compatibility Analysis','Platform Documentation Evaluation','Deployment Environment Testing'] },
-        { num: '4.3.6', blades: 5,  short: 'Maintainability',  title: 'Maintainability and Understandability',
+        { key: 'maintainability', num: '4.3.6', blades: 5,  short: 'Maintainability',  title: 'Maintainability and Understandability',
           subMetrics: ['Advanced Complexity Analysis','Code Quality Assessment','Documentation Quality Evaluation','Knowledge Distribution Analysis','Refactoring and Evolution Tracking'] },
-        { num: '4.3.7', blades: 10, short: 'Performance',      title: 'Performance and Efficiency',
+        { key: 'performance', num: '4.3.7', blades: 10, short: 'Performance',      title: 'Performance and Efficiency',
           subMetrics: ['Performance Benchmarking Integration','Environmental Impact Assessment','Resource Utilization Analysis','Scalability Assessment','Optimization Practice Evaluation','Memory Efficiency Analysis','I/O Performance Profiling','Algorithmic Complexity Assessment','Power Measurement Integration','Performance Portability Assessment'] },
-        { num: '4.3.8', blades: 4,  short: 'Supply Chain',     title: 'Software Supply Chain Integrity',
+        { key: 'supply_chain', num: '4.3.8', blades: 4,  short: 'Supply Chain',     title: 'Software Supply Chain Integrity',
           subMetrics: ['SBOM Detection','Build Provenance','Dependency Vulnerability Posture','Dependency Freshness'] }
       ]
     }
@@ -500,12 +505,13 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
   }
 
   // The collector writes report.html beside metrics.json: the same results
-  // as one page, with an anchor per metric (4.2.3 -> #s4-2-3). Links to it
-  // stay hidden until a HEAD request confirms this package has one.
+  // as one page, with an anchor per metric named by its path
+  // (ecosystem/active_maintenance -> #ecosystem-active_maintenance). Links
+  // to it stay hidden until a HEAD request confirms this package has one.
   const reportUrl = metrics
     ? `${window.config.baseUrl}/explore/github-data/${repoName.split('/')[1]}-metrics/report.html`
     : null;
-  const reportAnchor = (num) => `${reportUrl}#s${num.replace(/\./g, '-')}`;
+  const reportAnchor = (dim, item) => `${reportUrl}#${dim.id}-${item.key}`;
   const fullReportHTML = reportUrl
     ? `<div class="pw-report-row"><a class="pw-report-link" href="${reportUrl}" target="_blank" rel="noopener"><span class="fa fa-file-text-o"></span> Full report</a></div>`
     : '';
@@ -537,14 +543,14 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
           <span class="pw-dim-icon"><span class="fa ${dim.icon}"></span></span>
           <h3 style="margin:0">${dim.label}</h3>
           ${reportUrl
-            ? `<a class="pw-report-link pw-dim-report-link" href="${reportAnchor(dim.items[0].num)}" target="_blank" rel="noopener" title="${dim.label} in the full report" aria-label="${dim.label} in the full report"><span class="fa fa-external-link"></span></a>`
+            ? `<a class="pw-report-link pw-dim-report-link" href="${reportAnchor(dim, dim.items[0])}" target="_blank" rel="noopener" title="${dim.label} in the full report" aria-label="${dim.label} in the full report"><span class="fa fa-external-link"></span></a>`
             : ''}
           <span class="pw-accordion-arrow fa fa-chevron-down" style="margin-left:auto;font-size:11px;color:rgba(255,255,255,0.75)"></span>
         </div>
         <div class="pw-card-grid">`;
 
     dim.items.forEach(item => {
-      const entry = dimData && dimData[item.num] ? dimData[item.num] : null;
+      const entry = sectionEntry(dimData, item);
       const data = entry ? entry.data : null;
       const score = parseScore(data);
       const blades = item.blades || 4;
@@ -562,7 +568,7 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
 
       html += `<div class="metric-card pw-card ${data ? 'has-data' : ''}"
                     style="color:${isPending ? '#94a3b8' : dim.color}"
-                    data-dim="${dim.id}" data-num="${item.num}" title="${item.title}">
+                    data-dim="${dim.id}" data-key="${item.key}" title="${item.title}">
         ${pinwheelSVG(filled, failing, na, total, pwColor, pwMuted)}
         <div class="card-title">${item.short}</div>
       </div>`;
@@ -616,9 +622,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
       const card = e.target.closest('.pw-card');
       if (!card) return;
 
-      const itemNum = card.dataset.num;
-      const itemDef = dim.items.find(i => i.num === itemNum);
-      const entry   = dimData && dimData[itemNum] ? dimData[itemNum] : null;
+      const itemDef = dim.items.find(i => i.key === card.dataset.key);
+      const entry   = sectionEntry(dimData, itemDef);
       const data    = entry ? entry.data : null;
 
       const opening = card !== activeCard;
@@ -630,8 +635,8 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
         activeCard = card;
         const titleEl = panel.querySelector('.pw-detail-title');
         const detailReportLink = panel.querySelector('.pw-detail-report-link');
-        if (detailReportLink) detailReportLink.href = reportAnchor(itemNum);
-        const sectionDesc = SECTION_DESCRIPTIONS[itemNum];
+        if (detailReportLink) detailReportLink.href = reportAnchor(dim, itemDef);
+        const sectionDesc = SECTION_DESCRIPTIONS[`${dim.id}/${itemDef.key}`];
         const titleText = itemDef ? itemDef.title : '';
         if (sectionDesc) {
           const sup = `<sup class="metric-help" tabindex="0" role="button" `
@@ -707,29 +712,29 @@ function renderEcosystemMetrics(metrics, repoName, hasClangTidyMetrics) {
 
 /**
  * Brief descriptions for each CASS v3 section, sourced from the
- * CASS Sustainability Metrics Report v3.
+ * CASS Sustainability Metrics Report v3, keyed by metric path.
  */
 const SECTION_DESCRIPTIONS = {
-  '4.1.1': 'Measures how frequently and accurately the software is cited in academic literature and adopted across research ecosystems, including DOI tracking and dependency analysis.',
-  '4.1.2': "Assesses the software's contribution to scientific discoveries and research outcomes within specific research domains.",
-  '4.2.1': 'Evaluates the presence and quality of governance documents, codes of conduct, and contributor guidelines that define community behavior and decision-making processes.',
-  '4.2.2': "Assesses the clarity and permissiveness of the project's license and its alignment with FAIR (Findable, Accessible, Interoperable, Reusable) principles for research software.",
-  '4.2.3': 'Measures the level of ongoing development activity including commit frequency, release cadence, and responsiveness to maintenance signals.',
-  '4.2.4': 'Evaluates how responsive and active the project team is in addressing issues, pull requests, and community support requests.',
-  '4.2.5': 'Measures efforts to attract new contributors, retain existing ones, and grow the project community through events and training materials.',
-  '4.2.6': 'Assesses the quality and inclusiveness of community interactions, including communication tone, contributor journey support, and leadership diversity.',
-  '4.2.7': 'Evaluates cross-project dependencies, interoperability with other tools, and participation in the broader scientific software ecosystem.',
-  '4.2.8': 'Measures the diversity and stability of funding sources, including grants, corporate sponsors, and institutional support.',
-  '4.2.9': 'Assesses organizational backing through dedicated RSE positions, institutional commitments, and career development pathways for research software engineers.',
-  '4.2.10': 'Evaluates long-term sustainability indicators including contributor diversity, activity trends, and community resilience over time.',
-  '4.3.1': 'Measures code correctness and safety through static analysis, security scanning, test coverage, and adherence to coding standards.',
-  '4.3.2': 'Evaluates the maturity of CI/CD pipelines, testing frameworks, code review processes, and development tooling.',
-  '4.3.3': 'Assesses whether the software can be reliably built and executed across different environments, including containerization and FAIR4RS compliance.',
-  '4.3.4': 'Measures how accessible the software is to its intended users, including documentation quality, installation ease, and user experience.',
-  '4.3.5': 'Evaluates the ability to build and run across diverse computing platforms, architectures, and deployment environments.',
-  '4.3.6': 'Assesses code complexity, documentation quality, knowledge distribution among contributors, and long-term code evolution patterns.',
-  '4.3.7': 'Measures computational performance, resource utilization, scalability, and environmental impact across different hardware platforms and architectures.',
-  '4.3.8': 'Assesses the transparency and verifiability of the build and distribution pipeline, including bill-of-materials publication, build provenance, and dependency currency.',
+  'impact/citation_and_adoption': 'Measures how frequently and accurately the software is cited in academic literature and adopted across research ecosystems, including DOI tracking and dependency analysis.',
+  'impact/field_research': "Assesses the software's contribution to scientific discoveries and research outcomes within specific research domains.",
+  'ecosystem/governance': 'Evaluates the presence and quality of governance documents, codes of conduct, and contributor guidelines that define community behavior and decision-making processes.',
+  'ecosystem/licensing': "Assesses the clarity and permissiveness of the project's license and its alignment with FAIR (Findable, Accessible, Interoperable, Reusable) principles for research software.",
+  'ecosystem/active_maintenance': 'Measures the level of ongoing development activity including commit frequency, release cadence, and responsiveness to maintenance signals.',
+  'ecosystem/engagement': 'Evaluates how responsive and active the project team is in addressing issues, pull requests, and community support requests.',
+  'ecosystem/outreach': 'Measures efforts to attract new contributors, retain existing ones, and grow the project community through events and training materials.',
+  'ecosystem/welcomeness': 'Assesses the quality and inclusiveness of community interactions, including communication tone, contributor journey support, and leadership diversity.',
+  'ecosystem/collaboration': 'Evaluates cross-project dependencies, interoperability with other tools, and participation in the broader scientific software ecosystem.',
+  'ecosystem/financial_sustainability': 'Measures the diversity and stability of funding sources, including grants, corporate sponsors, and institutional support.',
+  'ecosystem/institutional_support': 'Assesses organizational backing through dedicated RSE positions, institutional commitments, and career development pathways for research software engineers.',
+  'ecosystem/project_longevity': 'Evaluates long-term sustainability indicators including contributor diversity, activity trends, and community resilience over time.',
+  'quality/reliability': 'Measures code correctness and safety through static analysis, security scanning, test coverage, and adherence to coding standards.',
+  'quality/development_practices': 'Evaluates the maturity of CI/CD pipelines, testing frameworks, code review processes, and development tooling.',
+  'quality/reproducibility': 'Assesses whether the software can be reliably built and executed across different environments, including containerization and FAIR4RS compliance.',
+  'quality/usability': 'Measures how accessible the software is to its intended users, including documentation quality, installation ease, and user experience.',
+  'quality/accessibility': 'Evaluates the ability to build and run across diverse computing platforms, architectures, and deployment environments.',
+  'quality/maintainability': 'Assesses code complexity, documentation quality, knowledge distribution among contributors, and long-term code evolution patterns.',
+  'quality/performance': 'Measures computational performance, resource utilization, scalability, and environmental impact across different hardware platforms and architectures.',
+  'quality/supply_chain': 'Assesses the transparency and verifiability of the build and distribution pipeline, including bill-of-materials publication, build provenance, and dependency currency.',
 };
 
 /**

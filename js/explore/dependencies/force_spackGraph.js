@@ -178,11 +178,19 @@ function draw_force_graph(areaID, adjacentAreaID) {
     const link = chart.append('g').attr('transform', 'translate(20,0)').attr('stroke', '#999').attr('stroke-opacity', 0.6);
     // Group for nodes
     const node = chart.append('g').attr('transform', 'translate(20,0)').attr('stroke', '#fff').attr('stroke-width', 1.5);
+    // ?package=X shows X's graph. X can be missing from the data (an old
+    // or hand-typed link, or a package Spack doesn't have): say so, and show
+    // every package instead of an empty graph.
     const urlParams = new URLSearchParams(window.location.search);
-    const package_queried = urlParams.has('package');
+    const requested = urlParams.get('package');
+    const package_queried = !!requested
+      && data.dependent_nodes.concat(data.dependency_nodes).some((d) => d.id == requested);
+    if (requested && !package_queried) {
+      showPackageNotFound(requested);
+    }
 
     if (package_queried) {
-      const package = urlParams.get('package');
+      const package = requested;
       draw_variant_picker(package);
       redraw_for_package(package);
     }
@@ -1200,6 +1208,16 @@ function draw_force_graph(areaID, adjacentAreaID) {
              root_nodes: root_nodes
     };
   }
+}
+
+// A notice above the graph that the requested package isn't in the Spack data.
+function showPackageNotFound(pkg) {
+  const notice = document.createElement('p');
+  notice.className = 'spack-not-found';
+  const icon = document.createElement('span');
+  icon.className = 'fa fa-exclamation-circle';
+  notice.append(icon, ` Spack package "${pkg}" was not found. Showing all packages.`);
+  document.getElementById('content').prepend(notice);
 }
 
 function searchForm(event) {

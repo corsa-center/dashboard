@@ -37,6 +37,7 @@ layout: compress
           <noscript>You need Javascript enabled to view this page.</noscript>
         </div>
         <div class="flex-container">
+          <input id="publishedOnly" type="checkbox" checked="True"/><p style="padding-right: 1em;">Published</p>
           <input
             id="searchText"
             type="text"
@@ -48,10 +49,9 @@ layout: compress
             <select id="orderProp">
               <option value="name">Name</option>
               <option value="owner">Org</option>
-              <option value="-stars">Activity (Stars)</option>
-              <option value="-forks">Activity (Forks)</option>
             </select>
           </p>
+
         </div>
         <nav id="letter-jump" class="letter-jump hidden" aria-label="Jump to letter">
           <noscript>&nbsp;</noscript>

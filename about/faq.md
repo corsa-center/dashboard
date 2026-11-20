@@ -50,7 +50,7 @@ When in doubt, contact your division representative further guidance.
 
 ### How do I include my repo in this website’s catalog?
 
-First check if your repository is included on this website’s home page and [full catalog]({{ '/' | relative_url }}). If not, open an issue requesting to have your repo added to the catalog.
+First check if your repository is included on this website’s home page and [full catalog]({{ '/' | relative_url }}). If not, use the [Add a Package]({{ '/about/add-package/' | relative_url }}) form. It opens a pull request to [corsa-center/metrics_packages](https://github.com/corsa-center/metrics_packages) that adds your package, and the dashboard starts collecting its metrics once a maintainer merges it.
 
 ### How do I let people know about my new repo?
 

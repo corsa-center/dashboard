@@ -32,6 +32,7 @@
       <div class="site-dropdown" aria-label="About menu">
         <a {% if page.url contains "/about/faq/" %}class="active"{% endif %} href="{{ 'about/faq' | relative_url }}">FAQ</a>
         <a {% if page.url contains "/about/licenses/" %}class="active"{% endif %} href="{{ 'about/licenses' | relative_url }}">Licenses Guide</a>
+        <a {% if page.url contains "/about/add-package/" %}class="active"{% endif %} href="{{ 'about/add-package' | relative_url }}">Add a Package</a>
       </div>
     </div>
 

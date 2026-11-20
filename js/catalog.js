@@ -41,6 +41,11 @@ let filterText = '';
  * if this starts with a '-', reverse the sort order
  */
 let orderProp = 'name';
+
+/**
+ * Value of the published checkbox.
+ */
+let publishedOnly = true;
 /**
  * Index of the active category from the catData array, relevant for showing visible repositories on the category list view.
  *
@@ -1039,6 +1044,9 @@ function renderRepoListHtml() {
       if (!repo.name || !repo.owner) {
         return false;
       }
+      if (publishedOnly && !repo.published) {
+        return false;
+      }
       // If there's no filter text, include all repos
       if (!filterText) {
         return true;
@@ -1081,7 +1089,7 @@ function renderRepoListHtml() {
       }
       return `
   <div class="catalog-grid-item" ${anchorId ? `id="${anchorId}"` : ''}>
-    ${repo.published !== false ? '' : '<span class="fa fa-lock catalog-lock-icon" title="Not public" aria-label="Not public"></span>'}
+    ${repo.published !== false ? '' : '<span class="fa fa-lock catalog-lock-icon" title="Not published" aria-label="Not published"></span>'}
     <a class="repoLink">
       <h3 class="text-center">
         <span title="Name">${repo.name}</span>
@@ -1475,6 +1483,12 @@ document.getElementById('searchText').addEventListener('input', (e) => {
 // sorting
 document.getElementById('orderProp').addEventListener('change', (e) => {
   orderProp = e.target.value;
+  renderRepoListHtml();
+});
+
+// Show published only
+document.getElementById('publishedOnly').addEventListener('change', (e) => {
+  publishedOnly = !publishedOnly;
   renderRepoListHtml();
 });
 

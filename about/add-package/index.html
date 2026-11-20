@@ -1,0 +1,150 @@
+---
+title: Add a Package
+layout: default
+css:
+  - css/add-package.css
+js:
+  - js/add-package.js
+---
+
+<h2 class="page-header">{{ page.title }}</h2>
+
+<p>
+  The dashboard collects metrics for each package listed in
+  <a href="https://github.com/corsa-center/metrics_packages">corsa-center/metrics_packages</a>,
+  one YAML file per package. Fill in the form to write that file. The button at the bottom then
+  opens GitHub's new-file page with it filled in: click <strong>Propose new file</strong> (or
+  <strong>Commit changes</strong>) and then <strong>Create pull request</strong>. GitHub forks the
+  repository for you if you can't write to it. You need a GitHub account, and everything in the
+  file is public. Metrics appear after a maintainer merges the pull request and the next daily
+  collection runs.
+</p>
+
+<form id="add-package-form" class="add-package-form" novalidate>
+  <fieldset>
+    <legend>Repository</legend>
+
+    <div class="form-group">
+      <label for="ap-repo-url">Repository URL <span class="ap-required">required</span></label>
+      <div class="input-group">
+        <input type="url" class="form-control" id="ap-repo-url" name="repo_url" required
+          placeholder="https://github.com/owner/repo" autocomplete="off" />
+        <span class="input-group-btn">
+          <button type="button" class="btn btn-default" id="ap-lookup">Fill in from repository</button>
+        </span>
+      </div>
+      <p class="help-block" id="ap-lookup-status" aria-live="polite"></p>
+    </div>
+
+    <div class="form-group">
+      <label for="ap-repo-type">Repository host <span class="ap-required">required</span></label>
+      <select class="form-control" id="ap-repo-type" name="repo_type">
+        <option value="github">GitHub</option>
+        <option value="gitlab">GitLab (gitlab.com or self-hosted)</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="ap-default-branch">Default branch</label>
+      <input type="text" class="form-control" id="ap-default-branch" name="default_branch" placeholder="main" />
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Display</legend>
+
+    <div class="form-group">
+      <label for="ap-name">Package name <span class="ap-required">required</span></label>
+      <input type="text" class="form-control" id="ap-name" name="name" required placeholder="As shown on the dashboard" />
+      <p class="help-block">Must be unique across the dashboard.</p>
+    </div>
+
+    <div class="form-group">
+      <label for="ap-description">Description</label>
+      <input type="text" class="form-control" id="ap-description" name="description"
+        placeholder="Leave blank to use the repository's description" />
+    </div>
+
+    <div class="form-group">
+      <label for="ap-language">Primary language</label>
+      <input type="text" class="form-control" id="ap-language" name="primary_language"
+        placeholder="Leave blank to use the repository's language" />
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Links</legend>
+
+    <div class="form-group">
+      <label for="ap-homepage">Homepage</label>
+      <input type="url" class="form-control" id="ap-homepage" name="homepage" placeholder="https://" />
+    </div>
+
+    <div class="form-group">
+      <label for="ap-documentation">Documentation</label>
+      <input type="url" class="form-control" id="ap-documentation" name="documentation"
+        placeholder="Leave blank to use the repository URL" />
+    </div>
+
+    <div class="form-group">
+      <label for="ap-cdash">CDash dashboard</label>
+      <input type="url" class="form-control" id="ap-cdash" name="cdash"
+        placeholder="https://my.cdash.org/index.php?project=..." />
+    </div>
+
+    <div class="form-group">
+      <label for="ap-spack-repo">Spack package repository</label>
+      <input type="url" class="form-control" id="ap-spack-repo" name="spack_repo"
+        placeholder="Only if the recipe isn't in Spack's builtin repository" />
+      <p class="help-block">The git URL of the Spack repository that holds this package's recipe.</p>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Visibility</legend>
+
+    <div class="radio">
+      <label>
+        <input type="radio" name="published" value="true" checked />
+        Published: anyone can see this package's metrics
+      </label>
+    </div>
+    <div class="radio">
+      <label>
+        <input type="radio" name="published" value="false" />
+        Unpublished: metrics are behind a password
+      </label>
+    </div>
+
+    <div class="form-group" id="ap-password-group" hidden>
+      <label for="ap-password">Password <span class="ap-required">required</span></label>
+      <input type="password" class="form-control" id="ap-password" autocomplete="new-password" />
+      <p class="help-block">
+        Your browser converts it to a SHA-256 hash, and only the hash goes in the file. The hash is
+        public, so use a password you don't use anywhere else.
+      </p>
+    </div>
+  </fieldset>
+
+  <div class="alert alert-danger" id="ap-errors" role="alert" hidden></div>
+
+  <div class="ap-preview" id="ap-preview" hidden>
+    <h3>
+      <code id="ap-filename"></code>
+    </h3>
+    <pre id="ap-yaml"></pre>
+    <div class="alert alert-warning" id="ap-exists" hidden></div>
+    <p>
+      <a class="btn btn-primary" id="ap-open" target="_blank" rel="noopener">
+        <span class="fa fa-github" aria-hidden="true"></span> Open the pull request on GitHub
+      </a>
+      <button type="button" class="btn btn-default" id="ap-copy">Copy YAML</button>
+    </p>
+    <p class="help-block">
+      If GitHub's page opens empty, copy the YAML, paste it into the editor there, and name the
+      file <code id="ap-filename-hint"></code>.
+    </p>
+  </div>
+
+  <button type="submit" class="btn btn-primary" id="ap-build">Create the file</button>
+</form>
